@@ -1,0 +1,28 @@
+//
+//  ZJRewardVideoAdProtocol.h
+//  ZJSDKCoreFramewrok
+//
+//  Created by Robin on 2021/1/14.
+//
+
+#import <Foundation/Foundation.h>
+
+NS_ASSUME_NONNULL_BEGIN
+@class UIViewController;
+@protocol ZJRewardVideoAdProtocol <NSObject>
+
+@property(nonatomic,copy) NSString *userId;
+@property(nonatomic,copy) NSString *reward_name;
+@property(nonatomic,assign) NSInteger reward_amount;
+//交易ID
+@property(nonatomic,copy,readonly) NSString *trans_id;
+
+@property(nonatomic,copy) NSString *extra;
+
+
+- (void) loadAd;
+- (void) showAdInViewController:(UIViewController*)viewController;
+
+@end
+
+NS_ASSUME_NONNULL_END
