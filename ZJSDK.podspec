@@ -50,8 +50,8 @@ TODO: Add long description of the pod here.
   s.subspec 'ZJSDKModuleGDT' do |ss|
     
     ss.vendored_libraries = 'ZJSDK/ZJSDKModuleGDT/*.a'
-    ss.source_files = 'ZJSDK/ZJSDKModuleGDT/*.{h,m}'
-    ss.public_header_files = 'ZJSDK/ZJSDKModuleGDT/*.h'
+#    ss.source_files = 'ZJSDK/ZJSDKModuleGDT/*.{h,m}'
+#    ss.public_header_files = 'ZJSDK/ZJSDKModuleGDT/*.h'
     
     ss.dependency 'ZJSDK/ZJSDKCore'
   end

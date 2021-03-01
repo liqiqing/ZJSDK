@@ -46,7 +46,12 @@
     "xml2",
     "c++abi"
   ],
-  "requires_arc": true,
+  "pod_target_xcconfig": {
+    "EXCLUDED_ARCHS[sdk=iphonesimulator*]": "arm64"
+  },
+  "user_target_xcconfig": {
+    "EXCLUDED_ARCHS[sdk=iphonesimulator*]": "arm64"
+  },
   "subspecs": [
     {
       "name": "ZJSDKCore",
@@ -56,8 +61,6 @@
     {
       "name": "ZJSDKModuleGDT",
       "vendored_libraries": "ZJSDK/ZJSDKModuleGDT/*.a",
-      "source_files": "ZJSDK/ZJSDKModuleGDT/*.{h,m}",
-      "public_header_files": "ZJSDK/ZJSDKModuleGDT/*.h",
       "dependencies": {
         "ZJSDK/ZJSDKCore": [
 
