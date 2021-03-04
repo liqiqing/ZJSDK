@@ -22,7 +22,7 @@
     // Do any additional setup after loading the view.
     self.title=@"开屏广告";
    
-    [self.loadAdView appendAdID:@[@"J8648995207",@"c887417368",@"zjad_G9040714184494018",@"zjad_T887381439",@"zjad_M235223"]];
+    [self.loadAdView appendAdID:@[@"J8648995207",@"c887417368",@"zjad_G9040714184494018",@"zjad_iOS_ZS0001",@"zjad_T887381439",@"zjad_M235223"]];
     
 }
 

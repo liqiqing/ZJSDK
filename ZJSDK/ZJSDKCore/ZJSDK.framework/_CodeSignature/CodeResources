@@ -10,15 +10,11 @@
 		</data>
 		<key>Headers/ZJAdSDK.h</key>
 		<data>
-		trnuQtlGd0YXC7wQcPoWBETfe4M=
+		bSESrGJycI7/2TdvZPzZpbJD1Pg=
 		</data>
 		<key>Headers/ZJBannerAdView.h</key>
 		<data>
 		X/PC9IQf7RU6L0DQCTxkjWbJx9Y=
-		</data>
-		<key>Headers/ZJFeedAd.h</key>
-		<data>
-		aOZi4p0wAFaE08RSRGUqmN9jCZ4=
 		</data>
 		<key>Headers/ZJFeedFullVideoProvider.h</key>
 		<data>
@@ -36,6 +32,14 @@
 		<data>
 		r91J+RX206lfXKFTQCpHaRwaWCk=
 		</data>
+		<key>Headers/ZJNativeExpressFeedAdManager.h</key>
+		<data>
+		n9C6sIqyCo9EiDhNhUDn65ETGb4=
+		</data>
+		<key>Headers/ZJNativeExpressFeedAdManagerDelegate.h</key>
+		<data>
+		DWvSCyGOiIDQb0T4mmEoelRYFwc=
+		</data>
 		<key>Headers/ZJRewardVideoAd.h</key>
 		<data>
 		1DN+0PF9Hpi8cYranQ/E7b63wDI=
@@ -46,7 +50,7 @@
 		</data>
 		<key>Headers/ZJSDK.h</key>
 		<data>
-		ahnuMWmc/AwLd76LSOM8P8s8ZeQ=
+		7MBqU3KPBd0LcIAHO7ZZZaeUqyA=
 		</data>
 		<key>Headers/ZJSDKDefines.h</key>
 		<data>
@@ -98,11 +102,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			trnuQtlGd0YXC7wQcPoWBETfe4M=
+			bSESrGJycI7/2TdvZPzZpbJD1Pg=
 			</data>
 			<key>hash2</key>
 			<data>
-			4P2f9BfZ2xvtsliyK0YzIsKDmLIrpFTviCU7ku/7nKc=
+			4CtreImZAzCH7Zr2xySSoJ3RRON1lYyw7JHqvgwi8m0=
 			</data>
 		</dict>
 		<key>Headers/ZJBannerAdView.h</key>
@@ -114,17 +118,6 @@
 			<key>hash2</key>
 			<data>
 			jFqENE+PYsgwoeiPOVpJc/+R18XjTl7OjQMufq0fbeM=
-			</data>
-		</dict>
-		<key>Headers/ZJFeedAd.h</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			aOZi4p0wAFaE08RSRGUqmN9jCZ4=
-			</data>
-			<key>hash2</key>
-			<data>
-			uAVrag4HGZM5Dg2+82wDF82qIwFCeW1JbKwvZcHogqw=
 			</data>
 		</dict>
 		<key>Headers/ZJFeedFullVideoProvider.h</key>
@@ -171,6 +164,28 @@
 			bVIf47WWy4NaV6ODhSA4GtDsZRz39KncZ8SEYiiMsvI=
 			</data>
 		</dict>
+		<key>Headers/ZJNativeExpressFeedAdManager.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			n9C6sIqyCo9EiDhNhUDn65ETGb4=
+			</data>
+			<key>hash2</key>
+			<data>
+			50uMxAiUljxV3kVyA/h5H/E+gGcC+Sj/+nRh7y5spVg=
+			</data>
+		</dict>
+		<key>Headers/ZJNativeExpressFeedAdManagerDelegate.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			DWvSCyGOiIDQb0T4mmEoelRYFwc=
+			</data>
+			<key>hash2</key>
+			<data>
+			aqWB4KPZJqxENw1WnJtdHzW7CdtwyDAGYAAIS28ayzs=
+			</data>
+		</dict>
 		<key>Headers/ZJRewardVideoAd.h</key>
 		<dict>
 			<key>hash</key>
@@ -197,11 +212,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			ahnuMWmc/AwLd76LSOM8P8s8ZeQ=
+			7MBqU3KPBd0LcIAHO7ZZZaeUqyA=
 			</data>
 			<key>hash2</key>
 			<data>
-			i8jufarCjwtcAnnwuJXUdvqeTn4iVjc7K5OuKh34K8o=
+			dAFY3xBJEnMrDMidANv+1PJzrotXusJbw9R3fNhOHSk=
 			</data>
 		</dict>
 		<key>Headers/ZJSDKDefines.h</key>

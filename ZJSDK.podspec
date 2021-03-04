@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'ZJSDK'
-  s.version          = '2.0.0'
+  s.version          = '2.0.1'
   s.summary          = 'ZJSDK广告'
 
 # This description is used to generate tags and improve search results.
@@ -48,17 +48,36 @@ TODO: Add long description of the pod here.
   end
   
   s.subspec 'ZJSDKModuleGDT' do |ss|
-    
     ss.vendored_libraries = 'ZJSDK/ZJSDKModuleGDT/*.a'
-#    ss.source_files = 'ZJSDK/ZJSDKModuleGDT/*.{h,m}'
-#    ss.public_header_files = 'ZJSDK/ZJSDKModuleGDT/*.h'
-    
     ss.dependency 'ZJSDK/ZJSDKCore'
+    ss.dependency 'GDTMobSDK', '~> 4.12'
   end
   
- 
+  s.subspec 'ZJSDKModuleCSJ' do |ss|
+    ss.vendored_libraries = 'ZJSDK/ZJSDKModuleCSJ/*.a'
+    ss.dependency 'ZJSDK/ZJSDKCore'
+    ss.dependency 'Ads-CN', '~> 3.4'
+  end
   
-#  s.pod_target_xcconfig = { 'ENABLE_BITCODE' => 'NO' }
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.dependency 'AFNetworking', '~> 2.3'
+  s.subspec 'ZJSDKModuleKS' do |ss|
+    ss.vendored_libraries = 'ZJSDK/ZJSDKModuleKS/*.a'
+    ss.dependency 'ZJSDK/ZJSDKCore'
+    ss.dependency 'KSAdSDK', '~> 3.3'
+  end
+  
+  s.subspec 'ZJSDKModuleMTG' do |ss|
+    ss.vendored_libraries = 'ZJSDK/ZJSDKModuleMTG/*.a'
+    ss.dependency 'ZJSDK/ZJSDKCore'
+    ss.dependency 'MintegralAdSDK', '~> 6.7'
+    ss.dependency 'MintegralAdSDK/RewardVideoAd'
+    ss.dependency 'MintegralAdSDK/BannerAd'
+    ss.dependency 'MintegralAdSDK/SplashAd'
+  end
+  
+  s.subspec 'ZJSDKModuleDSP' do |ss|
+    ss.vendored_libraries = 'ZJSDK/ZJSDKModuleDSP/*.a'
+    ss.resource = 'ZJSDK/ZJSDKModuleDSP/*.bundle'
+    ss.dependency 'ZJSDK/ZJSDKCore'
+  end
+ 
 end

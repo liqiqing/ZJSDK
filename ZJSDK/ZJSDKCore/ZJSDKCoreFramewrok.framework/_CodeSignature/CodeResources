@@ -10,7 +10,7 @@
 		</data>
 		<key>Headers/ZJAdItemConfig.h</key>
 		<data>
-		NAl6lmeFl75LvIFBRBOedkWXL1I=
+		uS/WYl1YTQmsFRYBdStQ8IBUH0E=
 		</data>
 		<key>Headers/ZJAdPlacement.h</key>
 		<data>
@@ -92,6 +92,14 @@
 		<data>
 		F37l3wo0hzWmxuW4Clz1e/GS8yI=
 		</data>
+		<key>Headers/ZJNativeExpressFeedAd.h</key>
+		<data>
+		R0r/y9YUJylLuOv00yo41PTPe18=
+		</data>
+		<key>Headers/ZJNativeExpressFeedAdManagerAdapter.h</key>
+		<data>
+		L4lQhaBqd5X9Y8qAY3ZmQg6rmb8=
+		</data>
 		<key>Headers/ZJRewardVideoAdAdapter.h</key>
 		<data>
 		5aSIfwj89OULMXC/kH56gHkFYAQ=
@@ -107,6 +115,10 @@
 		<key>Headers/ZJRewardVideoAdProtocol.h</key>
 		<data>
 		L9LhDD1zDqmhwdDnqy4IkWNCQ2I=
+		</data>
+		<key>Headers/ZJSDKCoreConfig.h</key>
+		<data>
+		bSCy125YAu8+mWp2Ama9vu6VAJE=
 		</data>
 		<key>Headers/ZJSDKCoreFramewrok.h</key>
 		<data>
@@ -150,11 +162,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			NAl6lmeFl75LvIFBRBOedkWXL1I=
+			uS/WYl1YTQmsFRYBdStQ8IBUH0E=
 			</data>
 			<key>hash2</key>
 			<data>
-			eU5DulqhiOyOvAdck4bL3ieBRT8g0mVgfoQkvY6zHpU=
+			XKIMHSGfp4KmmA7KLFNqNEeKWIqMJ0sjLD4DBV2251I=
 			</data>
 		</dict>
 		<key>Headers/ZJAdPlacement.h</key>
@@ -377,6 +389,28 @@
 			WMZjEafoqnLsIE7s14EU44JI4ai/rhUNjqHDtzr4nK8=
 			</data>
 		</dict>
+		<key>Headers/ZJNativeExpressFeedAd.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			R0r/y9YUJylLuOv00yo41PTPe18=
+			</data>
+			<key>hash2</key>
+			<data>
+			NwUHhNnlhekO1nmg9PMAgN6BftfQrKfaWZzquiUlboY=
+			</data>
+		</dict>
+		<key>Headers/ZJNativeExpressFeedAdManagerAdapter.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			L4lQhaBqd5X9Y8qAY3ZmQg6rmb8=
+			</data>
+			<key>hash2</key>
+			<data>
+			l4RIgtq8HtkQETCV26f70Gh2LGPlfhMuXeZ9KkMhMxA=
+			</data>
+		</dict>
 		<key>Headers/ZJRewardVideoAdAdapter.h</key>
 		<dict>
 			<key>hash</key>
@@ -419,6 +453,17 @@
 			<key>hash2</key>
 			<data>
 			io/ihsQ0JdVskaAuBWKe1ljemJA05Xg/q7QREj0PA0w=
+			</data>
+		</dict>
+		<key>Headers/ZJSDKCoreConfig.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			bSCy125YAu8+mWp2Ama9vu6VAJE=
+			</data>
+			<key>hash2</key>
+			<data>
+			KPxxo0ZBEplwY+1LZ3aSOrz7L3DY64NjS8tEf2lepfc=
 			</data>
 		</dict>
 		<key>Headers/ZJSDKCoreFramewrok.h</key>

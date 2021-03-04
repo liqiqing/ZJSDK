@@ -1,0 +1,9 @@
+framework module MTGSDKInterActive {
+    umbrella header "MTGInterActiveManager.h"
+   
+    export *
+ 
+    module * {
+         export *
+     }
+}
