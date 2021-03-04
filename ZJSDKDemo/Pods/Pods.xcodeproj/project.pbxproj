@@ -65,7 +65,11 @@
 
 /* Begin PBXBuildFile section */
 		08B4855C06A93D3C09738C5D49536FD6 /* Pods-ZJSDKDemo-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BCF8FD7AD8101C5849D1D36D1CB81716 /* Pods-ZJSDKDemo-dummy.m */; };
-		574F7AC925F0BD1400B528ED /* libZJSDKModuleKS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C96796ED6221BCE93FD5F93AF0C2747 /* libZJSDKModuleKS.a */; };
+		5729648125F0D04E00094519 /* libZJSDKModuleDSP.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 65B21D3CE2964AF342895DC7FE730424 /* libZJSDKModuleDSP.a */; };
+		5729648225F0D05400094519 /* libZJSDKModuleKS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C96796ED6221BCE93FD5F93AF0C2747 /* libZJSDKModuleKS.a */; };
+		5729648925F0D10F00094519 /* libZJSDKModuleCSJ.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D723B63CB0577265E55728C0AD7403C /* libZJSDKModuleCSJ.a */; };
+		572964BC25F0D2C400094519 /* libZJSDKModuleGDT.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 25B106E30ADCCA90707C0B8162DF6151 /* libZJSDKModuleGDT.a */; };
+		572964C525F0D37400094519 /* libZJSDKModuleMTG.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B690E2CDF69FD2B2E25061D35B92796 /* libZJSDKModuleMTG.a */; };
 		6DA4DF22DA7E91C8594B10E8897AE728 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
 		86F91181932C15EA42ABB83536AA4724 /* Pods-ZJSDKDemo-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C43FB1A7AD2003C31ED3EDE89509DA29 /* Pods-ZJSDKDemo-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
@@ -215,8 +219,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5729648925F0D10F00094519 /* libZJSDKModuleCSJ.a in Frameworks */,
 				6DA4DF22DA7E91C8594B10E8897AE728 /* Foundation.framework in Frameworks */,
-				574F7AC925F0BD1400B528ED /* libZJSDKModuleKS.a in Frameworks */,
+				5729648125F0D04E00094519 /* libZJSDKModuleDSP.a in Frameworks */,
+				572964C525F0D37400094519 /* libZJSDKModuleMTG.a in Frameworks */,
+				572964BC25F0D2C400094519 /* libZJSDKModuleGDT.a in Frameworks */,
+				5729648225F0D05400094519 /* libZJSDKModuleKS.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1010,6 +1018,10 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Ads-CN/PangleSDK",
+				);
 				INFOPLIST_FILE = "Target Support Files/Pods-ZJSDKDemo/Pods-ZJSDKDemo-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -1111,6 +1123,10 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Ads-CN/PangleSDK",
+				);
 				INFOPLIST_FILE = "Target Support Files/Pods-ZJSDKDemo/Pods-ZJSDKDemo-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
