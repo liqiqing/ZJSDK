@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -50,6 +50,14 @@
 		0077471E24E182A200C30636 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0077471C24E182A200C30636 /* LaunchScreen.storyboard */; };
 		0077472124E182A200C30636 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0077472024E182A200C30636 /* main.m */; };
 		0079C89B258B3AB400093756 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0079C89A258B3AB400093756 /* Foundation.framework */; };
+		572964AF25F0D24E00094519 /* BUAdSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 572964AE25F0D24E00094519 /* BUAdSDK.framework */; };
+		572964B125F0D25500094519 /* BUFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 572964B025F0D25500094519 /* BUFoundation.framework */; };
+		572964B325F0D25700094519 /* BUCNAuxiliary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 572964B225F0D25700094519 /* BUCNAuxiliary.framework */; };
+		572964C425F0D2D900094519 /* libGDTMobSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 572964C325F0D2D900094519 /* libGDTMobSDK.a */; };
+		572964CD25F0D38700094519 /* MTGSDKSplash.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 572964CC25F0D38700094519 /* MTGSDKSplash.framework */; };
+		572964CF25F0D38A00094519 /* MTGSDKReward.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 572964CE25F0D38A00094519 /* MTGSDKReward.framework */; };
+		572964D125F0D38C00094519 /* MTGSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 572964D025F0D38C00094519 /* MTGSDK.framework */; };
+		572964D325F0D38E00094519 /* MTGSDKBanner.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 572964D225F0D38E00094519 /* MTGSDKBanner.framework */; };
 		5737C374259AFCBF00CB6525 /* ZJH5JSViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5737C373259AFCBF00CB6525 /* ZJH5JSViewController.m */; };
 		5737C498259C176A00CB6525 /* ZJAdEditTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5737C497259C176A00CB6525 /* ZJAdEditTextView.m */; };
 		5737C49C259C1A1A00CB6525 /* UIView+ZJExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 5737C49B259C1A1A00CB6525 /* UIView+ZJExtension.m */; };
@@ -153,6 +161,15 @@
 		0077471F24E182A200C30636 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0077472024E182A200C30636 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		0079C89A258B3AB400093756 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		572964AE25F0D24E00094519 /* BUAdSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BUAdSDK.framework; path = "Pods/Ads-CN/PangleSDK/BUAdSDK.framework"; sourceTree = "<group>"; };
+		572964B025F0D25500094519 /* BUFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BUFoundation.framework; path = "Pods/Ads-CN/PangleSDK/BUFoundation.framework"; sourceTree = "<group>"; };
+		572964B225F0D25700094519 /* BUCNAuxiliary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BUCNAuxiliary.framework; path = "Pods/Ads-CN/PangleSDK/BUCNAuxiliary.framework"; sourceTree = "<group>"; };
+		572964B425F0D26100094519 /* BUAdSDK.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = BUAdSDK.bundle; path = "Pods/Ads-CN/PangleSDK/BUAdSDK.bundle"; sourceTree = "<group>"; };
+		572964C325F0D2D900094519 /* libGDTMobSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libGDTMobSDK.a; path = Pods/GDTMobSDK/lib/libGDTMobSDK.a; sourceTree = "<group>"; };
+		572964CC25F0D38700094519 /* MTGSDKSplash.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MTGSDKSplash.framework; path = Pods/MintegralAdSDK/Fmk/MTGSDKSplash.framework; sourceTree = "<group>"; };
+		572964CE25F0D38A00094519 /* MTGSDKReward.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MTGSDKReward.framework; path = Pods/MintegralAdSDK/Fmk/MTGSDKReward.framework; sourceTree = "<group>"; };
+		572964D025F0D38C00094519 /* MTGSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MTGSDK.framework; path = Pods/MintegralAdSDK/Fmk/MTGSDK.framework; sourceTree = "<group>"; };
+		572964D225F0D38E00094519 /* MTGSDKBanner.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MTGSDKBanner.framework; path = Pods/MintegralAdSDK/Fmk/MTGSDKBanner.framework; sourceTree = "<group>"; };
 		5737C372259AFCBF00CB6525 /* ZJH5JSViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZJH5JSViewController.h; sourceTree = "<group>"; };
 		5737C373259AFCBF00CB6525 /* ZJH5JSViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZJH5JSViewController.m; sourceTree = "<group>"; };
 		5737C496259C176A00CB6525 /* ZJAdEditTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZJAdEditTextView.h; sourceTree = "<group>"; };
@@ -202,9 +219,13 @@
 				0061941925123E4D00E09415 /* libsqlite3.tbd in Frameworks */,
 				0061941725123E4100E09415 /* libc++.tbd in Frameworks */,
 				0061941525123E3500E09415 /* libresolv.9.tbd in Frameworks */,
+				572964D125F0D38C00094519 /* MTGSDK.framework in Frameworks */,
 				0061941325123E2700E09415 /* Accelerate.framework in Frameworks */,
+				572964D325F0D38E00094519 /* MTGSDKBanner.framework in Frameworks */,
 				0061941125123E1E00E09415 /* CoreMotion.framework in Frameworks */,
+				572964C425F0D2D900094519 /* libGDTMobSDK.a in Frameworks */,
 				006193312512376300E09415 /* AVFoundation.framework in Frameworks */,
+				572964CF25F0D38A00094519 /* MTGSDKReward.framework in Frameworks */,
 				0061940F25123DFC00E09415 /* CoreMedia.framework in Frameworks */,
 				0061940D25123DF000E09415 /* MediaPlayer.framework in Frameworks */,
 				0061940B25123DE600E09415 /* MobileCoreServices.framework in Frameworks */,
@@ -217,6 +238,10 @@
 				00619323251236BE00E09415 /* QuartzCore.framework in Frameworks */,
 				00619321251236B200E09415 /* CoreLocation.framework in Frameworks */,
 				0061931F251236A200E09415 /* AdSupport.framework in Frameworks */,
+				572964B125F0D25500094519 /* BUFoundation.framework in Frameworks */,
+				572964B325F0D25700094519 /* BUCNAuxiliary.framework in Frameworks */,
+				572964CD25F0D38700094519 /* MTGSDKSplash.framework in Frameworks */,
+				572964AF25F0D24E00094519 /* BUAdSDK.framework in Frameworks */,
 				006192DC250FAF4D00E09415 /* ZJSDK.framework in Frameworks */,
 				6BCE4CD721ED4D7C2B9038A6 /* Pods_ZJSDKDemo.framework in Frameworks */,
 			);
@@ -276,9 +301,13 @@
 				0061941825123E4D00E09415 /* libsqlite3.tbd */,
 				0061941625123E4100E09415 /* libc++.tbd */,
 				0061941425123E3500E09415 /* libresolv.9.tbd */,
+				572964D025F0D38C00094519 /* MTGSDK.framework */,
 				0061941225123E2700E09415 /* Accelerate.framework */,
 				0061941025123E1E00E09415 /* CoreMotion.framework */,
+				572964D225F0D38E00094519 /* MTGSDKBanner.framework */,
+				572964C325F0D2D900094519 /* libGDTMobSDK.a */,
 				0061940E25123DFC00E09415 /* CoreMedia.framework */,
+				572964CE25F0D38A00094519 /* MTGSDKReward.framework */,
 				0061940C25123DF000E09415 /* MediaPlayer.framework */,
 				0061940A25123DE600E09415 /* MobileCoreServices.framework */,
 				006193322512376E00E09415 /* WebKit.framework */,
@@ -292,6 +321,10 @@
 				00619320251236B100E09415 /* CoreLocation.framework */,
 				0061931E251236A200E09415 /* AdSupport.framework */,
 				006192DB250FAF4D00E09415 /* ZJSDK.framework */,
+				572964B025F0D25500094519 /* BUFoundation.framework */,
+				572964B225F0D25700094519 /* BUCNAuxiliary.framework */,
+				572964CC25F0D38700094519 /* MTGSDKSplash.framework */,
+				572964AE25F0D24E00094519 /* BUAdSDK.framework */,
 				7EB4CCB834229A509AB72B25 /* Pods_ZJSDKDemo.framework */,
 			);
 			name = Frameworks;
@@ -338,6 +371,7 @@
 		0077470224E182A200C30636 = {
 			isa = PBXGroup;
 			children = (
+				572964B425F0D26100094519 /* BUAdSDK.bundle */,
 				574AA81D25E4AC1700098DCA /* ZJSDK.podspec */,
 				0077470D24E182A200C30636 /* ZJSDKDemo */,
 				0077470C24E182A200C30636 /* Products */,
@@ -447,8 +481,8 @@
 				0077470924E182A200C30636 /* Resources */,
 				001E753E25496C5B0086A93F /* ShellScript */,
 				0079C8A0258B3D2C00093756 /* Embed Frameworks */,
-				0D30DAC80D68F2202A7B8590 /* [CP] Embed Pods Frameworks */,
 				390750B97DC56B7AA2245959 /* [CP] Copy Pods Resources */,
+				14DA5E553BBE8EEC00BDC618 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -522,7 +556,7 @@
 			shellPath = /bin/sh;
 			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n";
 		};
-		0D30DAC80D68F2202A7B8590 /* [CP] Embed Pods Frameworks */ = {
+		14DA5E553BBE8EEC00BDC618 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -763,6 +797,8 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/ZJSDKDemo/lib",
 					"$(PROJECT_DIR)/ZJSDKDemo/lib/ZJSDK/ZJSDKCore",
+					"$(PROJECT_DIR)/Pods/Ads-CN/PangleSDK",
+					"$(PROJECT_DIR)/Pods/MintegralAdSDK/Fmk",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/ZJSDKDemo/PrefixHeader.pch";
@@ -775,6 +811,7 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/ZJSDKDemo/lib/ZJSDK/ZJSDKModuleGDT",
+					"$(PROJECT_DIR)/Pods/GDTMobSDK/lib",
 				);
 				MARKETING_VERSION = 1.0.11;
 				OTHER_LDFLAGS = "-ObjC";
@@ -803,6 +840,8 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/ZJSDKDemo/lib",
 					"$(PROJECT_DIR)/ZJSDKDemo/lib/ZJSDK/ZJSDKCore",
+					"$(PROJECT_DIR)/Pods/Ads-CN/PangleSDK",
+					"$(PROJECT_DIR)/Pods/MintegralAdSDK/Fmk",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/ZJSDKDemo/PrefixHeader.pch";
@@ -815,6 +854,7 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/ZJSDKDemo/lib/ZJSDK/ZJSDKModuleGDT",
+					"$(PROJECT_DIR)/Pods/GDTMobSDK/lib",
 				);
 				MARKETING_VERSION = 1.0.11;
 				OTHER_LDFLAGS = "-ObjC";
