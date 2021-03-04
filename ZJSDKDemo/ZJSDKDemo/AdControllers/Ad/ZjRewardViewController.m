@@ -23,7 +23,7 @@
     // Do any additional setup after loading the view.
     self.title=@"激励视频";
     
-   [self.loadAdView appendAdID:@[@"KS90010001",@"c945709452",@"33011044",@"zjad_G8020744212936426",@"zjad_T945484376",@"zjad_M240919"]];
+   [self.loadAdView appendAdID:@[@"KS90010001",@"c945709452",@"zjad_G8020744212936426",@"33011044",@"zjad_T945484376",@"zjad_M240919",@"zjad_iOS_ZR0001"]];
 }
 
 -(void) loadAd:(NSString*) adId{

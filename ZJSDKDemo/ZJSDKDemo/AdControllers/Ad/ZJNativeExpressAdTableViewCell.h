@@ -7,13 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
-//#import <ZJSDK/ZJNativeExpressFeedAdManager.h>
+#import <ZJSDK/ZJNativeExpressFeedAdManager.h>
 NS_ASSUME_NONNULL_BEGIN
 
 @interface ZJNativeExpressAdTableViewCell : UITableViewCell
 
 
-//-(void)refreshWithAd:(ZJNativeExpressFeedAd *)ad;
+-(void)refreshWithAd:(ZJNativeExpressFeedAd *)ad;
 
 @end
 

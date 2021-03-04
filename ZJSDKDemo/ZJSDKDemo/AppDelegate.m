@@ -41,19 +41,7 @@
    
     self.window.rootViewController = splashVC;
     
-    //zjs_111202011xianlv
-    //33011039
-    
     [ZJAdSDK registerAppId:@"zj_20201014iOSDEMO"];
-//    [ZJAdSDK registerAppId:@"zjs_111202017zhilian"];
-    //[ZJAdSDK registerAppId:@"zjs_111202017zhilian"];
-    //[ZJAdSDK enableDefaultAudioSessionSetting:NO];
-    //[ZJAdSDK registerAppId:@"zjs_111202011xianlv"];
-    //[ZJAdSDK registerAppId:@"zjs_111202012huimin"];
-    //[ZJAdSDK registerAppId:@"zjs_111202013yjk"];
-    //[ZJAdSDK registerAppId:@"zjs_111202012yiwox"];
-    
-    
     
     //com.zj.shop.towmall.hwxs
     //zj_20201014iOSDEMO

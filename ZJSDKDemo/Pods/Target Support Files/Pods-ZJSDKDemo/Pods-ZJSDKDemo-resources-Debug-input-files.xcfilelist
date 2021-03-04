@@ -1,2 +1,4 @@
 ${PODS_ROOT}/Target Support Files/Pods-ZJSDKDemo/Pods-ZJSDKDemo-resources.sh
-${PODS_ROOT}/../../ZJSDK/BUAdSDK.bundle
+${PODS_ROOT}/Ads-CN/PangleSDK/LICENSE
+${PODS_ROOT}/Ads-CN/PangleSDK/BUAdSDK.bundle
+${PODS_ROOT}/../../ZJSDK/ZJSDKModuleDSP/ZJSDKBundle.bundle

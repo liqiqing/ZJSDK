@@ -18,16 +18,16 @@
 }
 
 
-//-(void)refreshWithAd:(ZJNativeExpressFeedAd *)ad{
-//    UIView *view = [self.contentView viewWithTag:100];
-//    [view removeFromSuperview];
-//    ad.feedView.tag = 100;
-////    [feedAd setVideoSoundEnable:soundEnable];
-//    [self.contentView addSubview:ad.feedView];
-//    [ad.feedView mas_remakeConstraints:^(MASConstraintMaker *make) {
-//        make.edges.equalTo(@0);
-//    }];
-//}
+-(void)refreshWithAd:(ZJNativeExpressFeedAd *)ad{
+    UIView *view = [self.contentView viewWithTag:100];
+    [view removeFromSuperview];
+    ad.feedView.tag = 100;
+//    [feedAd setVideoSoundEnable:soundEnable];
+    [self.contentView addSubview:ad.feedView];
+    [ad.feedView mas_remakeConstraints:^(MASConstraintMaker *make) {
+        make.edges.equalTo(@0);
+    }];
+}
 
 - (void)awakeFromNib {
     [super awakeFromNib];

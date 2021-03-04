@@ -23,7 +23,7 @@
     self.title=@"模板信息流";
     self.loadAdView.showButton.hidden = YES;
     
-    [self.loadAdView appendAdID:@[@"K4000000007",@"K4000000008",@"G2051316683324578",@"G3061112693227741",@"T945740162"]];
+    [self.loadAdView appendAdID:@[@"K4000000007",@"K4000000008",@"G2051316683324578",@"G3061112693227741",@"T945740162",@"zjad_iOS_ZF0001"]];
     
 }
 

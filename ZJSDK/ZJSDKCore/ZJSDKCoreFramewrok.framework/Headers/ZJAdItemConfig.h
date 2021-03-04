@@ -12,6 +12,8 @@ extern NSString * _Nonnull  const ADType_RewardVideo;
 extern NSString * _Nonnull  const ADType_FeedFullVideo;
 extern NSString * _Nonnull  const ADType_Banner;
 extern NSString * _Nonnull  const ADType_Feed;
+extern NSString * _Nonnull  const ADType_Feed1;
+
 NS_ASSUME_NONNULL_BEGIN
 typedef NS_ENUM(NSInteger,ZJAdPlatformType){
     ZJAdPlatform_None,
@@ -19,6 +21,7 @@ typedef NS_ENUM(NSInteger,ZJAdPlatformType){
     ZJAdPlatform_GDT,
     ZJAdPlatform_MTG,
     ZJAdPlatform_KS,
+    ZJAdPlatform_ZJ,
 };
 
 @interface ZJAdItemConfig : NSObject<NSCoding>
