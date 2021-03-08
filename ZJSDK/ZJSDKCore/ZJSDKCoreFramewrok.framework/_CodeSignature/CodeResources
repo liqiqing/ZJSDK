@@ -8,6 +8,14 @@
 		<data>
 		LI717lSEJaGOCK7t0/XRLIOHvm8=
 		</data>
+		<key>Headers/ZJAd.h</key>
+		<data>
+		q+7zj3r/Bhmqdrs8OGxPsORcGms=
+		</data>
+		<key>Headers/ZJAdDelegate.h</key>
+		<data>
+		2K1rR2SaUi84+QxqSXLf7Lw7tmU=
+		</data>
 		<key>Headers/ZJAdItemConfig.h</key>
 		<data>
 		uS/WYl1YTQmsFRYBdStQ8IBUH0E=
@@ -156,6 +164,28 @@
 			<key>hash2</key>
 			<data>
 			Z85jx4YSIXngytBgCk0m0PX1N1OChU1eYuhOTvZ3fbY=
+			</data>
+		</dict>
+		<key>Headers/ZJAd.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			q+7zj3r/Bhmqdrs8OGxPsORcGms=
+			</data>
+			<key>hash2</key>
+			<data>
+			9cx/VoMvz623JsMEvdPBemOsMfWvwPJ9348CpaS8kU0=
+			</data>
+		</dict>
+		<key>Headers/ZJAdDelegate.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			2K1rR2SaUi84+QxqSXLf7Lw7tmU=
+			</data>
+			<key>hash2</key>
+			<data>
+			p1rpJYFTTP54oDFV3p4eK+INNTaxARwXnAvqGLTqwxE=
 			</data>
 		</dict>
 		<key>Headers/ZJAdItemConfig.h</key>

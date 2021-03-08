@@ -7,7 +7,7 @@
 //
 #import <UIKit/UIKit.h>
 
-#import "ZJAd.h"
+#import <ZJSDKCoreFramewrok/ZJAd.h>
 #import <ZJSDKCoreFramewrok/ZJSplashAdProtocol.h>
 //#import "ZJSplashAdProtocol.h"
 #import "ZJSplashAdDelegate.h"

@@ -7,7 +7,7 @@
 //
 #import <UIKit/UIKit.h>
 #import <ZJSDK/ZJSDK.h>
-#import "ZJAd.h"
+#import <ZJSDKCoreFramewrok/ZJAd.h>
 #import <ZJSDKCoreFramewrok/ZJInterstitialAdProtocol.h>
 NS_ASSUME_NONNULL_BEGIN
 @class ZJInterstitialAd;

@@ -6,7 +6,7 @@
 //  Copyright © 2020 zj. All rights reserved.
 //
 
-#import "ZJAd.h"
+#import <ZJSDKCoreFramewrok/ZJAd.h>
 #import "ZJUser.h"
 #import "ZJH5PageDelegate.h"
 
