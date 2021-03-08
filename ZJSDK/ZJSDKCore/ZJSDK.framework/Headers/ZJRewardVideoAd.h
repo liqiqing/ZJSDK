@@ -6,7 +6,7 @@
 //  Copyright © 2020 zj. All rights reserved.
 //
 #import <UIKit/UIKit.h>
-#import "ZJAd.h"
+#import <ZJSDKCoreFramewrok/ZJAd.h>
 #import <ZJSDKCoreFramewrok/ZJRewardVideoAdProtocol.h>
 #import "ZJRewardVideoAdDelegate.h"
 NS_ASSUME_NONNULL_BEGIN

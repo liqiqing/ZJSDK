@@ -6,7 +6,7 @@
 //  Copyright © 2021 zj. All rights reserved.
 //
 
-#import "ZJAd.h"
+#import <ZJSDKCoreFramewrok/ZJAd.h>
 #import "ZJNativeExpressFeedAdManagerDelegate.h"
 #import <ZJSDKCoreFramewrok/ZJNativeExpressFeedAd.h>
 NS_ASSUME_NONNULL_BEGIN
