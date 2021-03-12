@@ -23,7 +23,7 @@
     // Do any additional setup after loading the view.
     self.title=@"插屏";
 
-    [self.loadAdView appendAdID:@[@"zjad_G10506",@"zjad_T945551",@"zjad_iOS_ZI0001"]];
+    [self.loadAdView appendAdID:@[@"J9666281550",@"zjad_G10506",@"zjad_T945551",@"zjad_iOS_ZI0001"]];
     
  
 }
