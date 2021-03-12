@@ -42,7 +42,7 @@
     self.window.rootViewController = splashVC;
     
     [ZJAdSDK registerAppId:@"zj_20201014iOSDEMO"];
-    
+    NSString *sdkVersion = [ZJAdSDK SDKVersion];
     //com.zj.shop.towmall.hwxs
     //zj_20201014iOSDEMO
 
