@@ -18,6 +18,8 @@ NS_ASSUME_NONNULL_BEGIN
 @property(nonatomic,assign) bool isTimeOut;
 @property(nonatomic,weak) id<ZJSplashAdAdapterDelegate> delegate;
 
+@property(nonatomic,strong,readonly)UIView *splashAdapterView;
+
 -(void) loadSettingWith:(id<ZJSplashAdProtocol>) splashAd;
 -(void) handleTimeOut;
 
