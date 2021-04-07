@@ -12,6 +12,14 @@
 		<data>
 		X/PC9IQf7RU6L0DQCTxkjWbJx9Y=
 		</data>
+		<key>Headers/ZJContentPage.h</key>
+		<data>
+		tuTTDJV9f0dUHl7E7CdH2veTG5I=
+		</data>
+		<key>Headers/ZJContentPageDelegate.h</key>
+		<data>
+		J2T8eSlQyGzjsybva08MC+8rZA8=
+		</data>
 		<key>Headers/ZJFeedFullVideoProvider.h</key>
 		<data>
 		CeF7xwjzIpmBQbQda+DErpgcdMk=
@@ -27,6 +35,10 @@
 		<key>Headers/ZJInterstitialAd.h</key>
 		<data>
 		qmB84Zfd79e6fAd0juS4AukASsE=
+		</data>
+		<key>Headers/ZJNativeAd.h</key>
+		<data>
+		F7aKJhePxzznfz6vLq6Hcd3DO9s=
 		</data>
 		<key>Headers/ZJNativeExpressFeedAdManager.h</key>
 		<data>
@@ -46,7 +58,7 @@
 		</data>
 		<key>Headers/ZJSDK.h</key>
 		<data>
-		Vq8yikD58rqkR/YeldBq+RZa1DQ=
+		16jIEYorQaYn81nCUHTjdBsc8ZQ=
 		</data>
 		<key>Headers/ZJSDKDefines.h</key>
 		<data>
@@ -74,7 +86,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		Qe4Cq76eGMSbAaldiT87GI1fugY=
+		+ENH3CSen4I39PtZhWNHF8y9Dz0=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -103,6 +115,28 @@
 			<key>hash2</key>
 			<data>
 			jFqENE+PYsgwoeiPOVpJc/+R18XjTl7OjQMufq0fbeM=
+			</data>
+		</dict>
+		<key>Headers/ZJContentPage.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			tuTTDJV9f0dUHl7E7CdH2veTG5I=
+			</data>
+			<key>hash2</key>
+			<data>
+			qRkGUGusuY5nvismu5rbz/gg1F7FFiejf5oAkOSvliI=
+			</data>
+		</dict>
+		<key>Headers/ZJContentPageDelegate.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			J2T8eSlQyGzjsybva08MC+8rZA8=
+			</data>
+			<key>hash2</key>
+			<data>
+			DjIK/p1ASxyaiL/jf7whAFDdDNkx4GMEZ8aDxP35W8Y=
 			</data>
 		</dict>
 		<key>Headers/ZJFeedFullVideoProvider.h</key>
@@ -147,6 +181,17 @@
 			<key>hash2</key>
 			<data>
 			GhYlTSfsyX8GCj+4yczIfOB8J3444PaqvXT6j8Zd96w=
+			</data>
+		</dict>
+		<key>Headers/ZJNativeAd.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			F7aKJhePxzznfz6vLq6Hcd3DO9s=
+			</data>
+			<key>hash2</key>
+			<data>
+			miwtIEF7LvKuib4vIkFP4IbJnC8zzV0zQe6teXYlnLc=
 			</data>
 		</dict>
 		<key>Headers/ZJNativeExpressFeedAdManager.h</key>
@@ -197,11 +242,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Vq8yikD58rqkR/YeldBq+RZa1DQ=
+			16jIEYorQaYn81nCUHTjdBsc8ZQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			xee34uHM5NHiRsuxhXXkCRcwkqLRM41bczbi8xJVe+w=
+			qQKACWXQJWdVjVQy0B6+InRZOvGEs7EQYbWhh92DvHE=
 			</data>
 		</dict>
 		<key>Headers/ZJSDKDefines.h</key>

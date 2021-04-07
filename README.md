@@ -5,7 +5,8 @@
 | 最新版本更新日志 | 修订日期  | 修订说明       |
 | ---------------- | --------- | -------------- |
 |v2.0.2       |2021-3-5 |模块拆分，广告优化|
-|v2.1.0       |2021-3-12 |广告获取优化|
+|v2.1.0       |2021-3-12 |广告获取优化,提升容错率|
+|v2.2.3 |2021-4-7 |添加自渲染广告，优化H5广告|
 
 ## <span id="jump1">一、iOS SDK接入说明</span>
 
@@ -805,6 +806,62 @@ _feedAd.delegate = self;
 ```
 
 加载广告具体示例详见Demo中的ZJBannerAdAdapter。
+
+
+
+### 2.7、接入自渲染广告(ZJNativeAd)
+
+#### 2.7.1、ZJNativeAd说明
+
+自渲染广告返回数据模型（ZJNativeAdObject），通过数据模型由开发者渲染视图 ，视图渲染需要基于ZJNativeAdView上进行扩展。
+
+```
+/*
+*  详解：placementId - 广告位 ID
+*/
+- (instancetype)initWithPlacementId:(NSString *)placementId;
+
+//加载广告个数
+-(void)loadAdWithCount:(NSInteger)adCount
+
+/*自渲染广告加载的回调*/
+- (void)zj_nativeAdLoaded:(NSArray<ZJNativeAdObject *> * _Nullable)nativeAdObjects error:(NSError * _Nullable)error;
+```
+
+#### 2.7.2、加载ZJNativeAd广告 ####
+
+```
+//加载广告
+self.nativeAd = [[ZJNativeAd alloc] initWithPlacementId:self.adId];
+self.nativeAd.delegate = self;
+[self.nativeAd loadAdWithCount:8];
+
+///广告回调
+- (void)zj_nativeAdLoaded:(NSArray<ZJNativeAdObject *> * _Nullable)nativeAdObjects error:(NSError * _Nullable)error{
+    if (!error &&nativeAdObjects.count > 0) {
+        self.dataArray = nativeAdObjects.mutableCopy;
+        [self.tableView reloadData];
+        
+    }else{
+        NSLog(@"error:%@",error);
+    }
+}
+```
+
+通过ZJNativeAdView 注册数据，生成adView
+
+```
+self.fillView.viewController = vc;
+self.fillView.delegate = delegate;
+self.adView = [self.fillView registerDataObject:dataObject];
+[self.contentView addSubview:self.adView];
+```
+
+加载广告示例详见demo中的 ZJNativeAdViewController。
+
+
+
+
 
 ## <span id="jump3">三、接入H5内容页</span>
 

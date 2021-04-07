@@ -18,7 +18,7 @@
 		</data>
 		<key>Headers/ZJAdItemConfig.h</key>
 		<data>
-		uS/WYl1YTQmsFRYBdStQ8IBUH0E=
+		c1q1C00P2vUhp67qaSVcT5I1yj4=
 		</data>
 		<key>Headers/ZJAdPlacement.h</key>
 		<data>
@@ -43,6 +43,10 @@
 		<key>Headers/ZJBannerAdProtocol.h</key>
 		<data>
 		Tsir1zXqjogyj1rwZK2QVS0ynzc=
+		</data>
+		<key>Headers/ZJContentPageAdapter.h</key>
+		<data>
+		WRAiqaQhy1f+BzWBftdEeSFEDiA=
 		</data>
 		<key>Headers/ZJCoreAdAdapter.h</key>
 		<data>
@@ -100,6 +104,22 @@
 		<data>
 		F37l3wo0hzWmxuW4Clz1e/GS8yI=
 		</data>
+		<key>Headers/ZJNativeAdAdapter.h</key>
+		<data>
+		zhY8WTp8CRsa5bwZ4/33vuOyt1w=
+		</data>
+		<key>Headers/ZJNativeAdObject.h</key>
+		<data>
+		S9MEIpTr846hwcfe0J/GroK77/g=
+		</data>
+		<key>Headers/ZJNativeAdProtocol.h</key>
+		<data>
+		WjnsG21qxTVhbyVhb+bDljN8WRQ=
+		</data>
+		<key>Headers/ZJNativeAdView.h</key>
+		<data>
+		dfvUCGI+86s/qBczO+HMTAf3qu8=
+		</data>
 		<key>Headers/ZJNativeExpressFeedAd.h</key>
 		<data>
 		R0r/y9YUJylLuOv00yo41PTPe18=
@@ -150,7 +170,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		m7Dl5ixlQHX6rTdJZZDN0e9o6do=
+		k+ODHYXCTztMJEzM8aJL360N1ws=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -196,11 +216,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			uS/WYl1YTQmsFRYBdStQ8IBUH0E=
+			c1q1C00P2vUhp67qaSVcT5I1yj4=
 			</data>
 			<key>hash2</key>
 			<data>
-			XKIMHSGfp4KmmA7KLFNqNEeKWIqMJ0sjLD4DBV2251I=
+			PqHjeznpMTvzcZ7iihnBotIIWrWoo8B//XciNN48Nig=
 			</data>
 		</dict>
 		<key>Headers/ZJAdPlacement.h</key>
@@ -267,6 +287,17 @@
 			<key>hash2</key>
 			<data>
 			LBxsPKZ91oVTp6gnu4Xfxy6vVlcC+IH2YD6bRD7Z1k4=
+			</data>
+		</dict>
+		<key>Headers/ZJContentPageAdapter.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			WRAiqaQhy1f+BzWBftdEeSFEDiA=
+			</data>
+			<key>hash2</key>
+			<data>
+			g1afwyDabxetuBR03L8objHDgTVvaSfSmfOh5SzVyhA=
 			</data>
 		</dict>
 		<key>Headers/ZJCoreAdAdapter.h</key>
@@ -421,6 +452,50 @@
 			<key>hash2</key>
 			<data>
 			WMZjEafoqnLsIE7s14EU44JI4ai/rhUNjqHDtzr4nK8=
+			</data>
+		</dict>
+		<key>Headers/ZJNativeAdAdapter.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zhY8WTp8CRsa5bwZ4/33vuOyt1w=
+			</data>
+			<key>hash2</key>
+			<data>
+			icDujLg1hel8zjFQASbfiRTyvMlTEVu4wQOAjo1uCws=
+			</data>
+		</dict>
+		<key>Headers/ZJNativeAdObject.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			S9MEIpTr846hwcfe0J/GroK77/g=
+			</data>
+			<key>hash2</key>
+			<data>
+			amTuuGXvVmG6ZsIc+hqUk3TDs+aH7XjNzVVEG0iKbhs=
+			</data>
+		</dict>
+		<key>Headers/ZJNativeAdProtocol.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			WjnsG21qxTVhbyVhb+bDljN8WRQ=
+			</data>
+			<key>hash2</key>
+			<data>
+			GJyJ1NdQLFl6M4e5emmzifAIrbJtm8e7KxZJGbF71kI=
+			</data>
+		</dict>
+		<key>Headers/ZJNativeAdView.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			dfvUCGI+86s/qBczO+HMTAf3qu8=
+			</data>
+			<key>hash2</key>
+			<data>
+			UXHrmM1Ll6mOrQfBVazPI56/X9REfm3Y/nqaoq5/emk=
 			</data>
 		</dict>
 		<key>Headers/ZJNativeExpressFeedAd.h</key>

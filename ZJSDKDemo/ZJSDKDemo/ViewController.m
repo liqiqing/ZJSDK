@@ -17,6 +17,7 @@
 @property(nonatomic,strong) NSDictionary *ads;
 
 @property(nonatomic,strong) NSDictionary *testDic;
+@property(nonatomic,strong) NSArray *adTypes;
 @end
 
 @implementation ViewController
@@ -38,7 +39,7 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
     if (section == 0) {
-        return self.ads.count;
+        return self.adTypes.count;;
     }else{
         return self.testDic.count;
     }
@@ -71,7 +72,7 @@
         cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
     }
     if (indexPath.section == 0) {
-        NSString *key = self.ads.allKeys[indexPath.row];
+        NSString *key = self.adTypes[indexPath.row];
         cell.textLabel.text = key;
     }else{
         NSString *key = self.testDic.allKeys[indexPath.row];
@@ -85,7 +86,7 @@
     NSString *key;
     NSString *vcName;
     if (indexPath.section == 0) {
-        key = self.ads.allKeys[indexPath.row];
+        key = self.adTypes[indexPath.row];
         vcName = self.ads[key];
     }else{
         key = self.testDic.allKeys[indexPath.row];
@@ -95,6 +96,12 @@
     [self.navigationController pushViewController:vc animated:NO];
 }
 
+-(NSArray*) adTypes{
+    if(!_adTypes){
+        _adTypes = [NSArray arrayWithObjects:@"开屏广告",@"激励视频",@"插屏",@"Banner",@"全屏视频流",@"模板信息流",@"H5内容",@"自渲染", nil];
+    }
+    return _adTypes;;
+}
 
 
 -(NSDictionary*) ads{
@@ -105,9 +112,9 @@
         [_ads setValue:@"ZJH5ViewController" forKey:@"H5内容"];
         [_ads setValue:@"ZJFeedFullVideoViewController" forKey:@"全屏视频流"];
         [_ads setValue:@"ZJInterstitialAdViewController" forKey:@"插屏"];
-        [_ads setValue:@"ZJContentPageViewController" forKey:@"视频内容"];
         [_ads setValue:@"ZJFeedAdsViewController" forKey:@"模板信息流"];
         [_ads setValue:@"ZJBannerAdViewController" forKey:@"Banner"];
+        [_ads setValue:@"ZJNativeAdSelectedViewController" forKey:@"自渲染"];
         
     }
     return _ads;;
