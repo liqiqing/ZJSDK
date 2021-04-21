@@ -18,7 +18,7 @@
 		</data>
 		<key>Headers/ZJAdItemConfig.h</key>
 		<data>
-		c1q1C00P2vUhp67qaSVcT5I1yj4=
+		stUlIb71Tln3zSWMZRku5X75xZI=
 		</data>
 		<key>Headers/ZJAdPlacement.h</key>
 		<data>
@@ -142,11 +142,11 @@
 		</data>
 		<key>Headers/ZJRewardVideoAdProtocol.h</key>
 		<data>
-		L9LhDD1zDqmhwdDnqy4IkWNCQ2I=
+		IhZsF5hUU7l7npJwcUoozaT930A=
 		</data>
 		<key>Headers/ZJSDKCoreConfig.h</key>
 		<data>
-		bSCy125YAu8+mWp2Ama9vu6VAJE=
+		+lWOEJuUD9eVXXsdP/yaoNrExUw=
 		</data>
 		<key>Headers/ZJSDKCoreFramewrok.h</key>
 		<data>
@@ -170,7 +170,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		qDzbeJxLn/kx4GavAAZP84AEKy0=
+		iq+o6wppt9rWF/5fnaqGpPFLjBg=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -216,11 +216,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			c1q1C00P2vUhp67qaSVcT5I1yj4=
+			stUlIb71Tln3zSWMZRku5X75xZI=
 			</data>
 			<key>hash2</key>
 			<data>
-			PqHjeznpMTvzcZ7iihnBotIIWrWoo8B//XciNN48Nig=
+			69/Iy6QtwIBYEvCOQd/U/ORjJ/F7eZ8CRTVNsB1gSVM=
 			</data>
 		</dict>
 		<key>Headers/ZJAdPlacement.h</key>
@@ -557,22 +557,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			L9LhDD1zDqmhwdDnqy4IkWNCQ2I=
+			IhZsF5hUU7l7npJwcUoozaT930A=
 			</data>
 			<key>hash2</key>
 			<data>
-			io/ihsQ0JdVskaAuBWKe1ljemJA05Xg/q7QREj0PA0w=
+			q9xpnS6uUMFpFCH5wZtOUnt7WxYy4EbBUtJHNyKOZeM=
 			</data>
 		</dict>
 		<key>Headers/ZJSDKCoreConfig.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			bSCy125YAu8+mWp2Ama9vu6VAJE=
+			+lWOEJuUD9eVXXsdP/yaoNrExUw=
 			</data>
 			<key>hash2</key>
 			<data>
-			KPxxo0ZBEplwY+1LZ3aSOrz7L3DY64NjS8tEf2lepfc=
+			s7dkbzFONpDrBHUxhNO4tVr0+vxw/YYTbMYhjVHwY28=
 			</data>
 		</dict>
 		<key>Headers/ZJSDKCoreFramewrok.h</key>

@@ -19,6 +19,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property(nonatomic,copy) NSString *extra;
 
+//验证dic
+@property(nonatomic,copy,readonly) NSDictionary *validationDictionary;
 
 - (void) loadAd;
 - (void) showAdInViewController:(UIViewController*)viewController;
