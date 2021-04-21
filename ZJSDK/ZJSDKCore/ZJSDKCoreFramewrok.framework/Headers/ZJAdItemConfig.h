@@ -36,6 +36,8 @@ typedef NS_ENUM(NSInteger,ZJAdPlatformType){
 @property(nonatomic,assign)ZJAdPlatformType platformType;
 @property(nonatomic,strong) NSDictionary *params;
 
+@property(nonatomic,assign)BOOL is_service;
+
 -(instancetype) initWith:(NSDictionary *) dic;
 @end
 

@@ -11,8 +11,11 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface ZJSDKCoreConfig : NSObject
 +(instancetype)shared;
-@property (nonatomic,strong)NSString *sdkVersion;
-@property (nonatomic,strong)NSString *ZJApp_Id;
+@property (nonatomic,copy)NSString *sdkVersion;
+@property (nonatomic,copy)NSString *ZJApp_Id;
+
+@property (nonatomic,copy)NSString *secretStr;
+
 @end
 
 NS_ASSUME_NONNULL_END
