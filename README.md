@@ -859,6 +859,56 @@ self.adView = [self.fillView registerDataObject:dataObject];
 
 加载广告示例详见demo中的 ZJNativeAdViewController。
 
+### 2.8、接入全屏视频广告(ZJFullScreenVideoAd)</span>
+
+#### 2.8.1、ZJFullScreenVideoAd说明
+
+```
+@interface ZJFullScreenVideoAd : ZJAd
+
+@property(nonatomic,weak) id<ZJFullScreenVideoAdDelegate> delegate;
+
+- (instancetype)initWithPlacementId:(NSString *)placementId delegate:(id<ZJFullScreenVideoAdDelegate>) delegate;
+//加载广告
+-(void) loadAd;
+//展示全屏视频广告
+-(void)presentFullScreenVideoAdFromRootViewController:(UIViewController*)viewController;
+
+@end
+```
+
+#### 2.8.2、ZJFullScreenVideoAdDelegate广告说明
+
+```
+@protocol ZJFullScreenVideoAdDelegate <NSObject>
+//广告加载成功
+- (void) zj_FullScreenVideoAdDidLoad:(ZJFullScreenVideoAd*) ad;
+//广告加载失败
+- (void) zj_FullScreenVideoAdDidLoadFail:(ZJFullScreenVideoAd*) ad error:(NSError * __nullable)error;
+//广告展示
+- (void) zj_FullScreenVideoAdDidShow:(ZJFullScreenVideoAd*) ad;
+//广告点击
+- (void) zj_FullScreenVideoAdDidClick:(ZJFullScreenVideoAd*) ad;
+//广告关闭
+- (void) zj_FullScreenVideoAdDidClose:(ZJFullScreenVideoAd*) ad;
+//广告详情页关闭
+- (void) zj_FullScreenVideoAdDetailDidClose:(ZJFullScreenVideoAd*) ad;
+//广告错误
+- (void) zj_FullScreenVideoAdDidFail:(ZJFullScreenVideoAd*) ad error:(NSError * __nullable)error;
+
+@end
+```
+
+#### 2.8.3、加载全屏视频广告
+
+```
+self.fullVideoAd = [[ZJFullScreenVideoAd alloc] initWithPlacementId:adId];
+self.fullVideoAd.delegate = self;
+[self.fullVideoAd loadAd];
+```
+
+
+加载广告具体示例详见Demo中的ZJFullScreenVideoViewController。
 
 
 
