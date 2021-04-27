@@ -24,6 +24,10 @@
 		<data>
 		CeF7xwjzIpmBQbQda+DErpgcdMk=
 		</data>
+		<key>Headers/ZJFullScreenVideoAd.h</key>
+		<data>
+		kzC7zYmYocIb2TuaPYBgp63C4Pw=
+		</data>
 		<key>Headers/ZJH5Page.h</key>
 		<data>
 		hCunX1Yq2yDClWnIXjb/QmM3u+w=
@@ -58,7 +62,7 @@
 		</data>
 		<key>Headers/ZJSDK.h</key>
 		<data>
-		16jIEYorQaYn81nCUHTjdBsc8ZQ=
+		kpklYUYFfG0mZ94Gl+pixn/aOAc=
 		</data>
 		<key>Headers/ZJSDKDefines.h</key>
 		<data>
@@ -86,7 +90,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		DPJAkUoeUWBAC+xvRpCHIY6c8U8=
+		Ncw2eWZI6vObGxC0EQbRMCmnaKo=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -148,6 +152,17 @@
 			<key>hash2</key>
 			<data>
 			DvHzY6RB2R3ZBSt7VfRkzfb/fTqfBGyi+LBaaLsSUuw=
+			</data>
+		</dict>
+		<key>Headers/ZJFullScreenVideoAd.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			kzC7zYmYocIb2TuaPYBgp63C4Pw=
+			</data>
+			<key>hash2</key>
+			<data>
+			zSI9IM7rnfdGfCMC7rt8i0JGPDRrvInWJqtbilBNJco=
 			</data>
 		</dict>
 		<key>Headers/ZJH5Page.h</key>
@@ -242,11 +257,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			16jIEYorQaYn81nCUHTjdBsc8ZQ=
+			kpklYUYFfG0mZ94Gl+pixn/aOAc=
 			</data>
 			<key>hash2</key>
 			<data>
-			qQKACWXQJWdVjVQy0B6+InRZOvGEs7EQYbWhh92DvHE=
+			HHRqr53Vr4UkSNSTbcm2bRaXoE0Yvm66j0H9R5rE444=
 			</data>
 		</dict>
 		<key>Headers/ZJSDKDefines.h</key>

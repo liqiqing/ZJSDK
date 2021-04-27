@@ -15,6 +15,7 @@ extern NSString * _Nonnull  const ADType_Feed;
 extern NSString * _Nonnull  const ADType_Feed1;
 extern NSString * _Nonnull  const ADType_NativeAd;
 extern NSString * _Nonnull  const ADType_ContentPage;
+extern NSString * _Nonnull  const ADType_FullVideoAd;
 
 NS_ASSUME_NONNULL_BEGIN
 typedef NS_ENUM(NSInteger,ZJAdPlatformType){

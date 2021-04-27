@@ -18,7 +18,7 @@
 		</data>
 		<key>Headers/ZJAdItemConfig.h</key>
 		<data>
-		stUlIb71Tln3zSWMZRku5X75xZI=
+		1e8XOOSc5FE/l0Htea7ygJ6Vo9U=
 		</data>
 		<key>Headers/ZJAdPlacement.h</key>
 		<data>
@@ -87,6 +87,10 @@
 		<key>Headers/ZJFeedFullVideoView.h</key>
 		<data>
 		rTqiWJE/EAaL5t/n2H5RiiQuZmM=
+		</data>
+		<key>Headers/ZJFullScreenVideoAdAdapter.h</key>
+		<data>
+		EaMO6Lma7ShOj9NiibWzztiO/io=
 		</data>
 		<key>Headers/ZJInterstitialAdAdapter.h</key>
 		<data>
@@ -170,7 +174,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		iq+o6wppt9rWF/5fnaqGpPFLjBg=
+		EdNJZpGA3Gkbt0IiSq0mUk5rAA8=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -216,11 +220,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			stUlIb71Tln3zSWMZRku5X75xZI=
+			1e8XOOSc5FE/l0Htea7ygJ6Vo9U=
 			</data>
 			<key>hash2</key>
 			<data>
-			69/Iy6QtwIBYEvCOQd/U/ORjJ/F7eZ8CRTVNsB1gSVM=
+			NsDNjtQH+Ev+07Q/Y5ega8LkfgkArMnaJFcHd5ePMVg=
 			</data>
 		</dict>
 		<key>Headers/ZJAdPlacement.h</key>
@@ -408,6 +412,17 @@
 			<key>hash2</key>
 			<data>
 			nlhOVosnxyssmvE+RUBIx8YoaQNIifHzHwg1dkgs0fo=
+			</data>
+		</dict>
+		<key>Headers/ZJFullScreenVideoAdAdapter.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			EaMO6Lma7ShOj9NiibWzztiO/io=
+			</data>
+			<key>hash2</key>
+			<data>
+			WlCF3+2nTeotFyF1VkWHMFqOnYddftUB09h6vRGeYVI=
 			</data>
 		</dict>
 		<key>Headers/ZJInterstitialAdAdapter.h</key>
