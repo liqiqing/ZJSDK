@@ -7,6 +7,7 @@
 
 #import <ZJSDKCoreFramewrok/ZJCoreAdAdapter.h>
 #import <UIKit/UIKit.h>
+#import "ZJMediaPlayerStatus.h"
 NS_ASSUME_NONNULL_BEGIN
 @class ZJFullScreenVideoAdAdapter;
 @protocol ZJfullScreenVideoAdAdapterDelegate <NSObject>
@@ -22,11 +23,17 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (void) zj_fullScreenVideoAdapterDidClose:(ZJFullScreenVideoAdAdapter*) adapter;
 
-- (void) zj_fullScreenVideoAdapterDetailDidClose:(ZJFullScreenVideoAdAdapter*) adapter;
+
 
 - (void) zj_fullScreenVideoAdapterDidFail:(ZJFullScreenVideoAdAdapter*) adapter error:(NSError * __nullable)error;
 
 
+- (void)zj_fullScreenVideoAdapter:(ZJFullScreenVideoAdAdapter*)adapter  playerStatus:(ZJMediaPlayerStatus)playerStatus;
+
+
+- (void) zj_fullScreenVideoAdapterDetailDidClose:(ZJFullScreenVideoAdAdapter*) adapter;
+
+- (void)zj_fullScreenVideoAdapterDetailDidPresent:(ZJFullScreenVideoAdAdapter*)adapter;
 
 @end
 
@@ -56,7 +63,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (void) zj_fullScreenVideoDidFail:(NSError * __nullable)error;
 
+-(void)zj_fullScreenVideoPlayerStatus:(ZJMediaPlayerStatus)status;
 
+-(void)zj_fullScreenVideoDetailDidPresent;
 @end
 
 NS_ASSUME_NONNULL_END

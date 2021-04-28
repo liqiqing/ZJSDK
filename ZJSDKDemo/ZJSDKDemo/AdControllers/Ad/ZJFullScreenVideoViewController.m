@@ -35,32 +35,41 @@
 }
 
 //广告加载成功
-- (void) zj_FullScreenVideoAdDidLoad:(ZJFullScreenVideoAd*) ad{
+- (void) zj_fullScreenVideoAdDidLoad:(ZJFullScreenVideoAd*) ad{
     [self log:[NSString stringWithFormat:@"%s",__FUNCTION__] message:@""];
 }
 //广告加载失败
-- (void) zj_FullScreenVideoAdDidLoadFail:(ZJFullScreenVideoAd*) ad error:(NSError * __nullable)error{
+- (void) zj_fullScreenVideoAdDidLoadFail:(ZJFullScreenVideoAd*) ad error:(NSError * __nullable)error{
     [self log:[NSString stringWithFormat:@"%s",__FUNCTION__] message:@""];
 }
 
 //广告展示
-- (void) zj_FullScreenVideoAdDidShow:(ZJFullScreenVideoAd*) ad{
+- (void) zj_fullScreenVideoAdDidShow:(ZJFullScreenVideoAd*) ad{
     [self log:[NSString stringWithFormat:@"%s",__FUNCTION__] message:@""];
 }
 //广告点击
-- (void) zj_FullScreenVideoAdDidClick:(ZJFullScreenVideoAd*) ad{
+- (void) zj_fullScreenVideoAdDidClick:(ZJFullScreenVideoAd*) ad{
     [self log:[NSString stringWithFormat:@"%s",__FUNCTION__] message:@""];
 }
 //广告关闭
-- (void) zj_FullScreenVideoAdDidClose:(ZJFullScreenVideoAd*) ad{
+- (void) zj_fullScreenVideoAdDidClose:(ZJFullScreenVideoAd*) ad{
     [self log:[NSString stringWithFormat:@"%s",__FUNCTION__] message:@""];
 }
 //广告详情页关闭
-- (void) zj_FullScreenVideoAdDetailDidClose:(ZJFullScreenVideoAd*) ad{
+- (void) zj_fullScreenVideoAdDetailDidClose:(ZJFullScreenVideoAd*) ad{
     [self log:[NSString stringWithFormat:@"%s",__FUNCTION__] message:@""];
 }
 //广告错误
-- (void) zj_FullScreenVideoAdDidFail:(ZJFullScreenVideoAd*) ad error:(NSError * __nullable)error{
+- (void) zj_fullScreenVideoAdDidFail:(ZJFullScreenVideoAd*) ad error:(NSError * __nullable)error{
+    [self log:[NSString stringWithFormat:@"%s",__FUNCTION__] message:@""];
+}
+
+-(void)zj_fullScreenVideoAd:(ZJFullScreenVideoAd *)ad playerStatusChanged:(ZJMediaPlayerStatus)playerStatus{
+    NSLog(@"%ld",playerStatus);
+}
+
+//广告详情页打开
+- (void)zj_fullScreenVideoAdDetailDidPresent:(ZJFullScreenVideoAd*)ad{
     [self log:[NSString stringWithFormat:@"%s",__FUNCTION__] message:@""];
 }
 
