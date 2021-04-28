@@ -15,4 +15,4 @@ FOUNDATION_EXPORT const unsigned char ZJSDKCoreFramewrokVersionString[];
 
 // In this header, you should import all the public headers of your framework using statements like #import <ZJSDKCoreFramewrok/PublicHeader.h>
 
-
+#import <ZJSDKCoreFramewrok/ZJMediaPlayerStatus.h>
