@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'ZJSDK'
-  s.version          = '2.2.9.2'
+  s.version          = '2.2.10'
   s.summary          = 'ZJSDK广告'
 
 # This description is used to generate tags and improve search results.
@@ -71,9 +71,9 @@ TODO: Add long description of the pod here.
     ss.dependency 'ZJSDK/ZJSDKCore'
 
     ss.dependency 'MintegralAdSDK', '6.7.5.0'
-    ss.dependency 'MintegralAdSDK/RewardVideoAd' , '6.7.5.0'
-    ss.dependency 'MintegralAdSDK/BannerAd', '6.7.5.0'
-    ss.dependency 'MintegralAdSDK/SplashAd', '6.7.5.0'
+    ss.dependency 'MintegralAdSDK/RewardVideoAd'
+    ss.dependency 'MintegralAdSDK/BannerAd'
+    ss.dependency 'MintegralAdSDK/SplashAd'
   end
   
   s.subspec 'ZJSDKModuleDSP' do |ss|
