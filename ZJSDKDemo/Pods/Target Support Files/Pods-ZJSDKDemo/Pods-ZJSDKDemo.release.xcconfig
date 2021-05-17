@@ -1,11 +1,5 @@
 CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = NO
-EXCLUDED_ARCHS[sdk=iphonesimulator*] = arm64
-FRAMEWORK_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/../../ZJSDK/ZJSDKCore" "${PODS_ROOT}/Ads-CN/PangleSDK" "${PODS_ROOT}/KSAdSDK" "${PODS_ROOT}/MintegralAdSDK/Fmk"
 GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
-HEADER_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/GDTMobSDK" $(SDKROOT)/usr/include/libxml2
-LD_RUNPATH_SEARCH_PATHS = $(inherited) '@executable_path/Frameworks' '@loader_path/Frameworks'
-LIBRARY_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/../../ZJSDK/ZJSDKModuleCSJ" "${PODS_ROOT}/../../ZJSDK/ZJSDKModuleDSP" "${PODS_ROOT}/../../ZJSDK/ZJSDKModuleGDT" "${PODS_ROOT}/../../ZJSDK/ZJSDKModuleKS" "${PODS_ROOT}/../../ZJSDK/ZJSDKModuleMTG" "${PODS_ROOT}/GDTMobSDK/lib"
-OTHER_LDFLAGS = $(inherited) -ObjC -l"GDTMobSDK" -l"ZJSDKModuleCSJ" -l"ZJSDKModuleDSP" -l"ZJSDKModuleGDT" -l"ZJSDKModuleKS" -l"ZJSDKModuleMTG" -l"bz2" -l"c++" -l"c++abi" -l"iconv" -l"resolv" -l"resolv.9" -l"sqlite3" -l"xml2" -l"z" -framework "AVFoundation" -framework "AVKit" -framework "Accelerate" -framework "AdSupport" -framework "AudioToolBox" -framework "AudioToolbox" -framework "BUAdSDK" -framework "BUCNAuxiliary" -framework "BUFoundation" -framework "CoreData" -framework "CoreGraphics" -framework "CoreLocation" -framework "CoreMedia" -framework "CoreMotion" -framework "CoreTelephony" -framework "Foundation" -framework "ImageIO" -framework "JavaScriptCore" -framework "KSAdSDK" -framework "MTGSDK" -framework "MTGSDKBanner" -framework "MTGSDKReward" -framework "MTGSDKSplash" -framework "MapKit" -framework "MediaPlayer" -framework "MessageUI" -framework "MobileCoreServices" -framework "QuartzCore" -framework "QuickLook" -framework "Security" -framework "StoreKit" -framework "SystemConfiguration" -framework "UIKit" -framework "WebKit" -framework "ZJSDK" -framework "ZJSDKCoreFramewrok" -weak_framework "WebKit"
 PODS_BUILD_DIR = ${BUILD_DIR}
 PODS_CONFIGURATION_BUILD_DIR = ${PODS_BUILD_DIR}/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)
 PODS_PODFILE_DIR_PATH = ${SRCROOT}/.
