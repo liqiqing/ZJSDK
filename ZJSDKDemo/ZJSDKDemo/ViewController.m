@@ -98,7 +98,7 @@
 
 -(NSArray*) adTypes{
     if(!_adTypes){
-        _adTypes = [NSArray arrayWithObjects:@"开屏广告",@"激励视频",@"插屏",@"全屏视频广告",@"Banner",@"全屏视频流",@"模板信息流",@"H5内容",@"自渲染", nil];
+        _adTypes = [NSArray arrayWithObjects:@"开屏广告",@"激励视频",@"插屏",@"全屏视频广告",@"Banner",@"全屏视频流",@"模板信息流",@"H5内容",@"自渲染",@"视频内容", nil];
     }
     return _adTypes;;
 }
@@ -116,6 +116,7 @@
         [_ads setValue:@"ZJBannerAdViewController" forKey:@"Banner"];
         [_ads setValue:@"ZJNativeAdSelectedViewController" forKey:@"自渲染"];
         [_ads setValue:@"ZJFullScreenVideoViewController" forKey:@"全屏视频广告"];
+        [_ads setValue:@"ZJContentPageViewController" forKey:@"视频内容"];
         
     }
     return _ads;;
