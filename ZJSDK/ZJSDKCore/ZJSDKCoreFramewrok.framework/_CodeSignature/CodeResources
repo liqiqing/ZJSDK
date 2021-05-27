@@ -10,7 +10,7 @@
 		</data>
 		<key>Headers/ZJAd.h</key>
 		<data>
-		q+7zj3r/Bhmqdrs8OGxPsORcGms=
+		VAIumAS48Ue2PcE/Q/J0VECJYeU=
 		</data>
 		<key>Headers/ZJAdDelegate.h</key>
 		<data>
@@ -150,7 +150,7 @@
 		</data>
 		<key>Headers/ZJSDKCoreConfig.h</key>
 		<data>
-		+lWOEJuUD9eVXXsdP/yaoNrExUw=
+		BXpJ9GXgLBWr2c4qLOso5053bq8=
 		</data>
 		<key>Headers/ZJSDKCoreFramewrok.h</key>
 		<data>
@@ -174,7 +174,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		CWeC6xLTXDtag54Eyho8V1Hq6fU=
+		DY2+28Le+49ngZ7W44CeWFYOKnw=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -198,11 +198,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			q+7zj3r/Bhmqdrs8OGxPsORcGms=
+			VAIumAS48Ue2PcE/Q/J0VECJYeU=
 			</data>
 			<key>hash2</key>
 			<data>
-			9cx/VoMvz623JsMEvdPBemOsMfWvwPJ9348CpaS8kU0=
+			ilzh/zvlGGcj+5Yc51dkMSuxxNl/uRrbixZxqQXl2Ks=
 			</data>
 		</dict>
 		<key>Headers/ZJAdDelegate.h</key>
@@ -583,11 +583,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			+lWOEJuUD9eVXXsdP/yaoNrExUw=
+			BXpJ9GXgLBWr2c4qLOso5053bq8=
 			</data>
 			<key>hash2</key>
 			<data>
-			s7dkbzFONpDrBHUxhNO4tVr0+vxw/YYTbMYhjVHwY28=
+			Y8s6B7ltgSlvJZvFXdNGQGRARYN0L7WRx+MNLBRunoQ=
 			</data>
 		</dict>
 		<key>Headers/ZJSDKCoreFramewrok.h</key>

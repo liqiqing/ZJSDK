@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'ZJSDK'
-  s.version          = '2.2.10.1'
+  s.version          = '2.2.11'
   s.summary          = 'ZJSDK广告'
 
 # This description is used to generate tags and improve search results.

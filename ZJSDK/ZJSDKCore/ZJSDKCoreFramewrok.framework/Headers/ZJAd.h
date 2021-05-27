@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
+#import <ZJSDKCoreFramewrok/ZJAdItemConfig.h>
 NS_ASSUME_NONNULL_BEGIN
 
 @interface ZJAd : NSObject
@@ -18,6 +19,9 @@ NS_ASSUME_NONNULL_BEGIN
 *  详解：placementId - 广告位 ID
 */
 - (instancetype)initWithPlacementId:(NSString *)placementId;
+
+
+- (NSError *)errorWithLackOfDependentLibraries:(ZJAdPlatformType)platformType;
 
 @end
 

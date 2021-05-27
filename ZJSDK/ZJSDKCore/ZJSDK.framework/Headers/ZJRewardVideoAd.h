@@ -17,6 +17,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (instancetype)initWithPlacementId:(NSString *)placementId userId:(NSString *)userId;
 
+
+-(instancetype)initWithPlacementId:(NSString *)placementId NS_UNAVAILABLE;
+
 @end
 
 NS_ASSUME_NONNULL_END

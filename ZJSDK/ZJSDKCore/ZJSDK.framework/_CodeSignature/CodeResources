@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/ZJAdSDK.h</key>
 		<data>
-		bSESrGJycI7/2TdvZPzZpbJD1Pg=
+		2X6raLWINlDdVg6QtIKU4M1RoPA=
 		</data>
 		<key>Headers/ZJBannerAdView.h</key>
 		<data>
@@ -54,7 +54,7 @@
 		</data>
 		<key>Headers/ZJRewardVideoAd.h</key>
 		<data>
-		j9OccRzgGSUpiTz8Ps9JQ5lQjFs=
+		zpLRktqlCppH/xqijCuGcE5wdKE=
 		</data>
 		<key>Headers/ZJRewardVideoAdDelegate.h</key>
 		<data>
@@ -90,7 +90,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		6i40HEJp1TTMeBRCpDybpABUAOY=
+		24/uvpb0V6Q6PJMNyhgphlJFd3Q=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -103,11 +103,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			bSESrGJycI7/2TdvZPzZpbJD1Pg=
+			2X6raLWINlDdVg6QtIKU4M1RoPA=
 			</data>
 			<key>hash2</key>
 			<data>
-			4CtreImZAzCH7Zr2xySSoJ3RRON1lYyw7JHqvgwi8m0=
+			2PvH2UryCfdddgE66OYdePgBXcAMI7dNsuGmzMuG9yo=
 			</data>
 		</dict>
 		<key>Headers/ZJBannerAdView.h</key>
@@ -235,11 +235,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			j9OccRzgGSUpiTz8Ps9JQ5lQjFs=
+			zpLRktqlCppH/xqijCuGcE5wdKE=
 			</data>
 			<key>hash2</key>
 			<data>
-			TunZEZgcbp/+ONwaZDD6Cf7Ae4wad/sk0vkfl2Pr9Os=
+			ql4hW49G7kGBUMQfL+Yn73u9GJGQv5Wr7IJ5W6cvpuM=
 			</data>
 		</dict>
 		<key>Headers/ZJRewardVideoAdDelegate.h</key>
