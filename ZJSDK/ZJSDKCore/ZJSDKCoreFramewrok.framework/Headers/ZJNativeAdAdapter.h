@@ -6,7 +6,6 @@
 //
 
 #import "ZJCoreAdAdapter.h"
-#import "ZJNativeAdProtocol.h"
 #import "ZJNativeAdObject.h"
 NS_ASSUME_NONNULL_BEGIN
 @protocol ZJNativeAdAdapterDelegate <NSObject>
@@ -23,7 +22,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 
 
-@interface ZJNativeAdAdapter : ZJCoreAdAdapter<ZJNativeAdProtocol>
+@interface ZJNativeAdAdapter : ZJCoreAdAdapter
 
 @property (nonatomic,weak)id <ZJNativeAdAdapterDelegate> delegate;
 
@@ -34,6 +33,8 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)nativeAdLoaded:(NSArray<ZJNativeAdObject *> * _Nullable)nativeAdObjects error:(NSError * _Nullable)error;
 
 
+
+-(void)loadAdWithCount:(NSInteger)adCount;
 
 @end
 

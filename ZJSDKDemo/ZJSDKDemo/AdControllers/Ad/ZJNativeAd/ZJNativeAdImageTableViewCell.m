@@ -27,10 +27,8 @@
     
     self.fillView.delegate = delegate; // adView 广告回调
     self.fillView.viewController = vc; // 跳转 VC
-    if (!self.adView) {
-        self.adView = [self.fillView registerDataObject:dataObject];
-        [self.contentView addSubview:self.adView];
-    }
+    [self.fillView registerDataObject:dataObject];
+    [self.contentView addSubview:self.fillView];
 }
 
 + (CGFloat)cellHeightWithUnifiedNativeAdDataObject:(ZJNativeAdObject *)dataObject

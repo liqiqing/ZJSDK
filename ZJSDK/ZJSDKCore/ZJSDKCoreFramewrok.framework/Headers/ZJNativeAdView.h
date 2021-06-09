@@ -9,19 +9,18 @@
 #import "ZJNativeAdObject.h"
 NS_ASSUME_NONNULL_BEGIN
 
+@class ZJNativeAdView;
 @protocol ZJNativeAdViewDelegate <NSObject>
 @optional
 //广告曝光回调
--(void)zj_nativeAdViewWillExpose:(UIView *)nativeAdView;
+-(void)zj_nativeAdViewWillExpose:(ZJNativeAdView *)nativeAdView;
 //广告点击回调
--(void)zj_nativeAdViewDidClick:(UIView *)nativeAdView;
+-(void)zj_nativeAdViewDidClick:(ZJNativeAdView *)nativeAdView;
 //广告详情页关闭回调
--(void)zj_nativeAdDetailViewClosed:(UIView *)nativeAdView;
+-(void)zj_nativeAdDetailViewClosed:(ZJNativeAdView *)nativeAdView;
 //广告详情页面即将展示回调
--(void)zj_nativeAdDetailViewWillPresentScreen:(UIView *)nativeAdView;
+-(void)zj_nativeAdDetailViewWillPresentScreen:(ZJNativeAdView *)nativeAdView;
 
-//当点击应用下载或者广告调用系统程序打开时调用
--(void)zj_NativeAdViewApplicationWillEnterBackground:(UIView *)nativeAdView;
 @end
 
 
@@ -42,12 +41,14 @@ NS_ASSUME_NONNULL_BEGIN
   视频广告的媒体View，绑定数据对象后自动生成，可自定义布局
  */
 @property (nonatomic,strong)UIView *videoAdView;
+
+
+
 /**
  自渲染2.0视图注册方法
  @param dataObject 数据对象，必传字段
  */
--(UIView *)registerDataObject:(ZJNativeAdObject *)dataObject;
-
+- (void)registerDataObject:(ZJNativeAdObject *)dataObject;
 
 
 /**
@@ -57,6 +58,7 @@ NS_ASSUME_NONNULL_BEGIN
  @param callToActionView CTA视图, 系统自动处理点击事件
  */
 - (void)registerClickableCallToActionView:(UIView *)callToActionView;
+
 
 /**
  注销数据对象，在 tableView、collectionView 等场景需要复用 GDTUnifiedNativeAdView 时，

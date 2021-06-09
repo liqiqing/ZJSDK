@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import <ZJSDKCoreFramewrok/ZJBannerAdProtocol.h>
+#import <ZJSDKCoreFramewrok/ZJAd.h>
 NS_ASSUME_NONNULL_BEGIN
 @class ZJBannerAdView;
 @protocol ZJBannerAdViewDelegate <NSObject>

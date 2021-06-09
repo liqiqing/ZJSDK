@@ -16,7 +16,7 @@
     
     self.fillView.viewController = vc;
     self.fillView.delegate = delegate;
-    if (!self.adView) {
+    if (!self.fillView) {
         CGFloat imageWidth = (ScreenWidth-20)/3.0;
         CGFloat imageHeight = imageWidth *(@(dataObject.imageHeight).floatValue/@(dataObject.imageWidth).floatValue);
         for (int i = 0; i<dataObject.mediaUrlList.count; i++) {
@@ -36,8 +36,8 @@
         }
         
         
-        self.adView = [self.fillView registerDataObject:dataObject];
-        [self.contentView addSubview:self.adView];
+        [self.fillView registerDataObject:dataObject];
+        [self.contentView addSubview:self.fillView];
     }
 }
 

@@ -17,12 +17,10 @@
     self.fillView.viewController = vc;
     self.fillView.delegate = delegate;
     
-   
-    if (!self.adView) {
-        self.adView = [self.fillView registerDataObject:dataObject];
-        self.fillView.videoAdView.frame = CGRectMake(0, ZJNativeTopHeight, self.frame.size.width, 150);
-        [self.contentView addSubview:self.adView];
-    }
+    [self.fillView registerDataObject:dataObject];
+    self.fillView.videoAdView.frame = CGRectMake(0, ZJNativeTopHeight, self.frame.size.width, 150);
+    [self.contentView addSubview:self.fillView];
+    
 }
 
 

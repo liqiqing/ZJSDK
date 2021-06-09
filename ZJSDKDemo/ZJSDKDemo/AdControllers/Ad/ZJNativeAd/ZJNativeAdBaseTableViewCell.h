@@ -15,7 +15,7 @@ NS_ASSUME_NONNULL_BEGIN
 @interface ZJNativeAdBaseTableViewCell : UITableViewCell
 
 @property (nonatomic,strong)ZJFillNativeAdView *fillView;
-@property (nonatomic,strong)UIView *adView;
+//@property (nonatomic,strong)UIView *adView;
 
 
 

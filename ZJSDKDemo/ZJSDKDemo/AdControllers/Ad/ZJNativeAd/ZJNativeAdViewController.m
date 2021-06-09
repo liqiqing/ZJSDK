@@ -109,7 +109,9 @@
     
 }
 
-
+-(void)dealloc{
+    
+}
 #pragma mark - ZJNativeAdViewDelegate
 //广告曝光回调
 -(void)zj_nativeAdViewWillExpose:(UIView *)nativeAdView{

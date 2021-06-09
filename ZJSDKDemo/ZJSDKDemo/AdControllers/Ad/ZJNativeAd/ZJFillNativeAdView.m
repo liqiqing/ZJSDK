@@ -69,7 +69,8 @@
     return self;
 }
 
--(UIView *)registerDataObject:(ZJNativeAdObject *)dataObject {
+
+-(void)registerDataObject:(ZJNativeAdObject *)dataObject{
     self.titleLabel.text = dataObject.title.length > 0?dataObject.title:@"广告标题";
     self.descLabel.text = dataObject.desc;
     
@@ -167,9 +168,12 @@
         [_clickButton setTitleColor:[UIColor redColor] forState:UIControlStateNormal];
         [_clickButton setBackgroundColor:[[UIColor yellowColor] colorWithAlphaComponent:0.4]];
         _clickButton.accessibilityIdentifier = @"clickButton_id";
+        
     }
     return _clickButton;
 }
+
+
 
 - (UIImageView *)appIconImageView
 {

@@ -17,6 +17,8 @@ NS_ASSUME_NONNULL_BEGIN
 //交易ID
 @property(nonatomic,copy,readonly) NSString *trans_id;
 
+@property (nonatomic) BOOL videoMuted;
+
 @property(nonatomic,copy) NSString *extra;
 
 //验证dic

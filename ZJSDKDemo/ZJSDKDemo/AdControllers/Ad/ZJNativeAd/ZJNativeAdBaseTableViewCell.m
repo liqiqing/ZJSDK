@@ -33,9 +33,9 @@
     [super prepareForReuse];
     [self.fillView unregisterDataObject];
 //    [self.fillView removeFromSuperview];
-    [self.adView removeFromSuperview];
+//    [self.adView removeFromSuperview];
 //    _fillView = nil;
-    _adView = nil;
+//    _adView = nil;
 }
     
 -(void)dealloc{
