@@ -33,12 +33,11 @@
     closeButton.titleLabel.textColor = [UIColor whiteColor];
     closeButton.titleLabel.font = [UIFont boldSystemFontOfSize:26];
     closeButton.frame = CGRectMake(6, 44, 64, 64);
+    __weak typeof(self)weakSelf = self;
     [closeButton clickHandle:^(UIButton *button) {
-        [self.navigationController popViewControllerAnimated:NO];
+        [weakSelf.navigationController popViewControllerAnimated:NO];
     }];
-    
     [self.view addSubview:closeButton];
-    
     NSMutableArray *datas = [NSMutableArray array];
     for (NSInteger i =0 ; i <= 5; i++) {
         [datas addObject:@"App tableViewcell"];

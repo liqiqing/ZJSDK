@@ -20,12 +20,13 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     [self.view addSubview:self.loadAdView];
+    __weak typeof(self)weakSelf = self;
     [self.loadAdView.loadButton clickHandle:^(UIButton *button) {
-        [self loadAd:self.loadAdView.adIDTextField.text];
+        [weakSelf loadAd:self.loadAdView.adIDTextField.text];
     }];
 
     [self.loadAdView.showButton clickHandle:^(UIButton *button) {
-        [self showAd];
+        [weakSelf showAd];
     }];
 }
 

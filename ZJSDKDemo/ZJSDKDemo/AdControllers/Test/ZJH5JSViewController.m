@@ -20,8 +20,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self.view addSubview:self.loadAdView];
+    __weak typeof(self)weakSelf = self;
     [self.loadAdView.loadButton clickHandle:^(UIButton *button) {
-        [self loadAd:self.loadAdView.adTextView.text];
+        [weakSelf loadAd:self.loadAdView.adTextView.text];
     }];
     
     [self.loadAdView appendAdID:@[
