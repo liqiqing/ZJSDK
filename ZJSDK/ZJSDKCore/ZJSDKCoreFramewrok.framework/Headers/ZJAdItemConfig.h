@@ -25,6 +25,8 @@ typedef NS_ENUM(NSInteger,ZJAdPlatformType){
     ZJAdPlatform_MTG,
     ZJAdPlatform_KS,
     ZJAdPlatform_ZJ,
+    ZJAdPlatform_YM,
+    ZJAdPlatform_WW,
 };
 
 @interface ZJAdItemConfig : NSObject<NSCoding>
