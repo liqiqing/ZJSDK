@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'ZJSDK'
-  s.version          = '2.2.13'
+  s.version          = '2.3.0'
   s.summary          = 'ZJSDK广告'
 
 # This description is used to generate tags and improve search results.
@@ -81,6 +81,15 @@ TODO: Add long description of the pod here.
   s.subspec 'ZJSDKModuleDSP' do |ss|
     ss.vendored_libraries = 'ZJSDK/ZJSDKModuleDSP/*.a'
     ss.resource = 'ZJSDK/ZJSDKModuleDSP/*.bundle'
+    ss.dependency 'ZJSDK/ZJSDKCore'
+  end
+  
+  s.subspec 'ZJSDKModuleYM' do |ss|
+    ss.vendored_libraries = 'ZJSDK/ZJSDKModuleYM/*.a'
+    
+    ss.vendored_frameworks = 'ZJSDK/ZJSDKModuleYM/*.framework'
+    ss.preserve_paths = 'ZJSDK/ZJSDKModuleYM/*.framework'
+    ss.resources = 'ZJSDK/ZJSDKModuleYM/AlicloudCloudCode.framework/AlicloudCloudCode.bundle'
     ss.dependency 'ZJSDK/ZJSDKCore'
   end
  

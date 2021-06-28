@@ -40,7 +40,7 @@ typedef NS_ENUM(NSInteger,ZJAdPlatformType){
 @property(nonatomic,strong) NSDictionary *params;
 
 @property(nonatomic,assign)BOOL is_service;
-
+@property(nonatomic,assign)BOOL is_enable;
 -(instancetype) initWith:(NSDictionary *) dic;
 @end
 
