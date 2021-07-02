@@ -35,6 +35,7 @@ pod 'ZJSDK/ZJSDKModuleGDT'#优量汇广告
 pod 'ZJSDK/ZJSDKModuleCSJ'#穿山甲广告
 pod 'ZJSDK/ZJSDKModuleKS'#快手广告
 pod 'ZJSDK/ZJSDKModuleMTG'#MTG广告
+pod 'ZJSDK/ZJSDKModuleYM'#云码广告
 ```
 
 **2.手动方式**

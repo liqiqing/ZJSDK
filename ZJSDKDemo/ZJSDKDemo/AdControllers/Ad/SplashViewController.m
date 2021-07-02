@@ -60,7 +60,7 @@
  */
 - (void)zj_splashAdClicked:(ZJSplashAd *)splashAd{
     NSLog(@"%s",__FUNCTION__);
-    [self close];
+//    [self close];
 }
 
 /**
