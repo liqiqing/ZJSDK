@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 50;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -64,7 +64,6 @@
 		573A1345259AD788002023F8 /* ZJFeedFullVideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 573A132E259AD788002023F8 /* ZJFeedFullVideoViewController.m */; };
 		573A134B259AD788002023F8 /* ZJInterstitialAdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 573A133F259AD788002023F8 /* ZJInterstitialAdViewController.m */; };
 		573A134C259AD788002023F8 /* ZjRewardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 573A1340259AD788002023F8 /* ZjRewardViewController.m */; };
-		573A134D259AD788002023F8 /* SplashViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 573A1341259AD788002023F8 /* SplashViewController.m */; };
 		573A134E259AD788002023F8 /* ZJH5ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 573A1342259AD788002023F8 /* ZJH5ViewController.m */; };
 		573A134F259AD788002023F8 /* ZJFeedFullVideoShowViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 573A1343259AD788002023F8 /* ZJFeedFullVideoShowViewController.m */; };
 		573A1350259AD788002023F8 /* ZjSplashViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 573A1344259AD788002023F8 /* ZjSplashViewController.m */; };
@@ -260,7 +259,6 @@
 		5737C49B259C1A1A00CB6525 /* UIView+ZJExtension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+ZJExtension.m"; sourceTree = "<group>"; };
 		573A132C259AD788002023F8 /* ZJInterstitialAdViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZJInterstitialAdViewController.h; sourceTree = "<group>"; };
 		573A132E259AD788002023F8 /* ZJFeedFullVideoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZJFeedFullVideoViewController.m; sourceTree = "<group>"; };
-		573A132F259AD788002023F8 /* SplashViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SplashViewController.h; sourceTree = "<group>"; };
 		573A1330259AD788002023F8 /* ZjRewardViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZjRewardViewController.h; sourceTree = "<group>"; };
 		573A133A259AD788002023F8 /* ZjSplashViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZjSplashViewController.h; sourceTree = "<group>"; };
 		573A133B259AD788002023F8 /* ZJFeedFullVideoShowViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZJFeedFullVideoShowViewController.h; sourceTree = "<group>"; };
@@ -268,7 +266,6 @@
 		573A133D259AD788002023F8 /* ZJFeedFullVideoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZJFeedFullVideoViewController.h; sourceTree = "<group>"; };
 		573A133F259AD788002023F8 /* ZJInterstitialAdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZJInterstitialAdViewController.m; sourceTree = "<group>"; };
 		573A1340259AD788002023F8 /* ZjRewardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZjRewardViewController.m; sourceTree = "<group>"; };
-		573A1341259AD788002023F8 /* SplashViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SplashViewController.m; sourceTree = "<group>"; };
 		573A1342259AD788002023F8 /* ZJH5ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZJH5ViewController.m; sourceTree = "<group>"; };
 		573A1343259AD788002023F8 /* ZJFeedFullVideoShowViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZJFeedFullVideoShowViewController.m; sourceTree = "<group>"; };
 		573A1344259AD788002023F8 /* ZjSplashViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZjSplashViewController.m; sourceTree = "<group>"; };
@@ -661,8 +658,6 @@
 			isa = PBXGroup;
 			children = (
 				576657772652164700C2C239 /* ZJContentPage */,
-				573A132F259AD788002023F8 /* SplashViewController.h */,
-				573A1341259AD788002023F8 /* SplashViewController.m */,
 				573A133B259AD788002023F8 /* ZJFeedFullVideoShowViewController.h */,
 				573A1343259AD788002023F8 /* ZJFeedFullVideoShowViewController.m */,
 				573A133D259AD788002023F8 /* ZJFeedFullVideoViewController.h */,
@@ -1120,7 +1115,6 @@
 				0077472124E182A200C30636 /* main.m in Sources */,
 				573A134E259AD788002023F8 /* ZJH5ViewController.m in Sources */,
 				576EF88D261DA0EF00512AF7 /* SDImageCachesManagerOperation.m in Sources */,
-				573A134D259AD788002023F8 /* SplashViewController.m in Sources */,
 				576EF86E261DA0EF00512AF7 /* SDWebImagePrefetcher.m in Sources */,
 				576EF870261DA0EF00512AF7 /* NSButton+WebCache.m in Sources */,
 				576EF86D261DA0EF00512AF7 /* SDWebImageError.m in Sources */,

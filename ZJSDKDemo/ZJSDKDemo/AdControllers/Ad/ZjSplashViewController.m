@@ -32,7 +32,7 @@
     
     self.splashAd.delegate = self;
     self.splashAd.fetchDelay = 3.0;
-    //self.splashAd.bottomViewSize = CGSizeMake([UIScreen mainScreen].bounds.size.width, 70);
+    self.splashAd.bottomViewSize = CGSizeMake([UIScreen mainScreen].bounds.size.width, 70);
     [self.splashAd loadAd];
 }
 

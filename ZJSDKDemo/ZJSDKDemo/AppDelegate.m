@@ -9,11 +9,15 @@
 #import "AppDelegate.h"
 #import "ViewController.h"
 #import <ZJSDK/ZJAdSDK.h>
-#import "SplashViewController.h"
 #import "Aspects.h"
-@interface AppDelegate ()<SplashViewControllerDelegate>
+#import <ZJSDK/ZJSDK.h>
+@interface AppDelegate ()<ZJSplashAdDelegate>
 
 @property(nonatomic,strong) UIWindow *showWindow;
+
+@property (nonatomic,strong)ZJSplashAd *splashAd;
+@property (nonatomic,strong)UIView *bottomView;
+@property (nonatomic,strong)UIImageView *splashBgImageView;
 @end
 
 @implementation AppDelegate
@@ -30,35 +34,19 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
-    
+    [ZJAdSDK registerAppId:@"zj_20201014iOSDEMO"];
+    NSString *version = [ZJAdSDK SDKVersion];
     
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     self.window.backgroundColor = [UIColor whiteColor];
-    
-    SplashViewController *splashVC = [[SplashViewController alloc] init];
-    splashVC.delegate = self;
-    
-   
-    self.window.rootViewController = splashVC;
-    
-    [ZJAdSDK registerAppId:@"zj_20201014iOSDEMO"];
-    NSString *sdkVersion = [ZJAdSDK SDKVersion];
-    //com.zj.shop.towmall.hwxs
-    //zj_20201014iOSDEMO
-
-   
+    UINavigationController *nc = [[UINavigationController alloc] initWithRootViewController:[[ViewController alloc] init]];
+    self.window.rootViewController = nc;
     [self.window makeKeyAndVisible];
     
-   
+    [self showSplashAd];
     return YES;
 }
 
--(void) splashViewControllerClosed{
-    UINavigationController *nc = [[UINavigationController alloc] initWithRootViewController:[[ViewController alloc] init]];
-    self.window.rootViewController = nc;
-    UIViewController *vc  = [[NSClassFromString(@"ZjSplashViewController") alloc] init];
-    self.showWindow.rootViewController = vc;
-}
 
 
 - (void)applicationWillResignActive:(UIApplication *)application
@@ -89,6 +77,99 @@
 }
 
 
+-(void)showSplashAd{
+    [self.window addSubview:self.splashBgImageView];
+    
+    self.splashAd = [[ZJSplashAd alloc]initWithPlacementId:@"J5621495755"];
+    self.splashAd.fetchDelay = 5;
+    self.splashAd.delegate = self;
+    self.splashAd.bottomViewSize = self.bottomView.frame.size;
+    [self.splashAd loadAd];
+}
+
+/**
+ *  开屏广告素材加载成功
+ */
+-(void)zj_splashAdDidLoad:(ZJSplashAd *)splashAd{
+    NSLog(@"kpgg------加载成功");
+    [self.splashAd showAdInWindow:[UIApplication sharedApplication].keyWindow withBottomView:self.bottomView];
+    [self.splashBgImageView removeFromSuperview];
+}
+
+/**
+ *  开屏广告成功展示
+ */
+-(void)zj_splashAdSuccessPresentScreen:(ZJSplashAd *)splashAd{
+    NSLog(@"kpgg-----展示成功");
+    [self.splashBgImageView removeFromSuperview];
+}
+
+/**
+ *  开屏广告点击回调
+ */
+- (void)zj_splashAdClicked:(ZJSplashAd *)splashAd{
+    NSLog(@"kpgg-----点击广告");
+    [self.splashBgImageView removeFromSuperview];
+}
+
+/**
+ *  开屏广告关闭回调
+ */
+- (void)zj_splashAdClosed:(ZJSplashAd *)splashAd{
+    NSLog(@"kpgg-----开屏关闭");
+    [self.splashBgImageView removeFromSuperview];
+}
+
+/**
+ *  应用进入后台时回调
+ *  详解: 当点击下载应用时会调用系统程序打开，应用切换到后台
+ */
+- (void)zj_splashAdApplicationWillEnterBackground:(ZJSplashAd *)splashAd{
+    NSLog(@"kpgg-----切换到后台");
+    [self.splashBgImageView removeFromSuperview];
+}
+
+/**
+ * 开屏广告倒记时结束
+ */
+- (void)zj_splashAdCountdownEnd:(ZJSplashAd*)splashAd{
+    NSLog(@"kpgg-----倒计时结束");
+    [self.splashBgImageView removeFromSuperview];
+}
+
+/**
+ *  开屏广告错误
+ */
+- (void)zj_splashAdError:(ZJSplashAd *)splashAd withError:(NSError *)error{
+    NSLog(@"kpgg-----广告错误：%@",error);
+    [self.splashBgImageView removeFromSuperview];
+}
+
+-(UIImageView *)splashBgImageView{
+    if (!_splashBgImageView) {
+        _splashBgImageView = [[UIImageView alloc]initWithFrame:CGRectMake(0, 0, ScreenWidth, ScreenHeight)];
+        _splashBgImageView.image = [UIImage imageNamed:@"SplashBgX"];
+        
+    }
+    return _splashBgImageView;
+}
+
+-(UIView *)bottomView{
+    if (!_bottomView) {
+        _bottomView = [[UIView alloc]initWithFrame:CGRectMake(0, 0, ScreenWidth, 100)];
+        _bottomView.backgroundColor = [UIColor whiteColor];
+        
+        UILabel *titleLabel = [[UILabel alloc]init];
+        titleLabel.textColor = [UIColor brownColor];
+        titleLabel.font = [UIFont boldSystemFontOfSize:24];
+        titleLabel.text = @"LOGO";
+        [_bottomView addSubview:titleLabel];
+        [titleLabel mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.center.mas_equalTo(0);
+        }];
+    }
+    return _bottomView;
+}
 
 
 @end
