@@ -72,7 +72,7 @@ TODO: Add long description of the pod here.
     ss.vendored_libraries = 'ZJSDK/ZJSDKModuleMTG/*.a'
     ss.dependency 'ZJSDK/ZJSDKCore'
 
-    ss.dependency 'MintegralAdSDK', '~> 6.9'
+    ss.dependency 'MintegralAdSDK', '6.9.4.0'
     ss.dependency 'MintegralAdSDK/RewardVideoAd'
     ss.dependency 'MintegralAdSDK/BannerAd'
     ss.dependency 'MintegralAdSDK/SplashAd'
