@@ -24,6 +24,10 @@
 		<data>
 		CeF7xwjzIpmBQbQda+DErpgcdMk=
 		</data>
+		<key>Headers/ZJFloatingAdView.h</key>
+		<data>
+		8m8wGIbfmlEEJlETd/V+S6C6JhE=
+		</data>
 		<key>Headers/ZJFullScreenVideoAd.h</key>
 		<data>
 		ssxqODi/ksNpqYgl6rxu1COn/Lw=
@@ -90,7 +94,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		JqMSQaDNc9xGvD5d6nU5mO7Y6BM=
+		54ygjfdl2dYpv0cw8osqLO2n5ds=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -152,6 +156,17 @@
 			<key>hash2</key>
 			<data>
 			DvHzY6RB2R3ZBSt7VfRkzfb/fTqfBGyi+LBaaLsSUuw=
+			</data>
+		</dict>
+		<key>Headers/ZJFloatingAdView.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			8m8wGIbfmlEEJlETd/V+S6C6JhE=
+			</data>
+			<key>hash2</key>
+			<data>
+			X0QD1EQru5gYPAPqHCMgLvHhd0Zk0R43V1bGIOpZKMU=
 			</data>
 		</dict>
 		<key>Headers/ZJFullScreenVideoAd.h</key>

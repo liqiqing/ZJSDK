@@ -8,32 +8,42 @@
 
 #import <Foundation/Foundation.h>
 
+#if __has_include(<KSAdSDK/KSAdPos.h>)
 #import <KSAdSDK/KSAdPos.h>
-#import <KSAdSDK/KSAdSDKManager.h>
-#import <KSAdSDK/KSAdSDKError.h>
-#import <KSAdSDK/KSAdExportManager.h>
+#endif
 
+#if __has_include(<KSAdSDK/KSAdSDKError.h>)
+#import <KSAdSDK/KSAdSDKError.h>
+#endif
+
+#if __has_include(<KSAdSDK/KSMaterialMeta.h>)
+#import <KSAdSDK/KSMaterialMeta.h>
+#endif
+
+#if __has_include(<KSAdSDK/KSAdImage.h>)
+#import <KSAdSDK/KSAdImage.h>
+#endif
+
+#if __has_include(<KSAdSDK/KSAdUserInfo.h>)
+#import <KSAdSDK/KSAdUserInfo.h>
+#endif
+
+#import <KSAdSDK/KSAdSDKManager.h>
+#import <KSAdSDK/KSAdExportManager.h>
 #import <KSAdSDK/KSFullscreenVideoAd.h>
 #import <KSAdSDK/KSRewardedVideoAd.h>
 #import <KSAdSDK/KSRewardedVideoModel.h>
-
 #import <KSAdSDK/KSNativeAd.h>
-#import <KSAdSDK/KSMaterialMeta.h>
 #import <KSAdSDK/KSNativeAdsManager.h>
-#import <KSAdSDK/KSAdImage.h>
 #import <KSAdSDK/KSNativeAdRelatedView.h>
 #import <KSAdSDK/KSVideoAdView.h>
-
 #import <KSAdSDK/KSFeedAd.h>
 #import <KSAdSDK/KSFeedAdsManager.h>
-
 #import <KSAdSDK/KSDrawAd.h>
 #import <KSAdSDK/KSDrawAdsManager.h>
-
 #import <KSAdSDK/KSAdPlayerView.h>
 /// 闪屏广告
 #import <KSAdSDK/KSAdSplashManager.h>
 #import <KSAdSDK/KSSplashAdView.h>
-#import <KSAdSDK/KSAdUserInfo.h>
 /// 插屏广告
 #import <KSAdSDK/KSInterstitialAd.h>

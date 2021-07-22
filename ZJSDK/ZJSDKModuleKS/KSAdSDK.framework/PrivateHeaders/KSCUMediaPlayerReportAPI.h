@@ -4,8 +4,8 @@
 //
 //  Created by jie cai on 2020/7/20.
 //
-#import "KSAdBaseAPI.h"
-#import "KSAdBaseResponse.h"
+#import <KSUNetworking/KSAdBaseAPI.h>
+#import <KSUNetworking/KSAdBaseResponse.h>
 #import <Bolts/Bolts.h>
 
 NS_ASSUME_NONNULL_BEGIN

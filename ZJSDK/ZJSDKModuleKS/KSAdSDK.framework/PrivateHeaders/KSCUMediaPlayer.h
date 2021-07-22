@@ -7,7 +7,7 @@
 #import "KSCUPlayerSDK.h"
 #if HAS_IMPORT_KSMediaPlayer
 #import <Foundation/Foundation.h>
-#import "KSCUPlayerProtocol.h"
+#import <KSCUPlayer/KSCUPlayerProtocol.h>
 
 NS_ASSUME_NONNULL_BEGIN
 /// 集成 KSMediaPlayer 播放器

@@ -7,6 +7,7 @@
 
 #import <Foundation/Foundation.h>
 #import "KSCUCallBackProtocol.h"
+#import "KSCUHotspotDataProtocol.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -15,6 +16,7 @@ NS_ASSUME_NONNULL_BEGIN
 @protocol KSCUVideoStateDelegate;
 @protocol KSCUHotspotPageCallBackProtocol;
 @protocol KSCUHotspotListRequestCallBackProtocol;
+@protocol KSCUHotspotDataProtocol;
 
 @protocol KSCUHotspotPageCallBackProtocol <KSCUContentPageCallBackProtocol>
 
@@ -51,6 +53,10 @@ NS_ASSUME_NONNULL_BEGIN
  themeMode：0：原样式， 1：媒体自定义样式，如果设置了自定义样式，但是未创建对应的模式配置的plist，默认使用联盟的列表样式
  */
 - (void)setThemeMode:(NSInteger)themeMode;
+
+/// 媒体调用，获取热点信息，successBlock会返回热点数据列表
+- (void)loadHotspotData:(void(^)(NSArray<id<KSCUHotspotDataProtocol> > *infos))successBlock
+            failedBlock:(void(^)(NSError *_Nullable error))failedBlock;
 
 @end
 

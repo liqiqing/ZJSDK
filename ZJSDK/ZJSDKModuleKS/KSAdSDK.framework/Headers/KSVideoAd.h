@@ -9,12 +9,7 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 #import "KSAd.h"
-
-
-typedef NS_ENUM(NSInteger, KSAdShowDirection) {
-    KSAdShowDirection_Vertical         = 0,     //竖屏
-    KSAdShowDirection_Horizontal       = 1,     //横屏
-};
+#import "KSAdShowDirection.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -31,8 +26,6 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (BOOL)showAdFromRootViewController:(UIViewController *)rootViewController showScene:(nullable NSString *)showScene;
 - (BOOL)showAdFromRootViewController:(UIViewController *)rootViewController showScene:(nullable NSString *)showScene direction:(KSAdShowDirection)direction DEPRECATED_ATTRIBUTE;
-
-
 
 /*
  这个是播放异常的时候,此方法不会自动调用，可以在

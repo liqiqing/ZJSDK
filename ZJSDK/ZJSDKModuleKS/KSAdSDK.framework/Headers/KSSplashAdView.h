@@ -7,6 +7,11 @@
 
 #import <Foundation/Foundation.h>
 #import "KSAd.h"
+#if __has_include(<KSUModel/KSAdInteractionType.h>)
+#import <KSUModel/KSAdInteractionType.h>
+#else
+#import "KSAdInteractionType.h"
+#endif
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -73,19 +78,25 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface KSSplashAdView : UIView
 
-@property(nonatomic, weak) id<KSSplashAdViewDelegate> delegate;
+@property (nonatomic, weak) id<KSSplashAdViewDelegate> delegate;
 
-@property(nonatomic, weak) UIViewController *rootViewController;
+@property (nonatomic, weak) UIViewController *rootViewController;
 /// max timeout interval, default is 3
-@property(nonatomic, assign) NSTimeInterval timeoutInterval;
+@property (nonatomic, assign) NSTimeInterval timeoutInterval;
 /// need show mini window, default is NO
-@property(nonatomic, assign) BOOL needShowMiniWindow;
+@property (nonatomic, assign) BOOL needShowMiniWindow;
 /// in zoomout state
-@property(nonatomic, assign, readonly) BOOL showingMiniWindow;
+@property (nonatomic, assign, readonly) BOOL showingMiniWindow;
+/// ad interaction type, avaliable after ksad_splashAdContentDidLoad:
+@property (nonatomic, assign, readonly) KSAdInteractionType interactionType;
+/// ad material type, avaliable after ksad_splashAdContentDidLoad:
+@property (nonatomic, assign, readonly) KSAdMaterialType materialType;
 
 - (id)initWithPosId:(NSString *)posId;
-
+/// load ad data
 - (void)loadAdData;
+/// show splash ad in view, should be called after ksad_splashAdContentDidLoad:
+- (void)showInView:(UIView *)view;
 
 @end
 

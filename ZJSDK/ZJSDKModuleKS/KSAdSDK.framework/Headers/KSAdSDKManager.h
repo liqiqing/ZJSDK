@@ -7,7 +7,11 @@
 //
 
 #import <Foundation/Foundation.h>
+#if __has_include(<KSUSDKInfo/KSAdSDKError.h>)
+#import <KSUSDKInfo/KSAdSDKError.h>
+#else
 #import "KSAdSDKError.h"
+#endif
 
 typedef NS_ENUM(NSInteger, KSAdSDKLogLevel) {
     KSAdSDKLogLevelAll      =       0,
@@ -45,6 +49,10 @@ NS_ASSUME_NONNULL_BEGIN
 + (void)setUserInfoBlock:(void(^)(KSAdUserInfo *))userInfoBlock;
 // optional
 + (void)setAppTag:(NSString *)appTag;
+
+// optional, enable personalized recommendation, default is YES
++ (void)setEnablePersonalRecommend:(BOOL)enable;
+
 /**
  Configure development mode.
  @param level : default BUAdSDKLogLevelNone
