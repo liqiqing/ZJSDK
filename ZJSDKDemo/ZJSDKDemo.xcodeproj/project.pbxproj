@@ -578,7 +578,6 @@
 			isa = PBXGroup;
 			children = (
 				001E7283253AA6F40086A93F /* AdViewController.h */,
-				001E7284253AA6F40086A93F /* AdViewController.m */,
 				573A1351259AD790002023F8 /* Test */,
 				573A132B259AD788002023F8 /* Ad */,
 			);
@@ -605,6 +604,7 @@
 		00619497251357B700E09415 /* lib */ = {
 			isa = PBXGroup;
 			children = (
+				001E7284253AA6F40086A93F /* AdViewController.m */,
 				576EF7BF261DA0ED00512AF7 /* SDWebImage */,
 				001E7286253AAC760086A93F /* Masonry */,
 				001E727B2539F4220086A93F /* Aspects.h */,

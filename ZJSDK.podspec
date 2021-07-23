@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'ZJSDK'
-  s.version          = '2.3.4'
+  s.version          = '2.3.5'
   s.summary          = 'ZJSDK广告'
 
 # This description is used to generate tags and improve search results.
@@ -56,16 +56,17 @@ TODO: Add long description of the pod here.
   s.subspec 'ZJSDKModuleCSJ' do |ss|
     ss.vendored_libraries = 'ZJSDK/ZJSDKModuleCSJ/*.a'
     ss.dependency 'ZJSDK/ZJSDKCore'
-    ss.dependency 'Ads-CN', '~> 3.6'
+    ss.dependency 'Ads-CN', '~> 3.7'
   end
-  
+#
   s.subspec 'ZJSDKModuleKS' do |ss|
     ss.vendored_libraries = 'ZJSDK/ZJSDKModuleKS/*.a'
     ss.dependency 'ZJSDK/ZJSDKCore'
+    
 #    ss.vendored_frameworks = 'ZJSDK/ZJSDKModuleKS/KSAdSDK.xcframework'
     ss.vendored_frameworks = 'ZJSDK/ZJSDKModuleKS/KSAdSDK.framework'
     ss.preserve_paths = 'ZJSDK/ZJSDKModuleKS/KSAdSDK.framework'
-#    ss.dependency 'KSAdSDK', '~> 3.3'
+#    ss.dependency 'KSAdSDK', '3.3.10'
   end
   
   s.subspec 'ZJSDKModuleMTG' do |ss|
@@ -86,7 +87,7 @@ TODO: Add long description of the pod here.
   
   s.subspec 'ZJSDKModuleYM' do |ss|
     ss.vendored_libraries = 'ZJSDK/ZJSDKModuleYM/*.a'
-    
+
     ss.vendored_frameworks = 'ZJSDK/ZJSDKModuleYM/*.framework'
     ss.preserve_paths = 'ZJSDK/ZJSDKModuleYM/*.framework'
     ss.resources = 'ZJSDK/ZJSDKModuleYM/AlicloudCloudCode.framework/AlicloudCloudCode.bundle'
