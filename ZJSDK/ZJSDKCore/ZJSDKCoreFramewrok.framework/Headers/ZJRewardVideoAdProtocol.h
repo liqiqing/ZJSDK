@@ -15,7 +15,9 @@ NS_ASSUME_NONNULL_BEGIN
 @property(nonatomic,copy) NSString *reward_name;
 @property(nonatomic,assign) NSInteger reward_amount;
 //交易ID
-@property(nonatomic,copy,readonly) NSString *trans_id;
+@property(nonatomic,copy,readonly) NSString *trans_id DEPRECATED_MSG_ATTRIBUTE("use trade_id instead.");
+//交易ID
+@property(nonatomic,copy,readonly) NSString *trade_id;
 
 @property (nonatomic) BOOL videoMuted;
 

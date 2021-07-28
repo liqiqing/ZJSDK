@@ -17,6 +17,9 @@ typedef void (^RewardVideoTransactionBlock)(BOOL  successed, id _Nullable result
 
 - (void)zj_rewardVideoAdAdapter:(ZJRewardVideoAdAdapter *)adapter transactionFinish:(NSDictionary*) params resultCallBack:(RewardVideoTransactionBlock) resultCallBack;
 
+
+
+- (void)zj2_rewardVideoAdTradeId:(ZJRewardVideoAdAdapter *)adapter transactionLoad:(NSString*) dataStr resultCallBack:(RewardVideoTransactionBlock) resultCallBack;
 @end
 
 NS_ASSUME_NONNULL_END

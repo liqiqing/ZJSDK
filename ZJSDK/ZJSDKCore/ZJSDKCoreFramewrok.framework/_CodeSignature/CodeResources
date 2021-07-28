@@ -8,10 +8,6 @@
 		<data>
 		hL8ifUKvh+GVNeG2T6jCoL74Aes=
 		</data>
-		<key>Headers/NetService.h</key>
-		<data>
-		LI717lSEJaGOCK7t0/XRLIOHvm8=
-		</data>
 		<key>Headers/ZJAd.h</key>
 		<data>
 		4pGm6x+/wmbsYGw2xrpL1Gaa7zA=
@@ -47,6 +43,10 @@
 		<key>Headers/ZJBannerAdProtocol.h</key>
 		<data>
 		Tsir1zXqjogyj1rwZK2QVS0ynzc=
+		</data>
+		<key>Headers/ZJBaseNetService.h</key>
+		<data>
+		9HOMlpYsTAoTtaBDgwyfX8GXUK8=
 		</data>
 		<key>Headers/ZJContentPageAdapter.h</key>
 		<data>
@@ -146,11 +146,11 @@
 		</data>
 		<key>Headers/ZJRewardVideoAdAdapterTransactionDelegate.h</key>
 		<data>
-		n4JL1E0jE1qdj1TcfcpJNH7V96Y=
+		mjnEc/93Txv+COYcY81kAmEX13M=
 		</data>
 		<key>Headers/ZJRewardVideoAdProtocol.h</key>
 		<data>
-		bitFtBZ6Z5LoFHptbwYGpflmALc=
+		ecnaMos9qm5ayaH639oEIej7f1k=
 		</data>
 		<key>Headers/ZJSDKCoreConfig.h</key>
 		<data>
@@ -178,7 +178,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		HKf5XHiCS7J4nORDyLESsbSgnbU=
+		EcKNasdabW2UN2l57a2pVYDrQ94=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -196,17 +196,6 @@
 			<key>hash2</key>
 			<data>
 			o77lwmSBL0IvNm6TawN8uf5X1MshER6PwNUNy2k52oc=
-			</data>
-		</dict>
-		<key>Headers/NetService.h</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			LI717lSEJaGOCK7t0/XRLIOHvm8=
-			</data>
-			<key>hash2</key>
-			<data>
-			Z85jx4YSIXngytBgCk0m0PX1N1OChU1eYuhOTvZ3fbY=
 			</data>
 		</dict>
 		<key>Headers/ZJAd.h</key>
@@ -306,6 +295,17 @@
 			<key>hash2</key>
 			<data>
 			LBxsPKZ91oVTp6gnu4Xfxy6vVlcC+IH2YD6bRD7Z1k4=
+			</data>
+		</dict>
+		<key>Headers/ZJBaseNetService.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			9HOMlpYsTAoTtaBDgwyfX8GXUK8=
+			</data>
+			<key>hash2</key>
+			<data>
+			qpaQjbxFw8TEYN+6oVIuEOSrNeNc/p/ehMdQ6Bg6/MM=
 			</data>
 		</dict>
 		<key>Headers/ZJContentPageAdapter.h</key>
@@ -576,22 +576,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			n4JL1E0jE1qdj1TcfcpJNH7V96Y=
+			mjnEc/93Txv+COYcY81kAmEX13M=
 			</data>
 			<key>hash2</key>
 			<data>
-			5uvqYvGEQr00hOOzR+BD8r/J1/2NKlwqsNXCsS5kJ1A=
+			YbwoM6IoBPHgddbJkjaVT0G4oLDDoqihqM4WpCY0WrQ=
 			</data>
 		</dict>
 		<key>Headers/ZJRewardVideoAdProtocol.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			bitFtBZ6Z5LoFHptbwYGpflmALc=
+			ecnaMos9qm5ayaH639oEIej7f1k=
 			</data>
 			<key>hash2</key>
 			<data>
-			XSfKHG3O+DLtEZezwEUxdyo7SePdw08JcD5cBx0o5D4=
+			whqLWeku19yndJzfpTj6UsEaHYHTtnLeBi/cXmVqWgA=
 			</data>
 		</dict>
 		<key>Headers/ZJSDKCoreConfig.h</key>
