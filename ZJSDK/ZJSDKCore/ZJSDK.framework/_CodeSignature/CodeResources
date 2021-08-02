@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/ZJAdSDK.h</key>
 		<data>
-		2X6raLWINlDdVg6QtIKU4M1RoPA=
+		skVltgP2Vpv4YLffW2R9Slf+5Oc=
 		</data>
 		<key>Headers/ZJBannerAdView.h</key>
 		<data>
@@ -74,11 +74,11 @@
 		</data>
 		<key>Headers/ZJSplashAd.h</key>
 		<data>
-		3bkmSC9HaW7xFjubkPkgnhmHamE=
+		TdSqYhd2qbvGxbS1AtMa1jcTDHA=
 		</data>
 		<key>Headers/ZJSplashAdDelegate.h</key>
 		<data>
-		H4AkyZg/JSY7GCTE7vWzTs+CldM=
+		M/3goijQD+eHc9sHHQUvvhdUmRA=
 		</data>
 		<key>Headers/ZJUser.h</key>
 		<data>
@@ -86,7 +86,7 @@
 		</data>
 		<key>Headers/ZJWKWebViewBridge.h</key>
 		<data>
-		QDrtwZztlRs1ceU9b7mBN4obDLI=
+		hJ+YOQlJGbOacWlm4ZvZXEZsk1w=
 		</data>
 		<key>Headers/ZJWebViewController.h</key>
 		<data>
@@ -94,7 +94,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		rVfGL9K0+RJ4VuA4X/4tWUVmOiE=
+		iMdgaJgo85sX9Cb+Vb7SYf98ekM=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -107,11 +107,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			2X6raLWINlDdVg6QtIKU4M1RoPA=
+			skVltgP2Vpv4YLffW2R9Slf+5Oc=
 			</data>
 			<key>hash2</key>
 			<data>
-			2PvH2UryCfdddgE66OYdePgBXcAMI7dNsuGmzMuG9yo=
+			rGWBPAeVZtXyCe/x38wwVpEhDdtZP46xRt1+cnrsXSs=
 			</data>
 		</dict>
 		<key>Headers/ZJBannerAdView.h</key>
@@ -294,22 +294,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			3bkmSC9HaW7xFjubkPkgnhmHamE=
+			TdSqYhd2qbvGxbS1AtMa1jcTDHA=
 			</data>
 			<key>hash2</key>
 			<data>
-			q9mAVDiUN+z747MgMxrMxRjzK0Nm84SRqR8Mcx+IdJ4=
+			DTFduOHcaZ4Uq3wgcs82xGMvAL6SvsKP/uZDloKSqHY=
 			</data>
 		</dict>
 		<key>Headers/ZJSplashAdDelegate.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			H4AkyZg/JSY7GCTE7vWzTs+CldM=
+			M/3goijQD+eHc9sHHQUvvhdUmRA=
 			</data>
 			<key>hash2</key>
 			<data>
-			6YYUkHkj39MTacuTBkFVbebyIcp43QWmoQy7YQhcAPk=
+			yD4j6nt8bI1IeiHxAs9lFuDwZoPcbp1Xkz6yb84AGVo=
 			</data>
 		</dict>
 		<key>Headers/ZJUser.h</key>
@@ -327,11 +327,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			QDrtwZztlRs1ceU9b7mBN4obDLI=
+			hJ+YOQlJGbOacWlm4ZvZXEZsk1w=
 			</data>
 			<key>hash2</key>
 			<data>
-			OJpfvMjjgtL/5dTmLRuZ85NhCTjI9eTrbK7JU4hZEWM=
+			aqFXdFpivb+etPnhxtlNMgSr+hZ+Rcbx1YXAYRKJomE=
 			</data>
 		</dict>
 		<key>Headers/ZJWebViewController.h</key>

@@ -9,18 +9,13 @@
 
 #import <ZJSDKCoreFramewrok/ZJAd.h>
 #import <ZJSDKCoreFramewrok/ZJSplashAdProtocol.h>
-//#import "ZJSplashAdProtocol.h"
 #import "ZJSplashAdDelegate.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface ZJSplashAd : ZJAd<ZJSplashAdProtocol>
-{
-    
-}
+@interface ZJSplashAd : ZJAd <ZJSplashAdProtocol>
 
-@property(nonatomic,weak) id<ZJSplashAdDelegate> delegate;
-
+@property (nonatomic, weak) id <ZJSplashAdDelegate> delegate;
 
 @end
 

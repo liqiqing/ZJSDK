@@ -16,12 +16,12 @@ NS_ASSUME_NONNULL_BEGIN
 /**
  *  开屏广告素材加载成功
  */
--(void)zj_splashAdDidLoad:(ZJSplashAd *)splashAd;
+- (void)zj_splashAdDidLoad:(ZJSplashAd *)splashAd;
 
 /**
  *  开屏广告成功展示
  */
--(void)zj_splashAdSuccessPresentScreen:(ZJSplashAd *)splashAd;
+- (void)zj_splashAdSuccessPresentScreen:(ZJSplashAd *)splashAd;
 
 /**
  *  开屏广告点击回调
@@ -42,7 +42,7 @@ NS_ASSUME_NONNULL_BEGIN
 /**
  * 开屏广告倒记时结束
  */
-- (void)zj_splashAdCountdownEnd:(ZJSplashAd*)splashAd;
+- (void)zj_splashAdCountdownEnd:(ZJSplashAd *)splashAd;
 
 /**
  *  开屏广告错误

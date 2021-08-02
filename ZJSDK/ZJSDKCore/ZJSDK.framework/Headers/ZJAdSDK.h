@@ -11,10 +11,13 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface ZJAdSDK : NSObject
+/**
+ SDK 注册接口，请在 app 初始化时调用。
+ @param appId - 媒体ID
+*/
++ (void)registerAppId:(NSString *)appId;
 
-+(void) registerAppId:(NSString*) appId;
-
-+(BOOL) hasInit;
++ (BOOL)hasInit;
 
 /**
  在播放音频时是否使用SDK内部对AVAudioSession设置的category及options，默认使用，若不使用，SDK内部不做任何处理，由调用方在展示广告时自行设置；
@@ -22,7 +25,10 @@ NS_ASSUME_NONNULL_BEGIN
  */
 + (void)enableDefaultAudioSessionSetting:(BOOL)enabled;
 
-+(NSString *)SDKVersion;
+/**
+ SDK版本号
+*/
++ (NSString *)SDKVersion;
 
 
 

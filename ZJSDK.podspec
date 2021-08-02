@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'ZJSDK'
-  s.version          = '2.3.6'
+  s.version          = '2.3.6.1'
   s.summary          = 'ZJSDK广告'
 
 # This description is used to generate tags and improve search results.
@@ -36,11 +36,13 @@ TODO: Add long description of the pod here.
   #依赖的系统静态库
   #z表示libz.tdb,后缀不需要,lib开头的省略lib
   s.libraries = 'resolv.9','c++','z','sqlite3','bz2','xml2','c++abi'
-  valid_archs = ['armv7', 'i386', 'x86_64', 'arm64']
-  s.pod_target_xcconfig = {
-    'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64'
-  }
-  s.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
+  s.pod_target_xcconfig = { 'VALID_ARCHS' => 'x86_64 armv7 arm64' }
+  
+#  valid_archs = ['armv7', 'i386', 'x86_64', 'arm64']
+#  s.pod_target_xcconfig = {
+#    'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64'
+#  }
+#  s.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
   
   s.subspec 'ZJSDKCore' do |ss|
     ss.vendored_frameworks = 'ZJSDK/ZJSDKCore/*.framework'
@@ -52,39 +54,43 @@ TODO: Add long description of the pod here.
     ss.dependency 'ZJSDK/ZJSDKCore'
     ss.dependency 'GDTMobSDK', '~> 4.12'
   end
-  
+
   s.subspec 'ZJSDKModuleCSJ' do |ss|
     ss.vendored_libraries = 'ZJSDK/ZJSDKModuleCSJ/*.a'
     ss.dependency 'ZJSDK/ZJSDKCore'
-    ss.dependency 'Ads-CN', '~> 3.7'
+    ss.dependency 'Ads-CN', '~> 3.8'
   end
-#
+
   s.subspec 'ZJSDKModuleKS' do |ss|
     ss.vendored_libraries = 'ZJSDK/ZJSDKModuleKS/*.a'
     ss.dependency 'ZJSDK/ZJSDKCore'
-    
+
 #    ss.vendored_frameworks = 'ZJSDK/ZJSDKModuleKS/KSAdSDK.xcframework'
+
     ss.vendored_frameworks = 'ZJSDK/ZJSDKModuleKS/KSAdSDK.framework'
     ss.preserve_paths = 'ZJSDK/ZJSDKModuleKS/KSAdSDK.framework'
-#    ss.dependency 'KSAdSDK', '3.3.10'
+
+#    ss.dependency 'KSAdSDK', '~> 3.3'
   end
-  
+
   s.subspec 'ZJSDKModuleMTG' do |ss|
+
     ss.vendored_libraries = 'ZJSDK/ZJSDKModuleMTG/*.a'
     ss.dependency 'ZJSDK/ZJSDKCore'
 
-    ss.dependency 'MintegralAdSDK', '6.9.4.0'
+    ss.dependency 'MintegralAdSDK', '~> 6.9'
     ss.dependency 'MintegralAdSDK/RewardVideoAd'
     ss.dependency 'MintegralAdSDK/BannerAd'
     ss.dependency 'MintegralAdSDK/SplashAd'
+    ss.dependency 'MintegralAdSDK/InterstitialAd'
   end
-  
+
   s.subspec 'ZJSDKModuleDSP' do |ss|
     ss.vendored_libraries = 'ZJSDK/ZJSDKModuleDSP/*.a'
     ss.resource = 'ZJSDK/ZJSDKModuleDSP/*.bundle'
     ss.dependency 'ZJSDK/ZJSDKCore'
   end
-  
+
   s.subspec 'ZJSDKModuleYM' do |ss|
     ss.vendored_libraries = 'ZJSDK/ZJSDKModuleYM/*.a'
 

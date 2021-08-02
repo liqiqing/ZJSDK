@@ -1,2 +1,2 @@
 ${PODS_ROOT}/Target Support Files/Pods-ZJSDKDemo/Pods-ZJSDKDemo-frameworks.sh
-${PODS_ROOT}/KSAdSDK/KSAdSDK.framework
+${PODS_XCFRAMEWORKS_BUILD_DIR}/KSAdSDK/KSAdSDK.framework/KSAdSDK
