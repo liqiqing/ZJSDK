@@ -8,7 +8,6 @@
 
 #import <Foundation/Foundation.h>
 #import <ZJSDKCoreFramewrok/ZJAd.h>
-#import "ZJSDKDefines.h"
 #import <ZJSDKCoreFramewrok/ZJFeedFullVideoProviderProtocol.h>
 #import <ZJSDKCoreFramewrok/ZJFeedFullVideoView.h>
 #import <ZJSDKCoreFramewrok/ZJMediaPlayerStatus.h>

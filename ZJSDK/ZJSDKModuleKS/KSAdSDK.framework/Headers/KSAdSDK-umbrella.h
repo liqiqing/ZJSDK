@@ -30,8 +30,6 @@
 #import "KSRewardedVideoAd.h"
 #import "KSRewardedVideoModel.h"
 #import "KSVideoAd.h"
-#import "KSAdBasePlayerView.h"
-#import "KSAdPlayerView.h"
 #import "KSVideoAdView.h"
 #import "KSAd.h"
 #import "KSAdSDK.h"

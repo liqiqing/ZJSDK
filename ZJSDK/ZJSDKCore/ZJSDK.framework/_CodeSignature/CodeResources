@@ -22,7 +22,7 @@
 		</data>
 		<key>Headers/ZJFeedFullVideoProvider.h</key>
 		<data>
-		CeF7xwjzIpmBQbQda+DErpgcdMk=
+		VcZQkIplR3FVTiOYwgfCbgVha8E=
 		</data>
 		<key>Headers/ZJFloatingAdView.h</key>
 		<data>
@@ -68,10 +68,6 @@
 		<data>
 		BQVVn9ftEHL30bel/DgjmRVe7BY=
 		</data>
-		<key>Headers/ZJSDKDefines.h</key>
-		<data>
-		UI7Tui/8kIkEQk39FF3HJuXiO50=
-		</data>
 		<key>Headers/ZJSplashAd.h</key>
 		<data>
 		TdSqYhd2qbvGxbS1AtMa1jcTDHA=
@@ -94,7 +90,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		W1BcVpgvZ6H3C6ppb5R8MVfGWys=
+		1XomxaeCJvK/Izyg8KM8bqLnDh0=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -151,11 +147,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			CeF7xwjzIpmBQbQda+DErpgcdMk=
+			VcZQkIplR3FVTiOYwgfCbgVha8E=
 			</data>
 			<key>hash2</key>
 			<data>
-			DvHzY6RB2R3ZBSt7VfRkzfb/fTqfBGyi+LBaaLsSUuw=
+			hOYs1gVY+lU8RkZBCxnai2340mScVDKvIiVTtKuIJwY=
 			</data>
 		</dict>
 		<key>Headers/ZJFloatingAdView.h</key>
@@ -277,17 +273,6 @@
 			<key>hash2</key>
 			<data>
 			nolXLhQCkPAU8UyDyxdLVz3vSCEi8ZK81rlaZzMabbQ=
-			</data>
-		</dict>
-		<key>Headers/ZJSDKDefines.h</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			UI7Tui/8kIkEQk39FF3HJuXiO50=
-			</data>
-			<key>hash2</key>
-			<data>
-			a3NMaDehCbPCUDZtpe9W784AZmXZOAzZD0WmR7vDJ6A=
 			</data>
 		</dict>
 		<key>Headers/ZJSplashAd.h</key>

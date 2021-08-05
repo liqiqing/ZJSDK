@@ -41,7 +41,6 @@
 #import <KSAdSDK/KSFeedAdsManager.h>
 #import <KSAdSDK/KSDrawAd.h>
 #import <KSAdSDK/KSDrawAdsManager.h>
-#import <KSAdSDK/KSAdPlayerView.h>
 /// 闪屏广告
 #import <KSAdSDK/KSAdSplashManager.h>
 #import <KSAdSDK/KSSplashAdView.h>

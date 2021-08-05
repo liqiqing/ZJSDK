@@ -41,21 +41,18 @@ NS_ASSUME_NONNULL_BEGIN
  * @brief start ad sdk
  * @param appId             ad app id
  */
-+ (void)setAppId:(NSString *)appId;     
-
++ (void)setAppId:(NSString *)appId;
 // optional
 + (void)setAppName:(NSString *)appName;
 // optional
 + (void)setUserInfoBlock:(void(^)(KSAdUserInfo *))userInfoBlock;
 // optional
 + (void)setAppTag:(NSString *)appTag;
-
 // optional, enable personalized recommendation, default is YES
 + (void)setEnablePersonalRecommend:(BOOL)enable;
-
 /**
  Configure development mode.
- @param level : default BUAdSDKLogLevelNone
+ @param level : default KSAdSDKLogLevelNone
  */
 // optional
 + (void)setLoglevel:(KSAdSDKLogLevel)level;
