@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'ZJSDK'
-  s.version          = '2.3.7.1'
+  s.version          = '2.3.8'
   s.summary          = 'ZJSDK广告'
 
 # This description is used to generate tags and improve search results.
@@ -44,26 +44,26 @@ TODO: Add long description of the pod here.
 #  }
 #  s.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
   
-  s.subspec 'ZJSDKCore' do |ss|
-    ss.vendored_frameworks = 'ZJSDK/ZJSDKCore/*.framework'
-    ss.preserve_paths = 'ZJSDK/ZJSDKCore/*.framework'
+  s.subspec 'ZJAdSDK' do |ss|
+    ss.vendored_frameworks = 'ZJSDK/ZJAdSDK/*.framework'
+    ss.preserve_paths = 'ZJSDK/ZJAdSDK/*.framework'
   end
   
   s.subspec 'ZJSDKModuleGDT' do |ss|
     ss.vendored_libraries = 'ZJSDK/ZJSDKModuleGDT/*.a'
-    ss.dependency 'ZJSDK/ZJSDKCore'
+    ss.dependency 'ZJSDK/ZJAdSDK'
     ss.dependency 'GDTMobSDK', '~> 4.12'
   end
 
   s.subspec 'ZJSDKModuleCSJ' do |ss|
     ss.vendored_libraries = 'ZJSDK/ZJSDKModuleCSJ/*.a'
-    ss.dependency 'ZJSDK/ZJSDKCore'
+    ss.dependency 'ZJSDK/ZJAdSDK'
     ss.dependency 'Ads-CN', '~> 3.8'
   end
 
   s.subspec 'ZJSDKModuleKS' do |ss|
     ss.vendored_libraries = 'ZJSDK/ZJSDKModuleKS/*.a'
-    ss.dependency 'ZJSDK/ZJSDKCore'
+    ss.dependency 'ZJSDK/ZJAdSDK'
 
 #    ss.vendored_frameworks = 'ZJSDK/ZJSDKModuleKS/KSAdSDK.xcframework'
 
@@ -76,7 +76,7 @@ TODO: Add long description of the pod here.
   s.subspec 'ZJSDKModuleMTG' do |ss|
 
     ss.vendored_libraries = 'ZJSDK/ZJSDKModuleMTG/*.a'
-    ss.dependency 'ZJSDK/ZJSDKCore'
+    ss.dependency 'ZJSDK/ZJAdSDK'
 
     ss.dependency 'MintegralAdSDK', '~> 6.9'
     ss.dependency 'MintegralAdSDK/RewardVideoAd'
@@ -88,7 +88,7 @@ TODO: Add long description of the pod here.
   s.subspec 'ZJSDKModuleDSP' do |ss|
     ss.vendored_libraries = 'ZJSDK/ZJSDKModuleDSP/*.a'
     ss.resource = 'ZJSDK/ZJSDKModuleDSP/*.bundle'
-    ss.dependency 'ZJSDK/ZJSDKCore'
+    ss.dependency 'ZJSDK/ZJAdSDK'
   end
 
   s.subspec 'ZJSDKModuleYM' do |ss|
@@ -97,7 +97,7 @@ TODO: Add long description of the pod here.
     ss.vendored_frameworks = 'ZJSDK/ZJSDKModuleYM/*.framework'
     ss.preserve_paths = 'ZJSDK/ZJSDKModuleYM/*.framework'
     ss.resources = 'ZJSDK/ZJSDKModuleYM/AlicloudCloudCode.framework/AlicloudCloudCode.bundle'
-    ss.dependency 'ZJSDK/ZJSDKCore'
+    ss.dependency 'ZJSDK/ZJAdSDK'
   end
  
 end
