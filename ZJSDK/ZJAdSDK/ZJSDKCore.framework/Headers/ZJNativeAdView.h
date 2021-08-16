@@ -29,7 +29,7 @@ NS_ASSUME_NONNULL_BEGIN
 /**
  广告 View 时间回调对象
  */
-@property (nonatomic, weak) id<ZJNativeAdViewDelegate> delegate;
+@property (nonatomic, weak) id <ZJNativeAdViewDelegate> delegate;
 
 /*
  *  viewControllerForPresentingModalView
@@ -40,9 +40,12 @@ NS_ASSUME_NONNULL_BEGIN
 /**
   视频广告的媒体View，绑定数据对象后自动生成，可自定义布局
  */
-@property (nonatomic,strong)UIView *videoAdView;
+@property (nonatomic, strong) UIView *videoAdView;
 
-
+/**
+  logoView，绑定数据对象后自动生成，可自定义布局
+ */
+@property (nonatomic, strong, readonly) UIView *logoView;
 
 /**
  自渲染2.0视图注册方法

@@ -12,9 +12,6 @@
 #import "NSError+ZJAd.h"
 NS_ASSUME_NONNULL_BEGIN
 
-
-
-
 @interface ZJAd : NSObject
 
 @property(nonatomic,copy) NSString *placementId;
@@ -23,9 +20,6 @@ NS_ASSUME_NONNULL_BEGIN
 *  详解：placementId - 广告位 ID
 */
 - (instancetype)initWithPlacementId:(NSString *)placementId;
-
-
-
 
 @end
 

@@ -66,7 +66,7 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)unregisterDataObject;
 
 
-
+@property (nonatomic,strong)UIView *logoView;
 /**
   视频广告的媒体View，绑定数据对象后自动生成，可自定义布局
  */
