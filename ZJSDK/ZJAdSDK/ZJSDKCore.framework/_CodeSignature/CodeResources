@@ -54,7 +54,7 @@
 		</data>
 		<key>Headers/ZJFeedFullVideoProviderAdapterDelegate.h</key>
 		<data>
-		wHj40jOCpdolP2E/nZegQZBqx1g=
+		x6c82BezZ2okRI6M6fRUw+ew/K0=
 		</data>
 		<key>Headers/ZJFeedFullVideoProviderProtocol.h</key>
 		<data>
@@ -66,7 +66,7 @@
 		</data>
 		<key>Headers/ZJFullScreenVideoAdAdapter.h</key>
 		<data>
-		xIML2mg0RVz2XxtOOBMrTfwoE+o=
+		OlvSJ6h2rYeTnU0AX6yEo+bIyJI=
 		</data>
 		<key>Headers/ZJInterstitialAdAdapter.h</key>
 		<data>
@@ -124,17 +124,21 @@
 		<data>
 		1d8Y0KB7MpSrPSp8avsBJgEiLdo=
 		</data>
+		<key>Headers/ZJSDKAdEnum.h</key>
+		<data>
+		D1gKnJpox4k8kyPFU9D6kA0ggcE=
+		</data>
 		<key>Headers/ZJSDKCommonTool.h</key>
 		<data>
 		KeKsfJhx0CeqLfRuu2qdbttGnJQ=
 		</data>
 		<key>Headers/ZJSDKCore.h</key>
 		<data>
-		OcrUS8iEN640gNy+oGWa+ouZGBM=
+		ZDUjPCCbgshDVHU7ntbZqUFC+GI=
 		</data>
 		<key>Headers/ZJSDKCoreConfig.h</key>
 		<data>
-		wv4amgOu5nq9wax/2MU4RvROEPY=
+		Y5NmMYD1mmrWyOcYZ/KjhhZdcc4=
 		</data>
 		<key>Headers/ZJSDKDefines.h</key>
 		<data>
@@ -142,11 +146,11 @@
 		</data>
 		<key>Headers/ZJSplashAdAdapter.h</key>
 		<data>
-		0ogEY/rKL9tg+To24ytFspVLoYU=
+		JO1bGXJd2BnLx3cDdUv7NPX4jko=
 		</data>
 		<key>Headers/ZJSplashAdAdapterDelegate.h</key>
 		<data>
-		tD9daru6sDhe0MiFqpph5h0BXyg=
+		vf0ySH0yRfk8ZFNmiX8bXq9MNxY=
 		</data>
 		<key>Headers/ZJSplashAdProtocol.h</key>
 		<data>
@@ -158,7 +162,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		fjiRjt2q9NE2gYqlsWsOSR3TI7A=
+		BlSGh2yUhB5tdRlFJmbSQ/NjFjE=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -303,11 +307,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			wHj40jOCpdolP2E/nZegQZBqx1g=
+			x6c82BezZ2okRI6M6fRUw+ew/K0=
 			</data>
 			<key>hash2</key>
 			<data>
-			H2U/mDtQ15gunmJwBvxtj0CPPh5GVpH/F0LnuZOXblY=
+			fInpei7aI3ZDbRSwje7h6nw0/Y9Jqu5ribbtQuvQx88=
 			</data>
 		</dict>
 		<key>Headers/ZJFeedFullVideoProviderProtocol.h</key>
@@ -336,11 +340,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			xIML2mg0RVz2XxtOOBMrTfwoE+o=
+			OlvSJ6h2rYeTnU0AX6yEo+bIyJI=
 			</data>
 			<key>hash2</key>
 			<data>
-			HgRz7rgy2zaO8rMoZmoUFiV0amVBIxLa8keN7JP2JQA=
+			zbInM9k2QirKUT5IoxF2XUa/ygjgKJkXqHXGmPSziq0=
 			</data>
 		</dict>
 		<key>Headers/ZJInterstitialAdAdapter.h</key>
@@ -497,6 +501,17 @@
 			lhXA7hhA6tNzo5QCg3kgyVFR+OuvYzldNIIOk9Tlyz0=
 			</data>
 		</dict>
+		<key>Headers/ZJSDKAdEnum.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			D1gKnJpox4k8kyPFU9D6kA0ggcE=
+			</data>
+			<key>hash2</key>
+			<data>
+			F13PM+hK0Zn5qkorzKcwyoHYd8v/DAYZnIhU980tm+k=
+			</data>
+		</dict>
 		<key>Headers/ZJSDKCommonTool.h</key>
 		<dict>
 			<key>hash</key>
@@ -512,22 +527,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			OcrUS8iEN640gNy+oGWa+ouZGBM=
+			ZDUjPCCbgshDVHU7ntbZqUFC+GI=
 			</data>
 			<key>hash2</key>
 			<data>
-			tKD1E3IVv1Imjnnzj+dfpFgmeBiwRcRQeaRHgF3dufQ=
+			K0V4Yqte+jxrkSIjnzPAyxW8YSqitU97M1+08NGiH4c=
 			</data>
 		</dict>
 		<key>Headers/ZJSDKCoreConfig.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			wv4amgOu5nq9wax/2MU4RvROEPY=
+			Y5NmMYD1mmrWyOcYZ/KjhhZdcc4=
 			</data>
 			<key>hash2</key>
 			<data>
-			Hgcy7WmS5BEoL+KroE8VtGVPr0zjkru9VAG9UYBu3NU=
+			iEfm8cUaeJU6tMIDApoSvAZJKcvKnnj29UP4xY2TS+I=
 			</data>
 		</dict>
 		<key>Headers/ZJSDKDefines.h</key>
@@ -545,22 +560,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			0ogEY/rKL9tg+To24ytFspVLoYU=
+			JO1bGXJd2BnLx3cDdUv7NPX4jko=
 			</data>
 			<key>hash2</key>
 			<data>
-			yns9WBOyieSqDda+PfyNPsYsxL/8FcihfeMh5mKQIUU=
+			kM9Rd38g0YB2VQIjZ9vxU1acCxQCjTSbnuJwyQaPcJY=
 			</data>
 		</dict>
 		<key>Headers/ZJSplashAdAdapterDelegate.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			tD9daru6sDhe0MiFqpph5h0BXyg=
+			vf0ySH0yRfk8ZFNmiX8bXq9MNxY=
 			</data>
 			<key>hash2</key>
 			<data>
-			lpy2nTa5f5CcR2+yiuhaCTIuhJeL3bpX7rGI4vyVPz4=
+			77/A6gVIM9ybXyfZFKQfVFH6I+QN/Hmxl/vl5Nm4cN8=
 			</data>
 		</dict>
 		<key>Headers/ZJSplashAdProtocol.h</key>

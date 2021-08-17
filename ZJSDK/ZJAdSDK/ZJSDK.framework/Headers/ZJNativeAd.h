@@ -20,7 +20,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface ZJNativeAd : ZJAd
 
-@property (nonatomic,weak) id <ZJNativeAdDelegate> delegate;
+@property (nonatomic, weak) id <ZJNativeAdDelegate> delegate;
 
 - (void)loadAdWithCount:(NSInteger)adCount;
 

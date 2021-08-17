@@ -17,6 +17,7 @@ NS_ASSUME_NONNULL_BEGIN
 */
 + (void)registerAppId:(NSString *)appId;
 
+
 + (BOOL)hasInit;
 
 /**

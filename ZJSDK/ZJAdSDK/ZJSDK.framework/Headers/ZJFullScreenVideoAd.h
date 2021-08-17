@@ -7,7 +7,7 @@
 //
 
 #import <ZJSDKCore/ZJAd.h>
-#import <ZJSDKCore/ZJMediaPlayerStatus.h>
+#import <ZJSDKCore/ZJSDKAdEnum.h>
 #import <ZJSDKCore/ZJSDKCore.h>
 NS_ASSUME_NONNULL_BEGIN
 @class ZJFullScreenVideoAd;

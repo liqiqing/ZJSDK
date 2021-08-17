@@ -7,7 +7,7 @@
 
 #import "ZJCoreAdAdapter.h"
 #import <UIKit/UIKit.h>
-#import "ZJMediaPlayerStatus.h"
+#import "ZJSDKAdEnum.h"
 NS_ASSUME_NONNULL_BEGIN
 @class ZJFullScreenVideoAdAdapter;
 @protocol ZJfullScreenVideoAdAdapterDelegate <NSObject>

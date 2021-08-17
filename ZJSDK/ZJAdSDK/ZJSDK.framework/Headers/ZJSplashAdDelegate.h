@@ -27,6 +27,13 @@ NS_ASSUME_NONNULL_BEGIN
  */
 - (void)zj_splashAdClicked:(ZJSplashAd *)splashAd;
 
+
+/**
+ *  开屏广告即将关闭回调
+ */
+- (void)zj_splashAdWillClose:(ZJSplashAd *)splashAd;
+
+
 /**
  *  开屏广告关闭回调
  */

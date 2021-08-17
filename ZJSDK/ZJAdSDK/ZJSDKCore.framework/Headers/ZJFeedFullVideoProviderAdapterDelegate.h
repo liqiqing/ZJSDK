@@ -6,7 +6,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "ZJMediaPlayerStatus.h"
+#import "ZJSDKAdEnum.h"
 @class ZJFeedFullVideoProviderAdapter,ZJFeedFullVideoView;
 NS_ASSUME_NONNULL_BEGIN
 

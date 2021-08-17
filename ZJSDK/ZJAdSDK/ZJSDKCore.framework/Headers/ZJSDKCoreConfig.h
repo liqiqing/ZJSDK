@@ -6,10 +6,9 @@
 //
 
 #import <Foundation/Foundation.h>
-
+#import "ZJSDKAdEnum.h"
 NS_ASSUME_NONNULL_BEGIN
 
-#define ZJLog(format,...) [ZJSDKCoreConfig customLogformatString:[NSString stringWithFormat:format, __VA_ARGS__]]
 
 @interface ZJSDKCoreConfig : NSObject
 
@@ -19,10 +18,13 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nonatomic, copy) NSString *secretStr;
 
-@property (nonatomic, assign) BOOL logEnable;
 
-+ (void)customLogformatString:(NSString *)formatString;
 
+@property (nonatomic, assign) ZJAdSDKLogLevel level;
+
++ (void)allLogWithFormat:(NSString *)format, ...;
++ (void)errorLogWithFormat:(NSString *)format, ...;
++ (void)warningLogWithFormat:(NSString *)format, ...;
 @end
 
 NS_ASSUME_NONNULL_END

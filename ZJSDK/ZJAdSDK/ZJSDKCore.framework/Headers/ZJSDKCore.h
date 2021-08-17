@@ -25,5 +25,5 @@ FOUNDATION_EXPORT const unsigned char ZJSDKCoreVersionString[];
 #import <ZJSDKCore/ZJAd.h>
 #import <ZJSDKCore/ZJSDKCoreConfig.h>
 #import <ZJSDKCore/NSError+ZJAd.h>
-#import <ZJSDKCore/ZJMediaPlayerStatus.h>
+#import <ZJSDKCore/ZJSDKAdEnum.h>
 #import <ZJSDKCore/ZJAdItemConfig.h>
