@@ -34,7 +34,7 @@
 		</data>
 		<key>Headers/ZJH5Page.h</key>
 		<data>
-		DxWMUwCfQbHB685mwCUBEnDXkfA=
+		e2ccmdhrdPFBVL4Euj4/KAhlmHU=
 		</data>
 		<key>Headers/ZJH5PageDelegate.h</key>
 		<data>
@@ -62,7 +62,7 @@
 		</data>
 		<key>Headers/ZJRewardVideoAdDelegate.h</key>
 		<data>
-		acLcBhZq4Z0HM1w6pgZblecy4UE=
+		VKrADgXa0zwbCcG43z2i7yUr/G8=
 		</data>
 		<key>Headers/ZJSDK.h</key>
 		<data>
@@ -86,11 +86,11 @@
 		</data>
 		<key>Headers/ZJWebViewController.h</key>
 		<data>
-		kFKzQFM4C14lWsYdaEoLpCZ9Bq4=
+		2g5YZ89PXkWKHsHCzCQP6nGIyKY=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		cwgvsGlV6rM7csgrwm4lV3PO7UM=
+		aMDRk+cn3eoreM5es/+kMaPdvzY=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -180,11 +180,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			DxWMUwCfQbHB685mwCUBEnDXkfA=
+			e2ccmdhrdPFBVL4Euj4/KAhlmHU=
 			</data>
 			<key>hash2</key>
 			<data>
-			uJcD9vRv2sSHCjyDK39KH/6M+D7dTaDfIQc1moFVDbY=
+			PW/t9ArtUzETyY8+KcEtkxFxocmvcyxMHwsOTqfzR8o=
 			</data>
 		</dict>
 		<key>Headers/ZJH5PageDelegate.h</key>
@@ -257,11 +257,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			acLcBhZq4Z0HM1w6pgZblecy4UE=
+			VKrADgXa0zwbCcG43z2i7yUr/G8=
 			</data>
 			<key>hash2</key>
 			<data>
-			Rk4YHWjWw+JOsmcINejSuwKGikdU1a4ERjE2SHsVkYQ=
+			wgKoEEusRRHLqAt74e09MAQtGexPzRmBtshARsPOEEs=
 			</data>
 		</dict>
 		<key>Headers/ZJSDK.h</key>
@@ -323,11 +323,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			kFKzQFM4C14lWsYdaEoLpCZ9Bq4=
+			2g5YZ89PXkWKHsHCzCQP6nGIyKY=
 			</data>
 			<key>hash2</key>
 			<data>
-			6gkDK4DJxvCE0//QioJEq9IFPN7kJ4lYAvdBwhS4Bh8=
+			iRt785XtGj3346Ns3LGZaIxuJHnNRcGl3kJ02jpun0o=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

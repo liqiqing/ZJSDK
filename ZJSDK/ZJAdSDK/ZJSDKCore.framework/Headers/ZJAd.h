@@ -10,6 +10,7 @@
 #import <UIKit/UIKit.h>
 #import "ZJAdItemConfig.h"
 #import "NSError+ZJAd.h"
+#import "ZJSDKCoreConfig.h"
 NS_ASSUME_NONNULL_BEGIN
 
 @interface ZJAd : NSObject

@@ -25,9 +25,15 @@ NS_ASSUME_NONNULL_BEGIN
 ///激励视频静音， 默认：NO
 @property (nonatomic) BOOL videoMuted;
 
+/**加载广告数据*/
 - (void)loadAd;
 
-- (void)showAdInViewController:(UIViewController*)viewController;
+/**广告展示方法
+ 调用showAdInViewController:方法前要确保激励视频加载完成，请在
+ - (void)zj_rewardVideoAdVideoDidLoad:(ZJRewardVideoAd *)rewardedVideoAd
+ 回调中调用该方法
+ */
+- (void)showAdInViewController:(UIViewController *)viewController;
 
 
 

@@ -14,12 +14,14 @@ NS_ASSUME_NONNULL_BEGIN
 @optional
 /**
 广告数据加载成功回调
+ ⚠️请勿在该回调内调用 showAdInViewController:方法（需视频下载完成）
 @param rewardedVideoAd ZJRewardVideoAd 实例
 */
 - (void)zj_rewardVideoAdDidLoad:(ZJRewardVideoAd *)rewardedVideoAd;
 
 /**
-视频数据下载成功回调，已经下载过的视频会直接回调，在这里调用展示广告的方法
+ 视频数据下载成功回调，已经下载过的视频会直接回调，在这里调用展示广告的方法。
+ ✅ showAdInViewController: 方法请在该回调中执行 ， 广告展示需要在视频下载完成后才能展示，
 @param rewardedVideoAd ZJRewardVideoAd 实例
 */
 - (void)zj_rewardVideoAdVideoDidLoad:(ZJRewardVideoAd *)rewardedVideoAd;
