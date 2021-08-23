@@ -80,10 +80,6 @@
 		<data>
 		iep+HIRKwM1K00/ZdzgSFWo9uCg=
 		</data>
-		<key>Headers/ZJMediaPlayerStatus.h</key>
-		<data>
-		yKD5UZ0nKQkKEi5THOkjMSaCPS8=
-		</data>
 		<key>Headers/ZJNativeAdAdapter.h</key>
 		<data>
 		TBonVwmiD72uyKuCySphA50wuv8=
@@ -162,7 +158,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		JLc1obtpdmnERI6aHkMuY6BBALc=
+		9lfc3ci1ztqBKfqp9wSGu1rJo5s=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -378,17 +374,6 @@
 			<key>hash2</key>
 			<data>
 			kINeNFmATjPHj4yyFpClz7axubGH7rQVBFLYsWeutX0=
-			</data>
-		</dict>
-		<key>Headers/ZJMediaPlayerStatus.h</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			yKD5UZ0nKQkKEi5THOkjMSaCPS8=
-			</data>
-			<key>hash2</key>
-			<data>
-			wWENg10klJD+xxNjjNqDSMvh7WtJubZI4bcsasztOFg=
 			</data>
 		</dict>
 		<key>Headers/ZJNativeAdAdapter.h</key>

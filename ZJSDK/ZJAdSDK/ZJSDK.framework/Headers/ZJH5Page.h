@@ -36,10 +36,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 /**
  展示H5页面 push 或 present 方式
- 如需设置 ZJH5Page+ZJViewEdit.h 内的H5页面相关UI，请在设置后再调用该方法跳转
+ 如需设置 ZJH5Page+ZJCustom.h 内的H5页面相关UI，请在设置后再调用该方法跳转
  */
-- (void)presentH5FromRootViewController:(UIViewController *)rootViewController;
-
+- (void)presentH5FromRootViewController:(UIViewController *)rootViewController animated:(BOOL)animated;
 
 
 /**
