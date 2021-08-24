@@ -577,7 +577,6 @@
 		006193132511ED1E00E09415 /* AdControllers */ = {
 			isa = PBXGroup;
 			children = (
-				001E7283253AA6F40086A93F /* AdViewController.h */,
 				573A1351259AD790002023F8 /* Test */,
 				573A132B259AD788002023F8 /* Ad */,
 			);
@@ -688,6 +687,7 @@
 		573A1351259AD790002023F8 /* Test */ = {
 			isa = PBXGroup;
 			children = (
+				001E7283253AA6F40086A93F /* AdViewController.h */,
 				573A1352259AD790002023F8 /* ZJJSBridgeViewController.h */,
 				573A1353259AD790002023F8 /* ZJJSBridgeViewController.m */,
 				5737C372259AFCBF00CB6525 /* ZJH5JSViewController.h */,
