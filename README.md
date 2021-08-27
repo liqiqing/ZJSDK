@@ -1,15 +1,5 @@
 # ZJSDK_iOS使用文档
 
-**备注**
-
-| 最新版本更新日志 | 修订日期  | 修订说明       |
-| ---------------- | --------- | -------------- |
-|v2.0.2       |2021-3-5 |模块拆分，广告优化|
-|v2.1.0       |2021-3-12 |广告获取优化,提升容错率|
-|v2.2.3 |2021-4-7 |添加自渲染广告，优化H5广告|
-|v2.2.12|2021-6-8|添加全屏视频广告类型，优化自渲染广告接入，完善广告回调信息|
-|v2.3.0|2021-6-28|添加广告平台|
-|v2.3.2|2021-7-6|开屏广告优化，优化广告填充|
 
 ## <span id="jump1">一、iOS SDK接入说明</span>
 
@@ -38,7 +28,8 @@ pod 'ZJSDK/ZJSDKModuleGDT'#优量汇广告
 pod 'ZJSDK/ZJSDKModuleCSJ'#穿山甲广告
 pod 'ZJSDK/ZJSDKModuleKS'#快手广告
 pod 'ZJSDK/ZJSDKModuleMTG'#MTG广告
-pod 'ZJSDK/ZJSDKModuleYM'#云码广告
+pod 'ZJSDK/ZJSDKModuleSIG'#Sigmob广告
+pod 'ZJSDK/ZJSDKModuleYM'#云码广告  
 ```
 
 **2.手动方式**

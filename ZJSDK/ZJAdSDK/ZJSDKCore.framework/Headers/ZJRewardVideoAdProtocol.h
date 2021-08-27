@@ -36,7 +36,6 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)showAdInViewController:(UIViewController *)viewController;
 
 
-
 ///交易ID
 @property (nonatomic, copy, readonly) NSString *trans_id DEPRECATED_MSG_ATTRIBUTE("use trade_id instead.");
 ///交易ID

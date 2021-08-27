@@ -18,7 +18,7 @@
 		</data>
 		<key>Headers/ZJAdItemConfig.h</key>
 		<data>
-		yBkC57XU49az/Yt6IXexD4yL5EE=
+		4ukbVz9idq63DSESZ+SotuO/ZnM=
 		</data>
 		<key>Headers/ZJAdSDKInit.h</key>
 		<data>
@@ -118,7 +118,7 @@
 		</data>
 		<key>Headers/ZJRewardVideoAdProtocol.h</key>
 		<data>
-		PvYVHw6jk/AZjL32sHIvLw4yv3k=
+		OIEZELZbS6K848BVsQ49k0QYYXE=
 		</data>
 		<key>Headers/ZJSDKAdEnum.h</key>
 		<data>
@@ -158,7 +158,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		AM9BQc1wTjRIKg5NL3DqE+3C+nc=
+		WFdlio6FrrE21zPlPNg5Bq2dv08=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -204,11 +204,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			yBkC57XU49az/Yt6IXexD4yL5EE=
+			4ukbVz9idq63DSESZ+SotuO/ZnM=
 			</data>
 			<key>hash2</key>
 			<data>
-			qstOVlL8CdvwgJNlvIPD2NcqCTQllA2yUFkqORMKdfQ=
+			PGyxCEumUHArWQRsnfa/2jt810eMGtQbbg9WKHG8jJU=
 			</data>
 		</dict>
 		<key>Headers/ZJAdSDKInit.h</key>
@@ -479,11 +479,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			PvYVHw6jk/AZjL32sHIvLw4yv3k=
+			OIEZELZbS6K848BVsQ49k0QYYXE=
 			</data>
 			<key>hash2</key>
 			<data>
-			suerdubP3evgZlLgYw4O0HJ37EtHCr/oZxN6R6ud2DY=
+			Qv989W/XoD6oCeXD/JyMZCAHJDRWSxhYwFYHfLaxHQA=
 			</data>
 		</dict>
 		<key>Headers/ZJSDKAdEnum.h</key>

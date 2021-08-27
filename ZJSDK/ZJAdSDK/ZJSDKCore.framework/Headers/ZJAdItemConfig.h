@@ -28,6 +28,7 @@ typedef NS_ENUM(NSInteger, ZJAdPlatformType) {
     ZJAdPlatform_KS,
     ZJAdPlatform_ZJ,
     ZJAdPlatform_YM,
+    ZJAdPlatform_SIG,
     ZJAdPlatform_WW,
 };
 
