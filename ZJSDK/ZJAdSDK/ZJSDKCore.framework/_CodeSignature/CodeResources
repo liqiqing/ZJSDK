@@ -82,7 +82,7 @@
 		</data>
 		<key>Headers/ZJNativeAdAdapter.h</key>
 		<data>
-		TBonVwmiD72uyKuCySphA50wuv8=
+		qECT28LZk7EynxNXg9fuSgV24nk=
 		</data>
 		<key>Headers/ZJNativeAdAdapterView.h</key>
 		<data>
@@ -134,7 +134,7 @@
 		</data>
 		<key>Headers/ZJSDKCoreConfig.h</key>
 		<data>
-		ZTkaDSU1o4x8zmPdc5cgAUdDKOA=
+		J7IA5f35sFjiuIc5gevh82ejDjk=
 		</data>
 		<key>Headers/ZJSDKDefines.h</key>
 		<data>
@@ -158,7 +158,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		WFdlio6FrrE21zPlPNg5Bq2dv08=
+		33MN5I3lD7ZUDHRSURFNvBGeZbA=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -380,11 +380,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			TBonVwmiD72uyKuCySphA50wuv8=
+			qECT28LZk7EynxNXg9fuSgV24nk=
 			</data>
 			<key>hash2</key>
 			<data>
-			L1FceHAU+fCnPD1ZZRPc389srOdv4zC4rr8CXVKzxR4=
+			JezYkzdLPwIIfYDQzicE9pFqsgS6eAez9A5bNbTj7VA=
 			</data>
 		</dict>
 		<key>Headers/ZJNativeAdAdapterView.h</key>
@@ -523,11 +523,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			ZTkaDSU1o4x8zmPdc5cgAUdDKOA=
+			J7IA5f35sFjiuIc5gevh82ejDjk=
 			</data>
 			<key>hash2</key>
 			<data>
-			LklfNKKP60gRCN8FoPtDHlgXhsYS/mdHde1NYtjU3gU=
+			axj+zKWAcMwq8jGyewhZj6TxqQhnm5in461cq/ofDO8=
 			</data>
 		</dict>
 		<key>Headers/ZJSDKDefines.h</key>

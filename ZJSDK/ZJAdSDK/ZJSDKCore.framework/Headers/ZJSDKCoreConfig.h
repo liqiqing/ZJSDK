@@ -24,7 +24,6 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, copy) NSString *secretStr;
 
 
-
 @property (nonatomic, assign) ZJAdSDKLogLevel level;
 
 + (void)allLogWithFormat:(NSString *)format, ...;

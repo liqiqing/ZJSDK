@@ -36,6 +36,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 -(void)loadAdWithCount:(NSInteger)adCount;
 
+
 @end
 
 NS_ASSUME_NONNULL_END
