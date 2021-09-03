@@ -6,7 +6,7 @@
 //  Copyright © 2020 zj. All rights reserved.
 //
 
-#import "ZJCoreAdAdapter.h"
+#import <ZJSDKCore/ZJCoreAdAdapter.h>
 #import <UIKit/UIKit.h>
 
 NS_ASSUME_NONNULL_BEGIN

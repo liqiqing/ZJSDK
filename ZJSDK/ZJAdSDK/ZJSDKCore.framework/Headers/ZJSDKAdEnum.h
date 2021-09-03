@@ -21,7 +21,7 @@ typedef NS_ENUM(NSUInteger, ZJMediaPlayerStatus) {
 
 typedef NS_ENUM(NSInteger,ZJAdSDKLogLevel){
     ZJAdSDKLogLevelNone,
-    ZJAdSDKLogLevelAll,
+    ZJAdSDKLogLevelDebug,
     ZJAdSDKLogLevelWarning,
     ZJAdSDKLogLevelError,
 };

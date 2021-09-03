@@ -24,7 +24,7 @@ NS_ASSUME_NONNULL_BEGIN
 /**
  初始化H5页面信息
  @param placementId 广告位id（required）
- @param user  用户信息，由接入方提供， H5页面需要用到用户信息，用于展示和产生每个用户的唯一标识。（required）
+ @param user 用户信息，由接入方提供，H5页面需要用到用户信息，用于展示和产生每个用户的唯一标识。（required）
  */
 - (instancetype)initWithPlacementId:(NSString *)placementId user:(ZJUser *)user delegate:(id <ZJH5PageDelegate>)delegate;
 

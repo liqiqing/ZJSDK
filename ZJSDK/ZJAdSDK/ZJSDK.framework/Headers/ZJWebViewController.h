@@ -27,6 +27,7 @@ NS_ASSUME_NONNULL_BEGIN
 /**导航栏返回按钮*/
 @property (nonatomic, strong) UIImage *backImage;
 @property (nonatomic, copy) NSAttributedString *backText;
+
 /**导航栏关闭按钮*/
 @property (nonatomic, strong) UIImage *closeImage;
 @property (nonatomic, copy) NSAttributedString *closeText;

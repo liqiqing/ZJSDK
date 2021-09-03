@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/ZJAdSDK.h</key>
 		<data>
-		gbxXREtSXsRc8Z2lpKLkbmVVLtc=
+		8fNk6upU7LQ+08rBdPmDXsHqf9c=
 		</data>
 		<key>Headers/ZJBannerAdView.h</key>
 		<data>
@@ -34,7 +34,7 @@
 		</data>
 		<key>Headers/ZJH5Page.h</key>
 		<data>
-		t6tqrqMtR2PhOlNHijYqMA9QO80=
+		Psb8YS+844S365u9NktsYYq716Q=
 		</data>
 		<key>Headers/ZJH5PageDelegate.h</key>
 		<data>
@@ -82,11 +82,11 @@
 		</data>
 		<key>Headers/ZJWKWebViewBridge.h</key>
 		<data>
-		hJ+YOQlJGbOacWlm4ZvZXEZsk1w=
+		UPDbw15sqPKvkWUVbtKmRVmmZ7s=
 		</data>
 		<key>Headers/ZJWebViewController.h</key>
 		<data>
-		2g5YZ89PXkWKHsHCzCQP6nGIyKY=
+		kL5+Ob+1hKyz5zD8zTQe3t6FMMY=
 		</data>
 		<key>Info.plist</key>
 		<data>
@@ -103,11 +103,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			gbxXREtSXsRc8Z2lpKLkbmVVLtc=
+			8fNk6upU7LQ+08rBdPmDXsHqf9c=
 			</data>
 			<key>hash2</key>
 			<data>
-			S+XcCCBoIabrA7ITfcSYTAhMQSqCf8N1F7Xna15gaTI=
+			CkxuA4L671+VoocsKsD8eCv5hbw8sS2AVMzkuRaJvVc=
 			</data>
 		</dict>
 		<key>Headers/ZJBannerAdView.h</key>
@@ -180,11 +180,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			t6tqrqMtR2PhOlNHijYqMA9QO80=
+			Psb8YS+844S365u9NktsYYq716Q=
 			</data>
 			<key>hash2</key>
 			<data>
-			tbVLJ0cFBwz3wwnODfYLxH+gzrJGZ4K1hm2E0oQsnVk=
+			7t/HTfoc9MNQ0IhTZrNIfauKNAcmzWefN4Gc3i/mAcE=
 			</data>
 		</dict>
 		<key>Headers/ZJH5PageDelegate.h</key>
@@ -312,22 +312,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			hJ+YOQlJGbOacWlm4ZvZXEZsk1w=
+			UPDbw15sqPKvkWUVbtKmRVmmZ7s=
 			</data>
 			<key>hash2</key>
 			<data>
-			aqFXdFpivb+etPnhxtlNMgSr+hZ+Rcbx1YXAYRKJomE=
+			ghnEi+DAYs9pW/qszn45434QlFRju+yEgCxHAdZyzPg=
 			</data>
 		</dict>
 		<key>Headers/ZJWebViewController.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			2g5YZ89PXkWKHsHCzCQP6nGIyKY=
+			kL5+Ob+1hKyz5zD8zTQe3t6FMMY=
 			</data>
 			<key>hash2</key>
 			<data>
-			iRt785XtGj3346Ns3LGZaIxuJHnNRcGl3kJ02jpun0o=
+			N/QpEslMr4dWiZIHrB+GnSyOb38kVzY3f6gYWgkHmMw=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

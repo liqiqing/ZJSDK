@@ -11,7 +11,7 @@
 NS_ASSUME_NONNULL_BEGIN
 
 #define ZJ_BaseLog(level, frmt, ...) [ZJSDKCoreConfig level##LogWithFormat:@"[ZJSDK-%@]-[%s]:\n%@", ZJSDKVersion, #level , [NSString stringWithFormat:frmt, ##__VA_ARGS__]];
-#define ZJ_AllLog(frmt, ...) ZJ_BaseLog(all,frmt, ##__VA_ARGS__)
+#define ZJ_DebugLog(frmt, ...) ZJ_BaseLog(debug,frmt, ##__VA_ARGS__)
 #define ZJ_ErrorLog(frmt, ...) ZJ_BaseLog(error,frmt, ##__VA_ARGS__)
 #define ZJ_WarningLog(frmt, ...) ZJ_BaseLog(warning,frmt, ##__VA_ARGS__)
 
@@ -23,10 +23,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nonatomic, copy) NSString *secretStr;
 
-
 @property (nonatomic, assign) ZJAdSDKLogLevel level;
 
-+ (void)allLogWithFormat:(NSString *)format, ...;
++ (void)debugLogWithFormat:(NSString *)format, ...;
 + (void)errorLogWithFormat:(NSString *)format, ...;
 + (void)warningLogWithFormat:(NSString *)format, ...;
 

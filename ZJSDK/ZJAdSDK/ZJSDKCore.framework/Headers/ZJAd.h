@@ -8,9 +8,9 @@
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
-#import "ZJAdItemConfig.h"
-#import "NSError+ZJAd.h"
-#import "ZJSDKCoreConfig.h"
+#import <ZJSDKCore/ZJAdItemConfig.h>
+#import <ZJSDKCore/NSError+ZJAd.h>
+#import <ZJSDKCore/ZJSDKCoreConfig.h>
 NS_ASSUME_NONNULL_BEGIN
 
 @interface ZJAd : NSObject

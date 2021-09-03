@@ -5,7 +5,7 @@
 //  Created by Robin on 2021/1/23.
 //
 
-#import "ZJCoreAdAdapter.h"
+#import <ZJSDKCore/ZJCoreAdAdapter.h>
 #import "ZJBannerAdProtocol.h"
 NS_ASSUME_NONNULL_BEGIN
 
