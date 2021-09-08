@@ -20,18 +20,18 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property(nonatomic,strong,readonly)UIView *splashAdapterView;
 
--(void) loadSettingWith:(id<ZJSplashAdProtocol>) splashAd;
--(void) handleTimeOut;
+- (void)loadSettingWith:(id<ZJSplashAdProtocol>) splashAd;
+- (void)handleTimeOut;
 
 /**
  *  开屏广告素材加载成功
  */
--(void)zj_splashAdDidLoad;
+- (void)zj_splashAdDidLoad;
 
 /**
  *  开屏广告成功展示
  */
--(void)zj_splashAdSuccessPresentScreen;
+- (void)zj_splashAdSuccessPresentScreen;
 
 /**
  *  开屏广告点击回调

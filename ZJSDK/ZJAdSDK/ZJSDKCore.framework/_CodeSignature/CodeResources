@@ -46,7 +46,7 @@
 		</data>
 		<key>Headers/ZJFeedFullVideoAdAdapterView.h</key>
 		<data>
-		c+k0rDVh9kcLgxLqEl/OmGJF4S8=
+		Yi0MyIPtdbGzjJgx1rZFyxTIoYA=
 		</data>
 		<key>Headers/ZJFeedFullVideoProviderAdapter.h</key>
 		<data>
@@ -62,7 +62,7 @@
 		</data>
 		<key>Headers/ZJFeedFullVideoView.h</key>
 		<data>
-		4tQHsIZ4FK3AJ3lRIjfNn2+rGvE=
+		ehmD311JWVQdu5Mri4OP/sluuxg=
 		</data>
 		<key>Headers/ZJFullScreenVideoAdAdapter.h</key>
 		<data>
@@ -142,7 +142,7 @@
 		</data>
 		<key>Headers/ZJSplashAdAdapter.h</key>
 		<data>
-		JO1bGXJd2BnLx3cDdUv7NPX4jko=
+		AJZggaLg5U78sXWecY4NAWKdKXg=
 		</data>
 		<key>Headers/ZJSplashAdAdapterDelegate.h</key>
 		<data>
@@ -150,7 +150,7 @@
 		</data>
 		<key>Headers/ZJSplashAdProtocol.h</key>
 		<data>
-		dsJ6QwQaUol36wj2Db6ibEwQNXU=
+		Ceqau+2o4jH/yyPpd3Uu3r+6mcM=
 		</data>
 		<key>Headers/ZJ_AFNetworkReachabilityManager.h</key>
 		<data>
@@ -158,7 +158,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		FbzzIJ1Asbn73A+W/YBKZP0Swvc=
+		bHNOjXLy9N3q48aMkONz6GBMNPA=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -281,11 +281,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			c+k0rDVh9kcLgxLqEl/OmGJF4S8=
+			Yi0MyIPtdbGzjJgx1rZFyxTIoYA=
 			</data>
 			<key>hash2</key>
 			<data>
-			dmV52JFSsMVTOW5Qhs+RvCLvhGW/0K6KhpM5DKxyYjE=
+			1584kQpBdbbKwrKs7tNjzY+QbumLqwzdWSq5XF/OeD0=
 			</data>
 		</dict>
 		<key>Headers/ZJFeedFullVideoProviderAdapter.h</key>
@@ -325,11 +325,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			4tQHsIZ4FK3AJ3lRIjfNn2+rGvE=
+			ehmD311JWVQdu5Mri4OP/sluuxg=
 			</data>
 			<key>hash2</key>
 			<data>
-			IKJmpgYTT0fNEb6DQUK7ugOZkSJlenewF0yz60ZZp7U=
+			d/xYWBMjZr54gShkzdHJwkYLkifMmO9X7dRi0wpP88c=
 			</data>
 		</dict>
 		<key>Headers/ZJFullScreenVideoAdAdapter.h</key>
@@ -545,11 +545,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			JO1bGXJd2BnLx3cDdUv7NPX4jko=
+			AJZggaLg5U78sXWecY4NAWKdKXg=
 			</data>
 			<key>hash2</key>
 			<data>
-			kM9Rd38g0YB2VQIjZ9vxU1acCxQCjTSbnuJwyQaPcJY=
+			dj9DNowjCbgHql06M75hD/yAvU2MAqFMF8H0JyanZ8E=
 			</data>
 		</dict>
 		<key>Headers/ZJSplashAdAdapterDelegate.h</key>
@@ -567,11 +567,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			dsJ6QwQaUol36wj2Db6ibEwQNXU=
+			Ceqau+2o4jH/yyPpd3Uu3r+6mcM=
 			</data>
 			<key>hash2</key>
 			<data>
-			ifT/FtVJqLTk/fOolthbeKP8zjmb5qXiY8SQuGrjGuw=
+			ogDZlqHAOMhgZFfbEFjo994Y7q2HoBYyvOQIf7JuFdU=
 			</data>
 		</dict>
 		<key>Headers/ZJ_AFNetworkReachabilityManager.h</key>

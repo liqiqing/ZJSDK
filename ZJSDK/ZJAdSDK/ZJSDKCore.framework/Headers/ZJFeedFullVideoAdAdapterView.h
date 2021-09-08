@@ -13,6 +13,13 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, weak) UIViewController *rootViewController;
 @property (nonatomic, copy,readonly) NSString *identifier;
 -(void)render;
+
+///手动控制 播放|暂停
+@property (nonatomic, assign) BOOL canControlPlayState;
+
+- (void)play;
+
+- (void)pause;
 @end
 
 NS_ASSUME_NONNULL_END

@@ -44,7 +44,7 @@ NS_ASSUME_NONNULL_BEGIN
 /**
  展示H5页面
  */
-- (void)showH5Page:(UIViewController*)rootViewController DEPRECATED_MSG_ATTRIBUTE("use presentH5FromRootViewController: instead.");
+- (void)showH5Page:(UIViewController*)rootViewController DEPRECATED_MSG_ATTRIBUTE("use presentH5FromRootViewController:animated: instead.");
 
 @end
 
