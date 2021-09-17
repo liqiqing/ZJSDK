@@ -49,4 +49,28 @@ NS_ASSUME_NONNULL_BEGIN
 
 @end
 
+
+@interface ZJFloatingAdView (ZJH5PageCustom)
+
+/**导航栏返回按钮 图片设置*/
+@property (nonatomic, nullable, strong) UIImage *backImage;
+/**导航栏返回按钮 文字描述设置*/
+@property (nonatomic, nullable, copy) NSAttributedString *backText;
+
+/**导航栏关闭按钮 图片设置*/
+@property (nonatomic, nullable, strong) UIImage *closeImage;
+/**导航栏关闭按钮 文字描述设置*/
+@property (nonatomic, nullable, copy) NSAttributedString *closeText;
+
+/**隐藏导航栏的关闭按钮 默认 :NO*/
+@property (nonatomic, assign) BOOL hiddenH5CloseButton;
+
+/**导航栏标题， 设置后不会读取网页的标题*/
+@property (nonatomic, nullable, copy) NSString *navigationbarTitle;
+
+
+@end
+
+
+
 NS_ASSUME_NONNULL_END
