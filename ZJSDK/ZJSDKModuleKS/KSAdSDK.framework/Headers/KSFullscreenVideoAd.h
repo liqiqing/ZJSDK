@@ -71,6 +71,11 @@ NS_ASSUME_NONNULL_BEGIN
  This method is called when the user clicked skip button.
  */
 - (void)fullscreenVideoAdDidClickSkip:(KSFullscreenVideoAd *)fullscreenVideoAd;
+/**
+ This method is called when the user clicked skip button.
+ @param currentTime  played duration
+ */
+- (void)fullscreenVideoAdDidClickSkip:(KSFullscreenVideoAd *)fullscreenVideoAd currentTime:(NSTimeInterval)currentTime;
 @end
 
 NS_ASSUME_NONNULL_END

@@ -8,8 +8,17 @@
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
+#if __has_include(<KSUBaseAd/KSAd.h>)
+#import <KSUBaseAd/KSAd.h>
+#else
 #import "KSAd.h"
+#endif
+
+#if __has_include(<KSUDefine/KSAdShowDirection.h>)
+#import <KSUDefine/KSAdShowDirection.h>
+#else
 #import "KSAdShowDirection.h"
+#endif
 
 NS_ASSUME_NONNULL_BEGIN
 
