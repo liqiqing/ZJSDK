@@ -603,6 +603,7 @@
 		00619497251357B700E09415 /* lib */ = {
 			isa = PBXGroup;
 			children = (
+				001E7283253AA6F40086A93F /* AdViewController.h */,
 				001E7284253AA6F40086A93F /* AdViewController.m */,
 				576EF7BF261DA0ED00512AF7 /* SDWebImage */,
 				001E7286253AAC760086A93F /* Masonry */,
@@ -687,7 +688,6 @@
 		573A1351259AD790002023F8 /* Test */ = {
 			isa = PBXGroup;
 			children = (
-				001E7283253AA6F40086A93F /* AdViewController.h */,
 				573A1352259AD790002023F8 /* ZJJSBridgeViewController.h */,
 				573A1353259AD790002023F8 /* ZJJSBridgeViewController.m */,
 				5737C372259AFCBF00CB6525 /* ZJH5JSViewController.h */,
