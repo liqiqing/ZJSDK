@@ -70,11 +70,6 @@ NS_ASSUME_NONNULL_BEGIN
  */
 - (void)rewardedVideoAdDidClickSkip:(KSRewardedVideoAd *)rewardedVideoAd;
 /**
- This method is called when the user clicked skip button.
- @param currentTime played duration
- */
-- (void)rewardedVideoAdDidClickSkip:(KSRewardedVideoAd *)rewardedVideoAd currentTime:(NSTimeInterval)currentTime;
-/**
  This method is called when the video begin to play.
  */
 - (void)rewardedVideoAdStartPlay:(KSRewardedVideoAd *)rewardedVideoAd;

@@ -6,12 +6,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#if __has_include(<KSUBaseAd/KSAd.h>)
-#import <KSUBaseAd/KSAd.h>
-#else
 #import "KSAd.h"
-#endif
-
 #if __has_include(<KSUModel/KSAdInteractionType.h>)
 #import <KSUModel/KSAdInteractionType.h>
 #else
@@ -71,10 +66,8 @@ NS_ASSUME_NONNULL_BEGIN
 @interface KSInterstitialAd : KSAd
 
 @property (nonatomic, weak) id<KSInterstitialAdDelegate> delegate;
-//广告是否已合法加载
+
 @property (nonatomic, readonly) BOOL isValid;
-//是否开启声音
-@property (nonatomic, assign) BOOL videoSoundEnabled;
 
 - (instancetype)initWithPosId:(NSString *)posId;
 

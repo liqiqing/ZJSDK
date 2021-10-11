@@ -7,28 +7,27 @@
 //
 
 #import <Foundation/Foundation.h>
-
 #if __has_include(<KSUSDKInfo/KSAdSDKError.h>)
 #import <KSUSDKInfo/KSAdSDKError.h>
 #else
 #import "KSAdSDKError.h"
 #endif
 
-#if __has_include(<KSUDefine/KSAdSDKLogLevelDefine.h>)
-#import <KSUDefine/KSAdSDKLogLevelDefine.h>
-#else
-#import "KSAdSDKLogLevelDefine.h"
-#endif
-
-#if __has_include(<KSUPermission/KSAdPermission.h>)
-#import <KSUPermission/KSAdPermission.h>
-#else
-#import "KSAdPermission.h"
-#endif
+typedef NS_ENUM(NSInteger, KSAdSDKLogLevel) {
+    KSAdSDKLogLevelAll      =       0,
+    KSAdSDKLogLevelVerbose,  // 此类别的日记不会记录到日志文件中
+    KSAdSDKLogLevelDebug,
+    KSAdSDKLogLevelVerify,
+    KSAdSDKLogLevelInfo,
+    KSAdSDKLogLevelWarn,
+    KSAdSDKLogLevelError,
+    KSAdSDKLogLevelOff,
+};
 
 NS_ASSUME_NONNULL_BEGIN
 
 @class KSAdUserInfo;
+
 
 @interface KSAdSDKManager : NSObject
 
@@ -59,21 +58,6 @@ NS_ASSUME_NONNULL_BEGIN
 + (void)setLoglevel:(KSAdSDKLogLevel)level;
 
 + (void)setAutoHideUIRemoteKeyboardWindow:(BOOL)autoHideUIRemoteKeyboardWindow;
-
-// optional, disable use location status, default is NO
-+ (void)setDisableUseLocationStatus:(BOOL)disable;
-
-+ (void)setLocationBlock:(LocationBlock)locationBlock;
-
-// optional, disable use phone status, default is NO
-+ (void)setDisableUsePhoneStatus:(BOOL)disable;
-
-+ (void)setIdfaBlock:(IdfaBlock)idfaBlock;
-
-+ (void)setIdfvBlock:(IdfvBlock)idfvBlock;
-
-// optional, disable use network status, default is NO
-+ (void)setDisableUseNetworkStatus:(BOOL)disable;
 
 + (NSString *)appId;
 

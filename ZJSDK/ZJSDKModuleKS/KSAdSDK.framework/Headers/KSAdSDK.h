@@ -28,18 +28,8 @@
 #import <KSAdSDK/KSAdUserInfo.h>
 #endif
 
-#if __has_include(<KSUAdSDKManager/KSAdSDKManager.h>)
-#import <KSUAdSDKManager/KSAdSDKManager.h>
-#else
-#import "KSAdSDKManager.h"
-#endif
-
-#if __has_include(<KSUExportLog/KSAdExportManager.h>)
-#import <KSUExportLog/KSAdExportManager.h>
-#else
-#import "KSAdExportManager.h"
-#endif
-
+#import <KSAdSDK/KSAdSDKManager.h>
+#import <KSAdSDK/KSAdExportManager.h>
 #import <KSAdSDK/KSFullscreenVideoAd.h>
 #import <KSAdSDK/KSRewardedVideoAd.h>
 #import <KSAdSDK/KSRewardedVideoModel.h>
@@ -56,8 +46,3 @@
 #import <KSAdSDK/KSSplashAdView.h>
 /// 插屏广告
 #import <KSAdSDK/KSInterstitialAd.h>
-#if __has_include(<KSUPermission/KSAdPermission.h>)
-    #import <KSUPermission/KSAdPermission.h>
-#elif __has_include(<KSAdSDK/KSAdPermission.h>)
-    #import <KSAdSDK/KSAdPermission.h>
-#endif
