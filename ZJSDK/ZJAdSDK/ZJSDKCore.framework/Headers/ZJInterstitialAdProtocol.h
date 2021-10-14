@@ -12,7 +12,13 @@ NS_ASSUME_NONNULL_BEGIN
 @protocol ZJInterstitialAdProtocol <NSObject>
 
 -(void) loadAd;
+
 -(void)presentAdFromRootViewController:(UIViewController*)  viewController;
+
+
+
+///视频静音， 默认：NO  
+@property (nonatomic) BOOL mutedIfCan;
 
 @end
 

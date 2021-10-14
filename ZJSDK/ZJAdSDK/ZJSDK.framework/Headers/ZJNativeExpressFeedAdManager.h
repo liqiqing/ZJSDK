@@ -18,6 +18,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nonatomic) CGSize adSize;
 
+///视频静音， 默认：NO
+@property (nonatomic) BOOL mutedIfCan;
+
 @property (nonatomic, strong) NSArray <ZJNativeExpressFeedAd *> *data;
 
 
