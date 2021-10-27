@@ -43,7 +43,7 @@ typedef NS_ENUM(NSInteger,ZJSplashHotspotType){
 
 /**
  *  开屏广告的可点击区域    默认：ZJSplashHotspotType_FullScreen
- *  ⚠️目前该配置支持广告：dsp，穿山甲；其他平台如需配置请联系运营人员
+ *  ⚠️目前该配置支持广告：dsp，UIImageView；其他平台如需配置请联系运营人员
  */
 @property (nonatomic, assign) ZJSplashHotspotType hotspotType;
 
