@@ -6,7 +6,8 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "KSVideoAd.h"
+
+#import "KSAdShowDirection.h"
 
 NS_ASSUME_NONNULL_BEGIN
 DEPRECATED_MSG_ATTRIBUTE("use KSSplashAdView instead.")

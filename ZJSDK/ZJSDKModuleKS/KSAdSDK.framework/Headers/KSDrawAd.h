@@ -5,13 +5,9 @@
 //  Created by xuzhijun on 2019/12/6.
 //
 
-#import "KSAd.h"
-#if __has_include(<KSUModel/KSAdInteractionType.h>)
-#import <KSUModel/KSAdInteractionType.h>
-#else
-#import "KSAdInteractionType.h"
-#endif
 
+#import "KSAd.h"
+#import "KSAdInteractionType.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -19,6 +15,10 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface KSDrawAd : KSAd
 
+@property (nonatomic, weak) UIViewController *rootViewController;
+
+//是否开启声音
+@property (nonatomic, assign) BOOL videoSoundEnabled;
 
 @property (nonatomic, weak) id<KSDrawAdDelegate> delegate;
 

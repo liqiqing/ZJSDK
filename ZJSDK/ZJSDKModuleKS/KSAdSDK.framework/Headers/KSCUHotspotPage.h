@@ -6,6 +6,7 @@
 //
 
 #import <Foundation/Foundation.h>
+
 #import "KSCUCallBackProtocol.h"
 #import "KSCUHotspotDataProtocol.h"
 
@@ -54,7 +55,7 @@ NS_ASSUME_NONNULL_BEGIN
  */
 - (void)setThemeMode:(NSInteger)themeMode;
 
-/// 媒体调用，获取热点信息，successBlock会返回热点数据列表
+/// 媒体调用，获取热点信息，successBlock会返回热点数据列表，使用场景：媒体获取相关字段，自己渲染
 - (void)loadHotspotData:(void(^)(NSArray<id<KSCUHotspotDataProtocol> > *infos))successBlock
             failedBlock:(void(^)(NSError *_Nullable error))failedBlock;
 

@@ -7,7 +7,6 @@
 
 #import <Foundation/Foundation.h>
 #import "KSCUEmbedAdConfig.h"
-#import "KSCUContentPageDelegate.h"
 #import "KSCUOuterController.h"
 #import "KSCUCallBackProtocol.h"
 
@@ -39,6 +38,19 @@ NS_ASSUME_NONNULL_BEGIN
 - (instancetype)initWithPosId:(NSString *)posId withDeepLink:(NSString *)deepLink;
 
 - (void)tryToRefresh;
+
+#pragma mark - 电商使用
+- (instancetype)initWithPosId:(NSString *)posId promoteID:(nullable NSString *)promoteID comment:(nullable NSString *)comment;
+- (instancetype)initWithPosId:(NSString *)posId withDeepLink:(NSString *)deepLink promoteID:(nullable NSString *)promoteID comment:(nullable NSString *)comment;
+
+#pragma mark - 挽留弹窗相关
+/**
+ 外部触发挽留弹窗时调用
+ 参数1：type：挽留的场景， 3-back键；4-切换tab
+ block返回值：弹窗消失时，点击的区域,媒体基本只需要关心点击残忍离开的场景，也就是closeType = 1
+ 方法返回值：BOOL，是否可以正常展示挽留弹窗
+ */
+- (BOOL)interceptWithSourceType:(NSInteger)type closeBlock:(nullable void(^)(NSInteger closeType))interceptViewCloseBlock;
 
 @end
 

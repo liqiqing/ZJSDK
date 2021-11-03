@@ -8,11 +8,8 @@
 #import <Foundation/Foundation.h>
 #import "KSAdSplashInteractDelegate.h"
 #import "KSAdSplashViewController.h"
-#if __has_include(<KSUSDKInfo/KSAdSDKError.h>)
-#import <KSUSDKInfo/KSAdSDKError.h>
-#else
 #import "KSAdSDKError.h"
-#endif
+
 
 NS_ASSUME_NONNULL_BEGIN
 

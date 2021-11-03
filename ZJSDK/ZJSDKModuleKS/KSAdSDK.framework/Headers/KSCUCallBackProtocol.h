@@ -7,8 +7,10 @@
 
 #import <Foundation/Foundation.h>
 #import "KSCUFeedEvent.h"
+#import "KSCUContentPageDelegate.h"
 
 NS_ASSUME_NONNULL_BEGIN
+
 @protocol KSCURequestCallBackProtocol,KSCUUserInteractionCallBackProtocol;
 
 @protocol KSCUContentPageCallBackProtocol <KSCURequestCallBackProtocol, KSCUUserInteractionCallBackProtocol>
@@ -37,6 +39,18 @@ NS_ASSUME_NONNULL_BEGIN
 
 @optional
 - (void)kscuClickContentShareWithItem:(NSString *)shareItem;
+
+- (void)kscuAvaterDidClick:(KSCUContentType)contentType;
+
+- (void)kscuLikeDidClick:(KSCUContentType)contentType isLike:(BOOL)isLike;
+
+- (void)kscuCommentDidClick:(KSCUContentType)contentType;
+
+- (void)kscuSaleListDidClick:(NSString *)liveId;
+
+- (void)kscuBuyButtonDidClick:(NSString *)liveId;
+
+- (void)kscuGotoKwaiDidClick:(NSString *)liveId;
 
 @end
 

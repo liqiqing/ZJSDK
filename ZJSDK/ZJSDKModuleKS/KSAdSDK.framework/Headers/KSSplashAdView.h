@@ -6,12 +6,9 @@
 //
 
 #import <Foundation/Foundation.h>
+
 #import "KSAd.h"
-#if __has_include(<KSUModel/KSAdInteractionType.h>)
-#import <KSUModel/KSAdInteractionType.h>
-#else
 #import "KSAdInteractionType.h"
-#endif
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -62,6 +59,10 @@ NS_ASSUME_NONNULL_BEGIN
  */
 - (void)ksad_splashAd:(KSSplashAdView *)splashAdView didSkip:(NSTimeInterval)showDuration;
 /**
+ * splash ad did enter conversion view controller
+ */
+- (void)ksad_splashAdDidOpenConversionVC:(KSSplashAdView *)splashAdView interactionType:(KSAdInteractionType)interactType;
+/**
  * splash ad close conversion viewcontroller (no subsequent callbacks, remove & release KSSplashAdView here)
  */
 - (void)ksad_splashAdDidCloseConversionVC:(KSSplashAdView *)splashAdView interactionType:(KSAdInteractionType)interactType;
@@ -76,7 +77,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @end
 
-@interface KSSplashAdView : UIView
+@interface KSSplashAdView : UIView<KSAdProtocol>
 
 @property (nonatomic, weak) id<KSSplashAdViewDelegate> delegate;
 

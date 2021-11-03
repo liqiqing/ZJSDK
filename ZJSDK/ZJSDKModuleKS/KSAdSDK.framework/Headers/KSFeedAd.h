@@ -6,12 +6,9 @@
 //
 
 #import <Foundation/Foundation.h>
+
 #import "KSAd.h"
-#if __has_include(<KSUModel/KSAdInteractionType.h>)
-#import <KSUModel/KSAdInteractionType.h>
-#else
 #import "KSAdInteractionType.h"
-#endif
 
 NS_ASSUME_NONNULL_BEGIN
 

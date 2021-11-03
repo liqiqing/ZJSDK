@@ -12,6 +12,11 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+typedef NS_ENUM(int, KSAdSourceLogoType) {
+    KSAdSourceLogoTypeWhite,
+    KSAdSourceLogoTypeGray,
+};
+
 @interface KSMaterialMeta : NSObject
 
 /// interaction types supported by ads.
@@ -20,8 +25,11 @@ NS_ASSUME_NONNULL_BEGIN
 /// material pictures.
 @property (nonatomic, strong) NSArray<KSAdImage *> *imageArray;
 
-/// ad logo icon.
-@property (nonatomic, strong, nullable) KSAdImage *sdkLogo;
+/// ad logo, maybe null
+- (NSString *)adSourceLogoURL:(KSAdSourceLogoType)type;
+/// ad source.
+@property (nonatomic, copy) NSString *adSource;
+
 @property (nonatomic, strong, nullable) KSAdImage *appIconImage;
 
 /// 0-5
@@ -32,9 +40,6 @@ NS_ASSUME_NONNULL_BEGIN
 
 /// ad description.
 @property (nonatomic, copy) NSString *adDescription;
-
-/// ad source.
-@property (nonatomic, copy) NSString *adSource;
 
 /// text displayed on the creative button.
 @property (nonatomic, copy) NSString *actionDescription;

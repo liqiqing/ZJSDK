@@ -6,9 +6,9 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "KSCUEmbedAdConfig.h"
-#import "KSCUContentPage.h"
+
 #import "KSCUCallBackProtocol.h"
+#import "KSCUContentPage.h"
 
 @protocol KSCUEntryElementDelegate;
 
@@ -39,6 +39,11 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, assign) BOOL autoJumpInWifi;
 
 - (instancetype)initWithPosId:(NSString *)posId;
+
+/// 电商联盟专用
+- (instancetype)initWithPosId:(NSString *)posId promoteID:(nullable NSString *)promoteID;
+/// 电商联盟专用
+- (instancetype)initWithPosId:(NSString *)posId promoteID:(nullable NSString *)promoteID comment:(nullable NSString *)comment;
 
 - (instancetype)initWithContentPage:(KSCUContentPage *)contentPage;
 

@@ -9,6 +9,7 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 #import "KSVideoAd.h"
+#import "KSRewardedVideoAdDefines.h"
 
 @class KSRewardedVideoModel;
 @protocol KSRewardedVideoAdDelegate;
@@ -70,6 +71,11 @@ NS_ASSUME_NONNULL_BEGIN
  */
 - (void)rewardedVideoAdDidClickSkip:(KSRewardedVideoAd *)rewardedVideoAd;
 /**
+ This method is called when the user clicked skip button.
+ @param currentTime played duration
+ */
+- (void)rewardedVideoAdDidClickSkip:(KSRewardedVideoAd *)rewardedVideoAd currentTime:(NSTimeInterval)currentTime;
+/**
  This method is called when the video begin to play.
  */
 - (void)rewardedVideoAdStartPlay:(KSRewardedVideoAd *)rewardedVideoAd;
@@ -77,6 +83,13 @@ NS_ASSUME_NONNULL_BEGIN
  This method is called when the user close video ad.
  */
 - (void)rewardedVideoAd:(KSRewardedVideoAd *)rewardedVideoAd hasReward:(BOOL)hasReward;
+/**
+ This method is called when the user close video ad,support staged rewards.
+ */
+- (void)rewardedVideoAd:(KSRewardedVideoAd *)rewardedVideoAd
+              hasReward:(BOOL)hasReward
+               taskType:(KSAdRewardTaskType)taskType
+        currentTaskType:(KSAdRewardTaskType)currentTaskType;
 
 @end
 

@@ -6,9 +6,10 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "KSCUOuterController.h"
+
 #import "KSCUContentPageDelegate.h"
 #import "KSCUCallBackProtocol.h"
+#import "KSCUOuterController.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -30,7 +31,10 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nonatomic, strong) KSCUOuterController *outerController;
 
-- (instancetype)initWithPosId:(NSString *)posId NS_DESIGNATED_INITIALIZER;
+- (instancetype)initWithPosId:(NSString *)posId;
+
+- (instancetype)initWithPosId:(NSString *)posId promoteID:(nullable NSString *)promoteID comment:(nullable NSString *)comment NS_DESIGNATED_INITIALIZER;
+
 - (instancetype)init NS_UNAVAILABLE;
 
 /**

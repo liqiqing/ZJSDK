@@ -12,6 +12,7 @@ typedef NS_ENUM(NSUInteger, KSCUContentType) {
     KSCUContentTypeUnknown,         //未知，正常不会出现
     KSCUContentTypeNormal,          //普通信息流
     KSCUContentTypeAd,              //SDK内部广告
+    KSCUContentTypeLive,
     KSCUContentTypeEmbeded = 100    //外部广告
 };
 
