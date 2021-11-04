@@ -47,6 +47,10 @@ typedef NS_ENUM(NSInteger,ZJSplashHotspotType){
  */
 @property (nonatomic, assign) ZJSplashHotspotType hotspotType;
 
+
+/// 用于处理广告动作的视图控制器
+@property (nonatomic, weak) UIViewController *_Nullable rootViewController;
+
 /**
 *  发起拉取广告请求，只拉取不展示
  详解：广告素材及广告图片拉取成功后会回调splashAdDidLoad方法
