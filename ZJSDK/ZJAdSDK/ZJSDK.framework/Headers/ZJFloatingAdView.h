@@ -62,7 +62,7 @@ NS_ASSUME_NONNULL_BEGIN
 /**导航栏关闭按钮 文字描述设置*/
 @property (nonatomic, nullable, copy) NSAttributedString *closeText;
 
-/**隐藏导航栏的关闭按钮 默认 :NO*/
+/**隐藏导航栏的关闭按钮 默认 :YES*/
 @property (nonatomic, assign) BOOL hiddenH5CloseButton;
 
 /**导航栏标题， 设置后不会读取网页的标题*/
