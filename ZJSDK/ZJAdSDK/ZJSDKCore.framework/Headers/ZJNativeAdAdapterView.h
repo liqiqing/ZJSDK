@@ -88,6 +88,9 @@ NS_ASSUME_NONNULL_BEGIN
 //当点击应用下载或者广告调用系统程序打开时调用
 -(void)zjAdapter_NativeAdViewApplicationWillEnterBackground;
 
+
+@property (nonatomic, strong) UIView *superRenderView;
+
 @end
 
 NS_ASSUME_NONNULL_END

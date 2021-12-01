@@ -18,6 +18,14 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nonatomic, strong) NSArray<ZJNativeExpressFeedAd *> *data;
 
+/*
+ *required.[必选]
+ * root view controller for handling ad actions.
+ * 详解：开发者需传入用来弹出目标页的ViewController，一般为当前ViewController
+ */
+@property (nonatomic, weak) UIViewController *rootViewController;
+
+
 @property (nonatomic,weak) id <ZJNativeExpressFeedAdManagerApterDelegate> delegate;
 
 - (instancetype)initWithAdItemConfig:(ZJAdItemConfig *)adItemConfig size:(CGSize)size;

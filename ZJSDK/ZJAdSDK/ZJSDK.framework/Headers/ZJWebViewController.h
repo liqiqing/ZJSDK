@@ -23,7 +23,6 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, weak) id <ZJH5PageDelegate> delegate;
 
 
-
 /**导航栏返回按钮*/
 @property (nonatomic, strong) UIImage *backImage;
 @property (nonatomic, copy) NSAttributedString *backText;

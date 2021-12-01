@@ -3,13 +3,13 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1E804A6733FEB56DC88006082D0E708B /* Pods-ZJSDKDemo-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 93B784E909180BDE996914F597EBFB91 /* Pods-ZJSDKDemo-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		267DE29644652B19F450263593564AA7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		D8E7149DEAAB09C50EF954DC446B7295 /* Pods-ZJSDKDemo-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BD39B00C61485133F2F36E4743282C2B /* Pods-ZJSDKDemo-dummy.m */; };
+		1C936B895E0118C337F7122F54304688 /* Pods-ZJSDKDemo-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BD39B00C61485133F2F36E4743282C2B /* Pods-ZJSDKDemo-dummy.m */; };
+		339B57A71442AFB1A2970257199A85F2 /* Pods-ZJSDKDemo-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 93B784E909180BDE996914F597EBFB91 /* Pods-ZJSDKDemo-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DE9390E7238578EE31656F10CBB9CCC1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,15 +23,15 @@
 		A19E1B337E0E042B87C6CE082DB8EB88 /* Pods-ZJSDKDemo-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ZJSDKDemo-Info.plist"; sourceTree = "<group>"; };
 		BD39B00C61485133F2F36E4743282C2B /* Pods-ZJSDKDemo-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ZJSDKDemo-dummy.m"; sourceTree = "<group>"; };
 		D441E54315152E5B3CC7637B74B34C6E /* Pods-ZJSDKDemo-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ZJSDKDemo-acknowledgements.markdown"; sourceTree = "<group>"; };
-		E586CF1A242C1F16EA2160F232C062C0 /* Pods_ZJSDKDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_ZJSDKDemo.framework; path = "Pods-ZJSDKDemo.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E586CF1A242C1F16EA2160F232C062C0 /* Pods-ZJSDKDemo */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-ZJSDKDemo"; path = Pods_ZJSDKDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		E8B4479D8F0972AE650ECF58A1C5B1D6 /* Frameworks */ = {
+		FC9246ACF5957499348FB6BB16393711 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				267DE29644652B19F450263593564AA7 /* Foundation.framework in Frameworks */,
+				DE9390E7238578EE31656F10CBB9CCC1 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,10 +70,10 @@
 			path = "Target Support Files/Pods-ZJSDKDemo";
 			sourceTree = "<group>";
 		};
-		C8808D7ADFB3795E3F0D4046B12A99FC /* Products */ = {
+		C62173CC67C48DF0D9A5FE20ECB9187F /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				E586CF1A242C1F16EA2160F232C062C0 /* Pods_ZJSDKDemo.framework */,
+				E586CF1A242C1F16EA2160F232C062C0 /* Pods-ZJSDKDemo */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -83,7 +83,7 @@
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
 				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
-				C8808D7ADFB3795E3F0D4046B12A99FC /* Products */,
+				C62173CC67C48DF0D9A5FE20ECB9187F /* Products */,
 				83BA6CCFB01370E207F8BA912FAFBEE9 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
@@ -99,11 +99,11 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		3EDADB463898CDF5844F0D577F1D2C2A /* Headers */ = {
+		13661D4C86FA689BEFB002D6315A1EAC /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1E804A6733FEB56DC88006082D0E708B /* Pods-ZJSDKDemo-umbrella.h in Headers */,
+				339B57A71442AFB1A2970257199A85F2 /* Pods-ZJSDKDemo-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -112,20 +112,20 @@
 /* Begin PBXNativeTarget section */
 		0AB8E9178AE9F5ABF9D24AD6362EC478 /* Pods-ZJSDKDemo */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 18201C6195BFA0F58F5E524205CB0A4A /* Build configuration list for PBXNativeTarget "Pods-ZJSDKDemo" */;
+			buildConfigurationList = A00AF3537FA235C74C5402C804F67E07 /* Build configuration list for PBXNativeTarget "Pods-ZJSDKDemo" */;
 			buildPhases = (
-				3EDADB463898CDF5844F0D577F1D2C2A /* Headers */,
-				DAEBE7B6C6A7517A83D6EFBCAE50BF71 /* Sources */,
-				E8B4479D8F0972AE650ECF58A1C5B1D6 /* Frameworks */,
-				3FDB58C075DEE08981ADF7B6FA0D33A7 /* Resources */,
+				13661D4C86FA689BEFB002D6315A1EAC /* Headers */,
+				342396B60E25452CB3F73793490BB07B /* Sources */,
+				FC9246ACF5957499348FB6BB16393711 /* Frameworks */,
+				7D9BFC46B36683075BEAE1D1CF0ADA53 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = "Pods-ZJSDKDemo";
-			productName = "Pods-ZJSDKDemo";
-			productReference = E586CF1A242C1F16EA2160F232C062C0 /* Pods_ZJSDKDemo.framework */;
+			productName = Pods_ZJSDKDemo;
+			productReference = E586CF1A242C1F16EA2160F232C062C0 /* Pods-ZJSDKDemo */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -134,19 +134,19 @@
 		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1100;
-				LastUpgradeCheck = 1100;
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
 			};
 			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
-			compatibilityVersion = "Xcode 9.3";
+			compatibilityVersion = "Xcode 10.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
-				en,
 				Base,
+				en,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
-			productRefGroup = C8808D7ADFB3795E3F0D4046B12A99FC /* Products */;
+			productRefGroup = C62173CC67C48DF0D9A5FE20ECB9187F /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
@@ -156,7 +156,7 @@
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		3FDB58C075DEE08981ADF7B6FA0D33A7 /* Resources */ = {
+		7D9BFC46B36683075BEAE1D1CF0ADA53 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -166,11 +166,11 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		DAEBE7B6C6A7517A83D6EFBCAE50BF71 /* Sources */ = {
+		342396B60E25452CB3F73793490BB07B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D8E7149DEAAB09C50EF954DC446B7295 /* Pods-ZJSDKDemo-dummy.m in Sources */,
+				1C936B895E0118C337F7122F54304688 /* Pods-ZJSDKDemo-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -243,7 +243,7 @@
 			};
 			name = Debug;
 		};
-		692DF12F9E653A644B4D0188DF4E49C6 /* Release */ = {
+		5F207D86641FC2FCB70B12BFAB73AD25 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 7514FA8BC01572D4EAAA087230931B52 /* Pods-ZJSDKDemo.release.xcconfig */;
 			buildSettings = {
@@ -342,7 +342,7 @@
 			};
 			name = Release;
 		};
-		DDCD72546747FB7ECE4092529F55A813 /* Debug */ = {
+		D93939FF3FDADA4F80CC2CB35B6F0502 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 70B0F92822D60C64E0B40BD13DBC8F8A /* Pods-ZJSDKDemo.debug.xcconfig */;
 			buildSettings = {
@@ -381,20 +381,20 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		18201C6195BFA0F58F5E524205CB0A4A /* Build configuration list for PBXNativeTarget "Pods-ZJSDKDemo" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				DDCD72546747FB7ECE4092529F55A813 /* Debug */,
-				692DF12F9E653A644B4D0188DF4E49C6 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				25AD9454612BF454A1E3DC4CD4FA8C6D /* Debug */,
 				CA547D2C7E9A8A153DC2B27FBE00B112 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A00AF3537FA235C74C5402C804F67E07 /* Build configuration list for PBXNativeTarget "Pods-ZJSDKDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D93939FF3FDADA4F80CC2CB35B6F0502 /* Debug */,
+				5F207D86641FC2FCB70B12BFAB73AD25 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

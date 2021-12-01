@@ -47,11 +47,14 @@ NS_ASSUME_NONNULL_BEGIN
  */
 @property (nonatomic, strong, readonly) UIView *logoView;
 
+
+- (void)registerDataObject:(ZJNativeAdObject *)dataObject;
+
 /**
  自渲染2.0视图注册方法
  @param dataObject 数据对象，必传字段
  */
-- (void)registerDataObject:(ZJNativeAdObject *)dataObject;
+- (void)registerDataObject:(ZJNativeAdObject *)dataObject clickableViews:(NSArray<UIView *> *)clickableViews;
 
 
 /**

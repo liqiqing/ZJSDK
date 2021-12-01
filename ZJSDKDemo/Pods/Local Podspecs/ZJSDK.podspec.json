@@ -1,6 +1,6 @@
 {
   "name": "ZJSDK",
-  "version": "2.3.6",
+  "version": "2.3.12",
   "summary": "ZJSDK广告",
   "description": "TODO: Add long description of the pod here.",
   "homepage": "https://github.com/liqiqing/ZJSDK.git",
@@ -13,7 +13,7 @@
   },
   "source": {
     "git": "https://github.com/liqiqing/ZJSDK.git",
-    "tag": "2.3.6"
+    "tag": "2.3.12"
   },
   "platforms": {
     "ios": "9.0"
@@ -46,16 +46,111 @@
     "xml2",
     "c++abi"
   ],
-  "user_target_xcconfig": {
-    "OTHER_LDFLAGS": [
-      "-lObjC"
-    ]
+  "pod_target_xcconfig": {
+    "VALID_ARCHS": "x86_64 armv7 arm64"
   },
   "subspecs": [
     {
-      "name": "ZJSDKCore",
-      "vendored_frameworks": "ZJSDK/ZJSDKCore/*.framework",
-      "preserve_paths": "ZJSDK/ZJSDKCore/*.framework"
+      "name": "ZJAdSDK",
+      "vendored_frameworks": "ZJSDK/ZJAdSDK/*.framework",
+      "preserve_paths": "ZJSDK/ZJAdSDK/*.framework"
+    },
+    {
+      "name": "ZJSDKModuleGDT",
+      "vendored_libraries": "ZJSDK/ZJSDKModuleGDT/*.a",
+      "dependencies": {
+        "ZJSDK/ZJAdSDK": [
+
+        ],
+        "GDTMobSDK": [
+          "~> 4.13"
+        ]
+      }
+    },
+    {
+      "name": "ZJSDKModuleCSJ",
+      "vendored_libraries": "ZJSDK/ZJSDKModuleCSJ/*.a",
+      "dependencies": {
+        "ZJSDK/ZJAdSDK": [
+
+        ],
+        "Ads-CN": [
+          "~> 4.0"
+        ]
+      }
+    },
+    {
+      "name": "ZJSDKModuleKS",
+      "vendored_libraries": "ZJSDK/ZJSDKModuleKS/*.a",
+      "dependencies": {
+        "ZJSDK/ZJAdSDK": [
+
+        ],
+        "KSAdSDK": [
+          "~> 3.3"
+        ]
+      }
+    },
+    {
+      "name": "ZJSDKModuleMTG",
+      "vendored_libraries": "ZJSDK/ZJSDKModuleMTG/*.a",
+      "dependencies": {
+        "ZJSDK/ZJAdSDK": [
+
+        ],
+        "MintegralAdSDK": [
+          "~> 6.9"
+        ],
+        "MintegralAdSDK/RewardVideoAd": [
+
+        ],
+        "MintegralAdSDK/BannerAd": [
+
+        ],
+        "MintegralAdSDK/SplashAd": [
+
+        ],
+        "MintegralAdSDK/InterstitialAd": [
+
+        ],
+        "MintegralAdSDK/NativeAdvancedAd": [
+
+        ]
+      }
+    },
+    {
+      "name": "ZJSDKModuleDSP",
+      "vendored_libraries": "ZJSDK/ZJSDKModuleDSP/*.a",
+      "resources": "ZJSDK/ZJSDKModuleDSP/*.bundle",
+      "dependencies": {
+        "ZJSDK/ZJAdSDK": [
+
+        ]
+      }
+    },
+    {
+      "name": "ZJSDKModuleSIG",
+      "vendored_libraries": "ZJSDK/ZJSDKModuleSIG/*.a",
+      "dependencies": {
+        "ZJSDK/ZJAdSDK": [
+
+        ],
+        "SigmobAd-iOS": [
+          "3.4.3"
+        ]
+      }
+    },
+    {
+      "name": "ZJSDKModuleYM",
+      "vendored_libraries": "ZJSDK/ZJSDKModuleYM/*.a",
+      "dependencies": {
+        "ZJSDK/ZJAdSDK": [
+
+        ]
+      },
+      "vendored_frameworks": "ZJSDK/ZJSDKModuleYM/*.framework",
+      "preserve_paths": "ZJSDK/ZJSDKModuleYM/*.framework",
+      "resources": "ZJSDK/ZJSDKModuleYM/AlicloudCloudCode.framework/AlicloudCloudCode.bundle"
     }
   ]
 }

@@ -6,7 +6,7 @@
 //  Copyright © 2021 zj. All rights reserved.
 //
 
-#import <ZJSDKCoreFramewrok/ZJNativeAdView.h>
+#import <ZJSDKCore/ZJNativeAdView.h>
 
 NS_ASSUME_NONNULL_BEGIN
 

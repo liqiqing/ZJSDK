@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -152,6 +152,8 @@
 		576EF895261DA0EF00512AF7 /* SDAsyncBlockOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 576EF850261DA0EF00512AF7 /* SDAsyncBlockOperation.m */; };
 		576EF896261DA0EF00512AF7 /* SDAssociatedObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 576EF851261DA0EF00512AF7 /* SDAssociatedObject.m */; };
 		57ADEBBB2637FB62008F6E7E /* ZJFullScreenVideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 57ADEBB92637FB62008F6E7E /* ZJFullScreenVideoViewController.m */; };
+		57E031F62756275B0012EE2C /* libc++abi.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 57E031F52756275B0012EE2C /* libc++abi.tbd */; };
+		57E031F8275627A50012EE2C /* AppTrackingTransparency.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57E031F7275627A50012EE2C /* AppTrackingTransparency.framework */; };
 		57E738B425A839C8002C69C0 /* ZJFeedAdsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 57E738B325A839C8002C69C0 /* ZJFeedAdsViewController.m */; };
 		57E738E225A85F67002C69C0 /* ZJNativeExpressAdTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 57E738E125A85F67002C69C0 /* ZJNativeExpressAdTableViewCell.m */; };
 		6BCE4CD721ED4D7C2B9038A6 /* Pods_ZJSDKDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7EB4CCB834229A509AB72B25 /* Pods_ZJSDKDemo.framework */; };
@@ -442,6 +444,8 @@
 		576EF851261DA0EF00512AF7 /* SDAssociatedObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDAssociatedObject.m; sourceTree = "<group>"; };
 		57ADEBB92637FB62008F6E7E /* ZJFullScreenVideoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZJFullScreenVideoViewController.m; sourceTree = "<group>"; };
 		57ADEBBA2637FB62008F6E7E /* ZJFullScreenVideoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZJFullScreenVideoViewController.h; sourceTree = "<group>"; };
+		57E031F52756275B0012EE2C /* libc++abi.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++abi.tbd"; path = "usr/lib/libc++abi.tbd"; sourceTree = SDKROOT; };
+		57E031F7275627A50012EE2C /* AppTrackingTransparency.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppTrackingTransparency.framework; path = System/Library/Frameworks/AppTrackingTransparency.framework; sourceTree = SDKROOT; };
 		57E738B225A839C8002C69C0 /* ZJFeedAdsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZJFeedAdsViewController.h; sourceTree = "<group>"; };
 		57E738B325A839C8002C69C0 /* ZJFeedAdsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZJFeedAdsViewController.m; sourceTree = "<group>"; };
 		57E738DD25A858D9002C69C0 /* ZJNativeExpressAdsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZJNativeExpressAdsViewController.h; sourceTree = "<group>"; };
@@ -458,6 +462,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				57E031F8275627A50012EE2C /* AppTrackingTransparency.framework in Frameworks */,
+				57E031F62756275B0012EE2C /* libc++abi.tbd in Frameworks */,
 				0079C89B258B3AB400093756 /* Foundation.framework in Frameworks */,
 				0061941B25123E5800E09415 /* libbz2.tbd in Frameworks */,
 				0061941925123E4D00E09415 /* libsqlite3.tbd in Frameworks */,
@@ -540,6 +546,8 @@
 		006192DA250FAF4D00E09415 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				57E031F7275627A50012EE2C /* AppTrackingTransparency.framework */,
+				57E031F52756275B0012EE2C /* libc++abi.tbd */,
 				0079C89A258B3AB400093756 /* Foundation.framework */,
 				0061941A25123E5800E09415 /* libbz2.tbd */,
 				0061941825123E4D00E09415 /* libsqlite3.tbd */,

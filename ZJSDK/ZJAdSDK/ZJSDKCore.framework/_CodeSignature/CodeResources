@@ -22,7 +22,7 @@
 		</data>
 		<key>Headers/ZJAdSDKInit.h</key>
 		<data>
-		fsNLAL2OSdJeja6gU/i6I+zTaDE=
+		b4tirpMSOUz1gcQf+rN3gCVTGzI=
 		</data>
 		<key>Headers/ZJBannerAdAdapter.h</key>
 		<data>
@@ -38,7 +38,7 @@
 		</data>
 		<key>Headers/ZJCoreAdAdapter.h</key>
 		<data>
-		2fQU0GFuWukM6QOay4SE0OEPMck=
+		oLvUxaJ1lnZpfOwJypwQer5WQ58=
 		</data>
 		<key>Headers/ZJDeviceHelper.h</key>
 		<data>
@@ -86,7 +86,7 @@
 		</data>
 		<key>Headers/ZJNativeAdAdapterView.h</key>
 		<data>
-		6iEJoR306lf2CuaZv8qdlC30HeY=
+		ky+/QAUcrdFUedIjfs5zzwQRzIk=
 		</data>
 		<key>Headers/ZJNativeAdObject.h</key>
 		<data>
@@ -94,7 +94,7 @@
 		</data>
 		<key>Headers/ZJNativeAdView.h</key>
 		<data>
-		x6B1O3taOVjQgOPnn2IIq70OIx0=
+		yUZcK7c2QECJJR8dxwF4G0+LfZQ=
 		</data>
 		<key>Headers/ZJNativeExpressFeedAd.h</key>
 		<data>
@@ -102,7 +102,7 @@
 		</data>
 		<key>Headers/ZJNativeExpressFeedAdManagerAdapter.h</key>
 		<data>
-		Yghykbuj4zG+O5ZrHA+CNd4Erio=
+		Wype1FVE6+bcCfiSuLPHYq3SFss=
 		</data>
 		<key>Headers/ZJProjectHelper.h</key>
 		<data>
@@ -158,7 +158,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		C6hXynR2IHl2pXyFK/uMuf+T3Ok=
+		swYhfCwpX12Wkw7MbGECRTKVu2I=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -215,11 +215,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			fsNLAL2OSdJeja6gU/i6I+zTaDE=
+			b4tirpMSOUz1gcQf+rN3gCVTGzI=
 			</data>
 			<key>hash2</key>
 			<data>
-			Uj3gfkjstdwFdyOjtOHe9dZWc5/Wm7QGwPTMW68/6ro=
+			gGQZgnDdIyUKxIVUaLHjDUPjlJnLUQVAFA+cTij6s0M=
 			</data>
 		</dict>
 		<key>Headers/ZJBannerAdAdapter.h</key>
@@ -259,11 +259,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			2fQU0GFuWukM6QOay4SE0OEPMck=
+			oLvUxaJ1lnZpfOwJypwQer5WQ58=
 			</data>
 			<key>hash2</key>
 			<data>
-			xhMj9Q5SssTJR9uzQJjKR98s2Km7irphm3ZHm+TykNA=
+			Rz8bJQ5BitFwx0CsX1hCrJ7YLTu4lRMLB+/c4s9bbNw=
 			</data>
 		</dict>
 		<key>Headers/ZJDeviceHelper.h</key>
@@ -391,11 +391,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			6iEJoR306lf2CuaZv8qdlC30HeY=
+			ky+/QAUcrdFUedIjfs5zzwQRzIk=
 			</data>
 			<key>hash2</key>
 			<data>
-			a28Jo2h34SungboWeOs9jXpOUNwdz8ZanDGtkDA8ePM=
+			eqLaxrxIAgwSSjbTfY40swe9BI+ygYj74NAN9QOew/c=
 			</data>
 		</dict>
 		<key>Headers/ZJNativeAdObject.h</key>
@@ -413,11 +413,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			x6B1O3taOVjQgOPnn2IIq70OIx0=
+			yUZcK7c2QECJJR8dxwF4G0+LfZQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			ZOcnX/+aUILyZ5u4Cli9EAjsUeh/YRBQpWUXGNsKhL4=
+			etNsTG2g8dKGHd3Oiv8oSG7RMDjSaYP0vnhymFLZm8Y=
 			</data>
 		</dict>
 		<key>Headers/ZJNativeExpressFeedAd.h</key>
@@ -435,11 +435,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Yghykbuj4zG+O5ZrHA+CNd4Erio=
+			Wype1FVE6+bcCfiSuLPHYq3SFss=
 			</data>
 			<key>hash2</key>
 			<data>
-			/UqSzbLt9vCEc5zdY8/UOAmLEk3/ujprCUtIHG26xho=
+			tRQRUSn77JjGXY3u9G227BIdegr7m3bpUkPefFMbujo=
 			</data>
 		</dict>
 		<key>Headers/ZJProjectHelper.h</key>

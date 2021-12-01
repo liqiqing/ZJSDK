@@ -19,8 +19,8 @@ NS_ASSUME_NONNULL_BEGIN
 @property(nonatomic,strong) ZJAdItemConfig *config;
 
 
-+(void) registerPlatform:(NSString*) platform adType:(NSString*) adType adapterClass:(NSString*) adapterClass;
-+(NSString*) getAdapterClass:(NSString*) platform adType:(NSString*) adType;
++ (void)registerPlatform:(NSString*)platform adType:(NSString*)adType adapterClass:(NSString*) adapterClass;
++ (NSString *)getAdapterClass:(NSString*)platform adType:(NSString*)adType;
 + (Class)getAdapterClass:(ZJAdItemConfig *)adItemConfig;
 + (instancetype)createWithAdItemConfig:(ZJAdItemConfig *)adItemConfig;
 

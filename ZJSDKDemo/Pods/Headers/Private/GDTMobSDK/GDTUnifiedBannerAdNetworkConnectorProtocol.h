@@ -1,0 +1,1 @@
+../../../GDTMobSDK/lib/GDTUnifiedBannerAdNetworkConnectorProtocol.h
