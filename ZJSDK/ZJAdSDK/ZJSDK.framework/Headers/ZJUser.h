@@ -11,7 +11,7 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface ZJUser : NSObject
-
+//required
 @property(nonatomic,copy) NSString* userID;
 @property(nonatomic,copy) NSString* userName;
 @property(nonatomic,copy) NSString*  userAvatar;
