@@ -13,7 +13,17 @@
 
 #define ZJ_ScreenWidth [UIScreen mainScreen].bounds.size.width
 
-#define ZJ_StatusBarHeight [UIApplication sharedApplication].statusBarFrame.size.height
+#define ZJ_StatusBarHeight \
+({CGFloat statusBarHeight = 0; \
+if (@available(iOS 13.0, *))  { \
+UIStatusBarManager *statusBarManager = [UIApplication sharedApplication].windows.firstObject.windowScene.statusBarManager;\
+statusBarHeight = statusBarManager.statusBarFrame.size.height;\
+} else {\
+statusBarHeight = [UIApplication sharedApplication].statusBarFrame.size.height;\
+} \
+(statusBarHeight);})
+
+
 
 #define ZJ_IPHONEXSeries zj_is_iphoneXSeries_screen()
 
