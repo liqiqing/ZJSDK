@@ -11,6 +11,7 @@
 #import <ZJSDK/ZJAdSDK.h>
 #import "Aspects.h"
 #import <ZJSDK/ZJSDK.h>
+//#import <GoogleMobileAds/GoogleMobileAds.h>
 @interface AppDelegate ()<ZJSplashAdDelegate>
 
 @property(nonatomic,strong) UIWindow *showWindow;
@@ -34,6 +35,11 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+//    [GADMobileAds sharedInstance].requestConfiguration.testDeviceIdentifiers = @[
+//        kGADSimulatorID,
+//        @"592b23553d0cbfab544da947731cabe3",
+//        @"c31591525cf5c034ccb470fbf6aa8611"];
+    
     [ZJAdSDK registerAppId:@"zj_20201014iOSDEMO"];
     NSString *version = [ZJAdSDK SDKVersion];
     

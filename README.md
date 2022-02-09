@@ -1,4 +1,4 @@
-# ZJSDK_iOS使用文档
+
 
 
 ## <span id="jump1">一、iOS SDK接入说明</span>
@@ -11,66 +11,40 @@
 请找运营人员获取应用ID和广告位ID。
 ```
 
-#### <span id="jump1.1.2">1.1.2、导入framework</span>
+#### <span id="jump1.1.2">1.1.2、引入framework</span>
 
 **1. CocoaPods接入方式**
 
-
+```
+#引入常用广告模块  
+pod 'ZJSDK'
+```
 
 ```
-#完整的SDK
-pod 'ZJSDK'
-
-#如需模块拆分导入，请导入ZJSDKModuleDSP
+#常用广告模块（如需模块拆分引入，请引入ZJSDKModuleDSP）
 pod 'ZJSDK/ZJSDKModuleDSP'
-
 pod 'ZJSDK/ZJSDKModuleGDT'#优量汇广告
 pod 'ZJSDK/ZJSDKModuleCSJ'#穿山甲广告
 pod 'ZJSDK/ZJSDKModuleKS'#快手广告
 pod 'ZJSDK/ZJSDKModuleMTG'#MTG广告
 pod 'ZJSDK/ZJSDKModuleSIG'#Sigmob广告
-pod 'ZJSDK/ZJSDKModuleYM'#云码广告  
+```
+
+```
+#默认不引入的广告模块
+pod 'ZJSDK/ZJSDKModuleYM'#云码广告 
+pod 'ZJSDK/ZJSDKModuleGoogle'#Google广告 
 ```
 
 **2.手动方式**
 
 1.获取 framework 文件后直接将 {ZJSDK}文件拖入工程即可。
 
-2.<font color=#FF0000>前往项目的Build Setting中的Enable Bitcode设置为NO</font>
+2.前往项目的Build Setting中的Enable Bitcode设置为NO
 
-3.<font color=#FF0000>前往项目的Build Phases，创建Copy Files，修改Destination为Frameworks，Name中添加KSAdSDK.framework</font>
+3.Build Settings中Other Linker Flags 增加参数-ObjC，字母o和c大写
 
-4.为了方便模拟器调试，KSAdSDK 带有x86_64,i386架构，上架App store需要移除对应的这两个架构，请参考:（https://stackoverflow.com/questions/30547283/submit-to-app-store-issues-unsupported-architecture-x86）
-
-*升级SDK的同学必须同时更新framework和bundle文件，否则可能出现部分页面无法展示的问题，老版本升级的同学需要重新引入ZJSDK.framework
-
-*拖入完请确保Copy Bundle Resources中有BUAdSDK.bundle，ZJSDKBundle.bundle否则可能出现icon图片加载不出来的情况。
-
-### <span id="jump1.2">1.2、Xcode编译选项设置</span>
-
-#### <span id="jump1.1.2.1">1.2.1、添加权限</span>
-
-- 工程plist文件设置，点击右边的information Property List后边的 "+" 展开
-
-添加 App Transport Security Settings，先点击左侧展开箭头，再点右侧加号，Allow Arbitrary Loads 选项自动加入，修改值为 YES。 SDK API 已经全部支持HTTPS，但是广告主素材存在非HTTPS情况。
-
-```
-<key>NSAppTransportSecurity</key>
-  <dict>
-     <key>NSAllowsArbitraryLoads</key>
-   <true/>
-</dict>
-```
-
-- Build Settings中Other Linker Flags 增加参数-ObjC，字母o和c大写。
-
-#### <span id="jump1.2.2">1.2.2、运行环境配置</span>
-
-
-
-- 支持系统 iOS 9.X 及以上;
-- SDK编译环境 Xcode 11;
-- 支持架构： x86-64, armv7, arm64,i386
+4.升级SDK的同学必须同时更新framework和bundle文件，否则可能出现部分页面无法展示的问题，老版本升级的同学需要重新引入ZJSDK.framework，拖入完请确保Copy Bundle Resources中有BUAdSDK.bundle，ZJSDKBundle.bundle等否则可能出现icon图片加载不出来的情况。
 
 **添加依赖库**
 
@@ -116,9 +90,51 @@ pod 'ZJSDK/ZJSDKModuleYM'#云码广告
 
 - Security.framework
 
+- libc++abi.tbd
+
   如果以上依赖库增加完仍旧报错，请添加ImageIO.framework。
 
   SystemConfiguration.framework、CoreTelephony.framework、Security.framework是为了统计app信息使用
+
+<font color=#FF0000>**3.注意事项： **</font>
+
+* 快手广告：
+
+  * 手动导入快手广告需.前往项目的Build Phases，创建Copy Files，修改Destination为Frameworks，Name中添加KSAdSDK.framework。
+
+  * 为了方便模拟器调试，KSAdSDK 带有x86_64,i386架构，上架App store需要移除对应的这两个架构，请参考:（https://stackoverflow.com/questions/30547283/submit-to-app-store-issues-unsupported-architecture-x86）。
+
+* Google广告：
+
+  * 需要在info.plist 添加GADApplicationIdentifier字段，value为AppId ,如果使用了admob广告sdk且未在info.plist中配置，会导致运行时错误:https://developers.google.com/admob/ios/quick-start#cocoapods
+
+    ```
+    <key>GADApplicationIdentifier</key>
+    <string>申请的Google广告的appid</string>
+    ```
+
+    
+
+### <span id="jump1.2">1.2、Xcode编译选项设置</span>
+
+#### <span id="jump1.1.2.1">1.2.1、添加权限</span>
+
+- 工程plist文件设置，点击右边的information Property List后边的 "+" 展开
+
+添加 App Transport Security Settings，先点击左侧展开箭头，再点右侧加号，Allow Arbitrary Loads 选项自动加入，修改值为 YES。 SDK API 已经全部支持HTTPS，但是广告主素材存在非HTTPS情况。
+
+```
+<key>NSAppTransportSecurity</key>
+  <dict>
+     <key>NSAllowsArbitraryLoads</key>
+   <true/>
+</dict>
+```
+
+#### <span id="jump1.2.2">1.2.2、运行环境配置</span>
+
+- 支持系统 iOS 9.X 及以上;
+- 支持架构： x86-64, armv7, arm64,i386
 
 #### <span id="jump1.2.3">1.2.3、位置权限</span>
 
@@ -138,12 +154,7 @@ SDK 不会主动获取应用位置权限，当应用本身有获取位置权限�
 1: 新建桥接头文件（bridge.h，推荐放在工程目录下）。这里我们命名为：ZJAdSDKDemoSwift-Bridging-Header.h。在这个文件中import我们需要的所有头文件，代码如下：
 
 ```
-#import <ZJSDK/ZJAdSDK.h>
-#import <ZJSDK/ZJH5.h>
-#import <ZJSDK/ZJSplashAd.h>
-#import <ZJSDK/ZJRewardVideoAd.h>
-#import <ZJSDK/ZJInterstitialAd.h>
-#import <ZJSDK/ZJFeedFullVideoProvider.h>
+#import <ZJSDK/ZJSDK.h>
 ```
 
 2: 左侧目录中选中工程名，在 TARGETS->Build Settings-> Swift Compiler - Code Generation -> Objective-C Bridging Header 中输入桥接文件的路径

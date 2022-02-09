@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'ZJSDK'
-  s.version          = '2.3.12.5'
+  s.version          = '2.3.13'
   s.summary          = 'ZJSDK广告'
 
 # This description is used to generate tags and improve search results.
@@ -43,7 +43,8 @@ TODO: Add long description of the pod here.
 #    'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64'
 #  }
 #  s.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
-  
+  s.default_subspecs = 'ZJSDKModuleGDT', 'ZJSDKModuleCSJ', 'ZJSDKModuleKS', 'ZJSDKModuleMTG', 'ZJSDKModuleDSP','ZJSDKModuleSIG'
+
   s.subspec 'ZJAdSDK' do |ss|
     ss.vendored_frameworks = 'ZJSDK/ZJAdSDK/*.framework'
     ss.preserve_paths = 'ZJSDK/ZJAdSDK/*.framework'
@@ -65,7 +66,6 @@ TODO: Add long description of the pod here.
     ss.vendored_libraries = 'ZJSDK/ZJSDKModuleKS/*.a'
     ss.dependency 'ZJSDK/ZJAdSDK'
 #    ss.vendored_frameworks = 'ZJSDK/ZJSDKModuleKS/KSAdSDK.framework'
-#    ss.preserve_paths = 'ZJSDK/ZJSDKModuleKS/KSAdSDK.framework'
     ss.dependency 'KSAdSDK', '~> 3.3'
   end
 
@@ -99,6 +99,13 @@ TODO: Add long description of the pod here.
     ss.vendored_frameworks = 'ZJSDK/ZJSDKModuleYM/*.framework'
     ss.preserve_paths = 'ZJSDK/ZJSDKModuleYM/*.framework'
     ss.resources = 'ZJSDK/ZJSDKModuleYM/AlicloudCloudCode.framework/AlicloudCloudCode.bundle'
+  end
+  
+  s.subspec 'ZJSDKModuleGoogle' do |ss|
+    ss.vendored_libraries = 'ZJSDK/ZJSDKModuleGoogle/*.a'
+    ss.source_files       = 'ZJSDK/ZJSDKModuleGoogle/*.h'
+    ss.dependency 'ZJSDK/ZJAdSDK'
+    ss.dependency 'Google-Mobile-Ads-SDK'
   end
  
 end

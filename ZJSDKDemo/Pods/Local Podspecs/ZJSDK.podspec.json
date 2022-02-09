@@ -1,6 +1,6 @@
 {
   "name": "ZJSDK",
-  "version": "2.3.12",
+  "version": "2.3.13",
   "summary": "ZJSDK广告",
   "description": "TODO: Add long description of the pod here.",
   "homepage": "https://github.com/liqiqing/ZJSDK.git",
@@ -13,7 +13,7 @@
   },
   "source": {
     "git": "https://github.com/liqiqing/ZJSDK.git",
-    "tag": "2.3.12"
+    "tag": "2.3.13"
   },
   "platforms": {
     "ios": "9.0"
@@ -49,6 +49,14 @@
   "pod_target_xcconfig": {
     "VALID_ARCHS": "x86_64 armv7 arm64"
   },
+  "default_subspecs": [
+    "ZJSDKModuleGDT",
+    "ZJSDKModuleCSJ",
+    "ZJSDKModuleKS",
+    "ZJSDKModuleMTG",
+    "ZJSDKModuleDSP",
+    "ZJSDKModuleSIG"
+  ],
   "subspecs": [
     {
       "name": "ZJAdSDK",
@@ -99,7 +107,7 @@
 
         ],
         "MintegralAdSDK": [
-          "~> 6.9"
+          "~> 7.0"
         ],
         "MintegralAdSDK/RewardVideoAd": [
 
@@ -136,7 +144,7 @@
 
         ],
         "SigmobAd-iOS": [
-          "3.4.3"
+          "~> 3.4.3"
         ]
       }
     },
@@ -151,6 +159,19 @@
       "vendored_frameworks": "ZJSDK/ZJSDKModuleYM/*.framework",
       "preserve_paths": "ZJSDK/ZJSDKModuleYM/*.framework",
       "resources": "ZJSDK/ZJSDKModuleYM/AlicloudCloudCode.framework/AlicloudCloudCode.bundle"
+    },
+    {
+      "name": "ZJSDKModuleGoogle",
+      "vendored_libraries": "ZJSDK/ZJSDKModuleGoogle/*.a",
+      "source_files": "ZJSDK/ZJSDKModuleGoogle/*.h",
+      "dependencies": {
+        "ZJSDK/ZJAdSDK": [
+
+        ],
+        "Google-Mobile-Ads-SDK": [
+
+        ]
+      }
     }
   ]
 }
