@@ -30,7 +30,8 @@ typedef NS_ENUM(NSInteger, ZJAdPlatformType) {
     ZJAdPlatform_YM,
     ZJAdPlatform_SIG,
     ZJAdPlatform_WW,
-    ZJAdPlatform_GG,
+    ZJAdPlatform_Google,
+    ZJAdPlatform_Baidu,
 };
 
 @interface ZJAdItemConfig : NSObject <NSCoding>

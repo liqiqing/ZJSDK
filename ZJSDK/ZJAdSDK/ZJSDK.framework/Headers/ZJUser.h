@@ -18,7 +18,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property(nonatomic,assign) NSInteger userIntegral;
 @property(nonatomic,copy) NSString* ext;
 
--(NSString*) toJsonString;
+- (NSString*)toJsonString;
 
 @end
 

@@ -15,9 +15,10 @@ NS_ASSUME_NONNULL_BEGIN
 
 -(void)presentAdFromRootViewController:(UIViewController*)  viewController;
 
+///广告size， 部分广告支持
+@property (nonatomic) CGSize adSize;
 
-
-///视频静音， 默认：NO  
+///视频静音， 部分广告支持 默认：NO  
 @property (nonatomic) BOOL mutedIfCan;
 
 @end
