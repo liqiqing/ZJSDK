@@ -4,7 +4,6 @@
 //
 //  Created by Robin on 2020/8/10.
 //  Copyright © 2020 zj. All rights reserved.
-//  你好，我是麻明康
 
 #import "ViewController.h"
 
