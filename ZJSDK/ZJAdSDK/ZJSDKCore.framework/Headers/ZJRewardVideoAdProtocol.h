@@ -21,27 +21,23 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, assign) NSInteger reward_amount;
 //optional. serialized string.
 @property (nonatomic, copy) NSString *extra;
-
 ///激励视频静音， 默认：NO
 @property (nonatomic) BOOL videoMuted;
-
 /**加载广告数据*/
 - (void)loadAd;
-
 /**广告展示方法
- 调用showAdInViewController:方法前要确保激励视频加载完成，请在
- - (void)zj_rewardVideoAdVideoDidLoad:(ZJRewardVideoAd *)rewardedVideoAd
- 回调中调用该方法
+ 调用showAdInViewController:方法前要确保激励视频加载完成，请在zj_rewardVideoAdVideoDidLoad:回调中调用该方法
  */
 - (void)showAdInViewController:(UIViewController *)viewController;
 
-
-///交易ID
-@property (nonatomic, copy, readonly) NSString *trans_id DEPRECATED_MSG_ATTRIBUTE("use trade_id instead.");
 ///交易ID
 @property (nonatomic, copy, readonly) NSString *trade_id;
 ///验证dic
 @property (nonatomic, copy, readonly) NSDictionary *validationDictionary;
+
+
+///交易ID
+@property (nonatomic, copy, readonly) NSString *trans_id DEPRECATED_MSG_ATTRIBUTE("use trade_id instead.");
 
 @end
 

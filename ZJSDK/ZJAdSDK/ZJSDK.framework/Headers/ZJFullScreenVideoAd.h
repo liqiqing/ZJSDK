@@ -2,13 +2,12 @@
 //  ZJFullScreenVideoAd.h
 //  ZJSDK
 //
-//  Created by Rare on 2021/4/27.
-//  Copyright © 2021 zj. All rights reserved.
+//  Created by Rare on 2022/3/3.
+//  Copyright © 2022 zj. All rights reserved.
 //
 
-#import <ZJSDKCore/ZJAd.h>
+#import "ZJAd.h"
 #import <ZJSDKCore/ZJSDKAdEnum.h>
-#import <ZJSDKCore/ZJSDKCore.h>
 NS_ASSUME_NONNULL_BEGIN
 @class ZJFullScreenVideoAd;
 @protocol ZJFullScreenVideoAdDelegate <NSObject>
@@ -38,7 +37,7 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)zj_fullScreenVideoAdDetailDidPresent:(ZJFullScreenVideoAd *)ad;
 
 //广告详情页关闭
-- (void)zj_fullScreenVideoAdDetailDidClose:(ZJFullScreenVideoAd *) ad;
+- (void)zj_fullScreenVideoAdDetailDidClose:(ZJFullScreenVideoAd *)ad;
 
 @end
 
@@ -46,12 +45,12 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nonatomic, weak) id <ZJFullScreenVideoAdDelegate> delegate;
 
-- (instancetype)initWithPlacementId:(NSString *)placementId delegate:(id <ZJFullScreenVideoAdDelegate>)delegate;
+///视频静音， 默认：NO
+@property (nonatomic) BOOL mutedIfCan;
 
 - (void)loadAd;
 
 - (void)presentFullScreenVideoAdFromRootViewController:(UIViewController *)viewController;
-
 
 @end
 

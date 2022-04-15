@@ -5,23 +5,18 @@
 //  Created by Robin on 2020/12/22.
 //
 
-#import <Foundation/Foundation.h>
 #import "ZJCoreAdAdapter.h"
 #import "ZJSplashAdProtocol.h"
 #import "ZJSplashAdAdapterDelegate.h"
-#import "ZJAdItemConfig.h"
 NS_ASSUME_NONNULL_BEGIN
 
 @interface ZJSplashAdAdapter : ZJCoreAdAdapter<ZJSplashAdProtocol>
 
-@property(nonatomic,assign) bool hasLoadResult;
-@property(nonatomic,assign) bool isTimeOut;
+
 @property(nonatomic,weak) id<ZJSplashAdAdapterDelegate> delegate;
 
 @property(nonatomic,strong,readonly)UIView *splashAdapterView;
 
-- (void)loadSettingWith:(id<ZJSplashAdProtocol>) splashAd;
-- (void)handleTimeOut;
 
 /**
  *  开屏广告素材加载成功

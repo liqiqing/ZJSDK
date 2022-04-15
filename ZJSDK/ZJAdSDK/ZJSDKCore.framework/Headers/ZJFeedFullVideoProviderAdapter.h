@@ -12,6 +12,7 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface ZJFeedFullVideoProviderAdapter : ZJCoreAdAdapter<ZJFeedFullVideoProviderProtocol>
+@property (nonatomic, strong, readonly) NSArray <ZJFeedFullVideoView *>*data;
 
 @property(nonatomic,weak) id<ZJFeedFullVideoProviderAdapterDelegate> delegate;
 

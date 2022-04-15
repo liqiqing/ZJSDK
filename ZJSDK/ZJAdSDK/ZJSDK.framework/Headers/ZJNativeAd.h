@@ -6,14 +6,15 @@
 //  Copyright © 2021 zj. All rights reserved.
 //
 
-#import <ZJSDKCore/ZJAd.h>
+#import "ZJAd.h"
 #import <ZJSDKCore/ZJNativeAdObject.h>
 #import <ZJSDKCore/ZJNativeAdView.h>
+
 NS_ASSUME_NONNULL_BEGIN
 
 @protocol ZJNativeAdDelegate <NSObject>
 @optional
-
+/**自渲染广告加载回调*/
 - (void)zj_nativeAdLoaded:(NSArray<ZJNativeAdObject *> * _Nullable)nativeAdObjects error:(NSError * _Nullable)error;
 
 @end

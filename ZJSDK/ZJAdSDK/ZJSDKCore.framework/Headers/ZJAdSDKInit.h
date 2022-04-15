@@ -11,21 +11,11 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface ZJAdSDKInit : NSObject
 
-+(void)registerPlatform:(NSString *)platform  sdkInitClass:(NSString *) sdkInitClass;
++ (void)registerPlatform:(NSString *)platform sdkInitClass:(NSString *)sdkInitClass;
 
-+(instancetype)creatSdkInit:(NSString *)platform;
++ (instancetype)creatSdkInit:(NSString *)platform;
 
-+(BOOL)hasInit;
-
-+(BOOL)enableDefaultAudioSessionSetting;
-
-
--(void)platformInitCompelte:(NSString *) platform;
-
-
--(void)registerSDK:(nullable NSDictionary *)config;
--(void)registerSDK:(nullable NSDictionary *)config completeBlock:(nullable void (^) (BOOL complete))block;
-
+- (BOOL)registerSDK:(nullable NSDictionary *)config;
 
 @end
 

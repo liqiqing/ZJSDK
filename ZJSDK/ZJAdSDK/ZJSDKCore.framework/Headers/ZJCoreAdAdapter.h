@@ -6,27 +6,27 @@
 //
 
 #import <Foundation/Foundation.h>
-#import <ZJSDKCore/ZJAdItemConfig.h>
-
+#import <UIKit/UIKit.h>
+#import <ZJSDKCore/ZJAdUnionItemModel.h>
+#import <ZJSDKCore/ZJAdDebugLog.h>
 NS_ASSUME_NONNULL_BEGIN
 
 @interface ZJCoreAdAdapter : NSObject
 
-@property(nonatomic,copy) NSString *platform;
-@property(nonatomic,copy) NSString *placementId;
-@property(nonatomic,copy) NSString *zj_adID;
-@property(nonatomic,copy) NSString *zj_appID;
-@property(nonatomic,strong) ZJAdItemConfig *config;
+@property(nonatomic, strong ,readonly) ZJAdUnitModel *config;
+
+- (instancetype)initWithAdItemConfig:(ZJAdUnitModel *)adItemConfig;
 
 
 + (void)registerPlatform:(NSString*)platform adType:(NSString*)adType adapterClass:(NSString*) adapterClass;
-+ (NSString *)getAdapterClass:(NSString*)platform adType:(NSString*)adType;
-+ (Class)getAdapterClass:(ZJAdItemConfig *)adItemConfig;
-+ (instancetype)createWithAdItemConfig:(ZJAdItemConfig *)adItemConfig;
 
-- (instancetype)initWithAdItemConfig:(ZJAdItemConfig *)adItemConfig;
-- (BOOL)hasReady;
-- (BOOL)hasInit;
+//创建对象使用
++ (instancetype)createWithAdItemConfig:(ZJAdUnitModel *)adItemConfig;
+
+
+
++ (Class)getAdapterClass:(ZJAdUnitModel *)adItemConfig;
+
 
 @end
 

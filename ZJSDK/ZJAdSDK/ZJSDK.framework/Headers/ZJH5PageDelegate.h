@@ -15,10 +15,10 @@ NS_ASSUME_NONNULL_BEGIN
 @optional
 
 //H5Ad加载完成
--(void) onZjH5PageLoaded:(ZJUser*) user error:(nullable NSError*) error;
+-(void) onZjH5PageLoaded:(ZJUser*)user error:(nullable NSError*) error;
 
 //H5Ad错误
--(void) onZjH5PageError:(ZJUser*) user error:(NSError*) error;
+-(void) onZjH5PageError:(ZJUser*)user error:(NSError*) error;
 
 
 

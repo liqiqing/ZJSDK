@@ -28,12 +28,11 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nonatomic,weak) id <ZJNativeExpressFeedAdManagerApterDelegate> delegate;
 
-- (instancetype)initWithAdItemConfig:(ZJAdItemConfig *)adItemConfig size:(CGSize)size;
+- (instancetype)initWithAdItemConfig:(ZJAdUnitModel *)adItemConfig size:(CGSize)size;
 
 
 - (void)loadAdWithCount:(NSInteger)adCount;
 
-- (void)removeCacheFeedAds;
 
 
 - (void)ZJFeed_feedAdsManagerSuccessToLoad:(ZJNativeExpressFeedAdManagerAdapter *)adsManager nativeAds:(NSArray<ZJNativeExpressFeedAd *> *_Nullable)feedAdDataArray;

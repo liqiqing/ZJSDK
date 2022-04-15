@@ -49,11 +49,11 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic,weak)UIView *adView;
 
 
-- (instancetype)initWithAdItemConfig:(ZJAdItemConfig *)adItemConfig
+- (instancetype)initWithAdItemConfig:(ZJAdUnitModel *)adItemConfig
                       viewController:(UIViewController *)viewController
                               adSize:(CGSize)adSize;
 
-- (instancetype)initWithAdItemConfig:(ZJAdItemConfig *)adItemConfig
+- (instancetype)initWithAdItemConfig:(ZJAdUnitModel *)adItemConfig
                       viewController:(UIViewController *)viewController
                               adSize:(CGSize)adSize
                             interval:(NSInteger)interval;

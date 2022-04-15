@@ -6,7 +6,7 @@
 //  Copyright © 2020 zj. All rights reserved.
 //
 
-#import <ZJSDK/ZJSDK.h>
+#import "ZJAd.h"
 #import "ZJContentPageDelegate.h"
 NS_ASSUME_NONNULL_BEGIN
 
@@ -17,7 +17,6 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, weak) id <ZJContentPageVideoStateDelegate> videoStateDelegate;
 ///页面状态代理
 @property (nonatomic, weak) id <ZJContentPageStateDelegate> stateDelegate;
-
 
 ///内容标识
 @property (nonatomic, copy, readonly) NSString *contentInfoId;

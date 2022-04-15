@@ -10,9 +10,12 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @protocol ZJFeedFullVideoProviderProtocol <NSObject>
+
 //请求广告尺寸
-@property(nonatomic,assign) CGSize adSize;
--(void) loadAd:(NSInteger) count;
+@property (nonatomic, assign) CGSize adSize;
+
+- (void)loadAd:(NSInteger)count;
+
 @end
 
 NS_ASSUME_NONNULL_END

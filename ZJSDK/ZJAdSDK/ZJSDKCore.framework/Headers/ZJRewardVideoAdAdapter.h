@@ -5,23 +5,20 @@
 //  Created by Robin on 2021/1/14.
 //
 
-#import <UIKit/UIKit.h>
+
 #import "ZJCoreAdAdapter.h"
 #import "ZJRewardVideoAdProtocol.h"
 #import "ZJRewardVideoAdAdapterDelegate.h"
-//#import "ZJRewardVideoAdAdapterTransactionDelegate.h"
-
 
 NS_ASSUME_NONNULL_BEGIN
 
 @interface ZJRewardVideoAdAdapter : ZJCoreAdAdapter<ZJRewardVideoAdProtocol>
+
 @property(nonatomic,strong,readonly)UIView *rewardAdapterView;
+
 @property(nonatomic,weak) id<ZJRewardVideoAdAdapterDelegate> delegate;
-//@property(nonatomic,weak) id<ZJRewardVideoAdAdapterTransactionDelegate> transactionDelegate;
 
-- (instancetype)initWithAdItemConfig:(ZJAdItemConfig *)adItemConfig userId:(NSString *)userId;
-
-- (void)loadSettingWith:(id<ZJRewardVideoAdProtocol>) rewardVideoAd;
+- (instancetype)initWithAdItemConfig:(ZJAdUnitModel *)adItemConfig userId:(NSString *)userId;
 
 - (void)zj_rewardVideoAdDidLoad;
 

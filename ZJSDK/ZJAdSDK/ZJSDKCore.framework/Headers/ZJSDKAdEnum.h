@@ -9,6 +9,7 @@
 #define ZJSDKAdEnum_h
 
 
+
 typedef NS_ENUM(NSUInteger, ZJMediaPlayerStatus) {
     ZJMediaPlayerStatusDefalt = 0,         // 初始状态
     ZJMediaPlayerStatusLoading = 1,         // 加载中
@@ -25,6 +26,21 @@ typedef NS_ENUM(NSInteger,ZJAdSDKLogLevel){
     ZJAdSDKLogLevelWarning,
     ZJAdSDKLogLevelError,
 };
+
+typedef NS_ENUM(NSInteger, ZJAdPlatformType) {
+    ZJAdPlatform_None,
+    ZJAdPlatform_CSJ,
+    ZJAdPlatform_GDT,
+    ZJAdPlatform_MTG,
+    ZJAdPlatform_KS,
+    ZJAdPlatform_ZJ,
+    ZJAdPlatform_YM,
+    ZJAdPlatform_SIG,
+    ZJAdPlatform_WW,
+    ZJAdPlatform_Google,
+    ZJAdPlatform_Baidu,
+};
+
 
 
 #endif /* ZJSDKAdEnum_h */

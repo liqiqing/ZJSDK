@@ -8,6 +8,8 @@
 #import "ZJCoreAdAdapter.h"
 #import "ZJNativeAdObject.h"
 NS_ASSUME_NONNULL_BEGIN
+
+@class ZJNativeAdAdapter;
 @protocol ZJNativeAdAdapterDelegate <NSObject>
 /**
  广告数据回调
@@ -15,7 +17,7 @@ NS_ASSUME_NONNULL_BEGIN
  @param nativeAdObjects 广告数据数组
  @param error 错误信息
  */
-- (void)zjAdapter_nativeAdLoaded:(NSArray<ZJNativeAdObject *> * _Nullable)nativeAdObjects error:(NSError * _Nullable)error;
+- (void)zjAdapter_nativeAd:(ZJNativeAdAdapter *)adAdapter didLoaded:(NSArray<ZJNativeAdObject *> * _Nullable)nativeAdObjects error:(NSError * _Nullable)error;
 
 
 @end
@@ -26,6 +28,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nonatomic,weak)id <ZJNativeAdAdapterDelegate> delegate;
 
+@property (nonatomic,strong,readonly)NSArray *nativeAdObjects;
 
 /**
  广告数据回调

@@ -24,26 +24,12 @@ typedef NS_ENUM(NSInteger,ZJSplashHotspotType){
 @property (nonatomic, assign) CGFloat fetchDelay;
 
 /**
- *  开屏广告的背景图片
- *  可以设置背景图片作为开屏加载时的默认背景
+ *  开屏自定义底部视图
  */
-@property (nonatomic, strong) UIImage *backgroundImage;
-
-/**
- *  开屏广告的背景色
- *  可以设置开屏图片来作为开屏加载时的默认图片
- */
-@property (nonatomic, copy) UIColor *backgroundColor;
-
-/**
- *  开屏广告的底部预留尺寸
- *  可以设置开屏图片自定义bottomvVew的预留尺寸
- */
-@property (nonatomic, assign) CGSize bottomViewSize;
+@property (nonatomic, strong) UIView *customBottomView;
 
 /**
  *  开屏广告的可点击区域    默认：ZJSplashHotspotType_FullScreen
- *  ⚠️目前该配置支持广告：dsp，csj；其他平台如需配置请联系运营人员
  */
 @property (nonatomic, assign) ZJSplashHotspotType hotspotType;
 
@@ -59,9 +45,23 @@ typedef NS_ENUM(NSInteger,ZJSplashHotspotType){
 
 /**
  *  展示广告，
+  详解：广告展示成功时会回调zj_splashAdSuccessPresentScreen方法
+ */
+- (void)showAdInWindow:(UIWindow *)window;
+
+
+#pragma mark - DEPRECATED
+
+/**
+ *  开屏广告的底部预留尺寸
+ *  可以设置开屏图片自定义bottomvVew的预留尺寸
+ */
+@property (nonatomic, assign) CGSize bottomViewSize DEPRECATED_MSG_ATTRIBUTE("use customBottomView instead.");
+/**
+ *  展示广告，
   详解：广告展示成功时会回调splashAdSuccessPresentScreen方法
  */
-- (void)showAdInWindow:(UIWindow *)window withBottomView:(nullable UIView *)bottomView;
+- (void)showAdInWindow:(UIWindow *)window withBottomView:(nullable UIView *)bottomView DEPRECATED_MSG_ATTRIBUTE("use showAdInWindow: instead.");
 
 @end
 

@@ -6,8 +6,7 @@
 //  Copyright © 2021 zj. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
-#import <ZJSDKCore/ZJAd.h>
+#import "ZJAd.h"
 #import <ZJSDKCore/ZJBannerAdProtocol.h>
 
 NS_ASSUME_NONNULL_BEGIN
@@ -75,6 +74,8 @@ NS_ASSUME_NONNULL_BEGIN
                      viewController:(UIViewController *)viewController
                              adSize:(CGSize)adSize;
 
+
+- (NSArray *)getFillFailureMessages;
 @end
 
 NS_ASSUME_NONNULL_END

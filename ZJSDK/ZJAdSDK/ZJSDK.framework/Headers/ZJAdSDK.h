@@ -1,13 +1,13 @@
 //
-//  ZjSDK.h
+//  ZJAdSDK.h
 //  ZJSDK
 //
-//  Created by Robin on 2020/8/18.
-//  Copyright © 2020 zj. All rights reserved.
+//  Created by Rare on 2022/2/18.
+//  Copyright © 2022 zj. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
-#import <ZJSDKCore/ZJSDKCoreConfig.h>
+#import <ZJSDKCore/ZJSDKAdEnum.h>
 NS_ASSUME_NONNULL_BEGIN
 
 @interface ZJAdSDK : NSObject
@@ -18,14 +18,17 @@ NS_ASSUME_NONNULL_BEGIN
 + (void)registerAppId:(NSString *)appId;
 
 
-+ (BOOL)hasInit;
+/**
+ SDK 注册接口，请在 app 初始化时调用。
+ @param appId - 媒体ID
+ @param callback 初始化信息
+*/
++ (void)registerAppId:(NSString*)appId callback:(void(^)(BOOL completed, NSDictionary *info))callback;
 
 /**
- 在播放音频时是否使用SDK内部对AVAudioSession设置的category及options，默认使用，若不使用，SDK内部不做任何处理，由调用方在展示广告时自行设置；
- SDK设置的category为AVAudioSessionCategoryAmbient，options为AVAudioSessionCategoryOptionDuckOthers
+ 日志打印设置
  */
-+ (void)enableDefaultAudioSessionSetting:(BOOL)enabled;
-
++ (void)setLogLevel:(ZJAdSDKLogLevel)level;
 
 
 /**
@@ -33,11 +36,11 @@ NS_ASSUME_NONNULL_BEGIN
 */
 + (NSString *)SDKVersion;
 
-
 /**
- 日志打印设置
- */
-+ (void)setLogLevel:(ZJAdSDKLogLevel)level;
+ appId
+*/
++ (NSString *)appId;
+
 
 @end
 

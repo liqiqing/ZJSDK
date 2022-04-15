@@ -6,8 +6,7 @@
 //  Copyright © 2020 zj. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
-#import <ZJSDKCore/ZJAd.h>
+#import "ZJAd.h"
 #import <ZJSDKCore/ZJFeedFullVideoProviderProtocol.h>
 #import <ZJSDKCore/ZJFeedFullVideoView.h>
 #import <ZJSDKCore/ZJSDKAdEnum.h>
@@ -70,11 +69,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface ZJFeedFullVideoProvider : ZJAd<ZJFeedFullVideoProviderProtocol>
 
+@property (nonatomic, weak) id <ZJFeedFullVideoProviderDelegate> delegate;
 
-@property(nonatomic,weak) id<ZJFeedFullVideoProviderDelegate> delegate;
-
-- (instancetype)initWithPlacementId:(NSString *)placementId;
-- (instancetype)initWithPlacementId:(NSString *)placementId delegate:(id<ZJFeedFullVideoProviderDelegate>) delegate;
 
 @end
 

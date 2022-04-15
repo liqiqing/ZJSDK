@@ -11,15 +11,14 @@ NS_ASSUME_NONNULL_BEGIN
 
 @protocol ZJInterstitialAdProtocol <NSObject>
 
--(void) loadAd;
-
--(void)presentAdFromRootViewController:(UIViewController*)  viewController;
-
-///广告size， 部分广告支持
-@property (nonatomic) CGSize adSize;
-
-///视频静音， 部分广告支持 默认：NO  
+///视频静音， 支持部分广播  默认：NO
 @property (nonatomic) BOOL mutedIfCan;
+///广告size， 支持部分广播
+@property (nonatomic, assign) CGSize adSize;
+
+- (void)loadAd;
+
+- (void)presentAdFromRootViewController:(UIViewController*)viewController;
 
 @end
 

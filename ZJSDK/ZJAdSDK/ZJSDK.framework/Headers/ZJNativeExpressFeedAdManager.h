@@ -6,12 +6,22 @@
 //  Copyright © 2021 zj. All rights reserved.
 //
 
-#import <ZJSDKCore/ZJAd.h>
-#import "ZJNativeExpressFeedAdManagerDelegate.h"
+#import "ZJAd.h"
 #import <ZJSDKCore/ZJNativeExpressFeedAd.h>
 
 NS_ASSUME_NONNULL_BEGIN
-@class ZJNativeExpressFeedAd;
+@class ZJNativeExpressFeedAdManager ,ZJNativeExpressFeedAd;
+@protocol ZJNativeExpressFeedAdManagerDelegate <NSObject>
+@optional
+///加载成功
+- (void)ZJ_nativeExpressFeedAdManagerSuccessToLoad:(ZJNativeExpressFeedAdManager *)adsManager nativeAds:(NSArray<ZJNativeExpressFeedAd *> *_Nullable)feedAdDataArray;
+
+///加载失败
+- (void)ZJ_nativeExpressFeedAdManager:(ZJNativeExpressFeedAdManager *)adsManager didFailWithError:(NSError *_Nullable)error;
+
+@end
+
+
 @interface ZJNativeExpressFeedAdManager : ZJAd
 
 @property (nonatomic, weak) id <ZJNativeExpressFeedAdManagerDelegate> delegate;
@@ -29,7 +39,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, weak) UIViewController *rootViewController;
 
 
-@property (nonatomic, strong) NSArray <ZJNativeExpressFeedAd *> *data;
+@property (nonatomic, strong ,readonly) NSArray <ZJNativeExpressFeedAd *> *data;
 
 
 - (instancetype)initWithPlacementId:(NSString *)placementId size:(CGSize)size;

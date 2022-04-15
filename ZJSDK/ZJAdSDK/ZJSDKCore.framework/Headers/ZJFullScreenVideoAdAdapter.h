@@ -12,26 +12,21 @@ NS_ASSUME_NONNULL_BEGIN
 @class ZJFullScreenVideoAdAdapter;
 @protocol ZJfullScreenVideoAdAdapterDelegate <NSObject>
 
+- (void)zj_fullScreenVideoAdapterDidLoad:(ZJFullScreenVideoAdAdapter*)adapter;
 
-- (void) zj_fullScreenVideoAdapterDidLoad:(ZJFullScreenVideoAdAdapter*) adapter;
+- (void)zj_fullScreenVideoAdapterDidLoadFail:(ZJFullScreenVideoAdAdapter*)adapter error:(NSError * __nullable)error;
 
-- (void) zj_fullScreenVideoAdapterDidLoadFail:(ZJFullScreenVideoAdAdapter*) adapter error:(NSError * __nullable)error;
+- (void)zj_fullScreenVideoAdapterDidPresentScreen:(ZJFullScreenVideoAdAdapter*)adapter;
 
-- (void) zj_fullScreenVideoAdapterDidPresentScreen:(ZJFullScreenVideoAdAdapter*) adapter;
+- (void)zj_fullScreenVideoAdapterDidClick:(ZJFullScreenVideoAdAdapter*)adapter;
 
-- (void) zj_fullScreenVideoAdapterDidClick:(ZJFullScreenVideoAdAdapter*) adapter;
+- (void)zj_fullScreenVideoAdapterDidClose:(ZJFullScreenVideoAdAdapter*)adapter;
 
-- (void) zj_fullScreenVideoAdapterDidClose:(ZJFullScreenVideoAdAdapter*) adapter;
-
-
-
-- (void) zj_fullScreenVideoAdapterDidFail:(ZJFullScreenVideoAdAdapter*) adapter error:(NSError * __nullable)error;
-
+- (void)zj_fullScreenVideoAdapterDidFail:(ZJFullScreenVideoAdAdapter*)adapter error:(NSError * __nullable)error;
 
 - (void)zj_fullScreenVideoAdapter:(ZJFullScreenVideoAdAdapter*)adapter  playerStatus:(ZJMediaPlayerStatus)playerStatus;
 
-
-- (void) zj_fullScreenVideoAdapterDetailDidClose:(ZJFullScreenVideoAdAdapter*) adapter;
+- (void)zj_fullScreenVideoAdapterDetailDidClose:(ZJFullScreenVideoAdAdapter*)adapter;
 
 - (void)zj_fullScreenVideoAdapterDetailDidPresent:(ZJFullScreenVideoAdAdapter*)adapter;
 
@@ -43,25 +38,26 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property(nonatomic,weak) id<ZJfullScreenVideoAdAdapterDelegate> delegate;
 
--(void) loadAd;
+///视频静音， 默认：NO
+@property (nonatomic) BOOL mutedIfCan;
+
+-(void)loadAd;
 
 -(void)presentAdFromRootViewController:(UIViewController*)viewController;
 
+- (void)zj_fullScreenVideoDidLoad;
 
+- (void)zj_fullScreenVideoDidLoadFail:(NSError * __nullable)error;
 
-- (void) zj_fullScreenVideoDidLoad;
+- (void)zj_fullScreenVideoDidPresentScreen;
 
-- (void) zj_fullScreenVideoDidLoadFail:(NSError * __nullable)error;
+- (void)zj_fullScreenVideoDidClick;
 
-- (void) zj_fullScreenVideoDidPresentScreen;
+- (void)zj_fullScreenVideoDidClose;
 
-- (void) zj_fullScreenVideoDidClick;
+- (void)zj_fullScreenVideoDetailDidClose;
 
-- (void) zj_fullScreenVideoDidClose;
-
-- (void) zj_fullScreenVideoDetailDidClose;
-
-- (void) zj_fullScreenVideoDidFail:(NSError * __nullable)error;
+- (void)zj_fullScreenVideoDidFail:(NSError * __nullable)error;
 
 -(void)zj_fullScreenVideoPlayerStatus:(ZJMediaPlayerStatus)status;
 

@@ -2,13 +2,13 @@
 //  ZJInterstitialAd.h
 //  ZJSDK
 //
-//  Created by Robin on 2020/10/16.
-//  Copyright © 2020 zj. All rights reserved.
+//  Created by Rare on 2022/3/1.
+//  Copyright © 2022 zj. All rights reserved.
 //
-#import <UIKit/UIKit.h>
-#import <ZJSDK/ZJSDK.h>
-#import <ZJSDKCore/ZJAd.h>
+
+#import "ZJAd.h"
 #import <ZJSDKCore/ZJInterstitialAdProtocol.h>
+
 NS_ASSUME_NONNULL_BEGIN
 @class ZJInterstitialAd;
 @protocol ZJInterstitialAdDelegate <NSObject>
@@ -38,9 +38,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface ZJInterstitialAd : ZJAd<ZJInterstitialAdProtocol>
 
-@property(nonatomic,weak) id<ZJInterstitialAdDelegate> delegate;
-
-- (instancetype)initWithPlacementId:(NSString *)placementId delegate:(id<ZJInterstitialAdDelegate>) delegate;
+@property(nonatomic,weak) id<ZJInterstitialAdDelegate>delegate;
 
 @end
 
