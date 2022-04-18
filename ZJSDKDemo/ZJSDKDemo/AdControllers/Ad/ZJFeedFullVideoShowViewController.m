@@ -47,7 +47,7 @@
 }
 - (void)loadData {
     if(!self.adProvider){
-        self.adProvider = [[ZJFeedFullVideoProvider alloc] initWithPlacementId:self.placementId delegate:self];
+        self.adProvider = [[ZJFeedFullVideoProvider alloc] initWithPlacementId:self.placementId];
         self.adProvider.adSize = self.view.bounds.size;
     }
     [self.adProvider loadAd:10];
