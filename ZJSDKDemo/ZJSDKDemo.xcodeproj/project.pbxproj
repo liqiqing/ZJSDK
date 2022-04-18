@@ -7,11 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		001E72332535FA7C0086A93F /* ZJFeedFullVideoAdCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 001E72322535FA7C0086A93F /* ZJFeedFullVideoAdCell.m */; };
-		001E72362535FAA80086A93F /* ZJFullScreenCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 001E72352535FAA80086A93F /* ZJFullScreenCell.m */; };
 		001E727C2539F4220086A93F /* Aspects.m in Sources */ = {isa = PBXBuildFile; fileRef = 001E727A2539F4220086A93F /* Aspects.m */; };
-		001E727F253AA39E0086A93F /* UIDevice+Kit.m in Sources */ = {isa = PBXBuildFile; fileRef = 001E727E253AA39E0086A93F /* UIDevice+Kit.m */; };
-		001E7285253AA6F40086A93F /* AdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 001E7284253AA6F40086A93F /* AdViewController.m */; };
 		001E72A1253AAC760086A93F /* NSLayoutConstraint+MASDebugAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 001E7288253AAC760086A93F /* NSLayoutConstraint+MASDebugAdditions.m */; };
 		001E72A2253AAC760086A93F /* ViewController+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 001E7291253AAC760086A93F /* ViewController+MASAdditions.m */; };
 		001E72A3253AAC760086A93F /* MASCompositeConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 001E7295253AAC760086A93F /* MASCompositeConstraint.m */; };
@@ -22,37 +18,11 @@
 		001E72A8253AAC760086A93F /* MASConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 001E729C253AAC760086A93F /* MASConstraint.m */; };
 		001E72A9253AAC760086A93F /* MASViewConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 001E729E253AAC760086A93F /* MASViewConstraint.m */; };
 		001E72AA253AAC760086A93F /* MASViewAttribute.m in Sources */ = {isa = PBXBuildFile; fileRef = 001E729F253AAC760086A93F /* MASViewAttribute.m */; };
-		0061949025133E9400E09415 /* ZJAdLoadView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0061948F25133E9400E09415 /* ZJAdLoadView.m */; };
-		0061949325133F1000E09415 /* UIButton+Event.m in Sources */ = {isa = PBXBuildFile; fileRef = 0061949225133F1000E09415 /* UIButton+Event.m */; };
 		0077471024E182A200C30636 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0077470F24E182A200C30636 /* AppDelegate.m */; };
 		0077471624E182A200C30636 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0077471524E182A200C30636 /* ViewController.m */; };
 		0077471B24E182A200C30636 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0077471A24E182A200C30636 /* Assets.xcassets */; };
 		0077471E24E182A200C30636 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0077471C24E182A200C30636 /* LaunchScreen.storyboard */; };
 		0077472124E182A200C30636 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0077472024E182A200C30636 /* main.m */; };
-		5737C374259AFCBF00CB6525 /* ZJH5JSViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5737C373259AFCBF00CB6525 /* ZJH5JSViewController.m */; };
-		5737C498259C176A00CB6525 /* ZJAdEditTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5737C497259C176A00CB6525 /* ZJAdEditTextView.m */; };
-		5737C49C259C1A1A00CB6525 /* UIView+ZJExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 5737C49B259C1A1A00CB6525 /* UIView+ZJExtension.m */; };
-		573A1345259AD788002023F8 /* ZJFeedFullVideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 573A132E259AD788002023F8 /* ZJFeedFullVideoViewController.m */; };
-		573A134B259AD788002023F8 /* ZJInterstitialAdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 573A133F259AD788002023F8 /* ZJInterstitialAdViewController.m */; };
-		573A134C259AD788002023F8 /* ZjRewardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 573A1340259AD788002023F8 /* ZjRewardViewController.m */; };
-		573A134E259AD788002023F8 /* ZJH5ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 573A1342259AD788002023F8 /* ZJH5ViewController.m */; };
-		573A134F259AD788002023F8 /* ZJFeedFullVideoShowViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 573A1343259AD788002023F8 /* ZJFeedFullVideoShowViewController.m */; };
-		573A1350259AD788002023F8 /* ZjSplashViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 573A1344259AD788002023F8 /* ZjSplashViewController.m */; };
-		573A1354259AD790002023F8 /* ZJJSBridgeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 573A1353259AD790002023F8 /* ZJJSBridgeViewController.m */; };
-		574AA84825E4D08D00098DCA /* ZJNativeExpressAdsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 57E738DE25A858D9002C69C0 /* ZJNativeExpressAdsViewController.m */; };
-		576510E725BFFBB5006AAFEF /* ZJBannerAdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 576510E625BFFBB5006AAFEF /* ZJBannerAdViewController.m */; };
-		576657822652164700C2C239 /* ZJContentPageStyle2ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 576657792652164700C2C239 /* ZJContentPageStyle2ViewController.m */; };
-		576657832652164700C2C239 /* ZJContentPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5766577D2652164700C2C239 /* ZJContentPageViewController.m */; };
-		576657842652164700C2C239 /* ZJContentPageStyle1ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5766577F2652164700C2C239 /* ZJContentPageStyle1ViewController.m */; };
-		576657852652164700C2C239 /* ZJContentPageSelectedBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 576657802652164700C2C239 /* ZJContentPageSelectedBar.m */; };
-		576657862652164700C2C239 /* ZJContentPageTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 576657812652164700C2C239 /* ZJContentPageTabBarController.m */; };
-		576EF7B8261DA0A400512AF7 /* ZJNativeAdImageTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 576EF7AA261DA0A400512AF7 /* ZJNativeAdImageTableViewCell.m */; };
-		576EF7B9261DA0A400512AF7 /* ZJNativeAdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 576EF7AD261DA0A400512AF7 /* ZJNativeAdViewController.m */; };
-		576EF7BA261DA0A400512AF7 /* ZJNativeAdAtlasImageTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 576EF7B1261DA0A400512AF7 /* ZJNativeAdAtlasImageTableViewCell.m */; };
-		576EF7BB261DA0A400512AF7 /* ZJNativeAdVideoTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 576EF7B3261DA0A400512AF7 /* ZJNativeAdVideoTableViewCell.m */; };
-		576EF7BC261DA0A400512AF7 /* ZJFillNativeAdView.m in Sources */ = {isa = PBXBuildFile; fileRef = 576EF7B4261DA0A400512AF7 /* ZJFillNativeAdView.m */; };
-		576EF7BD261DA0A400512AF7 /* ZJNativeAdBaseTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 576EF7B6261DA0A400512AF7 /* ZJNativeAdBaseTableViewCell.m */; };
-		576EF7BE261DA0A400512AF7 /* ZJNativeAdSelectedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 576EF7B7261DA0A400512AF7 /* ZJNativeAdSelectedViewController.m */; };
 		576EF852261DA0EF00512AF7 /* SDImageHEICCoder.m in Sources */ = {isa = PBXBuildFile; fileRef = 576EF7C5261DA0ED00512AF7 /* SDImageHEICCoder.m */; };
 		576EF853261DA0EF00512AF7 /* NSImage+Compatibility.m in Sources */ = {isa = PBXBuildFile; fileRef = 576EF7C7261DA0ED00512AF7 /* NSImage+Compatibility.m */; };
 		576EF854261DA0EF00512AF7 /* SDAnimatedImageView+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 576EF7C9261DA0ED00512AF7 /* SDAnimatedImageView+WebCache.m */; };
@@ -122,9 +92,42 @@
 		576EF894261DA0EF00512AF7 /* SDDisplayLink.m in Sources */ = {isa = PBXBuildFile; fileRef = 576EF84E261DA0EF00512AF7 /* SDDisplayLink.m */; };
 		576EF895261DA0EF00512AF7 /* SDAsyncBlockOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 576EF850261DA0EF00512AF7 /* SDAsyncBlockOperation.m */; };
 		576EF896261DA0EF00512AF7 /* SDAssociatedObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 576EF851261DA0EF00512AF7 /* SDAssociatedObject.m */; };
-		57ADEBBB2637FB62008F6E7E /* ZJFullScreenVideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 57ADEBB92637FB62008F6E7E /* ZJFullScreenVideoViewController.m */; };
-		57E738B425A839C8002C69C0 /* ZJFeedAdsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 57E738B325A839C8002C69C0 /* ZJFeedAdsViewController.m */; };
-		57E738E225A85F67002C69C0 /* ZJNativeExpressAdTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 57E738E125A85F67002C69C0 /* ZJNativeExpressAdTableViewCell.m */; };
+		579DFD39280D4B3A00EAF128 /* ZJLogView.m in Sources */ = {isa = PBXBuildFile; fileRef = 579DFCEC280D4B3800EAF128 /* ZJLogView.m */; };
+		579DFD3A280D4B3A00EAF128 /* UIDevice+Kit.m in Sources */ = {isa = PBXBuildFile; fileRef = 579DFCF0280D4B3800EAF128 /* UIDevice+Kit.m */; };
+		579DFD3B280D4B3A00EAF128 /* ZJAdLoadView.m in Sources */ = {isa = PBXBuildFile; fileRef = 579DFCF2280D4B3800EAF128 /* ZJAdLoadView.m */; };
+		579DFD3C280D4B3A00EAF128 /* UIButton+Event.m in Sources */ = {isa = PBXBuildFile; fileRef = 579DFCF3280D4B3800EAF128 /* UIButton+Event.m */; };
+		579DFD3D280D4B3A00EAF128 /* ZJHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 579DFCF4280D4B3800EAF128 /* ZJHomeViewController.m */; };
+		579DFD3E280D4B3A00EAF128 /* ZJHomeTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 579DFCF6280D4B3800EAF128 /* ZJHomeTableViewCell.m */; };
+		579DFD3F280D4B3A00EAF128 /* ZJBannerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 579DFCFC280D4B3900EAF128 /* ZJBannerViewController.m */; };
+		579DFD40280D4B3A00EAF128 /* AdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 579DFCFF280D4B3900EAF128 /* AdViewController.m */; };
+		579DFD41280D4B3A00EAF128 /* ZJContentPageStyle2ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 579DFD02280D4B3900EAF128 /* ZJContentPageStyle2ViewController.m */; };
+		579DFD42280D4B3A00EAF128 /* ZJContentPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 579DFD06280D4B3900EAF128 /* ZJContentPageViewController.m */; };
+		579DFD43280D4B3A00EAF128 /* ZJContentPageStyle1ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 579DFD08280D4B3900EAF128 /* ZJContentPageStyle1ViewController.m */; };
+		579DFD44280D4B3A00EAF128 /* ZJContentPageSelectedBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 579DFD09280D4B3900EAF128 /* ZJContentPageSelectedBar.m */; };
+		579DFD45280D4B3A00EAF128 /* ZJContentPageTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 579DFD0A280D4B3900EAF128 /* ZJContentPageTabBarController.m */; };
+		579DFD46280D4B3A00EAF128 /* ZJFloatingAdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 579DFD0D280D4B3900EAF128 /* ZJFloatingAdViewController.m */; };
+		579DFD47280D4B3A00EAF128 /* ZJInterstitialAdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 579DFD0E280D4B3900EAF128 /* ZJInterstitialAdViewController.m */; };
+		579DFD48280D4B3A00EAF128 /* ZJNativeExpressAdsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 579DFD10280D4B3900EAF128 /* ZJNativeExpressAdsViewController.m */; };
+		579DFD49280D4B3A00EAF128 /* ZJNativeExpressAdTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 579DFD12280D4B3900EAF128 /* ZJNativeExpressAdTableViewCell.m */; };
+		579DFD4A280D4B3A00EAF128 /* ZJFeedAdsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 579DFD14280D4B3900EAF128 /* ZJFeedAdsViewController.m */; };
+		579DFD4B280D4B3A00EAF128 /* ZJFeedFullVideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 579DFD18280D4B3900EAF128 /* ZJFeedFullVideoViewController.m */; };
+		579DFD4C280D4B3A00EAF128 /* ZJFullScreenCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 579DFD1B280D4B3900EAF128 /* ZJFullScreenCell.m */; };
+		579DFD4D280D4B3A00EAF128 /* ZJFeedFullVideoAdCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 579DFD1C280D4B3900EAF128 /* ZJFeedFullVideoAdCell.m */; };
+		579DFD4E280D4B3A00EAF128 /* ZJFeedFullVideoShowViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 579DFD1D280D4B3900EAF128 /* ZJFeedFullVideoShowViewController.m */; };
+		579DFD4F280D4B3A00EAF128 /* ZJFullScreenVideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 579DFD1E280D4B3900EAF128 /* ZJFullScreenVideoViewController.m */; };
+		579DFD50280D4B3A00EAF128 /* ZJJSBridgeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 579DFD20280D4B3900EAF128 /* ZJJSBridgeViewController.m */; };
+		579DFD51280D4B3A00EAF128 /* ZJRewardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 579DFD23280D4B3900EAF128 /* ZJRewardViewController.m */; };
+		579DFD52280D4B3A00EAF128 /* ZJH5ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 579DFD24280D4B3900EAF128 /* ZJH5ViewController.m */; };
+		579DFD53280D4B3A00EAF128 /* ZJNativeAdImageTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 579DFD26280D4B3900EAF128 /* ZJNativeAdImageTableViewCell.m */; };
+		579DFD54280D4B3A00EAF128 /* ZJNativeAdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 579DFD29280D4B3900EAF128 /* ZJNativeAdViewController.m */; };
+		579DFD55280D4B3A00EAF128 /* ZJNativeAdAtlasImageTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 579DFD2D280D4B3900EAF128 /* ZJNativeAdAtlasImageTableViewCell.m */; };
+		579DFD56280D4B3A00EAF128 /* ZJNativeAdVideoTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 579DFD2F280D4B3900EAF128 /* ZJNativeAdVideoTableViewCell.m */; };
+		579DFD57280D4B3A00EAF128 /* ZJFillNativeAdView.m in Sources */ = {isa = PBXBuildFile; fileRef = 579DFD30280D4B3900EAF128 /* ZJFillNativeAdView.m */; };
+		579DFD58280D4B3A00EAF128 /* ZJNativeAdBaseTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 579DFD32280D4B3900EAF128 /* ZJNativeAdBaseTableViewCell.m */; };
+		579DFD59280D4B3A00EAF128 /* ZJNativeAdSelectedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 579DFD33280D4B3900EAF128 /* ZJNativeAdSelectedViewController.m */; };
+		579DFD5A280D4B3A00EAF128 /* ZJSplashViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 579DFD34280D4B3900EAF128 /* ZJSplashViewController.m */; };
+		579DFD5B280D4B3A00EAF128 /* ZJSplashWindowVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 579DFD37280D4B3900EAF128 /* ZJSplashWindowVC.m */; };
+		579DFD62280D6D1800EAF128 /* LYLUnicode.m in Sources */ = {isa = PBXBuildFile; fileRef = 579DFD61280D6D1800EAF128 /* LYLUnicode.m */; };
 		8F5386263D55AB1EA0DA738E /* Pods_ZJSDKDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 620E348FB9DC0AA307AC177C /* Pods_ZJSDKDemo.framework */; };
 /* End PBXBuildFile section */
 
@@ -142,17 +145,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		001E72312535FA7C0086A93F /* ZJFeedFullVideoAdCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZJFeedFullVideoAdCell.h; sourceTree = "<group>"; };
-		001E72322535FA7C0086A93F /* ZJFeedFullVideoAdCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZJFeedFullVideoAdCell.m; sourceTree = "<group>"; };
-		001E72342535FAA80086A93F /* ZJFullScreenCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZJFullScreenCell.h; sourceTree = "<group>"; };
-		001E72352535FAA80086A93F /* ZJFullScreenCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZJFullScreenCell.m; sourceTree = "<group>"; };
 		001E727A2539F4220086A93F /* Aspects.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Aspects.m; sourceTree = "<group>"; };
 		001E727B2539F4220086A93F /* Aspects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Aspects.h; sourceTree = "<group>"; };
-		001E727D253AA39E0086A93F /* UIDevice+Kit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIDevice+Kit.h"; sourceTree = "<group>"; };
-		001E727E253AA39E0086A93F /* UIDevice+Kit.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIDevice+Kit.m"; sourceTree = "<group>"; };
 		001E7282253AA5340086A93F /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
-		001E7283253AA6F40086A93F /* AdViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AdViewController.h; sourceTree = "<group>"; };
-		001E7284253AA6F40086A93F /* AdViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AdViewController.m; sourceTree = "<group>"; };
 		001E7287253AAC760086A93F /* MASCompositeConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASCompositeConstraint.h; sourceTree = "<group>"; };
 		001E7288253AAC760086A93F /* NSLayoutConstraint+MASDebugAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSLayoutConstraint+MASDebugAdditions.m"; sourceTree = "<group>"; };
 		001E7289253AAC760086A93F /* MASConstraint+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MASConstraint+Private.h"; sourceTree = "<group>"; };
@@ -178,10 +173,6 @@
 		001E729D253AAC760086A93F /* ViewController+MASAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ViewController+MASAdditions.h"; sourceTree = "<group>"; };
 		001E729E253AAC760086A93F /* MASViewConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASViewConstraint.m; sourceTree = "<group>"; };
 		001E729F253AAC760086A93F /* MASViewAttribute.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASViewAttribute.m; sourceTree = "<group>"; };
-		0061948E25133E9400E09415 /* ZJAdLoadView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZJAdLoadView.h; sourceTree = "<group>"; };
-		0061948F25133E9400E09415 /* ZJAdLoadView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZJAdLoadView.m; sourceTree = "<group>"; };
-		0061949125133F1000E09415 /* UIButton+Event.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIButton+Event.h"; sourceTree = "<group>"; };
-		0061949225133F1000E09415 /* UIButton+Event.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIButton+Event.m"; sourceTree = "<group>"; };
 		0077470B24E182A200C30636 /* ZJSDKDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZJSDKDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0077470E24E182A200C30636 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		0077470F24E182A200C30636 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -191,54 +182,8 @@
 		0077471D24E182A200C30636 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0077471F24E182A200C30636 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0077472024E182A200C30636 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		5737C372259AFCBF00CB6525 /* ZJH5JSViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZJH5JSViewController.h; sourceTree = "<group>"; };
-		5737C373259AFCBF00CB6525 /* ZJH5JSViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZJH5JSViewController.m; sourceTree = "<group>"; };
-		5737C496259C176A00CB6525 /* ZJAdEditTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZJAdEditTextView.h; sourceTree = "<group>"; };
-		5737C497259C176A00CB6525 /* ZJAdEditTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZJAdEditTextView.m; sourceTree = "<group>"; };
 		5737C499259C186000CB6525 /* ZJCommonDefine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZJCommonDefine.h; sourceTree = "<group>"; };
-		5737C49A259C1A1A00CB6525 /* UIView+ZJExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+ZJExtension.h"; sourceTree = "<group>"; };
-		5737C49B259C1A1A00CB6525 /* UIView+ZJExtension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+ZJExtension.m"; sourceTree = "<group>"; };
-		573A132C259AD788002023F8 /* ZJInterstitialAdViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZJInterstitialAdViewController.h; sourceTree = "<group>"; };
-		573A132E259AD788002023F8 /* ZJFeedFullVideoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZJFeedFullVideoViewController.m; sourceTree = "<group>"; };
-		573A1330259AD788002023F8 /* ZjRewardViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZjRewardViewController.h; sourceTree = "<group>"; };
-		573A133A259AD788002023F8 /* ZjSplashViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZjSplashViewController.h; sourceTree = "<group>"; };
-		573A133B259AD788002023F8 /* ZJFeedFullVideoShowViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZJFeedFullVideoShowViewController.h; sourceTree = "<group>"; };
-		573A133C259AD788002023F8 /* ZJH5ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZJH5ViewController.h; sourceTree = "<group>"; };
-		573A133D259AD788002023F8 /* ZJFeedFullVideoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZJFeedFullVideoViewController.h; sourceTree = "<group>"; };
-		573A133F259AD788002023F8 /* ZJInterstitialAdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZJInterstitialAdViewController.m; sourceTree = "<group>"; };
-		573A1340259AD788002023F8 /* ZjRewardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZjRewardViewController.m; sourceTree = "<group>"; };
-		573A1342259AD788002023F8 /* ZJH5ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZJH5ViewController.m; sourceTree = "<group>"; };
-		573A1343259AD788002023F8 /* ZJFeedFullVideoShowViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZJFeedFullVideoShowViewController.m; sourceTree = "<group>"; };
-		573A1344259AD788002023F8 /* ZjSplashViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZjSplashViewController.m; sourceTree = "<group>"; };
-		573A1352259AD790002023F8 /* ZJJSBridgeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZJJSBridgeViewController.h; sourceTree = "<group>"; };
-		573A1353259AD790002023F8 /* ZJJSBridgeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZJJSBridgeViewController.m; sourceTree = "<group>"; };
 		574AA81D25E4AC1700098DCA /* ZJSDK.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; name = ZJSDK.podspec; path = ../ZJSDK.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		576510E525BFFBB2006AAFEF /* ZJBannerAdViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZJBannerAdViewController.h; sourceTree = "<group>"; };
-		576510E625BFFBB5006AAFEF /* ZJBannerAdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZJBannerAdViewController.m; sourceTree = "<group>"; };
-		576657782652164700C2C239 /* ZJContentPageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZJContentPageViewController.h; sourceTree = "<group>"; };
-		576657792652164700C2C239 /* ZJContentPageStyle2ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZJContentPageStyle2ViewController.m; sourceTree = "<group>"; };
-		5766577A2652164700C2C239 /* ZJContentPageStyle1ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZJContentPageStyle1ViewController.h; sourceTree = "<group>"; };
-		5766577B2652164700C2C239 /* ZJContentPageSelectedBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZJContentPageSelectedBar.h; sourceTree = "<group>"; };
-		5766577C2652164700C2C239 /* ZJContentPageTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZJContentPageTabBarController.h; sourceTree = "<group>"; };
-		5766577D2652164700C2C239 /* ZJContentPageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZJContentPageViewController.m; sourceTree = "<group>"; };
-		5766577E2652164700C2C239 /* ZJContentPageStyle2ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZJContentPageStyle2ViewController.h; sourceTree = "<group>"; };
-		5766577F2652164700C2C239 /* ZJContentPageStyle1ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZJContentPageStyle1ViewController.m; sourceTree = "<group>"; };
-		576657802652164700C2C239 /* ZJContentPageSelectedBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZJContentPageSelectedBar.m; sourceTree = "<group>"; };
-		576657812652164700C2C239 /* ZJContentPageTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZJContentPageTabBarController.m; sourceTree = "<group>"; };
-		576EF7AA261DA0A400512AF7 /* ZJNativeAdImageTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZJNativeAdImageTableViewCell.m; sourceTree = "<group>"; };
-		576EF7AB261DA0A400512AF7 /* ZJNativeAdAtlasImageTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZJNativeAdAtlasImageTableViewCell.h; sourceTree = "<group>"; };
-		576EF7AC261DA0A400512AF7 /* ZJNativeAdVideoTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZJNativeAdVideoTableViewCell.h; sourceTree = "<group>"; };
-		576EF7AD261DA0A400512AF7 /* ZJNativeAdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZJNativeAdViewController.m; sourceTree = "<group>"; };
-		576EF7AE261DA0A400512AF7 /* ZJFillNativeAdView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZJFillNativeAdView.h; sourceTree = "<group>"; };
-		576EF7AF261DA0A400512AF7 /* ZJNativeAdSelectedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZJNativeAdSelectedViewController.h; sourceTree = "<group>"; };
-		576EF7B0261DA0A400512AF7 /* ZJNativeAdBaseTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZJNativeAdBaseTableViewCell.h; sourceTree = "<group>"; };
-		576EF7B1261DA0A400512AF7 /* ZJNativeAdAtlasImageTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZJNativeAdAtlasImageTableViewCell.m; sourceTree = "<group>"; };
-		576EF7B2261DA0A400512AF7 /* ZJNativeAdImageTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZJNativeAdImageTableViewCell.h; sourceTree = "<group>"; };
-		576EF7B3261DA0A400512AF7 /* ZJNativeAdVideoTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZJNativeAdVideoTableViewCell.m; sourceTree = "<group>"; };
-		576EF7B4261DA0A400512AF7 /* ZJFillNativeAdView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZJFillNativeAdView.m; sourceTree = "<group>"; };
-		576EF7B5261DA0A400512AF7 /* ZJNativeAdViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZJNativeAdViewController.h; sourceTree = "<group>"; };
-		576EF7B6261DA0A400512AF7 /* ZJNativeAdBaseTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZJNativeAdBaseTableViewCell.m; sourceTree = "<group>"; };
-		576EF7B7261DA0A400512AF7 /* ZJNativeAdSelectedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZJNativeAdSelectedViewController.m; sourceTree = "<group>"; };
 		576EF7C1261DA0ED00512AF7 /* SDWebImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDWebImage.h; sourceTree = "<group>"; };
 		576EF7C4261DA0ED00512AF7 /* UIImage+ExtendedCacheData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ExtendedCacheData.h"; sourceTree = "<group>"; };
 		576EF7C5261DA0ED00512AF7 /* SDImageHEICCoder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDImageHEICCoder.m; sourceTree = "<group>"; };
@@ -381,14 +326,78 @@
 		576EF84F261DA0EF00512AF7 /* SDImageAssetManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDImageAssetManager.h; sourceTree = "<group>"; };
 		576EF850261DA0EF00512AF7 /* SDAsyncBlockOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDAsyncBlockOperation.m; sourceTree = "<group>"; };
 		576EF851261DA0EF00512AF7 /* SDAssociatedObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDAssociatedObject.m; sourceTree = "<group>"; };
-		57ADEBB92637FB62008F6E7E /* ZJFullScreenVideoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZJFullScreenVideoViewController.m; sourceTree = "<group>"; };
-		57ADEBBA2637FB62008F6E7E /* ZJFullScreenVideoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZJFullScreenVideoViewController.h; sourceTree = "<group>"; };
-		57E738B225A839C8002C69C0 /* ZJFeedAdsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZJFeedAdsViewController.h; sourceTree = "<group>"; };
-		57E738B325A839C8002C69C0 /* ZJFeedAdsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZJFeedAdsViewController.m; sourceTree = "<group>"; };
-		57E738DD25A858D9002C69C0 /* ZJNativeExpressAdsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZJNativeExpressAdsViewController.h; sourceTree = "<group>"; };
-		57E738DE25A858D9002C69C0 /* ZJNativeExpressAdsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZJNativeExpressAdsViewController.m; sourceTree = "<group>"; };
-		57E738E025A85F67002C69C0 /* ZJNativeExpressAdTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZJNativeExpressAdTableViewCell.h; sourceTree = "<group>"; };
-		57E738E125A85F67002C69C0 /* ZJNativeExpressAdTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZJNativeExpressAdTableViewCell.m; sourceTree = "<group>"; };
+		579DFCEC280D4B3800EAF128 /* ZJLogView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZJLogView.m; sourceTree = "<group>"; };
+		579DFCED280D4B3800EAF128 /* UIDevice+Kit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIDevice+Kit.h"; sourceTree = "<group>"; };
+		579DFCEE280D4B3800EAF128 /* ZJAdLoadView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZJAdLoadView.h; sourceTree = "<group>"; };
+		579DFCEF280D4B3800EAF128 /* UIButton+Event.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+Event.h"; sourceTree = "<group>"; };
+		579DFCF0280D4B3800EAF128 /* UIDevice+Kit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIDevice+Kit.m"; sourceTree = "<group>"; };
+		579DFCF1280D4B3800EAF128 /* ZJLogView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZJLogView.h; sourceTree = "<group>"; };
+		579DFCF2280D4B3800EAF128 /* ZJAdLoadView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZJAdLoadView.m; sourceTree = "<group>"; };
+		579DFCF3280D4B3800EAF128 /* UIButton+Event.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+Event.m"; sourceTree = "<group>"; };
+		579DFCF4280D4B3800EAF128 /* ZJHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZJHomeViewController.m; sourceTree = "<group>"; };
+		579DFCF5280D4B3800EAF128 /* ZJHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZJHomeViewController.h; sourceTree = "<group>"; };
+		579DFCF6280D4B3800EAF128 /* ZJHomeTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZJHomeTableViewCell.m; sourceTree = "<group>"; };
+		579DFCF8280D4B3900EAF128 /* ZJInterstitialAdViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZJInterstitialAdViewController.h; sourceTree = "<group>"; };
+		579DFCF9280D4B3900EAF128 /* ZJRewardViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZJRewardViewController.h; sourceTree = "<group>"; };
+		579DFCFA280D4B3900EAF128 /* ZJJSBridgeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZJJSBridgeViewController.h; sourceTree = "<group>"; };
+		579DFCFB280D4B3900EAF128 /* ZJFullScreenVideoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZJFullScreenVideoViewController.h; sourceTree = "<group>"; };
+		579DFCFC280D4B3900EAF128 /* ZJBannerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZJBannerViewController.m; sourceTree = "<group>"; };
+		579DFCFE280D4B3900EAF128 /* ZJNativeExpressAdTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZJNativeExpressAdTableViewCell.h; sourceTree = "<group>"; };
+		579DFCFF280D4B3900EAF128 /* AdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AdViewController.m; sourceTree = "<group>"; };
+		579DFD01280D4B3900EAF128 /* ZJContentPageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZJContentPageViewController.h; sourceTree = "<group>"; };
+		579DFD02280D4B3900EAF128 /* ZJContentPageStyle2ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZJContentPageStyle2ViewController.m; sourceTree = "<group>"; };
+		579DFD03280D4B3900EAF128 /* ZJContentPageStyle1ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZJContentPageStyle1ViewController.h; sourceTree = "<group>"; };
+		579DFD04280D4B3900EAF128 /* ZJContentPageSelectedBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZJContentPageSelectedBar.h; sourceTree = "<group>"; };
+		579DFD05280D4B3900EAF128 /* ZJContentPageTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZJContentPageTabBarController.h; sourceTree = "<group>"; };
+		579DFD06280D4B3900EAF128 /* ZJContentPageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZJContentPageViewController.m; sourceTree = "<group>"; };
+		579DFD07280D4B3900EAF128 /* ZJContentPageStyle2ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZJContentPageStyle2ViewController.h; sourceTree = "<group>"; };
+		579DFD08280D4B3900EAF128 /* ZJContentPageStyle1ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZJContentPageStyle1ViewController.m; sourceTree = "<group>"; };
+		579DFD09280D4B3900EAF128 /* ZJContentPageSelectedBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZJContentPageSelectedBar.m; sourceTree = "<group>"; };
+		579DFD0A280D4B3900EAF128 /* ZJContentPageTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZJContentPageTabBarController.m; sourceTree = "<group>"; };
+		579DFD0B280D4B3900EAF128 /* ZJSplashViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZJSplashViewController.h; sourceTree = "<group>"; };
+		579DFD0C280D4B3900EAF128 /* ZJH5ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZJH5ViewController.h; sourceTree = "<group>"; };
+		579DFD0D280D4B3900EAF128 /* ZJFloatingAdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZJFloatingAdViewController.m; sourceTree = "<group>"; };
+		579DFD0E280D4B3900EAF128 /* ZJInterstitialAdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZJInterstitialAdViewController.m; sourceTree = "<group>"; };
+		579DFD10280D4B3900EAF128 /* ZJNativeExpressAdsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZJNativeExpressAdsViewController.m; sourceTree = "<group>"; };
+		579DFD11280D4B3900EAF128 /* ZJFeedAdsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZJFeedAdsViewController.h; sourceTree = "<group>"; };
+		579DFD12280D4B3900EAF128 /* ZJNativeExpressAdTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZJNativeExpressAdTableViewCell.m; sourceTree = "<group>"; };
+		579DFD13280D4B3900EAF128 /* ZJNativeExpressAdsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZJNativeExpressAdsViewController.h; sourceTree = "<group>"; };
+		579DFD14280D4B3900EAF128 /* ZJFeedAdsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZJFeedAdsViewController.m; sourceTree = "<group>"; };
+		579DFD15280D4B3900EAF128 /* AdViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdViewController.h; sourceTree = "<group>"; };
+		579DFD17280D4B3900EAF128 /* ZJFullScreenCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZJFullScreenCell.h; sourceTree = "<group>"; };
+		579DFD18280D4B3900EAF128 /* ZJFeedFullVideoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZJFeedFullVideoViewController.m; sourceTree = "<group>"; };
+		579DFD19280D4B3900EAF128 /* ZJFeedFullVideoShowViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZJFeedFullVideoShowViewController.h; sourceTree = "<group>"; };
+		579DFD1A280D4B3900EAF128 /* ZJFeedFullVideoAdCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZJFeedFullVideoAdCell.h; sourceTree = "<group>"; };
+		579DFD1B280D4B3900EAF128 /* ZJFullScreenCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZJFullScreenCell.m; sourceTree = "<group>"; };
+		579DFD1C280D4B3900EAF128 /* ZJFeedFullVideoAdCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZJFeedFullVideoAdCell.m; sourceTree = "<group>"; };
+		579DFD1D280D4B3900EAF128 /* ZJFeedFullVideoShowViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZJFeedFullVideoShowViewController.m; sourceTree = "<group>"; };
+		579DFD1E280D4B3900EAF128 /* ZJFullScreenVideoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZJFullScreenVideoViewController.m; sourceTree = "<group>"; };
+		579DFD1F280D4B3900EAF128 /* ZJBannerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZJBannerViewController.h; sourceTree = "<group>"; };
+		579DFD20280D4B3900EAF128 /* ZJJSBridgeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZJJSBridgeViewController.m; sourceTree = "<group>"; };
+		579DFD22280D4B3900EAF128 /* ZJFeedFullVideoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZJFeedFullVideoViewController.h; sourceTree = "<group>"; };
+		579DFD23280D4B3900EAF128 /* ZJRewardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZJRewardViewController.m; sourceTree = "<group>"; };
+		579DFD24280D4B3900EAF128 /* ZJH5ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZJH5ViewController.m; sourceTree = "<group>"; };
+		579DFD26280D4B3900EAF128 /* ZJNativeAdImageTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZJNativeAdImageTableViewCell.m; sourceTree = "<group>"; };
+		579DFD27280D4B3900EAF128 /* ZJNativeAdAtlasImageTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZJNativeAdAtlasImageTableViewCell.h; sourceTree = "<group>"; };
+		579DFD28280D4B3900EAF128 /* ZJNativeAdVideoTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZJNativeAdVideoTableViewCell.h; sourceTree = "<group>"; };
+		579DFD29280D4B3900EAF128 /* ZJNativeAdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZJNativeAdViewController.m; sourceTree = "<group>"; };
+		579DFD2A280D4B3900EAF128 /* ZJFillNativeAdView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZJFillNativeAdView.h; sourceTree = "<group>"; };
+		579DFD2B280D4B3900EAF128 /* ZJNativeAdSelectedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZJNativeAdSelectedViewController.h; sourceTree = "<group>"; };
+		579DFD2C280D4B3900EAF128 /* ZJNativeAdBaseTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZJNativeAdBaseTableViewCell.h; sourceTree = "<group>"; };
+		579DFD2D280D4B3900EAF128 /* ZJNativeAdAtlasImageTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZJNativeAdAtlasImageTableViewCell.m; sourceTree = "<group>"; };
+		579DFD2E280D4B3900EAF128 /* ZJNativeAdImageTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZJNativeAdImageTableViewCell.h; sourceTree = "<group>"; };
+		579DFD2F280D4B3900EAF128 /* ZJNativeAdVideoTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZJNativeAdVideoTableViewCell.m; sourceTree = "<group>"; };
+		579DFD30280D4B3900EAF128 /* ZJFillNativeAdView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZJFillNativeAdView.m; sourceTree = "<group>"; };
+		579DFD31280D4B3900EAF128 /* ZJNativeAdViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZJNativeAdViewController.h; sourceTree = "<group>"; };
+		579DFD32280D4B3900EAF128 /* ZJNativeAdBaseTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZJNativeAdBaseTableViewCell.m; sourceTree = "<group>"; };
+		579DFD33280D4B3900EAF128 /* ZJNativeAdSelectedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZJNativeAdSelectedViewController.m; sourceTree = "<group>"; };
+		579DFD34280D4B3900EAF128 /* ZJSplashViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZJSplashViewController.m; sourceTree = "<group>"; };
+		579DFD35280D4B3900EAF128 /* ZJFloatingAdViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZJFloatingAdViewController.h; sourceTree = "<group>"; };
+		579DFD36280D4B3900EAF128 /* ZJSplashWindowVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZJSplashWindowVC.h; sourceTree = "<group>"; };
+		579DFD37280D4B3900EAF128 /* ZJSplashWindowVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZJSplashWindowVC.m; sourceTree = "<group>"; };
+		579DFD38280D4B3900EAF128 /* ZJHomeTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZJHomeTableViewCell.h; sourceTree = "<group>"; };
+		579DFD60280D6D1800EAF128 /* LYLUnicode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYLUnicode.h; sourceTree = "<group>"; };
+		579DFD61280D6D1800EAF128 /* LYLUnicode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LYLUnicode.m; sourceTree = "<group>"; };
 		620E348FB9DC0AA307AC177C /* Pods_ZJSDKDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZJSDKDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8FFD07F065BA4DBB7EA72B73 /* Pods-ZJSDKDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZJSDKDemo.release.xcconfig"; path = "Target Support Files/Pods-ZJSDKDemo/Pods-ZJSDKDemo.release.xcconfig"; sourceTree = "<group>"; };
 		DB9951B49AD40FEB4047DB15 /* Pods-ZJSDKDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZJSDKDemo.debug.xcconfig"; path = "Target Support Files/Pods-ZJSDKDemo/Pods-ZJSDKDemo.debug.xcconfig"; sourceTree = "<group>"; };
@@ -406,17 +415,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		001E72302535FA470086A93F /* Cells */ = {
-			isa = PBXGroup;
-			children = (
-				001E72312535FA7C0086A93F /* ZJFeedFullVideoAdCell.h */,
-				001E72322535FA7C0086A93F /* ZJFeedFullVideoAdCell.m */,
-				001E72342535FAA80086A93F /* ZJFullScreenCell.h */,
-				001E72352535FAA80086A93F /* ZJFullScreenCell.m */,
-			);
-			path = Cells;
-			sourceTree = "<group>";
-		};
 		001E7286253AAC760086A93F /* Masonry */ = {
 			isa = PBXGroup;
 			children = (
@@ -457,41 +455,15 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		006193132511ED1E00E09415 /* AdControllers */ = {
-			isa = PBXGroup;
-			children = (
-				573A1351259AD790002023F8 /* Test */,
-				573A132B259AD788002023F8 /* Ad */,
-			);
-			path = AdControllers;
-			sourceTree = "<group>";
-		};
-		0061948D25133E5900E09415 /* Kits */ = {
-			isa = PBXGroup;
-			children = (
-				0061948E25133E9400E09415 /* ZJAdLoadView.h */,
-				0061948F25133E9400E09415 /* ZJAdLoadView.m */,
-				0061949125133F1000E09415 /* UIButton+Event.h */,
-				0061949225133F1000E09415 /* UIButton+Event.m */,
-				5737C49A259C1A1A00CB6525 /* UIView+ZJExtension.h */,
-				5737C49B259C1A1A00CB6525 /* UIView+ZJExtension.m */,
-				001E727D253AA39E0086A93F /* UIDevice+Kit.h */,
-				001E727E253AA39E0086A93F /* UIDevice+Kit.m */,
-				5737C496259C176A00CB6525 /* ZJAdEditTextView.h */,
-				5737C497259C176A00CB6525 /* ZJAdEditTextView.m */,
-			);
-			path = Kits;
-			sourceTree = "<group>";
-		};
 		00619497251357B700E09415 /* lib */ = {
 			isa = PBXGroup;
 			children = (
-				001E7283253AA6F40086A93F /* AdViewController.h */,
-				001E7284253AA6F40086A93F /* AdViewController.m */,
 				576EF7BF261DA0ED00512AF7 /* SDWebImage */,
 				001E7286253AAC760086A93F /* Masonry */,
 				001E727B2539F4220086A93F /* Aspects.h */,
 				001E727A2539F4220086A93F /* Aspects.m */,
+				579DFD60280D6D1800EAF128 /* LYLUnicode.h */,
+				579DFD61280D6D1800EAF128 /* LYLUnicode.m */,
 			);
 			path = lib;
 			sourceTree = "<group>";
@@ -518,10 +490,15 @@
 		0077470D24E182A200C30636 /* ZJSDKDemo */ = {
 			isa = PBXGroup;
 			children = (
-				001E72302535FA470086A93F /* Cells */,
 				00619497251357B700E09415 /* lib */,
-				0061948D25133E5900E09415 /* Kits */,
-				006193132511ED1E00E09415 /* AdControllers */,
+				579DFCF7280D4B3900EAF128 /* AdControllers */,
+				579DFCEB280D4B3800EAF128 /* Kits */,
+				579DFD38280D4B3900EAF128 /* ZJHomeTableViewCell.h */,
+				579DFCF6280D4B3800EAF128 /* ZJHomeTableViewCell.m */,
+				579DFCF5280D4B3800EAF128 /* ZJHomeViewController.h */,
+				579DFCF4280D4B3800EAF128 /* ZJHomeViewController.m */,
+				579DFD36280D4B3900EAF128 /* ZJSplashWindowVC.h */,
+				579DFD37280D4B3900EAF128 /* ZJSplashWindowVC.m */,
 				0077470E24E182A200C30636 /* AppDelegate.h */,
 				0077470F24E182A200C30636 /* AppDelegate.m */,
 				0077471424E182A200C30636 /* ViewController.h */,
@@ -534,86 +511,6 @@
 				001E7282253AA5340086A93F /* PrefixHeader.pch */,
 			);
 			path = ZJSDKDemo;
-			sourceTree = "<group>";
-		};
-		573A132B259AD788002023F8 /* Ad */ = {
-			isa = PBXGroup;
-			children = (
-				576657772652164700C2C239 /* ZJContentPage */,
-				573A133B259AD788002023F8 /* ZJFeedFullVideoShowViewController.h */,
-				573A1343259AD788002023F8 /* ZJFeedFullVideoShowViewController.m */,
-				573A133D259AD788002023F8 /* ZJFeedFullVideoViewController.h */,
-				573A132E259AD788002023F8 /* ZJFeedFullVideoViewController.m */,
-				573A133C259AD788002023F8 /* ZJH5ViewController.h */,
-				573A1342259AD788002023F8 /* ZJH5ViewController.m */,
-				573A132C259AD788002023F8 /* ZJInterstitialAdViewController.h */,
-				573A133F259AD788002023F8 /* ZJInterstitialAdViewController.m */,
-				573A1330259AD788002023F8 /* ZjRewardViewController.h */,
-				573A1340259AD788002023F8 /* ZjRewardViewController.m */,
-				57ADEBBA2637FB62008F6E7E /* ZJFullScreenVideoViewController.h */,
-				57ADEBB92637FB62008F6E7E /* ZJFullScreenVideoViewController.m */,
-				573A133A259AD788002023F8 /* ZjSplashViewController.h */,
-				573A1344259AD788002023F8 /* ZjSplashViewController.m */,
-				57E738B225A839C8002C69C0 /* ZJFeedAdsViewController.h */,
-				57E738B325A839C8002C69C0 /* ZJFeedAdsViewController.m */,
-				57E738DD25A858D9002C69C0 /* ZJNativeExpressAdsViewController.h */,
-				57E738DE25A858D9002C69C0 /* ZJNativeExpressAdsViewController.m */,
-				57E738E025A85F67002C69C0 /* ZJNativeExpressAdTableViewCell.h */,
-				57E738E125A85F67002C69C0 /* ZJNativeExpressAdTableViewCell.m */,
-				576510E525BFFBB2006AAFEF /* ZJBannerAdViewController.h */,
-				576510E625BFFBB5006AAFEF /* ZJBannerAdViewController.m */,
-				576EF7A9261DA0A400512AF7 /* ZJNativeAd */,
-			);
-			path = Ad;
-			sourceTree = "<group>";
-		};
-		573A1351259AD790002023F8 /* Test */ = {
-			isa = PBXGroup;
-			children = (
-				573A1352259AD790002023F8 /* ZJJSBridgeViewController.h */,
-				573A1353259AD790002023F8 /* ZJJSBridgeViewController.m */,
-				5737C372259AFCBF00CB6525 /* ZJH5JSViewController.h */,
-				5737C373259AFCBF00CB6525 /* ZJH5JSViewController.m */,
-			);
-			path = Test;
-			sourceTree = "<group>";
-		};
-		576657772652164700C2C239 /* ZJContentPage */ = {
-			isa = PBXGroup;
-			children = (
-				5766577B2652164700C2C239 /* ZJContentPageSelectedBar.h */,
-				576657802652164700C2C239 /* ZJContentPageSelectedBar.m */,
-				5766577A2652164700C2C239 /* ZJContentPageStyle1ViewController.h */,
-				5766577F2652164700C2C239 /* ZJContentPageStyle1ViewController.m */,
-				5766577E2652164700C2C239 /* ZJContentPageStyle2ViewController.h */,
-				576657792652164700C2C239 /* ZJContentPageStyle2ViewController.m */,
-				5766577C2652164700C2C239 /* ZJContentPageTabBarController.h */,
-				576657812652164700C2C239 /* ZJContentPageTabBarController.m */,
-				576657782652164700C2C239 /* ZJContentPageViewController.h */,
-				5766577D2652164700C2C239 /* ZJContentPageViewController.m */,
-			);
-			path = ZJContentPage;
-			sourceTree = "<group>";
-		};
-		576EF7A9261DA0A400512AF7 /* ZJNativeAd */ = {
-			isa = PBXGroup;
-			children = (
-				576EF7AE261DA0A400512AF7 /* ZJFillNativeAdView.h */,
-				576EF7B4261DA0A400512AF7 /* ZJFillNativeAdView.m */,
-				576EF7AB261DA0A400512AF7 /* ZJNativeAdAtlasImageTableViewCell.h */,
-				576EF7B1261DA0A400512AF7 /* ZJNativeAdAtlasImageTableViewCell.m */,
-				576EF7B0261DA0A400512AF7 /* ZJNativeAdBaseTableViewCell.h */,
-				576EF7B6261DA0A400512AF7 /* ZJNativeAdBaseTableViewCell.m */,
-				576EF7B2261DA0A400512AF7 /* ZJNativeAdImageTableViewCell.h */,
-				576EF7AA261DA0A400512AF7 /* ZJNativeAdImageTableViewCell.m */,
-				576EF7AF261DA0A400512AF7 /* ZJNativeAdSelectedViewController.h */,
-				576EF7B7261DA0A400512AF7 /* ZJNativeAdSelectedViewController.m */,
-				576EF7AC261DA0A400512AF7 /* ZJNativeAdVideoTableViewCell.h */,
-				576EF7B3261DA0A400512AF7 /* ZJNativeAdVideoTableViewCell.m */,
-				576EF7B5261DA0A400512AF7 /* ZJNativeAdViewController.h */,
-				576EF7AD261DA0A400512AF7 /* ZJNativeAdViewController.m */,
-			);
-			path = ZJNativeAd;
 			sourceTree = "<group>";
 		};
 		576EF7BF261DA0ED00512AF7 /* SDWebImage */ = {
@@ -797,6 +694,132 @@
 			path = Private;
 			sourceTree = "<group>";
 		};
+		579DFCEB280D4B3800EAF128 /* Kits */ = {
+			isa = PBXGroup;
+			children = (
+				579DFCEC280D4B3800EAF128 /* ZJLogView.m */,
+				579DFCED280D4B3800EAF128 /* UIDevice+Kit.h */,
+				579DFCEE280D4B3800EAF128 /* ZJAdLoadView.h */,
+				579DFCEF280D4B3800EAF128 /* UIButton+Event.h */,
+				579DFCF0280D4B3800EAF128 /* UIDevice+Kit.m */,
+				579DFCF1280D4B3800EAF128 /* ZJLogView.h */,
+				579DFCF2280D4B3800EAF128 /* ZJAdLoadView.m */,
+				579DFCF3280D4B3800EAF128 /* UIButton+Event.m */,
+			);
+			path = Kits;
+			sourceTree = "<group>";
+		};
+		579DFCF7280D4B3900EAF128 /* AdControllers */ = {
+			isa = PBXGroup;
+			children = (
+				579DFCF8280D4B3900EAF128 /* ZJInterstitialAdViewController.h */,
+				579DFCF9280D4B3900EAF128 /* ZJRewardViewController.h */,
+				579DFCFA280D4B3900EAF128 /* ZJJSBridgeViewController.h */,
+				579DFCFB280D4B3900EAF128 /* ZJFullScreenVideoViewController.h */,
+				579DFCFC280D4B3900EAF128 /* ZJBannerViewController.m */,
+				579DFCFD280D4B3900EAF128 /* NativeExpressFeedAd */,
+				579DFCFF280D4B3900EAF128 /* AdViewController.m */,
+				579DFD00280D4B3900EAF128 /* ZJContentPage */,
+				579DFD0B280D4B3900EAF128 /* ZJSplashViewController.h */,
+				579DFD0C280D4B3900EAF128 /* ZJH5ViewController.h */,
+				579DFD0D280D4B3900EAF128 /* ZJFloatingAdViewController.m */,
+				579DFD0E280D4B3900EAF128 /* ZJInterstitialAdViewController.m */,
+				579DFD0F280D4B3900EAF128 /* ZJNativeExpressFeedAd */,
+				579DFD15280D4B3900EAF128 /* AdViewController.h */,
+				579DFD16280D4B3900EAF128 /* ZJFeedVideo */,
+				579DFD1E280D4B3900EAF128 /* ZJFullScreenVideoViewController.m */,
+				579DFD1F280D4B3900EAF128 /* ZJBannerViewController.h */,
+				579DFD20280D4B3900EAF128 /* ZJJSBridgeViewController.m */,
+				579DFD21280D4B3900EAF128 /* New Group */,
+				579DFD23280D4B3900EAF128 /* ZJRewardViewController.m */,
+				579DFD24280D4B3900EAF128 /* ZJH5ViewController.m */,
+				579DFD25280D4B3900EAF128 /* ZJNativeAd */,
+				579DFD34280D4B3900EAF128 /* ZJSplashViewController.m */,
+				579DFD35280D4B3900EAF128 /* ZJFloatingAdViewController.h */,
+			);
+			path = AdControllers;
+			sourceTree = "<group>";
+		};
+		579DFCFD280D4B3900EAF128 /* NativeExpressFeedAd */ = {
+			isa = PBXGroup;
+			children = (
+				579DFCFE280D4B3900EAF128 /* ZJNativeExpressAdTableViewCell.h */,
+			);
+			path = NativeExpressFeedAd;
+			sourceTree = "<group>";
+		};
+		579DFD00280D4B3900EAF128 /* ZJContentPage */ = {
+			isa = PBXGroup;
+			children = (
+				579DFD01280D4B3900EAF128 /* ZJContentPageViewController.h */,
+				579DFD02280D4B3900EAF128 /* ZJContentPageStyle2ViewController.m */,
+				579DFD03280D4B3900EAF128 /* ZJContentPageStyle1ViewController.h */,
+				579DFD04280D4B3900EAF128 /* ZJContentPageSelectedBar.h */,
+				579DFD05280D4B3900EAF128 /* ZJContentPageTabBarController.h */,
+				579DFD06280D4B3900EAF128 /* ZJContentPageViewController.m */,
+				579DFD07280D4B3900EAF128 /* ZJContentPageStyle2ViewController.h */,
+				579DFD08280D4B3900EAF128 /* ZJContentPageStyle1ViewController.m */,
+				579DFD09280D4B3900EAF128 /* ZJContentPageSelectedBar.m */,
+				579DFD0A280D4B3900EAF128 /* ZJContentPageTabBarController.m */,
+			);
+			path = ZJContentPage;
+			sourceTree = "<group>";
+		};
+		579DFD0F280D4B3900EAF128 /* ZJNativeExpressFeedAd */ = {
+			isa = PBXGroup;
+			children = (
+				579DFD10280D4B3900EAF128 /* ZJNativeExpressAdsViewController.m */,
+				579DFD11280D4B3900EAF128 /* ZJFeedAdsViewController.h */,
+				579DFD12280D4B3900EAF128 /* ZJNativeExpressAdTableViewCell.m */,
+				579DFD13280D4B3900EAF128 /* ZJNativeExpressAdsViewController.h */,
+				579DFD14280D4B3900EAF128 /* ZJFeedAdsViewController.m */,
+			);
+			path = ZJNativeExpressFeedAd;
+			sourceTree = "<group>";
+		};
+		579DFD16280D4B3900EAF128 /* ZJFeedVideo */ = {
+			isa = PBXGroup;
+			children = (
+				579DFD17280D4B3900EAF128 /* ZJFullScreenCell.h */,
+				579DFD18280D4B3900EAF128 /* ZJFeedFullVideoViewController.m */,
+				579DFD19280D4B3900EAF128 /* ZJFeedFullVideoShowViewController.h */,
+				579DFD1A280D4B3900EAF128 /* ZJFeedFullVideoAdCell.h */,
+				579DFD1B280D4B3900EAF128 /* ZJFullScreenCell.m */,
+				579DFD1C280D4B3900EAF128 /* ZJFeedFullVideoAdCell.m */,
+				579DFD1D280D4B3900EAF128 /* ZJFeedFullVideoShowViewController.m */,
+			);
+			path = ZJFeedVideo;
+			sourceTree = "<group>";
+		};
+		579DFD21280D4B3900EAF128 /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+				579DFD22280D4B3900EAF128 /* ZJFeedFullVideoViewController.h */,
+			);
+			path = "New Group";
+			sourceTree = "<group>";
+		};
+		579DFD25280D4B3900EAF128 /* ZJNativeAd */ = {
+			isa = PBXGroup;
+			children = (
+				579DFD26280D4B3900EAF128 /* ZJNativeAdImageTableViewCell.m */,
+				579DFD27280D4B3900EAF128 /* ZJNativeAdAtlasImageTableViewCell.h */,
+				579DFD28280D4B3900EAF128 /* ZJNativeAdVideoTableViewCell.h */,
+				579DFD29280D4B3900EAF128 /* ZJNativeAdViewController.m */,
+				579DFD2A280D4B3900EAF128 /* ZJFillNativeAdView.h */,
+				579DFD2B280D4B3900EAF128 /* ZJNativeAdSelectedViewController.h */,
+				579DFD2C280D4B3900EAF128 /* ZJNativeAdBaseTableViewCell.h */,
+				579DFD2D280D4B3900EAF128 /* ZJNativeAdAtlasImageTableViewCell.m */,
+				579DFD2E280D4B3900EAF128 /* ZJNativeAdImageTableViewCell.h */,
+				579DFD2F280D4B3900EAF128 /* ZJNativeAdVideoTableViewCell.m */,
+				579DFD30280D4B3900EAF128 /* ZJFillNativeAdView.m */,
+				579DFD31280D4B3900EAF128 /* ZJNativeAdViewController.h */,
+				579DFD32280D4B3900EAF128 /* ZJNativeAdBaseTableViewCell.m */,
+				579DFD33280D4B3900EAF128 /* ZJNativeAdSelectedViewController.m */,
+			);
+			path = ZJNativeAd;
+			sourceTree = "<group>";
+		};
 		B264A406114CED68EBE84805 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -924,119 +947,122 @@
 				576EF85A261DA0EF00512AF7 /* UIImageView+HighlightedWebCache.m in Sources */,
 				576EF85D261DA0EF00512AF7 /* UIImage+ForceDecode.m in Sources */,
 				576EF88F261DA0EF00512AF7 /* SDDeviceHelper.m in Sources */,
+				579DFD47280D4B3A00EAF128 /* ZJInterstitialAdViewController.m in Sources */,
+				579DFD54280D4B3A00EAF128 /* ZJNativeAdViewController.m in Sources */,
+				579DFD4C280D4B3A00EAF128 /* ZJFullScreenCell.m in Sources */,
 				576EF875261DA0EF00512AF7 /* SDWebImageDownloaderConfig.m in Sources */,
-				576657862652164700C2C239 /* ZJContentPageTabBarController.m in Sources */,
 				576EF860261DA0EF00512AF7 /* UIImage+Transform.m in Sources */,
 				001E727C2539F4220086A93F /* Aspects.m in Sources */,
-				573A1350259AD788002023F8 /* ZjSplashViewController.m in Sources */,
 				576EF87D261DA0EF00512AF7 /* SDImageTransformer.m in Sources */,
 				576EF85F261DA0EF00512AF7 /* SDAnimatedImagePlayer.m in Sources */,
 				576EF867261DA0EF00512AF7 /* SDImageCodersManager.m in Sources */,
 				576EF876261DA0EF00512AF7 /* SDImageCache.m in Sources */,
-				5737C374259AFCBF00CB6525 /* ZJH5JSViewController.m in Sources */,
-				576EF7B8261DA0A400512AF7 /* ZJNativeAdImageTableViewCell.m in Sources */,
 				576EF881261DA0EF00512AF7 /* SDImageCacheDefine.m in Sources */,
 				576EF863261DA0EF00512AF7 /* SDWebImageCacheSerializer.m in Sources */,
 				576EF85B261DA0EF00512AF7 /* SDAnimatedImage.m in Sources */,
 				576EF884261DA0EF00512AF7 /* SDWebImageCacheKeyFilter.m in Sources */,
-				57E738B425A839C8002C69C0 /* ZJFeedAdsViewController.m in Sources */,
+				579DFD62280D6D1800EAF128 /* LYLUnicode.m in Sources */,
 				576EF859261DA0EF00512AF7 /* SDImageIOAnimatedCoder.m in Sources */,
-				576EF7B9261DA0A400512AF7 /* ZJNativeAdViewController.m in Sources */,
 				576EF878261DA0EF00512AF7 /* SDImageFrame.m in Sources */,
 				576EF855261DA0EF00512AF7 /* SDImageCoder.m in Sources */,
-				001E72332535FA7C0086A93F /* ZJFeedFullVideoAdCell.m in Sources */,
-				576657852652164700C2C239 /* ZJContentPageSelectedBar.m in Sources */,
 				576EF88C261DA0EF00512AF7 /* UIColor+SDHexString.m in Sources */,
+				579DFD55280D4B3A00EAF128 /* ZJNativeAdAtlasImageTableViewCell.m in Sources */,
+				579DFD3C280D4B3A00EAF128 /* UIButton+Event.m in Sources */,
+				579DFD52280D4B3A00EAF128 /* ZJH5ViewController.m in Sources */,
 				576EF893261DA0EF00512AF7 /* NSBezierPath+SDRoundedCorners.m in Sources */,
 				576EF874261DA0EF00512AF7 /* UIImage+ExtendedCacheData.m in Sources */,
 				576EF88B261DA0EF00512AF7 /* SDWebImageDownloaderRequestModifier.m in Sources */,
+				579DFD3E280D4B3A00EAF128 /* ZJHomeTableViewCell.m in Sources */,
 				576EF853261DA0EF00512AF7 /* NSImage+Compatibility.m in Sources */,
 				576EF885261DA0EF00512AF7 /* SDWebImageDefine.m in Sources */,
+				579DFD46280D4B3A00EAF128 /* ZJFloatingAdViewController.m in Sources */,
 				576EF88A261DA0EF00512AF7 /* UIButton+WebCache.m in Sources */,
-				57E738E225A85F67002C69C0 /* ZJNativeExpressAdTableViewCell.m in Sources */,
-				001E7285253AA6F40086A93F /* AdViewController.m in Sources */,
 				576EF854261DA0EF00512AF7 /* SDAnimatedImageView+WebCache.m in Sources */,
 				576EF887261DA0EF00512AF7 /* UIView+WebCacheOperation.m in Sources */,
-				576EF7BC261DA0A400512AF7 /* ZJFillNativeAdView.m in Sources */,
 				001E72A3253AAC760086A93F /* MASCompositeConstraint.m in Sources */,
 				576EF877261DA0EF00512AF7 /* SDImageGIFCoder.m in Sources */,
-				576657842652164700C2C239 /* ZJContentPageStyle1ViewController.m in Sources */,
 				576EF864261DA0EF00512AF7 /* SDWebImageIndicator.m in Sources */,
+				579DFD58280D4B3A00EAF128 /* ZJNativeAdBaseTableViewCell.m in Sources */,
 				576EF87A261DA0EF00512AF7 /* SDImageLoadersManager.m in Sources */,
+				579DFD39280D4B3A00EAF128 /* ZJLogView.m in Sources */,
 				001E72A8253AAC760086A93F /* MASConstraint.m in Sources */,
-				576510E725BFFBB5006AAFEF /* ZJBannerAdViewController.m in Sources */,
 				001E72A7253AAC760086A93F /* View+MASAdditions.m in Sources */,
-				576657822652164700C2C239 /* ZJContentPageStyle2ViewController.m in Sources */,
-				0061949025133E9400E09415 /* ZJAdLoadView.m in Sources */,
-				5737C498259C176A00CB6525 /* ZJAdEditTextView.m in Sources */,
+				579DFD3A280D4B3A00EAF128 /* UIDevice+Kit.m in Sources */,
+				579DFD59280D4B3A00EAF128 /* ZJNativeAdSelectedViewController.m in Sources */,
+				579DFD4F280D4B3A00EAF128 /* ZJFullScreenVideoViewController.m in Sources */,
 				576EF88E261DA0EF00512AF7 /* SDImageAssetManager.m in Sources */,
 				576EF85C261DA0EF00512AF7 /* SDAnimatedImageView.m in Sources */,
+				579DFD42280D4B3A00EAF128 /* ZJContentPageViewController.m in Sources */,
+				579DFD5A280D4B3A00EAF128 /* ZJSplashViewController.m in Sources */,
 				0077471624E182A200C30636 /* ViewController.m in Sources */,
+				579DFD4B280D4B3A00EAF128 /* ZJFeedFullVideoViewController.m in Sources */,
 				576EF86B261DA0EF00512AF7 /* SDImageAPNGCoder.m in Sources */,
 				001E72AA253AAC760086A93F /* MASViewAttribute.m in Sources */,
 				001E72A1253AAC760086A93F /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
-				576EF7BD261DA0A400512AF7 /* ZJNativeAdBaseTableViewCell.m in Sources */,
 				576EF865261DA0EF00512AF7 /* SDGraphicsImageRenderer.m in Sources */,
-				573A134B259AD788002023F8 /* ZJInterstitialAdViewController.m in Sources */,
-				576EF7BA261DA0A400512AF7 /* ZJNativeAdAtlasImageTableViewCell.m in Sources */,
 				0077471024E182A200C30636 /* AppDelegate.m in Sources */,
 				001E72A5253AAC760086A93F /* MASLayoutConstraint.m in Sources */,
-				576657832652164700C2C239 /* ZJContentPageViewController.m in Sources */,
+				579DFD44280D4B3A00EAF128 /* ZJContentPageSelectedBar.m in Sources */,
 				576EF886261DA0EF00512AF7 /* SDWebImageOptionsProcessor.m in Sources */,
 				576EF85E261DA0EF00512AF7 /* SDImageAWebPCoder.m in Sources */,
+				579DFD3B280D4B3A00EAF128 /* ZJAdLoadView.m in Sources */,
+				579DFD4A280D4B3A00EAF128 /* ZJFeedAdsViewController.m in Sources */,
+				579DFD4D280D4B3A00EAF128 /* ZJFeedFullVideoAdCell.m in Sources */,
 				001E72A9253AAC760086A93F /* MASViewConstraint.m in Sources */,
-				57ADEBBB2637FB62008F6E7E /* ZJFullScreenVideoViewController.m in Sources */,
-				0061949325133F1000E09415 /* UIButton+Event.m in Sources */,
 				576EF858261DA0EF00512AF7 /* SDWebImageManager.m in Sources */,
 				576EF890261DA0EF00512AF7 /* SDWeakProxy.m in Sources */,
 				576EF888261DA0EF00512AF7 /* UIView+WebCache.m in Sources */,
+				579DFD40280D4B3A00EAF128 /* AdViewController.m in Sources */,
 				576EF892261DA0EF00512AF7 /* SDFileAttributeHelper.m in Sources */,
 				576EF857261DA0EF00512AF7 /* SDWebImageDownloaderDecryptor.m in Sources */,
 				576EF894261DA0EF00512AF7 /* SDDisplayLink.m in Sources */,
 				001E72A6253AAC760086A93F /* NSArray+MASAdditions.m in Sources */,
+				579DFD4E280D4B3A00EAF128 /* ZJFeedFullVideoShowViewController.m in Sources */,
+				579DFD56280D4B3A00EAF128 /* ZJNativeAdVideoTableViewCell.m in Sources */,
 				0077472124E182A200C30636 /* main.m in Sources */,
-				573A134E259AD788002023F8 /* ZJH5ViewController.m in Sources */,
 				576EF88D261DA0EF00512AF7 /* SDImageCachesManagerOperation.m in Sources */,
+				579DFD3F280D4B3A00EAF128 /* ZJBannerViewController.m in Sources */,
 				576EF86E261DA0EF00512AF7 /* SDWebImagePrefetcher.m in Sources */,
 				576EF870261DA0EF00512AF7 /* NSButton+WebCache.m in Sources */,
+				579DFD45280D4B3A00EAF128 /* ZJContentPageTabBarController.m in Sources */,
 				576EF86D261DA0EF00512AF7 /* SDWebImageError.m in Sources */,
 				001E72A4253AAC760086A93F /* MASConstraintMaker.m in Sources */,
 				576EF869261DA0EF00512AF7 /* SDMemoryCache.m in Sources */,
-				001E727F253AA39E0086A93F /* UIDevice+Kit.m in Sources */,
 				576EF86A261DA0EF00512AF7 /* SDWebImageCompat.m in Sources */,
 				576EF87B261DA0EF00512AF7 /* SDImageCachesManager.m in Sources */,
 				576EF895261DA0EF00512AF7 /* SDAsyncBlockOperation.m in Sources */,
 				576EF896261DA0EF00512AF7 /* SDAssociatedObject.m in Sources */,
-				573A1345259AD788002023F8 /* ZJFeedFullVideoViewController.m in Sources */,
+				579DFD49280D4B3A00EAF128 /* ZJNativeExpressAdTableViewCell.m in Sources */,
 				001E72A2253AAC760086A93F /* ViewController+MASAdditions.m in Sources */,
 				576EF879261DA0EF00512AF7 /* SDWebImageDownloaderOperation.m in Sources */,
 				576EF87F261DA0EF00512AF7 /* UIImageView+WebCache.m in Sources */,
 				576EF862261DA0EF00512AF7 /* SDImageLoader.m in Sources */,
+				579DFD5B280D4B3A00EAF128 /* ZJSplashWindowVC.m in Sources */,
 				576EF871261DA0EF00512AF7 /* SDImageIOCoder.m in Sources */,
 				576EF882261DA0EF00512AF7 /* UIImage+MemoryCacheCost.m in Sources */,
 				576EF880261DA0EF00512AF7 /* SDImageGraphics.m in Sources */,
 				576EF87C261DA0EF00512AF7 /* SDWebImageTransition.m in Sources */,
 				576EF868261DA0EF00512AF7 /* UIImage+MultiFormat.m in Sources */,
-				001E72362535FAA80086A93F /* ZJFullScreenCell.m in Sources */,
 				576EF86C261DA0EF00512AF7 /* SDWebImageDownloaderResponseModifier.m in Sources */,
-				576EF7BE261DA0A400512AF7 /* ZJNativeAdSelectedViewController.m in Sources */,
+				579DFD51280D4B3A00EAF128 /* ZJRewardViewController.m in Sources */,
 				576EF889261DA0EF00512AF7 /* UIImage+Metadata.m in Sources */,
 				576EF873261DA0EF00512AF7 /* SDAnimatedImageRep.m in Sources */,
-				573A134F259AD788002023F8 /* ZJFeedFullVideoShowViewController.m in Sources */,
+				579DFD53280D4B3A00EAF128 /* ZJNativeAdImageTableViewCell.m in Sources */,
+				579DFD50280D4B3A00EAF128 /* ZJJSBridgeViewController.m in Sources */,
 				576EF86F261DA0EF00512AF7 /* SDImageCoderHelper.m in Sources */,
 				576EF866261DA0EF00512AF7 /* UIImage+GIF.m in Sources */,
 				576EF861261DA0EF00512AF7 /* SDWebImageDownloader.m in Sources */,
-				5737C49C259C1A1A00CB6525 /* UIView+ZJExtension.m in Sources */,
 				576EF883261DA0EF00512AF7 /* SDImageCacheConfig.m in Sources */,
-				574AA84825E4D08D00098DCA /* ZJNativeExpressAdsViewController.m in Sources */,
-				573A1354259AD790002023F8 /* ZJJSBridgeViewController.m in Sources */,
-				573A134C259AD788002023F8 /* ZjRewardViewController.m in Sources */,
 				576EF852261DA0EF00512AF7 /* SDImageHEICCoder.m in Sources */,
-				576EF7BB261DA0A400512AF7 /* ZJNativeAdVideoTableViewCell.m in Sources */,
 				576EF872261DA0EF00512AF7 /* SDDiskCache.m in Sources */,
+				579DFD3D280D4B3A00EAF128 /* ZJHomeViewController.m in Sources */,
 				576EF87E261DA0EF00512AF7 /* NSData+ImageContentType.m in Sources */,
 				576EF891261DA0EF00512AF7 /* SDInternalMacros.m in Sources */,
+				579DFD43280D4B3A00EAF128 /* ZJContentPageStyle1ViewController.m in Sources */,
+				579DFD48280D4B3A00EAF128 /* ZJNativeExpressAdsViewController.m in Sources */,
+				579DFD41280D4B3A00EAF128 /* ZJContentPageStyle2ViewController.m in Sources */,
 				576EF856261DA0EF00512AF7 /* SDWebImageOperation.m in Sources */,
+				579DFD57280D4B3A00EAF128 /* ZJFillNativeAdView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1171,9 +1197,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "Apple Development";
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 2020110401;
-				DEVELOPMENT_TEAM = 53GGRC45JU;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1200,7 +1226,7 @@
 					"$(inherited)",
 					"-ObjC",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.kwai.adsdk.beta11112;
+				PRODUCT_BUNDLE_IDENTIFIER = com.zj.shop.towmall.hwxsx1.old;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -1217,9 +1243,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "Apple Development";
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 2020110401;
-				DEVELOPMENT_TEAM = 53GGRC45JU;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1246,7 +1272,7 @@
 					"$(inherited)",
 					"-ObjC",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.kwai.adsdk.beta11112;
+				PRODUCT_BUNDLE_IDENTIFIER = com.zj.shop.towmall.hwxsx1.old;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;

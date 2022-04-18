@@ -16,13 +16,11 @@ NS_ASSUME_NONNULL_BEGIN
 @property(nonatomic,strong,readonly) UIButton *showButton;
 @property(nonatomic,strong,readonly) UITextField *adIDTextField;
 @property(nonatomic,weak) UIViewController *rootViewController;
-+(instancetype) creat:(CGFloat) top;
 
-
--(void) clearLog;
--(void) addLog:(NSString*) log;
-
--(void) appendAdID:(NSArray*) adsID;
++(instancetype)creat:(CGFloat)top;
+-(void)clearLog;
+-(void)addLog:(NSString *)log;
+-(void)appendAdID:(NSArray *)adsID;
 
 @end
 
