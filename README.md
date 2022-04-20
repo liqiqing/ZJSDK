@@ -106,14 +106,13 @@ pod 'ZJSDK/ZJSDKModuleGoogle'#Google广告
 
 * Google广告：
 
-  * 需要在info.plist 添加GADApplicationIdentifier字段，value为AppId ,如果使用了admob广告sdk且未在info.plist中配置，会导致运行时错误:https://developers.google.com/admob/ios/quick-start#cocoapods
+  * 需要在info.plist 添加GADApplicationIdentifier字段，value为AppId ,如果使用了Google广告sdk且未在info.plist中配置，会导致运行时错误，参考：https://developers.google.com/admob/ios/quick-start#cocoapods
 
     ```
     <key>GADApplicationIdentifier</key>
     <string>申请的Google广告的appid</string>
     ```
-
-    
+  * Google启用测试广告，参考：https://developers.google.com/admob/ios/test-ads#enable_test_devices
 
 ### <span id="jump1.2">1.2、Xcode编译选项设置</span>
 
@@ -159,7 +158,88 @@ SDK 不会主动获取应用位置权限，当应用本身有获取位置权限�
 
 2: 左侧目录中选中工程名，在 TARGETS->Build Settings-> Swift Compiler - Code Generation -> Objective-C Bridging Header 中输入桥接文件的路径
 
-### <span id="jump1.3">1.3、初始化SDK</span>
+###1.3、iOS14注意事项
+#### 1.3.1、iOS 14.5及以上版本ATT权限申请
+App Tracking Transparency(ATT) 框架向用户提出应用程序跟踪授权请求，并提供跟踪授权状态。自iOS14.5 开始，在应用程序调用 ATT 向用户提跟踪授权请求之前，IDFA 将不可用。如果应用未提出此请求，应用获取到的 IDFA 将为0，建议您在应用启动时调用，以便我们能够提供更精准的进行广告投放和收入优化。
+* 要获取 ATT 权限，请更新您的 Info.plist，添加 NSUserTrackingUsageDescription 字段和自定义文案描述。代码示例：
+```
+<key>NSUserTrackingUsageDescription</key>
+<string>该标识符将用于向您投放个性化广告</string>
+```
+* 向用户申请权限时，请调用 requestTrackingAuthorizationWithCompletionHandler:方法。我们建议您申请权限后再请求广告，以便广告能准确的获得用户授权状态。
+```objc
+#import <AppTrackingTransparency/AppTrackingTransparency.h>
+#import <AdSupport/AdSupport.h>
+- (void)requestIDFA {
+  [ATTrackingManager requestTrackingAuthorizationWithCompletionHandler:^(ATTrackingManagerAuthorizationStatus status) {
+    // [self loadAd];
+  }];
+}
+```
+#### 1.3.2、SKAdNetwork 接入
+使用Apple的转化跟踪SKAdNetwork，这意味着即使IDFA不可用，也可以将应用安装归因。
+1.在Xcode项目导航器中，选择Info.plist。
+2.单击属性列表编辑器中任何键旁边的添加按钮（**+**），以创建一个新的属性键。
+3.输入密钥名称SKAdNetworkItems。选择Array。
+4.将SKAdNetworkId以字典的形式添加到数组中。
+```
+//将SKAdNetwork ID 添加到 info.plist 中，以保证 SKAdNetwork 的正确运行
+//广点通
+SKAdNetworkIdentifier : f7s53z58qe.skadnetwork
+//快手
+SKAdNetworkIdentifier : r3y5dwb26t.skadnetwork
+//sigmob
+SKAdNetworkIdentifier : 58922NB4GD.skadnetwork
+//MTG
+SKAdNetworkIdentifier : kbd757ywx3.skadnetwork
+//穿山甲
+SKAdNetworkIdentifier : 238da6jt44.skadnetwork
+SKAdNetworkIdentifier : x2jnk7ly8j.skadnetwork
+SKAdNetworkIdentifier : 22mmun2rn5.skadnetwork
+//Google
+SKAdNetworkIdentifier : cstr6suwn9.skadnetwork
+```
+**info.plist代码示例**
+```
+<key>SKAdNetworkItems</key>
+<array>
+    <dict>
+        <key>SKAdNetworkIdentifier</key>
+        <string>238da6jt44.skadnetwork</string>
+    </dict>
+    <dict>
+        <key>SKAdNetworkIdentifier</key>
+        <string>x2jnk7ly8j.skadnetwork</string>
+    </dict>
+    <dict>
+        <key>SKAdNetworkIdentifier</key>
+        <string>f7s53z58qe.skadnetwork</string>
+    </dict>
+    <dict>
+        <key>SKAdNetworkIdentifier</key>
+        <string>58922NB4GD.skadnetwork</string>
+    </dict>
+    <dict>
+        <key>SKAdNetworkIdentifier</key>
+        <string>kbd757ywx3.skadnetwork</string>
+    </dict>
+    <dict>
+        <key>SKAdNetworkIdentifier</key>
+        <string>22mmun2rn5.skadnetwork</string>
+    </dict>
+    <dict>
+        <key>SKAdNetworkIdentifier</key>
+        <string>r3y5dwb26t.skadnetwork</string>
+    </dict>
+    <dict>
+        <key>SKAdNetworkIdentifier</key>
+        <string>cstr6suwn9.skadnetwork</string>
+    </dict>
+</array>
+```
+
+
+### <span id="jump1.3">1.4、初始化SDK</span>
 
 **Objective-C**
 
@@ -211,6 +291,12 @@ ZJAdSDK.registerAppId("zj_20201014iOSDEMO");
 - (void) loadAd;
 
 /**
+ *  展示广告，
+  详解：广告展示成功时会回调zj_splashAdSuccessPresentScreen方法
+ */
+- (void)showAdInWindow:(UIWindow *)window;
+
+/**
 * 展示广告，调用此方法前需调用isAdValid方法判断广告素材是否有效
 * 详解：广告展示成功时会回调splashAdSuccessPresentScreen方法，展示失败时会回调splashAdFailToPresent方法
 */
@@ -239,6 +325,11 @@ ZJAdSDK.registerAppId("zj_20201014iOSDEMO");
  *  开屏广告点击回调
  */
 - (void)zj_splashAdClicked:(ZJSplashAd *)splashAd;
+
+/**
+*  开屏广告即将关闭回调
+*/
+- (void)zj_splashAdWillClose:(ZJSplashAd *)splashAd;
 
 /**
  *  开屏广告关闭回调
@@ -400,7 +491,8 @@ self.rewardVideoAd.load()
 
 @property(nonatomic,weak) id<ZJInterstitialAdDelegate> delegate;
 
-- (instancetype)initWithPlacementId:(NSString *)placementId delegate:(id<ZJInterstitialAdDelegate>) delegate;
+//tips:方法- (instancetype)initWithPlacementId:(NSString *)placementId delegate:(id<ZJInterstitialAdDelegate>) delegate;已弃用，使用此方法替换，并单独设置delegate。
+- (instancetype)initWithPlacementId:(NSString *)placementId;
 
 -(void) loadAd;
 
@@ -464,8 +556,8 @@ interstitialAd.load();
 
 @property(nonatomic,weak) id<ZJFeedFullVideoProviderDelegate> delegate;
 
+//tips:方法- (instancetype)initWithPlacementId:(NSString *)placementId delegate:(id<ZJFeedFullVideoProviderDelegate>) delegate;已弃用，使用此方法替换，并单独设置delegate。
 - (instancetype)initWithPlacementId:(NSString *)placementId;
-- (instancetype)initWithPlacementId:(NSString *)placementId delegate:(id<ZJFeedFullVideoProviderDelegate>) delegate;
 
 //count 返回广告最大数量
 -(void) loadAd:(NSInteger) count;
@@ -537,7 +629,8 @@ interstitialAd.load();
 ```
 - (void)loadData {
   if(!self.adProvider){
-    self.adProvider = [[ZJFeedFullVideoProvider alloc] initWithPlacementId:@"KS90010003" delegate:self];
+    self.adProvider = [[ZJFeedFullVideoProvider alloc] initWithPlacementId:@"KS90010003"];
+    self.adProvider.delegate = self;
     self.adProvider.adSize = self.view.bounds.size;
   }
   [self.adProvider loadAd:5];
@@ -813,8 +906,6 @@ _feedAd.delegate = self;
 
 加载广告具体示例详见Demo中的ZJBannerAdAdapter。
 
-
-
 ### 2.7、接入自渲染广告(ZJNativeAd)
 
 #### 2.7.1、ZJNativeAd说明
@@ -874,9 +965,13 @@ self.adView = [self.fillView registerDataObject:dataObject];
 
 @property(nonatomic,weak) id<ZJFullScreenVideoAdDelegate> delegate;
 
-- (instancetype)initWithPlacementId:(NSString *)placementId delegate:(id<ZJFullScreenVideoAdDelegate>) delegate;
+
+//tips:方法- (instancetype)initWithPlacementId:(NSString *)placementId delegate:(id<ZJFullScreenVideoAdDelegate>) delegate;已弃用，使用此方法替换，并单独设置delegate。
+- (instancetype)initWithPlacementId:(NSString *)placementId;
+
 //加载广告
 -(void) loadAd;
+
 //展示全屏视频广告
 -(void)presentFullScreenVideoAdFromRootViewController:(UIViewController*)viewController;
 
@@ -919,11 +1014,42 @@ self.fullVideoAd.delegate = self;
 [self.fullVideoAd loadAd];
 ```
 
-
 加载广告具体示例详见Demo中的ZJFullScreenVideoViewController。
 
+### 2.9、接入视频内容(ZJContentPage)</span>
+
+#### 2.9.1、ZJContentPage说明
+```
+@property (nonatomic, readonly) UIViewController *viewController;
+///视频状态代理
+@property (nonatomic, weak) id <ZJContentPageVideoStateDelegate> videoStateDelegate;
+///页面状态代理
+@property (nonatomic, weak) id <ZJContentPageStateDelegate> stateDelegate;
 
 
+///内容标识
+@property (nonatomic, copy, readonly) NSString *contentInfoId;
+///内容类型
+@property (nonatomic, assign, readonly) ZJContentInfoType contentInfoType;
+
+///刷新
+- (void)tryToRefresh;
+```
+#### 2.9.2、加载视频内容
+```
+self.contentPage = [[ZJContentPage alloc]initWithPlacementId:self.contentId];
+self.contentPage.videoStateDelegate = self;
+self.contentPage.stateDelegate = self;
+UIViewController *vc = self.contentPage.viewController;
+    
+CGFloat contentY = [UIApplication sharedApplication].statusBarFrame.size.height+self.navigationController.navigationBar.frame.size.height;
+vc.view.frame = CGRectMake(0, contentY, self.view.frame.size.width, self.view.frame.size.height-contentY);
+[self addChildViewController:vc];
+[self.view addSubview:vc.view];
+```
+加载广告具体示例详见Demo中的 ZJContentPageStyle1ViewController,
+ZJContentPageStyle2ViewController,
+ZJContentPageTabBarController
 
 ## <span id="jump3">三、接入H5内容页</span>
 
@@ -944,13 +1070,13 @@ self.zjH5 = [ZJH5 new];
 ```
 @property(nonatomic,weak) id<ZJH5PageDelegate> delegate;
 
-@property(nonatomic,strong) ZJUser *user;
+@property (nonatomic, strong) ZJUser *user;
 
-- (instancetype)initWithPlacementId:(NSString *)placementId user:(ZJUser *)user delegate:(id<ZJH5PageDelegate>) delegate;
+- (instancetype)initWithPlacementId:(NSString *)placementId user:(ZJUser *)user delegate:(id <ZJH5PageDelegate>)delegate;
 
--(void) loadH5Page;
+- (void)loadH5Page;
 
--(void) showH5Page:(UIViewController*) rootViewController;
+- (void)presentH5FromRootViewController:(UIViewController *)rootViewController animated:(BOOL)animated;
 ```
 
 #### <span id="jump3.1.2">3.1.2、ZJH5Delegate说明</span>
@@ -1014,3 +1140,90 @@ self.zjH5Page = [[ZJH5Page alloc] initWithPlacementId:adId user:user delegate:se
 ```
 
 加载广告具体示例详见Demo中的ZJH5ViewController。
+
+### 3.2、悬浮广告
+#### 3.2.1、ZJFloatingAdView说明
+
+```
+- (instancetype)initWithPlacementId:(NSString *)placementId frame:(CGRect)frame;
+
+@property (nonatomic, weak) id <ZJFloatingAdViewDelegate> delegate;
+///placementId - 广告位 ID
+@property (nonatomic, copy) NSString *placementId;
+///广告是否能够移动 默认 YES
+@property (nonatomic, assign) BOOL canMove;
+///广告是否需要自动贴边展示 默认 YES
+@property (nonatomic, assign) BOOL needMoveToSide;
+///广告关闭按钮隐藏 默认 NO
+@property (nonatomic, assign) BOOL hiddenCloseButton;
+///用来弹出目标页的ViewController，一般为当前ViewController 默认当前widow的viewController
+@property (nonatomic, weak) UIViewController *rootViewController;
+
+///加载广告
+- (void)loadAd;
+```
+
+H5详情页可配置参数
+```
+@interface ZJFloatingAdView (ZJH5PageCustom)
+/**导航栏返回按钮 图片设置*/
+@property (nonatomic, nullable, strong) UIImage *backImage;
+/**导航栏返回按钮 文字描述设置*/
+@property (nonatomic, nullable, copy) NSAttributedString *backText;
+
+/**导航栏关闭按钮 图片设置*/
+@property (nonatomic, nullable, strong) UIImage *closeImage;
+/**导航栏关闭按钮 文字描述设置*/
+@property (nonatomic, nullable, copy) NSAttributedString *closeText;
+
+/**隐藏导航栏的关闭按钮 */
+@property (nonatomic, assign) BOOL hiddenH5CloseButton;
+
+/**导航栏标题， 设置后不会读取网页的标题*/
+@property (nonatomic, nullable, copy) NSString *navigationbarTitle;
+@end
+```
+#### 3.2.2、ZJFloatingAdView使用
+```
+self.floatingAd = [[ZJFloatingAdView alloc]initWithPlacementId:@"J2952950117" frame:CGRectZero];
+self.floatingAd.delegate = self;
+self.floatingAd.hiddenH5CloseButton = YES;
+[self.floatingAd loadAd];
+
+
+//加载成功回调
+-(void)zj_floatingAdViewDidLoad:(ZJFloatingAdView *)floatingAdView{
+    NSLog(@"%s",__FUNCTION__);
+    [self.view addSubview:floatingAdView];
+}
+
+```
+
+
+**备注**
+
+| 最新版本更新日志 | 修订日期  | 修订说明       |
+| ---------------- | --------- | -------------- |
+| v1.0.20          | 2020-1-14 | 增加新广告类型 |
+| v1.0.21          |2020-1-26  |新增banner广告，广告数据获取优化 |
+|v2.0.2|2021-3-5|模块拆分，广告优化|
+|v2.1.0|2021-3-12|广告获取机制优化，提升容错率|
+|v2.2.3 |2021-4-7 |添加自渲染广告，优化H5广告|
+|v2.2.12|2021-6-8|添加全屏视频广告类型，优化自渲染广告接入，完善广告回调信息|
+|v2.3.0|2021-6-28|添加广告平台|
+|v2.3.2|2021-7-6|开屏广告优化，优化广告填充|
+|v2.3.6|2021-7-28|激励视频校验优化|
+|v2.3.8|2021-8-8|优化网络请求，优化版本兼容|
+|v2.3.8.2|2021-8-13|开屏添加即将关闭回调，自渲染广告logoView|
+|v2.3.8.3|2021-8-17|激励视频校验2.0|
+|v2.3.9|2021-8-27|新增Sigmob广告|
+|v2.3.9.5|2021-9-17| 兼容gif图和悬浮广告优化|
+|v2.3.11|2021-10-25| 信息流填充优化，修复sdk已知问题|
+|v2.3.11.6|2021-12-01| 修复bug，视频内容需单独引入|
+|v2.3.12.5|2021-01-20| 添加插屏广告，全屏视频广告填充|
+|v2.3.13|2021-02-09|修复bug， 添加Google广告|
+|v2.4.0.1|2022-04-18|更新广告加载逻辑|
+<!-- @import "[TOC]" {cmd="toc" depthFrom=1 depthTo=6 orderedList=false} -->
+
+
+
