@@ -11,6 +11,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 FOUNDATION_EXPORT NSString * const ZJ_ADType_Splash;
 FOUNDATION_EXPORT NSString * const ZJ_ADType_Interstitial;
+FOUNDATION_EXPORT NSString * const ZJ_ADType_NewInterstitial;
 FOUNDATION_EXPORT NSString * const ZJ_ADType_RewardVideo;
 FOUNDATION_EXPORT NSString * const ZJ_ADType_FeedFullVideo;
 FOUNDATION_EXPORT NSString * const ZJ_ADType_Banner;

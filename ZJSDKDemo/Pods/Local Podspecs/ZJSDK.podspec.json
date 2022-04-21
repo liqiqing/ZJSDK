@@ -1,6 +1,6 @@
 {
   "name": "ZJSDK",
-  "version": "2.4.0.1",
+  "version": "2.4.0.2",
   "summary": "ZJSDK广告",
   "description": "TODO: Add long description of the pod here.",
   "homepage": "https://github.com/liqiqing/ZJSDK.git",
@@ -13,7 +13,7 @@
   },
   "source": {
     "git": "https://github.com/liqiqing/ZJSDK.git",
-    "tag": "2.4.0.1"
+    "tag": "2.4.0.2"
   },
   "platforms": {
     "ios": "9.0"
