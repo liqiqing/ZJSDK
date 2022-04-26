@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'ZJSDK'
-  s.version          = '2.4.0.3'
+  s.version          = '2.4.0.4'
   s.summary          = 'ZJSDK广告'
 
 # This description is used to generate tags and improve search results.
@@ -43,7 +43,7 @@ TODO: Add long description of the pod here.
 #    'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64'
 #  }
 #  s.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
-  s.default_subspecs = 'ZJSDKModuleGDT', 'ZJSDKModuleCSJ', 'ZJSDKModuleKS', 'ZJSDKModuleMTG', 'ZJSDKModuleDSP','ZJSDKModuleSIG'
+  s.default_subspecs = 'ZJSDKModuleGDT', 'ZJSDKModuleCSJ', 'ZJSDKModuleKS', 'ZJSDKModuleMTG', 'ZJSDKModuleDSP','ZJSDKModuleSIG','ZJSDKModuleBD'
 
   s.subspec 'ZJAdSDK' do |ss|
     ss.vendored_frameworks = 'ZJSDK/ZJAdSDK/*.framework'
@@ -108,4 +108,9 @@ TODO: Add long description of the pod here.
     ss.dependency 'Google-Mobile-Ads-SDK'
   end
  
+ s.subspec 'ZJSDKModuleBD' do |ss|
+   ss.vendored_libraries = 'ZJSDK/ZJSDKModuleBD/*.a'
+   ss.dependency 'ZJSDK/ZJAdSDK'
+   ss.dependency 'BaiduMobAdSDK'
+ end
 end

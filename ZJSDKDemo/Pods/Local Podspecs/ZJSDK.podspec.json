@@ -1,6 +1,6 @@
 {
   "name": "ZJSDK",
-  "version": "2.4.0.2",
+  "version": "2.4.0.4",
   "summary": "ZJSDK广告",
   "description": "TODO: Add long description of the pod here.",
   "homepage": "https://github.com/liqiqing/ZJSDK.git",
@@ -13,7 +13,7 @@
   },
   "source": {
     "git": "https://github.com/liqiqing/ZJSDK.git",
-    "tag": "2.4.0.2"
+    "tag": "2.4.0.4"
   },
   "platforms": {
     "ios": "9.0"
@@ -55,7 +55,8 @@
     "ZJSDKModuleKS",
     "ZJSDKModuleMTG",
     "ZJSDKModuleDSP",
-    "ZJSDKModuleSIG"
+    "ZJSDKModuleSIG",
+    "ZJSDKModuleBD"
   ],
   "subspecs": [
     {
@@ -169,6 +170,18 @@
 
         ],
         "Google-Mobile-Ads-SDK": [
+
+        ]
+      }
+    },
+    {
+      "name": "ZJSDKModuleBD",
+      "vendored_libraries": "ZJSDK/ZJSDKModuleBD/*.a",
+      "dependencies": {
+        "ZJSDK/ZJAdSDK": [
+
+        ],
+        "BaiduMobAdSDK": [
 
         ]
       }
