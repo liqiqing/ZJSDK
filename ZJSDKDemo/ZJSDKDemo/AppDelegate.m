@@ -109,7 +109,9 @@
 -(void)zj_splashAdDidLoad:(ZJSplashAd *)splashAd{
     NSLog(@"kpgg-----加载成功");
     NSArray *errors =  [self.splashAd getFillFailureMessages];
-    [self.splashAd showAdInWindow:self.showWindow];
+    dispatch_async(dispatch_get_main_queue(), ^{
+        [self.splashAd showAdInWindow:self.showWindow];
+    });
 }
 
 /**
@@ -131,7 +133,9 @@
  */
 - (void)zj_splashAdClosed:(ZJSplashAd *)splashAd{
     NSLog(@"kpgg-----开屏关闭");
-    self.showWindow.hidden = YES;
+    dispatch_async(dispatch_get_main_queue(), ^{
+        self.showWindow.hidden = YES;
+    });
 }
 
 /**
@@ -155,7 +159,9 @@
 - (void)zj_splashAdError:(ZJSplashAd *)splashAd withError:(NSError *)error{
     NSArray *errors =  [self.splashAd getFillFailureMessages];
     NSLog(@"开屏广告所有错误信息 %@",errors);
-    self.showWindow.hidden = YES;
+    dispatch_async(dispatch_get_main_queue(), ^{
+        self.showWindow.hidden = YES;
+    });
 }
 
 
