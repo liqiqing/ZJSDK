@@ -53,7 +53,7 @@
     NSLog(@"ZJSDK版本号：%@",version);
     
     
-    self.showWindow.hidden = NO;
+//    self.showWindow.hidden = NO;
     
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     self.window.backgroundColor = [UIColor whiteColor];
