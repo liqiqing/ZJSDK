@@ -56,6 +56,10 @@ typedef NS_ENUM(NSInteger,ZJAdShowPriority){
 
 @property (nonatomic, assign) NSInteger limit_num;
 
+@property (nonatomic, assign) BOOL is_being_limit;
+
+@property (nonatomic, strong) NSString *error_strategy;
+
 @property (nonatomic, assign) ZJAdPlatformType platformType;
 @property (nonatomic, copy) NSString *platform;
 
