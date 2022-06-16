@@ -40,7 +40,7 @@ typedef NS_ENUM(NSInteger, ZJStrategy) {
 /// 判断此ID是否正在执行限制次数策略,启动后首次请求adid需要从磁盘中读取，会提前返回默认不执行，后续考虑读取放在主线程，其他操作异步。
 /// @param adid 联盟广告位ID
 /// @param limitNum 当天限制展示的的次数
-- (BOOL)isExcutingLimetNumForAdid:(NSString *)adid limitNum:(NSInteger)limitNum;
+- (BOOL)isExcutingLimitNumForAdid:(NSString *)adid limitNum:(NSInteger)limitNum;
 
 ///// 异步判断是否执行block，
 ///// @param adid adid
@@ -48,9 +48,9 @@ typedef NS_ENUM(NSInteger, ZJStrategy) {
 //- (void)blockExcutingStategyForAdid:(NSString *)adid backBlock:(BOOL (^)(void))backBlock;;
 
 
-/// 获取当天完成次数
-/// @param adid 联盟广告位ID
-- (NSInteger)finishNumForAdid:(NSString *)adid;
+///// 获取当天完成次数
+///// @param adid 联盟广告位ID
+//- (NSInteger)finishNumForAdid:(NSString *)adid;
 
 #pragma mark =============== 读取 ===============
 /// 加载对应id的数据
