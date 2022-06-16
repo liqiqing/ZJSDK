@@ -6,1185 +6,92 @@
 	objectVersion = 50;
 	objects = {
 
-/* Begin PBXAggregateTarget section */
-		396FEEFBFD0F2124F8A266DB6506001E /* MintegralAdSDK */ = {
-			isa = PBXAggregateTarget;
-			buildConfigurationList = 728B05A91516FDB3E073D271F16DEA63 /* Build configuration list for PBXAggregateTarget "MintegralAdSDK" */;
-			buildPhases = (
-				E35E20D9A5B26B1BFA75453C89FE8753 /* [CP] Copy XCFrameworks */,
-			);
-			dependencies = (
-			);
-			name = MintegralAdSDK;
-		};
-		47A48B35767B2FF26EE52EF544D5F14B /* SigmobAd-iOS */ = {
-			isa = PBXAggregateTarget;
-			buildConfigurationList = 737E3D978F9632C7A53736391E4F4D28 /* Build configuration list for PBXAggregateTarget "SigmobAd-iOS" */;
-			buildPhases = (
-			);
-			dependencies = (
-			);
-			name = "SigmobAd-iOS";
-		};
-		53DB8EFBB54B636ACDC70272323792EC /* KSAdSDK */ = {
-			isa = PBXAggregateTarget;
-			buildConfigurationList = 02C8AF3CDE69331D4B06B672866E726A /* Build configuration list for PBXAggregateTarget "KSAdSDK" */;
-			buildPhases = (
-				B1947AD203DD5E46A044F6BFA28FC5E1 /* [CP] Copy XCFrameworks */,
-			);
-			dependencies = (
-			);
-			name = KSAdSDK;
-		};
-		6F2BDBDBBAD8487EF4614E1D729C5DD0 /* GDTMobSDK */ = {
-			isa = PBXAggregateTarget;
-			buildConfigurationList = 1B6AEFC3189ED1E6EBD94C30A4CFB889 /* Build configuration list for PBXAggregateTarget "GDTMobSDK" */;
-			buildPhases = (
-			);
-			dependencies = (
-			);
-			name = GDTMobSDK;
-		};
-		726ABAA3B995C2690CAF752FB08ABF6D /* Ads-CN */ = {
-			isa = PBXAggregateTarget;
-			buildConfigurationList = 5371FDAE452BF35FCBC9A262DA78CF85 /* Build configuration list for PBXAggregateTarget "Ads-CN" */;
-			buildPhases = (
-			);
-			dependencies = (
-				36A61AFBD2AB3C864ED035834E482504 /* PBXTargetDependency */,
-			);
-			name = "Ads-CN";
-		};
-		9EC40159579F7F87518205F00985225F /* ZJSDK */ = {
-			isa = PBXAggregateTarget;
-			buildConfigurationList = BB7A59E0A082CE08C0ABAA82FDC2E677 /* Build configuration list for PBXAggregateTarget "ZJSDK" */;
-			buildPhases = (
-			);
-			dependencies = (
-				9B221D77C9B423FD452FE1F3C45706BC /* PBXTargetDependency */,
-				EA4DBDFF5763CFEB08440C95A1CC8D89 /* PBXTargetDependency */,
-				6FF2FC879DE0AB3EA7438A65237406C0 /* PBXTargetDependency */,
-				00D5A9EE662C462CC73B554832A8A37F /* PBXTargetDependency */,
-				1AD7A105519D7E51CE6046C847CD9325 /* PBXTargetDependency */,
-				D6A83542F17F5283070C5349936D2274 /* PBXTargetDependency */,
-			);
-			name = ZJSDK;
-		};
-		A33942C0A3A0CED25749EF27F05ED387 /* BaiduMobAdSDK */ = {
-			isa = PBXAggregateTarget;
-			buildConfigurationList = F1862C45C09AE512944738FE17B51A8E /* Build configuration list for PBXAggregateTarget "BaiduMobAdSDK" */;
-			buildPhases = (
-			);
-			dependencies = (
-			);
-			name = BaiduMobAdSDK;
-		};
-/* End PBXAggregateTarget section */
-
 /* Begin PBXBuildFile section */
-		01E1258DAEF4C9762F2AE94F76628408 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5EE99D3565BCB90DBD9004357A4B6D43 /* AVFoundation.framework */; };
-		08E13BCF07828C27FD382837EDEFD5B1 /* Pods-ZJSDKDemo-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BCF8FD7AD8101C5849D1D36D1CB81716 /* Pods-ZJSDKDemo-dummy.m */; };
-		0B43CDC216DF1D598A8578AA3CBAAF55 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D33AA63F2B67244B48324F010176923 /* CoreMedia.framework */; };
-		16A55C63DE4945DB7C4D309402F394FF /* BU_AFURLSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 339B6A18A8FD27E6BFE58F65441AD007 /* BU_AFURLSessionManager.m */; };
-		18E79BD655CE2671324344CAA808669F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A832F962345529F95DF2A6673CA9983 /* UIKit.framework */; };
-		1F46D17621DAE324AB75AAB063DFF0BF /* NSString+BURely.m in Sources */ = {isa = PBXBuildFile; fileRef = B903A4DD092E18AD1C88D6D8D5CBA1F0 /* NSString+BURely.m */; };
-		241A4BEF740141FA9C8DA0EB226C0811 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 833FE24E023610CF8C513DD671D6F937 /* Security.framework */; };
-		26EF0D580A77298DD726469F6FEA4973 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE407E4A8ACF9C1554740EB7A7834010 /* Accelerate.framework */; };
-		278A30170EF13C06B75582FB28283B20 /* BU_AFAutoPurgingImageCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F36EF8DC45ED04B119A5E3E4CEF63BD /* BU_AFAutoPurgingImageCache.m */; };
-		27A584A9446149F3A4C8E938B159331F /* BURelyFoundation-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B986A51B47CCBD709007D47C72094D78 /* BURelyFoundation-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2A089F487B3857ABCD583B754D939A0A /* BU_AFURLResponseSerialization.h in Headers */ = {isa = PBXBuildFile; fileRef = 7EAF315AE56CE09E89F9FF82543E49E0 /* BU_AFURLResponseSerialization.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2E5BDE1BE4A375AD3B9B7ACB540048C5 /* BU_AFHTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CC372FD57B925DF955F43F56D1DD960 /* BU_AFHTTPSessionManager.m */; };
-		33FB6F4CC73A04CD9573779FF3905002 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D39CFCCEA609D5C11E156EC960C17EA /* WebKit.framework */; };
-		3CD99C36D2DF9E3FABE1132F7887C863 /* Pods-ZJSDKDemo-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C43FB1A7AD2003C31ED3EDE89509DA29 /* Pods-ZJSDKDemo-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		3DC2C26321CF5E08206834EFD363305E /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5EA137BF4D33DDB164186E17A4A39337 /* CoreMotion.framework */; };
-		3F6AF2765294FBA6181D60AA11CAC2EC /* BU_AFURLRequestSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = EF398A485E8E9790C73A4E9EB47C7B3F /* BU_AFURLRequestSerialization.m */; };
-		55E140C9DCFE61E0EBBA60C1A00F3CED /* BU_AFAutoPurgingImageCache.h in Headers */ = {isa = PBXBuildFile; fileRef = 943B16BF185F9EBB7AA301474D377274 /* BU_AFAutoPurgingImageCache.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		5934173A6BB35D62A84561B624F2F54B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73493DA537DFDD50B1242BE68E420B1F /* Foundation.framework */; };
-		7513B5227A8575EE3DC73632E1275444 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2055DAC4DAFF43302DF527A31022E1F /* SystemConfiguration.framework */; };
-		8762340F981A70283A6218CC9CD3A409 /* BU_AFURLRequestSerialization.h in Headers */ = {isa = PBXBuildFile; fileRef = 7E5BDE1FD9B1AD4F89BD81245F68A795 /* BU_AFURLRequestSerialization.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		892D95C1B9EF2B7D6CE6D7D28177A95B /* BU_AFSecurityPolicy.h in Headers */ = {isa = PBXBuildFile; fileRef = D826756E349B486EB994BE80CC33194E /* BU_AFSecurityPolicy.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		8C3B0319087A0E10B6E1532FE346B65A /* BUBaseRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 595C3D8CB4A41E83090BA5F0B890B8B8 /* BUBaseRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		98ACDC068C2F14EE98CDA024AF3F4A61 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D95A2E08CC16BFEFDD62866086CFBC0 /* AdSupport.framework */; };
-		99554530D6C070BA0D1295778DAADAA9 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 39F77ACC6ABE76CC670A3BD78A401F3E /* StoreKit.framework */; };
-		9A2EA665C4D508DD943CEA6E70E14DD9 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 904106363C61B216A115A7BE2E636937 /* CoreTelephony.framework */; };
-		9A92A3DA1D9DB2BABAFDD02A185BB376 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E85BAF07344F1CC660AE19C1297F451 /* CoreLocation.framework */; };
-		9D13E37513DF5D226CF13E2EFCF79F49 /* BU_AFHTTPSessionManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 707807CAFD966F0EF34937BAC9F10669 /* BU_AFHTTPSessionManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A4490D846B38E245333CCE82377F0D3F /* BU_AFURLResponseSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 364D4D61E4A9B3573E4C2AB7F6A1C88A /* BU_AFURLResponseSerialization.m */; };
-		A9FAEEA3ACADC437E8CD4FA5016E4588 /* BURelyFoundation-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F298E739D2C5D13B6475F033FEEC9BA6 /* BURelyFoundation-dummy.m */; };
-		ACAB07F0C39E1C873CC76277FBA3E156 /* CoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88F57F9C9B3134B4CE3912268BECC3CC /* CoreServices.framework */; };
-		B7F0AD1707D2C2887EF79146830E493E /* BU_AFURLSessionManager.h in Headers */ = {isa = PBXBuildFile; fileRef = C2F4CD838833DED840A3A70AD61C9916 /* BU_AFURLSessionManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		CFDB3D4658C6777CD0A1BAB10CD01AA4 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E10660D079BA9135856AFAD80ADF1BB7 /* CoreFoundation.framework */; };
-		D22A2198E420F3E4412CA288FD707A6C /* BUNetworkAgent.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FC115559147C18CE0856F9172EB4D72 /* BUNetworkAgent.m */; };
-		D37637D6E0C64DF7207983E77C39A22D /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA662EB1384ED2147F6D97E90036BDBF /* MediaPlayer.framework */; };
-		D5989DCD0EFC08795B0D8220FFF07170 /* BU_AFSecurityPolicy.m in Sources */ = {isa = PBXBuildFile; fileRef = 842011D79AA11D2C0FA648DAA885359B /* BU_AFSecurityPolicy.m */; };
-		E1F2F0AECA663B738ECF3D7286530BAA /* NSString+BURely.h in Headers */ = {isa = PBXBuildFile; fileRef = 1FB644719096657F103B39FB626D275C /* NSString+BURely.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E5A5C914A506525D6B36D63E8AFB039D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73493DA537DFDD50B1242BE68E420B1F /* Foundation.framework */; };
-		ED3BB2B6C033F983D263F7CE99A03182 /* BUBaseRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = A53A0575DC3BE77C7C2EB59B72638F0B /* BUBaseRequest.m */; };
-		F68383958E809E8DD3C3523487D62F68 /* BURelyFoundation.h in Headers */ = {isa = PBXBuildFile; fileRef = DA491015990DC5B00F2F6CCE29A526B5 /* BURelyFoundation.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		FA3758F676AACC0FC199B953E99009D4 /* BUNetworkAgent.h in Headers */ = {isa = PBXBuildFile; fileRef = 1AB721D1726DF00F42A0CD1C7842E868 /* BUNetworkAgent.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1C936B895E0118C337F7122F54304688 /* Pods-ZJSDKDemo-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BD39B00C61485133F2F36E4743282C2B /* Pods-ZJSDKDemo-dummy.m */; };
+		339B57A71442AFB1A2970257199A85F2 /* Pods-ZJSDKDemo-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 93B784E909180BDE996914F597EBFB91 /* Pods-ZJSDKDemo-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DE9390E7238578EE31656F10CBB9CCC1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		0322C8017376F42978C6088A5BD518D7 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 6F2BDBDBBAD8487EF4614E1D729C5DD0;
-			remoteInfo = GDTMobSDK;
-		};
-		06D5CA2C1832DCEB04D6F085915BA0B0 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 6F2BDBDBBAD8487EF4614E1D729C5DD0;
-			remoteInfo = GDTMobSDK;
-		};
-		0BF95FCF24C08477DE88B2BA96DA66F7 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = A33942C0A3A0CED25749EF27F05ED387;
-			remoteInfo = BaiduMobAdSDK;
-		};
-		1A30D69BE8AAB4D1BB03E88BA3816C77 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = A30112D48286DC34DCEF944BC33E1EC9;
-			remoteInfo = BURelyFoundation;
-		};
-		3697F9EF02C7B77D99553DDF3BCA99A0 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 47A48B35767B2FF26EE52EF544D5F14B;
-			remoteInfo = "SigmobAd-iOS";
-		};
-		7F250F5F5D5A04CCC744046EFFA1AF6A /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 47A48B35767B2FF26EE52EF544D5F14B;
-			remoteInfo = "SigmobAd-iOS";
-		};
-		92CFF887FAC65447050B5CEFABAC4CD2 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 396FEEFBFD0F2124F8A266DB6506001E;
-			remoteInfo = MintegralAdSDK;
-		};
-		ACE640D5D2EE1B65E6025AE0716CD753 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 53DB8EFBB54B636ACDC70272323792EC;
-			remoteInfo = KSAdSDK;
-		};
-		AF507FCA61810BCC9A132C90312956C5 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = A30112D48286DC34DCEF944BC33E1EC9;
-			remoteInfo = BURelyFoundation;
-		};
-		B5425BFCBE717A6669DA38F95AA73861 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 396FEEFBFD0F2124F8A266DB6506001E;
-			remoteInfo = MintegralAdSDK;
-		};
-		B6DB6F3698B1AFA99CBE4C179DC77226 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 726ABAA3B995C2690CAF752FB08ABF6D;
-			remoteInfo = "Ads-CN";
-		};
-		B6F04EDA0504E2A4DDBE0CD037E77F09 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 9EC40159579F7F87518205F00985225F;
-			remoteInfo = ZJSDK;
-		};
-		C0A9E502EEACBEC2709662C6F8106588 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 726ABAA3B995C2690CAF752FB08ABF6D;
-			remoteInfo = "Ads-CN";
-		};
-		E2763F967E876E3FDFC9FF38773E86ED /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = A33942C0A3A0CED25749EF27F05ED387;
-			remoteInfo = BaiduMobAdSDK;
-		};
-		EFE59E37BCCE6887AB1AA1E9FC2553E7 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 53DB8EFBB54B636ACDC70272323792EC;
-			remoteInfo = KSAdSDK;
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
-		0178E223C7D9EE07CEFED3BDAC70637D /* BURelyFoundation-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "BURelyFoundation-Info.plist"; sourceTree = "<group>"; };
-		037A44C30F6FF4394028348A8410179E /* BURelyFoundation.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = BURelyFoundation.debug.xcconfig; sourceTree = "<group>"; };
-		03FE61ACEFF93F36192A6E7BCABC28FA /* MTGSDKReward.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; name = MTGSDKReward.xcframework; path = Fmk/MTGSDKReward.xcframework; sourceTree = "<group>"; };
-		087569B7D6D1E65D9A958A285DAC17D8 /* GDTBaseAdNetworkAdapterProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GDTBaseAdNetworkAdapterProtocol.h; path = lib/GDTBaseAdNetworkAdapterProtocol.h; sourceTree = "<group>"; };
-		0ABE16C9C25E7BB438F50F560DB8A0DE /* MTGSDK.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; name = MTGSDK.xcframework; path = Fmk/MTGSDK.xcframework; sourceTree = "<group>"; };
-		11E4DD4836D14A37E9CD4243997A244A /* HM.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HM.framework; path = Rely/HM.framework; sourceTree = "<group>"; };
-		195F3E71E843D75E37C40C7109F84965 /* BUCNAuxiliary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BUCNAuxiliary.framework; path = SDK/BUCNAuxiliary.framework; sourceTree = "<group>"; };
-		19ABB0A05204BE1EEC458FECB9975AD6 /* GDTUnifiedNativeAdDataObject.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GDTUnifiedNativeAdDataObject.h; path = lib/GDTUnifiedNativeAdDataObject.h; sourceTree = "<group>"; };
-		1A832F962345529F95DF2A6673CA9983 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
-		1AB721D1726DF00F42A0CD1C7842E868 /* BUNetworkAgent.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BUNetworkAgent.h; path = Rely/BUNETWork/BUNetworkAgent.h; sourceTree = "<group>"; };
-		1AB7C3E520A400529C2F5E804F675C9E /* GDTUnifiedNativeAdNetworkConnectorProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GDTUnifiedNativeAdNetworkConnectorProtocol.h; path = lib/GDTUnifiedNativeAdNetworkConnectorProtocol.h; sourceTree = "<group>"; };
-		1E3341050096FB460E91D101B287342C /* Ads-CN.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Ads-CN.release.xcconfig"; sourceTree = "<group>"; };
-		1E69F6ABE18890A8DA8B90D57498B709 /* MTGSDKBanner.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; name = MTGSDKBanner.xcframework; path = Fmk/MTGSDKBanner.xcframework; sourceTree = "<group>"; };
-		1EE936AFABB0173C5F83EDFF9A0134EC /* BURelyFoundation.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = BURelyFoundation.modulemap; sourceTree = "<group>"; };
-		1FB644719096657F103B39FB626D275C /* NSString+BURely.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSString+BURely.h"; path = "Rely/BUNETWork/NSString+BURely.h"; sourceTree = "<group>"; };
-		2D33AA63F2B67244B48324F010176923 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/CoreMedia.framework; sourceTree = DEVELOPER_DIR; };
-		2DC65D50108FF3529375105924AE986D /* libZJSDKModuleSIG.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = libZJSDKModuleSIG.a; path = ZJSDK/ZJSDKModuleSIG/libZJSDKModuleSIG.a; sourceTree = "<group>"; };
-		2F8DCE187C1C8CE12A9B4CB6B838D06D /* KSAdSDK.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = KSAdSDK.release.xcconfig; sourceTree = "<group>"; };
-		3032B89F5F079A372F413A180D1BE6B8 /* GDTAdParams.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GDTAdParams.h; path = lib/GDTAdParams.h; sourceTree = "<group>"; };
-		337C9E8FD747D4166BF7AB27EE0F5D2D /* MTGSDKInterstitialVideo.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; name = MTGSDKInterstitialVideo.xcframework; path = Fmk/MTGSDKInterstitialVideo.xcframework; sourceTree = "<group>"; };
-		339B6A18A8FD27E6BFE58F65441AD007 /* BU_AFURLSessionManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BU_AFURLSessionManager.m; path = Rely/AFNetworking/BU_AFURLSessionManager.m; sourceTree = "<group>"; };
-		3487DFC5D6F2FC7E1D89DA2249671BDA /* GDTUnifiedBannerAdNetworkConnectorProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GDTUnifiedBannerAdNetworkConnectorProtocol.h; path = lib/GDTUnifiedBannerAdNetworkConnectorProtocol.h; sourceTree = "<group>"; };
-		364D4D61E4A9B3573E4C2AB7F6A1C88A /* BU_AFURLResponseSerialization.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BU_AFURLResponseSerialization.m; path = Rely/AFNetworking/BU_AFURLResponseSerialization.m; sourceTree = "<group>"; };
-		382DAFC459B3E2C24E2EB38922DA55F0 /* ZJSDK.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ZJSDK.release.xcconfig; sourceTree = "<group>"; };
-		38360B5825937E2ADCD3ED47EBF17D68 /* ZJSDKCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ZJSDKCore.framework; path = ZJSDK/ZJAdSDK/ZJSDKCore.framework; sourceTree = "<group>"; };
-		39F77ACC6ABE76CC670A3BD78A401F3E /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/StoreKit.framework; sourceTree = DEVELOPER_DIR; };
-		3C9438959C11D264D4C3234CEFC7BAFD /* MintegralAdSDK.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MintegralAdSDK.release.xcconfig; sourceTree = "<group>"; };
-		3D55C82E21447B00692F6905A70D3DFC /* BURelyFoundation-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "BURelyFoundation-prefix.pch"; sourceTree = "<group>"; };
-		3D95A2E08CC16BFEFDD62866086CFBC0 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/AdSupport.framework; sourceTree = DEVELOPER_DIR; };
-		3DD85F8370FD2E40B57068C78631440B /* GDTRewardVideoAdNetworkConnectorProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GDTRewardVideoAdNetworkConnectorProtocol.h; path = lib/GDTRewardVideoAdNetworkConnectorProtocol.h; sourceTree = "<group>"; };
-		3E85BAF07344F1CC660AE19C1297F451 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/CoreLocation.framework; sourceTree = DEVELOPER_DIR; };
-		3FA91FA9E5DC9CAB0851994D3906FD1C /* GDTSplashZoomOutView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GDTSplashZoomOutView.h; path = lib/GDTSplashZoomOutView.h; sourceTree = "<group>"; };
-		45CC3A5B7F37822DBCA7A6249BD76B52 /* GDTUnifiedInterstitialAd.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GDTUnifiedInterstitialAd.h; path = lib/GDTUnifiedInterstitialAd.h; sourceTree = "<group>"; };
-		4A2501DCACDCCBD6139897E4EC201F7E /* GDTVideoConfig.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GDTVideoConfig.h; path = lib/GDTVideoConfig.h; sourceTree = "<group>"; };
-		4AB6C5CE3F3E5EB3E6B102FBAD259C80 /* MTGSDKBidding.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; name = MTGSDKBidding.xcframework; path = Fmk/MTGSDKBidding.xcframework; sourceTree = "<group>"; };
-		4E205F8E20FF019C53E71D84AEC57D4A /* GDTUnifiedInterstitialAdNetworkAdapterProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GDTUnifiedInterstitialAdNetworkAdapterProtocol.h; path = lib/GDTUnifiedInterstitialAdNetworkAdapterProtocol.h; sourceTree = "<group>"; };
-		4E68AC1EEB207D8861138CAEF2BDB73A /* GDTRewardVideoAdNetworkAdapterProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GDTRewardVideoAdNetworkAdapterProtocol.h; path = lib/GDTRewardVideoAdNetworkAdapterProtocol.h; sourceTree = "<group>"; };
-		53EEFAB668564B0C41919E3860F1EE3E /* KSAdSDK.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = KSAdSDK.debug.xcconfig; sourceTree = "<group>"; };
-		55DEBD2B8AFACA1E88DD6E377111074B /* libZJSDKModuleGDT.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = libZJSDKModuleGDT.a; path = ZJSDK/ZJSDKModuleGDT/libZJSDKModuleGDT.a; sourceTree = "<group>"; };
-		595C3D8CB4A41E83090BA5F0B890B8B8 /* BUBaseRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BUBaseRequest.h; path = Rely/BUNETWork/BUBaseRequest.h; sourceTree = "<group>"; };
-		5EA137BF4D33DDB164186E17A4A39337 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/CoreMotion.framework; sourceTree = DEVELOPER_DIR; };
-		5EC61D4FBDC1AEC3A852C21DA29FFA0E /* GDTRewardVideoAd.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GDTRewardVideoAd.h; path = lib/GDTRewardVideoAd.h; sourceTree = "<group>"; };
-		5EE99D3565BCB90DBD9004357A4B6D43 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/AVFoundation.framework; sourceTree = DEVELOPER_DIR; };
-		60C86A0EF32709D7D958135888F9B406 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = SDK/LICENSE; sourceTree = "<group>"; };
-		6199FE0B3350E42D58101BC283A0C8D7 /* MTGSDKNativeAdvanced.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; name = MTGSDKNativeAdvanced.xcframework; path = Fmk/MTGSDKNativeAdvanced.xcframework; sourceTree = "<group>"; };
-		64D00FA9B9FA96431BDE2DC976A33144 /* GDTUnifiedNativeAd.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GDTUnifiedNativeAd.h; path = lib/GDTUnifiedNativeAd.h; sourceTree = "<group>"; };
-		694A3CF69069234A0B9BCEB852F1A663 /* baidumobadsdk.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; path = baidumobadsdk.bundle; sourceTree = "<group>"; };
-		6BBEDF093F17A7851B130C7D2E9869B6 /* libGDTMobSDK.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = libGDTMobSDK.a; path = lib/libGDTMobSDK.a; sourceTree = "<group>"; };
-		6CC372FD57B925DF955F43F56D1DD960 /* BU_AFHTTPSessionManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BU_AFHTTPSessionManager.m; path = Rely/AFNetworking/BU_AFHTTPSessionManager.m; sourceTree = "<group>"; };
-		6E00E9A02B85D2B14F6D266C61183EE5 /* GDTSplashAdNetworkAdapterProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GDTSplashAdNetworkAdapterProtocol.h; path = lib/GDTSplashAdNetworkAdapterProtocol.h; sourceTree = "<group>"; };
-		6FB57E371735E0535AA4C121099389A7 /* ZJSDK.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = ZJSDK.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		707807CAFD966F0EF34937BAC9F10669 /* BU_AFHTTPSessionManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BU_AFHTTPSessionManager.h; path = Rely/AFNetworking/BU_AFHTTPSessionManager.h; sourceTree = "<group>"; };
-		715703F663EC7E6FBAB4D9FC57CD2805 /* Pods-ZJSDKDemo-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ZJSDKDemo-frameworks.sh"; sourceTree = "<group>"; };
-		73493DA537DFDD50B1242BE68E420B1F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		751A0C021F15FE1B0DC04FB3E3F05C07 /* GDTNativeExpressAdNetworkAdapterProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GDTNativeExpressAdNetworkAdapterProtocol.h; path = lib/GDTNativeExpressAdNetworkAdapterProtocol.h; sourceTree = "<group>"; };
-		7D39CFCCEA609D5C11E156EC960C17EA /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/WebKit.framework; sourceTree = DEVELOPER_DIR; };
-		7DC44F53B93AC14BC3DB7D959CEE10F7 /* GDTSplashAdNetworkConnectorProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GDTSplashAdNetworkConnectorProtocol.h; path = lib/GDTSplashAdNetworkConnectorProtocol.h; sourceTree = "<group>"; };
-		7E5BDE1FD9B1AD4F89BD81245F68A795 /* BU_AFURLRequestSerialization.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BU_AFURLRequestSerialization.h; path = Rely/AFNetworking/BU_AFURLRequestSerialization.h; sourceTree = "<group>"; };
-		7EAF315AE56CE09E89F9FF82543E49E0 /* BU_AFURLResponseSerialization.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BU_AFURLResponseSerialization.h; path = Rely/AFNetworking/BU_AFURLResponseSerialization.h; sourceTree = "<group>"; };
-		7FB42DE3845626FDACCAF5F0FCAF3C9B /* MTGSDKInterstitial.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; name = MTGSDKInterstitial.xcframework; path = Fmk/MTGSDKInterstitial.xcframework; sourceTree = "<group>"; };
-		81F81775D312CD412C91E85CE3E78F56 /* GDTMobSDK.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = GDTMobSDK.debug.xcconfig; sourceTree = "<group>"; };
-		833FE24E023610CF8C513DD671D6F937 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Security.framework; sourceTree = DEVELOPER_DIR; };
-		842011D79AA11D2C0FA648DAA885359B /* BU_AFSecurityPolicy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BU_AFSecurityPolicy.m; path = Rely/AFNetworking/BU_AFSecurityPolicy.m; sourceTree = "<group>"; };
-		849028D6053C4C4AA4B06224E5D6E158 /* GDTSplashAd.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GDTSplashAd.h; path = lib/GDTSplashAd.h; sourceTree = "<group>"; };
-		8525E335275DECF6EE7610F61026F7B0 /* Sigmob.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = Sigmob.bundle; path = WindSDK/Sigmob.bundle; sourceTree = "<group>"; };
-		87DE22E43DEDCAAF5822AC4F950A7E48 /* GDTServerSideVerificationOptions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GDTServerSideVerificationOptions.h; path = lib/GDTServerSideVerificationOptions.h; sourceTree = "<group>"; };
-		88841E25283C7274BDF3E036EEE1F66A /* BUFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BUFoundation.framework; path = SDK/BUFoundation.framework; sourceTree = "<group>"; };
-		88F57F9C9B3134B4CE3912268BECC3CC /* CoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreServices.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/CoreServices.framework; sourceTree = DEVELOPER_DIR; };
-		8C84E6F0718FE056CC7E4D402CD8A950 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
-		904106363C61B216A115A7BE2E636937 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/CoreTelephony.framework; sourceTree = DEVELOPER_DIR; };
-		911CDFE9F85A241252E9E6CBBBF197B7 /* GDTNativeExpressAdViewAdapterProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GDTNativeExpressAdViewAdapterProtocol.h; path = lib/GDTNativeExpressAdViewAdapterProtocol.h; sourceTree = "<group>"; };
-		92C3021577DC440925125037618BFC9E /* Pods-ZJSDKDemo.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-ZJSDKDemo.modulemap"; sourceTree = "<group>"; };
-		93554801E49302BB1DF1B59789ADA437 /* MTGSDKSplash.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; name = MTGSDKSplash.xcframework; path = Fmk/MTGSDKSplash.xcframework; sourceTree = "<group>"; };
-		943B16BF185F9EBB7AA301474D377274 /* BU_AFAutoPurgingImageCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BU_AFAutoPurgingImageCache.h; path = Rely/AFNetworking/BU_AFAutoPurgingImageCache.h; sourceTree = "<group>"; };
-		944CC9C6D29F78886BDEFDE2A937B63C /* libZJSDKModuleBD.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = libZJSDKModuleBD.a; path = ZJSDK/ZJSDKModuleBD/libZJSDKModuleBD.a; sourceTree = "<group>"; };
-		96FA124BEA4C16150B1E3DB20F774FF9 /* BaiduMobAdSDK.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = BaiduMobAdSDK.release.xcconfig; sourceTree = "<group>"; };
-		9AA9075A6E496BDF51FEB3039031468C /* GDTUnifiedBannerView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GDTUnifiedBannerView.h; path = lib/GDTUnifiedBannerView.h; sourceTree = "<group>"; };
+		25322F9FFD68C8463E91F5D6E5ABA47C /* Pods-ZJSDKDemo-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ZJSDKDemo-acknowledgements.plist"; sourceTree = "<group>"; };
+		2C2FCF4FE16D9407E8DAA1604B63306C /* Pods-ZJSDKDemo.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-ZJSDKDemo.modulemap"; sourceTree = "<group>"; };
+		70B0F92822D60C64E0B40BD13DBC8F8A /* Pods-ZJSDKDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ZJSDKDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		7514FA8BC01572D4EAAA087230931B52 /* Pods-ZJSDKDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ZJSDKDemo.release.xcconfig"; sourceTree = "<group>"; };
+		93B784E909180BDE996914F597EBFB91 /* Pods-ZJSDKDemo-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ZJSDKDemo-umbrella.h"; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		9F36EF8DC45ED04B119A5E3E4CEF63BD /* BU_AFAutoPurgingImageCache.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BU_AFAutoPurgingImageCache.m; path = Rely/AFNetworking/BU_AFAutoPurgingImageCache.m; sourceTree = "<group>"; };
-		9FACB9568D4BA9E95E80E6756C72A88E /* GDTNativeExpressAdView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GDTNativeExpressAdView.h; path = lib/GDTNativeExpressAdView.h; sourceTree = "<group>"; };
-		9FC115559147C18CE0856F9172EB4D72 /* BUNetworkAgent.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BUNetworkAgent.m; path = Rely/BUNETWork/BUNetworkAgent.m; sourceTree = "<group>"; };
-		A3C2A0D6466E4AFB0B6344832242775B /* BURelyFoundation */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = BURelyFoundation; path = BURelyFoundation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		A53A0575DC3BE77C7C2EB59B72638F0B /* BUBaseRequest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BUBaseRequest.m; path = Rely/BUNETWork/BUBaseRequest.m; sourceTree = "<group>"; };
-		A9CEC937228D13B9552363A75B464B89 /* SigmobAd-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "SigmobAd-iOS.debug.xcconfig"; sourceTree = "<group>"; };
-		AB9C104081F0EC83AA24F6E71B527C03 /* MTGSDKNewInterstitial.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; name = MTGSDKNewInterstitial.xcframework; path = Fmk/MTGSDKNewInterstitial.xcframework; sourceTree = "<group>"; };
-		ABE0FFB9F435B7298CA89BBB09E299D5 /* BUAdSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BUAdSDK.framework; path = SDK/BUAdSDK.framework; sourceTree = "<group>"; };
-		AD680C985A02553502288E754B5FB300 /* libZJSDKModuleDSP.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = libZJSDKModuleDSP.a; path = ZJSDK/ZJSDKModuleDSP/libZJSDKModuleDSP.a; sourceTree = "<group>"; };
-		AEAD45B73C0AD1CAEC27EBC561E2F0B3 /* KSAdSDK-xcframeworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "KSAdSDK-xcframeworks.sh"; sourceTree = "<group>"; };
-		B1F3AC1C46CD4F433513E3A8BFD4FE47 /* GDTNativeExpressProAdView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GDTNativeExpressProAdView.h; path = lib/GDTNativeExpressProAdView.h; sourceTree = "<group>"; };
-		B4DFCF6680ABC8749B31136CD40516AD /* MintegralAdSDK.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MintegralAdSDK.debug.xcconfig; sourceTree = "<group>"; };
-		B68176BDB9D08EC3710FCBE1B7D4D1C3 /* Pods-ZJSDKDemo-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ZJSDKDemo-acknowledgements.plist"; sourceTree = "<group>"; };
-		B6F1BB6EDCEA67A6631EB894D7E836D2 /* GDTAdProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GDTAdProtocol.h; path = lib/GDTAdProtocol.h; sourceTree = "<group>"; };
-		B853DE96CC43D435814B9233C03C09AF /* ZJSDKBundle.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = ZJSDKBundle.bundle; path = ZJSDK/ZJSDKModuleDSP/ZJSDKBundle.bundle; sourceTree = "<group>"; };
-		B903A4DD092E18AD1C88D6D8D5CBA1F0 /* NSString+BURely.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSString+BURely.m"; path = "Rely/BUNETWork/NSString+BURely.m"; sourceTree = "<group>"; };
-		B986A51B47CCBD709007D47C72094D78 /* BURelyFoundation-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "BURelyFoundation-umbrella.h"; sourceTree = "<group>"; };
-		BA8EF2FD5E779B8BA76555A8D1583565 /* GDTUnifiedBannerAdNetworkAdapterProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GDTUnifiedBannerAdNetworkAdapterProtocol.h; path = lib/GDTUnifiedBannerAdNetworkAdapterProtocol.h; sourceTree = "<group>"; };
-		BAF6005079D3ABA4D5ADA1369F7F4511 /* libZJSDKModuleKS.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = libZJSDKModuleKS.a; path = ZJSDK/ZJSDKModuleKS/libZJSDKModuleKS.a; sourceTree = "<group>"; };
-		BBE5BFF70C44396D264DE2827BF8BF64 /* WindSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WindSDK.framework; path = WindSDK/WindSDK.framework; sourceTree = "<group>"; };
-		BCF8FD7AD8101C5849D1D36D1CB81716 /* Pods-ZJSDKDemo-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ZJSDKDemo-dummy.m"; sourceTree = "<group>"; };
-		C141CFBD25DB2CFBAE4DDD8E7BEBD7B4 /* Pods-ZJSDKDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ZJSDKDemo.debug.xcconfig"; sourceTree = "<group>"; };
-		C2023E550C51D96C04794A2BCF920B84 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
-		C2F4CD838833DED840A3A70AD61C9916 /* BU_AFURLSessionManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BU_AFURLSessionManager.h; path = Rely/AFNetworking/BU_AFURLSessionManager.h; sourceTree = "<group>"; };
-		C43FB1A7AD2003C31ED3EDE89509DA29 /* Pods-ZJSDKDemo-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ZJSDKDemo-umbrella.h"; sourceTree = "<group>"; };
-		C48A053FAE78CE9A8FFFD20A46F44BB1 /* GDTSDKDefines.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GDTSDKDefines.h; path = lib/GDTSDKDefines.h; sourceTree = "<group>"; };
-		C5A113A53F6CEBE993A81534AE1E8F5E /* GDTLogoView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GDTLogoView.h; path = lib/GDTLogoView.h; sourceTree = "<group>"; };
-		CBF03B2920E5A195695C3DDA056872E1 /* GDTMobSDK.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = GDTMobSDK.release.xcconfig; sourceTree = "<group>"; };
-		CE8A3AB570DC3F777F4CF5C5890F7DBA /* GDTNativeExpressAdNetworkConnectorProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GDTNativeExpressAdNetworkConnectorProtocol.h; path = lib/GDTNativeExpressAdNetworkConnectorProtocol.h; sourceTree = "<group>"; };
-		CE92160F834310D8502567D035357172 /* BURelyFoundation.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = BURelyFoundation.release.xcconfig; sourceTree = "<group>"; };
-		CFF268C409682F89C8EC41BE7481EC91 /* Pods-ZJSDKDemo-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ZJSDKDemo-acknowledgements.markdown"; sourceTree = "<group>"; };
-		D135BC12BE9798DCBDEC2AF64BCD15BF /* libZJSDKModuleCSJ.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = libZJSDKModuleCSJ.a; path = ZJSDK/ZJSDKModuleCSJ/libZJSDKModuleCSJ.a; sourceTree = "<group>"; };
-		D826756E349B486EB994BE80CC33194E /* BU_AFSecurityPolicy.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BU_AFSecurityPolicy.h; path = Rely/AFNetworking/BU_AFSecurityPolicy.h; sourceTree = "<group>"; };
-		DA491015990DC5B00F2F6CCE29A526B5 /* BURelyFoundation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BURelyFoundation.h; path = Rely/BURelyFoundation.h; sourceTree = "<group>"; };
-		DA662EB1384ED2147F6D97E90036BDBF /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/MediaPlayer.framework; sourceTree = DEVELOPER_DIR; };
-		DBED0030D712090D86A36ECD7FB27706 /* GDTMediaView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GDTMediaView.h; path = lib/GDTMediaView.h; sourceTree = "<group>"; };
-		DC5E04D9F241AB515A1776A1D3FCF155 /* GDTAdTestSetting.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GDTAdTestSetting.h; path = lib/GDTAdTestSetting.h; sourceTree = "<group>"; };
-		DF41A2C46005664CDF213D7CE258981E /* ZJSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ZJSDK.framework; path = ZJSDK/ZJAdSDK/ZJSDK.framework; sourceTree = "<group>"; };
-		DF7620FF99923717FAE63C61B732B96A /* BaiduMobAdSDK.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = BaiduMobAdSDK.debug.xcconfig; sourceTree = "<group>"; };
-		E0679859BFBFD4C562DDDA8AB8EF0F09 /* GDTLoadAdParams.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GDTLoadAdParams.h; path = lib/GDTLoadAdParams.h; sourceTree = "<group>"; };
-		E10660D079BA9135856AFAD80ADF1BB7 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/CoreFoundation.framework; sourceTree = DEVELOPER_DIR; };
-		E25E848DA78C6853F119FD1E87D70FDE /* Pods-ZJSDKDemo-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ZJSDKDemo-Info.plist"; sourceTree = "<group>"; };
+		A19E1B337E0E042B87C6CE082DB8EB88 /* Pods-ZJSDKDemo-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ZJSDKDemo-Info.plist"; sourceTree = "<group>"; };
+		BD39B00C61485133F2F36E4743282C2B /* Pods-ZJSDKDemo-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ZJSDKDemo-dummy.m"; sourceTree = "<group>"; };
+		D441E54315152E5B3CC7637B74B34C6E /* Pods-ZJSDKDemo-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ZJSDKDemo-acknowledgements.markdown"; sourceTree = "<group>"; };
 		E586CF1A242C1F16EA2160F232C062C0 /* Pods-ZJSDKDemo */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-ZJSDKDemo"; path = Pods_ZJSDKDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		E754AB40DAD2675BDDE06FB8E1C84E28 /* BUAdSDK.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = BUAdSDK.bundle; path = SDK/BUAdSDK.bundle; sourceTree = "<group>"; };
-		E76DBC5A4C149A9738732873C2B8D225 /* GDTUnifiedNativeAdView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GDTUnifiedNativeAdView.h; path = lib/GDTUnifiedNativeAdView.h; sourceTree = "<group>"; };
-		E77CA7E96B7B7425609A39A3A88548B5 /* SigmobAd-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "SigmobAd-iOS.release.xcconfig"; sourceTree = "<group>"; };
-		E7CE63B4F9E7C30FE7576DB00E2F6F3A /* BaiduMobAdSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = BaiduMobAdSDK.framework; sourceTree = "<group>"; };
-		E8E24204C9E86C6B45519333FD6B1889 /* libZJSDKModuleMTG.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = libZJSDKModuleMTG.a; path = ZJSDK/ZJSDKModuleMTG/libZJSDKModuleMTG.a; sourceTree = "<group>"; };
-		EBA5FD39256289FDFD56446F68E23FA1 /* Ads-CN.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Ads-CN.debug.xcconfig"; sourceTree = "<group>"; };
-		EBD84B86F70D1664E96EBB8455C4ABAB /* MintegralAdSDK-xcframeworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "MintegralAdSDK-xcframeworks.sh"; sourceTree = "<group>"; };
-		EF398A485E8E9790C73A4E9EB47C7B3F /* BU_AFURLRequestSerialization.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BU_AFURLRequestSerialization.m; path = Rely/AFNetworking/BU_AFURLRequestSerialization.m; sourceTree = "<group>"; };
-		F2055DAC4DAFF43302DF527A31022E1F /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/SystemConfiguration.framework; sourceTree = DEVELOPER_DIR; };
-		F298E739D2C5D13B6475F033FEEC9BA6 /* BURelyFoundation-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "BURelyFoundation-dummy.m"; sourceTree = "<group>"; };
-		F2CDE1D7398D4D95B4F2D44184E2D73E /* Pods-ZJSDKDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ZJSDKDemo.release.xcconfig"; sourceTree = "<group>"; };
-		F3F638EDA08D3641F53413E90B20E292 /* ZJSDK.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ZJSDK.debug.xcconfig; sourceTree = "<group>"; };
-		F4F669490F9A61543BBA8C7655DA278B /* GDTUnifiedNativeAdNetworkAdapterProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GDTUnifiedNativeAdNetworkAdapterProtocol.h; path = lib/GDTUnifiedNativeAdNetworkAdapterProtocol.h; sourceTree = "<group>"; };
-		F6A727EFDA85E0318C37CF2E502C0BDA /* GDTUnifiedInterstitialAdNetworkConnectorProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GDTUnifiedInterstitialAdNetworkConnectorProtocol.h; path = lib/GDTUnifiedInterstitialAdNetworkConnectorProtocol.h; sourceTree = "<group>"; };
-		F90449A7C78293C6ACBF517C1B3DCC03 /* KSAdSDK.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; path = KSAdSDK.xcframework; sourceTree = "<group>"; };
-		F93AB15462BF21FD42821E79178A9A7A /* GDTNativeExpressAd.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GDTNativeExpressAd.h; path = lib/GDTNativeExpressAd.h; sourceTree = "<group>"; };
-		FC0A3A50EC9AFA5600C3047EFF0D45CE /* GDTSDKConfig.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GDTSDKConfig.h; path = lib/GDTSDKConfig.h; sourceTree = "<group>"; };
-		FE407E4A8ACF9C1554740EB7A7834010 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Accelerate.framework; sourceTree = DEVELOPER_DIR; };
-		FE41BD0D176498F2EE002F2EB1F0DC96 /* Pods-ZJSDKDemo-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ZJSDKDemo-resources.sh"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		3E1311DC232F81EB31C737507D87DBE8 /* Frameworks */ = {
+		FC9246ACF5957499348FB6BB16393711 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				26EF0D580A77298DD726469F6FEA4973 /* Accelerate.framework in Frameworks */,
-				98ACDC068C2F14EE98CDA024AF3F4A61 /* AdSupport.framework in Frameworks */,
-				01E1258DAEF4C9762F2AE94F76628408 /* AVFoundation.framework in Frameworks */,
-				CFDB3D4658C6777CD0A1BAB10CD01AA4 /* CoreFoundation.framework in Frameworks */,
-				9A92A3DA1D9DB2BABAFDD02A185BB376 /* CoreLocation.framework in Frameworks */,
-				0B43CDC216DF1D598A8578AA3CBAAF55 /* CoreMedia.framework in Frameworks */,
-				3DC2C26321CF5E08206834EFD363305E /* CoreMotion.framework in Frameworks */,
-				ACAB07F0C39E1C873CC76277FBA3E156 /* CoreServices.framework in Frameworks */,
-				9A2EA665C4D508DD943CEA6E70E14DD9 /* CoreTelephony.framework in Frameworks */,
-				E5A5C914A506525D6B36D63E8AFB039D /* Foundation.framework in Frameworks */,
-				D37637D6E0C64DF7207983E77C39A22D /* MediaPlayer.framework in Frameworks */,
-				241A4BEF740141FA9C8DA0EB226C0811 /* Security.framework in Frameworks */,
-				99554530D6C070BA0D1295778DAADAA9 /* StoreKit.framework in Frameworks */,
-				7513B5227A8575EE3DC73632E1275444 /* SystemConfiguration.framework in Frameworks */,
-				18E79BD655CE2671324344CAA808669F /* UIKit.framework in Frameworks */,
-				33FB6F4CC73A04CD9573779FF3905002 /* WebKit.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		742788706109BEB316B7C399E13BA080 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				5934173A6BB35D62A84561B624F2F54B /* Foundation.framework in Frameworks */,
+				DE9390E7238578EE31656F10CBB9CCC1 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		00583C98C6BD11FB156D99723AA0F13A /* ZJSDKModuleGDT */ = {
+		578452D2E740E91742655AC8F1636D1F /* iOS */ = {
 			isa = PBXGroup;
 			children = (
-				C7BCEE40CCA6D05B526B25EEFE68C1E5 /* Frameworks */,
+				73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */,
 			);
-			name = ZJSDKModuleGDT;
+			name = iOS;
 			sourceTree = "<group>";
 		};
-		016F8F187AC13A297A2E9BAE8E64169E /* Frameworks */ = {
+		83BA6CCFB01370E207F8BA912FAFBEE9 /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				ABE0FFB9F435B7298CA89BBB09E299D5 /* BUAdSDK.framework */,
+				8E9BCFAF9D494A155B6BC940B6FDA258 /* Pods-ZJSDKDemo */,
 			);
-			name = Frameworks;
+			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		024AC3E7A318975A5ED16916AF97183B /* Frameworks */ = {
+		8E9BCFAF9D494A155B6BC940B6FDA258 /* Pods-ZJSDKDemo */ = {
 			isa = PBXGroup;
 			children = (
-				AB9C104081F0EC83AA24F6E71B527C03 /* MTGSDKNewInterstitial.xcframework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		04536C9928BB97074ADEC62FB61A2518 /* Pods-ZJSDKDemo */ = {
-			isa = PBXGroup;
-			children = (
-				92C3021577DC440925125037618BFC9E /* Pods-ZJSDKDemo.modulemap */,
-				CFF268C409682F89C8EC41BE7481EC91 /* Pods-ZJSDKDemo-acknowledgements.markdown */,
-				B68176BDB9D08EC3710FCBE1B7D4D1C3 /* Pods-ZJSDKDemo-acknowledgements.plist */,
-				BCF8FD7AD8101C5849D1D36D1CB81716 /* Pods-ZJSDKDemo-dummy.m */,
-				715703F663EC7E6FBAB4D9FC57CD2805 /* Pods-ZJSDKDemo-frameworks.sh */,
-				E25E848DA78C6853F119FD1E87D70FDE /* Pods-ZJSDKDemo-Info.plist */,
-				FE41BD0D176498F2EE002F2EB1F0DC96 /* Pods-ZJSDKDemo-resources.sh */,
-				C43FB1A7AD2003C31ED3EDE89509DA29 /* Pods-ZJSDKDemo-umbrella.h */,
-				C141CFBD25DB2CFBAE4DDD8E7BEBD7B4 /* Pods-ZJSDKDemo.debug.xcconfig */,
-				F2CDE1D7398D4D95B4F2D44184E2D73E /* Pods-ZJSDKDemo.release.xcconfig */,
+				2C2FCF4FE16D9407E8DAA1604B63306C /* Pods-ZJSDKDemo.modulemap */,
+				D441E54315152E5B3CC7637B74B34C6E /* Pods-ZJSDKDemo-acknowledgements.markdown */,
+				25322F9FFD68C8463E91F5D6E5ABA47C /* Pods-ZJSDKDemo-acknowledgements.plist */,
+				BD39B00C61485133F2F36E4743282C2B /* Pods-ZJSDKDemo-dummy.m */,
+				A19E1B337E0E042B87C6CE082DB8EB88 /* Pods-ZJSDKDemo-Info.plist */,
+				93B784E909180BDE996914F597EBFB91 /* Pods-ZJSDKDemo-umbrella.h */,
+				70B0F92822D60C64E0B40BD13DBC8F8A /* Pods-ZJSDKDemo.debug.xcconfig */,
+				7514FA8BC01572D4EAAA087230931B52 /* Pods-ZJSDKDemo.release.xcconfig */,
 			);
 			name = "Pods-ZJSDKDemo";
 			path = "Target Support Files/Pods-ZJSDKDemo";
 			sourceTree = "<group>";
 		};
-		06468B620F417020C1E0C16BD89C7D5B /* BannerAd */ = {
+		C62173CC67C48DF0D9A5FE20ECB9187F /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				FFD4250B4D0ACEA0489169784EFCD911 /* Frameworks */,
-			);
-			name = BannerAd;
-			sourceTree = "<group>";
-		};
-		0B36EDDCB9AA887164606AE7FC101FC2 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				F3F638EDA08D3641F53413E90B20E292 /* ZJSDK.debug.xcconfig */,
-				382DAFC459B3E2C24E2EB38922DA55F0 /* ZJSDK.release.xcconfig */,
-			);
-			name = "Support Files";
-			path = "ZJSDKDemo/Pods/Target Support Files/ZJSDK";
-			sourceTree = "<group>";
-		};
-		159829213A16923135B793E65F64FB88 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				1EE936AFABB0173C5F83EDFF9A0134EC /* BURelyFoundation.modulemap */,
-				F298E739D2C5D13B6475F033FEEC9BA6 /* BURelyFoundation-dummy.m */,
-				0178E223C7D9EE07CEFED3BDAC70637D /* BURelyFoundation-Info.plist */,
-				3D55C82E21447B00692F6905A70D3DFC /* BURelyFoundation-prefix.pch */,
-				B986A51B47CCBD709007D47C72094D78 /* BURelyFoundation-umbrella.h */,
-				037A44C30F6FF4394028348A8410179E /* BURelyFoundation.debug.xcconfig */,
-				CE92160F834310D8502567D035357172 /* BURelyFoundation.release.xcconfig */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/BURelyFoundation";
-			sourceTree = "<group>";
-		};
-		1D19873930DD6EB9EE59127263788CC6 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				6199FE0B3350E42D58101BC283A0C8D7 /* MTGSDKNativeAdvanced.xcframework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		1DF5A634130C20E8C586F54B7889F8D3 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				D135BC12BE9798DCBDEC2AF64BCD15BF /* libZJSDKModuleCSJ.a */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		1E1A7909BB29D619884269A318BB54B9 /* InterstitialAd */ = {
-			isa = PBXGroup;
-			children = (
-				F77505ADB0D7F8F704AEC75A8F31758B /* Frameworks */,
-			);
-			name = InterstitialAd;
-			sourceTree = "<group>";
-		};
-		247329A7F0C8351944C9B46DC9F3F47D /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				694A3CF69069234A0B9BCEB852F1A663 /* baidumobadsdk.bundle */,
-			);
-			name = Resources;
-			sourceTree = "<group>";
-		};
-		24B294D7A80C19D4F76A56F086B3C13B /* BidNativeAd */ = {
-			isa = PBXGroup;
-			children = (
-				618960B41B7B10F975AC34EF82D37601 /* Frameworks */,
-			);
-			name = BidNativeAd;
-			sourceTree = "<group>";
-		};
-		2823726C4993E30578745C4D1E0C53BB /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				AD680C985A02553502288E754B5FB300 /* libZJSDKModuleDSP.a */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		2887FC0B0B5B820E2F29C033B5E60CBF /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				A9CEC937228D13B9552363A75B464B89 /* SigmobAd-iOS.debug.xcconfig */,
-				E77CA7E96B7B7425609A39A3A88548B5 /* SigmobAd-iOS.release.xcconfig */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/SigmobAd-iOS";
-			sourceTree = "<group>";
-		};
-		29013F43737B9F6F6B8961260414B580 /* BUFoundation */ = {
-			isa = PBXGroup;
-			children = (
-				9558707A8099398492FB6D20E97DD7A2 /* Frameworks */,
-			);
-			name = BUFoundation;
-			sourceTree = "<group>";
-		};
-		2CCA2A04ACC227580238CEDD865C3DD8 /* iOS */ = {
-			isa = PBXGroup;
-			children = (
-				FE407E4A8ACF9C1554740EB7A7834010 /* Accelerate.framework */,
-				3D95A2E08CC16BFEFDD62866086CFBC0 /* AdSupport.framework */,
-				5EE99D3565BCB90DBD9004357A4B6D43 /* AVFoundation.framework */,
-				E10660D079BA9135856AFAD80ADF1BB7 /* CoreFoundation.framework */,
-				3E85BAF07344F1CC660AE19C1297F451 /* CoreLocation.framework */,
-				2D33AA63F2B67244B48324F010176923 /* CoreMedia.framework */,
-				5EA137BF4D33DDB164186E17A4A39337 /* CoreMotion.framework */,
-				88F57F9C9B3134B4CE3912268BECC3CC /* CoreServices.framework */,
-				904106363C61B216A115A7BE2E636937 /* CoreTelephony.framework */,
-				73493DA537DFDD50B1242BE68E420B1F /* Foundation.framework */,
-				DA662EB1384ED2147F6D97E90036BDBF /* MediaPlayer.framework */,
-				833FE24E023610CF8C513DD671D6F937 /* Security.framework */,
-				39F77ACC6ABE76CC670A3BD78A401F3E /* StoreKit.framework */,
-				F2055DAC4DAFF43302DF527A31022E1F /* SystemConfiguration.framework */,
-				1A832F962345529F95DF2A6673CA9983 /* UIKit.framework */,
-				7D39CFCCEA609D5C11E156EC960C17EA /* WebKit.framework */,
-			);
-			name = iOS;
-			sourceTree = "<group>";
-		};
-		2F248AE1981091C1217D7FED388DF76E /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				11E4DD4836D14A37E9CD4243997A244A /* HM.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		2FF6F7B50D9DC938F5CA7F65ED1BD9C7 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				BAF6005079D3ABA4D5ADA1369F7F4511 /* libZJSDKModuleKS.a */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		530FDC889B6C9314EC6A0EEB57B3C760 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				2DC65D50108FF3529375105924AE986D /* libZJSDKModuleSIG.a */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		5389916D56B37463D3B4C5B7D50DCC69 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				6BBEDF093F17A7851B130C7D2E9869B6 /* libGDTMobSDK.a */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		57A9B57832175490F788EF8C5C020CC5 /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				60C86A0EF32709D7D958135888F9B406 /* LICENSE */,
-			);
-			name = Resources;
-			sourceTree = "<group>";
-		};
-		57F10B17136C10CDC079D4610068E22F /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				2CCA2A04ACC227580238CEDD865C3DD8 /* iOS */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		58F0759E98D3984F07D7A975CE4075AD /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				93554801E49302BB1DF1B59789ADA437 /* MTGSDKSplash.xcframework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		599B33AFBF20288C300861BF01F04322 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				DF7620FF99923717FAE63C61B732B96A /* BaiduMobAdSDK.debug.xcconfig */,
-				96FA124BEA4C16150B1E3DB20F774FF9 /* BaiduMobAdSDK.release.xcconfig */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/BaiduMobAdSDK";
-			sourceTree = "<group>";
-		};
-		5A46B855FD461C2A0B2789FC358BF573 /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				E754AB40DAD2675BDDE06FB8E1C84E28 /* BUAdSDK.bundle */,
-			);
-			name = Resources;
-			sourceTree = "<group>";
-		};
-		5AA0FCCFE7EF4E9C3130433D8D595D07 /* Pod */ = {
-			isa = PBXGroup;
-			children = (
-				8C84E6F0718FE056CC7E4D402CD8A950 /* LICENSE */,
-				C2023E550C51D96C04794A2BCF920B84 /* README.md */,
-				6FB57E371735E0535AA4C121099389A7 /* ZJSDK.podspec */,
-			);
-			name = Pod;
-			sourceTree = "<group>";
-		};
-		618960B41B7B10F975AC34EF82D37601 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				4AB6C5CE3F3E5EB3E6B102FBAD259C80 /* MTGSDKBidding.xcframework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		66E28DA037367A6A1285BF575F119955 /* SigmobAd-iOS */ = {
-			isa = PBXGroup;
-			children = (
-				2887FC0B0B5B820E2F29C033B5E60CBF /* Support Files */,
-				6E46C80CE5F942A923114AACC6B896C4 /* WindSDK */,
-			);
-			name = "SigmobAd-iOS";
-			path = "SigmobAd-iOS";
-			sourceTree = "<group>";
-		};
-		68820374889380E6F3D19DBD4FC45949 /* ZJSDK */ = {
-			isa = PBXGroup;
-			children = (
-				5AA0FCCFE7EF4E9C3130433D8D595D07 /* Pod */,
-				0B36EDDCB9AA887164606AE7FC101FC2 /* Support Files */,
-				91FF17C71EAC44AEA2851739E5595EEF /* ZJAdSDK */,
-				68E00838EDFE0E76150199843E4E7D4F /* ZJSDKModuleBD */,
-				FBB8D74BB71CAE0E4EFB2FE5D2AD4528 /* ZJSDKModuleCSJ */,
-				CA2E94CAD1368F47734E3A25E2C11A1B /* ZJSDKModuleDSP */,
-				00583C98C6BD11FB156D99723AA0F13A /* ZJSDKModuleGDT */,
-				A026A80CDDFE4340798620B0B2ED3215 /* ZJSDKModuleKS */,
-				879326DD35BA5DF7534A305F1D033D42 /* ZJSDKModuleMTG */,
-				CB395E253C2F634BBF48605EB3220598 /* ZJSDKModuleSIG */,
-			);
-			name = ZJSDK;
-			path = ../..;
-			sourceTree = "<group>";
-		};
-		68E00838EDFE0E76150199843E4E7D4F /* ZJSDKModuleBD */ = {
-			isa = PBXGroup;
-			children = (
-				BE33C5ADB6C9BC550D2D20B37FB8B890 /* Frameworks */,
-			);
-			name = ZJSDKModuleBD;
-			sourceTree = "<group>";
-		};
-		6B57BA961D77DD757D61ADDDA86738F7 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				337C9E8FD747D4166BF7AB27EE0F5D2D /* MTGSDKInterstitialVideo.xcframework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		6E46C80CE5F942A923114AACC6B896C4 /* WindSDK */ = {
-			isa = PBXGroup;
-			children = (
-				BED31527433A122F52A1E5AA1D10F4EE /* Frameworks */,
-				F3CEACAA8274D83DA3AF8C6977231B05 /* Resources */,
-			);
-			name = WindSDK;
-			sourceTree = "<group>";
-		};
-		72018FB36E3585C330AD3E38E5A82731 /* GDTMobSDK */ = {
-			isa = PBXGroup;
-			children = (
-				3032B89F5F079A372F413A180D1BE6B8 /* GDTAdParams.h */,
-				B6F1BB6EDCEA67A6631EB894D7E836D2 /* GDTAdProtocol.h */,
-				DC5E04D9F241AB515A1776A1D3FCF155 /* GDTAdTestSetting.h */,
-				087569B7D6D1E65D9A958A285DAC17D8 /* GDTBaseAdNetworkAdapterProtocol.h */,
-				E0679859BFBFD4C562DDDA8AB8EF0F09 /* GDTLoadAdParams.h */,
-				C5A113A53F6CEBE993A81534AE1E8F5E /* GDTLogoView.h */,
-				DBED0030D712090D86A36ECD7FB27706 /* GDTMediaView.h */,
-				F93AB15462BF21FD42821E79178A9A7A /* GDTNativeExpressAd.h */,
-				751A0C021F15FE1B0DC04FB3E3F05C07 /* GDTNativeExpressAdNetworkAdapterProtocol.h */,
-				CE8A3AB570DC3F777F4CF5C5890F7DBA /* GDTNativeExpressAdNetworkConnectorProtocol.h */,
-				9FACB9568D4BA9E95E80E6756C72A88E /* GDTNativeExpressAdView.h */,
-				911CDFE9F85A241252E9E6CBBBF197B7 /* GDTNativeExpressAdViewAdapterProtocol.h */,
-				B1F3AC1C46CD4F433513E3A8BFD4FE47 /* GDTNativeExpressProAdView.h */,
-				5EC61D4FBDC1AEC3A852C21DA29FFA0E /* GDTRewardVideoAd.h */,
-				4E68AC1EEB207D8861138CAEF2BDB73A /* GDTRewardVideoAdNetworkAdapterProtocol.h */,
-				3DD85F8370FD2E40B57068C78631440B /* GDTRewardVideoAdNetworkConnectorProtocol.h */,
-				FC0A3A50EC9AFA5600C3047EFF0D45CE /* GDTSDKConfig.h */,
-				C48A053FAE78CE9A8FFFD20A46F44BB1 /* GDTSDKDefines.h */,
-				87DE22E43DEDCAAF5822AC4F950A7E48 /* GDTServerSideVerificationOptions.h */,
-				849028D6053C4C4AA4B06224E5D6E158 /* GDTSplashAd.h */,
-				6E00E9A02B85D2B14F6D266C61183EE5 /* GDTSplashAdNetworkAdapterProtocol.h */,
-				7DC44F53B93AC14BC3DB7D959CEE10F7 /* GDTSplashAdNetworkConnectorProtocol.h */,
-				3FA91FA9E5DC9CAB0851994D3906FD1C /* GDTSplashZoomOutView.h */,
-				BA8EF2FD5E779B8BA76555A8D1583565 /* GDTUnifiedBannerAdNetworkAdapterProtocol.h */,
-				3487DFC5D6F2FC7E1D89DA2249671BDA /* GDTUnifiedBannerAdNetworkConnectorProtocol.h */,
-				9AA9075A6E496BDF51FEB3039031468C /* GDTUnifiedBannerView.h */,
-				45CC3A5B7F37822DBCA7A6249BD76B52 /* GDTUnifiedInterstitialAd.h */,
-				4E205F8E20FF019C53E71D84AEC57D4A /* GDTUnifiedInterstitialAdNetworkAdapterProtocol.h */,
-				F6A727EFDA85E0318C37CF2E502C0BDA /* GDTUnifiedInterstitialAdNetworkConnectorProtocol.h */,
-				64D00FA9B9FA96431BDE2DC976A33144 /* GDTUnifiedNativeAd.h */,
-				19ABB0A05204BE1EEC458FECB9975AD6 /* GDTUnifiedNativeAdDataObject.h */,
-				F4F669490F9A61543BBA8C7655DA278B /* GDTUnifiedNativeAdNetworkAdapterProtocol.h */,
-				1AB7C3E520A400529C2F5E804F675C9E /* GDTUnifiedNativeAdNetworkConnectorProtocol.h */,
-				E76DBC5A4C149A9738732873C2B8D225 /* GDTUnifiedNativeAdView.h */,
-				4A2501DCACDCCBD6139897E4EC201F7E /* GDTVideoConfig.h */,
-				5389916D56B37463D3B4C5B7D50DCC69 /* Frameworks */,
-			);
-			name = GDTMobSDK;
-			sourceTree = "<group>";
-		};
-		723F35F0F8731E45AD98E6C41D1777C4 /* KSAdSDK */ = {
-			isa = PBXGroup;
-			children = (
-				A74229F462AE47C64C7DEF524B527837 /* Frameworks */,
-				D0337890C48F529CC70C08439478ADD0 /* Support Files */,
-			);
-			name = KSAdSDK;
-			path = KSAdSDK;
-			sourceTree = "<group>";
-		};
-		7BFF419F47DF7330555905F5BBBE7C61 /* NativeAd */ = {
-			isa = PBXGroup;
-			children = (
-				7CB72385B222F9843EF263DBE0DD4253 /* Frameworks */,
-			);
-			name = NativeAd;
-			sourceTree = "<group>";
-		};
-		7CAA7727FA6BADEA6510A089E8CE0E29 /* BaiduMobAdSDK */ = {
-			isa = PBXGroup;
-			children = (
-				C6CA43AE9F835F0FA05E832F72C1FC39 /* Frameworks */,
-				247329A7F0C8351944C9B46DC9F3F47D /* Resources */,
-				599B33AFBF20288C300861BF01F04322 /* Support Files */,
-			);
-			name = BaiduMobAdSDK;
-			path = BaiduMobAdSDK;
-			sourceTree = "<group>";
-		};
-		7CB72385B222F9843EF263DBE0DD4253 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				0ABE16C9C25E7BB438F50F560DB8A0DE /* MTGSDK.xcframework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		7EF88E03873783C3B06FA46E1B0F01FA /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				03FE61ACEFF93F36192A6E7BCABC28FA /* MTGSDKReward.xcframework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		8695E8E2EF2A466955E39089D8395358 /* BUAdSDK */ = {
-			isa = PBXGroup;
-			children = (
-				016F8F187AC13A297A2E9BAE8E64169E /* Frameworks */,
-				5A46B855FD461C2A0B2789FC358BF573 /* Resources */,
-			);
-			name = BUAdSDK;
-			sourceTree = "<group>";
-		};
-		879326DD35BA5DF7534A305F1D033D42 /* ZJSDKModuleMTG */ = {
-			isa = PBXGroup;
-			children = (
-				ACC603AF8E27D5C81552779529BD4FCE /* Frameworks */,
-			);
-			name = ZJSDKModuleMTG;
-			sourceTree = "<group>";
-		};
-		8B6F4CD806F8CE958C6BE3993665F25A /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				EBD84B86F70D1664E96EBB8455C4ABAB /* MintegralAdSDK-xcframeworks.sh */,
-				B4DFCF6680ABC8749B31136CD40516AD /* MintegralAdSDK.debug.xcconfig */,
-				3C9438959C11D264D4C3234CEFC7BAFD /* MintegralAdSDK.release.xcconfig */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/MintegralAdSDK";
-			sourceTree = "<group>";
-		};
-		91FF17C71EAC44AEA2851739E5595EEF /* ZJAdSDK */ = {
-			isa = PBXGroup;
-			children = (
-				C32A63AC51C0A9DEF7336F7B1B6EE5AD /* Frameworks */,
-			);
-			name = ZJAdSDK;
-			sourceTree = "<group>";
-		};
-		92BBEC356233DA9E0F63B21FBCB9756B /* RewardVideoAd */ = {
-			isa = PBXGroup;
-			children = (
-				7EF88E03873783C3B06FA46E1B0F01FA /* Frameworks */,
-			);
-			name = RewardVideoAd;
-			sourceTree = "<group>";
-		};
-		9558707A8099398492FB6D20E97DD7A2 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				88841E25283C7274BDF3E036EEE1F66A /* BUFoundation.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		9BDD100E04A9D36ACFB9568236688E77 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				DCBD9B02C7D0D6F8B956FF560FE13950 /* Ads-CN */,
-				7CAA7727FA6BADEA6510A089E8CE0E29 /* BaiduMobAdSDK */,
-				B59C0C5C09F6407F25CE7234672E0EA1 /* BURelyFoundation */,
-				E5D83A361083F17CF5176B56C25FB7CD /* GDTMobSDK */,
-				723F35F0F8731E45AD98E6C41D1777C4 /* KSAdSDK */,
-				E40FDFF2DCCA2701FBC49AF6FF9D93DE /* MintegralAdSDK */,
-				66E28DA037367A6A1285BF575F119955 /* SigmobAd-iOS */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-		A026A80CDDFE4340798620B0B2ED3215 /* ZJSDKModuleKS */ = {
-			isa = PBXGroup;
-			children = (
-				2FF6F7B50D9DC938F5CA7F65ED1BD9C7 /* Frameworks */,
-			);
-			name = ZJSDKModuleKS;
-			sourceTree = "<group>";
-		};
-		A3B5FFD3C05B80F1148291CD94B5A770 /* NativeAdvancedAd */ = {
-			isa = PBXGroup;
-			children = (
-				1D19873930DD6EB9EE59127263788CC6 /* Frameworks */,
-			);
-			name = NativeAdvancedAd;
-			sourceTree = "<group>";
-		};
-		A67375B7AADA3EE25FD06857AEEE0C06 /* NewInterstitialAd */ = {
-			isa = PBXGroup;
-			children = (
-				024AC3E7A318975A5ED16916AF97183B /* Frameworks */,
-			);
-			name = NewInterstitialAd;
-			sourceTree = "<group>";
-		};
-		A74229F462AE47C64C7DEF524B527837 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				F90449A7C78293C6ACBF517C1B3DCC03 /* KSAdSDK.xcframework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		A7E8C111A637CF456BA266F0E2EEECDF /* HM */ = {
-			isa = PBXGroup;
-			children = (
-				2F248AE1981091C1217D7FED388DF76E /* Frameworks */,
-			);
-			name = HM;
-			sourceTree = "<group>";
-		};
-		ACC603AF8E27D5C81552779529BD4FCE /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				E8E24204C9E86C6B45519333FD6B1889 /* libZJSDKModuleMTG.a */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		B59C0C5C09F6407F25CE7234672E0EA1 /* BURelyFoundation */ = {
-			isa = PBXGroup;
-			children = (
-				DA491015990DC5B00F2F6CCE29A526B5 /* BURelyFoundation.h */,
-				A7E8C111A637CF456BA266F0E2EEECDF /* HM */,
-				E00BD066175E4B2FC30948F11F00CB87 /* NETWork */,
-				159829213A16923135B793E65F64FB88 /* Support Files */,
-			);
-			name = BURelyFoundation;
-			path = BURelyFoundation;
-			sourceTree = "<group>";
-		};
-		B8BD2942A9600542E7CD29EE6602DD93 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				81F81775D312CD412C91E85CE3E78F56 /* GDTMobSDK.debug.xcconfig */,
-				CBF03B2920E5A195695C3DDA056872E1 /* GDTMobSDK.release.xcconfig */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/GDTMobSDK";
-			sourceTree = "<group>";
-		};
-		B9E9AA66F334830308047716DBC27BDE /* Development Pods */ = {
-			isa = PBXGroup;
-			children = (
-				68820374889380E6F3D19DBD4FC45949 /* ZJSDK */,
-			);
-			name = "Development Pods";
-			sourceTree = "<group>";
-		};
-		BE33C5ADB6C9BC550D2D20B37FB8B890 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				944CC9C6D29F78886BDEFDE2A937B63C /* libZJSDKModuleBD.a */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		BE8A5A7E21D3E464A4A72597E1B7C248 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				A3C2A0D6466E4AFB0B6344832242775B /* BURelyFoundation */,
 				E586CF1A242C1F16EA2160F232C062C0 /* Pods-ZJSDKDemo */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		BED31527433A122F52A1E5AA1D10F4EE /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				BBE5BFF70C44396D264DE2827BF8BF64 /* WindSDK.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		C32A63AC51C0A9DEF7336F7B1B6EE5AD /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				DF41A2C46005664CDF213D7CE258981E /* ZJSDK.framework */,
-				38360B5825937E2ADCD3ED47EBF17D68 /* ZJSDKCore.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		C6CA43AE9F835F0FA05E832F72C1FC39 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				E7CE63B4F9E7C30FE7576DB00E2F6F3A /* BaiduMobAdSDK.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		C7BCEE40CCA6D05B526B25EEFE68C1E5 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				55DEBD2B8AFACA1E88DD6E377111074B /* libZJSDKModuleGDT.a */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		CA2E94CAD1368F47734E3A25E2C11A1B /* ZJSDKModuleDSP */ = {
-			isa = PBXGroup;
-			children = (
-				B853DE96CC43D435814B9233C03C09AF /* ZJSDKBundle.bundle */,
-				2823726C4993E30578745C4D1E0C53BB /* Frameworks */,
-			);
-			name = ZJSDKModuleDSP;
-			sourceTree = "<group>";
-		};
-		CB395E253C2F634BBF48605EB3220598 /* ZJSDKModuleSIG */ = {
-			isa = PBXGroup;
-			children = (
-				530FDC889B6C9314EC6A0EEB57B3C760 /* Frameworks */,
-			);
-			name = ZJSDKModuleSIG;
 			sourceTree = "<group>";
 		};
 		CF1408CF629C7361332E53B88F7BD30C = {
 			isa = PBXGroup;
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
-				B9E9AA66F334830308047716DBC27BDE /* Development Pods */,
-				57F10B17136C10CDC079D4610068E22F /* Frameworks */,
-				9BDD100E04A9D36ACFB9568236688E77 /* Pods */,
-				BE8A5A7E21D3E464A4A72597E1B7C248 /* Products */,
-				D9B6E31486A21F35E3EA01120FA4F01B /* Targets Support Files */,
+				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				C62173CC67C48DF0D9A5FE20ECB9187F /* Products */,
+				83BA6CCFB01370E207F8BA912FAFBEE9 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		D0337890C48F529CC70C08439478ADD0 /* Support Files */ = {
+		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				AEAD45B73C0AD1CAEC27EBC561E2F0B3 /* KSAdSDK-xcframeworks.sh */,
-				53EEFAB668564B0C41919E3860F1EE3E /* KSAdSDK.debug.xcconfig */,
-				2F8DCE187C1C8CE12A9B4CB6B838D06D /* KSAdSDK.release.xcconfig */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/KSAdSDK";
-			sourceTree = "<group>";
-		};
-		D9B6E31486A21F35E3EA01120FA4F01B /* Targets Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				04536C9928BB97074ADEC62FB61A2518 /* Pods-ZJSDKDemo */,
-			);
-			name = "Targets Support Files";
-			sourceTree = "<group>";
-		};
-		DCBD9B02C7D0D6F8B956FF560FE13950 /* Ads-CN */ = {
-			isa = PBXGroup;
-			children = (
-				8695E8E2EF2A466955E39089D8395358 /* BUAdSDK */,
-				29013F43737B9F6F6B8961260414B580 /* BUFoundation */,
-				F50FDA2D2B748C66840BB758943A0225 /* Domestic */,
-				57A9B57832175490F788EF8C5C020CC5 /* Resources */,
-				FD56FF91B838E9608739FA3AC614EE45 /* Support Files */,
-			);
-			name = "Ads-CN";
-			path = "Ads-CN";
-			sourceTree = "<group>";
-		};
-		E00BD066175E4B2FC30948F11F00CB87 /* NETWork */ = {
-			isa = PBXGroup;
-			children = (
-				943B16BF185F9EBB7AA301474D377274 /* BU_AFAutoPurgingImageCache.h */,
-				9F36EF8DC45ED04B119A5E3E4CEF63BD /* BU_AFAutoPurgingImageCache.m */,
-				707807CAFD966F0EF34937BAC9F10669 /* BU_AFHTTPSessionManager.h */,
-				6CC372FD57B925DF955F43F56D1DD960 /* BU_AFHTTPSessionManager.m */,
-				D826756E349B486EB994BE80CC33194E /* BU_AFSecurityPolicy.h */,
-				842011D79AA11D2C0FA648DAA885359B /* BU_AFSecurityPolicy.m */,
-				7E5BDE1FD9B1AD4F89BD81245F68A795 /* BU_AFURLRequestSerialization.h */,
-				EF398A485E8E9790C73A4E9EB47C7B3F /* BU_AFURLRequestSerialization.m */,
-				7EAF315AE56CE09E89F9FF82543E49E0 /* BU_AFURLResponseSerialization.h */,
-				364D4D61E4A9B3573E4C2AB7F6A1C88A /* BU_AFURLResponseSerialization.m */,
-				C2F4CD838833DED840A3A70AD61C9916 /* BU_AFURLSessionManager.h */,
-				339B6A18A8FD27E6BFE58F65441AD007 /* BU_AFURLSessionManager.m */,
-				595C3D8CB4A41E83090BA5F0B890B8B8 /* BUBaseRequest.h */,
-				A53A0575DC3BE77C7C2EB59B72638F0B /* BUBaseRequest.m */,
-				1AB721D1726DF00F42A0CD1C7842E868 /* BUNetworkAgent.h */,
-				9FC115559147C18CE0856F9172EB4D72 /* BUNetworkAgent.m */,
-				1FB644719096657F103B39FB626D275C /* NSString+BURely.h */,
-				B903A4DD092E18AD1C88D6D8D5CBA1F0 /* NSString+BURely.m */,
-			);
-			name = NETWork;
-			sourceTree = "<group>";
-		};
-		E40FDFF2DCCA2701FBC49AF6FF9D93DE /* MintegralAdSDK */ = {
-			isa = PBXGroup;
-			children = (
-				06468B620F417020C1E0C16BD89C7D5B /* BannerAd */,
-				24B294D7A80C19D4F76A56F086B3C13B /* BidNativeAd */,
-				1E1A7909BB29D619884269A318BB54B9 /* InterstitialAd */,
-				F2D8D4DFC5054408C7A09D36B7DD2A52 /* InterstitialVideoAd */,
-				7BFF419F47DF7330555905F5BBBE7C61 /* NativeAd */,
-				A3B5FFD3C05B80F1148291CD94B5A770 /* NativeAdvancedAd */,
-				A67375B7AADA3EE25FD06857AEEE0C06 /* NewInterstitialAd */,
-				92BBEC356233DA9E0F63B21FBCB9756B /* RewardVideoAd */,
-				FCEA3EA066FB7D6527A8568CC67C8371 /* SplashAd */,
-				8B6F4CD806F8CE958C6BE3993665F25A /* Support Files */,
-			);
-			name = MintegralAdSDK;
-			path = MintegralAdSDK;
-			sourceTree = "<group>";
-		};
-		E5D83A361083F17CF5176B56C25FB7CD /* GDTMobSDK */ = {
-			isa = PBXGroup;
-			children = (
-				72018FB36E3585C330AD3E38E5A82731 /* GDTMobSDK */,
-				B8BD2942A9600542E7CD29EE6602DD93 /* Support Files */,
-			);
-			name = GDTMobSDK;
-			path = GDTMobSDK;
-			sourceTree = "<group>";
-		};
-		E900763E93DF10DC2A7954CD3CF253D8 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				195F3E71E843D75E37C40C7109F84965 /* BUCNAuxiliary.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		F2D8D4DFC5054408C7A09D36B7DD2A52 /* InterstitialVideoAd */ = {
-			isa = PBXGroup;
-			children = (
-				6B57BA961D77DD757D61ADDDA86738F7 /* Frameworks */,
-			);
-			name = InterstitialVideoAd;
-			sourceTree = "<group>";
-		};
-		F3CEACAA8274D83DA3AF8C6977231B05 /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				8525E335275DECF6EE7610F61026F7B0 /* Sigmob.bundle */,
-			);
-			name = Resources;
-			sourceTree = "<group>";
-		};
-		F50FDA2D2B748C66840BB758943A0225 /* Domestic */ = {
-			isa = PBXGroup;
-			children = (
-				E900763E93DF10DC2A7954CD3CF253D8 /* Frameworks */,
-			);
-			name = Domestic;
-			sourceTree = "<group>";
-		};
-		F77505ADB0D7F8F704AEC75A8F31758B /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				7FB42DE3845626FDACCAF5F0FCAF3C9B /* MTGSDKInterstitial.xcframework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		FBB8D74BB71CAE0E4EFB2FE5D2AD4528 /* ZJSDKModuleCSJ */ = {
-			isa = PBXGroup;
-			children = (
-				1DF5A634130C20E8C586F54B7889F8D3 /* Frameworks */,
-			);
-			name = ZJSDKModuleCSJ;
-			sourceTree = "<group>";
-		};
-		FCEA3EA066FB7D6527A8568CC67C8371 /* SplashAd */ = {
-			isa = PBXGroup;
-			children = (
-				58F0759E98D3984F07D7A975CE4075AD /* Frameworks */,
-			);
-			name = SplashAd;
-			sourceTree = "<group>";
-		};
-		FD56FF91B838E9608739FA3AC614EE45 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				EBA5FD39256289FDFD56446F68E23FA1 /* Ads-CN.debug.xcconfig */,
-				1E3341050096FB460E91D101B287342C /* Ads-CN.release.xcconfig */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/Ads-CN";
-			sourceTree = "<group>";
-		};
-		FFD4250B4D0ACEA0489169784EFCD911 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				1E69F6ABE18890A8DA8B90D57498B709 /* MTGSDKBanner.xcframework */,
+				578452D2E740E91742655AC8F1636D1F /* iOS */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -1192,29 +99,11 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		1A0AAD02ED79A26B42E96A068450D34D /* Headers */ = {
+		13661D4C86FA689BEFB002D6315A1EAC /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3CD99C36D2DF9E3FABE1132F7887C863 /* Pods-ZJSDKDemo-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		6D8F2876EE601AC108E8FCDDBD1FA317 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				55E140C9DCFE61E0EBBA60C1A00F3CED /* BU_AFAutoPurgingImageCache.h in Headers */,
-				9D13E37513DF5D226CF13E2EFCF79F49 /* BU_AFHTTPSessionManager.h in Headers */,
-				892D95C1B9EF2B7D6CE6D7D28177A95B /* BU_AFSecurityPolicy.h in Headers */,
-				8762340F981A70283A6218CC9CD3A409 /* BU_AFURLRequestSerialization.h in Headers */,
-				2A089F487B3857ABCD583B754D939A0A /* BU_AFURLResponseSerialization.h in Headers */,
-				B7F0AD1707D2C2887EF79146830E493E /* BU_AFURLSessionManager.h in Headers */,
-				8C3B0319087A0E10B6E1532FE346B65A /* BUBaseRequest.h in Headers */,
-				FA3758F676AACC0FC199B953E99009D4 /* BUNetworkAgent.h in Headers */,
-				F68383958E809E8DD3C3523487D62F68 /* BURelyFoundation.h in Headers */,
-				27A584A9446149F3A4C8E938B159331F /* BURelyFoundation-umbrella.h in Headers */,
-				E1F2F0AECA663B738ECF3D7286530BAA /* NSString+BURely.h in Headers */,
+				339B57A71442AFB1A2970257199A85F2 /* Pods-ZJSDKDemo-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1223,47 +112,20 @@
 /* Begin PBXNativeTarget section */
 		0AB8E9178AE9F5ABF9D24AD6362EC478 /* Pods-ZJSDKDemo */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C64F530351ED1115AE6C3F2542A6D14B /* Build configuration list for PBXNativeTarget "Pods-ZJSDKDemo" */;
+			buildConfigurationList = A00AF3537FA235C74C5402C804F67E07 /* Build configuration list for PBXNativeTarget "Pods-ZJSDKDemo" */;
 			buildPhases = (
-				1A0AAD02ED79A26B42E96A068450D34D /* Headers */,
-				29E0D57C6E91FBC5FE5354A38805BCF9 /* Sources */,
-				742788706109BEB316B7C399E13BA080 /* Frameworks */,
-				60A80F1F7365BD60AF7063418A5E41D4 /* Resources */,
+				13661D4C86FA689BEFB002D6315A1EAC /* Headers */,
+				342396B60E25452CB3F73793490BB07B /* Sources */,
+				FC9246ACF5957499348FB6BB16393711 /* Frameworks */,
+				7D9BFC46B36683075BEAE1D1CF0ADA53 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				680A84D8618697D69540A55B30CF937C /* PBXTargetDependency */,
-				5C9B7599A91D110E923CEFDBAD5E50A1 /* PBXTargetDependency */,
-				93353909F519636BB7C555ACBE466B74 /* PBXTargetDependency */,
-				AE933D2BBC9CAC4A2A319B808E708A77 /* PBXTargetDependency */,
-				D95F99537822BC90693BB5B587FD0532 /* PBXTargetDependency */,
-				0667135E2DE77942628A1F58A5C69638 /* PBXTargetDependency */,
-				C902781AC71FB77C43E86F09BEBA0465 /* PBXTargetDependency */,
-				2652543A33AE6FA56693FA436329C632 /* PBXTargetDependency */,
 			);
 			name = "Pods-ZJSDKDemo";
 			productName = Pods_ZJSDKDemo;
 			productReference = E586CF1A242C1F16EA2160F232C062C0 /* Pods-ZJSDKDemo */;
-			productType = "com.apple.product-type.framework";
-		};
-		A30112D48286DC34DCEF944BC33E1EC9 /* BURelyFoundation */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 099FA69E72076CA80B8FD635810FEBA9 /* Build configuration list for PBXNativeTarget "BURelyFoundation" */;
-			buildPhases = (
-				6D8F2876EE601AC108E8FCDDBD1FA317 /* Headers */,
-				560C178E79A41893DBACD917CF86A915 /* [CP-User] Check dependency */,
-				5F284AB26A09381FED1B4B56F8DD8C0D /* Sources */,
-				3E1311DC232F81EB31C737507D87DBE8 /* Frameworks */,
-				3160DCAE917B83C5A57969DEBC45BEC3 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = BURelyFoundation;
-			productName = BURelyFoundation;
-			productReference = A3C2A0D6466E4AFB0B6344832242775B /* BURelyFoundation */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -1284,32 +146,17 @@
 				en,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
-			productRefGroup = BE8A5A7E21D3E464A4A72597E1B7C248 /* Products */;
+			productRefGroup = C62173CC67C48DF0D9A5FE20ECB9187F /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				726ABAA3B995C2690CAF752FB08ABF6D /* Ads-CN */,
-				A33942C0A3A0CED25749EF27F05ED387 /* BaiduMobAdSDK */,
-				A30112D48286DC34DCEF944BC33E1EC9 /* BURelyFoundation */,
-				6F2BDBDBBAD8487EF4614E1D729C5DD0 /* GDTMobSDK */,
-				53DB8EFBB54B636ACDC70272323792EC /* KSAdSDK */,
-				396FEEFBFD0F2124F8A266DB6506001E /* MintegralAdSDK */,
 				0AB8E9178AE9F5ABF9D24AD6362EC478 /* Pods-ZJSDKDemo */,
-				47A48B35767B2FF26EE52EF544D5F14B /* SigmobAd-iOS */,
-				9EC40159579F7F87518205F00985225F /* ZJSDK */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		3160DCAE917B83C5A57969DEBC45BEC3 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		60A80F1F7365BD60AF7063418A5E41D4 /* Resources */ = {
+		7D9BFC46B36683075BEAE1D1CF0ADA53 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -1318,208 +165,18 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
-/* Begin PBXShellScriptBuildPhase section */
-		560C178E79A41893DBACD917CF86A915 /* [CP-User] Check dependency */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			name = "[CP-User] Check dependency";
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "sh -c \"$(curl -fsSL https://sf3-fe-tos.pglstatp-toutiao.com/obj/bu-rely-framework/CheckRely/0.0.1.47/check_dependency.sh)\"";
-		};
-		B1947AD203DD5E46A044F6BFA28FC5E1 /* [CP] Copy XCFrameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/KSAdSDK/KSAdSDK-xcframeworks-input-files.xcfilelist",
-			);
-			name = "[CP] Copy XCFrameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/KSAdSDK/KSAdSDK-xcframeworks-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/KSAdSDK/KSAdSDK-xcframeworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		E35E20D9A5B26B1BFA75453C89FE8753 /* [CP] Copy XCFrameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/MintegralAdSDK/MintegralAdSDK-xcframeworks-input-files.xcfilelist",
-			);
-			name = "[CP] Copy XCFrameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/MintegralAdSDK/MintegralAdSDK-xcframeworks-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/MintegralAdSDK/MintegralAdSDK-xcframeworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
-
 /* Begin PBXSourcesBuildPhase section */
-		29E0D57C6E91FBC5FE5354A38805BCF9 /* Sources */ = {
+		342396B60E25452CB3F73793490BB07B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				08E13BCF07828C27FD382837EDEFD5B1 /* Pods-ZJSDKDemo-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		5F284AB26A09381FED1B4B56F8DD8C0D /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				278A30170EF13C06B75582FB28283B20 /* BU_AFAutoPurgingImageCache.m in Sources */,
-				2E5BDE1BE4A375AD3B9B7ACB540048C5 /* BU_AFHTTPSessionManager.m in Sources */,
-				D5989DCD0EFC08795B0D8220FFF07170 /* BU_AFSecurityPolicy.m in Sources */,
-				3F6AF2765294FBA6181D60AA11CAC2EC /* BU_AFURLRequestSerialization.m in Sources */,
-				A4490D846B38E245333CCE82377F0D3F /* BU_AFURLResponseSerialization.m in Sources */,
-				16A55C63DE4945DB7C4D309402F394FF /* BU_AFURLSessionManager.m in Sources */,
-				ED3BB2B6C033F983D263F7CE99A03182 /* BUBaseRequest.m in Sources */,
-				D22A2198E420F3E4412CA288FD707A6C /* BUNetworkAgent.m in Sources */,
-				A9FAEEA3ACADC437E8CD4FA5016E4588 /* BURelyFoundation-dummy.m in Sources */,
-				1F46D17621DAE324AB75AAB063DFF0BF /* NSString+BURely.m in Sources */,
+				1C936B895E0118C337F7122F54304688 /* Pods-ZJSDKDemo-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
-/* Begin PBXTargetDependency section */
-		00D5A9EE662C462CC73B554832A8A37F /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = KSAdSDK;
-			target = 53DB8EFBB54B636ACDC70272323792EC /* KSAdSDK */;
-			targetProxy = ACE640D5D2EE1B65E6025AE0716CD753 /* PBXContainerItemProxy */;
-		};
-		0667135E2DE77942628A1F58A5C69638 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = MintegralAdSDK;
-			target = 396FEEFBFD0F2124F8A266DB6506001E /* MintegralAdSDK */;
-			targetProxy = 92CFF887FAC65447050B5CEFABAC4CD2 /* PBXContainerItemProxy */;
-		};
-		1AD7A105519D7E51CE6046C847CD9325 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = MintegralAdSDK;
-			target = 396FEEFBFD0F2124F8A266DB6506001E /* MintegralAdSDK */;
-			targetProxy = B5425BFCBE717A6669DA38F95AA73861 /* PBXContainerItemProxy */;
-		};
-		2652543A33AE6FA56693FA436329C632 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = ZJSDK;
-			target = 9EC40159579F7F87518205F00985225F /* ZJSDK */;
-			targetProxy = B6F04EDA0504E2A4DDBE0CD037E77F09 /* PBXContainerItemProxy */;
-		};
-		36A61AFBD2AB3C864ED035834E482504 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = BURelyFoundation;
-			target = A30112D48286DC34DCEF944BC33E1EC9 /* BURelyFoundation */;
-			targetProxy = AF507FCA61810BCC9A132C90312956C5 /* PBXContainerItemProxy */;
-		};
-		5C9B7599A91D110E923CEFDBAD5E50A1 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = BURelyFoundation;
-			target = A30112D48286DC34DCEF944BC33E1EC9 /* BURelyFoundation */;
-			targetProxy = 1A30D69BE8AAB4D1BB03E88BA3816C77 /* PBXContainerItemProxy */;
-		};
-		680A84D8618697D69540A55B30CF937C /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "Ads-CN";
-			target = 726ABAA3B995C2690CAF752FB08ABF6D /* Ads-CN */;
-			targetProxy = B6DB6F3698B1AFA99CBE4C179DC77226 /* PBXContainerItemProxy */;
-		};
-		6FF2FC879DE0AB3EA7438A65237406C0 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = GDTMobSDK;
-			target = 6F2BDBDBBAD8487EF4614E1D729C5DD0 /* GDTMobSDK */;
-			targetProxy = 0322C8017376F42978C6088A5BD518D7 /* PBXContainerItemProxy */;
-		};
-		93353909F519636BB7C555ACBE466B74 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = BaiduMobAdSDK;
-			target = A33942C0A3A0CED25749EF27F05ED387 /* BaiduMobAdSDK */;
-			targetProxy = E2763F967E876E3FDFC9FF38773E86ED /* PBXContainerItemProxy */;
-		};
-		9B221D77C9B423FD452FE1F3C45706BC /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "Ads-CN";
-			target = 726ABAA3B995C2690CAF752FB08ABF6D /* Ads-CN */;
-			targetProxy = C0A9E502EEACBEC2709662C6F8106588 /* PBXContainerItemProxy */;
-		};
-		AE933D2BBC9CAC4A2A319B808E708A77 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = GDTMobSDK;
-			target = 6F2BDBDBBAD8487EF4614E1D729C5DD0 /* GDTMobSDK */;
-			targetProxy = 06D5CA2C1832DCEB04D6F085915BA0B0 /* PBXContainerItemProxy */;
-		};
-		C902781AC71FB77C43E86F09BEBA0465 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "SigmobAd-iOS";
-			target = 47A48B35767B2FF26EE52EF544D5F14B /* SigmobAd-iOS */;
-			targetProxy = 3697F9EF02C7B77D99553DDF3BCA99A0 /* PBXContainerItemProxy */;
-		};
-		D6A83542F17F5283070C5349936D2274 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "SigmobAd-iOS";
-			target = 47A48B35767B2FF26EE52EF544D5F14B /* SigmobAd-iOS */;
-			targetProxy = 7F250F5F5D5A04CCC744046EFFA1AF6A /* PBXContainerItemProxy */;
-		};
-		D95F99537822BC90693BB5B587FD0532 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = KSAdSDK;
-			target = 53DB8EFBB54B636ACDC70272323792EC /* KSAdSDK */;
-			targetProxy = EFE59E37BCCE6887AB1AA1E9FC2553E7 /* PBXContainerItemProxy */;
-		};
-		EA4DBDFF5763CFEB08440C95A1CC8D89 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = BaiduMobAdSDK;
-			target = A33942C0A3A0CED25749EF27F05ED387 /* BaiduMobAdSDK */;
-			targetProxy = 0BF95FCF24C08477DE88B2BA96DA66F7 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
-
 /* Begin XCBuildConfiguration section */
-		0D8F24A403FA16E6CC7FDA78B6BF4E48 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = CBF03B2920E5A195695C3DDA056872E1 /* GDTMobSDK.release.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		20F5178DB9D80DAAAF0C9C75C8947096 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = EBA5FD39256289FDFD56446F68E23FA1 /* Ads-CN.debug.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
 		25AD9454612BF454A1E3DC4CD4FA8C6D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -1586,42 +243,9 @@
 			};
 			name = Debug;
 		};
-		364612217181CF49282CA2F9082B326C /* Release */ = {
+		5F207D86641FC2FCB70B12BFAB73AD25 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 382DAFC459B3E2C24E2EB38922DA55F0 /* ZJSDK.release.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		38AA975190CE6816637B5452C2AE823C /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = A9CEC937228D13B9552363A75B464B89 /* SigmobAd-iOS.debug.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		4615C7947031BDE05CC226103188FF2C /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = F2CDE1D7398D4D95B4F2D44184E2D73E /* Pods-ZJSDKDemo.release.xcconfig */;
+			baseConfigurationReference = 7514FA8BC01572D4EAAA087230931B52 /* Pods-ZJSDKDemo.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1655,192 +279,6 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
-		};
-		61EEFD270D415E09D6EEC0C8C87EA6B4 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = B4DFCF6680ABC8749B31136CD40516AD /* MintegralAdSDK.debug.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		6A8EAD531EC3D839ADA149C33DF19B07 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = DF7620FF99923717FAE63C61B732B96A /* BaiduMobAdSDK.debug.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		86B6EC7256D7E45794A6C97A180BBA98 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 96FA124BEA4C16150B1E3DB20F774FF9 /* BaiduMobAdSDK.release.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		A24D696F2D83788679AD9E01CA511259 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = C141CFBD25DB2CFBAE4DDD8E7BEBD7B4 /* Pods-ZJSDKDemo.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-ZJSDKDemo/Pods-ZJSDKDemo-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-ZJSDKDemo/Pods-ZJSDKDemo.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		AE8F7EF7544E8B0A0BB45D1060BF496E /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3C9438959C11D264D4C3234CEFC7BAFD /* MintegralAdSDK.release.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		AEC00B49F1B6150178A5713CE23FBA93 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2F8DCE187C1C8CE12A9B4CB6B838D06D /* KSAdSDK.release.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		BD09D1E96457BC6F57D86975100A195A /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1E3341050096FB460E91D101B287342C /* Ads-CN.release.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		BFB0BB05A8D4EE47967B8A1890A6B2CD /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 037A44C30F6FF4394028348A8410179E /* BURelyFoundation.debug.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/BURelyFoundation/BURelyFoundation-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/BURelyFoundation/BURelyFoundation-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "Target Support Files/BURelyFoundation/BURelyFoundation.modulemap";
-				PRODUCT_MODULE_NAME = BURelyFoundation;
-				PRODUCT_NAME = BURelyFoundation;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		C65936C7F7042849AA26EBBDED32943F /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 81F81775D312CD412C91E85CE3E78F56 /* GDTMobSDK.debug.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
 		};
 		CA547D2C7E9A8A153DC2B27FBE00B112 /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -1904,10 +342,11 @@
 			};
 			name = Release;
 		};
-		DE8BA401ECB8572B862D966447FD01CE /* Release */ = {
+		D93939FF3FDADA4F80CC2CB35B6F0502 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = CE92160F834310D8502567D035357172 /* BURelyFoundation.release.xcconfig */;
+			baseConfigurationReference = 70B0F92822D60C64E0B40BD13DBC8F8A /* Pods-ZJSDKDemo.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -1916,8 +355,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/BURelyFoundation/BURelyFoundation-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/BURelyFoundation/BURelyFoundation-Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-ZJSDKDemo/Pods-ZJSDKDemo-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1925,99 +363,24 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MODULEMAP_FILE = "Target Support Files/BURelyFoundation/BURelyFoundation.modulemap";
-				PRODUCT_MODULE_NAME = BURelyFoundation;
-				PRODUCT_NAME = BURelyFoundation;
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-ZJSDKDemo/Pods-ZJSDKDemo.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		E2F022B82754EDC3997764E237C986A3 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = E77CA7E96B7B7425609A39A3A88548B5 /* SigmobAd-iOS.release.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		E4F4388DA947BE34658C989895496750 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 53EEFAB668564B0C41919E3860F1EE3E /* KSAdSDK.debug.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		FD6351DBF8D844AED7DFB9467E3E14FC /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = F3F638EDA08D3641F53413E90B20E292 /* ZJSDK.debug.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		02C8AF3CDE69331D4B06B672866E726A /* Build configuration list for PBXAggregateTarget "KSAdSDK" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				E4F4388DA947BE34658C989895496750 /* Debug */,
-				AEC00B49F1B6150178A5713CE23FBA93 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		099FA69E72076CA80B8FD635810FEBA9 /* Build configuration list for PBXNativeTarget "BURelyFoundation" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				BFB0BB05A8D4EE47967B8A1890A6B2CD /* Debug */,
-				DE8BA401ECB8572B862D966447FD01CE /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		1B6AEFC3189ED1E6EBD94C30A4CFB889 /* Build configuration list for PBXAggregateTarget "GDTMobSDK" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				C65936C7F7042849AA26EBBDED32943F /* Debug */,
-				0D8F24A403FA16E6CC7FDA78B6BF4E48 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -2027,56 +390,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		5371FDAE452BF35FCBC9A262DA78CF85 /* Build configuration list for PBXAggregateTarget "Ads-CN" */ = {
+		A00AF3537FA235C74C5402C804F67E07 /* Build configuration list for PBXNativeTarget "Pods-ZJSDKDemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				20F5178DB9D80DAAAF0C9C75C8947096 /* Debug */,
-				BD09D1E96457BC6F57D86975100A195A /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		728B05A91516FDB3E073D271F16DEA63 /* Build configuration list for PBXAggregateTarget "MintegralAdSDK" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				61EEFD270D415E09D6EEC0C8C87EA6B4 /* Debug */,
-				AE8F7EF7544E8B0A0BB45D1060BF496E /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		737E3D978F9632C7A53736391E4F4D28 /* Build configuration list for PBXAggregateTarget "SigmobAd-iOS" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				38AA975190CE6816637B5452C2AE823C /* Debug */,
-				E2F022B82754EDC3997764E237C986A3 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		BB7A59E0A082CE08C0ABAA82FDC2E677 /* Build configuration list for PBXAggregateTarget "ZJSDK" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				FD6351DBF8D844AED7DFB9467E3E14FC /* Debug */,
-				364612217181CF49282CA2F9082B326C /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		C64F530351ED1115AE6C3F2542A6D14B /* Build configuration list for PBXNativeTarget "Pods-ZJSDKDemo" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				A24D696F2D83788679AD9E01CA511259 /* Debug */,
-				4615C7947031BDE05CC226103188FF2C /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		F1862C45C09AE512944738FE17B51A8E /* Build configuration list for PBXAggregateTarget "BaiduMobAdSDK" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				6A8EAD531EC3D839ADA149C33DF19B07 /* Debug */,
-				86B6EC7256D7E45794A6C97A180BBA98 /* Release */,
+				D93939FF3FDADA4F80CC2CB35B6F0502 /* Debug */,
+				5F207D86641FC2FCB70B12BFAB73AD25 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
