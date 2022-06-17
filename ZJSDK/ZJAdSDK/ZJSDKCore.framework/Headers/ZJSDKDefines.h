@@ -13,7 +13,6 @@
 
 #define ZJ_ScreenWidth [UIScreen mainScreen].bounds.size.width
 
-#define ZJ_BANNED_TIME @"BANNED_TIME"
 #define ZJ_StatusBarHeight \
 ({CGFloat statusBarHeight = 0; \
 if (@available(iOS 13.0, *))  { \

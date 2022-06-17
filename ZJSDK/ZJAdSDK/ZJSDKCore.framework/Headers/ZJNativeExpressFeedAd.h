@@ -7,9 +7,6 @@
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
-#import <ZJSDKCore/ZJAdEventReport.h>
-#import <ZJSDKCore/ZJStrategyManager.h>
-
 NS_ASSUME_NONNULL_BEGIN
 @class ZJNativeExpressFeedAd;
 @protocol ZJNativeExpressFeedAdDelegate <NSObject>
@@ -55,10 +52,6 @@ NS_ASSUME_NONNULL_BEGIN
  * Whether render is ready
  */
 @property (nonatomic, assign,readonly) BOOL isReady;
-@property (nonatomic, copy) NSString *adId;
-@property (nonatomic, copy) NSString *zj_adID;
-@property (nonatomic, copy) NSString *platform;
-@property (nonatomic, assign) ZJAdPlatformType platformType;
 
 
 @property(nonatomic,weak) id<ZJNativeExpressFeedAdDelegate> delegate;
@@ -76,11 +69,6 @@ NS_ASSUME_NONNULL_BEGIN
  */
 - (void)render;
 
-
--(void)reportErrorEvent:(nonnull NSError *)supplementError;
-
-#pragma mark - 事件上报
--(void)reportFeedAdWithEvent:(ZJEventString)event supplementMsg:(nullable NSString *)supplementMsg;
 @end
 
 NS_ASSUME_NONNULL_END
