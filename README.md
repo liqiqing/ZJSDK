@@ -380,14 +380,14 @@ splashAd.load();
 
 ### <span id="jump2.2">2.2、接入激励视频(ZJRewardVideoAd)</span>
 
-- 类型说明： 激励视频广告是一种全新的广告形式，用户可选择观看视频广告以换取有价物，例如虚拟货币、应用内物品和独家内容等等；这类广告的长度为 15-30 秒，不可跳过，且广告的结束画面会显示结束页面，引导用户进行后续动作。
+- 类型说明： 激励视频广告是一种全新的广告形式，用户可选择观看视频广告以换取有价物，例如虚拟货币、应用内物品和独家内容等等；这类广告的长度为 15-30 秒，不可跳过，且广告的结束画面会显示结束页面，引导用户进行后续动作。userId尽量传真实的userId。
 
 #### <span id="jump2.2.1">2.2.1、ZJRewardVideoAd广告说明</span>
 
 ```
 @interface ZJRewardVideoAd : ZJAd
 
-@property(nonatomic,copy) NSString *userId;
+@property(nonatomic,copy) NSString *userId; //userId尽量传真实的userId
 
 @property(nonatomic,weak) id<ZJRewardVideoAdDelegate> delegate;
 
