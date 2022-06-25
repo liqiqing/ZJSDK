@@ -98,14 +98,14 @@ EOM
 }
 if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_resource "${PODS_ROOT}/Ads-CN/SDK/LICENSE"
-  install_resource "${PODS_ROOT}/Ads-CN/SDK/CSJAdSDK.bundle"
+  install_resource "${PODS_ROOT}/Ads-CN/SDK/BUAdSDK.bundle"
   install_resource "${PODS_ROOT}/BaiduMobAdSDK/baidumobadsdk.bundle"
   install_resource "${PODS_ROOT}/SigmobAd-iOS/WindSDK/Sigmob.bundle"
   install_resource "${PODS_ROOT}/../../ZJSDK/ZJSDKModuleDSP/ZJSDKBundle.bundle"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_resource "${PODS_ROOT}/Ads-CN/SDK/LICENSE"
-  install_resource "${PODS_ROOT}/Ads-CN/SDK/CSJAdSDK.bundle"
+  install_resource "${PODS_ROOT}/Ads-CN/SDK/BUAdSDK.bundle"
   install_resource "${PODS_ROOT}/BaiduMobAdSDK/baidumobadsdk.bundle"
   install_resource "${PODS_ROOT}/SigmobAd-iOS/WindSDK/Sigmob.bundle"
   install_resource "${PODS_ROOT}/../../ZJSDK/ZJSDKModuleDSP/ZJSDKBundle.bundle"

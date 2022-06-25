@@ -53,15 +53,26 @@ typedef NS_ENUM(NSInteger,ZJAdShowPriority){
 @property (nonatomic, assign) BOOL is_enable;
 
 @property (nonatomic, assign) BOOL is_service;
-
+///当日限制次数
 @property (nonatomic, assign) NSInteger limit_num;
+///开始次数
+@property (nonatomic, assign) NSInteger start_num;
+///加载次数
+@property (nonatomic, assign) NSInteger loaded_num;
+///曝光次数
+@property (nonatomic, assign) NSInteger exposed_num;
+
+/// 正在被限制
+@property (nonatomic, assign) BOOL is_being_limit;
+
+@property (nonatomic, strong) NSString *error_strategy;
 
 @property (nonatomic, assign) ZJAdPlatformType platformType;
 @property (nonatomic, copy) NSString *platform;
 
-//权重 在params中获取
+///权重 在params中获取
 @property (nonatomic, assign) NSInteger weight;
-//其它参数
+///其它参数
 @property (nonatomic, strong) NSDictionary *params;
 
 @property (nonatomic, copy) NSString *type;
@@ -70,7 +81,7 @@ typedef NS_ENUM(NSInteger,ZJAdShowPriority){
 
 @property (nonatomic, copy) NSString *pd_price;
 
-//辅助
+///辅助
 @property (nonatomic, copy) NSString *adType;
 
 
