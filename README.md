@@ -1,5 +1,14 @@
+---
+html:
+  embed_local_images: false
+  embed_svg: true
+  offline: false
+  toc: true
 
+print_background: true
+---
 
+# ZJSDK_iOS使用文档 {ignore=true}
 
 ## <span id="jump1">一、iOS SDK接入说明</span>
 
@@ -1223,7 +1232,70 @@ self.floatingAd.hiddenH5CloseButton = YES;
 |v2.3.12.5|2021-01-20| 添加插屏广告，全屏视频广告填充|
 |v2.3.13|2021-02-09|修复bug， 添加Google广告|
 |v2.4.0.1|2022-04-18|更新广告加载逻辑|
+|v2.4.1.3|2022-06-24|适配穿山甲更新，增加错误限制策略|
+
 <!-- @import "[TOC]" {cmd="toc" depthFrom=1 depthTo=6 orderedList=false} -->
+
+<!-- code_chunk_output -->
+
+- [ZJSDK_iOS使用文档 {ignore=true}](#zjsdk_ios使用文档-ignoretrue)
+  - [<span id="jump1">一、iOS SDK接入说明</span>](#一ios-sdk接入说明)
+    - [<span id="jump1.1">1.1、工程设置导入framework</span>](#11工程设置导入framework)
+      - [<span id="jump1.1.1">1.1.1、申请应用的AppID</span>](#111申请应用的appid)
+      - [<span id="jump1.1.2">1.1.2、引入framework</span>](#112引入framework)
+    - [<span id="jump1.2">1.2、Xcode编译选项设置</span>](#12xcode编译选项设置)
+      - [<span id="jump1.1.2.1">1.2.1、添加权限</span>](#121添加权限)
+      - [<span id="jump1.2.2">1.2.2、运行环境配置</span>](#122运行环境配置)
+      - [<span id="jump1.2.3">1.2.3、位置权限</span>](#123位置权限)
+      - [<span id="jump1.2.4">1.2.4、Swift接入准备</span>](#124swift接入准备)
+      - [1.3.1、iOS 14.5及以上版本ATT权限申请](#131ios-145及以上版本att权限申请)
+      - [1.3.2、SKAdNetwork 接入](#132skadnetwork-接入)
+    - [<span id="jump1.3">1.4、初始化SDK</span>](#14初始化sdk)
+  - [<span id="jump2">二、加载广告</span>](#二加载广告)
+    - [<span id="jump2.1">2.1、接入开屏广告(ZJSplashAd)</span>](#21接入开屏广告zjsplashad)
+      - [<span id="jump2.1.1">2.1.1、ZJSplashAd广告说明</span>](#211zjsplashad广告说明)
+      - [<span id="jump2.1.2">2.1.2、ZJSplashAdDelegate</span>](#212zjsplashaddelegate)
+      - [<span id="jump2.1.3">2.1.3、加载开屏广告</span>](#213加载开屏广告)
+    - [<span id="jump2.2">2.2、接入激励视频(ZJRewardVideoAd)</span>](#22接入激励视频zjrewardvideoad)
+      - [<span id="jump2.2.1">2.2.1、ZJRewardVideoAd广告说明</span>](#221zjrewardvideoad广告说明)
+      - [<span id="jump2.2.2">2.2.2、ZJRewardVideoAdDelegate广告说明</span>](#222zjrewardvideoaddelegate广告说明)
+      - [<span id="jump2.2.3">2.2.3、加载激励视频</span>](#223加载激励视频)
+    - [<span id="jump2.3">2.3、接入插屏广告(ZJInterstitialAd)</span>](#23接入插屏广告zjinterstitialad)
+      - [<span id="jump2.3.1">2.3.1、ZJInterstitialAd说明</span>](#231zjinterstitialad说明)
+      - [<span id="jump2.3.2">2.3.2、ZJInterstitialAdDelegate广告说明</span>](#232zjinterstitialaddelegate广告说明)
+      - [<span id="jump2.3.3">2.3.3、加载插屏广告</span>](#233加载插屏广告)
+    - [<span id="jump2.4">2.4、接入全屏视频信息流(ZJFeedFullVideoView)</span>](#24接入全屏视频信息流zjfeedfullvideoview)
+      - [<span id="jump2.4.1">2.4.1、ZJFeedFullVideoProvider，ZJFeedFullVideoView说明</span>](#241zjfeedfullvideoproviderzjfeedfullvideoview说明)
+      - [<span id="jump2.4.2">2.4.2、ZJFeedFullVideoProviderDelegate广告说明</span>](#242zjfeedfullvideoproviderdelegate广告说明)
+      - [<span id="jump2.4.3">2.4.3、加载全屏视频信息流</span>](#243加载全屏视频信息流)
+    - [<span id="jump2.5">2.5、接入模板信息流(ZJNativeExpressFeedAdManager)</span>](#25接入模板信息流zjnativeexpressfeedadmanager)
+      - [<span id="jump2.5.1">2.5.1、ZJNativeExpressFeedAdManager，ZJNativeExpressFeedAd说明</span>](#251zjnativeexpressfeedadmanagerzjnativeexpressfeedad说明)
+      - [<span id="jump2.5.2">2.5.2、ZJNativeExpressFeedAdManagerDelegate ZJNativeExpressFeedAdDelegate说明</span>](#252zjnativeexpressfeedadmanagerdelegate-zjnativeexpressfeedaddelegate说明)
+      - [<span id="jump2.5.3">2.5.3、加载模板信息流广告</span>](#253加载模板信息流广告)
+    - [<span id="jump2.6">2.6、接入Banner广告(ZJBannerAdView)</span>](#26接入banner广告zjbanneradview)
+      - [<span id="jump2.6.1">2.6.1、ZJBannerAdView说明</span>](#261zjbanneradview说明)
+      - [<span id="jump2.6.2">2.6.2、ZJBannerAdViewDelegate说明</span>](#262zjbanneradviewdelegate说明)
+      - [<span id="jump2.6.3">2.6.3、加载Banner广告</span>](#263加载banner广告)
+    - [2.7、接入自渲染广告(ZJNativeAd)](#27接入自渲染广告zjnativead)
+      - [2.7.1、ZJNativeAd说明](#271zjnativead说明)
+      - [2.7.2、加载ZJNativeAd广告](#272加载zjnativead广告)
+    - [2.8、接入全屏视频广告(ZJFullScreenVideoAd)</span>](#28接入全屏视频广告zjfullscreenvideoadspan)
+      - [2.8.1、ZJFullScreenVideoAd说明](#281zjfullscreenvideoad说明)
+      - [2.8.2、ZJFullScreenVideoAdDelegate广告说明](#282zjfullscreenvideoaddelegate广告说明)
+      - [2.8.3、加载全屏视频广告](#283加载全屏视频广告)
+    - [2.9、接入视频内容(ZJContentPage)</span>](#29接入视频内容zjcontentpagespan)
+      - [2.9.1、ZJContentPage说明](#291zjcontentpage说明)
+      - [2.9.2、加载视频内容](#292加载视频内容)
+  - [<span id="jump3">三、接入H5内容页</span>](#三接入h5内容页)
+    - [<span id="jump3.1">3.1、接入H5内容</span>](#31接入h5内容)
+      - [<span id="jump3.1.1">3.1.1、ZJH5Page说明</span>](#311zjh5page说明)
+      - [<span id="jump3.1.2">3.1.2、ZJH5Delegate说明</span>](#312zjh5delegate说明)
+      - [<span id="jump3.1.3">3.1.3、加载H5内容页</span>](#313加载h5内容页)
+    - [3.2、悬浮广告](#32悬浮广告)
+      - [3.2.1、ZJFloatingAdView说明](#321zjfloatingadview说明)
+      - [3.2.2、ZJFloatingAdView使用](#322zjfloatingadview使用)
+
+<!-- /code_chunk_output -->
 
 
 
