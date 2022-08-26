@@ -59,7 +59,7 @@ TODO: Add long description of the pod here.
   s.subspec 'ZJSDKModuleCSJ' do |ss|
     ss.vendored_libraries = 'ZJSDK/ZJSDKModuleCSJ/*.a'
     ss.dependency 'ZJSDK/ZJAdSDK'
-    ss.dependency 'Ads-CN', '4.7.0.0'
+    ss.dependency 'Ads-CN', '~> 4.7'
   end
 
   s.subspec 'ZJSDKModuleKS' do |ss|
