@@ -60,6 +60,15 @@ NS_ASSUME_NONNULL_BEGIN
  */
 - (void)zj_splashAdErrorWithError:(nullable NSError *)error;
 
+
+/// 事件上报
+-(void)reportSplashAdWithEvent:(ZJEventString)event supplementMsg:(nullable NSString *)supplementMsg;
+
+
+/// 奖励触发
+- (void)zj_splashAdDidRewardEffectiveWithInfo:(nullable NSDictionary *)info;
+
+
 @end
 
 NS_ASSUME_NONNULL_END

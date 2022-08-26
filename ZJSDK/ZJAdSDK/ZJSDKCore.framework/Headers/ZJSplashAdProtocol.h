@@ -14,7 +14,6 @@ typedef NS_ENUM(NSInteger,ZJSplashHotspotType){
     ZJSplashHotspotType_TriggerButton = 1  //按钮区域
 };
 
-
 @protocol ZJSplashAdProtocol <NSObject>
 
 /**

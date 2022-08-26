@@ -76,7 +76,12 @@ typedef NS_ENUM(NSInteger, ZJStrategy) {
 /// @param completedBlock 磁盘存储完成回调
 -(void)increaseEvent:(ZJEventString)type forAdid:(NSString *)adid completed:(nullable ZJCacheCompletionBlock)completedBlock;
 
-    
+/// 给对应type事件计数-1
+-(void)decreaseEvent:(ZJEventString)type forAdid:(NSString *)adid completed:(nullable ZJCacheCompletionBlock)completedBlock;
+
+/// 清理掉对应事件记录
+-(void)cleanEvent:(ZJEventString)type forAdid:(NSString *)adid completed:(nullable ZJCacheCompletionBlock)completedBlock;
+
 /// 错误类型发生次数记录加一,errorDomain可靠时，使用此方法，通过errorDomain判断平台，耦合性低。
 /// @param error 对应的错误
 /// @param adid 联盟广告位ID

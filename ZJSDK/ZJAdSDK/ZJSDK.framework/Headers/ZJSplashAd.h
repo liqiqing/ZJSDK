@@ -54,6 +54,8 @@ NS_ASSUME_NONNULL_BEGIN
  */
 - (void)zj_splashAdError:(ZJSplashAd *)splashAd withError:(NSError *)error;
 
+/// 奖励触发
+- (void)zj_splashAdAdapterDidRewardEffective:(ZJSplashAd *)splashAd withInfo:(nullable NSDictionary *)info;
 @end
 
 

@@ -47,7 +47,7 @@
         // Fallback on earlier versions
     }
 
-    [ZJAdSDK registerAppId:@"Z2845395984"];
+    [ZJAdSDK registerAppId:@"zj_20201014iOSDEMO"];
     [ZJAdSDK setLogLevel:ZJAdSDKLogLevelDebug];
     NSString *version = [ZJAdSDK SDKVersion];
     NSLog(@"ZJSDK版本号：%@",version);

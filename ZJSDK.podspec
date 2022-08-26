@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'ZJSDK'
-  s.version          = '2.4.1.3'
+  s.version          = '2.5.0.0'
   s.summary          = 'ZJSDK广告'
 
 # This description is used to generate tags and improve search results.
@@ -59,7 +59,7 @@ TODO: Add long description of the pod here.
   s.subspec 'ZJSDKModuleCSJ' do |ss|
     ss.vendored_libraries = 'ZJSDK/ZJSDKModuleCSJ/*.a'
     ss.dependency 'ZJSDK/ZJAdSDK'
-    ss.dependency 'Ads-CN', '4.4.0.7'
+    ss.dependency 'Ads-CN', '4.7.0.0'
   end
 
   s.subspec 'ZJSDKModuleKS' do |ss|

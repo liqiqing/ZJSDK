@@ -1,6 +1,6 @@
 ${PODS_ROOT}/Target Support Files/Pods-ZJSDKDemo/Pods-ZJSDKDemo-resources.sh
-${PODS_ROOT}/Ads-CN/SDK/LICENSE
-${PODS_ROOT}/Ads-CN/SDK/BUAdSDK.bundle
+${PODS_ROOT}/Ads-CN-Beta/SDK/LICENSE
+${PODS_ROOT}/Ads-CN-Beta/SDK/CSJAdSDK.bundle
 ${PODS_ROOT}/BaiduMobAdSDK/baidumobadsdk.bundle
 ${PODS_ROOT}/SigmobAd-iOS/WindSDK/Sigmob.bundle
-${PODS_ROOT}/ZJSDK/ZJSDK/ZJSDKModuleDSP/ZJSDKBundle.bundle
+${PODS_ROOT}/../../ZJSDK/ZJSDKModuleDSP/ZJSDKBundle.bundle

@@ -6,7 +6,6 @@
 //
 
 #import <Foundation/Foundation.h>
-
 NS_ASSUME_NONNULL_BEGIN
 @class UIViewController;
 @protocol ZJRewardVideoAdProtocol <NSObject>
@@ -21,6 +20,8 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, assign) NSInteger reward_amount;
 //optional. serialized string.
 @property (nonatomic, copy) NSString *extra;
+
+@property (nonatomic, copy) NSString *reward_extra;
 ///激励视频静音， 默认：NO
 @property (nonatomic) BOOL videoMuted;
 /**加载广告数据*/

@@ -12,7 +12,7 @@ NS_ASSUME_NONNULL_BEGIN
 @interface ZJAdPreferenceManager : NSObject
 
 @property (nonatomic, strong, nullable, readonly) ZJAdUnionItemModel *currentPDItem;
-@property (nonatomic, strong, nullable, readonly) ZJAdUnionItemModel *currentBDItem;
+@property (nonatomic, strong, nullable, readonly) NSArray <ZJAdUnitModel *>*currentBDItems;
 
 @property (nonatomic,assign, readonly)NSInteger currentLevel;
 @property (nonatomic,assign, readonly)NSInteger totalLevels;

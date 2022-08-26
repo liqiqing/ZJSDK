@@ -1,3 +1,155 @@
-PODFILE CHECKSUM: 72130c8917a2412bb1ec2897cdb026c8864c66bb
+PODS:
+  - Ads-CN-Beta (4.7.0.0):
+    - Ads-CN-Beta/BUAdSDK (= 4.7.0.0)
+  - Ads-CN-Beta/BUAdSDK (4.7.0.0):
+    - Ads-CN-Beta/Dep_Accurate
+  - Ads-CN-Beta/Dep_Accurate (4.7.0.0):
+    - BUAdSDK (= 0.1.0.18)
+    - BURelyFoundation/CSJ (= 0.0.2.10)
+  - BaiduMobAdSDK (4.881)
+  - BUAdSDK (0.1.0.18):
+    - BUAdSDK/BUAdSDK (= 0.1.0.18)
+  - BUAdSDK/BUAdSDK (0.1.0.18)
+  - BURelyFoundation/AFNetworking (0.0.2.10)
+  - BURelyFoundation/CSJ (0.0.2.10):
+    - BURelyFoundation/AFNetworking
+    - BURelyFoundation/Foundation
+    - BURelyFoundation/Gecko
+    - BURelyFoundation/Header
+    - BURelyFoundation/HM
+    - BURelyFoundation/NETWork
+    - BURelyFoundation/SDWebImage
+    - BURelyFoundation/YYModel
+    - BURelyFoundation/ZFPlayer
+    - BURelyFoundation/Zip
+  - BURelyFoundation/Foundation (0.0.2.10):
+    - BURelyFoundation/NETWork
+  - BURelyFoundation/Gecko (0.0.2.10):
+    - BURelyFoundation/Foundation
+  - BURelyFoundation/Header (0.0.2.10)
+  - BURelyFoundation/HM (0.0.2.10)
+  - BURelyFoundation/NETWork (0.0.2.10):
+    - BURelyFoundation/AFNetworking
+  - BURelyFoundation/SDWebImage (0.0.2.10):
+    - BURelyFoundation/Foundation
+  - BURelyFoundation/YYModel (0.0.2.10)
+  - BURelyFoundation/ZFPlayer (0.0.2.10):
+    - BURelyFoundation/Foundation
+    - BURelyFoundation/Zip
+  - BURelyFoundation/Zip (0.0.2.10):
+    - BURelyFoundation/Foundation
+  - GDTMobSDK (4.13.81):
+    - GDTMobSDK/GDTMobSDK (= 4.13.81)
+  - GDTMobSDK/GDTMobSDK (4.13.81)
+  - KSAdSDK (3.3.27)
+  - MintegralAdSDK (7.1.8.0):
+    - MintegralAdSDK/BannerAd (= 7.1.8.0)
+    - MintegralAdSDK/BidBannerAd (= 7.1.8.0)
+    - MintegralAdSDK/BidInterstitialVideoAd (= 7.1.8.0)
+    - MintegralAdSDK/BidNativeAd (= 7.1.8.0)
+    - MintegralAdSDK/BidNewInterstitialAd (= 7.1.8.0)
+    - MintegralAdSDK/BidRewardVideoAd (= 7.1.8.0)
+    - MintegralAdSDK/InterstitialVideoAd (= 7.1.8.0)
+    - MintegralAdSDK/NativeAd (= 7.1.8.0)
+    - MintegralAdSDK/NewInterstitialAd (= 7.1.8.0)
+    - MintegralAdSDK/RewardVideoAd (= 7.1.8.0)
+  - MintegralAdSDK/BannerAd (7.1.8.0):
+    - MintegralAdSDK/NativeAd
+  - MintegralAdSDK/BidBannerAd (7.1.8.0):
+    - MintegralAdSDK/BannerAd
+    - MintegralAdSDK/BidNativeAd
+  - MintegralAdSDK/BidInterstitialVideoAd (7.1.8.0):
+    - MintegralAdSDK/BidNativeAd
+    - MintegralAdSDK/InterstitialVideoAd
+  - MintegralAdSDK/BidNativeAd (7.1.8.0):
+    - MintegralAdSDK/NativeAd
+  - MintegralAdSDK/BidNewInterstitialAd (7.1.8.0):
+    - MintegralAdSDK/BidNativeAd
+    - MintegralAdSDK/NewInterstitialAd
+  - MintegralAdSDK/BidRewardVideoAd (7.1.8.0):
+    - MintegralAdSDK/BidNativeAd
+    - MintegralAdSDK/RewardVideoAd
+  - MintegralAdSDK/InterstitialAd (7.1.8.0):
+    - MintegralAdSDK/NativeAd
+  - MintegralAdSDK/InterstitialVideoAd (7.1.8.0):
+    - MintegralAdSDK/NativeAd
+  - MintegralAdSDK/NativeAd (7.1.8.0)
+  - MintegralAdSDK/NativeAdvancedAd (7.1.8.0):
+    - MintegralAdSDK/NativeAd
+  - MintegralAdSDK/NewInterstitialAd (7.1.8.0):
+    - MintegralAdSDK/InterstitialVideoAd
+    - MintegralAdSDK/NativeAd
+  - MintegralAdSDK/RewardVideoAd (7.1.8.0):
+    - MintegralAdSDK/NativeAd
+  - MintegralAdSDK/SplashAd (7.1.8.0):
+    - MintegralAdSDK/NativeAd
+  - SigmobAd-iOS (3.4.3):
+    - SigmobAd-iOS/WindSDK (= 3.4.3)
+  - SigmobAd-iOS/WindSDK (3.4.3)
+  - ZJSDK (2.5.0.0):
+    - ZJSDK/ZJSDKModuleBD (= 2.5.0.0)
+    - ZJSDK/ZJSDKModuleCSJ (= 2.5.0.0)
+    - ZJSDK/ZJSDKModuleDSP (= 2.5.0.0)
+    - ZJSDK/ZJSDKModuleGDT (= 2.5.0.0)
+    - ZJSDK/ZJSDKModuleKS (= 2.5.0.0)
+    - ZJSDK/ZJSDKModuleMTG (= 2.5.0.0)
+    - ZJSDK/ZJSDKModuleSIG (= 2.5.0.0)
+  - ZJSDK/ZJAdSDK (2.5.0.0)
+  - ZJSDK/ZJSDKModuleBD (2.5.0.0):
+    - BaiduMobAdSDK
+    - ZJSDK/ZJAdSDK
+  - ZJSDK/ZJSDKModuleCSJ (2.5.0.0):
+    - Ads-CN-Beta (= 4.7.0.0)
+    - ZJSDK/ZJAdSDK
+  - ZJSDK/ZJSDKModuleDSP (2.5.0.0):
+    - ZJSDK/ZJAdSDK
+  - ZJSDK/ZJSDKModuleGDT (2.5.0.0):
+    - GDTMobSDK (~> 4.13)
+    - ZJSDK/ZJAdSDK
+  - ZJSDK/ZJSDKModuleKS (2.5.0.0):
+    - KSAdSDK (~> 3.3)
+    - ZJSDK/ZJAdSDK
+  - ZJSDK/ZJSDKModuleMTG (2.5.0.0):
+    - MintegralAdSDK (~> 7.0)
+    - MintegralAdSDK/BannerAd
+    - MintegralAdSDK/InterstitialAd
+    - MintegralAdSDK/NativeAdvancedAd
+    - MintegralAdSDK/RewardVideoAd
+    - MintegralAdSDK/SplashAd
+    - ZJSDK/ZJAdSDK
+  - ZJSDK/ZJSDKModuleSIG (2.5.0.0):
+    - SigmobAd-iOS (~> 3.4.3)
+    - ZJSDK/ZJAdSDK
+
+DEPENDENCIES:
+  - ZJSDK (from `../`)
+
+SPEC REPOS:
+  trunk:
+    - Ads-CN-Beta
+    - BaiduMobAdSDK
+    - BUAdSDK
+    - BURelyFoundation
+    - GDTMobSDK
+    - KSAdSDK
+    - MintegralAdSDK
+    - SigmobAd-iOS
+
+EXTERNAL SOURCES:
+  ZJSDK:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  Ads-CN-Beta: ce2fec07c322993486e3cf571c61d63c962b42fe
+  BaiduMobAdSDK: f4c68649b472327e072ed724e70684891da8ba73
+  BUAdSDK: eb406de70480da7444798e8c15f5daf6ebd27616
+  BURelyFoundation: 533ec95c925635d7962c252bbb1b0c9cf05a7b9f
+  GDTMobSDK: ae4fa3dae40077452abdd04ce3fa144d4a03bd8b
+  KSAdSDK: a02139b90f394079bf2013a3a0409f7d37138131
+  MintegralAdSDK: 90872ff3f2ef55fa4ffd5c84a787aa791712c545
+  SigmobAd-iOS: ac93929587c58c3cf35f83a27ea8829fb7d1b555
+  ZJSDK: 2708c1129e4e9d708165f92f9955f6775d527eae
+
+PODFILE CHECKSUM: 521295049538a79fedf2f4286f0e74226b9ce729
 
 COCOAPODS: 1.11.3

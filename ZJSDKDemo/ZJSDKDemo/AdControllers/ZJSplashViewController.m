@@ -21,7 +21,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [self.loadAdView appendAdID:@[@"J7844642774",@"J5621495755"]];
+    [self.loadAdView appendAdID:@[@"J8648995207",@"J5621495755"]];
 }
 
 
