@@ -53,7 +53,7 @@
     NSLog(@"ZJSDK版本号：%@",version);
     
     
-//    self.showWindow.hidden = NO;
+    self.showWindow.hidden = NO;
     
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     self.window.backgroundColor = [UIColor whiteColor];
@@ -95,7 +95,7 @@
 
 
 -(void)showSplashAd{
-    self.splashAd = [[ZJSplashAd alloc]initWithPlacementId:@"J7844642774"];
+    self.splashAd = [[ZJSplashAd alloc]initWithPlacementId:@"J8648995207"];
     self.splashAd.fetchDelay = 5;
     self.splashAd.delegate = self;
     self.splashAd.customBottomView = self.bottomView;
