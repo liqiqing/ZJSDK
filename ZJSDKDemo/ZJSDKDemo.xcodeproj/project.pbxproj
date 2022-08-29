@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 50;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -399,8 +399,6 @@
 		579DFD60280D6D1800EAF128 /* LYLUnicode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYLUnicode.h; sourceTree = "<group>"; };
 		579DFD61280D6D1800EAF128 /* LYLUnicode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LYLUnicode.m; sourceTree = "<group>"; };
 		620E348FB9DC0AA307AC177C /* Pods_ZJSDKDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZJSDKDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		8FFD07F065BA4DBB7EA72B73 /* Pods-ZJSDKDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZJSDKDemo.release.xcconfig"; path = "Target Support Files/Pods-ZJSDKDemo/Pods-ZJSDKDemo.release.xcconfig"; sourceTree = "<group>"; };
-		DB9951B49AD40FEB4047DB15 /* Pods-ZJSDKDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZJSDKDemo.debug.xcconfig"; path = "Target Support Files/Pods-ZJSDKDemo/Pods-ZJSDKDemo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -475,7 +473,6 @@
 				0077470D24E182A200C30636 /* ZJSDKDemo */,
 				0077470C24E182A200C30636 /* Products */,
 				006192DA250FAF4D00E09415 /* Frameworks */,
-				B264A406114CED68EBE84805 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -818,15 +815,6 @@
 				579DFD33280D4B3900EAF128 /* ZJNativeAdSelectedViewController.m */,
 			);
 			path = ZJNativeAd;
-			sourceTree = "<group>";
-		};
-		B264A406114CED68EBE84805 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				DB9951B49AD40FEB4047DB15 /* Pods-ZJSDKDemo.debug.xcconfig */,
-				8FFD07F065BA4DBB7EA72B73 /* Pods-ZJSDKDemo.release.xcconfig */,
-			);
-			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -1192,7 +1180,6 @@
 		};
 		0077472524E182A200C30636 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = DB9951B49AD40FEB4047DB15 /* Pods-ZJSDKDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -1238,7 +1225,6 @@
 		};
 		0077472624E182A200C30636 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8FFD07F065BA4DBB7EA72B73 /* Pods-ZJSDKDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
