@@ -14,7 +14,7 @@
 #import <AppTrackingTransparency/AppTrackingTransparency.h>
 #import "ZJSplashWindowVC.h"
 #import "ZJHomeViewController.h"
-
+#import <ZJSDKCore/ZJCacheManager.h>
 @interface AppDelegate ()<ZJSplashAdDelegate>
 
 @property (nonatomic, strong) UIWindow *showWindow;
@@ -41,7 +41,9 @@
     if (@available(iOS 14, *)) {
         [ATTrackingManager requestTrackingAuthorizationWithCompletionHandler:^(ATTrackingManagerAuthorizationStatus status) {
             // 获取到权限后，获取idfa
-            [self showSplashAd];
+            dispatch_async(dispatch_get_main_queue(), ^{
+                [self showSplashAd];
+            });
         }];
     } else {
         // Fallback on earlier versions
@@ -51,9 +53,8 @@
     [ZJAdSDK setLogLevel:ZJAdSDKLogLevelDebug];
     NSString *version = [ZJAdSDK SDKVersion];
     NSLog(@"ZJSDK版本号：%@",version);
-    
-    
-//    self.showWindow.hidden = NO;
+
+    self.showWindow.hidden = NO;
     
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     self.window.backgroundColor = [UIColor whiteColor];
@@ -67,7 +68,6 @@
     
     return YES;
 }
-
 
 
 - (void)applicationWillResignActive:(UIApplication *)application{
@@ -95,7 +95,7 @@
 
 
 -(void)showSplashAd{
-    self.splashAd = [[ZJSplashAd alloc]initWithPlacementId:@"J7844642774"];
+    self.splashAd = [[ZJSplashAd alloc]initWithPlacementId:@"J8648995207"];
     self.splashAd.fetchDelay = 5;
     self.splashAd.delegate = self;
     self.splashAd.customBottomView = self.bottomView;
@@ -111,8 +111,7 @@
     NSArray *errors =  [self.splashAd getFillFailureMessages];
     dispatch_async(dispatch_get_main_queue(), ^{
         [self.splashAd showAdInWindow:self.showWindow];
-    });
-}
+    });}
 
 /**
  *  开屏广告成功展示
@@ -161,8 +160,7 @@
     NSLog(@"开屏广告所有错误信息 %@",errors);
     dispatch_async(dispatch_get_main_queue(), ^{
         self.showWindow.hidden = YES;
-    });
-}
+    });}
 
 
 
