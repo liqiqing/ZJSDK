@@ -18,7 +18,7 @@ typedef NSString * _Nullable (^ZJCacheAdditionalCachePathBlock)(NSString * _Nonn
 @protocol ZJCache <NSObject>
 
 @required
-- (id)queryCacheForKey:(NSString *)key completion:(nullable ZJCacheQueryCompletionBlock)completionBlock;
+- (NSDictionary *)queryCacheForKey:(NSString *)key;
 
 - (void)storeDic:(NSDictionary *)dic forKey:(nullable NSString *)key completion:(nullable ZJNoParamsBlock)completionBlock;
 

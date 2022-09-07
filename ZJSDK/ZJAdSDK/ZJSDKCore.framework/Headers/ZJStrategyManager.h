@@ -41,6 +41,7 @@ typedef NS_ENUM(NSInteger, ZJStrategy) {
 /// @param adid 联盟广告位ID
 /// @param limitNum 当天限制展示的的次数
 - (BOOL)isExcutingLimitNumForAdid:(NSString *)adid limitNum:(NSInteger)limitNum;
+- (BOOL)isExcutingStartNumForAdid:(NSString *)adid startNum:(NSInteger)startNum;
 
 ///// 异步判断是否执行block，
 ///// @param adid adid
@@ -53,10 +54,7 @@ typedef NS_ENUM(NSInteger, ZJStrategy) {
 //- (NSInteger)finishNumForAdid:(NSString *)adid;
 
 #pragma mark =============== 读取 ===============
-/// 加载对应id的数据
-/// @param adid 联盟广告位ID
-/// @param completedBlock 加载完成回调
-- (void)loadCacheForAdid:(NSString *)adid completed:(nullable ZJCacheCompletionBlock)completedBlock;
+- (NSDictionary *)loadCacheForAdid:(NSString *)adid;
 
 /// 将磁盘到日期读取出来保存到缓存中，目的是判断是否同一日期时避免再从磁盘中去读取，保持线程同步，减少代码量。
 /// @param completedBlock 返回读取结果block
