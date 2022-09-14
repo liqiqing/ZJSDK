@@ -22,7 +22,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-   [self.loadAdView appendAdID:@[@"c945709452",@"zjad_iOS_ZR0001",@"zjad_T945484376"]];
+   [self.loadAdView appendAdID:@[@"J4008472476",@"c945709452",@"zjad_iOS_ZR0001",@"zjad_T945484376"]];
 }
 
 -(void)viewWillAppear:(BOOL)animated{
