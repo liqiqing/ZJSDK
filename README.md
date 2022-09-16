@@ -37,6 +37,7 @@ pod 'ZJSDK/ZJSDKModuleCSJ'#穿山甲广告
 pod 'ZJSDK/ZJSDKModuleKS'#快手广告
 pod 'ZJSDK/ZJSDKModuleMTG'#MTG广告
 pod 'ZJSDK/ZJSDKModuleSIG'#Sigmob广告
+pod 'ZJSDK/ZJSDKModuleSIG'#百度广告
 ```
 
 ```
