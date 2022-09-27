@@ -10,7 +10,7 @@
 #import <ZJSDKCore/ZJAdUnionItemModel.h>
 #import <ZJSDKCore/ZJAdDebugLog.h>
 #import <ZJSDKCore/ZJBiddingLossRelease.h>
-#import "ZJAdEventReport.h""
+#import <ZJSDKCore/ZJAdEventReport.h>
 NS_ASSUME_NONNULL_BEGIN
 
 @interface ZJCoreAdAdapter : NSObject

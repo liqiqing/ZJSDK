@@ -14,7 +14,13 @@ typedef NS_ENUM(NSInteger,ZJErrorCodeAd){
     ZJErrorCodeAd_Timeout = 100200,
     ZJErrorCodeAd_LackLibraries = 100201,
     ZJErrorCodeAd_AdId = 100202,
-    ZJErrorCodeAd_is_being_limit = 100301
+
+    ZJErrorCodeAd_is_being_limit = 100301,
+    
+    
+    ZJErrorCodeAd_WXLibrarieMissed = 100403,
+    ZJErrorCodeAd_WXLibrarieRegiestFail = 100404,
+    ZJErrorCodeAd_WXNotResponseImp = 100405,
 };
 
 

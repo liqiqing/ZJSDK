@@ -20,7 +20,7 @@ FOUNDATION_EXPORT NSString * const ZJ_ADType_Feed;
 FOUNDATION_EXPORT NSString * const ZJ_ADType_NativeAd;
 FOUNDATION_EXPORT NSString * const ZJ_ADType_ContentPage;
 FOUNDATION_EXPORT NSString * const ZJ_ADType_FullVideoAd;
-
+FOUNDATION_EXPORT NSString * const ZJ_ADType_MiniParam;
 typedef NS_ENUM(NSInteger,ZJAdShowPriority){
     ZJAdShowPriority_normal,
     ZJAdShowPriority_weight
