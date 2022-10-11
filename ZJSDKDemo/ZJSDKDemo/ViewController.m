@@ -9,7 +9,7 @@
 #import "ViewController.h"
 @interface ViewController ()<UITableViewDataSource,UITableViewDelegate>
 {
-    
+     
 }
 
 @property(nonatomic,strong) UITableView *tableView;
