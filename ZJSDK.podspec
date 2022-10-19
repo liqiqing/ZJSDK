@@ -31,8 +31,8 @@ TODO: Add long description of the pod here.
   s.platform     = :ios, "9.0"
   
   #依赖的系统frameworks
-  s.frameworks = 'UIKit','Foundation','StoreKit','MobileCoreServices','WebKit','MediaPlayer','CoreMedia','CoreLocation','AVFoundation','CoreTelephony','SystemConfiguration','AdSupport','CoreMotion','Accelerate','QuartzCore','Security','ImageIO'
-  
+  s.frameworks = 'UIKit','Foundation','StoreKit','MobileCoreServices','WebKit','MediaPlayer','CoreMedia','CoreLocation','AVFoundation','CoreTelephony','SystemConfiguration','AdSupport','CoreMotion','Accelerate','QuartzCore','Security','ImageIO','CFNetwork','CoreGraphics','SafariServices'
+
   #依赖的系统静态库
   #z表示libz.tdb,后缀不需要,lib开头的省略lib
   s.libraries = 'resolv.9','c++','z','sqlite3','bz2','xml2','c++abi'
