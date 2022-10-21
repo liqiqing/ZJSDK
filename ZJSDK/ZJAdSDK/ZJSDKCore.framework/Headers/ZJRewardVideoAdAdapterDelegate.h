@@ -25,6 +25,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (void)zj_rewardVideoAdAdapterDidPlayFinish:(ZJRewardVideoAdAdapter *)adapter;
 
+- (void)zj_rewardVideoAdAdapter:(ZJRewardVideoAdAdapter *)adapter displayFailWithError:(NSError *)error;
+
 - (void)zj_rewardVideoAdAdapter:(ZJRewardVideoAdAdapter *)adapter didFailWithError:(NSError *)error;
 
 @end

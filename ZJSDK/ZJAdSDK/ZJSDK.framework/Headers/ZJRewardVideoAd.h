@@ -58,11 +58,18 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)zj_rewardVideoAdDidPlayFinish:(ZJRewardVideoAd *)rewardedVideoAd;
 
 /**
- 视频广告各种错误信息回调
+ 视频广告加载错误信息回调
  @param rewardedVideoAd ZJRewardVideoAd 实例
  @param error 具体错误信息
  */
 - (void)zj_rewardVideoAd:(ZJRewardVideoAd *)rewardedVideoAd didFailWithError:(NSError *)error;
+
+/**
+ 视频广告播放错误信息回调
+ @param rewardedVideoAd ZJRewardVideoAd 实例
+ @param error 具体错误信息
+ */
+- (void)zj_rewardVideoAd:(ZJRewardVideoAd *)rewardedVideoAd displayFailWithError:(NSError *)error;
 
 @end
 

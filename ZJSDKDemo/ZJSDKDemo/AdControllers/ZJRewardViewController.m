@@ -137,6 +137,33 @@
     [self logMessage:[NSString stringWithFormat:@"rewardedVideoAdError : %@",error]];
 }
 
+- (void)zj_rewardVideoAd:(ZJRewardVideoAd *)rewardedVideoAd displayFailWithError:(NSError *)error{
+    self.loadAdView.showButton.backgroundColor = [UIColor lightGrayColor];
+    switch (error.code) {
+        case 4014:
+            NSLog(@"请拉取到广告后再调用展示接口");
+            break;
+        case 4016:
+            NSLog(@"应用方向与广告位支持方向不一致");
+            break;
+        case 5012:
+            NSLog(@"广告已过期");
+            break;
+        case 4015:
+            NSLog(@"广告已经播放过，请重新拉取");
+            break;
+        case 5003:
+            NSLog(@"视频播放失败");
+            break;
+        case 5027:
+            NSLog(@"页面加载失败");
+            break;
+        default:
+            NSLog(@"激励视频播放错误: %@",error);
+            break;
+    }
+}
+
 /*
 #pragma mark - Navigation
 
