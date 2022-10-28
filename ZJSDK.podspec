@@ -66,7 +66,7 @@ TODO: Add long description of the pod here.
     ss.vendored_libraries = 'ZJSDK/ZJSDKModuleKS/*.a'
     ss.dependency 'ZJSDK/ZJAdSDK'
 #    ss.vendored_frameworks = 'ZJSDK/ZJSDKModuleKS/KSAdSDK.framework'
-    ss.dependency 'KSAdSDK', '~> 3.3'
+    ss.dependency 'KSAdSDK', '~> 3.3.6'
   end
 
   s.subspec 'ZJSDKModuleMTG' do |ss|
@@ -111,6 +111,6 @@ TODO: Add long description of the pod here.
  s.subspec 'ZJSDKModuleBD' do |ss|
    ss.vendored_libraries = 'ZJSDK/ZJSDKModuleBD/*.a'
    ss.dependency 'ZJSDK/ZJAdSDK'
-   ss.dependency 'BaiduMobAdSDK'
+   ss.dependency 'BaiduMobAdSDK', '~> 4.81'
  end
 end
