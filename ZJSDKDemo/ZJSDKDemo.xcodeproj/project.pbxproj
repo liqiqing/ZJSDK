@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -826,7 +826,6 @@
 				532D6E9D0DA6502B592B2B5F /* Pods-ZJSDKDemo.debug.xcconfig */,
 				6B971DE44006280422F42EED /* Pods-ZJSDKDemo.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};

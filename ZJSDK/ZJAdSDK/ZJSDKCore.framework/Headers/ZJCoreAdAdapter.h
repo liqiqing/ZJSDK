@@ -62,9 +62,6 @@ NS_ASSUME_NONNULL_BEGIN
  */
 - (void)biddingLoss:(NSInteger)price reason:(ZJBiddingLossReason)reason winnerAdnID:(nullable NSString *)adnID;
 
-#pragma mark - 事件上报
--(void)reportBiddingEcpm;
-
 
 + (NSString*)getAdapterClass:(NSString *)platform adType:(NSString *)adType;
 
