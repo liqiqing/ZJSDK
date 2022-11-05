@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 50;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -712,30 +712,29 @@
 		579DFCF7280D4B3900EAF128 /* AdControllers */ = {
 			isa = PBXGroup;
 			children = (
-				579DFCF8280D4B3900EAF128 /* ZJInterstitialAdViewController.h */,
-				579DFCF9280D4B3900EAF128 /* ZJRewardViewController.h */,
-				579DFCFA280D4B3900EAF128 /* ZJJSBridgeViewController.h */,
-				579DFCFB280D4B3900EAF128 /* ZJFullScreenVideoViewController.h */,
-				579DFCFC280D4B3900EAF128 /* ZJBannerViewController.m */,
-				579DFCFD280D4B3900EAF128 /* NativeExpressFeedAd */,
-				579DFCFF280D4B3900EAF128 /* AdViewController.m */,
-				579DFD00280D4B3900EAF128 /* ZJContentPage */,
-				579DFD0B280D4B3900EAF128 /* ZJSplashViewController.h */,
-				579DFD0C280D4B3900EAF128 /* ZJH5ViewController.h */,
-				579DFD0D280D4B3900EAF128 /* ZJFloatingAdViewController.m */,
-				579DFD0E280D4B3900EAF128 /* ZJInterstitialAdViewController.m */,
-				579DFD0F280D4B3900EAF128 /* ZJNativeExpressFeedAd */,
 				579DFD15280D4B3900EAF128 /* AdViewController.h */,
-				579DFD16280D4B3900EAF128 /* ZJFeedVideo */,
+				579DFCFF280D4B3900EAF128 /* AdViewController.m */,
+				579DFD0B280D4B3900EAF128 /* ZJSplashViewController.h */,
+				579DFD34280D4B3900EAF128 /* ZJSplashViewController.m */,
+				579DFCF9280D4B3900EAF128 /* ZJRewardViewController.h */,
+				579DFD23280D4B3900EAF128 /* ZJRewardViewController.m */,
+				579DFCF8280D4B3900EAF128 /* ZJInterstitialAdViewController.h */,
+				579DFD0E280D4B3900EAF128 /* ZJInterstitialAdViewController.m */,
+				579DFCFB280D4B3900EAF128 /* ZJFullScreenVideoViewController.h */,
 				579DFD1E280D4B3900EAF128 /* ZJFullScreenVideoViewController.m */,
 				579DFD1F280D4B3900EAF128 /* ZJBannerViewController.h */,
-				579DFD20280D4B3900EAF128 /* ZJJSBridgeViewController.m */,
-				579DFD21280D4B3900EAF128 /* New Group */,
-				579DFD23280D4B3900EAF128 /* ZJRewardViewController.m */,
-				579DFD24280D4B3900EAF128 /* ZJH5ViewController.m */,
+				579DFCFC280D4B3900EAF128 /* ZJBannerViewController.m */,
+				579DFD16280D4B3900EAF128 /* ZJFeedVideo */,
+				579DFD0F280D4B3900EAF128 /* ZJNativeExpressFeedAd */,
+				579DFCFD280D4B3900EAF128 /* NativeExpressFeedAd */,
 				579DFD25280D4B3900EAF128 /* ZJNativeAd */,
-				579DFD34280D4B3900EAF128 /* ZJSplashViewController.m */,
+				579DFD00280D4B3900EAF128 /* ZJContentPage */,
+				579DFD0C280D4B3900EAF128 /* ZJH5ViewController.h */,
+				579DFD24280D4B3900EAF128 /* ZJH5ViewController.m */,
 				579DFD35280D4B3900EAF128 /* ZJFloatingAdViewController.h */,
+				579DFD0D280D4B3900EAF128 /* ZJFloatingAdViewController.m */,
+				579DFCFA280D4B3900EAF128 /* ZJJSBridgeViewController.h */,
+				579DFD20280D4B3900EAF128 /* ZJJSBridgeViewController.m */,
 			);
 			path = AdControllers;
 			sourceTree = "<group>";
@@ -744,6 +743,7 @@
 			isa = PBXGroup;
 			children = (
 				579DFCFE280D4B3900EAF128 /* ZJNativeExpressAdTableViewCell.h */,
+				579DFD12280D4B3900EAF128 /* ZJNativeExpressAdTableViewCell.m */,
 			);
 			path = NativeExpressFeedAd;
 			sourceTree = "<group>";
@@ -752,14 +752,14 @@
 			isa = PBXGroup;
 			children = (
 				579DFD01280D4B3900EAF128 /* ZJContentPageViewController.h */,
-				579DFD02280D4B3900EAF128 /* ZJContentPageStyle2ViewController.m */,
-				579DFD03280D4B3900EAF128 /* ZJContentPageStyle1ViewController.h */,
-				579DFD04280D4B3900EAF128 /* ZJContentPageSelectedBar.h */,
-				579DFD05280D4B3900EAF128 /* ZJContentPageTabBarController.h */,
 				579DFD06280D4B3900EAF128 /* ZJContentPageViewController.m */,
-				579DFD07280D4B3900EAF128 /* ZJContentPageStyle2ViewController.h */,
+				579DFD03280D4B3900EAF128 /* ZJContentPageStyle1ViewController.h */,
 				579DFD08280D4B3900EAF128 /* ZJContentPageStyle1ViewController.m */,
+				579DFD07280D4B3900EAF128 /* ZJContentPageStyle2ViewController.h */,
+				579DFD02280D4B3900EAF128 /* ZJContentPageStyle2ViewController.m */,
+				579DFD04280D4B3900EAF128 /* ZJContentPageSelectedBar.h */,
 				579DFD09280D4B3900EAF128 /* ZJContentPageSelectedBar.m */,
+				579DFD05280D4B3900EAF128 /* ZJContentPageTabBarController.h */,
 				579DFD0A280D4B3900EAF128 /* ZJContentPageTabBarController.m */,
 			);
 			path = ZJContentPage;
@@ -768,11 +768,10 @@
 		579DFD0F280D4B3900EAF128 /* ZJNativeExpressFeedAd */ = {
 			isa = PBXGroup;
 			children = (
-				579DFD10280D4B3900EAF128 /* ZJNativeExpressAdsViewController.m */,
 				579DFD11280D4B3900EAF128 /* ZJFeedAdsViewController.h */,
-				579DFD12280D4B3900EAF128 /* ZJNativeExpressAdTableViewCell.m */,
-				579DFD13280D4B3900EAF128 /* ZJNativeExpressAdsViewController.h */,
 				579DFD14280D4B3900EAF128 /* ZJFeedAdsViewController.m */,
+				579DFD13280D4B3900EAF128 /* ZJNativeExpressAdsViewController.h */,
+				579DFD10280D4B3900EAF128 /* ZJNativeExpressAdsViewController.m */,
 			);
 			path = ZJNativeExpressFeedAd;
 			sourceTree = "<group>";
@@ -780,42 +779,35 @@
 		579DFD16280D4B3900EAF128 /* ZJFeedVideo */ = {
 			isa = PBXGroup;
 			children = (
-				579DFD17280D4B3900EAF128 /* ZJFullScreenCell.h */,
-				579DFD18280D4B3900EAF128 /* ZJFeedFullVideoViewController.m */,
 				579DFD19280D4B3900EAF128 /* ZJFeedFullVideoShowViewController.h */,
-				579DFD1A280D4B3900EAF128 /* ZJFeedFullVideoAdCell.h */,
-				579DFD1B280D4B3900EAF128 /* ZJFullScreenCell.m */,
-				579DFD1C280D4B3900EAF128 /* ZJFeedFullVideoAdCell.m */,
 				579DFD1D280D4B3900EAF128 /* ZJFeedFullVideoShowViewController.m */,
+				579DFD22280D4B3900EAF128 /* ZJFeedFullVideoViewController.h */,
+				579DFD18280D4B3900EAF128 /* ZJFeedFullVideoViewController.m */,
+				579DFD1A280D4B3900EAF128 /* ZJFeedFullVideoAdCell.h */,
+				579DFD1C280D4B3900EAF128 /* ZJFeedFullVideoAdCell.m */,
+				579DFD17280D4B3900EAF128 /* ZJFullScreenCell.h */,
+				579DFD1B280D4B3900EAF128 /* ZJFullScreenCell.m */,
 			);
 			path = ZJFeedVideo;
-			sourceTree = "<group>";
-		};
-		579DFD21280D4B3900EAF128 /* New Group */ = {
-			isa = PBXGroup;
-			children = (
-				579DFD22280D4B3900EAF128 /* ZJFeedFullVideoViewController.h */,
-			);
-			path = "New Group";
 			sourceTree = "<group>";
 		};
 		579DFD25280D4B3900EAF128 /* ZJNativeAd */ = {
 			isa = PBXGroup;
 			children = (
+				579DFD2B280D4B3900EAF128 /* ZJNativeAdSelectedViewController.h */,
+				579DFD33280D4B3900EAF128 /* ZJNativeAdSelectedViewController.m */,
+				579DFD31280D4B3900EAF128 /* ZJNativeAdViewController.h */,
+				579DFD29280D4B3900EAF128 /* ZJNativeAdViewController.m */,
+				579DFD2C280D4B3900EAF128 /* ZJNativeAdBaseTableViewCell.h */,
+				579DFD32280D4B3900EAF128 /* ZJNativeAdBaseTableViewCell.m */,
+				579DFD2E280D4B3900EAF128 /* ZJNativeAdImageTableViewCell.h */,
 				579DFD26280D4B3900EAF128 /* ZJNativeAdImageTableViewCell.m */,
 				579DFD27280D4B3900EAF128 /* ZJNativeAdAtlasImageTableViewCell.h */,
-				579DFD28280D4B3900EAF128 /* ZJNativeAdVideoTableViewCell.h */,
-				579DFD29280D4B3900EAF128 /* ZJNativeAdViewController.m */,
-				579DFD2A280D4B3900EAF128 /* ZJFillNativeAdView.h */,
-				579DFD2B280D4B3900EAF128 /* ZJNativeAdSelectedViewController.h */,
-				579DFD2C280D4B3900EAF128 /* ZJNativeAdBaseTableViewCell.h */,
 				579DFD2D280D4B3900EAF128 /* ZJNativeAdAtlasImageTableViewCell.m */,
-				579DFD2E280D4B3900EAF128 /* ZJNativeAdImageTableViewCell.h */,
+				579DFD28280D4B3900EAF128 /* ZJNativeAdVideoTableViewCell.h */,
 				579DFD2F280D4B3900EAF128 /* ZJNativeAdVideoTableViewCell.m */,
+				579DFD2A280D4B3900EAF128 /* ZJFillNativeAdView.h */,
 				579DFD30280D4B3900EAF128 /* ZJFillNativeAdView.m */,
-				579DFD31280D4B3900EAF128 /* ZJNativeAdViewController.h */,
-				579DFD32280D4B3900EAF128 /* ZJNativeAdBaseTableViewCell.m */,
-				579DFD33280D4B3900EAF128 /* ZJNativeAdSelectedViewController.m */,
 			);
 			path = ZJNativeAd;
 			sourceTree = "<group>";
