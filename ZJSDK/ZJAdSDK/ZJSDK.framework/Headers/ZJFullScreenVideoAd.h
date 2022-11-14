@@ -6,8 +6,10 @@
 //  Copyright © 2022 zj. All rights reserved.
 //
 
-#import "ZJAd.h"
+#import <ZJSDK/ZJBiddingAd.h>
 #import <ZJSDKCore/ZJSDKAdEnum.h>
+#import <ZJSDKCore/ZJFullScreenVideoAdAdapter.h>
+
 NS_ASSUME_NONNULL_BEGIN
 @class ZJFullScreenVideoAd;
 @protocol ZJFullScreenVideoAdDelegate <NSObject>
@@ -41,9 +43,11 @@ NS_ASSUME_NONNULL_BEGIN
 
 @end
 
-@interface ZJFullScreenVideoAd : ZJAd
+@interface ZJFullScreenVideoAd : ZJBiddingAd <ZJfullScreenVideoAdAdapterDelegate>
 
 @property (nonatomic, weak) id <ZJFullScreenVideoAdDelegate> delegate;
+
+@property (nonatomic, strong)ZJFullScreenVideoAdAdapter *currentAdapter;
 
 ///视频静音， 默认：NO
 @property (nonatomic) BOOL mutedIfCan;

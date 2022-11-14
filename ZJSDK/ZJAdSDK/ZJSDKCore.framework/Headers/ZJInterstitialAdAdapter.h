@@ -6,12 +6,12 @@
 //
 
 
-#import "ZJCoreAdAdapter.h"
-#import "ZJInterstitialAdProtocol.h"
-#import "ZJInterstitialAdAdapterDelegate.h"
+#import <ZJSDKCore/ZJBiddingAdAdapter.h>
+#import <ZJSDKCore/ZJInterstitialAdProtocol.h>
+#import <ZJSDKCore/ZJInterstitialAdAdapterDelegate.h>
 NS_ASSUME_NONNULL_BEGIN
 
-@interface ZJInterstitialAdAdapter : ZJCoreAdAdapter<ZJInterstitialAdProtocol>
+@interface ZJInterstitialAdAdapter : ZJBiddingAdAdapter<ZJInterstitialAdProtocol>
 
 @property(nonatomic,weak) id<ZJInterstitialAdAdapterDelegate> delegate;
 

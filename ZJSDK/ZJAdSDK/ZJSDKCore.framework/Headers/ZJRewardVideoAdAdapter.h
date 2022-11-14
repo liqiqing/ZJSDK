@@ -6,13 +6,13 @@
 //
 
 
-#import "ZJCoreAdAdapter.h"
-#import "ZJRewardVideoAdProtocol.h"
-#import "ZJRewardVideoAdAdapterDelegate.h"
+#import <ZJSDKCore/ZJBiddingAdAdapter.h>
+#import <ZJSDKCore/ZJRewardVideoAdProtocol.h>
+#import <ZJSDKCore/ZJRewardVideoAdAdapterDelegate.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface ZJRewardVideoAdAdapter : ZJCoreAdAdapter<ZJRewardVideoAdProtocol>
+@interface ZJRewardVideoAdAdapter : ZJBiddingAdAdapter<ZJRewardVideoAdProtocol>
 
 @property(nonatomic,strong,readonly)UIView *rewardAdapterView;
 

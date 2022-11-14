@@ -6,8 +6,10 @@
 //  Copyright © 2022 zj. All rights reserved.
 //
 
-#import "ZJAd.h"
+#import <ZJSDK/ZJBiddingAd.h>
 #import <ZJSDKCore/ZJRewardVideoAdProtocol.h>
+#import <ZJSDKCore/ZJRewardVideoAdAdapter.h>
+
 NS_ASSUME_NONNULL_BEGIN
 @class  ZJRewardVideoAd;
 @protocol ZJRewardVideoAdDelegate <NSObject>
@@ -74,9 +76,11 @@ NS_ASSUME_NONNULL_BEGIN
 @end
 
 
-@interface ZJRewardVideoAd : ZJAd <ZJRewardVideoAdProtocol>
+@interface ZJRewardVideoAd : ZJBiddingAd <ZJRewardVideoAdProtocol,ZJRewardVideoAdAdapterDelegate>
 
 @property (nonatomic, weak) id <ZJRewardVideoAdDelegate> delegate;
+
+@property (nonatomic,strong)ZJRewardVideoAdAdapter *currentAdapter;
 
 /**激励视频初始化方法
 @param placementId   required 激励视频广告位ID

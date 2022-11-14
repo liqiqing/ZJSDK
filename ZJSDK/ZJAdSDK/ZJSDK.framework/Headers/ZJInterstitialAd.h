@@ -6,8 +6,10 @@
 //  Copyright © 2022 zj. All rights reserved.
 //
 
-#import "ZJAd.h"
+#import <ZJSDK/ZJBiddingAd.h>
 #import <ZJSDKCore/ZJInterstitialAdProtocol.h>
+#import <ZJSDKCore/ZJInterstitialAdAdapterDelegate.h>
+#import <ZJSDKCore/ZJInterstitialAdAdapter.h>
 
 NS_ASSUME_NONNULL_BEGIN
 @class ZJInterstitialAd;
@@ -36,10 +38,11 @@ NS_ASSUME_NONNULL_BEGIN
 
 @end
 
-@interface ZJInterstitialAd : ZJAd<ZJInterstitialAdProtocol>
+@interface ZJInterstitialAd : ZJBiddingAd<ZJInterstitialAdProtocol,ZJInterstitialAdAdapterDelegate>
 
 @property(nonatomic,weak) id<ZJInterstitialAdDelegate>delegate;
 
+@property (nonatomic,strong)ZJInterstitialAdAdapter *currentAdapter;
 @end
 
 NS_ASSUME_NONNULL_END

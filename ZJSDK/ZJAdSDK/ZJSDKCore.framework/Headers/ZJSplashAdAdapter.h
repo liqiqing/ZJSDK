@@ -5,12 +5,12 @@
 //  Created by Robin on 2020/12/22.
 //
 
-#import "ZJCoreAdAdapter.h"
+#import "ZJBiddingAdAdapter.h"
 #import "ZJSplashAdProtocol.h"
 #import "ZJSplashAdAdapterDelegate.h"
 NS_ASSUME_NONNULL_BEGIN
 
-@interface ZJSplashAdAdapter : ZJCoreAdAdapter<ZJSplashAdProtocol>
+@interface ZJSplashAdAdapter : ZJBiddingAdAdapter<ZJSplashAdProtocol>
 
 
 @property(nonatomic,weak) id<ZJSplashAdAdapterDelegate> delegate;

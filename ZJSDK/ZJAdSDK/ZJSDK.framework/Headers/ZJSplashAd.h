@@ -6,8 +6,9 @@
 //  Copyright © 2022 zj. All rights reserved.
 //
 
-#import "ZJAd.h"
+#import <ZJSDK/ZJBiddingAd.h>
 #import <ZJSDKCore/ZJSplashAdProtocol.h>
+#import <ZJSDKCore/ZJSplashAdAdapter.h>
 NS_ASSUME_NONNULL_BEGIN
 
 @class ZJSplashAd;
@@ -59,9 +60,10 @@ NS_ASSUME_NONNULL_BEGIN
 @end
 
 
-@interface ZJSplashAd : ZJAd <ZJSplashAdProtocol>
+@interface ZJSplashAd : ZJBiddingAd<ZJSplashAdProtocol,ZJSplashAdAdapterDelegate>
 
 @property (nonatomic, weak) id <ZJSplashAdDelegate> delegate;
+@property (nonatomic,strong)ZJSplashAdAdapter *currentAdapter;
 
 @end
 

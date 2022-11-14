@@ -5,7 +5,7 @@
 //  Created by Rare on 2021/4/27.
 //
 
-#import "ZJCoreAdAdapter.h"
+#import <ZJSDKCore/ZJBiddingAdAdapter.h>
 #import <UIKit/UIKit.h>
 #import "ZJSDKAdEnum.h"
 NS_ASSUME_NONNULL_BEGIN
@@ -33,7 +33,7 @@ NS_ASSUME_NONNULL_BEGIN
 @end
 
 
-@interface ZJFullScreenVideoAdAdapter : ZJCoreAdAdapter
+@interface ZJFullScreenVideoAdAdapter : ZJBiddingAdAdapter
 
 
 @property(nonatomic,weak) id<ZJfullScreenVideoAdAdapterDelegate> delegate;
