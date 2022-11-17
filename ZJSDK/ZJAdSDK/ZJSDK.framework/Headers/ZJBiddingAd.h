@@ -54,7 +54,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nonatomic,strong)ZJBiddingAdAdapter *ecpm1Adapter;
 
-@property (nonatomic,strong)ZJBiddingAdAdapter *currentAdapter;
+@property (nonatomic,strong,nullable)ZJBiddingAdAdapter *currentAdapter;
 
 //错误信息数组
 @property (nonatomic,strong)NSMutableArray <NSError *>*adFailArray;

@@ -24,11 +24,14 @@
     self.contentPage.videoStateDelegate = self;
     self.contentPage.stateDelegate = self;
     UIViewController *vc = self.contentPage.viewController;
-    
-    CGFloat contentY = [UIApplication sharedApplication].statusBarFrame.size.height+self.navigationController.navigationBar.frame.size.height;
-    vc.view.frame = CGRectMake(0, contentY, self.view.frame.size.width, self.view.frame.size.height-contentY);
-    [self addChildViewController:vc];
-    [self.view addSubview:vc.view];
+    if(vc){
+        CGFloat contentY = [UIApplication sharedApplication].statusBarFrame.size.height+self.navigationController.navigationBar.frame.size.height;
+        vc.view.frame = CGRectMake(0, contentY, self.view.frame.size.width, self.view.frame.size.height-contentY);
+        [self addChildViewController:vc];
+        [self.view addSubview:vc.view];
+    }else{
+        NSLog(@"未能创建对应广告位VC，建议从以下原因排查：\n 1，视频内容需要手动导入快手模块（pod版本不支持视频内容）\n 2，确保sdk已注册成功 \n 3，确保广告位正确可用");
+    }
 //    [vc.view mas_makeConstraints:^(MASConstraintMaker *make) {
 //        make.top.mas_equalTo(200);
 //        make.left.right.mas_equalTo(0);

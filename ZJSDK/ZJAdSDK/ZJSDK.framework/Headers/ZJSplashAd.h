@@ -63,7 +63,7 @@ NS_ASSUME_NONNULL_BEGIN
 @interface ZJSplashAd : ZJBiddingAd<ZJSplashAdProtocol,ZJSplashAdAdapterDelegate>
 
 @property (nonatomic, weak) id <ZJSplashAdDelegate> delegate;
-@property (nonatomic,strong)ZJSplashAdAdapter *currentAdapter;
+@property (nonatomic, strong,nullable) ZJSplashAdAdapter *currentAdapter;
 
 @end
 

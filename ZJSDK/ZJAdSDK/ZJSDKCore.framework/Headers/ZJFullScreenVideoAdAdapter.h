@@ -41,8 +41,6 @@ NS_ASSUME_NONNULL_BEGIN
 ///视频静音， 默认：NO
 @property (nonatomic) BOOL mutedIfCan;
 
--(void)loadAd;
-
 -(void)presentAdFromRootViewController:(UIViewController*)viewController;
 
 - (void)zj_fullScreenVideoDidLoad;

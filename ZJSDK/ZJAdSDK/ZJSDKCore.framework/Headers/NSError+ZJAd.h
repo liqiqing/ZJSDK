@@ -11,6 +11,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 typedef NS_ENUM(NSInteger,ZJErrorCodeAd){
     ZJErrorCodeAd_Unknown = 100100,
+    ZJErrorCodeAd_Unregistered = 100101,
+
     ZJErrorCodeAd_Timeout = 100200,
     ZJErrorCodeAd_LackLibraries = 100201,
     ZJErrorCodeAd_AllAdReturnError = 100203,

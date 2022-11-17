@@ -42,7 +42,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property(nonatomic,weak) id<ZJInterstitialAdDelegate>delegate;
 
-@property (nonatomic,strong)ZJInterstitialAdAdapter *currentAdapter;
+@property (nonatomic,strong,nullable)ZJInterstitialAdAdapter *currentAdapter;
 @end
 
 NS_ASSUME_NONNULL_END
