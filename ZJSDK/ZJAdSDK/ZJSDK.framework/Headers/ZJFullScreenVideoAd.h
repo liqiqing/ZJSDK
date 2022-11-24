@@ -47,7 +47,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nonatomic, weak) id <ZJFullScreenVideoAdDelegate> delegate;
 
-@property (nonatomic, strong)ZJFullScreenVideoAdAdapter *currentAdapter;
+@property (nonatomic,strong,nullable)ZJFullScreenVideoAdAdapter *currentAdapter;
 
 ///视频静音， 默认：NO
 @property (nonatomic) BOOL mutedIfCan;
