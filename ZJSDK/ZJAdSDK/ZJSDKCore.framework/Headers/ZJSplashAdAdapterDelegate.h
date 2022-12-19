@@ -54,6 +54,10 @@ NS_ASSUME_NONNULL_BEGIN
  */
 - (void)zj_splashAdAdapterError:(ZJSplashAdAdapter *)splashAdAdapter withError:(NSError *)error;
 
+/**
+ *  开屏广告播放错误
+ */
+- (void)zj_splashAdAdapterDisplayError:(ZJSplashAdAdapter *)splashAdAdapter withError:(NSError *)error;
 
 /// 奖励触发
 - (void)zj_splashAdAdapterDidRewardEffective:(ZJSplashAdAdapter *)splashAdAdapter withInfo:(nullable NSDictionary *)info;

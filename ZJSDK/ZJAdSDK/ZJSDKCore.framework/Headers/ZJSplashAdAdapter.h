@@ -59,7 +59,10 @@ NS_ASSUME_NONNULL_BEGIN
  *  开屏广告错误
  */
 - (void)zj_splashAdErrorWithError:(nullable NSError *)error;
-
+/**
+ *  开屏广告播放错误
+ */
+- (void)zj_splashAdDisplayError:(NSError *)error;
 
 /// 事件上报
 -(void)reportSplashAdWithEvent:(ZJEventString)event supplementMsg:(nullable NSString *)supplementMsg;

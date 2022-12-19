@@ -21,6 +21,7 @@ NS_ASSUME_NONNULL_BEGIN
 -(ZJBiddingAdAdapter *)createAdapterForUnit:(ZJAdUnitModel *)unit;
 
 @optional
+-(void)dealDispalyFailWithError:(NSError *)error;
 - (NSInteger)getCountDownInterval;
 @end
 
