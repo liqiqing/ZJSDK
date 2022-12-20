@@ -1076,6 +1076,53 @@ vc.view.frame = CGRectMake(0, contentY, self.view.frame.size.width, self.view.fr
 加载广告具体示例详见Demo中的 ZJContentPageStyle1ViewController,
 ZJContentPageStyle2ViewController,
 ZJContentPageTabBarController
+### <span id="jump2.10">2.10、接入新闻资讯广告(ZJNewsAdView)</span>
+
+#### <span id="jump2.10.1">2.10.1、ZJNewsAdView说明</span>
+
+```
+/**
+ *  @params
+ *  placementId - 广告位id
+ *  frame - 视图frame
+ */
+- (instancetype)initWithPlacementId:(NSString *)placementId frame:(CGRect)frame;
+
+/**
+ *  拉取并展示广告
+ */
+- (void)loadAdAndShow;
+
+/**
+ *  返回web的上一页
+ */
+- (void)goback;
+```
+
+#### <span id="jump2.10.2">2.10.2、ZJNewsAdViewDelegate说明</span>
+
+```
+/**
+ news广告加载成功
+ */
+- (void)zj_newsAdViewDidLoad:(ZJNewsAdView *)newsAdView;
+
+/**
+ news广告加载失败
+ */
+- (void)zj_newsAdView:(ZJNewsAdView *)newsAdView didLoadFailWithError:(NSError *_Nullable)error;
+
+/**
+ news广告发奖回调
+ */
+- (void)zj_newsAdViewRewardEffective:(ZJNewsAdView *)newsAdView;
+
+/**
+ 点击news广告回调,(点击的页面加载成功回调)
+ */
+- (void)zj_newsAdViewDidClick:(ZJNewsAdView *)newsAdView;
+
+```
 
 ## <span id="jump3">三、接入H5内容页</span>
 
@@ -1304,6 +1351,9 @@ self.floatingAd.hiddenH5CloseButton = YES;
     - [2.9.1、ZJContentPage接入注意事项](#291-zjcontentpage接入注意事项)
     - [2.9.2、ZJContentPage说明](#292-zjcontentpage说明)
     - [2.9.3、加载视频内容](#293-加载视频内容)
+  - [2.10、接入新闻资讯广告(ZJNewsAdView)](#span-idjump210210-接入新闻资讯广告zjnewsadviewspan)
+    - [2.10.1、ZJNewsAdView说明](#span-idjump21012101-zjnewsadview说明span)
+    - [2.10.2、ZJNewsAdViewDelegate说明](#span-idjump21022102-zjnewsadviewdelegate说明span)
 - [三、接入H5内容页](#span-idjump3三-接入h5内容页span)
   - [3.1、接入H5内容](#span-idjump3131-接入h5内容span)
     - [3.1.1、ZJH5Page说明](#span-idjump311311-zjh5page说明span)
