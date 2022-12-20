@@ -15,6 +15,7 @@ FOUNDATION_EXPORT NSString * const ZJAdType_SPLASH;//开屏
 FOUNDATION_EXPORT NSString * const ZJAdType_REWARD;//激励视频
 FOUNDATION_EXPORT NSString * const ZJAdType_H5;//H5
 FOUNDATION_EXPORT NSString * const ZJAdType_Banner;//banner
+FOUNDATION_EXPORT NSString * const ZJAdType_News;//新闻资讯
 FOUNDATION_EXPORT NSString * const ZJAdType_Interstitial;//插屏
 FOUNDATION_EXPORT NSString * const ZJAdType_ExpressFullVideoFeed;//视频流 
 FOUNDATION_EXPORT NSString * const ZJAdType_ContentVideo;//视频内容 

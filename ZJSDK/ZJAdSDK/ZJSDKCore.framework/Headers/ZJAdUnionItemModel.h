@@ -16,6 +16,7 @@ FOUNDATION_EXPORT NSString * const ZJ_ADType_NewInterstitial;
 FOUNDATION_EXPORT NSString * const ZJ_ADType_RewardVideo;
 FOUNDATION_EXPORT NSString * const ZJ_ADType_FeedFullVideo;
 FOUNDATION_EXPORT NSString * const ZJ_ADType_Banner;
+FOUNDATION_EXPORT NSString * const ZJ_ADType_News;
 FOUNDATION_EXPORT NSString * const ZJ_ADType_Feed;
 FOUNDATION_EXPORT NSString * const ZJ_ADType_NativeAd;
 FOUNDATION_EXPORT NSString * const ZJ_ADType_ContentPage;

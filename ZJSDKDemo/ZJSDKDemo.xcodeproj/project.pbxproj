@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 50;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -129,6 +129,7 @@
 		579DFD5B280D4B3A00EAF128 /* ZJSplashWindowVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 579DFD37280D4B3900EAF128 /* ZJSplashWindowVC.m */; };
 		579DFD62280D6D1800EAF128 /* LYLUnicode.m in Sources */ = {isa = PBXBuildFile; fileRef = 579DFD61280D6D1800EAF128 /* LYLUnicode.m */; };
 		8F5386263D55AB1EA0DA738E /* Pods_ZJSDKDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 620E348FB9DC0AA307AC177C /* Pods_ZJSDKDemo.framework */; };
+		AB706EAD29526EA2006C5B4F /* ZJNewsAdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AB706EAB29526EA2006C5B4F /* ZJNewsAdViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -401,6 +402,8 @@
 		579DFD61280D6D1800EAF128 /* LYLUnicode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LYLUnicode.m; sourceTree = "<group>"; };
 		620E348FB9DC0AA307AC177C /* Pods_ZJSDKDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZJSDKDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6B971DE44006280422F42EED /* Pods-ZJSDKDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZJSDKDemo.release.xcconfig"; path = "Target Support Files/Pods-ZJSDKDemo/Pods-ZJSDKDemo.release.xcconfig"; sourceTree = "<group>"; };
+		AB706EAB29526EA2006C5B4F /* ZJNewsAdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZJNewsAdViewController.m; sourceTree = "<group>"; };
+		AB706EAC29526EA2006C5B4F /* ZJNewsAdViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZJNewsAdViewController.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -724,6 +727,8 @@
 				579DFD1E280D4B3900EAF128 /* ZJFullScreenVideoViewController.m */,
 				579DFD1F280D4B3900EAF128 /* ZJBannerViewController.h */,
 				579DFCFC280D4B3900EAF128 /* ZJBannerViewController.m */,
+				AB706EAC29526EA2006C5B4F /* ZJNewsAdViewController.h */,
+				AB706EAB29526EA2006C5B4F /* ZJNewsAdViewController.m */,
 				579DFD16280D4B3900EAF128 /* ZJFeedVideo */,
 				579DFD0F280D4B3900EAF128 /* ZJNativeExpressFeedAd */,
 				579DFCFD280D4B3900EAF128 /* NativeExpressFeedAd */,
@@ -1040,6 +1045,7 @@
 				576EF889261DA0EF00512AF7 /* UIImage+Metadata.m in Sources */,
 				576EF873261DA0EF00512AF7 /* SDAnimatedImageRep.m in Sources */,
 				579DFD53280D4B3A00EAF128 /* ZJNativeAdImageTableViewCell.m in Sources */,
+				AB706EAD29526EA2006C5B4F /* ZJNewsAdViewController.m in Sources */,
 				579DFD50280D4B3A00EAF128 /* ZJJSBridgeViewController.m in Sources */,
 				576EF86F261DA0EF00512AF7 /* SDImageCoderHelper.m in Sources */,
 				576EF866261DA0EF00512AF7 /* UIImage+GIF.m in Sources */,
