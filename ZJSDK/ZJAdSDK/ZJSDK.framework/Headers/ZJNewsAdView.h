@@ -46,6 +46,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (instancetype)initWithPlacementId:(NSString *)placementId frame:(CGRect)frame;
 - (void)loadAdAndShow;
+- (BOOL)canGoBack;
 - (void)goBack;
 @end
 
