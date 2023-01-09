@@ -90,7 +90,7 @@ TODO: Add long description of the pod here.
   s.subspec 'ZJSDKModuleSIG' do |ss|
     ss.vendored_libraries = 'ZJSDK/ZJSDKModuleSIG/*.a'
     ss.dependency 'ZJSDK/ZJAdSDK'
-    ss.dependency 'SigmobAd-iOS', '~> 4.3.0'
+    ss.dependency 'SigmobAd-iOS', '~> 4.0'
   end
 
   s.subspec 'ZJSDKModuleYM' do |ss|
