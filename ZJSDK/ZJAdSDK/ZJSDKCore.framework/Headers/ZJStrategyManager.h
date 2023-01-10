@@ -34,7 +34,7 @@ typedef NS_ENUM(NSInteger, ZJStrategy) {
 /// 判断此ID是否正在执行策略,启动后首次请求adid需要从磁盘中读取，会提前返回默认不执行，后续考虑读取放在主线程，其他操作异步。
 /// @param adid 联盟广告位ID
 /// @param errorStrategy 广告位ID对应的错误策略 （限制策略触发次数;触发有效时间间隔;限制策略限制分钟数;错误策略触发次数;触发有效时间间隔;错误策略限制分钟数）
-- (BOOL)isExcutingStategyForAdid:(NSString *)adid errorStrategy:(NSString *)errorStrategy;
+//- (BOOL)isExcutingStategyForAdid:(NSString *)adid errorStrategy:(NSString *)errorStrategy;
 
 
 /// 判断此ID是否正在执行限制次数策略,启动后首次请求adid需要从磁盘中读取，会提前返回默认不执行，后续考虑读取放在主线程，其他操作异步。

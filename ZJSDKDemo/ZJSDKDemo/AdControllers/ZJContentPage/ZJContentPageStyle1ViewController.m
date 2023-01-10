@@ -8,7 +8,7 @@
 
 #import "ZJContentPageStyle1ViewController.h"
 #import <ZJSDK/ZJContentPage.h>
-#import <ZJSDK/ZJContentPageDelegate.h>
+#import <ZJSDK/ZJContentPageStateDelegate.h>
 @interface ZJContentPageStyle1ViewController ()<ZJContentPageVideoStateDelegate,ZJContentPageStateDelegate>
 
 @property (nonatomic,strong)ZJContentPage *contentPage;

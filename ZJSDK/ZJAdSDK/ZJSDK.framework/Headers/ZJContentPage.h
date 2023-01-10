@@ -7,10 +7,16 @@
 //
 
 #import "ZJAd.h"
-#import "ZJContentPageDelegate.h"
+#import "ZJContentPageStateDelegate.h"
+#import <ZJSDKCore/ZJContentInfo.h>
 NS_ASSUME_NONNULL_BEGIN
-
-@interface ZJContentPage : ZJAd
+//typedef NS_ENUM(NSInteger, ZJContentPageType){
+//    
+//    ZJContentPageDefault = 0,
+//    
+////    ZJContentPage,
+//};
+@interface ZJContentPage : ZJAd <ZJContentInfo>
 
 @property (nonatomic, readonly) UIViewController *viewController;
 ///视频状态代理
@@ -18,12 +24,6 @@ NS_ASSUME_NONNULL_BEGIN
 ///页面状态代理
 @property (nonatomic, weak) id <ZJContentPageStateDelegate> stateDelegate;
 
-///内容标识
-@property (nonatomic, copy, readonly) NSString *contentInfoId;
-///内容类型
-@property (nonatomic, assign, readonly) ZJContentInfoType contentInfoType;
-
-///刷新
 - (void)tryToRefresh;
 
 @end

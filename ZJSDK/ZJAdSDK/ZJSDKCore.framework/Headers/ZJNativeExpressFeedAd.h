@@ -50,6 +50,7 @@ NS_ASSUME_NONNULL_BEGIN
 @interface ZJNativeExpressFeedAd : NSObject
 
 @property (nonatomic,strong,readonly) UIView *feedView;
+@property (nonatomic)BOOL hasShown;
 
 /**
  * Whether render is ready

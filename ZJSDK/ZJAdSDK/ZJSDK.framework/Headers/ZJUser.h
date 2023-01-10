@@ -19,6 +19,8 @@ NS_ASSUME_NONNULL_BEGIN
 @property(nonatomic,copy) NSString*  userAvatar;
 //optional. 用户积分
 @property(nonatomic,assign) NSInteger userIntegral;
+//optional. 广告位id
+@property(nonatomic,copy) NSString *posId;
 //optional. 扩展信息
 @property(nonatomic,copy) NSString* ext;
 

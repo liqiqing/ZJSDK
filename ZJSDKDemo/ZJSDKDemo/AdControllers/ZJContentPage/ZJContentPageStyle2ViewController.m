@@ -9,7 +9,7 @@
 #import "ZJContentPageStyle2ViewController.h"
 #import "ZJContentPageSelectedBar.h"
 #import <ZJSDK/ZJContentPage.h>
-#import <ZJSDK/ZJContentPageDelegate.h>
+#import <ZJSDK/ZJContentPageStateDelegate.h>
 @interface ZJContentPageStyle2ViewController ()<ZJContentPageVideoStateDelegate,ZJContentPageStateDelegate,UIScrollViewDelegate>{
     CGFloat _beginOffsetX;
     NSInteger _lastIndex;
