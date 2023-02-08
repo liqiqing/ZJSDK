@@ -53,7 +53,7 @@ TODO: Add long description of the pod here.
   s.subspec 'ZJSDKModuleGDT' do |ss|
     ss.vendored_libraries = 'ZJSDK/ZJSDKModuleGDT/*.a'
     ss.dependency 'ZJSDK/ZJAdSDK'
-    ss.dependency 'GDTMobSDK', '~> 4.13'
+    ss.dependency 'GDTMobSDK', '~> 4.14'#4.13.51不支持bidding，4.13.81支持bidding
   end
 
   s.subspec 'ZJSDKModuleCSJ' do |ss|
