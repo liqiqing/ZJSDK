@@ -53,7 +53,9 @@ TODO: Add long description of the pod here.
   s.subspec 'ZJSDKModuleGDT' do |ss|
     ss.vendored_libraries = 'ZJSDK/ZJSDKModuleGDT/*.a'
     ss.dependency 'ZJSDK/ZJAdSDK'
-    ss.dependency 'GDTMobSDK', '~> 4.14'#4.13.51不支持bidding，4.13.81支持bidding
+    ss.dependency 'GDTMobSDK', '~> 4.14'
+#    4.13.51 bidding竞败上报方法sendLossNotificationWithPrice，4.13.81为sendLossNotificationWithPrice
+#   固定到4.13可能会导致crash
   end
 
   s.subspec 'ZJSDKModuleCSJ' do |ss|
@@ -67,6 +69,7 @@ TODO: Add long description of the pod here.
     ss.dependency 'ZJSDK/ZJAdSDK'
 #    ss.vendored_frameworks = 'ZJSDK/ZJSDKModuleKS/KSAdSDK.framework'
     ss.dependency 'KSAdSDK', '~> 3.3.6'
+#    bidding广告 3.3.6 以上，内容 3.3.10 以上 sdk 版本
   end
 
   s.subspec 'ZJSDKModuleMTG' do |ss|
@@ -90,7 +93,8 @@ TODO: Add long description of the pod here.
   s.subspec 'ZJSDKModuleSIG' do |ss|
     ss.vendored_libraries = 'ZJSDK/ZJSDKModuleSIG/*.a'
     ss.dependency 'ZJSDK/ZJAdSDK'
-    ss.dependency 'SigmobAd-iOS', '~> 4.0'
+    ss.dependency 'SigmobAd-iOS', '~> 4.2'
+#   sig更新日志要找运营看，或者自己注册一个账号看一下
   end
 
   s.subspec 'ZJSDKModuleYM' do |ss|
@@ -112,5 +116,6 @@ TODO: Add long description of the pod here.
    ss.vendored_libraries = 'ZJSDK/ZJSDKModuleBD/*.a'
    ss.dependency 'ZJSDK/ZJAdSDK'
    ss.dependency 'BaiduMobAdSDK', '~> 4.81'
+#  bidding要求 IOS V4.81及以上版本
  end
 end
