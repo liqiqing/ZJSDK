@@ -24,7 +24,7 @@ NS_ASSUME_NONNULL_BEGIN
 /**
  newsAdView曝光回调
  */
-- (void)zjad_newsAdViewWillBecomVisible:(ZJNewsAdAdapter *)newsAd;
+- (void)zjad_newsAdViewDidShow:(ZJNewsAdAdapter *)newsAd;
 
 /**
  关闭news广告回调
@@ -36,17 +36,25 @@ NS_ASSUME_NONNULL_BEGIN
  */
 - (void)zjad_newsAdViewDidClick:(ZJNewsAdAdapter *)newsAd;
 
+/**
+ canGoBack状态监听
+ */
+- (void)zjad_newsAd:(ZJNewsAdAdapter *)newsAd canGoBackStateChange:(BOOL)canGoBack;
+
 @end
 
 @interface ZJNewsAdAdapter : ZJCoreAdAdapter <ZJNewsAdProtocol>
 @property(nonatomic,weak) id<ZJNewsAdAdapterDelegate> delegate;
-@property (nonatomic,weak)UIView *adView;
-@property (nonatomic, strong) UILabel *remindLab;
+@property (nonatomic,strong)UIView *adView;
 - (instancetype)initWithAdItemConfig:(ZJAdUnitModel *)adItemConfig frame:(CGRect)frame;
 @property (nonatomic, readonly) BOOL canGoBack;
 @property (nonatomic, readonly) BOOL canGoForward;
-- (void)goBack;
-- (void)goForward;
+@property (nonatomic, assign) BOOL enableGoBackGesture;
+@property (nonatomic, assign) BOOL enableSlide;
+- (BOOL)goBack;
+- (BOOL)goForward;
+- (void)removeTimer;
+
 //- (void)reload;
 //- (void)stopLoading;
 
@@ -64,7 +72,7 @@ NS_ASSUME_NONNULL_BEGIN
 /**
  newsAdView曝光回调
  */
-- (void)zjad_newsAdViewWillBecomVisible:(ZJNewsAdAdapter *)newsAd;
+- (void)zjad_newsAdViewDidShow:(ZJNewsAdAdapter *)newsAd;
 
 /**
  news广告发奖回调
@@ -76,7 +84,10 @@ NS_ASSUME_NONNULL_BEGIN
  */
 - (void)zjad_newsAdViewDidClick:(ZJNewsAdAdapter *)newsAd;
 
-
+/**
+ canGoBack状态监听
+ */
+- (void)zjad_newsAdCanGoBackStateChange:(BOOL)canGoBack;
 @end
 
 NS_ASSUME_NONNULL_END

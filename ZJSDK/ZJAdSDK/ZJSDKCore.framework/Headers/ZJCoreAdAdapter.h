@@ -16,7 +16,8 @@ NS_ASSUME_NONNULL_BEGIN
 @interface ZJCoreAdAdapter : NSObject
 
 @property(nonatomic, strong ,readonly) ZJAdUnitModel *config;
-
+///结算价格
+@property (nonatomic, strong) NSString *secondPrice;
 - (instancetype)initWithAdItemConfig:(ZJAdUnitModel *)adItemConfig;
 
 
