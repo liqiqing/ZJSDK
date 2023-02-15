@@ -49,8 +49,14 @@
 //    [self.webView loadHTMLString:indexContent baseURL:baseUrl];
     
 
+//    NSString *htmlFile = [[NSBundle mainBundle]pathForResource:@"index" ofType:@"html"];
+//    NSURL *baseUrl = [NSURL fileURLWithPath:htmlFile isDirectory: YES];
+//    NSString *indexContent = [NSString stringWithContentsOfFile:htmlFile encoding: NSUTF8StringEncoding error:nil];
+//    [self.webView loadHTMLString:indexContent baseURL:baseUrl];
+    
     NSURL *url = [NSURL URLWithString:@"http://static.jrongjie.com/zjsdk_project/pointsmall/template_b/index.html#/points_center?sdk_appid=Z7186381378"];
-    NSURLRequest *req = [[NSURLRequest alloc]initWithURL:url];
+    NSMutableURLRequest *req = [[NSMutableURLRequest alloc]initWithURL:url];
+    [req setValue:url.absoluteString forHTTPHeaderField:@"Referer"];
     [self.webView loadRequest:req];
     
 //    NSURL *url = [NSURL URLWithString:@"http://static.jrongjie.com/zjprodect-demo/news/index.html"];
@@ -69,14 +75,26 @@
         return;
     }else if (url.scheme&&([url.scheme hasPrefix:@"alipays"]||[url.scheme hasPrefix:@"alipay"])){
         // NOTE: 跳转支付宝App
-        [[UIApplication sharedApplication]openURL:url];
-
+        BOOL bSucc = [[UIApplication sharedApplication] canOpenURL:url];
+        if(bSucc){
+            [[UIApplication sharedApplication]openURL:url];
+        }else{
+            UIAlertController *alertViewController = [UIAlertController alertControllerWithTitle:@"提示" message:@"未检测到支付宝客户端，请安装后重试。" preferredStyle:UIAlertControllerStyleAlert];
+            [alertViewController addAction:[UIAlertAction actionWithTitle:@"立即安装" style:UIAlertActionStyleDefault handler:nil]];
+            [self presentViewController:alertViewController animated:YES completion:nil];
+        }
         decisionHandler(WKNavigationActionPolicyAllow);
         return;
     }else if (url.scheme&&([url.scheme hasPrefix:@"tbopen"]||[url.scheme hasPrefix:@"tbopens"])){
         // NOTE: 跳转支付宝App
-        [[UIApplication sharedApplication]openURL:url];
-
+        BOOL bSucc = [[UIApplication sharedApplication] canOpenURL:url];
+        if(bSucc){
+            [[UIApplication sharedApplication]openURL:url];
+        }else{
+            UIAlertController *alertViewController = [UIAlertController alertControllerWithTitle:@"提示" message:@"未检测到淘宝客户端，请安装后重试。" preferredStyle:UIAlertControllerStyleAlert];
+            [alertViewController addAction:[UIAlertAction actionWithTitle:@"立即安装" style:UIAlertActionStyleDefault handler:nil]];
+            [self presentViewController:alertViewController animated:YES completion:nil];
+        }
         decisionHandler(WKNavigationActionPolicyAllow);
         return;
     }else if(url.scheme&&![url.scheme hasPrefix:@"http"]){

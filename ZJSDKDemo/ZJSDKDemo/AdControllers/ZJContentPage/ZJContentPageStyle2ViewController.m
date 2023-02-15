@@ -192,21 +192,21 @@
  * 视频开始播放
  * @param videoContent 内容模型
  */
-- (void)zj_videoDidStartPlay:(ZJContentPage *)videoContent{
+- (void)zj_videoDidStartPlay:(id<ZJContentInfo>)videoContent{
     NSLog(@"%s",__FUNCTION__);
 }
 /**
 * 视频暂停播放
 * @param videoContent 内容模型
 */
-- (void)zj_videoDidPause:(ZJContentPage *)videoContent{
+- (void)zj_videoDidPause:(id<ZJContentInfo>)videoContent{
     NSLog(@"%s",__FUNCTION__);
 }
 /**
 * 视频恢复播放
 * @param videoContent 内容模型
 */
-- (void)zj_videoDidResume:(ZJContentPage *)videoContent{
+- (void)zj_videoDidResume:(id<ZJContentInfo>)videoContent{
     NSLog(@"%s",__FUNCTION__);
 }
 /**
@@ -214,7 +214,7 @@
 * @param videoContent 内容模型
 * @param finished     是否播放完成
 */
-- (void)zj_videoDidEndPlay:(ZJContentPage *)videoContent isFinished:(BOOL)finished{
+- (void)zj_videoDidEndPlay:(id<ZJContentInfo>)videoContent isFinished:(BOOL)finished{
     NSLog(@"%s",__FUNCTION__);
 }
 /**
@@ -222,7 +222,7 @@
 * @param videoContent 内容模型
 * @param error        失败原因
 */
-- (void)zj_videoDidFailedToPlay:(ZJContentPage *)videoContent withError:(NSError *)error{
+- (void)zj_videoDidFailedToPlay:(id<ZJContentInfo>)videoContent withError:(NSError *)error{
     NSLog(@"%s",__FUNCTION__);
 }
 
@@ -232,28 +232,28 @@
 * 内容展示
 * @param content 内容模型
 */
-- (void)zj_contentDidFullDisplay:(ZJContentPage *)content{
+- (void)zj_contentDidFullDisplay:(id<ZJContentInfo>)content{
     NSLog(@"%s",__FUNCTION__);
 }
 /**
 * 内容隐藏
 * @param content 内容模型
 */
-- (void)zj_contentDidEndDisplay:(ZJContentPage *)content{
+- (void)zj_contentDidEndDisplay:(id<ZJContentInfo>)content{
     NSLog(@"%s",__FUNCTION__);
 }
 /**
 * 内容暂停显示，ViewController disappear或者Application resign active
 * @param content 内容模型
 */
-- (void)zj_contentDidPause:(ZJContentPage *)content{
+- (void)zj_contentDidPause:(id<ZJContentInfo>)content{
     NSLog(@"%s",__FUNCTION__);
 }
 /**
 * 内容恢复显示，ViewController appear或者Application become active
 * @param content 内容模型
 */
-- (void)zj_contentDidResume:(ZJContentPage *)content{
+- (void)zj_contentDidResume:(id<ZJContentInfo>)content{
     NSLog(@"%s",__FUNCTION__);
 }
 @end

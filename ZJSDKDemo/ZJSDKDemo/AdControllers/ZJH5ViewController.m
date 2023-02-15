@@ -32,6 +32,7 @@
     user.userName = @"吊炸天524";
     user.userAvatar = @"";
     user.userIntegral = 10000;
+    user.posId = adId;
     user.ext = @"超级无敌4";
     self.zjH5Page = [[ZJH5Page alloc] initWithPlacementId:adId user:user delegate:self];
     [self.zjH5Page loadH5Page];
@@ -56,7 +57,7 @@
     }
         
     else{
-        NSString *msg =[error.userInfo valueForKey:@"info"];
+        NSString *msg =[error.userInfo valueForKey:NSLocalizedDescriptionKey];
         UIAlertController *alertController = [UIAlertController alertControllerWithTitle:@"提示" message:msg preferredStyle:UIAlertControllerStyleAlert];
        
         [alertController addAction:([UIAlertAction actionWithTitle:@"确认" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {

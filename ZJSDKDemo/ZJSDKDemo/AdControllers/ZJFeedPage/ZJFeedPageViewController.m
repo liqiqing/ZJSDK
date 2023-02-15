@@ -1,26 +1,26 @@
 //
-//  ZJContentPageStyle1ViewController.m
+//  ZJFeedPageViewController.m
 //  ZJSDKDemo
 //
 //  Created by Rare on 2020/12/22.
 //  Copyright © 2020 zj. All rights reserved.
 //
 
-#import "ZJContentPageStyle1ViewController.h"
-#import <ZJSDK/ZJContentPage.h>
+#import "ZJFeedPageViewController.h"
+#import <ZJSDK/ZJFeedPage.h>
 #import <ZJSDK/ZJContentPageStateDelegate.h>
-@interface ZJContentPageStyle1ViewController ()<ZJContentPageVideoStateDelegate,ZJContentPageStateDelegate>
+@interface ZJFeedPageViewController ()<ZJContentPageVideoStateDelegate,ZJContentPageStateDelegate>
 
-@property (nonatomic,strong)ZJContentPage *contentPage;
+@property (nonatomic,strong)ZJFeedPage *contentPage;
 @end
 
-@implementation ZJContentPageStyle1ViewController
+@implementation ZJFeedPageViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor whiteColor];
     
-    self.contentPage = [[ZJContentPage alloc]initWithPlacementId:self.contentId];
+    self.contentPage = [[ZJFeedPage alloc]initWithPlacementId:self.contentId];
     self.contentPage.videoStateDelegate = self;
     self.contentPage.stateDelegate = self;
     UIViewController *vc = self.contentPage.viewController;

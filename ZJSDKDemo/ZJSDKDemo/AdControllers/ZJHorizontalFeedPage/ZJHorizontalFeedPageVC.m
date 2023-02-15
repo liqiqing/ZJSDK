@@ -1,28 +1,27 @@
 //
-//  ZJContentPageStyle1ViewController.m
+//  ZJHorizontalFeedPageVC.m
 //  ZJSDKDemo
 //
-//  Created by Rare on 2020/12/22.
-//  Copyright © 2020 zj. All rights reserved.
+//  Created by 麻明康 on 2023/1/5.
+//  Copyright © 2023 zj. All rights reserved.
 //
 
-#import "ZJContentPageStyle1ViewController.h"
-#import <ZJSDK/ZJContentPage.h>
+#import "ZJHorizontalFeedPageVC.h"
+#import <ZJSDK/ZJHorizontalFeedPage.h>
 #import <ZJSDK/ZJContentPageStateDelegate.h>
-@interface ZJContentPageStyle1ViewController ()<ZJContentPageVideoStateDelegate,ZJContentPageStateDelegate>
+@interface ZJHorizontalFeedPageVC ()<ZJContentPageHorizontalFeedCallBackDelegate>
+@property (nonatomic,strong)ZJHorizontalFeedPage *contentPage;
 
-@property (nonatomic,strong)ZJContentPage *contentPage;
 @end
 
-@implementation ZJContentPageStyle1ViewController
+@implementation ZJHorizontalFeedPageVC
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor whiteColor];
     
-    self.contentPage = [[ZJContentPage alloc]initWithPlacementId:self.contentId];
-    self.contentPage.videoStateDelegate = self;
-    self.contentPage.stateDelegate = self;
+    self.contentPage = [[ZJHorizontalFeedPage alloc]initWithPlacementId:self.contentId];
+    self.contentPage.callBackDelegate = self;
     UIViewController *vc = self.contentPage.viewController;
     if(vc){
         CGFloat contentY = [UIApplication sharedApplication].statusBarFrame.size.height+self.navigationController.navigationBar.frame.size.height;
@@ -32,11 +31,33 @@
     }else{
         NSLog(@"未能创建对应广告位VC，建议从以下原因排查：\n 1，视频内容需要手动导入快手模块（pod版本不支持视频内容）\n 2，确保sdk已注册成功 \n 3，确保广告位正确可用");
     }
-//    [vc.view mas_makeConstraints:^(MASConstraintMaker *make) {
-//        make.top.mas_equalTo(200);
-//        make.left.right.mas_equalTo(0);
-//        make.bottom.mas_equalTo(-80);
-//    }];
+}
+
+
+#pragma mark =============== ZJContentPageHorizontalFeedCallBackDelegate ===============
+
+/// 进入横版视频详情页
+/// @param viewController 详情页VC
+/// @param content 视频信息
+- (void)zjAdapter_horizontalFeedDetailDidEnter:(UIViewController *)viewController contentInfo:(id<ZJContentInfo>)content{
+    NSLog(@"%s",__FUNCTION__);
+}
+/// 离开横版视频详情页
+/// @param viewController 详情页VC
+- (void)zjAdapter_horizontalFeedDetailDidLeave:(UIViewController *)viewController{
+    NSLog(@"%s",__FUNCTION__);
+}
+
+/// 视频详情页appear
+/// @param viewController 详情页VC
+- (void)zjAdapter_horizontalFeedDetailDidAppear:(UIViewController *)viewController{
+    NSLog(@"%s",__FUNCTION__);
+}
+
+/// 详情页disappear
+/// @param viewController 详情页VC
+- (void)zjAdapter_horizontalFeedDetailDidDisappear:(UIViewController *)viewController{
+    NSLog(@"%s",__FUNCTION__);
 }
 
 #pragma mark ZJContentPageVideoStateDelegate

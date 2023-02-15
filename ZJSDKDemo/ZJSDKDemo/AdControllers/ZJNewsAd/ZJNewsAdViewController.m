@@ -11,7 +11,8 @@
 #import "BaiduMobAdSDK/BaiduMobAdCommonConfig.h"
 #import <WebKit/WebKit.h>
 #import <ZJSDK/ZJNewsAdView.h>
-
+#import <ZJSDKCore/ZJSDKDefines.h>
+#import "PresentedNavViewController.h"
 @interface ZJNewsAdViewController () <ZJNewsAdViewDelegate>
 @property(nonatomic,strong) ZJNewsAdView *newsAdView;
 
@@ -22,8 +23,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     //J1321306298
-    [self.loadAdView appendAdID:@[@"J1321306298"]];
-    self.loadAdView.showButton.hidden = YES;
+    [self.loadAdView appendAdID:@[@"J6316865941",@"J1321306298"]];
+    [self.loadAdView.showButton setHidden:YES];
+    __weak typeof(self) weakSelf = self;
     [self setBackBarButton];
 
 }
@@ -53,13 +55,65 @@
     [leftview addSubview:backButton];
     self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:leftview];
 }
-
 //返回按钮
 -(void)closeView
 {
-    //    NewPostViewController*postView= (NewPostViewController*)self.parent;
-    //    postView.isFromImagePicker=1;
-    [self.newsAdView goBack];
+    if ([self.newsAdView canGoBack]) {
+        [self.newsAdView goBack];
+    } else {
+        if (_newsAdView) {
+            [_newsAdView removeFromSuperview];
+            _newsAdView = nil;
+        } else {
+            [self.navigationController popViewControllerAnimated:YES];
+        }
+    }
+}
+
+#pragma mark =============== ZJNewsAdViewDelegate ===============
+/**
+ news广告加载成功
+ */
+- (void)zj_newsAdViewDidLoad:(ZJNewsAdView *)newsAdView{
+    [self logMessage:NSStringFromSelector(_cmd)];
+}
+
+- (void)zj_newsAdViewDidShow:(ZJNewsAdView *)newsAdView{
+    [self logMessage:NSStringFromSelector(_cmd)];
+}
+/**
+ news广告加载失败
+ */
+- (void)zj_newsAdView:(ZJNewsAdView *)newsAdView didLoadFailWithError:(NSError * _Nullable)error{
+    [self logMessage:NSStringFromSelector(_cmd)];
+
+    [self.newsAdView removeFromSuperview];
+
+}
+
+/**
+ news广告奖励触发回调
+ */
+- (void)zj_newsAdViewRewardEffective:(ZJNewsAdView *)newsAdView{
+    [self logMessage:NSStringFromSelector(_cmd)];
+
+}
+
+/**
+ 点击news广告回调
+ */
+- (void)zj_newsAdViewDidClick:(ZJNewsAdView *)newsAdView{
+    [self logMessage:NSStringFromSelector(_cmd)];
+
+}
+
+/**
+ canGoBack状态监听
+ */
+- (void)zj_newsAd:(ZJNewsAdView *)newsAd canGoBackStateChange:(BOOL)canGoBack{
+    [self logMessage:NSStringFromSelector(_cmd)];
+    self.newsAdView.enableGoBackGesture = canGoBack;
+    self.newsAdView.enableSlide = !canGoBack;
 }
 
 - (void)viewWillAppear:(BOOL)animated{
@@ -72,39 +126,10 @@
         [_newsAdView removeFromSuperview];
         _newsAdView = nil;
     }
-    self.newsAdView = [[ZJNewsAdView alloc] initWithPlacementId:adId frame:self.view.bounds];
+    self.newsAdView = [[ZJNewsAdView alloc] initWithPlacementId:adId frame:CGRectMake(0, ZJ_StatusBarHeight+44, kScreenWidth, kScreenHeight-ZJ_StatusBarHeight-44)];
     self.newsAdView.delegate = self;
     [self.newsAdView loadAdAndShow];
     [self.view addSubview:self.newsAdView];
 }
-#pragma mark =============== ZJNewsAdViewDelegate ===============
-/**
- news广告加载成功
- */
-- (void)zj_newsAdViewDidLoad:(ZJNewsAdView *)newsAdView{
-    NSLog(@"====：%@",NSStringFromSelector(_cmd));
-}
-
-/**
- news广告加载失败
- */
-- (void)zj_newsAdView:(ZJNewsAdView *)newsAdView didLoadFailWithError:(NSError * _Nullable)error{
-    NSLog(@"====：%@",NSStringFromSelector(_cmd));
-}
-
-/**
- news广告奖励触发回调
- */
-- (void)zj_newsAdViewRewardEffective:(ZJNewsAdView *)newsAdView{
-    NSLog(@"====：%@",NSStringFromSelector(_cmd));
-}
-
-/**
- 点击news广告回调
- */
-- (void)zj_newsAdViewDidClick:(ZJNewsAdView *)newsAdView{
-    NSLog(@"====：%@",NSStringFromSelector(_cmd));
-}
-
 
 @end

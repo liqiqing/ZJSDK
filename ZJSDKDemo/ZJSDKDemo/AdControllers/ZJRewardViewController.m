@@ -22,7 +22,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-   [self.loadAdView appendAdID:@[@"J4008472476",@"c945709452",@"zjad_iOS_ZR0001",@"zjad_T945484376"]];
+   [self.loadAdView appendAdID:@[@"J4008472476",@"c945709452",@"zjad_G8020744212936426",@"KS90010001",@"zjad_T945484376",@"zjad_M240919",@"zjad_iOS_ZR0001",@"zjad_T945484376"]];
 }
 
 -(void)viewWillAppear:(BOOL)animated{
@@ -70,11 +70,8 @@
 */
 - (void)zj_rewardVideoAdVideoDidLoad:(ZJRewardVideoAd *)rewardedVideoAd{
     self.loadAdView.showButton.backgroundColor = kMainColor;
-    NSArray *errors =  [self.rewardVideoAd getFillFailureMessages];
-    NSLog(@"激励视频所有错误信息 %@",errors);
     [self logMessage:@"rewardVideoAdVideoDidLoad"];
     [self logMessage:[self.rewardVideoAd valueForKey:@"logString"]];
-    [self logMessage:[NSString stringWithFormat:@"报错信息:%@",errors.count > 0?errors:@"无"]];
 }
 
 

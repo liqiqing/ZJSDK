@@ -15,8 +15,6 @@
 #import "SDWebImage.h"
 
 
-#import "ZJCommonDefine.h"
-
 //Macro
 #define kMainColor [UIColor colorWithRed:33/255.0 green:152/255.0 blue:217/255.0 alpha:1.0f];
 
@@ -27,7 +25,8 @@ isPhoneX = [[UIApplication sharedApplication] delegate].window.safeAreaInsets.bo
 }\
 (isPhoneX);})
 
-#define kNavigationBarHeight (kIsIphoneX ? 88 : 64)
+//#define kNavigationBarHeight (kIsIphoneX ? 88 : 64)
+#define kNavigationBarHeight ([UIApplication sharedApplication].statusBarFrame.size.height+44.0)
 
 #define kScreenWidth [UIScreen mainScreen].bounds.size.width
 

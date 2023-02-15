@@ -69,8 +69,6 @@
 #pragma mark - ZJNativeExpressFeedAdManagerDelegate
 -(void)ZJ_nativeExpressFeedAdManagerSuccessToLoad:(ZJNativeExpressFeedAdManager *)adsManager nativeAds:(NSArray<ZJNativeExpressFeedAd *> *)feedAdDataArray{
     [self.logView logMessage:[NSString stringWithFormat:@"nativeExpressFeedAdManagerSuccessToLoad: %ld",feedAdDataArray.count]];
-    NSArray *errors =  [self.feedAd getFillFailureMessages];
-    [self.logView logMessage:[NSString stringWithFormat:@"报错信息:%@",errors.count > 0?errors:@"无"]];
     [self.logView logMessage:[self.feedAd valueForKey:@"logString"]];
     //不要保存太多广告，需要在合适的时机手动释放不用的，否则内存会过大
 //    if (self.adArray.count > 0) {

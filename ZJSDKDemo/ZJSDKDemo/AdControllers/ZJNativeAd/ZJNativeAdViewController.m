@@ -77,9 +77,6 @@
         NSLog(@"自渲染错误回调:%@",error);
     }
     [self.logView logMessage:[self.nativeAd valueForKey:@"logString"]];
-    
-    NSArray *errors =  [self.nativeAd getFillFailureMessages];
-    [self.logView logMessage:[NSString stringWithFormat:@"报错信息:%@",errors.count > 0?errors:@"无"]];
 }
 
 #pragma mark  - Property

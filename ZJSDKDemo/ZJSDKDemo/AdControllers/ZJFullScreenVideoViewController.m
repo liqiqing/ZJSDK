@@ -18,7 +18,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [self.loadAdView appendAdID:@[@"J2068944817",@"J9684504174"]];
+    [self.loadAdView appendAdID:@[@"J6134483187",@"J2068944817",@"J9684504174",@"J8541615186"]];
 }
 
 -(void)loadAd:(NSString*) adId{
@@ -37,11 +37,8 @@
 //广告加载成功
 - (void)zj_fullScreenVideoAdDidLoad:(ZJFullScreenVideoAd*)ad{
     self.loadAdView.showButton.backgroundColor = kMainColor;
-    NSArray *errors =  [self.fullVideoAd getFillFailureMessages];
-    NSLog(@"所有错误信息 %@",errors);
     [self logMessage:@"fullScreenVideoAdDidLoad"];
     [self logMessage:[self.fullVideoAd valueForKey:@"logString"]];
-    [self logMessage:[NSString stringWithFormat:@"报错信息:%@",errors.count > 0?errors:@"无"]];
 }
 //广告加载失败
 - (void)zj_fullScreenVideoAdDidLoadFail:(ZJFullScreenVideoAd*)ad error:(NSError * __nullable)error{

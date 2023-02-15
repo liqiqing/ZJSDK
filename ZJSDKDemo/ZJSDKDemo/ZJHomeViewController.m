@@ -79,9 +79,11 @@
 - (NSArray*)adTypes{
     if(!_adTypes){
         NSArray *section1 = @[@"开屏",@"激励视频",@"插屏",@"全屏视频",@"Banner"];
-        NSArray *section2 = @[@"视频流",@"信息流",@"自渲染",@"视频内容"];
-        NSArray *section3 = @[@"H5页面",@"悬浮广告",@"H5页面JS交互"];
-        _adTypes = [NSArray arrayWithObjects:section1, section2, section3, nil];
+        NSArray *section2 = @[@"视频流",@"信息流",@"自渲染"];
+        NSArray *section3 = @[@"视频内容列表",@"视频内容瀑布流",@"视频内容横版",@"视频内容图文",];
+        NSArray *section4 = @[@"新闻资讯",@"H5页面",@"悬浮广告",@"H5页面JS交互"];
+        NSArray *section5 = @[@"微信小程序广告"];
+        _adTypes = [NSArray arrayWithObjects:section1, section2, section3,section4,section5, nil];
     }
     return _adTypes;;
 }
@@ -95,14 +97,21 @@
         [_demoVCDictionary setValue:@"ZJFullScreenVideoViewController" forKey:@"全屏视频"];
         [_demoVCDictionary setValue:@"ZJBannerViewController" forKey:@"Banner"];
         
-        [_demoVCDictionary setValue:@"ZJContentPageViewController" forKey:@"视频内容"];
         [_demoVCDictionary setValue:@"ZJFeedFullVideoViewController" forKey:@"视频流"];
         [_demoVCDictionary setValue:@"ZJFeedAdsViewController" forKey:@"信息流"];
         [_demoVCDictionary setValue:@"ZJNativeAdSelectedViewController" forKey:@"自渲染"];
         
+        [_demoVCDictionary setValue:@"ZJContentPageViewController" forKey:@"视频内容列表"];
+        [_demoVCDictionary setValue:@"ZJFeedPageLoadViewController" forKey:@"视频内容瀑布流"];
+        [_demoVCDictionary setValue:@"ZJHorizontalFeedPageLoadVC" forKey:@"视频内容横版"];
+        [_demoVCDictionary setValue:@"ZJImageTextLoadVC" forKey:@"视频内容图文"];
+
+        [_demoVCDictionary setValue:@"ZJNewsAdViewController" forKey:@"新闻资讯"];
         [_demoVCDictionary setValue:@"ZJH5ViewController" forKey:@"H5页面"];
         [_demoVCDictionary setValue:@"ZJFloatingAdViewController" forKey:@"悬浮广告"];
         [_demoVCDictionary setValue:@"ZJJSBridgeViewController" forKey:@"H5页面JS交互"];
+        [_demoVCDictionary setValue:@"ZJMiniParamViewController" forKey:@"微信小程序广告"];
+
     }
     return _demoVCDictionary;;
 }

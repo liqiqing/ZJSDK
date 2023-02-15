@@ -20,6 +20,7 @@
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor whiteColor];
     [self.view addSubview:self.loadAdView];
+    [self.navigationController.navigationBar setBackgroundColor:[UIColor whiteColor]];
     __weak typeof(self) weakSelf = self;
     [self.loadAdView.loadButton clickHandle:^(UIButton *button) {
         [weakSelf loadAd:weakSelf.loadAdView.adIDTextField.text];

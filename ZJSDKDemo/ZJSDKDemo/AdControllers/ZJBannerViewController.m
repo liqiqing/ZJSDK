@@ -55,8 +55,6 @@
  banner广告加载成功
  */
 - (void)zj_bannerAdViewDidLoad:(ZJBannerAdView *)bannerAdView{
-    NSArray *errors =  [self.bannerView getFillFailureMessages];
-    [self logMessage:[NSString stringWithFormat:@"报错信息:%@",errors.count > 0?errors:@"无"]];
     [self logMessage:@"bannerAdViewDidLoad"];
 }
 

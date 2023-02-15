@@ -90,8 +90,6 @@
  */
 - (void)zj_feedFullVideoProviderLoadSuccess:(ZJFeedFullVideoProvider *)provider views:(NSArray<__kindof ZJFeedFullVideoView *> *)views{
     [self.logView logMessage:[NSString stringWithFormat:@"feedFullVideoProviderLoadSuccess: %ld",views.count]];
-    NSArray *errors =  [self.adProvider getFillFailureMessages];
-    [self.logView logMessage:[NSString stringWithFormat:@"报错信息:%@",errors.count > 0?errors:@"无"]];
     [self.logView logMessage:[self.adProvider valueForKey:@"logString"]];
     if (views.count) {
         NSMutableArray *dataSources = [NSMutableArray arrayWithCapacity:0];

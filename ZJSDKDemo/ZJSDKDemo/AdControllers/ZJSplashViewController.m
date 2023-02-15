@@ -21,7 +21,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [self.loadAdView appendAdID:@[@"J8648995207",@"J5621495755"]];
+    [self.loadAdView appendAdID:@[@"zjad_iOS_ZS0001",@"zjad_G9040714184494018",@"J8648995207",@"J5621495755",@"zjad_T887381439",@"c887417368",@"J8541615186"]];
 }
 
 
@@ -65,11 +65,8 @@
  */
 -(void)zj_splashAdDidLoad:(ZJSplashAd *)splashAd{
     self.loadAdView.showButton.backgroundColor = kMainColor;
-    NSArray *errors =  [self.splashAd getFillFailureMessages];
-    NSLog(@"开屏广告所有错误信息 %@",errors);
     [self logMessage:@"splashAdDidLoad"];
     [self logMessage:[splashAd valueForKey:@"logString"]];
-    [self logMessage:[NSString stringWithFormat:@"报错信息:%@",errors.count > 0?errors:@"无"]];
 }
 
 /**
@@ -79,6 +76,7 @@
     self.loadAdView.showButton.backgroundColor = [UIColor lightGrayColor];
     [self logMessage:@"splashAdShow"];
 }
+
 
 /**
  *  开屏广告点击回调
@@ -128,6 +126,18 @@
     [self logMessage:[NSString stringWithFormat:@"splashAdError : %@",error]];
 }
 
+/**
+ *  开屏广告播放错误
+ */
+- (void)zj_splashAdDisplayError:(ZJSplashAd *)splashAd withError:(NSError *)error{
+    self.loadAdView.showButton.backgroundColor = [UIColor lightGrayColor];
+    [self logMessage:@"zj_splashAdDisplayError"];
+}
+
+- (void)zj_splashAdAdapterDidRewardEffective:(ZJSplashAd *)splashAd withInfo:(NSDictionary *)info{
+    [self logMessage:[NSString stringWithFormat:@"奖励触发，奖励信息信息 %@",info]];
+
+}
 
 
 -(void)dealloc{

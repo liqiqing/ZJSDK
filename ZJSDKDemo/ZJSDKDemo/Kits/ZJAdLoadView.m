@@ -93,17 +93,19 @@
 }
 
 - (void)addLog:(NSString*)log{
-    NSDateFormatter *formatter = [[NSDateFormatter alloc]init];
-    formatter.dateFormat = @"HH:mm:ss";
-    NSString *str = [NSString stringWithFormat:@"[%@] %@",[formatter stringFromDate:[NSDate date]],log];
-    NSString *text = self.logView.text;
-    if (text.length > 0) {
-        text = [NSString stringWithFormat:@"%@\n%@",self.logView.text,str];
-    }else{
-        text = str;
-    }
-    self.logView.text = text;
-    [self.logView scrollRangeToVisible:NSMakeRange(self.logView.text.length, 1)];
+    dispatch_async(dispatch_get_main_queue(), ^{
+        NSDateFormatter *formatter = [[NSDateFormatter alloc]init];
+        formatter.dateFormat = @"HH:mm:ss";
+        NSString *str = [NSString stringWithFormat:@"[%@] %@",[formatter stringFromDate:[NSDate date]],log];
+        NSString *text = self.logView.text;
+        if (text.length > 0) {
+            text = [NSString stringWithFormat:@"%@\n%@",self.logView.text,str];
+        }else{
+            text = str;
+        }
+        self.logView.text = text;
+        [self.logView scrollRangeToVisible:NSMakeRange(self.logView.text.length, 1)];
+    });
 }
 
 
