@@ -16,19 +16,19 @@ NS_ASSUME_NONNULL_BEGIN
 /// 进入横版视频详情页
 /// @param viewController 详情页VC
 /// @param content 视频信息
-- (void)zjAdapter_horizontalFeedDetailDidEnter:(UIViewController *)viewController contentInfo:(id<ZJContentInfo>)content;
+- (void)zj_horizontalFeedDetailDidEnter:(UIViewController *)viewController contentInfo:(id<ZJContentInfo>)content;
 
 /// 离开横版视频详情页
 /// @param viewController 详情页VC
-- (void)zjAdapter_horizontalFeedDetailDidLeave:(UIViewController *)viewController;
+- (void)zj_horizontalFeedDetailDidLeave:(UIViewController *)viewController;
 
 /// 视频详情页appear
 /// @param viewController 详情页VC
-- (void)zjAdapter_horizontalFeedDetailDidAppear:(UIViewController *)viewController;
+- (void)zj_horizontalFeedDetailDidAppear:(UIViewController *)viewController;
 
 /// 详情页disappear
 /// @param viewController 详情页VC
-- (void)zjAdapter_horizontalFeedDetailDidDisappear:(UIViewController *)viewController;
+- (void)zj_horizontalFeedDetailDidDisappear:(UIViewController *)viewController;
 
 @end
 NS_ASSUME_NONNULL_END
