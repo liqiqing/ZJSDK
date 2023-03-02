@@ -21,6 +21,8 @@ NS_ASSUME_NONNULL_BEGIN
 //optional. serialized string.
 @property (nonatomic, copy) NSString *extra;
 
+@property (nonatomic, assign) BOOL is_only_notify_self;
+
 @property (nonatomic, copy) NSString *reward_extra;
 ///激励视频静音， 默认：NO
 @property (nonatomic) BOOL videoMuted;
