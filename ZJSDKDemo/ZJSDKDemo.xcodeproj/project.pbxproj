@@ -55,14 +55,10 @@
 		0077471E24E182A200C30636 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0077471C24E182A200C30636 /* LaunchScreen.storyboard */; };
 		0077472124E182A200C30636 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0077472024E182A200C30636 /* main.m */; };
 		009F49A725963F8D00EF8B6B /* ZJJSBridgeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 009F49A625963F8D00EF8B6B /* ZJJSBridgeViewController.m */; };
-		5455FDA2FD9734353E55BF55 /* Pods_ZJSDKDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FA55DC36D259E34F026CA29 /* Pods_ZJSDKDemo.framework */; };
-		5710798126BD3D2800B119E3 /* libZJSDKModuleKS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 576656D6264E7F7300C2C239 /* libZJSDKModuleKS.a */; };
-		5727059F264A31E60002F224 /* libZJSDKModuleDSP.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5727059E264A31E60002F224 /* libZJSDKModuleDSP.a */; };
 		57352BDE2604BB2500D663BF /* ZJContentPageStyle2ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 57352BD52604BB2500D663BF /* ZJContentPageStyle2ViewController.m */; };
 		57352BDF2604BB2500D663BF /* ZJContentPageStyle1ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 57352BDA2604BB2500D663BF /* ZJContentPageStyle1ViewController.m */; };
 		57352BE02604BB2500D663BF /* ZJContentPageSelectedBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 57352BDB2604BB2500D663BF /* ZJContentPageSelectedBar.m */; };
 		57352BE12604BB2500D663BF /* ZJContentPageTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 57352BDC2604BB2500D663BF /* ZJContentPageTabBarController.m */; };
-		5738387D26C2610700008E82 /* ZJSDKCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5738387C26C2610700008E82 /* ZJSDKCore.framework */; };
 		574F793725EE191800B528ED /* ZJFeedAdsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 574F793625EE191800B528ED /* ZJFeedAdsViewController.m */; };
 		574F793C25EE194000B528ED /* ZJNativeExpressAdTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 574F793A25EE194000B528ED /* ZJNativeExpressAdTableViewCell.m */; };
 		574F793D25EE194000B528ED /* ZJNativeExpressAdsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 574F793B25EE194000B528ED /* ZJNativeExpressAdsViewController.m */; };
@@ -72,11 +68,6 @@
 		5772EDC527CF04E5001B3197 /* ZJHomeTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5772EDC427CF04E5001B3197 /* ZJHomeTableViewCell.m */; };
 		5772EDCE27D09C20001B3197 /* ZJLogView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5772EDCD27D09C20001B3197 /* ZJLogView.m */; };
 		577B4C50273B6E93007340B5 /* ZJSplashWindowVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 577B4C4F273B6E93007340B5 /* ZJSplashWindowVC.m */; };
-		5782A14325F1C6D30030E1A1 /* ZJSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5782A14225F1C6D30030E1A1 /* ZJSDK.framework */; };
-		5782A18525F1C86D0030E1A1 /* libZJSDKModuleCSJ.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5782A18425F1C86D0030E1A1 /* libZJSDKModuleCSJ.a */; };
-		5782A18925F1C8760030E1A1 /* libZJSDKModuleGDT.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5782A18825F1C8760030E1A1 /* libZJSDKModuleGDT.a */; };
-		5782A18D25F1C87F0030E1A1 /* libZJSDKModuleMTG.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5782A18C25F1C87F0030E1A1 /* libZJSDKModuleMTG.a */; };
-		578A7B4827BB50F8004D86F4 /* libZJSDKModuleBD.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 578A7B4727BB50F8004D86F4 /* libZJSDKModuleBD.a */; };
 		579209CC263961A8006693EB /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 579209CB263961A8006693EB /* CoreGraphics.framework */; };
 		579545F8261D5DD500CF67B3 /* ZJContentPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 579545F7261D5DD500CF67B3 /* ZJContentPageViewController.m */; };
 		57954608261D5E2D00CF67B3 /* ZJNativeAdImageTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 579545FA261D5E2D00CF67B3 /* ZJNativeAdImageTableViewCell.m */; };
@@ -87,7 +78,6 @@
 		5795460D261D5E2D00CF67B3 /* ZJNativeAdBaseTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 57954606261D5E2D00CF67B3 /* ZJNativeAdBaseTableViewCell.m */; };
 		5795460E261D5E2D00CF67B3 /* ZJNativeAdSelectedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 57954607261D5E2D00CF67B3 /* ZJNativeAdSelectedViewController.m */; };
 		57A7EC192681DC6C003C10E5 /* libc++abi.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 57A7EC182681DC6C003C10E5 /* libc++abi.tbd */; };
-		57A8610E26D79BE8007CB3C3 /* libZJSDKModuleSIG.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 57A8610D26D79BE8007CB3C3 /* libZJSDKModuleSIG.a */; };
 		57ADEB942637E3E2008F6E7E /* ZJFullScreenVideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 57ADEB932637E3E2008F6E7E /* ZJFullScreenVideoViewController.m */; };
 		57E1DE0A26A1382500587252 /* ZJFloatingAdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 57E1DE0926A1382500587252 /* ZJFloatingAdViewController.m */; };
 		57EB05292635632F005DBA03 /* SDImageHEICCoder.m in Sources */ = {isa = PBXBuildFile; fileRef = 57EB049A2635632E005DBA03 /* SDImageHEICCoder.m */; };
@@ -159,6 +149,7 @@
 		57EB056B2635632F005DBA03 /* SDDisplayLink.m in Sources */ = {isa = PBXBuildFile; fileRef = 57EB05232635632F005DBA03 /* SDDisplayLink.m */; };
 		57EB056C2635632F005DBA03 /* SDAsyncBlockOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 57EB05252635632F005DBA03 /* SDAsyncBlockOperation.m */; };
 		57EB056D2635632F005DBA03 /* SDAssociatedObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 57EB05262635632F005DBA03 /* SDAssociatedObject.m */; };
+		A6C0382843193CEEE8172FA9 /* Pods_ZJSDKDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FA55DC36D259E34F026CA29 /* Pods_ZJSDKDemo.framework */; };
 		AB5ADDC12959AD07000495B7 /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB5ADDC02959AD07000495B7 /* JavaScriptCore.framework */; };
 		AB5ADDC32959AD16000495B7 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB5ADDC22959AD16000495B7 /* AudioToolbox.framework */; };
 		AB5ADDC52959AD22000495B7 /* QuickLook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB5ADDC42959AD22000495B7 /* QuickLook.framework */; };
@@ -531,19 +522,10 @@
 				AB7A38E028FFD4FD004629FD /* SafariServices.framework in Frameworks */,
 				AB7A38DE28FFD4DB004629FD /* CFNetwork.framework in Frameworks */,
 				AB7A38DC28FFD4D4004629FD /* StoreKit.framework in Frameworks */,
-				578A7B4827BB50F8004D86F4 /* libZJSDKModuleBD.a in Frameworks */,
 				576F37AA27698161000CEEE8 /* AdSupport.framework in Frameworks */,
-				57A8610E26D79BE8007CB3C3 /* libZJSDKModuleSIG.a in Frameworks */,
-				5738387D26C2610700008E82 /* ZJSDKCore.framework in Frameworks */,
 				57A7EC192681DC6C003C10E5 /* libc++abi.tbd in Frameworks */,
-				5782A18525F1C86D0030E1A1 /* libZJSDKModuleCSJ.a in Frameworks */,
-				5710798126BD3D2800B119E3 /* libZJSDKModuleKS.a in Frameworks */,
-				5727059F264A31E60002F224 /* libZJSDKModuleDSP.a in Frameworks */,
 				006193312512376300E09415 /* AVFoundation.framework in Frameworks */,
 				579209CC263961A8006693EB /* CoreGraphics.framework in Frameworks */,
-				5782A18D25F1C87F0030E1A1 /* libZJSDKModuleMTG.a in Frameworks */,
-				5782A18925F1C8760030E1A1 /* libZJSDKModuleGDT.a in Frameworks */,
-				5782A14325F1C6D30030E1A1 /* ZJSDK.framework in Frameworks */,
 				0061941B25123E5800E09415 /* libbz2.tbd in Frameworks */,
 				0061941925123E4D00E09415 /* libsqlite3.tbd in Frameworks */,
 				0061941725123E4100E09415 /* libc++.tbd in Frameworks */,
@@ -561,7 +543,7 @@
 				00619325251236C900E09415 /* SystemConfiguration.framework in Frameworks */,
 				00619323251236BE00E09415 /* QuartzCore.framework in Frameworks */,
 				00619321251236B200E09415 /* CoreLocation.framework in Frameworks */,
-				5455FDA2FD9734353E55BF55 /* Pods_ZJSDKDemo.framework in Frameworks */,
+				A6C0382843193CEEE8172FA9 /* Pods_ZJSDKDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1446,6 +1428,7 @@
 				DEVELOPMENT_TEAM = FDRWRXCL7C;
 				ENABLE_BITCODE = NO;
 				EXCLUDED_ARCHS = "";
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/ZJSDKDemo/lib",
@@ -1498,6 +1481,7 @@
 				CURRENT_PROJECT_VERSION = 20210203;
 				DEVELOPMENT_TEAM = FDRWRXCL7C;
 				ENABLE_BITCODE = NO;
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/ZJSDKDemo/lib",

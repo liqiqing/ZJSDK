@@ -4,6 +4,13 @@
 target 'ZJSDKDemo' do
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
+  post_install do |installer|
+    installer.pods_project.targets.each do |target|
+      target.build_configurations.each do |config|
+        config.build_settings["EXCLUDED_ARCHS[sdk=iphonesimulator*]"] = "arm64"
+      end
+    end
+  end
   ##mark 1，直接导入方式,一般打开此注释即可
   # pod 'ZJSDK'#, :path => '../'
   
