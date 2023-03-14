@@ -20,6 +20,8 @@ NS_ASSUME_NONNULL_BEGIN
 //H5Ad错误
 -(void) onZjH5PageError:(ZJUser*)user error:(NSError*) error;
 
+//H5Ad关闭
+-(void) onZjH5PageWillClose:(ZJUser*)user;
 
 
 //H5操作回调
