@@ -12,7 +12,7 @@ target 'ZJSDKDemo' do
     end
   end
   ##mark 1，直接导入方式,一般打开此注释即可
-  # pod 'ZJSDK'#, :path => '../'
+   pod 'ZJSDK'#, :path => '../'
   
   ## #导入默认未导入模块
   ##  pod 'ZJSDK/ZJSDKModuleYM'#云码广告
