@@ -12,7 +12,7 @@ target 'ZJSDKDemo' do
     end
   end
 ##mark 1，直接导入方式,一般打开此注释即可
-   #pod 'ZJSDK'#, :path => '../'
+   pod 'ZJSDK'#, :path => '../'
    
    
 ##mark 2 本地视频内容引入方式。另外还需要将ZJSDKModuleKS.a静态库拖进项目里
