@@ -12,6 +12,7 @@ NS_ASSUME_NONNULL_BEGIN
 @interface ZJBaseContentAdapter : ZJCoreAdAdapter
 
 @property (nonatomic, strong) UIViewController *viewController;
+-(void)reportWithEvent:(ZJEventString)event supplementMsg:(nullable NSString *)supplementMsg;
 
 - (void)loadContentPageWithDeeplink:(NSString *)deepLink;
 

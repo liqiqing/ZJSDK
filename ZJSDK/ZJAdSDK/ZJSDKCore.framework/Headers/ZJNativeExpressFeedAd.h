@@ -81,7 +81,7 @@ NS_ASSUME_NONNULL_BEGIN
 -(void)reportErrorEvent:(nonnull NSError *)supplementError;
 
 #pragma mark - 事件上报
--(void)reportFeedAdWithEvent:(ZJEventString)event supplementMsg:(nullable NSString *)supplementMsg;
+-(void)reportWithEvent:(ZJEventString)event supplementMsg:(nullable NSString *)supplementMsg;
 @end
 
 NS_ASSUME_NONNULL_END

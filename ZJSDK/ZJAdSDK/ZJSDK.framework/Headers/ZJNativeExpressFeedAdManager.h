@@ -8,13 +8,14 @@
 
 #import "ZJAd.h"
 #import <ZJSDKCore/ZJNativeExpressFeedAd.h>
+#import "ZJMultipleAd.h"
 
 NS_ASSUME_NONNULL_BEGIN
 @class ZJNativeExpressFeedAdManager ,ZJNativeExpressFeedAd;
 @protocol ZJNativeExpressFeedAdManagerDelegate <NSObject>
 @optional
 ///加载成功
-- (void)ZJ_nativeExpressFeedAdManagerSuccessToLoad:(ZJNativeExpressFeedAdManager *)adsManager nativeAds:(NSArray<ZJNativeExpressFeedAd *> *_Nullable)feedAdDataArray;
+- (void)ZJ_nativeExpressFeedAdManagerSuccessToLoad:(ZJNativeExpressFeedAdManager *)adsManager nativeAds:(NSArray<ZJNativeExpressFeedAd *> *_Nullable)multipleResultObject;
 
 ///加载失败
 - (void)ZJ_nativeExpressFeedAdManager:(ZJNativeExpressFeedAdManager *)adsManager didFailWithError:(NSError *_Nullable)error;
@@ -22,7 +23,7 @@ NS_ASSUME_NONNULL_BEGIN
 @end
 
 
-@interface ZJNativeExpressFeedAdManager : ZJAd
+@interface ZJNativeExpressFeedAdManager : ZJMultipleAd
 
 @property (nonatomic, weak) id <ZJNativeExpressFeedAdManagerDelegate> delegate;
 

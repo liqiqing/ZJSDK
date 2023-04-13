@@ -5,12 +5,12 @@
 //  Created by Robin on 2020/12/22.
 //
 
-#import "ZJBiddingAdAdapter.h"
+#import "ZJTierAdAdapter.h"
 #import "ZJSplashAdProtocol.h"
 #import "ZJSplashAdAdapterDelegate.h"
 NS_ASSUME_NONNULL_BEGIN
 
-@interface ZJSplashAdAdapter : ZJBiddingAdAdapter<ZJSplashAdProtocol>
+@interface ZJSplashAdAdapter : ZJTierAdAdapter<ZJSplashAdProtocol>
 
 
 @property(nonatomic,weak) id<ZJSplashAdAdapterDelegate> delegate;
@@ -65,7 +65,7 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)zj_splashAdDisplayError:(NSError *)error;
 
 /// 事件上报
--(void)reportSplashAdWithEvent:(ZJEventString)event supplementMsg:(nullable NSString *)supplementMsg;
+-(void)reportWithEvent:(ZJEventString)event supplementMsg:(nullable NSString *)supplementMsg;
 
 
 /// 奖励触发

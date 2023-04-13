@@ -6,7 +6,7 @@
 //  Copyright © 2022 zj. All rights reserved.
 //
 
-#import <ZJSDK/ZJBiddingAd.h>
+#import <ZJSDK/ZJTierAd.h>
 #import <ZJSDKCore/ZJSplashAdProtocol.h>
 #import <ZJSDKCore/ZJSplashAdAdapter.h>
 NS_ASSUME_NONNULL_BEGIN
@@ -61,11 +61,11 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)zj_splashAdDisplayError:(ZJSplashAd *)splashAd withError:(NSError *)error;
 
 /// 奖励触发
-- (void)zj_splashAdAdapterDidRewardEffective:(ZJSplashAd *)splashAd withInfo:(nullable NSDictionary *)info;
+- (void)zj_splashAdDidRewardEffective:(ZJSplashAd *)splashAd withInfo:(nullable NSDictionary *)info;
 @end
 
 
-@interface ZJSplashAd : ZJBiddingAd<ZJSplashAdProtocol,ZJSplashAdAdapterDelegate>
+@interface ZJSplashAd : ZJTierAd<ZJSplashAdProtocol>
 
 @property (nonatomic, weak) id <ZJSplashAdDelegate> delegate;
 @property (nonatomic, strong,nullable) ZJSplashAdAdapter *currentAdapter;

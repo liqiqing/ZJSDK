@@ -61,7 +61,7 @@ TODO: Add long description of the pod here.
   s.subspec 'ZJSDKModuleCSJ' do |ss|
     ss.vendored_libraries = 'ZJSDK/ZJSDKModuleCSJ/*.a'
     ss.dependency 'ZJSDK/ZJAdSDK'
-    ss.dependency 'Ads-CN', '~> 4.7'
+    ss.dependency 'Ads-CN', '~> 5.1'
   end
 
   s.subspec 'ZJSDKModuleKS' do |ss|
@@ -93,7 +93,7 @@ TODO: Add long description of the pod here.
   s.subspec 'ZJSDKModuleSIG' do |ss|
     ss.vendored_libraries = 'ZJSDK/ZJSDKModuleSIG/*.a'
     ss.dependency 'ZJSDK/ZJAdSDK'
-    ss.dependency 'SigmobAd-iOS', '~> 4.2'
+    ss.dependency 'SigmobAd-iOS', '~> 4.8'
 #   sig更新日志要找运营看，或者自己注册一个账号看一下
   end
 
@@ -118,4 +118,50 @@ TODO: Add long description of the pod here.
    ss.dependency 'BaiduMobAdSDK', '~> 4.81'
 #  bidding要求 IOS V4.81及以上版本
  end
+
+ s.subspec 'ZJSDKModuleGromore' do |ss|
+   ss.vendored_libraries = 'ZJSDK/ZJSDKModuleGromore/*.a'
+   ss.dependency 'ZJSDK/ZJAdSDK'
+   ss.vendored_frameworks = 'ZJSDK/ZJSDKModuleGromore/**/*.framework'
+   ss.preserve_paths = 'ZJSDK/ZJSDKModuleGromore/**/*.framework'
+   ss.dependency 'Ads-CN', '~> 5.1'
+   ss.dependency 'Google-Mobile-Ads-SDK' , '10.0.0'
+   ss.dependency 'GDTMobSDK', '4.14.10'
+   ss.dependency 'BaiduMobAdSDK', '5.11'
+               
+    ss.dependency 'MintegralAdSDK', '7.2.8'
+    ss.dependency 'MintegralAdSDK/RewardVideoAd'
+    ss.dependency 'MintegralAdSDK/BannerAd'
+    ss.dependency 'MintegralAdSDK/SplashAd'
+    ss.dependency 'MintegralAdSDK/InterstitialAd'
+    ss.dependency 'MintegralAdSDK/NativeAdvancedAd'
+
+    ss.dependency 'KSAdSDK', '3.3.38'
+ end
+ 
+ s.subspec 'ZJSDKModuleBeiZi' do |ss|
+   ss.vendored_libraries = 'ZJSDK/ZJSDKModuleBeiZi/*.a'
+   ss.dependency 'ZJSDK/ZJAdSDK'
+   ss.dependency 'BeiZiSDK', '4.90.1.26'
+ end
+ 
+  s.subspec 'ZJSDKModuleWM' do |ss|
+    ss.vendored_libraries = 'ZJSDK/ZJSDKModuleWM/*.a'
+    ss.dependency 'ZJSDK/ZJAdSDK'
+    ss.dependency 'ToBid-iOS', '2.6.0'
+    ss.dependency 'BaiduMobAdSDK', '5.11'
+   
+    ss.dependency 'MintegralAdSDK', '7.2.9'
+    ss.dependency 'MintegralAdSDK/RewardVideoAd'
+    ss.dependency 'MintegralAdSDK/BannerAd'
+    ss.dependency 'MintegralAdSDK/SplashAd'
+    ss.dependency 'MintegralAdSDK/InterstitialAd'
+    ss.dependency 'MintegralAdSDK/NativeAdvancedAd'
+    
+    ss.dependency 'KSAdSDK', '3.3.38'
+    ss.dependency 'Google-Mobile-Ads-SDK' , '10.0.0'
+    ss.dependency 'GDTMobSDK', '4.14.10'
+    ss.dependency 'Ads-CN', '5.0.0.5'
+ end
+ 
 end

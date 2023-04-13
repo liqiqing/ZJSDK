@@ -25,9 +25,6 @@ FOUNDATION_EXPORT const unsigned char ZJSDKVersionString[];
 #import <ZJSDK/ZJFeedFullVideoProvider.h>
 #import <ZJSDK/ZJWKWebViewBridge.h>
 #import <ZJSDK/ZJH5Page.h>
-#import <ZJSDK/ZJNativeAd.h>
-#import <ZJSDK/ZJFullScreenVideoAd.h>
-#import <ZJSDK/ZJFloatingAdView.h>
 
 
 

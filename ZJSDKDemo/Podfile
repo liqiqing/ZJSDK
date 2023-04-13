@@ -11,34 +11,45 @@ target 'ZJSDKDemo' do
       end
     end
   end
-  ##mark 1，直接导入方式,一般打开此注释即可
-   pod 'ZJSDK'#, :path => '../'
+##mark 1，直接导入方式,一般打开此注释即可
+   #pod 'ZJSDK'#, :path => '../'
+   
+   
+##mark 2 本地视频内容引入方式。另外还需要将ZJSDKModuleKS.a静态库拖进项目里
+   #pod 'ZJSDK/ZJSDKModuleDSP'#依赖库，引入任何模块都需要依赖此模块，默认引入
+   #pod 'ZJSDK/ZJSDKModuleGDT'#优量汇广告
+   #pod 'ZJSDK/ZJSDKModuleCSJ'#穿山甲广告
+   ##pod 'KSAdSDK', :path => '../ZJSDK/ZJSDKModuleKS'
+   #pod 'ZJSDK/ZJSDKModuleMTG'#MTG广告
+   #pod 'ZJSDK/ZJSDKModuleSIG'#Sigmob广告
+   #pod 'ZJSDK/ZJSDKModuleBD'#百度广告
   
-  ## #导入默认未导入模块
-  ##  pod 'ZJSDK/ZJSDKModuleYM'#云码广告
-  ##  pod 'ZJSDK/ZJSDKModuleGoogle', :path => '../'
-  
-  
-  
-  
-  
-  
-  ##mark 2，分模块导入方式，如有视频内容接入需求，则注释pod 'ZJSDK/ZJSDKModuleKS'#快手广告，打开pod 'KSAdSDK', :path => '../ZJSDK/ZJSDKModuleKS'
-  #pod 'ZJSDK/ZJSDKModuleDSP'
+##mark 3，分模块导入方式
+  #pod 'ZJSDK/ZJSDKModuleDSP'#依赖库，引入任何模块都需要依赖此模块，默认引入
   #pod 'ZJSDK/ZJSDKModuleGDT'#优量汇广告
   #pod 'ZJSDK/ZJSDKModuleCSJ'#穿山甲广告
   #pod 'ZJSDK/ZJSDKModuleKS'#快手广告
-  ##mark 2.1 分模块，单独导入本地视频内容包方式。另外还需要将ZJSDKModuleKS.a静态库拖进项目里
-  ##pod 'KSAdSDK', :path => '../ZJSDK/ZJSDKModuleKS'
   #pod 'ZJSDK/ZJSDKModuleMTG'#MTG广告
   #pod 'ZJSDK/ZJSDKModuleSIG'#Sigmob广告
   #pod 'ZJSDK/ZJSDKModuleBD'#百度广告
   
-  ##默认不引入的广告模块
-  ##pod 'ZJSDK/ZJSDKModuleYM'#云码广告
-  ##pod 'ZJSDK/ZJSDKModuleGoogle'#Google广告
+##mark 4，默认不引入的广告模块
+  #pod 'ZJSDK/ZJSDKModuleYM'#云码广告
+  #pod 'ZJSDK/ZJSDKModuleGoogle'#Google广告
   
-  ## Pods for ZJSDKDemo
+  
+  
+  
+##mark 5，引入聚合广告模块 聚合 注意，聚合只能够引入一个，否则会引起一些联盟重复初始化的问题
+  #pod 'ZJSDK/ZJSDKModuleDSP'    #依赖库，引入任何模块都需要依赖此模块，默认引入
+  
+  ##聚合引入多个会引起一些联盟重复初始化的问题
+  #pod 'ZJSDK/ZJSDKModuleGromore'#穿山甲Gromore广告
+  #pod 'ZJSDK/ZJSDKModuleBeiZi'  #倍孜广告
+  #pod 'ZJSDK/ZJSDKModuleWM'     #Sigmob to-bid广告
+
+  
+  # Pods for ZJSDKDemo
 
 end
  

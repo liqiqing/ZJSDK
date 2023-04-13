@@ -27,13 +27,16 @@ FOUNDATION_EXPORT NSString * const ZJ_ADType_ImageTextPage;
 FOUNDATION_EXPORT NSString * const ZJ_ADType_MiniParam;
 typedef NS_ENUM(NSInteger,ZJAdShowPriority){
     ZJAdShowPriority_normal,
-    ZJAdShowPriority_weight
+    ZJAdShowPriority_weight,
+    ZJAdShowPriority_bidding,
 };
 @class ZJAdUnitModel;
 @interface ZJAdUnionItemModel : NSObject
 
 @property (nonatomic, assign) ZJAdShowPriority showPriority;
 @property (nonatomic, assign) NSInteger show_genre;
+
+@property (nonatomic, assign) CGFloat timeout;
 
 @property (nonatomic, copy) NSString *pd_price;
 
@@ -91,6 +94,9 @@ typedef NS_ENUM(NSInteger,ZJAdShowPriority){
 @property (nonatomic, assign) NSInteger weight;
 ///其它参数
 @property (nonatomic, strong) NSDictionary *params;
+
+///摇一摇力度
+@property (nonatomic, strong) NSString *shake_power;
 
 @property (nonatomic, copy) NSString *type;
 

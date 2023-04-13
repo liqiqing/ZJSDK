@@ -6,12 +6,12 @@
 //
 
 
-#import <ZJSDKCore/ZJBiddingAdAdapter.h>
+#import <ZJSDKCore/ZJTierAdAdapter.h>
 #import <ZJSDKCore/ZJInterstitialAdProtocol.h>
 #import <ZJSDKCore/ZJInterstitialAdAdapterDelegate.h>
 NS_ASSUME_NONNULL_BEGIN
 
-@interface ZJInterstitialAdAdapter : ZJBiddingAdAdapter<ZJInterstitialAdProtocol>
+@interface ZJInterstitialAdAdapter : ZJTierAdAdapter<ZJInterstitialAdProtocol>
 
 @property(nonatomic,weak) id<ZJInterstitialAdAdapterDelegate> delegate;
 

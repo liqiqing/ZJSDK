@@ -51,8 +51,6 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, readonly) BOOL canGoForward;
 @property (nonatomic, assign) BOOL enableGoBackGesture;
 @property (nonatomic, assign) BOOL enableSlide;
-@property (nonatomic, readonly) BOOL showRemindLab;
-
 - (BOOL)goBack;
 - (BOOL)goForward;
 - (void)removeTimer;

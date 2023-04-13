@@ -15,6 +15,8 @@
 #import "ZJSplashWindowVC.h"
 #import "ZJHomeViewController.h"
 #import <ZJSDKCore/ZJCacheManager.h>
+//#import <ZJSDKCore/ZJInvoker.h>
+
 @interface AppDelegate ()<ZJSplashAdDelegate>
 
 @property (nonatomic, strong) UIWindow *showWindow;
@@ -50,12 +52,14 @@
     }
 
     [ZJAdSDK registerAppId:@"zj_20201014iOSDEMO"];
+//    [ZJAdSDK registerAppId:@"Z6010318419"];
     [ZJAdSDK setLogLevel:ZJAdSDKLogLevelDebug];
     NSString *version = [ZJAdSDK SDKVersion];
     NSLog(@"ZJSDK版本号：%@",version);
 
     self.showWindow.hidden = NO;
-    
+//    NSArray *method = [ZJInvoker getInstanceMethodList:@"MTGNativeAdvancedAd"];
+
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     self.window.backgroundColor = [UIColor whiteColor];
     ZJHomeViewController *homeVC = [[ZJHomeViewController alloc]init];

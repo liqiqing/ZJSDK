@@ -23,7 +23,6 @@ NS_ASSUME_NONNULL_BEGIN
 //H5Ad关闭
 -(void) onZjH5PageWillClose:(ZJUser*)user;
 
-
 //H5操作回调
 //积分不足
 -(void) onIntegralNotEnough:(ZJUser*) user needIntegral:(NSInteger) integral;

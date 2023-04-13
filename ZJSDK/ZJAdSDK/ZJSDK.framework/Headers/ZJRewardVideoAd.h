@@ -6,7 +6,7 @@
 //  Copyright © 2022 zj. All rights reserved.
 //
 
-#import <ZJSDK/ZJBiddingAd.h>
+#import <ZJSDK/ZJTierAd.h>
 #import <ZJSDKCore/ZJRewardVideoAdProtocol.h>
 #import <ZJSDKCore/ZJRewardVideoAdAdapter.h>
 
@@ -76,7 +76,7 @@ NS_ASSUME_NONNULL_BEGIN
 @end
 
 
-@interface ZJRewardVideoAd : ZJBiddingAd <ZJRewardVideoAdProtocol,ZJRewardVideoAdAdapterDelegate>
+@interface ZJRewardVideoAd : ZJTierAd <ZJRewardVideoAdProtocol>
 
 @property (nonatomic, weak) id <ZJRewardVideoAdDelegate> delegate;
 

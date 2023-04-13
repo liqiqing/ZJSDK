@@ -6,7 +6,7 @@
 //  Copyright © 2022 zj. All rights reserved.
 //
 
-#import <ZJSDK/ZJBiddingAd.h>
+#import <ZJSDK/ZJTierAd.h>
 #import <ZJSDKCore/ZJSDKAdEnum.h>
 #import <ZJSDKCore/ZJFullScreenVideoAdAdapter.h>
 
@@ -43,7 +43,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @end
 
-@interface ZJFullScreenVideoAd : ZJBiddingAd <ZJfullScreenVideoAdAdapterDelegate>
+@interface ZJFullScreenVideoAd : ZJTierAd
 
 @property (nonatomic, weak) id <ZJFullScreenVideoAdDelegate> delegate;
 

@@ -5,14 +5,13 @@
 //  Created by Robin on 2021/1/14.
 //
 
-#import "ZJCoreAdAdapter.h"
+#import <ZJSDKCore/ZJMultipleAdAdapter.h>
 #import "ZJFeedFullVideoProviderProtocol.h"
 #import "ZJFeedFullVideoProviderAdapterDelegate.h"
 #import "ZJFeedFullVideoAdAdapterView.h"
 NS_ASSUME_NONNULL_BEGIN
 
-@interface ZJFeedFullVideoProviderAdapter : ZJCoreAdAdapter<ZJFeedFullVideoProviderProtocol>
-@property (nonatomic, strong, readonly) NSArray <ZJFeedFullVideoView *>*data;
+@interface ZJFeedFullVideoProviderAdapter : ZJMultipleAdAdapter<ZJFeedFullVideoProviderProtocol>
 
 @property(nonatomic,weak) id<ZJFeedFullVideoProviderAdapterDelegate> delegate;
 

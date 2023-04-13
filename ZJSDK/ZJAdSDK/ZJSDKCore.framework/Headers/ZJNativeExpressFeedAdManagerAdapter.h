@@ -5,12 +5,12 @@
 //  Created by Rare on 2021/3/2.
 //
 
-#import "ZJCoreAdAdapter.h"
+#import <ZJSDKCore/ZJMultipleAdAdapter.h>
 #import "ZJNativeExpressFeedAd.h"
 #import <UIKit/UIKit.h>
 NS_ASSUME_NONNULL_BEGIN
 @protocol ZJNativeExpressFeedAdManagerApterDelegate;
-@interface ZJNativeExpressFeedAdManagerAdapter : ZJCoreAdAdapter
+@interface ZJNativeExpressFeedAdManagerAdapter : ZJMultipleAdAdapter
 @property (nonatomic)CGSize adSize;
 
 ///视频静音， 默认：NO
@@ -35,14 +35,14 @@ NS_ASSUME_NONNULL_BEGIN
 
 
 
-- (void)ZJFeed_feedAdsManagerSuccessToLoad:(ZJNativeExpressFeedAdManagerAdapter *)adsManager nativeAds:(NSArray<ZJNativeExpressFeedAd *> *_Nullable)feedAdDataArray;
+- (void)ZJFeed_feedAdsManagerSuccessToLoad:(ZJNativeExpressFeedAdManagerAdapter *)adsManager nativeAds:(NSArray<ZJNativeExpressFeedAd *> *_Nullable)multipleResultObject;
 - (void)ZJFeed_feedAdsManager:(ZJNativeExpressFeedAdManagerAdapter *)adsManager didFailWithError:(NSError *_Nullable)error;
 
 @end
 
 @protocol ZJNativeExpressFeedAdManagerApterDelegate <NSObject>
 @optional
-- (void)ZJFeed_feedAdsManagerSuccessToLoad:(ZJNativeExpressFeedAdManagerAdapter *)adsManager nativeAds:(NSArray<ZJNativeExpressFeedAd *> *_Nullable)feedAdDataArray;
+- (void)ZJFeed_feedAdsManagerSuccessToLoad:(ZJNativeExpressFeedAdManagerAdapter *)adsManager nativeAds:(NSArray<ZJNativeExpressFeedAd *> *_Nullable)multipleResultObject;
 
 - (void)ZJFeed_feedAdsManager:(ZJNativeExpressFeedAdManagerAdapter *)adsManager didFailWithError:(NSError *_Nullable)error;
 @end

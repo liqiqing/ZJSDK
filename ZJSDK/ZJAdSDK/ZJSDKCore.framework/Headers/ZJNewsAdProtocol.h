@@ -11,7 +11,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @protocol ZJNewsAdProtocol <NSObject>
 @property (nonatomic, readonly) CGRect adFrame;
-- (void)loadAdAndShowWithRemindLab:(BOOL)showRemindLab;
+
 - (void)loadAdAndShow;
 @end
 

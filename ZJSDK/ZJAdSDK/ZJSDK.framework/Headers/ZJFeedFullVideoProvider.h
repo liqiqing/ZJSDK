@@ -10,6 +10,8 @@
 #import <ZJSDKCore/ZJFeedFullVideoProviderProtocol.h>
 #import <ZJSDKCore/ZJFeedFullVideoView.h>
 #import <ZJSDKCore/ZJSDKAdEnum.h>
+#import "ZJMultipleAd.h"
+
 NS_ASSUME_NONNULL_BEGIN
 
 @class ZJFeedFullVideoProvider;
@@ -67,7 +69,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @end
 
-@interface ZJFeedFullVideoProvider : ZJAd<ZJFeedFullVideoProviderProtocol>
+@interface ZJFeedFullVideoProvider : ZJMultipleAd<ZJFeedFullVideoProviderProtocol>
 
 @property (nonatomic, weak) id <ZJFeedFullVideoProviderDelegate> delegate;
 
