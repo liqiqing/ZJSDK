@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'ZJSDK'
-  s.version          = '2.5.3.9'
+  s.version          = '2.5.4.0'
   s.summary          = 'ZJSDK广告'
 
 # This description is used to generate tags and improve search results.
@@ -136,7 +136,7 @@ TODO: Add long description of the pod here.
     ss.dependency 'MintegralAdSDK/InterstitialAd'
     ss.dependency 'MintegralAdSDK/NativeAdvancedAd'
 
-    ss.dependency 'KSAdSDK', '3.3.38'
+    ss.dependency 'KSAdSDK', '~>3.3.38'
  end
  
  s.subspec 'ZJSDKModuleBeiZi' do |ss|
@@ -158,7 +158,7 @@ TODO: Add long description of the pod here.
     ss.dependency 'MintegralAdSDK/InterstitialAd'
     ss.dependency 'MintegralAdSDK/NativeAdvancedAd'
     
-    ss.dependency 'KSAdSDK', '3.3.38'
+    ss.dependency 'KSAdSDK', '~>3.3.38'
     ss.dependency 'Google-Mobile-Ads-SDK' , '10.0.0'
     ss.dependency 'GDTMobSDK', '4.14.10'
     ss.dependency 'Ads-CN', '5.0.0.5'
