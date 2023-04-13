@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 50;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -898,36 +898,36 @@
 		ABB6173429E7F147005F8956 /* AdControllers */ = {
 			isa = PBXGroup;
 			children = (
-				ABB6173529E7F147005F8956 /* ZJInterstitialAdViewController.h */,
-				ABB6173629E7F147005F8956 /* ZJImageTextPage */,
-				ABB6173B29E7F147005F8956 /* ZJRewardViewController.h */,
-				ABB6173C29E7F147005F8956 /* ZJJSBridgeViewController.h */,
-				ABB6173D29E7F147005F8956 /* ZJFullScreenVideoViewController.h */,
-				ABB6173E29E7F147005F8956 /* ZJBannerViewController.m */,
-				ABB6173F29E7F147005F8956 /* NativeExpressFeedAd */,
-				ABB6174129E7F147005F8956 /* AdViewController.m */,
-				ABB6174229E7F147005F8956 /* ZJContentPage */,
-				ABB6174D29E7F147005F8956 /* ZJMiniParamViewController.h */,
-				ABB6174E29E7F147005F8956 /* ZJSplashViewController.h */,
-				ABB6174F29E7F147005F8956 /* ZJH5ViewController.h */,
-				ABB6175029E7F147005F8956 /* ZJFloatingAdViewController.m */,
-				ABB6175129E7F147005F8956 /* ZJHorizontalFeedPage */,
-				ABB6175629E7F147005F8956 /* ZJInterstitialAdViewController.m */,
-				ABB6175729E7F147005F8956 /* ZJNativeExpressFeedAd */,
 				ABB6175D29E7F147005F8956 /* AdViewController.h */,
-				ABB6175E29E7F147005F8956 /* ZJFeedVideo */,
+				ABB6174129E7F147005F8956 /* AdViewController.m */,
+				ABB6174E29E7F147005F8956 /* ZJSplashViewController.h */,
+				ABB6178529E7F147005F8956 /* ZJSplashViewController.m */,
+				ABB6173B29E7F147005F8956 /* ZJRewardViewController.h */,
+				ABB6177329E7F147005F8956 /* ZJRewardViewController.m */,
+				ABB6173529E7F147005F8956 /* ZJInterstitialAdViewController.h */,
+				ABB6175629E7F147005F8956 /* ZJInterstitialAdViewController.m */,
+				ABB6173D29E7F147005F8956 /* ZJFullScreenVideoViewController.h */,
 				ABB6176629E7F147005F8956 /* ZJFullScreenVideoViewController.m */,
-				ABB6176729E7F147005F8956 /* ZJFeedPage */,
 				ABB6176C29E7F147005F8956 /* ZJBannerViewController.h */,
+				ABB6173E29E7F147005F8956 /* ZJBannerViewController.m */,
+				ABB6174F29E7F147005F8956 /* ZJH5ViewController.h */,
+				ABB6177429E7F147005F8956 /* ZJH5ViewController.m */,
+				ABB6173C29E7F147005F8956 /* ZJJSBridgeViewController.h */,
 				ABB6176D29E7F147005F8956 /* ZJJSBridgeViewController.m */,
+				ABB6174D29E7F147005F8956 /* ZJMiniParamViewController.h */,
+				ABB6178429E7F147005F8956 /* ZJMiniParamViewController.m */,
+				ABB6178629E7F147005F8956 /* ZJFloatingAdViewController.h */,
+				ABB6175029E7F147005F8956 /* ZJFloatingAdViewController.m */,
+				ABB6173629E7F147005F8956 /* ZJImageTextPage */,
+				ABB6173F29E7F147005F8956 /* NativeExpressFeedAd */,
+				ABB6174229E7F147005F8956 /* ZJContentPage */,
+				ABB6175129E7F147005F8956 /* ZJHorizontalFeedPage */,
+				ABB6175729E7F147005F8956 /* ZJNativeExpressFeedAd */,
+				ABB6175E29E7F147005F8956 /* ZJFeedVideo */,
+				ABB6176729E7F147005F8956 /* ZJFeedPage */,
 				ABB6176E29E7F147005F8956 /* New Group */,
 				ABB6177029E7F147005F8956 /* ZJNewsAd */,
-				ABB6177329E7F147005F8956 /* ZJRewardViewController.m */,
-				ABB6177429E7F147005F8956 /* ZJH5ViewController.m */,
 				ABB6177529E7F147005F8956 /* ZJNativeAd */,
-				ABB6178429E7F147005F8956 /* ZJMiniParamViewController.m */,
-				ABB6178529E7F147005F8956 /* ZJSplashViewController.m */,
-				ABB6178629E7F147005F8956 /* ZJFloatingAdViewController.h */,
 			);
 			path = AdControllers;
 			sourceTree = "<group>";
@@ -935,10 +935,10 @@
 		ABB6173629E7F147005F8956 /* ZJImageTextPage */ = {
 			isa = PBXGroup;
 			children = (
-				ABB6173729E7F147005F8956 /* ZJImageTextVC.m */,
 				ABB6173829E7F147005F8956 /* ZJImageTextLoadVC.h */,
-				ABB6173929E7F147005F8956 /* ZJImageTextVC.h */,
 				ABB6173A29E7F147005F8956 /* ZJImageTextLoadVC.m */,
+				ABB6173929E7F147005F8956 /* ZJImageTextVC.h */,
+				ABB6173729E7F147005F8956 /* ZJImageTextVC.m */,
 			);
 			path = ZJImageTextPage;
 			sourceTree = "<group>";
@@ -954,16 +954,16 @@
 		ABB6174229E7F147005F8956 /* ZJContentPage */ = {
 			isa = PBXGroup;
 			children = (
-				ABB6174329E7F147005F8956 /* ZJContentPageViewController.h */,
-				ABB6174429E7F147005F8956 /* ZJContentPageStyle2ViewController.m */,
-				ABB6174529E7F147005F8956 /* ZJContentPageStyle1ViewController.h */,
-				ABB6174629E7F147005F8956 /* ZJContentPageSelectedBar.h */,
 				ABB6174729E7F147005F8956 /* ZJContentPageTabBarController.h */,
-				ABB6174829E7F147005F8956 /* ZJContentPageViewController.m */,
-				ABB6174929E7F147005F8956 /* ZJContentPageStyle2ViewController.h */,
-				ABB6174A29E7F147005F8956 /* ZJContentPageStyle1ViewController.m */,
-				ABB6174B29E7F147005F8956 /* ZJContentPageSelectedBar.m */,
 				ABB6174C29E7F147005F8956 /* ZJContentPageTabBarController.m */,
+				ABB6174629E7F147005F8956 /* ZJContentPageSelectedBar.h */,
+				ABB6174B29E7F147005F8956 /* ZJContentPageSelectedBar.m */,
+				ABB6174329E7F147005F8956 /* ZJContentPageViewController.h */,
+				ABB6174829E7F147005F8956 /* ZJContentPageViewController.m */,
+				ABB6174529E7F147005F8956 /* ZJContentPageStyle1ViewController.h */,
+				ABB6174A29E7F147005F8956 /* ZJContentPageStyle1ViewController.m */,
+				ABB6174929E7F147005F8956 /* ZJContentPageStyle2ViewController.h */,
+				ABB6174429E7F147005F8956 /* ZJContentPageStyle2ViewController.m */,
 			);
 			path = ZJContentPage;
 			sourceTree = "<group>";
@@ -972,8 +972,8 @@
 			isa = PBXGroup;
 			children = (
 				ABB6175229E7F147005F8956 /* ZJHorizontalFeedPageVC.h */,
-				ABB6175329E7F147005F8956 /* ZJHorizontalFeedPageLoadVC.h */,
 				ABB6175429E7F147005F8956 /* ZJHorizontalFeedPageVC.m */,
+				ABB6175329E7F147005F8956 /* ZJHorizontalFeedPageLoadVC.h */,
 				ABB6175529E7F147005F8956 /* ZJHorizontalFeedPageLoadVC.m */,
 			);
 			path = ZJHorizontalFeedPage;
@@ -982,11 +982,11 @@
 		ABB6175729E7F147005F8956 /* ZJNativeExpressFeedAd */ = {
 			isa = PBXGroup;
 			children = (
-				ABB6175829E7F147005F8956 /* ZJNativeExpressAdsViewController.m */,
 				ABB6175929E7F147005F8956 /* ZJFeedAdsViewController.h */,
+				ABB6175C29E7F147005F8956 /* ZJFeedAdsViewController.m */,
 				ABB6175A29E7F147005F8956 /* ZJNativeExpressAdTableViewCell.m */,
 				ABB6175B29E7F147005F8956 /* ZJNativeExpressAdsViewController.h */,
-				ABB6175C29E7F147005F8956 /* ZJFeedAdsViewController.m */,
+				ABB6175829E7F147005F8956 /* ZJNativeExpressAdsViewController.m */,
 			);
 			path = ZJNativeExpressFeedAd;
 			sourceTree = "<group>";
@@ -995,11 +995,11 @@
 			isa = PBXGroup;
 			children = (
 				ABB6175F29E7F147005F8956 /* ZJFullScreenCell.h */,
-				ABB6176029E7F147005F8956 /* ZJFeedFullVideoViewController.m */,
-				ABB6176129E7F147005F8956 /* ZJFeedFullVideoShowViewController.h */,
-				ABB6176229E7F147005F8956 /* ZJFeedFullVideoAdCell.h */,
 				ABB6176329E7F147005F8956 /* ZJFullScreenCell.m */,
+				ABB6176029E7F147005F8956 /* ZJFeedFullVideoViewController.m */,
+				ABB6176229E7F147005F8956 /* ZJFeedFullVideoAdCell.h */,
 				ABB6176429E7F147005F8956 /* ZJFeedFullVideoAdCell.m */,
+				ABB6176129E7F147005F8956 /* ZJFeedFullVideoShowViewController.h */,
 				ABB6176529E7F147005F8956 /* ZJFeedFullVideoShowViewController.m */,
 			);
 			path = ZJFeedVideo;
@@ -1009,9 +1009,9 @@
 			isa = PBXGroup;
 			children = (
 				ABB6176829E7F147005F8956 /* ZJFeedPageLoadViewController.h */,
+				ABB6176B29E7F147005F8956 /* ZJFeedPageLoadViewController.m */,
 				ABB6176929E7F147005F8956 /* ZJFeedPageViewController.h */,
 				ABB6176A29E7F147005F8956 /* ZJFeedPageViewController.m */,
-				ABB6176B29E7F147005F8956 /* ZJFeedPageLoadViewController.m */,
 			);
 			path = ZJFeedPage;
 			sourceTree = "<group>";
@@ -1027,8 +1027,8 @@
 		ABB6177029E7F147005F8956 /* ZJNewsAd */ = {
 			isa = PBXGroup;
 			children = (
-				ABB6177129E7F147005F8956 /* ZJNewsAdViewController.m */,
 				ABB6177229E7F147005F8956 /* ZJNewsAdViewController.h */,
+				ABB6177129E7F147005F8956 /* ZJNewsAdViewController.m */,
 			);
 			path = ZJNewsAd;
 			sourceTree = "<group>";
@@ -1036,20 +1036,20 @@
 		ABB6177529E7F147005F8956 /* ZJNativeAd */ = {
 			isa = PBXGroup;
 			children = (
-				ABB6177629E7F147005F8956 /* ZJNativeAdImageTableViewCell.m */,
-				ABB6177729E7F147005F8956 /* ZJNativeAdAtlasImageTableViewCell.h */,
-				ABB6177829E7F147005F8956 /* ZJNativeAdVideoTableViewCell.h */,
-				ABB6177929E7F147005F8956 /* ZJNativeAdViewController.m */,
-				ABB6177A29E7F147005F8956 /* ZJFillNativeAdView.h */,
 				ABB6177B29E7F147005F8956 /* ZJNativeAdSelectedViewController.h */,
-				ABB6177C29E7F147005F8956 /* ZJNativeAdBaseTableViewCell.h */,
-				ABB6177D29E7F147005F8956 /* ZJNativeAdAtlasImageTableViewCell.m */,
-				ABB6177E29E7F147005F8956 /* ZJNativeAdImageTableViewCell.h */,
-				ABB6177F29E7F147005F8956 /* ZJNativeAdVideoTableViewCell.m */,
-				ABB6178029E7F147005F8956 /* ZJFillNativeAdView.m */,
-				ABB6178129E7F147005F8956 /* ZJNativeAdViewController.h */,
-				ABB6178229E7F147005F8956 /* ZJNativeAdBaseTableViewCell.m */,
 				ABB6178329E7F147005F8956 /* ZJNativeAdSelectedViewController.m */,
+				ABB6177929E7F147005F8956 /* ZJNativeAdViewController.m */,
+				ABB6178129E7F147005F8956 /* ZJNativeAdViewController.h */,
+				ABB6177E29E7F147005F8956 /* ZJNativeAdImageTableViewCell.h */,
+				ABB6177629E7F147005F8956 /* ZJNativeAdImageTableViewCell.m */,
+				ABB6177829E7F147005F8956 /* ZJNativeAdVideoTableViewCell.h */,
+				ABB6177F29E7F147005F8956 /* ZJNativeAdVideoTableViewCell.m */,
+				ABB6177A29E7F147005F8956 /* ZJFillNativeAdView.h */,
+				ABB6178029E7F147005F8956 /* ZJFillNativeAdView.m */,
+				ABB6177C29E7F147005F8956 /* ZJNativeAdBaseTableViewCell.h */,
+				ABB6178229E7F147005F8956 /* ZJNativeAdBaseTableViewCell.m */,
+				ABB6177729E7F147005F8956 /* ZJNativeAdAtlasImageTableViewCell.h */,
+				ABB6177D29E7F147005F8956 /* ZJNativeAdAtlasImageTableViewCell.m */,
 			);
 			path = ZJNativeAd;
 			sourceTree = "<group>";
