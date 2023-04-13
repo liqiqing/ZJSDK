@@ -7,8 +7,6 @@
 //
 
 #import "ZJNewsAdViewController.h"
-#import "BaiduMobAdSDK/BaiduMobCpuInfoManager.h"
-#import "BaiduMobAdSDK/BaiduMobAdCommonConfig.h"
 #import <WebKit/WebKit.h>
 #import <ZJSDK/ZJNewsAdView.h>
 #import <ZJSDKCore/ZJSDKDefines.h>
