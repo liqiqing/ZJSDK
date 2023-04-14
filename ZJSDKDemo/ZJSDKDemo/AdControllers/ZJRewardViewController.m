@@ -22,7 +22,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-   [self.loadAdView appendAdID:@[@"J6959075700",@"J1390710924",@"J4008472476",@"c945709452",@"zjad_G8020744212936426",@"KS90010001",@"zjad_T945484376",@"zjad_M240919",@"zjad_iOS_ZR0001",@"zjad_T945484376"]];
+   [self.loadAdView appendAdID:@[@"J4008472476",@"c945709452",@"zjad_G8020744212936426",@"KS90010001",@"zjad_T945484376",@"zjad_M240919",@"zjad_iOS_ZR0001",@"zjad_T945484376",@"J6959075700",@"J1390710924"]];
 }
 
 -(void)viewWillAppear:(BOOL)animated{

@@ -18,7 +18,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [self.loadAdView appendAdID:@[@"J0914234230",@"J6134483187",@"J2068944817",@"J9684504174",@"J8541615186"]];
+    [self.loadAdView appendAdID:@[@"J6134483187",@"J2068944817",@"J9684504174",@"J8541615186",@"J0914234230"]];
 }
 
 -(void)loadAd:(NSString*) adId{
