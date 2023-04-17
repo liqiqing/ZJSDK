@@ -27,8 +27,8 @@ TODO: Add long description of the pod here.
   s.author           = { 'Rare' => 'rarelv@163.com' }
   s.source           = { :git => 'https://github.com/liqiqing/ZJSDK.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
-  s.ios.deployment_target = '9.0'
-  s.platform     = :ios, "9.0"
+  s.ios.deployment_target = '11.0'
+  s.platform     = :ios, "11.0"
   
   #依赖的系统frameworks
   s.frameworks = 'UIKit','Foundation','StoreKit','MobileCoreServices','WebKit','MediaPlayer','CoreMedia','CoreLocation','AVFoundation','CoreTelephony','SystemConfiguration','AdSupport','CoreMotion','Accelerate','QuartzCore','Security','ImageIO','CFNetwork','CoreGraphics','SafariServices'
