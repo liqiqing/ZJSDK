@@ -12,7 +12,7 @@ print_background: true
 ## <span id="jump1">版本更新日志</span>
 | 最新版本更新日志 | 修订日期  | 修订说明       |
 | ---------------- | --------- | -------------- |
-|v2.5.3.0|2023-02-22|1，新闻资讯优化、新增新闻资讯多标签列表样式，<br>2，DSP增加广告源 <br>3，修复已知问题|
+|v2.5.4.0|2023-04-17|1，新增Gromore、BeiZi、Willmill聚合平台 <br>2，广告分层请求逻辑 <br>3，DSP广告用户行为数据上报<br>4，DSP新增开屏摇一摇交互<br>5，视频内容引入方式优化|
 历史版本信息见 [历史版本更新日志](#历史版本更新日志)
 ## <span id="jump1">一、iOS SDK接入说明</span>
 
@@ -27,12 +27,23 @@ print_background: true
 #### <span id="jump1.1.2">1.1.2、引入framework</span>
 
 **1. CocoaPods接入方式**
-
+***1.1 一般引入方式***
 ```
 #引入常用广告模块  
 pod 'ZJSDK'
 ```
-
+***1.2 本地视频内容引入方式***
+```
+pod 'ZJSDK/ZJSDKModuleDSP'#依赖库，引入任何模块都需要依赖此模块，默认引入
+pod 'ZJSDK/ZJSDKModuleGDT'#优量汇广告
+pod 'ZJSDK/ZJSDKModuleCSJ'#穿山甲广告
+pod 'ZJContentVideo', :path => '../ZJSDK/ZJSDKModuleKS'
+pod 'ZJSDK/ZJSDKModuleMTG'#MTG广告
+pod 'ZJSDK/ZJSDKModuleSIG'#Sigmob广告
+pod 'ZJSDK/ZJSDKModuleBD'#百度广告
+```
+***1.3 拆分模块引入方式（不需视频内容）***
+如需接入视频内容，请转到 [2.9.1、ZJContentPage接入注意事项](#-291-font-colorredzjcontentpage接入注意事项font)
 ```
 #常用广告模块（如需模块拆分引入，请引入ZJSDKModuleDSP）
 pod 'ZJSDK/ZJSDKModuleDSP'
@@ -43,12 +54,22 @@ pod 'ZJSDK/ZJSDKModuleMTG'#MTG广告
 pod 'ZJSDK/ZJSDKModuleSIG'#Sigmob广告
 pod 'ZJSDK/ZJSDKModuleBD'#百度广告
 ```
-
 ```
 #默认不引入的广告模块
 pod 'ZJSDK/ZJSDKModuleYM'#云码广告 
 pod 'ZJSDK/ZJSDKModuleGoogle'#Google广告 
 ```
+***1.4 引入聚合模块***
+注意，聚合只能够引入一个（ZJSDKModuleDSP+一个聚合模块），否则会引起一些联盟重复初始化的问题
+```
+pod 'ZJSDK/ZJSDKModuleDSP'    #依赖库，引入任何模块都需要依赖此模块，默认引入
+
+#聚合引入多个会引起一些联盟重复初始化的问题
+pod 'ZJSDK/ZJSDKModuleGromore'#穿山甲Gromore广告
+pod 'ZJSDK/ZJSDKModuleBeiZi'  #倍孜广告
+pod 'ZJSDK/ZJSDKModuleWM'     #Sigmob to-bid广告
+```
+
 
 **2.手动方式**
 
@@ -167,11 +188,10 @@ pod 'ZJSDK/ZJSDKModuleGoogle'#Google广告
 - 支持系统 iOS 11.X 及以上;
 - 支持架构： x86-64, armv7, arm64
 - SDK编译环境 Xcode 14.0 + （23年4月起，Xcode 14以下编译的包不再支持上架app store）
+
 #### <span id="jump1.2.3">1.2.3、位置权限</span>
 
-SDK 不会主动获取应用位置权限，当应用本身有获取位置权限逻辑时，需要在应用的 info.plist 添加相应配置信息，避免 App Store 审核被拒：
-
-// 应用根据实际情况配置
+SDK 需要位置权限以更精准的匹配广告，需要在应用的 info.plist 添加相应配置信息，避免 App Store 审核被拒：
 
 ```
   Privacy - Location When In Use Usage Description
@@ -1042,12 +1062,10 @@ self.fullVideoAd.delegate = self;
 
 ### 2.9、接入视频内容(ZJContentPage)</span>
 #### 2.9.1、<font color=red>ZJContentPage接入注意事项</font>
-由于快手pod库不支持内容包，视频内容模块需要单独手动导入
+由于快手pod库不支持内容包，视频内容模块需要本地导入
 视频内容集成注意事项：
-一，手动引入libIPDSDKModuleKS.a（直接拉进项目里）
-二，将KSAdSDK.framework和KSAdSDK.podspec，放在工程文件夹内（不是直接拉进项目里）
-三，Podfile里指定本地快手KSAdSDK.podspec的相对路径，如demo中路径为： pod 'KSAdSDK', :path => '../ZJSDK/ZJSDKModuleKS' 
-四：打包发布之前，去掉x86_64框架，具体的拆分合并命令参考以下
+一：Podfile中，指定本地ZJContentVideo.podspec的相对路径，如demo中路径为： pod 'ZJContentVideo', :path => '../ZJSDK/ZJSDKModuleKS' 
+二：打包发布之前，去掉快手内容包的x86_64框架，具体的拆分合并命令参考以下
 ```
 cd [KSAdSDK.framework所在的目录]
 mkdir ./bak
@@ -1130,17 +1148,27 @@ ZJImageTextVC             //图文
 /**
  news广告加载失败
  */
-- (void)zj_newsAdView:(ZJNewsAdView *)newsAdView didLoadFailWithError:(NSError *_Nullable)error;
+- (void)zj_newsAdView:(ZJNewsAdView *)newsAdView didLoadFailWithError:(NSError * _Nullable)error;
 
 /**
- news广告发奖回调
+ newsAdView曝光回调
+ */
+- (void)zj_newsAdViewDidShow:(ZJNewsAdView *)newsAdView;
+
+/**
+ 关闭news广告回调
  */
 - (void)zj_newsAdViewRewardEffective:(ZJNewsAdView *)newsAdView;
 
 /**
- 点击news广告回调,(点击的页面加载成功回调)
+ 点击news广告回调
  */
 - (void)zj_newsAdViewDidClick:(ZJNewsAdView *)newsAdView;
+
+/**
+ canGoBack状态监听。开放此回调主要为了应对一些可能的手势冲突的场景，一般情况按照demo写法就可，不要动它。
+ */
+- (void)zj_newsAd:(ZJNewsAdView *)newsAd canGoBackStateChange:(BOOL)canGoBack;
 
 ```
 ## <span id="jump3">三、接入H5内容页</span>
@@ -1183,6 +1211,9 @@ self.zjH5 = [ZJH5 new];
 
 //H5Ad错误
 -(void) onZjH5PageError:(ZJUser*) user error:(NSError*) error;
+
+//H5Ad关闭
+-(void) onZjH5PageWillClose:(ZJUser*)user;
 
 //H5操作回调
 //积分不足
@@ -1322,7 +1353,9 @@ self.floatingAd.hiddenH5CloseButton = YES;
 |v2.5.2.4|2022-12-22|新增新闻资讯类型广告|
 |v2.5.2.5|2023-01-18|1，新增视频内容广告样式，<br>2，对原视频内容代理和回调接口有做调整：<font color=red size=4><br>&emsp;&emsp;--原ZJContentPageDelegate改为ZJContentPageStateDelegate<br>&emsp;&emsp;--回调方法中(ZJContentPage *)videoContent修改为(id&lt;ZJContentInfo&gt;)videoContent</font>    <br>3，XCode14下视频内容接入方式更新，详见[2.9.1、ZJContentPage接入注意事项](#291-font-colorredzjcontentpage接入注意事项font)|
 |v2.5.3.0|2023-02-22|1，新闻资讯优化、新增新闻资讯多标签列表样式，<br>2，DSP增加广告源 <br>3，修复已知问题|
-
+|v2.5.3.6|2023-03-14|1，新闻资讯接口文档更新 <br>2，H5Ad增加关闭h5回调 <br>3，修复已知问题|
+|v2.5.3.9|2023-03-27|1，修复bidding比价、二价上报问题|
+|v2.5.4.0|2023-04-17|1，新增Gromore、BeiZi、Willmill聚合平台 <br>2，广告分层请求逻辑 <br>3，DSP广告用户行为数据上报<br>4，DSP新增开屏摇一摇交互<br>5，视频内容引入方式优化|
 
 <!-- @import "[TOC]" {cmd="toc" depthFrom=1 depthTo=6 orderedList=false} -->
 
