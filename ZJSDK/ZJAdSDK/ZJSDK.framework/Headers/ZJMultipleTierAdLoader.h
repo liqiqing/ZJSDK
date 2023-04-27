@@ -43,6 +43,7 @@ typedef void(^MultipleRequestLevelCompleteBlk)( NSMutableArray <ZJMultipleAdAdap
 //倒计时器
 @property (nonatomic,strong)ZJAdCountdown *countdown;
 
+@property (nonatomic, assign) long timeout;
 
 
 - (instancetype)initWithTiers:(NSArray <ZJAdUnitModel *>*)tiers

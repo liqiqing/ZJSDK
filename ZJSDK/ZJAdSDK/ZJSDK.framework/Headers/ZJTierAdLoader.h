@@ -14,9 +14,6 @@ NS_ASSUME_NONNULL_BEGIN
 
 @required
 -(ZJTierAdAdapter *)createTierAdapterForUnit:(ZJAdUnitModel *)unit;
-@optional
-
-- (NSInteger)getCountDownInterval;
 @end
 
 @interface ZJTierAdLoader : NSObject <ZJTierProtocol>
@@ -40,6 +37,8 @@ typedef void(^RequestLevelCompleteBlk)( NSMutableArray <ZJTierAdAdapter *>* _Nul
 
 //倒计时器
 @property (nonatomic,strong)ZJAdCountdown *countdown;
+
+@property (nonatomic, assign) long timeout;
 
 
 
