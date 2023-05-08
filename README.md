@@ -12,7 +12,7 @@ print_background: true
 ## <span id="jump1">版本更新日志</span>
 | 最新版本更新日志 | 修订日期  | 修订说明       |
 | ---------------- | --------- | -------------- |
-|v2.5.4.0|2023-04-17|1，新增Gromore、BeiZi、Willmill聚合平台 <br>2，广告分层请求逻辑 <br>3，DSP广告用户行为数据上报<br>4，DSP新增开屏摇一摇交互<br>5，视频内容引入方式优化|
+|v2.5.4.3|2023-05-08|1，增加ecpm获取权限配置|
 历史版本信息见 [历史版本更新日志](#历史版本更新日志)
 ## <span id="jump1">一、iOS SDK接入说明</span>
 
@@ -1356,6 +1356,8 @@ self.floatingAd.hiddenH5CloseButton = YES;
 |v2.5.3.6|2023-03-14|1，新闻资讯接口文档更新 <br>2，H5Ad增加关闭h5回调 <br>3，修复已知问题|
 |v2.5.3.9|2023-03-27|1，修复bidding比价、二价上报问题|
 |v2.5.4.0|2023-04-17|1，新增Gromore、BeiZi、Willmill聚合平台 <br>2，广告分层请求逻辑 <br>3，DSP广告用户行为数据上报<br>4，DSP新增开屏摇一摇交互<br>5，视频内容引入方式优化|
+|v2.5.4.2|2023-04-27|不去调用快手的.titleFontSize，避免审核被拒置|
+|v2.5.4.3|2023-05-08|增加ecpm获取权限配置|
 
 <!-- @import "[TOC]" {cmd="toc" depthFrom=1 depthTo=6 orderedList=false} -->
 

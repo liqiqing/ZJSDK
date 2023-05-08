@@ -61,6 +61,11 @@
 @param rewardedVideoAd ZJRewardVideoAd 实例
 */
 - (void)zj_rewardVideoAdDidLoad:(ZJRewardVideoAd *)rewardedVideoAd{
+    //广告价格，，广告加载成功后调用有效，单位：分
+    //成功返回一个大于等于0的值，-1表示无权限或后台出现异常，-2表示当前广告类型暂不支持实时竞价
+    //测试广告位返为0
+    NSInteger ecpm = [rewardedVideoAd eCPM];
+    NSLog(@"%li",ecpm);
     [self logMessage:@"rewardVideoAdDidLoad"];
 }
 /**

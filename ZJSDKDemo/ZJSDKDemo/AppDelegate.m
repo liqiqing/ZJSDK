@@ -99,7 +99,7 @@
 
 
 -(void)showSplashAd{
-    self.splashAd = [[ZJSplashAd alloc]initWithPlacementId:@"J8648995207"];
+    self.splashAd = [[ZJSplashAd alloc]initWithPlacementId:@"J6428742394"];
     self.splashAd.fetchDelay = 5;
     self.splashAd.delegate = self;
     self.splashAd.customBottomView = self.bottomView;

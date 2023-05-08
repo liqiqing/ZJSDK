@@ -1,6 +1,0 @@
-framework module ZJSDKCore {
-  umbrella header "ZJSDKCore.h"
-
-  export *
-  module * { export * }
-}
