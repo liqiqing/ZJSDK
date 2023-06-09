@@ -20,7 +20,7 @@
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor whiteColor];
     
-    self.floatingAd = [[ZJFloatingAdView alloc]initWithPlacementId:@"J2952950117" frame:CGRectZero];
+    self.floatingAd = [[ZJFloatingAdView alloc]initWithPlacementId:AdId_Floating1 frame:CGRectZero];
     self.floatingAd.delegate = self;
     self.floatingAd.backImage = [UIImage imageNamed:@"zj_h5_back"];
     self.floatingAd.hiddenH5CloseButton = YES;

@@ -20,7 +20,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [self.loadAdView appendAdID:@[@"zjad_iOS_ZI0001",@"J8595471688",@"J4588704645",@"J5459023010",@"J9434731705"]];
+    [self.loadAdView appendAdID:@[AdId_Interstitial1,AdId_Interstitial2,AdId_Interstitial3,AdId_Interstitial4,AdId_Interstitial5]];
     
 }
 
@@ -47,10 +47,8 @@
 
 - (void)zj_interstitialAdDidLoad:(ZJInterstitialAd*)ad{
     self.loadAdView.showButton.backgroundColor = kMainColor;
-    NSArray *errors =  [self.interstitialAd getFillFailureMessages];
-    NSLog(@"插屏广告所有错误信息 ====== %@",errors);
     [self logMessage:@"interstitialAdDidLoad"];
-    [self logMessage:[self.interstitialAd valueForKey:@"logString"]];
+    [self logMessage:[ad valueForKey:@"logString"]];
 }
 
 - (void)zj_interstitialAdDidLoadFail:(ZJInterstitialAd*) ad error:(NSError * __nullable)error{

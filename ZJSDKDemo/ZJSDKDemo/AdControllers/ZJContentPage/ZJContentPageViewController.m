@@ -18,7 +18,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [self.loadAdView appendAdID:@[@"K90010005"]];
+    [self.loadAdView appendAdID:@[AdId_ContentPage1]];
     
     [self.loadAdView.loadButton setTitle:@"style1" forState:UIControlStateNormal];
     

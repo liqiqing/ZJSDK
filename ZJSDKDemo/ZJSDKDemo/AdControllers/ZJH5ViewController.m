@@ -20,7 +20,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    [self.loadAdView appendAdID:@[@"zjad_h500001iostest",@"J7539616190",@"J6596738679",@"J1009546769",@"J1747131627",@"J1194046705",@"J6060320975"]];
+    [self.loadAdView appendAdID:@[AdId_Web1,AdId_Web2,AdId_Web3,AdId_Web4,AdId_Web5,AdId_Web6,AdId_Web7]];
     [self.loadAdView.loadButton setTitle:@"加载网页" forState:UIControlStateNormal];
     
 }

@@ -51,7 +51,7 @@
         // Fallback on earlier versions
     }
 
-    [ZJAdSDK registerAppId:@"zj_20201014iOSDEMO"];
+    [ZJAdSDK registerAppId:ZJ_Appid];
 //    [ZJAdSDK registerAppId:@"Z6010318419"];
     [ZJAdSDK setLogLevel:ZJAdSDKLogLevelDebug];
     NSString *version = [ZJAdSDK SDKVersion];
@@ -99,7 +99,7 @@
 
 
 -(void)showSplashAd{
-    self.splashAd = [[ZJSplashAd alloc]initWithPlacementId:@"J6428742394"];
+    self.splashAd = [[ZJSplashAd alloc]initWithPlacementId:AdId_Splash3];
     self.splashAd.fetchDelay = 5;
     self.splashAd.delegate = self;
     self.splashAd.customBottomView = self.bottomView;

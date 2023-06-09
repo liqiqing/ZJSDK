@@ -20,7 +20,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     //J1321306298
-    [self.loadAdView appendAdID:@[@"J6316865941",@"J1321306298"]];
+    [self.loadAdView appendAdID:@[AdId_News1,AdId_News2]];
     [self.loadAdView.showButton setHidden:YES];
     [self setBackBarButton];
 

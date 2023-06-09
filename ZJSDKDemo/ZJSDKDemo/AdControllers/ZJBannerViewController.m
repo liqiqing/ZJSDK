@@ -20,7 +20,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [self.loadAdView appendAdID:@[@"1080958885885321",@"945778025",@"J6519375322",@"J7564361179",@"J9474896977",@"J7722563364",@"J7060085171",@"J6044796585"]];
+    [self.loadAdView appendAdID:@[AdId_Banner1,AdId_Banner2,AdId_Banner3,AdId_Banner4,AdId_Banner5,AdId_Banner6,AdId_Banner7,AdId_Banner8]];
     self.loadAdView.showButton.hidden = YES;
 }
 

@@ -13,6 +13,7 @@
 
 #import "Masonry.h"
 #import "SDWebImage.h"
+#import "ZJADIDS.h"
 
 
 //Macro

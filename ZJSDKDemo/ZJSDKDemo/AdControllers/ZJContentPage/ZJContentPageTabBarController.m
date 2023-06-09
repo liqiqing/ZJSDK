@@ -10,8 +10,8 @@
 #import "ZJContentPageStyle2ViewController.h"
 #import "ZJContentPageStyle1ViewController.h"
 
-#define ContentPage1ID @"K90010005"
-#define ContentPage2ID @"K90010005"
+#define ContentPage1ID AdId_ContentPage1
+#define ContentPage2ID AdId_ContentPage1
 
 @interface ZJContentPageTabBarController ()
 

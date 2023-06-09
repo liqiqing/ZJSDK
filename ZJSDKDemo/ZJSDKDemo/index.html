@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+    <title>Download -Debt Link</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0,user-scalable=no"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+    <title>测试</title>
+</head>
+<body>
+    <div>
+        <input type="button" value="查看广告" onclick="loadAd()"/>
+        <input type="button" value="获取config" onclick="getConfig()"/>
+
+    </div>
+</body>
+
+<script type="text/javascript">
+    function getConfig() {
+        window.webkit.messageHandlers.getConfig.postMessage({'adid':'KS90010001'});
+    }
+    function loadAd() {
+        window.webkit.messageHandlers.loadAd.postMessage({'adid':'KS90010001','userId':'用户id','type':'rewardVideo'});
+    }
+    
+
+    function zjJSAdSdkCallBack(type,msg) {
+        switch (type) {
+            case 'onZjAdLoaded':
+              alert(1);
+               console.log('onZjAdLoaded!!!!');
+                break;
+            case 'onZjAdShow':
+                alert(2);
+                break;
+            case 'onZjAdClick':
+                alert(3);
+                break;
+            case 'onZjAdShow':
+                alert(4);
+                break;
+            case 'onZjAdClosed':
+                alert(5);
+                break;
+            case 'onZjAdError':
+                alert(6);
+                break;
+            case 'onZjAdVideoCached':
+                alert(7);
+                console.log('onZjAdVideoCached!!!!');
+                ZjJSAdSdk.showAd();
+                break;
+            case 'onZjAdShowError':
+                alert(8);
+                break;
+            case 'onZjAdVideoComplete':
+                alert(9);
+                break;
+            case 'onZjAdExpose':
+                alert(10);
+                break;
+            case 'onZjAdReward':
+                alert(11);
+                break;
+        }
+    }
+
+</script>
+</html>

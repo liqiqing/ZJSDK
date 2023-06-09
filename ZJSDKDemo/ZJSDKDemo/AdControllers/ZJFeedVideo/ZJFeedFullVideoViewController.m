@@ -16,7 +16,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [self.loadAdView appendAdID:@[@"KS90010003",@"zjad_G305034",@"zjad_T945543945"]];
+    [self.loadAdView appendAdID:@[AdId_VideoExpress1,AdId_VideoExpress2,AdId_VideoExpress3]];
 }
 
 -(void) viewDidAppear:(BOOL)animated{

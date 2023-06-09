@@ -417,6 +417,7 @@
 		AB7A38DD28FFD4DB004629FD /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		AB7A38DF28FFD4FD004629FD /* SafariServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SafariServices.framework; path = System/Library/Frameworks/SafariServices.framework; sourceTree = SDKROOT; };
 		AB7A38E128FFD517004629FD /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
+		AB9272712A33192B00139D33 /* ZJADIDS.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZJADIDS.h; sourceTree = "<group>"; };
 		ABB6172A29E7F147005F8956 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		ABB6172B29E7F147005F8956 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		ABB6172C29E7F147005F8956 /* ZJHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZJHomeViewController.h; sourceTree = "<group>"; };
@@ -636,6 +637,7 @@
 		0061948D25133E5900E09415 /* Kits */ = {
 			isa = PBXGroup;
 			children = (
+				AB9272712A33192B00139D33 /* ZJADIDS.h */,
 				0061949125133F1000E09415 /* UIButton+Event.h */,
 				0061949225133F1000E09415 /* UIButton+Event.m */,
 				001E727D253AA39E0086A93F /* UIDevice+Kit.h */,

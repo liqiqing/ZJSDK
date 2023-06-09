@@ -22,7 +22,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-   [self.loadAdView appendAdID:@[@"J4008472476",@"c945709452",@"zjad_G8020744212936426",@"KS90010001",@"zjad_T945484376",@"zjad_M240919",@"zjad_iOS_ZR0001",@"zjad_T945484376",@"J6959075700",@"J1390710924"]];
+   [self.loadAdView appendAdID:@[AdId_Reward1,AdId_Reward2,AdId_Reward3,AdId_Reward4,AdId_Reward5,AdId_Reward6,AdId_Reward7,AdId_Reward8,AdId_Reward9,AdId_Reward10]];
 }
 
 -(void)viewWillAppear:(BOOL)animated{
@@ -31,7 +31,6 @@
 
 -(void)viewWillDisappear:(BOOL)animated{
     [super viewWillDisappear:animated];
-    
 }
 
 -(void) loadAd:(NSString*) adId{
@@ -61,13 +60,9 @@
 @param rewardedVideoAd ZJRewardVideoAd 实例
 */
 - (void)zj_rewardVideoAdDidLoad:(ZJRewardVideoAd *)rewardedVideoAd{
-    //广告价格，，广告加载成功后调用有效，单位：分
-    //成功返回一个大于等于0的值，-1表示无权限或后台出现异常，-2表示当前广告类型暂不支持实时竞价
-    //测试广告位返为0
-    NSInteger ecpm = [rewardedVideoAd eCPM];
-    NSLog(@"%li",ecpm);
     [self logMessage:@"rewardVideoAdDidLoad"];
 }
+
 /**
 视频数据下载成功回调，已经下载过的视频会直接回调
 
