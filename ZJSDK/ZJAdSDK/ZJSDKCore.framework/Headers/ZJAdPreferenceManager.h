@@ -28,6 +28,13 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)getAdItemsWithPositionId:(NSString *)positionId isFirst:(BOOL)isFirst;
 
 
+
+/// cdn获取单个广告位数据
+/// - Parameters:
+///   - adid: 广告位id
+///   - completeBlk: 获取完成（成功或者失败）
+- (void)getPositionWithAdid:(NSString *)adid completeBlk:(nullable void (^)(BOOL success ,  NSError * _Nullable error))completeBlk;
+
 ///判断是否有下一个层广告 并刷新到下移除
 - (BOOL)hasNextLevelAndRefresh;
 

@@ -11,6 +11,8 @@
 #import <ZJSDKCore/ZJAdDebugLog.h>
 #import <ZJSDKCore/ZJBiddingLossRelease.h>
 #import <ZJSDKCore/ZJAdEventReport.h>
+#import <ZJSDKCore/ZJSDKManager.h>
+
 NS_ASSUME_NONNULL_BEGIN
 
 @interface ZJCoreAdAdapter : NSObject
@@ -18,6 +20,12 @@ NS_ASSUME_NONNULL_BEGIN
 @property(nonatomic, strong ,readonly) ZJAdUnitModel *config;
 ///结算价格
 @property (nonatomic, strong) NSString *secondPrice;
+@property (nonatomic, strong) NSString *cacheTime;
+
+
+/// 平台判断广告是否已过期（如有）
+- (BOOL)pmAdValid;
+
 - (instancetype)initWithAdItemConfig:(ZJAdUnitModel *)adItemConfig;
 
 

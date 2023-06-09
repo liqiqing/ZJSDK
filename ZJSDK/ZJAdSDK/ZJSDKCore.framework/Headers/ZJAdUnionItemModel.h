@@ -42,6 +42,10 @@ typedef NS_ENUM(NSInteger,ZJAdShowPriority){
 
 @property (nonatomic, assign) BOOL is_service;
 
+@property (nonatomic, assign) BOOL is_cdn;
+
+@property (nonatomic, assign) BOOL is_pd_cache;
+
 @property (nonatomic, assign) NSInteger reward_ver;
 
 @property (nonatomic, copy) NSArray <ZJAdUnitModel *>*tiers;
