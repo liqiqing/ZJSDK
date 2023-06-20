@@ -14,6 +14,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @required
 -(ZJTierAdAdapter *)createTierAdapterForUnit:(ZJAdUnitModel *)unit;
+-(void)setCacheAdapter:(ZJTierAdAdapter *)cacheAdapter;
 @end
 
 @interface ZJTierAdLoader : NSObject <ZJTierProtocol>
