@@ -50,7 +50,6 @@ typedef void(^MultipleRequestLevelCompleteBlk)( NSMutableArray <ZJMultipleAdAdap
 - (instancetype)initWithTiers:(NSArray <ZJAdUnitModel *>*)tiers
                      timeoutInterval:(CGFloat)timeoutInterval
                         showPriority:(ZJAdShowPriority)showPriority;
-- (void)setCacheAdapter:(ZJMultipleAdAdapter *)adapter;
 -(void)startLoadWithCount:(NSUInteger)count;
 
 -(void)unitAdapterDidLoad:(ZJMultipleAdAdapter *)adapter resultArray:(NSArray *)resultArray;

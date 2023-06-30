@@ -55,8 +55,6 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nonatomic,strong,nullable)ZJTierAdAdapter *currentAdapter;
 
-- (void)setCacheAdapter:(ZJTierAdAdapter *)adapter;
-
 -(void)loadAd;
 @end
 

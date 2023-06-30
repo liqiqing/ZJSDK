@@ -57,8 +57,6 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nonatomic,strong,nullable)ZJMultipleAdAdapter *currentAdapter;
 
-- (void)setCacheAdapter:(ZJMultipleAdAdapter *)adapter;
-
 -(void)loadAdWithCount:(NSUInteger)count;
 @end
 
