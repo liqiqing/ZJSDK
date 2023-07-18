@@ -12,7 +12,7 @@ print_background: true
 ## <span id="jump1">版本更新日志</span>
 | 最新版本更新日志 | 修订日期  | 修订说明       |
 | ---------------- | --------- | -------------- |
-|v2.5.4.7|2023-06-19|修复已知问题|
+|v2.5.4.12|2023-07-18|增加事件上报，激励、插屏、全屏视频摇一摇，状态栏隐藏时候状态栏高度获取|
 历史版本信息见 [历史版本更新日志](#历史版本更新日志)
 ## <span id="jump1">一、iOS SDK接入说明</span>
 
@@ -32,21 +32,10 @@ print_background: true
 #引入常用广告模块  
 pod 'ZJSDK'
 ```
-***1.2 本地视频内容引入方式***
-```
-pod 'ZJSDK/ZJSDKModuleDSP'#依赖库，引入任何模块都需要依赖此模块，默认引入
-pod 'ZJSDK/ZJSDKModuleGDT'#优量汇广告
-pod 'ZJSDK/ZJSDKModuleCSJ'#穿山甲广告
-pod 'ZJContentVideo', :path => '../ZJSDK/ZJSDKModuleKS'
-pod 'ZJSDK/ZJSDKModuleMTG'#MTG广告
-pod 'ZJSDK/ZJSDKModuleSIG'#Sigmob广告
-pod 'ZJSDK/ZJSDKModuleBD'#百度广告
-```
-***1.3 拆分模块引入方式（不需视频内容）***
-如需接入视频内容，请转到 [2.9.1、ZJContentPage接入注意事项](#-291-font-colorredzjcontentpage接入注意事项font)
+***1.2 拆分模块引入方式***
 ```
 #常用广告模块（如需模块拆分引入，请引入ZJSDKModuleDSP）
-pod 'ZJSDK/ZJSDKModuleDSP'
+pod 'ZJSDK/ZJSDKModuleDSP'#依赖库，引入任何模块都需要依赖此模块，默认引入
 pod 'ZJSDK/ZJSDKModuleGDT'#优量汇广告
 pod 'ZJSDK/ZJSDKModuleCSJ'#穿山甲广告
 pod 'ZJSDK/ZJSDKModuleKS'#快手广告
@@ -58,6 +47,12 @@ pod 'ZJSDK/ZJSDKModuleBD'#百度广告
 #默认不引入的广告模块
 pod 'ZJSDK/ZJSDKModuleYM'#云码广告 
 pod 'ZJSDK/ZJSDKModuleGoogle'#Google广告 
+```
+***1.3 本地视频内容（类似dy，ks短视频）引入方式***
+接入视频内容注意事项，请转到 [2.9.1、ZJContentPage接入注意事项](#-291-font-colorredzjcontentpage接入注意事项font)
+```
+在以上引入的基础上，将快手库指定为本地内容包
+pod 'KSAdSDK',:path => '../ZJSDK/ZJSDKModuleKS'#指定快手库为本地内容库
 ```
 ***1.4 引入聚合模块***
 注意，聚合只能够引入一个（ZJSDKModuleDSP+一个聚合模块），否则会引起一些联盟重复初始化的问题
@@ -1060,11 +1055,12 @@ self.fullVideoAd.delegate = self;
 
 加载广告具体示例详见Demo中的ZJFullScreenVideoViewController。
 
-### 2.9、接入视频内容(ZJContentPage)</span>
+### 2.9、接入视频内容(ZJContentPage——类似dy,ks短视频)</span>
+
 #### 2.9.1、<font color=red>ZJContentPage接入注意事项</font>
 由于快手pod库不支持内容包，视频内容模块需要本地导入
 视频内容集成注意事项：
-一：Podfile中，指定本地ZJContentVideo.podspec的相对路径，如demo中路径为： pod 'ZJContentVideo', :path => '../ZJSDK/ZJSDKModuleKS' 
+一：Podfile中，指定本地KSAdSDK.podspec的相对路径，如demo中路径为： pod 'KSAdSDK', :path => '../ZJSDK/ZJSDKModuleKS' 
 二：打包发布之前，去掉快手内容包的x86_64框架，具体的拆分合并命令参考以下
 ```
 cd [KSAdSDK.framework所在的目录]
@@ -1362,6 +1358,12 @@ self.floatingAd.hiddenH5CloseButton = YES;
 |v2.5.4.5|2023-06-18|1，修复100100问题<br>2，有配置本地兜底时，取消兜底层层级逻辑逻辑|
 |v2.5.4.6|2023-06-18|修复已知问题|
 |v2.5.4.7|2023-06-18|修复已知问题|
+|v2.5.4.8|2023-06-20|修复已知问题|
+|v2.5.4.9|2023-06-21|多线程优化<br>视频内容引入方式优化|
+|v2.5.4.10|2023-06-29|dsp接口升级参数修改|
+|v2.5.4.11|2023-07-04|多线程优化|
+|v2.5.4.12|2023-07-18|增加事件上报，激励、插屏、全屏视频摇一摇，状态栏隐藏时候状态栏高度获取|
+
 
 <!-- @import "[TOC]" {cmd="toc" depthFrom=1 depthTo=6 orderedList=false} -->
 
@@ -1413,7 +1415,7 @@ self.floatingAd.hiddenH5CloseButton = YES;
     - [2.8.1、ZJFullScreenVideoAd说明](#281-zjfullscreenvideoad说明)
     - [2.8.2、ZJFullScreenVideoAdDelegate广告说明](#282-zjfullscreenvideoaddelegate广告说明)
     - [2.8.3、加载全屏视频广告](#283-加载全屏视频广告)
-  - [2.9、接入视频内容(ZJContentPage)</span>](#29-接入视频内容zjcontentpagespan)
+  - [2.9、接入视频内容(ZJContentPage——类似dy,ks短视频)</span>](#29-接入视频内容zjcontentpage类似dyks短视频span)
     - [2.9.1、ZJContentPage接入注意事项](#291-font-colorredzjcontentpage接入注意事项font)
     - [2.9.2、ZJContentPage说明](#292-zjcontentpage说明)
     - [2.9.3、加载视频内容](#293-加载视频内容)

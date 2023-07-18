@@ -26,7 +26,7 @@ FOUNDATION_EXPORT NSString * const ZJEvent_Other;//其他信息
 //事件上报
 + (nullable NSURLSessionTask *)reportEventWithZjad_id:(NSString *)zjad_id adType:(ZJAdType)adType event:(ZJEventString)event unionType:(NSString *)unionType zj_pm_id:(NSString *)zj_pm_id supplementMsg:(NSString * _Nullable )supplementMsg otherDic:(NSDictionary * _Nullable)otherDic callback:(void(^)(_Nullable id responseObject, NSError * _Nullable error))callback;
 
-
++ (nullable NSURLSessionTask *)reportAppInitWithCallback:(nullable void(^)(_Nullable id responseObject, NSError * _Nullable error))callback;
 
 + (NSString *)getTimestampSince1970;
 
