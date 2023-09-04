@@ -6,7 +6,8 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "NSNull+ZJExtension.h"
+#import <ZJSDKCore/NSNull+ZJExtension.h>
+#import <ZJSDKCore/NSNumber+ZJExtension.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
