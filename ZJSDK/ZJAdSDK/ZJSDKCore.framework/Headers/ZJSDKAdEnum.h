@@ -42,6 +42,7 @@ typedef NS_ENUM(NSInteger, ZJAdPlatformType) {
     ZJAdPlatform_Gromore,
     ZJAdPlatform_BeiZi,
     ZJAdPlatform_WM,
+    ZJAdPlatform_Pangle,
 };
 
 typedef NS_ENUM(NSInteger, ZJAdType){

@@ -19,7 +19,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 
 /**
- SDK 注册接口，请在 app 初始化时调用。
+ SDK 注册接口，请在 app 初始化时调用，首次调用，网络权限从不可用切换到可用，block会回调两次。
  @param appId - 媒体ID
  @param callback 初始化信息
 */
