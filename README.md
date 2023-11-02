@@ -12,7 +12,7 @@ print_background: true
 ## <span id="jump1">版本更新日志</span>
 | 最新版本更新日志 | 修订日期  | 修订说明       |
 | ---------------- | --------- | -------------- |
-|v2.5.4.14|2023-07-27|修复已知问题|
+|v2.5.5.1|2023-11-02|1，h5页面关闭按钮接口控制更改为平台配置 <br>2，h5增加直接跳转系统浏览器平台配置 <br>3，修复已知问题 <br>4，更换为备用域（不影响广告请求）|
 历史版本信息见 [历史版本更新日志](#历史版本更新日志)
 ## <span id="jump1">一、iOS SDK接入说明</span>
 
@@ -1273,8 +1273,6 @@ self.zjH5Page = [[ZJH5Page alloc] initWithPlacementId:adId user:user delegate:se
 @property (nonatomic, assign) BOOL canMove;
 ///广告是否需要自动贴边展示 默认 YES
 @property (nonatomic, assign) BOOL needMoveToSide;
-///广告关闭按钮隐藏 默认 NO
-@property (nonatomic, assign) BOOL hiddenCloseButton;
 ///用来弹出目标页的ViewController，一般为当前ViewController 默认当前widow的viewController
 @property (nonatomic, weak) UIViewController *rootViewController;
 
@@ -1365,7 +1363,9 @@ self.floatingAd.hiddenH5CloseButton = YES;
 |v2.5.4.12|2023-07-18|增加事件上报，激励、插屏、全屏视频摇一摇，状态栏隐藏时候状态栏高度获取|
 |v2.5.4.13|2023-07-19|DSP音量问题|
 |v2.5.4.14|2023-07-27|修复已知问题|
-
+|v2.5.4.17|2023-09-04|线程问题优化|
+|v2.5.5.0|2023-10-20|1，百度信息流接入 <br>2，PangleSDK接入 <br>3，穿山甲sdk更新，注册方式更新 <br>4，配置增加版本控制<br>5，js开放统一接口<br>6，视频缓存使用自定义队列 <br>7，注册类重构，代码逻辑优化 <br>8，单次拉取配置超时时间改为2.5秒，前后拉取配置请求不再设置3秒时间间隔 <br>9，修复已知问题|
+|v2.5.5.1|2023-11-02|1，h5页面关闭按钮接口控制更改为平台配置 <br>2，h5增加直接跳转系统浏览器平台配置 <br>3，修复已知问题 <br>4，更换为备用域（不影响广告请求）|
 <!-- @import "[TOC]" {cmd="toc" depthFrom=1 depthTo=6 orderedList=false} -->
 
 <!-- code_chunk_output -->

@@ -120,6 +120,11 @@ typedef NS_ENUM(NSInteger,ZJAdShowPriority){
 ///屏蔽开屏摇一摇  仅GDT
 @property (nonatomic, copy) NSNumber* shakable;
 
+///是否显示关闭按钮
+@property (nonatomic, copy) NSNumber* is_show_close_btn;
+
+///H5 是否跳转系统浏览器
+@property (nonatomic, copy) NSNumber* is_jump_system_browse;
 /**
  * 兜底视频跳转url     DSP
  *
