@@ -9,8 +9,8 @@ echo "目标路径为：$TARGET_DIR";
 
 if [ -d $TARGET_DIR ]
 then
-    cp -r $SOURCE_DIR/ZJSDK/ZJSDK_Products/ZJSDK.framework                                                   ZJSDK/IPDAdSDK
-    cp -r $SOURCE_DIR/ZJSDKCore/ZJSDKCore_Products/ZJSDKCore.framework                                       ZJSDK/IPDAdSDK
+    cp -r $SOURCE_DIR/ZJSDK/ZJSDK_Products/ZJSDK.framework                                                   ZJSDK/ZJAdSDK
+    cp -r $SOURCE_DIR/ZJSDKCore/ZJSDKCore_Products/ZJSDKCore.framework                                       ZJSDK/ZJAdSDK
     cp -r $SOURCE_DIR/ZJSDKModuleBD/ZJSDKModuleBD_Products/libZJSDKModuleBD.a                                ZJSDK/ZJSDKModuleBD
     cp -r $SOURCE_DIR/ZJSDKModuleCSJ/ZJSDKModuleCSJ_Products/libZJSDKModuleCSJ.a                             ZJSDK/ZJSDKModuleCSJ
     cp -r $SOURCE_DIR/ZJSDKModuleDSP/ZJSDKModuleDSP_Products/libZJSDKModuleDSP.a                             ZJSDK/ZJSDKModuleDSP
