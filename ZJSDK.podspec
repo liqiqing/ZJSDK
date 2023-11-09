@@ -119,6 +119,12 @@ TODO: Add long description of the pod here.
 #  bidding要求 IOS V4.81及以上版本
  end
 
+ s.subspec 'ZJSDKModulePangle' do |ss|
+   ss.vendored_libraries = 'ZJSDK/ZJSDKModulePangle/*.a'
+   ss.dependency 'ZJSDK/ZJAdSDK'
+   ss.dependency 'Ads-Global'
+ end
+ 
  s.subspec 'ZJSDKModuleGromore' do |ss|
    ss.vendored_libraries = 'ZJSDK/ZJSDKModuleGromore/*.a'
    ss.dependency 'ZJSDK/ZJAdSDK'
