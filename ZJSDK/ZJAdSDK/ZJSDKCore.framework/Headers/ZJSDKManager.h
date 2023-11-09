@@ -26,6 +26,12 @@ NS_ASSUME_NONNULL_BEGIN
 //是否可以获取ecpm
 @property (nonatomic, assign) BOOL can_read_ecpm;
 
+//是否可以获取ecpm
+@property (nonatomic, assign) BOOL is_disconnect;
+
+//是否可以获取ecpm
+@property (nonatomic, assign) BOOL is_skip_pos_conf_req;
+
 - (void)registerPlatform:(NSString *)platform;
 
 @end
