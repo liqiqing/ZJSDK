@@ -10,7 +10,7 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface MKMD5 : NSObject
-NSString * md5 (NSString *string,...);
+NSString * mk_md5 (NSString *string,...);
 + (NSString *)md5:(NSString *)string;
 @end
 
