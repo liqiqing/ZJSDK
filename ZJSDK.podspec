@@ -61,9 +61,18 @@ TODO: Add long description of the pod here.
   s.subspec 'ZJSDKModuleCSJ' do |ss|
     ss.vendored_libraries = 'ZJSDK/ZJSDKModuleCSJ/*.a'
     ss.dependency 'ZJSDK/ZJAdSDK'
-    ss.dependency 'Ads-CN', '~> 5.1'
+    ss.dependency 'Ads-Fusion-CN-Beta', '~> 5.8'
+    ss.dependency 'Ads-Fusion-CN-Beta/CSJMediation'
+    ss.dependency 'Ads-Fusion-CN-Beta/BUAdSDK'
+    ss.dependency 'CSJMAdmobAdapter', '~> 10.0'
+    ss.dependency 'CSJMBaiduAdapter', '~> 5.0'
+    ss.dependency 'CSJMGdtAdapter', '~> 4.14'
+#    ss.dependency 'CSJMKlevinAdapter', '~> 2.11'
+    ss.dependency 'CSJMKsAdapter', '~> 3.3'
+    ss.dependency 'CSJMMintegralAdapter', '~> 7.3.4'
+    ss.dependency 'CSJMSigmobAdapter', '~> 4.8'
+#    ss.dependency 'CSJMUnityAdapter', '~> 4.3'
   end
-
   s.subspec 'ZJSDKModuleKS' do |ss|
     ss.vendored_libraries = 'ZJSDK/ZJSDKModuleKS/*.a'
     ss.dependency 'ZJSDK/ZJAdSDK'
@@ -119,6 +128,12 @@ TODO: Add long description of the pod here.
 #  bidding要求 IOS V4.81及以上版本
  end
  
+  s.subspec 'ZJSDKModulePangle' do |ss|
+   ss.vendored_libraries = 'ZJSDK/ZJSDKModulePangle/*.a'
+   ss.dependency 'ZJSDK/ZJAdSDK'
+   ss.dependency 'Ads-Global'
+ end
+
  s.subspec 'ZJSDKModuleGromore' do |ss|
    ss.vendored_libraries = 'ZJSDK/ZJSDKModuleGromore/*.a'
    ss.dependency 'ZJSDK/ZJAdSDK'
