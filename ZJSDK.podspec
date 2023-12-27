@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'ZJSDK'
-  s.version          = '2.5.5.4'
+  s.version          = '2.5.5.4.1'
   s.summary          = 'ZJSDK广告'
 
 # This description is used to generate tags and improve search results.
@@ -115,7 +115,7 @@ TODO: Add long description of the pod here.
  s.subspec 'ZJSDKModuleBD' do |ss|
    ss.vendored_libraries = 'ZJSDK/ZJSDKModuleBD/*.a'
    ss.dependency 'ZJSDK/ZJAdSDK'
-   ss.dependency 'BaiduMobAdSDK', '~> 4.81'
+   ss.dependency 'BaiduMobAdSDK', '~> 5.32'
 #  bidding要求 IOS V4.81及以上版本
  end
 
