@@ -27,6 +27,8 @@
 #define AdId_Splash9            @"J8788156919"
 #define AdId_Splash10           @"J3078043396"
 
+//pangle 正常
+#define AdId_Splash11           @"J7254808716"
 #pragma mark =============== 激励广告位 ===============
 ///正常
 #define AdId_Reward1            @"J4008472476"
@@ -40,6 +42,8 @@
 ///聚合（一般用不到）
 #define AdId_Reward8            @"J6959075700"
 #define AdId_Reward9            @"J1390710924"
+//pangle 正常
+#define AdId_Reward10            @"J5529497143"
 
 #pragma mark =============== 全屏视频广告位 ===============
 ///正常
@@ -48,6 +52,7 @@
 ///异常
 #define AdId_FullScreenVideo3   @"J6134483187"
 #define AdId_FullScreenVideo4   @"J8541615186"
+#define AdId_FullScreenVideo6   @"J6943440666"
 ///聚合（一般用不到）
 #define AdId_FullScreenVideo5   @"J0914234230"
 
@@ -55,13 +60,17 @@
 ///正常
 #define AdId_Interstitial1      @"J8595471688"
 #define AdId_Interstitial2      @"J4588704645"
+#define AdId_Interstitial3      @"J1475056773"  //SIG新插屏
 
 ///异常
-#define AdId_Interstitial3      @"zjad_iOS_ZI0001"
+#define AdId_Interstitial4      @"zjad_iOS_ZI0001"
 
 ///聚合（一般用不到）
-#define AdId_Interstitial4      @"J5459023010"
-#define AdId_Interstitial5      @"J9434731705"
+#define AdId_Interstitial5      @"J5459023010"
+#define AdId_Interstitial6      @"J9434731705"
+
+//pangle 正常
+#define AdId_Interstitial7      @"J5308686094"
 
 #pragma mark =============== banner广告位 ===============
 #define AdId_Banner1            @"1080958885885321"
@@ -72,6 +81,7 @@
 #define AdId_Banner6            @"J7722563364"
 #define AdId_Banner7            @"J7060085171"
 #define AdId_Banner8            @"J6044796585"
+#define AdId_Banner9            @"J0875218696"
 
 #pragma mark =============== 视频流广告位 ===============
 #define AdId_VideoExpress1      @"KS90010003"
@@ -86,6 +96,7 @@
 #define AdId_ExpressAd5         @"K4000000008"
 #define AdId_ExpressAd6         @"J5143270913"
 #define AdId_ExpressAd7         @"J2808066893"
+#define AdId_ExpressAd8         @"J5357187854"
 
 #pragma mark =============== 视频内容广告位 ===============
 #define AdId_ContentPage1       @"K90010005"
@@ -99,18 +110,29 @@
 #define AdId_NativeRender2      @"J5437957302"
 #define AdId_NativeRender3      @"KS90010003"
 #define AdId_NativeRender4      @"J1550041411"
+#define AdId_NativeRender5      @"J4321322955"
 
 #pragma mark =============== Floating广告位 ===============
 #define AdId_Floating1          @"J2952950117"
 
 #pragma mark =============== H5广告广告位 ===============
-#define AdId_Web1               @"J0695926914"
-#define AdId_Web2               @"J7539616190"
-#define AdId_Web3               @"J6596738679"
-#define AdId_Web4               @"J1009546769"
-#define AdId_Web5               @"J1747131627"
-#define AdId_Web6               @"J1194046705"
-#define AdId_Web7               @"J6060320975"
+#define AdId_Web1               @"zjad_h500001iostest"
+#define AdId_Web2               @"J2952950117"
+#define AdId_Web3               @"J2546664610"
+#define AdId_Web4               @"J6781884237"
+#define AdId_Web5               @"J9337765012"
+#define AdId_Web6               @"J2455189495"
+#define AdId_Web7               @"J3935698050"
+//zjad_h500001iostest
+//J2952950117
+//J2546664610
+//J6781884237
+//J9337765012
+//J2455189495
+//J3935698050
+//J2172318517
+//J1172928501
+//J6084705641
 
 #pragma mark =============== 微信小程序广告位 ===============
 #define AdId_MiniParam1         @"J3511636631"

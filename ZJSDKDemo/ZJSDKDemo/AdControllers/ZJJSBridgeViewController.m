@@ -41,23 +41,16 @@
     
     //self.zjWKWebViewBridge.delegate = self;//可选
     
-   
 
-//    NSString *htmlFile = [[NSBundle mainBundle]pathForResource:@"index" ofType:@"html"];
-//    NSURL *baseUrl = [NSURL fileURLWithPath:htmlFile isDirectory: YES];
-//    NSString *indexContent = [NSString stringWithContentsOfFile:htmlFile encoding: NSUTF8StringEncoding error:nil];
-//    [self.webView loadHTMLString:indexContent baseURL:baseUrl];
+    NSString *htmlFile = [[NSBundle mainBundle]pathForResource:@"JSSdkTest" ofType:@"html"];
+    NSURL *baseUrl = [NSURL fileURLWithPath:htmlFile isDirectory: YES];
+    NSString *indexContent = [NSString stringWithContentsOfFile:htmlFile encoding: NSUTF8StringEncoding error:nil];
+    [self.webView loadHTMLString:indexContent baseURL:baseUrl];
     
-
-//    NSString *htmlFile = [[NSBundle mainBundle]pathForResource:@"index" ofType:@"html"];
-//    NSURL *baseUrl = [NSURL fileURLWithPath:htmlFile isDirectory: YES];
-//    NSString *indexContent = [NSString stringWithContentsOfFile:htmlFile encoding: NSUTF8StringEncoding error:nil];
-//    [self.webView loadHTMLString:indexContent baseURL:baseUrl];
-    
-    NSURL *url = [NSURL URLWithString:@"http://static.jrongjie.com/zjsdk_project/pointsmall/template_b/index.html#/points_center?sdk_appid=Z7186381378"];
-    NSMutableURLRequest *req = [[NSMutableURLRequest alloc]initWithURL:url];
-    [req setValue:url.absoluteString forHTTPHeaderField:@"Referer"];
-    [self.webView loadRequest:req];
+//    NSURL *url = [NSURL URLWithString:@"http://192.168.0.128:8080/#/"];
+//    NSMutableURLRequest *req = [[NSMutableURLRequest alloc]initWithURL:url];
+//    [req setValue:url.absoluteString forHTTPHeaderField:@"Referer"];
+//    [self.webView loadRequest:req];
     
 //    NSURL *url = [NSURL URLWithString:@"http://static.jrongjie.com/zjprodect-demo/news/index.html"];
 //    NSURLRequest *req = [[NSURLRequest alloc]initWithURL:url];

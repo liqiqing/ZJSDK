@@ -96,7 +96,7 @@
         [_demoVCDictionary setValue:@"ZJRewardViewController" forKey:@"激励视频"];
         [_demoVCDictionary setValue:@"ZJInterstitialAdViewController" forKey:@"插屏"];
         [_demoVCDictionary setValue:@"ZJFullScreenVideoViewController" forKey:@"全屏视频"];
-        [_demoVCDictionary setValue:@"ZJBannerViewController" forKey:@"Banner"];
+//        [_demoVCDictionary setValue:@"ZJBannerViewController" forKey:@"Banner"];
         
         [_demoVCDictionary setValue:@"ZJFeedFullVideoViewController" forKey:@"视频流"];
         [_demoVCDictionary setValue:@"ZJFeedAdsViewController" forKey:@"信息流"];

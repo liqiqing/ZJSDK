@@ -14,7 +14,7 @@
 
 @property (nonatomic,strong)UITableView *tableView;
 
-@property (nonatomic,strong)ZJNativeExpressFeedAdManager *feedAd;
+@property (nonatomic,strong)ZJNativeExpressFeedAdManager *feedAdManager;
 
 @property (nonatomic,strong)NSMutableArray *dataArray;
 @property (nonatomic,strong)NSArray <ZJNativeExpressFeedAd *>*adArray;
@@ -57,19 +57,19 @@
 
 -(void)loadAd{
     [self.logView logMessage:@"loadAd"];
-    if (!_feedAd) {
-        _feedAd = [[ZJNativeExpressFeedAdManager alloc] initWithPlacementId:self.adId size:CGSizeMake(self.tableView.frame.size.width, 0)];
-        _feedAd.delegate = self;
-        _feedAd.mutedIfCan = YES;
+    if (!_feedAdManager) {
+        _feedAdManager = [[ZJNativeExpressFeedAdManager alloc] initWithPlacementId:self.adId size:CGSizeMake(self.tableView.frame.size.width, 0)];
+        _feedAdManager.delegate = self;
+        _feedAdManager.mutedIfCan = YES;
     }
-    [_feedAd loadAdDataWithCount:3];
+    [_feedAdManager loadAdDataWithCount:3];
 }
 
 
 #pragma mark - ZJNativeExpressFeedAdManagerDelegate
 -(void)ZJ_nativeExpressFeedAdManagerSuccessToLoad:(ZJNativeExpressFeedAdManager *)adsManager nativeAds:(NSArray<ZJNativeExpressFeedAd *> *)multipleResultObject{
     [self.logView logMessage:[NSString stringWithFormat:@"nativeExpressFeedAdManagerSuccessToLoad: %ld",multipleResultObject.count]];
-    [self.logView logMessage:[self.feedAd valueForKey:@"logString"]];
+    [self.logView logMessage:[self.feedAdManager valueForKey:@"logString"]];
     //不要保存太多广告，需要在合适的时机手动释放不用的，否则内存会过大
 //    if (self.adArray.count > 0) {
 //        for (ZJNativeExpressFeedAd *feedAd in self.adArray) {
@@ -95,8 +95,8 @@
 
 -(void)ZJ_nativeExpressFeedAdManager:(ZJNativeExpressFeedAdManager *)adsManager didFailWithError:(NSError *)error{
     [self.logView logMessage:[NSString stringWithFormat:@"FeedAdDidFailWithError: %@",error]];
-    [self.logView logMessage:[self.feedAd valueForKey:@"logString"]];
-    NSArray *errors =  [self.feedAd getFillFailureMessages];
+    [self.logView logMessage:[self.feedAdManager valueForKey:@"logString"]];
+    NSArray *errors =  [self.feedAdManager getFillFailureMessages];
     [self.logView logMessage:[NSString stringWithFormat:@"报错信息:%@",errors.count > 0?errors:@"无"]];
 }
 
@@ -144,7 +144,8 @@
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
     id object =  self.dataArray[indexPath.row];
     if ([object isKindOfClass:[ZJNativeExpressFeedAd class]]) {
-        return ((ZJNativeExpressFeedAd *)object).feedView.frame.size.height;
+        CGFloat height = ((ZJNativeExpressFeedAd *)object).feedView.frame.size.height;
+        return height;
     }else{
         return 44;;
     }

@@ -124,8 +124,10 @@
     }
     self.newsAdView = [[ZJNewsAdView alloc] initWithPlacementId:adId frame:CGRectMake(0, ZJ_StatusBarHeight+44, kScreenWidth, kScreenHeight-ZJ_StatusBarHeight-44)];
     self.newsAdView.delegate = self;
-    [self.newsAdView loadAdAndShow];
+    self.newsAdView.userId = @"robin6666";
     [self.view addSubview:self.newsAdView];
+    
+    [self.newsAdView loadAdAndShow];
 }
 
 @end

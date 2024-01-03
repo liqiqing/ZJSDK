@@ -40,16 +40,6 @@
 }
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    if (@available(iOS 14, *)) {
-        [ATTrackingManager requestTrackingAuthorizationWithCompletionHandler:^(ATTrackingManagerAuthorizationStatus status) {
-            // 获取到权限后，获取idfa
-            dispatch_async(dispatch_get_main_queue(), ^{
-                [self showSplashAd];
-            });
-        }];
-    } else {
-        // Fallback on earlier versions
-    }
 
     [ZJAdSDK registerAppId:ZJ_Appid];
 //    [ZJAdSDK registerAppId:@"Z6010318419"];
@@ -74,6 +64,32 @@
 }
 
 
+- (void)applicationDidBecomeActive:(UIApplication *)application{
+    // 请求idfa，此方法在iOS15上需要放到applicationDidBecomeActive内执行，可能会被其他询问覆盖
+    if (@available(iOS 14, *)) {
+        // iOS14及以上版本需要先请求权限
+        ATTrackingManagerAuthorizationStatus status = ATTrackingManager.trackingAuthorizationStatus;
+        if (status == ATTrackingManagerAuthorizationStatusNotDetermined) {
+            //用户未做选择或未弹窗
+            dispatch_semaphore_t sem = dispatch_semaphore_create(0);
+            [ATTrackingManager requestTrackingAuthorizationWithCompletionHandler:^(ATTrackingManagerAuthorizationStatus status) {
+                if (status == ATTrackingManagerAuthorizationStatusAuthorized) {
+                    //用户允许
+                    dispatch_async(dispatch_get_main_queue(), ^{
+                        [self showSplashAd];
+                    });
+                }
+                dispatch_semaphore_signal(sem);
+            }];
+            dispatch_semaphore_wait(sem, DISPATCH_TIME_FOREVER);
+        }else{
+            [self showSplashAd];
+            NSLog(@"ATT User not allowed");
+        }
+    }
+}
+
+
 - (void)applicationWillResignActive:(UIApplication *)application{
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
     // Use this method to pause ongoing tasks, disable timers, and throttle down OpenGL ES frame rates. Games should use this method to pause the game.
@@ -86,10 +102,6 @@
 
 - (void)applicationWillEnterForeground:(UIApplication *)application{
     // Called as part of the transition from the background to the inactive state; here you can undo many of the changes made on entering the background.
-}
-
-- (void)applicationDidBecomeActive:(UIApplication *)application{
-    // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
 }
 
 - (void)applicationWillTerminate:(UIApplication *)application{

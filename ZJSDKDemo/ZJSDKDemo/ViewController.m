@@ -80,7 +80,7 @@
         [_ads setValue:@"ZJInterstitialAdViewController" forKey:@"插屏"];
         [_ads setValue:@"ZJContentPageViewController" forKey:@"视频内容"];
         [_ads setValue:@"ZJFeedAdsViewController" forKey:@"Feed信息流"];
-        [_ads setValue:@"ZjBannerViewController" forKey:@"Banner"];
+//        [_ads setValue:@"ZjBannerViewController" forKey:@"Banner"];
         [_ads setValue:@"ZJNativeAdSelectedViewController" forKey:@"自渲染"];
         [_ads setValue:@"ZJFullScreenVideoViewController" forKey:@"全屏视频广告"];
         [_ads setValue:@"ZJJSBridgeViewController" forKey:@"自定义H5"];
