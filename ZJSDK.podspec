@@ -138,7 +138,7 @@ TODO: Add long description of the pod here.
  s.subspec 'ZJSDKModuleBeiZi' do |ss|
    ss.vendored_libraries = 'ZJSDK/ZJSDKModuleBeiZi/*.a'
    ss.dependency 'ZJSDK/ZJAdSDK'
-   ss.dependency 'BeiZiSDK-iOS', '~>4.90'
+   ss.dependency 'BeiZiSDK-iOS/BeiZiSDK-iOS', '~>4.90'
  end
  
   s.subspec 'ZJSDKModuleWM' do |ss|
