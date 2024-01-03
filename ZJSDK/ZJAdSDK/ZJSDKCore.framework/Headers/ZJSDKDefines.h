@@ -73,5 +73,5 @@ FOUNDATION_EXPORT UIViewController * zj_getCurrentVCFrom(UIViewController *vc);
 
 FOUNDATION_EXPORT NSString * const ZJSDKVersion;
 
-
+FOUNDATION_EXPORT NSNumber * getZJSDKPlugVer (void);
 #endif /* ZJSDKDefines_h */

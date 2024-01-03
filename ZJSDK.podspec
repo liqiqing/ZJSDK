@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'ZJSDK'
-  s.version          = '2.5.5.4.2'
+  s.version          = '2.5.5.5'
   s.summary          = 'ZJSDK广告'
 
 # This description is used to generate tags and improve search results.
@@ -135,26 +135,6 @@ TODO: Add long description of the pod here.
    ss.dependency 'Ads-Global'
  end
 
- s.subspec 'ZJSDKModuleGromore' do |ss|
-   ss.vendored_libraries = 'ZJSDK/ZJSDKModuleGromore/*.a'
-   ss.dependency 'ZJSDK/ZJAdSDK'
-   ss.vendored_frameworks = 'ZJSDK/ZJSDKModuleGromore/**/*.framework'
-   ss.preserve_paths = 'ZJSDK/ZJSDKModuleGromore/**/*.framework'
-   ss.dependency 'Ads-CN', '~> 5.1'
-   ss.dependency 'Google-Mobile-Ads-SDK' , '10.0.0'
-   ss.dependency 'GDTMobSDK', '4.14.10'
-   ss.dependency 'BaiduMobAdSDK', '5.11'
-               
-    ss.dependency 'MintegralAdSDK', '7.2.8'
-    ss.dependency 'MintegralAdSDK/RewardVideoAd'
-    ss.dependency 'MintegralAdSDK/BannerAd'
-    ss.dependency 'MintegralAdSDK/SplashAd'
-    ss.dependency 'MintegralAdSDK/InterstitialAd'
-    ss.dependency 'MintegralAdSDK/NativeAdvancedAd'
-
-    ss.dependency 'KSAdSDK', '~>3.3.38'
- end
- 
  s.subspec 'ZJSDKModuleBeiZi' do |ss|
    ss.vendored_libraries = 'ZJSDK/ZJSDKModuleBeiZi/*.a'
    ss.dependency 'ZJSDK/ZJAdSDK'

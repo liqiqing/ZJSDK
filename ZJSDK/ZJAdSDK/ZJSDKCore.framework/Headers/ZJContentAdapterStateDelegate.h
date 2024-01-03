@@ -67,7 +67,8 @@ NS_ASSUME_NONNULL_BEGIN
 */
 - (void)zjAdapter_contentDidResume:(id<ZJContentInfo>)content;
 
-
+/// 任务完成回调
+- (void)zjAdapter_contentTaskComplete:(id<ZJContentInfo>)content;
 @end
 
 NS_ASSUME_NONNULL_END

@@ -12,7 +12,7 @@ print_background: true
 ## <span id="jump1">版本更新日志</span>
 | 最新版本更新日志 | 修订日期  | 修订说明       |
 | ---------------- | --------- | -------------- |
-|v2.5.5.3|2023-11-09|1，倍孜加入比价 <br>2，可配置弃用appid,adid <br>3，浏览类激励视频问题修复|
+|v2.5.5.5|2024-01-03|1，dsp模块拆分 <br>2，gdt依赖库更新，注册方式更换 <br>3，穿山甲使用融合sdk，不在依赖gromore <br>4，动态域名  <br>5，已知问题修复 |
 历史版本信息见 [历史版本更新日志](#历史版本更新日志)
 ## <span id="jump1">一、iOS SDK接入说明</span>
 
@@ -47,6 +47,13 @@ pod 'ZJSDK/ZJSDKModuleBD'#百度广告
 #默认不引入的广告模块
 pod 'ZJSDK/ZJSDKModuleYM'#云码广告 
 pod 'ZJSDK/ZJSDKModuleGoogle'#Google广告 
+pod 'ZJSDK/ZJSDKModulePangle'#穿山甲海外 
+
+#聚合广告模块（默认不引入）
+#注意：引入多个聚合广告可能会引起一些联盟重复初始化的问题。
+pod 'ZJSDK/ZJSDKModuleBeiZi'  #倍孜广告
+pod 'ZJSDK/ZJSDKModuleGromore'#穿山甲Gromore广告
+pod 'ZJSDK/ZJSDKModuleWM'     #Sigmob to-bid广告
 ```
 ***1.3 本地视频内容（类似dy，ks短视频）引入方式***
 接入视频内容注意事项，请转到 [2.9.1、ZJContentPage接入注意事项](#-291-font-colorredzjcontentpage接入注意事项font)
@@ -54,16 +61,7 @@ pod 'ZJSDK/ZJSDKModuleGoogle'#Google广告
 在以上引入的基础上，将快手库指定为本地内容包
 pod 'KSAdSDK',:path => '../ZJSDK/ZJSDKModuleKS'#指定快手库为本地内容库
 ```
-***1.4 引入聚合模块***
-注意，聚合只能够引入一个（ZJSDKModuleDSP+一个聚合模块），否则会引起一些联盟重复初始化的问题
-```
-pod 'ZJSDK/ZJSDKModuleDSP'    #依赖库，引入任何模块都需要依赖此模块，默认引入
 
-#聚合引入多个会引起一些联盟重复初始化的问题
-pod 'ZJSDK/ZJSDKModuleGromore'#穿山甲Gromore广告
-pod 'ZJSDK/ZJSDKModuleBeiZi'  #倍孜广告
-pod 'ZJSDK/ZJSDKModuleWM'     #Sigmob to-bid广告
-```
 
 
 **2.手动方式**
@@ -74,7 +72,7 @@ pod 'ZJSDK/ZJSDKModuleWM'     #Sigmob to-bid广告
 
 3.Build Settings中Other Linker Flags 增加参数-ObjC和-l 'ObjC'，字母o和c大写
 
-4.升级SDK的同学必须同时更新framework和bundle文件，否则可能出现部分页面无法展示的问题，老版本升级的同学需要重新引入ZJSDK.framework，拖入完请确保Copy Bundle Resources中有BUAdSDK.bundle，ZJSDKBundle.bundle等否则可能出现icon图片加载不出来的情况。
+4.升级SDK的同学必须同时更新framework和bundle文件，否则可能出现部分页面无法展示的问题，老版本升级的同学需要重新引入ZJSDK.framework，拖入完请确保Copy Bundle Resources中有BUAdSDK.bundle，DSPBundle.bundle等否则可能出现icon图片加载不出来的情况。
 
 **添加依赖库**
 
@@ -286,7 +284,7 @@ SKAdNetworkIdentifier : cstr6suwn9.skadnetwork
 ```
 
 
-### <span id="jump1.3">1.4、初始化SDK</span>
+### <span id="jump1.4">1.4、初始化SDK</span>
 
 **Objective-C**
 
@@ -311,7 +309,13 @@ func application(_ application: UIApplication, didFinishLaunchingWithOptions lau
 ZJAdSDK.registerAppId("zj_20201014iOSDEMO");
 ```
 
+### <span id="jump1.5">1.5、打包回测</span>
+企业账号可直接打包。
+公司账号和个人账号打包回测请添加下面两个udid：
 
+e36a75f610d3ea9e905c2cdff9720635b37f8c13
+
+00008101-001150922EF8001E
 
 ## <span id="jump2">二、加载广告</span>
 
@@ -458,12 +462,14 @@ splashAd.load();
 @optional
 /**
 广告数据加载成功回调
+ ⚠️请勿在该回调内调用 showAdInViewController:方法（需视频下载完成）
 @param rewardedVideoAd ZJRewardVideoAd 实例
 */
 - (void)zj_rewardVideoAdDidLoad:(ZJRewardVideoAd *)rewardedVideoAd;
 
 /**
-视频数据下载成功回调，已经下载过的视频会直接回调
+ 视频数据下载成功回调，已经下载过的视频会直接回调，在这里调用展示广告的方法。
+ ✅ showAdInViewController: 方法请在该回调中执行 ， 广告展示需要在视频下载完成后才能展示，
 @param rewardedVideoAd ZJRewardVideoAd 实例
 */
 - (void)zj_rewardVideoAdVideoDidLoad:(ZJRewardVideoAd *)rewardedVideoAd;
@@ -866,92 +872,9 @@ _feedAd.delegate = self;
 
 加载广告具体示例详见Demo中的ZJNativeExpressAdsViewController。
 
-### <span id="jump2.6">2.6、接入Banner广告(ZJBannerAdView)</span>
+### 2.6、接入自渲染广告(ZJNativeAd)
 
-#### <span id="jump2.6.1">2.6.1、ZJBannerAdView说明</span>
-
-```
-/**
- *  @params
- *  placementId - 广告位id
- *  viewController - 视图控制器
- *  adSize 展示的位置和大小
- *  interval  广告刷新间隔，范围 [30, 120] 秒，默认值 30 秒。设 0 则不刷新。
- */
-- (instancetype)initWithPlacementId:(NSString *)placementId
-                     viewController:(UIViewController *)viewController
-                             adSize:(CGSize)adSize
-                           interval:(NSInteger)interval;
-
-/**
- *  @params
- *  placementId - 广告位id
- *  viewController - 视图控制器
- *  adSize 展示的位置和大小
- */
-- (instancetype)initWithPlacementId:(NSString *)placementId
-                     viewController:(UIViewController *)viewController
-                             adSize:(CGSize)adSize;
-/**
- *  拉取并展示广告
- */
-- (void)loadAdAndShow;
-```
-
-#### <span id="jump2.6.2">2.6.2、ZJBannerAdViewDelegate说明</span>
-
-```
-/**
- banner广告加载成功
- */
-- (void)zj_bannerAdViewDidLoad:(ZJBannerAdView *)bannerAdView;
-
-/**
- banner广告加载失败
- */
-- (void)zj_bannerAdView:(ZJBannerAdView *)bannerAdView didLoadFailWithError:(NSError *_Nullable)error;
-
-/**
- bannerAdView曝光回调
- */
-- (void)zj_bannerAdViewWillBecomVisible:(ZJBannerAdView *)bannerAdView;
-
-/**
- 关闭banner广告回调
- */
-- (void)zj_bannerAdViewDislike:(ZJBannerAdView *)bannerAdView;
-
-/**
- 点击banner广告回调
- */
-- (void)zj_bannerAdViewDidClick:(ZJBannerAdView *)bannerAdView;
-
-/**
- 关闭banner广告详情页回调
- */
-- (void)zj_bannerAdViewDidCloseOtherController:(ZJBannerAdView *)bannerAdView;
-```
-
-#### <span id="jump2.6.3">2.6.3、加载Banner广告</span>
-
-```
--(void)loadAd:(NSString*)adId{
-    if (!_bannerView) {
-         CGFloat bannerHight = 100;
-        _bannerView = [[ZJBannerAdView alloc]initWithPlacementId:adId viewController:self adSize:CGSizeMake(ScreenWidth, bannerHight) interval:30];
-        _bannerView.frame = CGRectMake(0, 100, ScreenWidth, bannerHight);
-        _bannerView.delegate = self;
-        [self.view addSubview:_bannerView];
-        [_bannerView loadAdAndShow];
-    }
-}
-```
-
-加载广告具体示例详见Demo中的ZJBannerAdAdapter。
-
-### 2.7、接入自渲染广告(ZJNativeAd)
-
-#### 2.7.1、ZJNativeAd说明
+#### 2.6.1、ZJNativeAd说明
 
 自渲染广告返回数据模型（ZJNativeAdObject），通过数据模型由开发者渲染视图 ，视图渲染需要基于ZJNativeAdView上进行扩展。
 
@@ -968,7 +891,7 @@ _feedAd.delegate = self;
 - (void)zj_nativeAdLoaded:(NSArray<ZJNativeAdObject *> * _Nullable)nativeAdObjects error:(NSError * _Nullable)error;
 ```
 
-#### 2.7.2、加载ZJNativeAd广告 ####
+#### 2.6.2、加载ZJNativeAd广告 ####
 
 ```
 //加载广告
@@ -999,9 +922,9 @@ self.adView = [self.fillView registerDataObject:dataObject];
 
 加载广告示例详见demo中的 ZJNativeAdViewController。
 
-### 2.8、接入全屏视频广告(ZJFullScreenVideoAd)</span>
+### 2.7、接入全屏视频广告(ZJFullScreenVideoAd)</span>
 
-#### 2.8.1、ZJFullScreenVideoAd说明
+#### 2.7.1、ZJFullScreenVideoAd说明
 
 ```
 @interface ZJFullScreenVideoAd : ZJAd
@@ -1017,7 +940,7 @@ self.adView = [self.fillView registerDataObject:dataObject];
 @end
 ```
 
-#### 2.8.2、ZJFullScreenVideoAdDelegate广告说明
+#### 2.7.2、ZJFullScreenVideoAdDelegate广告说明
 
 ```
 @protocol ZJFullScreenVideoAdDelegate <NSObject>
@@ -1045,7 +968,7 @@ self.adView = [self.fillView registerDataObject:dataObject];
 @end
 ```
 
-#### 2.8.3、加载全屏视频广告
+#### 2.7.3、加载全屏视频广告
 
 ```
 self.fullVideoAd = [[ZJFullScreenVideoAd alloc] initWithPlacementId:adId];
@@ -1055,9 +978,9 @@ self.fullVideoAd.delegate = self;
 
 加载广告具体示例详见Demo中的ZJFullScreenVideoViewController。
 
-### 2.9、接入视频内容(ZJContentPage——类似dy,ks短视频)</span>
+### 2.8、接入视频内容(ZJContentPage——类似dy,ks短视频)</span>
 
-#### 2.9.1、<font color=red>ZJContentPage接入注意事项</font>
+#### 2.8.1、<font color=red>ZJContentPage接入注意事项</font>
 由于快手pod库不支持内容包，视频内容模块需要本地导入
 视频内容集成注意事项：
 一：Podfile中，指定本地KSAdSDK.podspec的相对路径，如demo中路径为： pod 'KSAdSDK', :path => '../ZJSDK/ZJSDKModuleKS' 
@@ -1072,7 +995,7 @@ lipo -create KSAdSDK_armv7 KSAdSDK_arm64 -output KSAdSDK
 mv KSAdSDK KSAdSDK.framework/
 ```
 
-#### 2.9.2、ZJContentPage说明
+#### 2.8.2、ZJContentPage说明
 ```
 @property (nonatomic, readonly) UIViewController *viewController;
 ///视频状态代理
@@ -1089,7 +1012,7 @@ mv KSAdSDK KSAdSDK.framework/
 ///刷新
 - (void)tryToRefresh;
 ```
-#### 2.9.3、加载视频内容
+#### 2.8.3、加载视频内容
 ```
 self.contentPage = [[ZJContentPage alloc]initWithPlacementId:self.contentId];
 self.contentPage.videoStateDelegate = self;
@@ -1110,9 +1033,9 @@ ZJContentPageTabBarController
 ZJFeedPageViewController  //瀑布流
 ZJHorizontalFeedPageVC    //横版
 ZJImageTextVC             //图文
-### <span id="jump2.10">2.10、接入新闻资讯广告(ZJNewsAdView)</span>
+### <span id="jump2.9">2.9、接入新闻资讯广告(ZJNewsAdView)</span>
 
-#### <span id="jump2.10.1">2.10.1、ZJNewsAdView说明</span>
+#### <span id="jump2.9.1">2.9.1、ZJNewsAdView说明</span>
 
 ```
 /**
@@ -1133,7 +1056,7 @@ ZJImageTextVC             //图文
 - (void)goback;
 ```
 
-#### <span id="jump2.10.2">2.10.2、ZJNewsAdViewDelegate说明</span>
+#### <span id="jump2.9.2">2.9.2、ZJNewsAdViewDelegate说明</span>
 
 ```
 /**
@@ -1368,6 +1291,8 @@ self.floatingAd.hiddenH5CloseButton = YES;
 |v2.5.5.1|2023-10-20|1，h5页面关闭按钮接口控制更改为平台配置 <br>2，h5增加直接跳转系统浏览器平台配置 <br>3，修复已知问题 <br>4，更换为备用域（不影响广告请求）|
 |v2.5.5.2|2023-11-08|1，h5直接跳转系统浏览器对接印鸽 <br>2，修复已知问题|
 |v2.5.5.3|2023-11-09|1，倍孜加入比价 <br>2，可配置弃用appid,adid <br>3，浏览类激励视频问题修复|
+|v2.5.5.4|2023-11-27|1，增加pangle模块 <br>2，穿山甲新sdk适配 <br>3，百度接口更新 |
+|v2.5.5.5|2024-01-03|1，dsp模块拆分 <br>2，gdt依赖库更新，注册方式更换 <br>3，穿山甲使用融合sdk，不在依赖gromore <br>4，动态域名  <br>5，已知问题修复 |
 
 <!-- @import "[TOC]" {cmd="toc" depthFrom=1 depthTo=6 orderedList=false} -->
 
@@ -1386,7 +1311,8 @@ self.floatingAd.hiddenH5CloseButton = YES;
   - [1.3、iOS14注意事项](#13-ios14注意事项)
     - [1.3.1、iOS 14.5及以上版本ATT权限申请](#131-ios-145及以上版本att权限申请)
     - [1.3.2、SKAdNetwork 接入](#132-skadnetwork-接入)
-  - [1.4、初始化SDK](#span-idjump1314-初始化sdkspan)
+  - [1.4、初始化SDK](#span-idjump1414-初始化sdkspan)
+  - [1.5、打包回测](#span-idjump1515-打包回测span)
 - [二、加载广告](#span-idjump2二-加载广告span)
   - [2.1、接入开屏广告(ZJSplashAd)](#span-idjump2121-接入开屏广告zjsplashadspan)
     - [2.1.1、ZJSplashAd广告说明](#span-idjump211211-zjsplashad广告说明span)
@@ -1408,24 +1334,20 @@ self.floatingAd.hiddenH5CloseButton = YES;
     - [2.5.1、ZJNativeExpressFeedAdManager，ZJNativeExpressFeedAd说明](#span-idjump251251-zjnativeexpressfeedadmanagerzjnativeexpressfeedad说明span)
     - [2.5.2、ZJNativeExpressFeedAdManagerDelegate ZJNativeExpressFeedAdDelegate说明](#span-idjump252252-zjnativeexpressfeedadmanagerdelegate-zjnativeexpressfeedaddelegate说明span)
     - [2.5.3、加载模板信息流广告](#span-idjump253253-加载模板信息流广告span)
-  - [2.6、接入Banner广告(ZJBannerAdView)](#span-idjump2626-接入banner广告zjbanneradviewspan)
-    - [2.6.1、ZJBannerAdView说明](#span-idjump261261-zjbanneradview说明span)
-    - [2.6.2、ZJBannerAdViewDelegate说明](#span-idjump262262-zjbanneradviewdelegate说明span)
-    - [2.6.3、加载Banner广告](#span-idjump263263-加载banner广告span)
-  - [2.7、接入自渲染广告(ZJNativeAd)](#27-接入自渲染广告zjnativead)
-    - [2.7.1、ZJNativeAd说明](#271-zjnativead说明)
-    - [2.7.2、加载ZJNativeAd广告 ####](#272-加载zjnativead广告-)
-  - [2.8、接入全屏视频广告(ZJFullScreenVideoAd)</span>](#28-接入全屏视频广告zjfullscreenvideoadspan)
-    - [2.8.1、ZJFullScreenVideoAd说明](#281-zjfullscreenvideoad说明)
-    - [2.8.2、ZJFullScreenVideoAdDelegate广告说明](#282-zjfullscreenvideoaddelegate广告说明)
-    - [2.8.3、加载全屏视频广告](#283-加载全屏视频广告)
-  - [2.9、接入视频内容(ZJContentPage——类似dy,ks短视频)</span>](#29-接入视频内容zjcontentpage类似dyks短视频span)
-    - [2.9.1、ZJContentPage接入注意事项](#291-font-colorredzjcontentpage接入注意事项font)
-    - [2.9.2、ZJContentPage说明](#292-zjcontentpage说明)
-    - [2.9.3、加载视频内容](#293-加载视频内容)
-  - [2.10、接入新闻资讯广告(ZJNewsAdView)](#span-idjump210210-接入新闻资讯广告zjnewsadviewspan)
-    - [2.10.1、ZJNewsAdView说明](#span-idjump21012101-zjnewsadview说明span)
-    - [2.10.2、ZJNewsAdViewDelegate说明](#span-idjump21022102-zjnewsadviewdelegate说明span)
+  - [2.6、接入自渲染广告(ZJNativeAd)](#26-接入自渲染广告zjnativead)
+    - [2.6.1、ZJNativeAd说明](#261-zjnativead说明)
+    - [2.6.2、加载ZJNativeAd广告 ####](#262-加载zjnativead广告-)
+  - [2.7、接入全屏视频广告(ZJFullScreenVideoAd)</span>](#27-接入全屏视频广告zjfullscreenvideoadspan)
+    - [2.7.1、ZJFullScreenVideoAd说明](#271-zjfullscreenvideoad说明)
+    - [2.7.2、ZJFullScreenVideoAdDelegate广告说明](#272-zjfullscreenvideoaddelegate广告说明)
+    - [2.7.3、加载全屏视频广告](#273-加载全屏视频广告)
+  - [2.8、接入视频内容(ZJContentPage——类似dy,ks短视频)</span>](#28-接入视频内容zjcontentpage类似dyks短视频span)
+    - [2.8.1、ZJContentPage接入注意事项](#281-font-colorredzjcontentpage接入注意事项font)
+    - [2.8.2、ZJContentPage说明](#282-zjcontentpage说明)
+    - [2.8.3、加载视频内容](#283-加载视频内容)
+  - [2.9、接入新闻资讯广告(ZJNewsAdView)](#span-idjump2929-接入新闻资讯广告zjnewsadviewspan)
+    - [2.9.1、ZJNewsAdView说明](#span-idjump291291-zjnewsadview说明span)
+    - [2.9.2、ZJNewsAdViewDelegate说明](#span-idjump292292-zjnewsadviewdelegate说明span)
 - [三、接入H5内容页](#span-idjump3三-接入h5内容页span)
   - [3.1、接入H5内容](#span-idjump3131-接入h5内容span)
     - [3.1.1、ZJH5Page说明](#span-idjump311311-zjh5page说明span)

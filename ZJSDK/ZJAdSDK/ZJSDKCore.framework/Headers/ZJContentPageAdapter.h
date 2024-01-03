@@ -20,7 +20,8 @@ ZJContentAdapterStateProtocol,
 ZJAdapterContentAdapterVideoStateProtocol
 >
 
-
+/// 任务完成回调
+- (void)zjAdapter_contentTaskComplete:(id<ZJContentInfo>)content;
 ///  视频状态代理
 @property (nonatomic, weak) id <ZJAdapterContentAdapterVideoStateDelegate> zjAdapter_videoStateDelegate;
 ///  页面状态代理

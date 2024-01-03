@@ -28,6 +28,9 @@ typedef NS_ENUM(NSInteger,ZJErrorCodeAd){
     ZJErrorCodeAd_WXNotResponseImp = 100405,
     
     ZJErrorCodeAd_DisplayError = 100500,
+    
+    ZJErrorCodeAd_MissParameter = 100601,
+
 };
 
 

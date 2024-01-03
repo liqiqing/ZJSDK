@@ -20,8 +20,9 @@ then
     cp -r $SOURCE_DIR/ZJSDKModuleKS/ZJSDKModuleKS_Products/libZJSDKModuleKS.a                                ZJSDK/ZJSDKModuleKS
     cp -r $SOURCE_DIR/ZJSDKModuleMTG/ZJSDKModuleMTG_Products/libZJSDKModuleMTG.a                             ZJSDK/ZJSDKModuleMTG
     cp -r $SOURCE_DIR/ZJSDKModuleSIG/ZJSDKModuleSIG_Products/libZJSDKModuleSIG.a                             ZJSDK/ZJSDKModuleSIG
+    cp -r $SOURCE_DIR/ZJSDKModulePangle/ZJSDKModulePangle_Products/libZJSDKModulePangle.a                    ZJSDK/ZJSDKModulePangle
+    cp -r $SOURCE_DIR/ZJSDKModulePangle/ZJSDKModulePangle_Products/ZJSDKModulePangle/ZJSDKModulePangle.h     ZJSDK/ZJSDKModulePangle
     cp -r $SOURCE_DIR/ZJSDKModuleYM/ZJSDKModuleYM_Products/libZJSDKModuleYM.a                                ZJSDK/ZJSDKModuleYM
-    cp -r $SOURCE_DIR/ZJSDKModuleGromore/ZJSDKModuleGromore_Products/libZJSDKModuleGromore.a                 ZJSDK/ZJSDKModuleGromore
     cp -r $SOURCE_DIR/ZJSDKModuleBeiZi/ZJSDKModuleBeiZi_Products/libZJSDKModuleBeiZi.a                       ZJSDK/ZJSDKModuleBeiZi
     cp -r $SOURCE_DIR/ZJSDKModuleWM/ZJSDKModuleWM_Products/libZJSDKModuleWM.a                                ZJSDK/ZJSDKModuleWM
 else

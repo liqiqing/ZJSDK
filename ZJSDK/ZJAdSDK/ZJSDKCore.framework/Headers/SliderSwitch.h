@@ -81,6 +81,8 @@
 @property(nonatomic,assign) CGSize sliderSize;
 /** 滑条距离底部的边距   default = 2 */
 @property(nonatomic,assign) CGFloat sliderBottomMargin;
+/** 切换页卡的时候是否暂时回收视图，回收视图 减少cpu占用 增加内存占用，空间换性能，默认NO*/
+@property(nonatomic) BOOL viewRecycle;
 /** 滑条偏移量 */
 @property(nonatomic,assign) CGFloat sliderOffset DEPRECATED_MSG_ATTRIBUTE("考虑以后可能的情形预定义属性，功能未实现");
 /** 是否首次加载 */

@@ -40,11 +40,10 @@ target 'ZJSDKDemo' do
   
   
   
-##mark 5，引入聚合广告模块 聚合 注意，聚合只能够引入一个，否则会引起一些联盟重复初始化的问题
+##mark 5，引入聚合广告模块
   #pod 'ZJSDK/ZJSDKModuleDSP'    #依赖库，引入任何模块都需要依赖此模块，默认引入
   
   ##聚合引入多个会引起一些联盟重复初始化的问题
-  #pod 'ZJSDK/ZJSDKModuleGromore'#穿山甲Gromore广告
   #pod 'ZJSDK/ZJSDKModuleBeiZi'  #倍孜广告
   #pod 'ZJSDK/ZJSDKModuleWM'     #Sigmob to-bid广告
 

@@ -12,6 +12,7 @@ NS_ASSUME_NONNULL_BEGIN
 typedef NS_ENUM(NSInteger,ZJCountdownState){
     ZJCountdownStateNone  = 0,
     ZJCountdownStatePaused,
+    ZJCountdownStateResumed,
     ZJCountdownStateRunning,
     ZJCountdownStateEnded,
 };
@@ -34,6 +35,8 @@ typedef void(^ZJCountdownCallBack) (long remainSec, ZJCountdownState state);
 -(void)startCountdown;
 ///暂停倒计时
 -(void)pauseCountdown;
+///继续倒计时
+-(void)resumeCountdown;
 ///重新开始倒计时
 -(void)reStartCountdown;
 ///结束倒计时
