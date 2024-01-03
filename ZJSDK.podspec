@@ -43,7 +43,7 @@ TODO: Add long description of the pod here.
 #    'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64'
 #  }
 #  s.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
-  s.default_subspecs = 'ZJSDKModuleGDT', 'ZJSDKModuleCSJ', 'ZJSDKModuleKS', 'ZJSDKModuleMTG', 'ZJSDKModuleDSP','ZJSDKModuleSIG','ZJSDKModuleBD'
+  s.default_subspecs = 'ZJSDKModuleGDT', 'ZJSDKModuleCSJ', 'ZJSDKModuleKS', 'ZJSDKModuleMTG', 'ZJSDKModuleDSP','ZJSDKModuleSIG','ZJSDKModuleBD','ZJSDKModuleBeiZi'
 
   s.subspec 'ZJAdSDK' do |ss|
     ss.vendored_frameworks = 'ZJSDK/ZJAdSDK/*.framework'
@@ -96,8 +96,8 @@ TODO: Add long description of the pod here.
 
   s.subspec 'ZJSDKModuleDSP' do |ss|
     ss.vendored_libraries = 'ZJSDK/ZJSDKModuleDSP/*.a'
-    ss.resource = 'ZJSDK/ZJSDKModuleDSP/*.bundle'
     ss.dependency 'ZJSDK/ZJAdSDK'
+    ss.dependency 'DSPSDK'
   end
   
   s.subspec 'ZJSDKModuleSIG' do |ss|
@@ -138,7 +138,7 @@ TODO: Add long description of the pod here.
  s.subspec 'ZJSDKModuleBeiZi' do |ss|
    ss.vendored_libraries = 'ZJSDK/ZJSDKModuleBeiZi/*.a'
    ss.dependency 'ZJSDK/ZJAdSDK'
-   ss.dependency 'BeiZiSDK', '4.90.1.26'
+   ss.dependency 'BeiZiSDK-iOS', '~>4.90'
  end
  
   s.subspec 'ZJSDKModuleWM' do |ss|
