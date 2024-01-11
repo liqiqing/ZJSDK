@@ -21,7 +21,7 @@ Pod::Spec.new do |s|
 TODO: Add long description of the pod here.
                        DESC
 
-  s.homepage         = 'https://github.com/liqiqing/ZJSDK.git'
+  s.homepage         = 'https://github.com/liqiqing/ZJSDK.git' 
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'Rare' => 'rarelv@163.com' }
@@ -53,7 +53,7 @@ TODO: Add long description of the pod here.
   s.subspec 'ZJSDKModuleGDT' do |ss|
     ss.vendored_libraries = 'ZJSDK/ZJSDKModuleGDT/*.a'
     ss.dependency 'ZJSDK/ZJAdSDK'
-    ss.dependency 'GDTMobSDK', '>= 4.14.6'
+    ss.dependency 'GDTMobSDK', '>= 4.14.62'
 #    4.14.6开始旧的注册方法标记为废弃，新的注册方法可以调用到
 #    4.13.51 bidding竞败上报方法sendLossNotificationWithPrice，4.13.81为sendLossNotificationWithPrice
 #   固定到4.13可能会导致crash
@@ -106,14 +106,14 @@ TODO: Add long description of the pod here.
     ss.dependency 'SigmobAd-iOS', '~> 4.7'
 #   sig更新日志要找运营看，或者自己注册一个账号看一下
   end
-
-  s.subspec 'ZJSDKModuleYM' do |ss|
-    ss.vendored_libraries = 'ZJSDK/ZJSDKModuleYM/*.a'
-    ss.dependency 'ZJSDK/ZJAdSDK'
-    ss.vendored_frameworks = 'ZJSDK/ZJSDKModuleYM/*.framework'
-    ss.preserve_paths = 'ZJSDK/ZJSDKModuleYM/*.framework'
-    ss.resources = 'ZJSDK/ZJSDKModuleYM/AlicloudCloudCode.framework/AlicloudCloudCode.bundle'
-  end
+#
+#  s.subspec 'IPDSDKModuleYM' do |ss|
+#    ss.vendored_libraries = 'IPDSDK/IPDSDKModuleYM/*.a'
+#    ss.dependency 'IPDSDK/IPDAdSDK'
+#    ss.vendored_frameworks = 'IPDSDK/IPDSDKModuleYM/*.framework'
+#    ss.preserve_paths = 'IPDSDK/IPDSDKModuleYM/*.framework'
+#    ss.resources = 'IPDSDK/IPDSDKModuleYM/AlicloudCloudCode.framework/AlicloudCloudCode.bundle'
+#  end
   
   s.subspec 'ZJSDKModuleGoogle' do |ss|
     ss.vendored_libraries = 'ZJSDK/ZJSDKModuleGoogle/*.a'
