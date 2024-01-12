@@ -47,7 +47,6 @@ pod 'ZJSDK/ZJSDKModuleBeiZi'#倍孜广告
 ```
 ```
 #默认不引入的广告模块
-pod 'ZJSDK/ZJSDKModuleYM'#云码广告 
 pod 'ZJSDK/ZJSDKModuleGoogle'#Google广告 
 pod 'ZJSDK/ZJSDKModulePangle'#穿山甲海外 
 
