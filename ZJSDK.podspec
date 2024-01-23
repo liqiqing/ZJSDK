@@ -53,7 +53,7 @@ TODO: Add long description of the pod here.
   s.subspec 'ZJSDKModuleGDT' do |ss|
     ss.vendored_libraries = 'ZJSDK/ZJSDKModuleGDT/*.a'
     ss.dependency 'ZJSDK/ZJAdSDK'
-    ss.dependency 'GDTMobSDK', '>= 4.14.62'
+    ss.dependency 'GDTMobSDK', '~> 4.14.62'
 #    4.14.6开始旧的注册方法标记为废弃，新的注册方法可以调用到
 #    4.13.51 bidding竞败上报方法sendLossNotificationWithPrice，4.13.81为sendLossNotificationWithPrice
 #   固定到4.13可能会导致crash
@@ -78,7 +78,7 @@ TODO: Add long description of the pod here.
     ss.vendored_libraries = 'ZJSDK/ZJSDKModuleKS/*.a'
     ss.dependency 'ZJSDK/ZJAdSDK'
 #    ss.vendored_frameworks = 'ZJSDK/ZJSDKModuleKS/KSAdSDK.framework'
-    ss.dependency 'KSAdSDK', '~> 3.3.6'
+    ss.dependency 'KSAdSDK', '3.3.57'
 #    bidding广告 3.3.6 以上，内容 3.3.10 以上 sdk 版本
   end
 
