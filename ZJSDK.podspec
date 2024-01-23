@@ -78,7 +78,7 @@ TODO: Add long description of the pod here.
     ss.vendored_libraries = 'ZJSDK/ZJSDKModuleKS/*.a'
     ss.dependency 'ZJSDK/ZJAdSDK'
 #    ss.vendored_frameworks = 'ZJSDK/ZJSDKModuleKS/KSAdSDK.framework'
-    ss.dependency 'KSAdSDK', '3.3.57'
+    ss.dependency 'KSAdSDK', '3.3.55'
 #    bidding广告 3.3.6 以上，内容 3.3.10 以上 sdk 版本
   end
 
