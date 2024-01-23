@@ -26,7 +26,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 // 判断字符串是否为空（YES：空）
 +(BOOL)isEmptyString:(NSString *)string;
-
++(BOOL)isEmptyNumber:(NSNumber *)number;
 @end
 
 NS_ASSUME_NONNULL_END
