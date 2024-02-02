@@ -19,7 +19,7 @@ NS_ASSUME_NONNULL_BEGIN
 @required
 -(void)dealSuccessResult;
 -(void)dealFailResultWithError:(NSError*)error;
--(ZJMultipleTierAdLoader *)createTierLoader:(NSArray <ZJAdUnitModel *>*)tiers;
+-(ZJMultipleTierAdLoader *)createTierLoader:(NSArray <ZJAdUnitModel *>*)tiers showPriority:(ZJAdShowPriority)showPriority;
 
 @optional
 - (NSInteger)getCountDownInterval;

@@ -41,8 +41,8 @@ typedef void(^ZJCountdownCallBack) (long remainSec, ZJCountdownState state);
 -(void)reStartCountdown;
 ///结束倒计时
 -(void)stopCountdown;
-///关闭倒计时
--(void)invalidateTimer;
+/////关闭倒计时
+//-(void)invalidateTimer;
 
 @end
 
