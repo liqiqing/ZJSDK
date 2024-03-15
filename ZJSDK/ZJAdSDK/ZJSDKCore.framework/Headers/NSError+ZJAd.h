@@ -30,7 +30,7 @@ typedef NS_ENUM(NSInteger,ZJErrorCodeAd){
     ZJErrorCodeAd_DisplayError = 100500,
     
     ZJErrorCodeAd_MissParameter = 100601,
-
+    ZJErrorCodeAd_AdInvalid = 100602,
 };
 
 

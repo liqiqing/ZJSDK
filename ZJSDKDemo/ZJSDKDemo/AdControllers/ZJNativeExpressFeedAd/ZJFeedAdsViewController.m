@@ -22,7 +22,7 @@
 
     self.loadAdView.showButton.hidden = YES;
 //    J0128142431
-    [self.loadAdView appendAdID:@[AdId_ExpressAd1,AdId_ExpressAd2,AdId_ExpressAd3,AdId_ExpressAd4,AdId_ExpressAd5,AdId_ExpressAd6,AdId_ExpressAd7,AdId_ExpressAd8]];
+    [self.loadAdView appendAdID:@[AdId_ExpressAd_TanX,AdId_ExpressAd1,AdId_ExpressAd2,AdId_ExpressAd3,AdId_ExpressAd4,AdId_ExpressAd5,AdId_ExpressAd6,AdId_ExpressAd7,AdId_ExpressAd8]];
     
 }
 

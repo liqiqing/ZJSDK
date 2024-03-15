@@ -9,11 +9,15 @@
 #ifndef ZJADIDS_h
 #define ZJADIDS_h
 
+//BundleId
+#define ZJ_BundleId               @"com.zj.shop.towmall.hwxsx"
+
 ///AppID
 #define ZJ_Appid                @"zj_20201014iOSDEMO"
 
 #pragma mark =============== 开屏广告位 ===============
 ///正常
+#define AdId_Splash_TanX            @"J1087635396"
 #define AdId_Splash1            @"J6428742394"
 #define AdId_Splash2            @"J5621495755"
 #define AdId_Splash3            @"c887417368"
@@ -31,6 +35,7 @@
 #define AdId_Splash11           @"J7254808716"
 #pragma mark =============== 激励广告位 ===============
 ///正常
+#define AdId_Reward_TanX            @"J7727034238"
 #define AdId_Reward1            @"J4008472476"
 #define AdId_Reward2            @"zjad_G8020744212936426"
 #define AdId_Reward3            @"KS90010001"
@@ -58,6 +63,7 @@
 
 #pragma mark =============== 插屏广告位 ===============
 ///正常
+#define AdId_Interstitial_TanX            @"J8796105725"
 #define AdId_Interstitial1      @"J8595471688"
 #define AdId_Interstitial2      @"J4588704645"
 #define AdId_Interstitial3      @"J1475056773"  //SIG新插屏
@@ -89,6 +95,7 @@
 #define AdId_VideoExpress3      @"zjad_T945543945"
 
 #pragma mark =============== 模版信息流广告位 ===============
+#define AdId_ExpressAd_TanX         @"J4604648357"
 #define AdId_ExpressAd1         @"G3061112693227741"
 #define AdId_ExpressAd2         @"K4000000007"
 #define AdId_ExpressAd3         @"T945740162"
@@ -116,12 +123,12 @@
 #define AdId_Floating1          @"J2952950117"
 
 #pragma mark =============== H5广告广告位 ===============
-#define AdId_Web1               @"zjad_h500001iostest"
+#define AdId_Web1               @"J2455189495"
 #define AdId_Web2               @"J2952950117"
 #define AdId_Web3               @"J2546664610"
 #define AdId_Web4               @"J6781884237"
 #define AdId_Web5               @"J9337765012"
-#define AdId_Web6               @"J2455189495"
+#define AdId_Web6               @"zjad_h500001iostest"
 #define AdId_Web7               @"J3935698050"
 //zjad_h500001iostest
 //J2952950117

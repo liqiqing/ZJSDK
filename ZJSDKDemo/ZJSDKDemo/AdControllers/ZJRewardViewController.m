@@ -22,7 +22,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-   [self.loadAdView appendAdID:@[AdId_Reward1,AdId_Reward2,AdId_Reward3,AdId_Reward4,AdId_Reward5,AdId_Reward6,AdId_Reward7,AdId_Reward8,AdId_Reward9,AdId_Reward10]];
+   [self.loadAdView appendAdID:@[AdId_Reward_TanX,AdId_Reward1,AdId_Reward2,AdId_Reward3,AdId_Reward4,AdId_Reward5,AdId_Reward6,AdId_Reward7,AdId_Reward8,AdId_Reward9,AdId_Reward10]];
 }
 
 -(void)viewWillAppear:(BOOL)animated{

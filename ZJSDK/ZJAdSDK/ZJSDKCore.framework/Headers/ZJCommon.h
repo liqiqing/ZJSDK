@@ -6,7 +6,7 @@
 //
 
 #import <Foundation/Foundation.h>
-
+#import <UIKit/UIKit.h>
 NS_ASSUME_NONNULL_BEGIN
 
 @interface ZJCommon : NSObject
@@ -27,6 +27,11 @@ NS_ASSUME_NONNULL_BEGIN
 // 判断字符串是否为空（YES：空）
 +(BOOL)isEmptyString:(NSString *)string;
 +(BOOL)isEmptyNumber:(NSNumber *)number;
+
++(UIWindow *)getCurrentWindow;
++ (UIWindow *)getKeyWindow;
++(UIViewController *)getCurrentVCFrom:(UIViewController *)vc;
++(UIViewController *)getCurrentVC;
 @end
 
 NS_ASSUME_NONNULL_END
