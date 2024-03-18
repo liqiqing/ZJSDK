@@ -34,7 +34,7 @@ TODO: Add long description of the pod here.
 
   #依赖的系统静态库
   #z表示libz.tdb,后缀不需要,lib开头的省略lib
-  s.libraries = 'resolv.9','c++','z','sqlite3','bz2','xml2','c++abi'
+  s.libraries = 'resolv.9','c++','z','sqlite3','bz2','xml2','c++abi','sqlite3.0'
   s.pod_target_xcconfig = { 'VALID_ARCHS' => 'x86_64 armv7 arm64', 'DEFINES_MODULE' => 'YES', 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'i386,arm64' }
 
 #  valid_archs = ['armv7', 'i386', 'x86_64', 'arm64']
