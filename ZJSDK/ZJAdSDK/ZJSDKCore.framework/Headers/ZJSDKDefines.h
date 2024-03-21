@@ -32,12 +32,8 @@ if(@available(iOS 15.0,*)) {\
 #define ZJ_IPHONEXSeries zj_is_iphoneXSeries_screen()
 
 #define ZJ_DefaultNavigationBarHeight \
-({CGFloat navigationBarHeight = 44; \
-if (ZJ_IPHONEXSeries)  { \
-navigationBarHeight = 44+ZJ_SafeAreaInsetsTop; \
-}else{ \
-navigationBarHeight = 44+ZJ_StatusBarHeight; \
-} \
+({CGFloat navigationBarHeight = self.navigationController.navigationBar.frame.size.height; \
+navigationBarHeight = navigationBarHeight+ZJ_StatusBarHeight; \
 (navigationBarHeight);})
 
 #define ZJ_SafeAreaInsetsBottom \
