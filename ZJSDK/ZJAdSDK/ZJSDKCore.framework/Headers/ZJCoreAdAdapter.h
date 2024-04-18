@@ -12,7 +12,7 @@
 #import <ZJSDKCore/ZJBiddingLossRelease.h>
 #import <ZJSDKCore/ZJAdEventReport.h>
 #import <ZJSDKCore/ZJSDKManager.h>
-
+#import <ZJSDKCore/ZJBiddingReportModel.h>
 NS_ASSUME_NONNULL_BEGIN
 
 @interface ZJCoreAdAdapter : NSObject
@@ -59,6 +59,13 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)biddingSuccess:(NSInteger )secondPrice;
 
 
+/// 竞价上报，提供更多信息
+/// @param model 上报内容model
+- (void)biddingSuccessModel:(ZJBiddingReportModel *)model;
+
+/// 竞价上报，提供更多信息
+/// @param model 上报内容model
+- (void)biddingLossModel:(ZJBiddingReportModel *)model;
 /**
  *  竞败之后或未参竞调用
  *  @param price - 本次竞胜方出价（单位：分），必填

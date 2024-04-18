@@ -32,6 +32,8 @@ NS_ASSUME_NONNULL_BEGIN
 + (UIWindow *)getKeyWindow;
 +(UIViewController *)getCurrentVCFrom:(UIViewController *)vc;
 +(UIViewController *)getCurrentVC;
+//获取时间戳（毫秒）
++ (NSString *)getTimestampSince1970;
 @end
 
 NS_ASSUME_NONNULL_END
