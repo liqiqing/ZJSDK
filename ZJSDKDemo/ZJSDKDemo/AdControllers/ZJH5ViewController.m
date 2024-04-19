@@ -29,6 +29,7 @@
     [super loadAd:adId];
     ZJUser *user = [ZJUser new];
     user.userID = @"00012282";
+//    user.userID = [NSString stringWithFormat:@"00012282_%u",arc4random() % 100];;
     user.userName = @"吊炸天524";
     user.userAvatar = @"";
     user.userIntegral = 10000;

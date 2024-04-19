@@ -21,7 +21,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [self.loadAdView appendAdID:@[AdId_Splash_TanX,AdId_Splash1,AdId_Splash2,AdId_Splash3,AdId_Splash4,AdId_Splash5,AdId_Splash6,AdId_Splash7,AdId_Splash8,AdId_Splash9,AdId_Splash10,AdId_Splash11]];
+    [self.loadAdView appendAdID:@[AdId_Splash1,AdId_Splash2,AdId_Splash3,AdId_Splash4,AdId_Splash5,AdId_Splash6,AdId_Splash7,AdId_Splash8,AdId_Splash9,AdId_Splash10,AdId_Splash11]];
 }
 
 
@@ -106,6 +106,7 @@
  *  详解: 当点击下载应用时会调用系统程序打开，应用切换到后台
  */
 - (void)zj_splashAdApplicationWillEnterBackground:(ZJSplashAd *)splashAd{
+    
 }
 
 /**
