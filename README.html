@@ -1,0 +1,1874 @@
+<!DOCTYPE html><html><head>
+      <title>README</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+      
+      
+      
+      
+      
+      <style>
+      code[class*=language-],pre[class*=language-]{color:#333;background:0 0;font-family:Consolas,"Liberation Mono",Menlo,Courier,monospace;text-align:left;white-space:pre;word-spacing:normal;word-break:normal;word-wrap:normal;line-height:1.4;-moz-tab-size:8;-o-tab-size:8;tab-size:8;-webkit-hyphens:none;-moz-hyphens:none;-ms-hyphens:none;hyphens:none}pre[class*=language-]{padding:.8em;overflow:auto;border-radius:3px;background:#f5f5f5}:not(pre)>code[class*=language-]{padding:.1em;border-radius:.3em;white-space:normal;background:#f5f5f5}.token.blockquote,.token.comment{color:#969896}.token.cdata{color:#183691}.token.doctype,.token.macro.property,.token.punctuation,.token.variable{color:#333}.token.builtin,.token.important,.token.keyword,.token.operator,.token.rule{color:#a71d5d}.token.attr-value,.token.regex,.token.string,.token.url{color:#183691}.token.atrule,.token.boolean,.token.code,.token.command,.token.constant,.token.entity,.token.number,.token.property,.token.symbol{color:#0086b3}.token.prolog,.token.selector,.token.tag{color:#63a35c}.token.attr-name,.token.class,.token.class-name,.token.function,.token.id,.token.namespace,.token.pseudo-class,.token.pseudo-element,.token.url-reference .token.variable{color:#795da3}.token.entity{cursor:help}.token.title,.token.title .token.punctuation{font-weight:700;color:#1d3e81}.token.list{color:#ed6a43}.token.inserted{background-color:#eaffea;color:#55a532}.token.deleted{background-color:#ffecec;color:#bd2c00}.token.bold{font-weight:700}.token.italic{font-style:italic}.language-json .token.property{color:#183691}.language-markup .token.tag .token.punctuation{color:#333}.language-css .token.function,code.language-css{color:#0086b3}.language-yaml .token.atrule{color:#63a35c}code.language-yaml{color:#183691}.language-ruby .token.function{color:#333}.language-markdown .token.url{color:#795da3}.language-makefile .token.symbol{color:#795da3}.language-makefile .token.variable{color:#183691}.language-makefile .token.builtin{color:#0086b3}.language-bash .token.keyword{color:#0086b3}pre[data-line]{position:relative;padding:1em 0 1em 3em}pre[data-line] .line-highlight-wrapper{position:absolute;top:0;left:0;background-color:transparent;display:block;width:100%}pre[data-line] .line-highlight{position:absolute;left:0;right:0;padding:inherit 0;margin-top:1em;background:hsla(24,20%,50%,.08);background:linear-gradient(to right,hsla(24,20%,50%,.1) 70%,hsla(24,20%,50%,0));pointer-events:none;line-height:inherit;white-space:pre}pre[data-line] .line-highlight:before,pre[data-line] .line-highlight[data-end]:after{content:attr(data-start);position:absolute;top:.4em;left:.6em;min-width:1em;padding:0 .5em;background-color:hsla(24,20%,50%,.4);color:#f4f1ef;font:bold 65%/1.5 sans-serif;text-align:center;vertical-align:.3em;border-radius:999px;text-shadow:none;box-shadow:0 1px #fff}pre[data-line] .line-highlight[data-end]:after{content:attr(data-end);top:auto;bottom:.4em}html body{font-family:'Helvetica Neue',Helvetica,'Segoe UI',Arial,freesans,sans-serif;font-size:16px;line-height:1.6;color:#333;background-color:#fff;overflow:initial;box-sizing:border-box;word-wrap:break-word}html body>:first-child{margin-top:0}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{line-height:1.2;margin-top:1em;margin-bottom:16px;color:#000}html body h1{font-size:2.25em;font-weight:300;padding-bottom:.3em}html body h2{font-size:1.75em;font-weight:400;padding-bottom:.3em}html body h3{font-size:1.5em;font-weight:500}html body h4{font-size:1.25em;font-weight:600}html body h5{font-size:1.1em;font-weight:600}html body h6{font-size:1em;font-weight:600}html body h1,html body h2,html body h3,html body h4,html body h5{font-weight:600}html body h5{font-size:1em}html body h6{color:#5c5c5c}html body strong{color:#000}html body del{color:#5c5c5c}html body a:not([href]){color:inherit;text-decoration:none}html body a{color:#08c;text-decoration:none}html body a:hover{color:#00a3f5;text-decoration:none}html body img{max-width:100%}html body>p{margin-top:0;margin-bottom:16px;word-wrap:break-word}html body>ol,html body>ul{margin-bottom:16px}html body ol,html body ul{padding-left:2em}html body ol.no-list,html body ul.no-list{padding:0;list-style-type:none}html body ol ol,html body ol ul,html body ul ol,html body ul ul{margin-top:0;margin-bottom:0}html body li{margin-bottom:0}html body li.task-list-item{list-style:none}html body li>p{margin-top:0;margin-bottom:0}html body .task-list-item-checkbox{margin:0 .2em .25em -1.8em;vertical-align:middle}html body .task-list-item-checkbox:hover{cursor:pointer}html body blockquote{margin:16px 0;font-size:inherit;padding:0 15px;color:#5c5c5c;background-color:#f0f0f0;border-left:4px solid #d6d6d6}html body blockquote>:first-child{margin-top:0}html body blockquote>:last-child{margin-bottom:0}html body hr{height:4px;margin:32px 0;background-color:#d6d6d6;border:0 none}html body table{margin:10px 0 15px 0;border-collapse:collapse;border-spacing:0;display:block;width:100%;overflow:auto;word-break:normal;word-break:keep-all}html body table th{font-weight:700;color:#000}html body table td,html body table th{border:1px solid #d6d6d6;padding:6px 13px}html body dl{padding:0}html body dl dt{padding:0;margin-top:16px;font-size:1em;font-style:italic;font-weight:700}html body dl dd{padding:0 16px;margin-bottom:16px}html body code{font-family:Menlo,Monaco,Consolas,'Courier New',monospace;font-size:.85em;color:#000;background-color:#f0f0f0;border-radius:3px;padding:.2em 0}html body code::after,html body code::before{letter-spacing:-.2em;content:'\00a0'}html body pre>code{padding:0;margin:0;word-break:normal;white-space:pre;background:0 0;border:0}html body .highlight{margin-bottom:16px}html body .highlight pre,html body pre{padding:1em;overflow:auto;line-height:1.45;border:#d6d6d6;border-radius:3px}html body .highlight pre{margin-bottom:0;word-break:normal}html body pre code,html body pre tt{display:inline;max-width:initial;padding:0;margin:0;overflow:initial;line-height:inherit;word-wrap:normal;background-color:transparent;border:0}html body pre code:after,html body pre code:before,html body pre tt:after,html body pre tt:before{content:normal}html body blockquote,html body dl,html body ol,html body p,html body pre,html body ul{margin-top:0;margin-bottom:16px}html body kbd{color:#000;border:1px solid #d6d6d6;border-bottom:2px solid #c7c7c7;padding:2px 4px;background-color:#f0f0f0;border-radius:3px}@media print{html body{background-color:#fff}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{color:#000;page-break-after:avoid}html body blockquote{color:#5c5c5c}html body pre{page-break-inside:avoid}html body table{display:table}html body img{display:block;max-width:100%;max-height:100%}html body code,html body pre{word-wrap:break-word;white-space:pre}}.markdown-preview{width:100%;height:100%;box-sizing:border-box}.markdown-preview ul{list-style:disc}.markdown-preview ul ul{list-style:circle}.markdown-preview ul ul ul{list-style:square}.markdown-preview ol{list-style:decimal}.markdown-preview ol ol,.markdown-preview ul ol{list-style-type:lower-roman}.markdown-preview ol ol ol,.markdown-preview ol ul ol,.markdown-preview ul ol ol,.markdown-preview ul ul ol{list-style-type:lower-alpha}.markdown-preview .newpage,.markdown-preview .pagebreak{page-break-before:always}.markdown-preview pre.line-numbers{position:relative;padding-left:3.8em;counter-reset:linenumber}.markdown-preview pre.line-numbers>code{position:relative}.markdown-preview pre.line-numbers .line-numbers-rows{position:absolute;pointer-events:none;top:1em;font-size:100%;left:0;width:3em;letter-spacing:-1px;border-right:1px solid #999;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.markdown-preview pre.line-numbers .line-numbers-rows>span{pointer-events:none;display:block;counter-increment:linenumber}.markdown-preview pre.line-numbers .line-numbers-rows>span:before{content:counter(linenumber);color:#999;display:block;padding-right:.8em;text-align:right}.markdown-preview .mathjax-exps .MathJax_Display{text-align:center!important}.markdown-preview:not([data-for=preview]) .code-chunk .code-chunk-btn-group{display:none}.markdown-preview:not([data-for=preview]) .code-chunk .status{display:none}.markdown-preview:not([data-for=preview]) .code-chunk .output-div{margin-bottom:16px}.markdown-preview .md-toc{padding:0}.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link{display:inline;padding:.25rem 0}.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link div,.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link p{display:inline}.markdown-preview .md-toc .md-toc-link-wrapper.highlighted .md-toc-link{font-weight:800}.scrollbar-style::-webkit-scrollbar{width:8px}.scrollbar-style::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}.scrollbar-style::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,.66);border:4px solid rgba(150,150,150,.66);background-clip:content-box}html body[for=html-export]:not([data-presentation-mode]){position:relative;width:100%;height:100%;top:0;left:0;margin:0;padding:0;overflow:auto}html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{position:relative;top:0;min-height:100vh}@media screen and (min-width:914px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{padding:2em calc(50% - 457px + 2em)}}@media screen and (max-width:914px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{font-size:14px!important;padding:1em}}@media print{html body[for=html-export]:not([data-presentation-mode]) #sidebar-toc-btn{display:none}}html body[for=html-export]:not([data-presentation-mode]) #sidebar-toc-btn{position:fixed;bottom:8px;left:8px;font-size:28px;cursor:pointer;color:inherit;z-index:99;width:32px;text-align:center;opacity:.4}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] #sidebar-toc-btn{opacity:1}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc{position:fixed;top:0;left:0;width:300px;height:100%;padding:32px 0 48px 0;font-size:14px;box-shadow:0 0 4px rgba(150,150,150,.33);box-sizing:border-box;overflow:auto;background-color:inherit}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar{width:8px}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,.66);border:4px solid rgba(150,150,150,.66);background-clip:content-box}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc a{text-decoration:none}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc{padding:0 16px}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link{display:inline;padding:.25rem 0}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link div,html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link p{display:inline}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper.highlighted .md-toc-link{font-weight:800}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{left:300px;width:calc(100% - 300px);padding:2em calc(50% - 457px - 300px / 2);margin:0;box-sizing:border-box}@media screen and (max-width:1274px){html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{width:100%}}html body[for=html-export]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .markdown-preview{left:50%;transform:translateX(-50%)}html body[for=html-export]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .md-sidebar-toc{display:none}
+/* Please visit the URL below for more information: */
+/*   https://shd101wyy.github.io/markdown-preview-enhanced/#/customize-css */
+
+      </style>
+      <!-- The content below will be included at the end of the <head> element. --><script type="text/javascript">
+  document.addEventListener("DOMContentLoaded", function () {
+    // your code here
+  });
+</script></head><body for="html-export">
+    
+    
+      <div class="crossnote markdown-preview  ">
+      
+<h1 id="zjsdk_ios使用文档">ZJSDK_iOS使用文档 </h1>
+<h2 id="span-idjump1版本更新日志span"><span id="jump1">版本更新日志</span> </h2>
+<table>
+<thead>
+<tr>
+<th>最新版本更新日志</th>
+<th>修订日期</th>
+<th>修订说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>v2.5.7.2</td>
+<td>2024-04-18</td>
+<td>百度SDK更新，适配新的激励上报 <br>增加隐私协议PrivacyInfo <br>新增scheme列表配置要求，参考<a href="#span-idjump124124-scheme%E5%88%97%E8%A1%A8%E6%B7%BB%E5%8A%A0%E4%BB%A5%E4%B8%8B%E5%86%85%E5%AE%B9span">1.2.4</a></td>
+</tr>
+</tbody>
+</table>
+<p>历史版本信息见 <a href="#%E5%8E%86%E5%8F%B2%E7%89%88%E6%9C%AC%E6%9B%B4%E6%96%B0%E6%97%A5%E5%BF%97">历史版本更新日志</a></p>
+<h2 id="span-idjump1一-ios-sdk接入说明span"><span id="jump1">一、iOS SDK接入说明</span> </h2>
+<h3 id="span-idjump1111-工程设置导入frameworkspan"><span id="jump1.1">1.1、工程设置导入framework</span> </h3>
+<h4 id="span-idjump111111-申请应用的appidspan"><span id="jump1.1.1">1.1.1、申请应用的AppID</span> </h4>
+<pre data-role="codeBlock" data-info="" class="language-text"><code>请找运营人员获取应用ID和广告位ID。
+</code></pre><h4 id="span-idjump112112-引入frameworkspan"><span id="jump1.1.2">1.1.2、引入framework</span> </h4>
+<p><strong>1. CocoaPods接入方式</strong><br>
+<em><strong>1.1 一般引入方式</strong></em></p>
+<pre data-role="codeBlock" data-info="" class="language-text"><code>#引入常用广告模块  
+pod 'ZJSDK'
+</code></pre><p><em><strong>1.2 拆分模块引入方式</strong></em></p>
+<pre data-role="codeBlock" data-info="" class="language-text"><code>#常用广告模块（如需模块拆分引入，请引入ZJSDKModuleDSP）
+pod 'ZJSDK/ZJSDKModuleDSP'#依赖库，引入任何模块都需要依赖此模块，默认引入
+pod 'ZJSDK/ZJSDKModuleGDT'#优量汇广告
+pod 'ZJSDK/ZJSDKModuleCSJ'#穿山甲广告
+pod 'ZJSDK/ZJSDKModuleKS'#快手广告
+pod 'ZJSDK/ZJSDKModuleMTG'#MTG广告
+pod 'ZJSDK/ZJSDKModuleSIG'#Sigmob广告
+pod 'ZJSDK/ZJSDKModuleBD'#百度广告
+pod 'ZJSDK/ZJSDKModuleBeiZi'#倍孜广告
+pod 'ZJSDK/ZJSDKModuleTanX'#TanX广告
+</code></pre><pre data-role="codeBlock" data-info="" class="language-text"><code>#默认不引入的广告模块
+pod 'ZJSDK/ZJSDKModuleGoogle'#Google广告 
+pod 'ZJSDK/ZJSDKModulePangle'#穿山甲海外 
+
+#聚合广告模块（默认不引入）
+#注意：引入多个聚合广告可能会引起一些联盟重复初始化的问题。
+pod 'ZJSDK/ZJSDKModuleWM'     #Sigmob to-bid广告
+</code></pre><p><em><strong>1.3 本地视频内容（类似dy，ks短视频）引入方式</strong></em><br>
+接入视频内容注意事项，请转到 <a href="#-291-font-colorredzjcontentpage%E6%8E%A5%E5%85%A5%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9font">2.9.1、ZJContentPage接入注意事项</a></p>
+<pre data-role="codeBlock" data-info="" class="language-text"><code>在以上引入的基础上，将快手库指定为本地内容包
+pod 'KSAdSDK',:path =&gt; '../ZJSDK/ZJSDKModuleKS'#指定快手库为本地内容库
+</code></pre><p><strong>2.手动方式</strong></p>
+<p>1.获取 framework 文件后直接将 {ZJSDK}文件拖入工程即可。</p>
+<p>2.前往项目的Build Setting中的Enable Bitcode设置为NO</p>
+<p>3.Build Settings中Other Linker Flags 增加参数-ObjC和-l 'ObjC'，字母o和c大写</p>
+<p>4.升级SDK的同学必须同时更新framework和bundle文件，否则可能出现部分页面无法展示的问题，老版本升级的同学需要重新引入ZJSDK.framework，拖入完请确保Copy Bundle Resources中有BUAdSDK.bundle，DSPBundle.bundle等否则可能出现icon图片加载不出来的情况。</p>
+<p><strong>添加依赖库</strong></p>
+<p>工程需要在TARGETS -&gt; Build Phases中找到Link Binary With Libraries，点击“+”，依次添加下列依赖库</p>
+<ul>
+<li>
+<p>libsqlite3.0.tbd</p>
+</li>
+<li>
+<p>JavaScriptCore.framework</p>
+</li>
+<li>
+<p>AudioToolbox.framework</p>
+</li>
+<li>
+<p>QuickLook.framework</p>
+</li>
+<li>
+<p>MessageUI.framework</p>
+</li>
+<li>
+<p>AVKit.framework</p>
+</li>
+<li>
+<p>DeviceCheck.framework</p>
+</li>
+<li>
+<p>CFNetwork.framework</p>
+</li>
+<li>
+<p>CoreGraphics.framework</p>
+</li>
+<li>
+<p>SafariServices.framework</p>
+</li>
+<li>
+<p>StoreKit.framework</p>
+</li>
+<li>
+<p>MobileCoreServices.framework</p>
+</li>
+<li>
+<p>WebKit.framework</p>
+</li>
+<li>
+<p>MediaPlayer.framework</p>
+</li>
+<li>
+<p>CoreMedia.framework</p>
+</li>
+<li>
+<p>CoreLocation.framework</p>
+</li>
+<li>
+<p>AVFoundation.framework</p>
+</li>
+<li>
+<p>CoreTelephony.framework</p>
+</li>
+<li>
+<p>SystemConfiguration.framework</p>
+</li>
+<li>
+<p>AdSupport.framework</p>
+</li>
+<li>
+<p>CoreMotion.framework</p>
+</li>
+<li>
+<p>Accelerate.framework</p>
+</li>
+<li>
+<p>libresolv.9.tbd</p>
+</li>
+<li>
+<p>libc++.tbd</p>
+</li>
+<li>
+<p>libz.tbd</p>
+</li>
+<li>
+<p>libsqlite3.tbd</p>
+</li>
+<li>
+<p>libbz2.tbd</p>
+</li>
+<li>
+<p>libxml2.tbd</p>
+</li>
+<li>
+<p>QuartzCore.framework</p>
+</li>
+<li>
+<p>Security.framework</p>
+</li>
+<li>
+<p>libc++abi.tbd</p>
+<p>如果以上依赖库增加完仍旧报错，请添加ImageIO.framework。</p>
+<p>SystemConfiguration.framework、CoreTelephony.framework、Security.framework是为了统计app信息使用</p>
+</li>
+</ul>
+<p><font color="#FF0000">**3.注意事项： **</font></p>
+<ul>
+<li>
+<p>快手广告：</p>
+<ul>
+<li>
+<p>手动导入快手广告需.前往项目的Build Phases，创建Copy Files，修改Destination为Frameworks，Name中添加KSAdSDK.framework。</p>
+</li>
+<li>
+<p>为了方便模拟器调试，KSAdSDK 带有x86_64,i386架构，上架App store需要移除对应的这两个架构，请参考:（<a href="https://stackoverflow.com/questions/30547283/submit-to-app-store-issues-unsupported-architecture-x86%EF%BC%89%E3%80%82">https://stackoverflow.com/questions/30547283/submit-to-app-store-issues-unsupported-architecture-x86）。</a></p>
+</li>
+</ul>
+</li>
+<li>
+<p>Google广告：</p>
+<ul>
+<li>
+<p>需要在info.plist 添加GADApplicationIdentifier字段，value为AppId ,如果使用了Google广告sdk且未在info.plist中配置，会导致运行时错误，参考：<a href="https://developers.google.com/admob/ios/quick-start#cocoapods">https://developers.google.com/admob/ios/quick-start#cocoapods</a></p>
+<pre data-role="codeBlock" data-info="" class="language-text"><code>&lt;key&gt;GADApplicationIdentifier&lt;/key&gt;
+&lt;string&gt;申请的Google广告的appid&lt;/string&gt;
+</code></pre></li>
+<li>
+<p>Google启用测试广告，参考：<a href="https://developers.google.com/admob/ios/test-ads#enable_test_devices">https://developers.google.com/admob/ios/test-ads#enable_test_devices</a></p>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="span-idjump1212-xcode编译选项设置span"><span id="jump1.2">1.2、Xcode编译选项设置</span> </h3>
+<h4 id="span-idjump1121121-添加权限span"><span id="jump1.1.2.1">1.2.1、添加权限</span> </h4>
+<ul>
+<li>工程plist文件设置，点击右边的information Property List后边的 "+" 展开</li>
+</ul>
+<p>添加 App Transport Security Settings，先点击左侧展开箭头，再点右侧加号，Allow Arbitrary Loads 选项自动加入，修改值为 YES。 SDK API 已经全部支持HTTPS，但是广告主素材存在非HTTPS情况。</p>
+<pre data-role="codeBlock" data-info="" class="language-text"><code>&lt;key&gt;NSAppTransportSecurity&lt;/key&gt;
+  &lt;dict&gt;
+     &lt;key&gt;NSAllowsArbitraryLoads&lt;/key&gt;
+   &lt;true/&gt;
+&lt;/dict&gt;
+</code></pre><h4 id="span-idjump122122-运行环境配置span"><span id="jump1.2.2">1.2.2、运行环境配置</span> </h4>
+<ul>
+<li>支持系统 iOS 11.X 及以上;</li>
+<li>支持架构： x86-64, armv7, arm64</li>
+<li>SDK编译环境 Xcode 14.0 + （23年4月起，Xcode 14以下编译的包不再支持上架app store）</li>
+</ul>
+<h4 id="span-idjump123123-位置权限span"><span id="jump1.2.3">1.2.3、位置权限</span> </h4>
+<p>SDK 需要位置权限以更精准的匹配广告，需要在应用的 info.plist 添加相应配置信息，避免 App Store 审核被拒：</p>
+<pre data-role="codeBlock" data-info="" class="language-text"><code>  Privacy - Location When In Use Usage Description
+  Privacy - Location Always and When In Use Usage Description
+  Privacy - Location Always Usage Description
+  Privacy - Location Usage Description
+</code></pre><h4 id="span-idjump124124-scheme列表添加以下内容span"><span id="jump1.2.4">1.2.4、scheme列表添加以下内容</span> </h4>
+<p>用于判断用户设备使用环境，提高安全性，增加收益</p>
+<pre data-role="codeBlock" data-info="" class="language-text"><code>    &lt;key&gt;LSApplicationQueriesSchemes&lt;/key&gt;
+    &lt;array&gt;
+        &lt;string&gt;alipayauth&lt;/string&gt;
+        &lt;string&gt;alipays&lt;/string&gt;
+        &lt;string&gt;wechat&lt;/string&gt;
+        &lt;string&gt;weixin&lt;/string&gt;
+        &lt;string&gt;taobao&lt;/string&gt;
+        &lt;string&gt;tbopen&lt;/string&gt;
+        &lt;string&gt;openapp.jdmobile&lt;/string&gt;
+        &lt;string&gt;pinduoduo&lt;/string&gt;
+        &lt;string&gt;meituanwaimai&lt;/string&gt;
+        &lt;string&gt;imeituan&lt;/string&gt;
+        &lt;string&gt;snssdk1128&lt;/string&gt;
+        &lt;string&gt;cydia&lt;/string&gt;
+    &lt;/array&gt;
+</code></pre><h4 id="span-idjump125125-swift接入准备span"><span id="jump1.2.5">1.2.5、Swift接入准备</span> </h4>
+<p>1: 新建桥接头文件（bridge.h，推荐放在工程目录下）。这里我们命名为：ZJAdSDKDemoSwift-Bridging-Header.h。在这个文件中import我们需要的所有头文件，代码如下：</p>
+<pre data-role="codeBlock" data-info="" class="language-text"><code>#import &lt;ZJSDK/ZJSDK.h&gt;
+</code></pre><p>2: 左侧目录中选中工程名，在 TARGETS-&gt;Build Settings-&gt; Swift Compiler - Code Generation -&gt; Objective-C Bridging Header 中输入桥接文件的路径</p>
+<p>###1.3、iOS14注意事项</p>
+<h4 id="131-ios-145及以上版本att权限申请">1.3.1、iOS 14.5及以上版本ATT权限申请 </h4>
+<p>App Tracking Transparency(ATT) 框架向用户提出应用程序跟踪授权请求，并提供跟踪授权状态。自iOS14.5 开始，在应用程序调用 ATT 向用户提跟踪授权请求之前，IDFA 将不可用。如果应用未提出此请求，应用获取到的 IDFA 将为0，建议您在应用启动时调用，以便我们能够提供更精准的进行广告投放和收入优化。</p>
+<ul>
+<li>要获取 ATT 权限，请更新您的 Info.plist，添加 NSUserTrackingUsageDescription 字段和自定义文案描述。代码示例：</li>
+</ul>
+<pre data-role="codeBlock" data-info="" class="language-text"><code>&lt;key&gt;NSUserTrackingUsageDescription&lt;/key&gt;
+&lt;string&gt;该标识符将用于向您投放个性化广告&lt;/string&gt;
+</code></pre><ul>
+<li>向用户申请权限时，请调用 requestTrackingAuthorizationWithCompletionHandler:方法。我们建议您申请权限后再请求广告，以便广告能准确的获得用户授权状态。</li>
+</ul>
+<pre data-role="codeBlock" data-info="objc" class="language-objectivec objc"><code><span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">import</span> <span class="token expression"><span class="token operator">&lt;</span>AppTrackingTransparency<span class="token operator">/</span>AppTrackingTransparency<span class="token punctuation">.</span>h<span class="token operator">&gt;</span></span></span>
+<span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">import</span> <span class="token expression"><span class="token operator">&lt;</span>AdSupport<span class="token operator">/</span>AdSupport<span class="token punctuation">.</span>h<span class="token operator">&gt;</span></span></span>
+<span class="token operator">-</span> <span class="token punctuation">(</span><span class="token keyword keyword-void">void</span><span class="token punctuation">)</span>requestIDFA <span class="token punctuation">{</span>
+  <span class="token punctuation">[</span>ATTrackingManager requestTrackingAuthorizationWithCompletionHandler<span class="token punctuation">:</span><span class="token operator">^</span><span class="token punctuation">(</span>ATTrackingManagerAuthorizationStatus status<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token comment">// [self loadAd];</span>
+  <span class="token punctuation">}</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre><h4 id="132-skadnetwork-接入">1.3.2、SKAdNetwork 接入 </h4>
+<p>使用Apple的转化跟踪SKAdNetwork，这意味着即使IDFA不可用，也可以将应用安装归因。<br>
+1.在Xcode项目导航器中，选择Info.plist。<br>
+2.单击属性列表编辑器中任何键旁边的添加按钮（<strong>+</strong>），以创建一个新的属性键。<br>
+3.输入密钥名称SKAdNetworkItems。选择Array。<br>
+4.将SKAdNetworkId以字典的形式添加到数组中。</p>
+<pre data-role="codeBlock" data-info="" class="language-text"><code>//将SKAdNetwork ID 添加到 info.plist 中，以保证 SKAdNetwork 的正确运行
+//广点通
+SKAdNetworkIdentifier : f7s53z58qe.skadnetwork
+//快手
+SKAdNetworkIdentifier : r3y5dwb26t.skadnetwork
+//sigmob
+SKAdNetworkIdentifier : 58922NB4GD.skadnetwork
+//MTG
+SKAdNetworkIdentifier : kbd757ywx3.skadnetwork
+//穿山甲
+SKAdNetworkIdentifier : 238da6jt44.skadnetwork
+SKAdNetworkIdentifier : x2jnk7ly8j.skadnetwork
+SKAdNetworkIdentifier : 22mmun2rn5.skadnetwork
+//Google
+SKAdNetworkIdentifier : cstr6suwn9.skadnetwork
+</code></pre><p><strong>info.plist代码示例</strong></p>
+<pre data-role="codeBlock" data-info="" class="language-text"><code>&lt;key&gt;SKAdNetworkItems&lt;/key&gt;
+&lt;array&gt;
+    &lt;dict&gt;
+        &lt;key&gt;SKAdNetworkIdentifier&lt;/key&gt;
+        &lt;string&gt;238da6jt44.skadnetwork&lt;/string&gt;
+    &lt;/dict&gt;
+    &lt;dict&gt;
+        &lt;key&gt;SKAdNetworkIdentifier&lt;/key&gt;
+        &lt;string&gt;x2jnk7ly8j.skadnetwork&lt;/string&gt;
+    &lt;/dict&gt;
+    &lt;dict&gt;
+        &lt;key&gt;SKAdNetworkIdentifier&lt;/key&gt;
+        &lt;string&gt;f7s53z58qe.skadnetwork&lt;/string&gt;
+    &lt;/dict&gt;
+    &lt;dict&gt;
+        &lt;key&gt;SKAdNetworkIdentifier&lt;/key&gt;
+        &lt;string&gt;58922NB4GD.skadnetwork&lt;/string&gt;
+    &lt;/dict&gt;
+    &lt;dict&gt;
+        &lt;key&gt;SKAdNetworkIdentifier&lt;/key&gt;
+        &lt;string&gt;kbd757ywx3.skadnetwork&lt;/string&gt;
+    &lt;/dict&gt;
+    &lt;dict&gt;
+        &lt;key&gt;SKAdNetworkIdentifier&lt;/key&gt;
+        &lt;string&gt;22mmun2rn5.skadnetwork&lt;/string&gt;
+    &lt;/dict&gt;
+    &lt;dict&gt;
+        &lt;key&gt;SKAdNetworkIdentifier&lt;/key&gt;
+        &lt;string&gt;r3y5dwb26t.skadnetwork&lt;/string&gt;
+    &lt;/dict&gt;
+    &lt;dict&gt;
+        &lt;key&gt;SKAdNetworkIdentifier&lt;/key&gt;
+        &lt;string&gt;cstr6suwn9.skadnetwork&lt;/string&gt;
+    &lt;/dict&gt;
+&lt;/array&gt;
+</code></pre><h4 id="span-idjump133133-增加schemespan"><span id="jump1.3.3">1.3.3、增加scheme</span> </h4>
+<p>scheme列表添加以下内容<br>
+用于判断设备使用环境，提升广告投放精准度</p>
+<pre data-role="codeBlock" data-info="" class="language-text"><code>	&lt;key&gt;LSApplicationQueriesSchemes&lt;/key&gt;
+	&lt;array&gt;
+		&lt;string&gt;alipayauth&lt;/string&gt;
+		&lt;string&gt;alipays&lt;/string&gt;
+		&lt;string&gt;wechat&lt;/string&gt;
+		&lt;string&gt;weixin&lt;/string&gt;
+		&lt;string&gt;taobao&lt;/string&gt;
+		&lt;string&gt;tbopen&lt;/string&gt;
+    &lt;string&gt;openapp.jdmobile&lt;/string&gt;
+		&lt;string&gt;pinduoduo&lt;/string&gt;
+    &lt;string&gt;meituanwaimai&lt;/string&gt;
+		&lt;string&gt;imeituan&lt;/string&gt;
+		&lt;string&gt;snssdk1128&lt;/string&gt;
+	&lt;/array&gt;
+</code></pre><h3 id="span-idjump1414-初始化sdkspan"><span id="jump1.4">1.4、初始化SDK</span> </h3>
+<p><strong>Objective-C</strong></p>
+<p>开发者需要在AppDelegate#application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions方法中调用以下代码来初始化sdk。</p>
+<pre data-role="codeBlock" data-info="" class="language-text"><code>- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+  // Override point for customization after application launch.
+  [ZJAdSDK registerAppId:@"zj_20201014iOSDEMO"];
+  return YES;
+}
+</code></pre><p><strong>Swift</strong></p>
+<p>开发者需要在AppDelegate</p>
+<p>func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -&gt; Bool<br>
+//方法中调用以下代码来初始化sdk。</p>
+<pre data-role="codeBlock" data-info="" class="language-text"><code>ZJAdSDK.registerAppId("zj_20201014iOSDEMO");
+</code></pre><h3 id="span-idjump1515-打包回测span"><span id="jump1.5">1.5、打包回测</span> </h3>
+<p>企业账号可直接打包。<br>
+公司账号和个人账号打包回测请添加下面两个udid：</p>
+<p>e36a75f610d3ea9e905c2cdff9720635b37f8c13</p>
+<p>00008101-001150922EF8001E</p>
+<h2 id="span-idjump2二-加载广告span"><span id="jump2">二、加载广告</span> </h2>
+<h3 id="span-idjump2121-接入开屏广告zjsplashadspan"><span id="jump2.1">2.1、接入开屏广告(ZJSplashAd)</span> </h3>
+<ul>
+<li>类型说明： 开屏广告主要是 APP 启动时展示的全屏广告视图，开发只要按照接入标准就能够展示设计好的视图。</li>
+</ul>
+<h4 id="span-idjump211211-zjsplashad广告说明span"><span id="jump2.1.1">2.1.1、ZJSplashAd广告说明</span> </h4>
+<pre data-role="codeBlock" data-info="" class="language-text"><code>@interface ZJSplashAd : ZJAd
+
+@property(nonatomic,weak) id&lt;ZJSplashAdDelegate&gt; delegate;
+/**
+* 拉取广告超时时间，默认为3秒
+* 详解：拉取广告超时时间，开发者调用loadAd方法以后会立即展示backgroundImage，然后在该超时时间内，如果广告拉取成功，则立马展示开屏广告，否则放弃此次广告展示机会。
+*/
+@property (nonatomic, assign) CGFloat fetchDelay;
+
+/**
+* 发起拉取广告请求，只拉取不展示
+* 详解：广告素材及广告图片拉取成功后会回调splashAdDidLoad方法，当拉取失败时会回调zj_splashAdError:方法
+*/
+- (void) loadAd;
+
+/**
+ *  展示广告，
+  详解：广告展示成功时会回调zj_splashAdSuccessPresentScreen方法
+ */
+- (void)showAdInWindow:(UIWindow *)window;
+
+/**
+* 展示广告，调用此方法前需调用isAdValid方法判断广告素材是否有效
+* 详解：广告展示成功时会回调splashAdSuccessPresentScreen方法，展示失败时会回调zj_splashAdDisplayError:方法
+*/
+- (void)showAdInWindow:(UIWindow *)window withBottomView:(nullable UIView *)bottomView;
+
+@end
+</code></pre><h4 id="span-idjump212212-zjsplashaddelegatespan"><span id="jump2.1.2">2.1.2、ZJSplashAdDelegate</span> </h4>
+<pre data-role="codeBlock" data-info="" class="language-text"><code>@protocol ZJSplashAdDelegate &lt;NSObject&gt;
+
+@optional
+/**
+ *  开屏广告素材加载成功
+ */
+-(void)zj_splashAdDidLoad:(ZJSplashAd *)splashAd;
+
+/**
+ *  开屏广告成功展示
+ */
+-(void)zj_splashAdSuccessPresentScreen:(ZJSplashAd *)splashAd;
+
+/**
+ *  开屏广告点击回调
+ */
+- (void)zj_splashAdClicked:(ZJSplashAd *)splashAd;
+
+/**
+*  开屏广告即将关闭回调
+*/
+- (void)zj_splashAdWillClose:(ZJSplashAd *)splashAd;
+
+/**
+ *  开屏广告关闭回调
+ */
+- (void)zj_splashAdClosed:(ZJSplashAd *)splashAd;
+
+/**
+ *  应用进入后台时回调
+ *  详解: 当点击下载应用时会调用系统程序打开，应用切换到后台
+ */
+- (void)zj_splashAdApplicationWillEnterBackground:(ZJSplashAd *)splashAd;
+
+/**
+ * 开屏广告倒记时结束
+ */
+- (void)zj_splashAdCountdownEnd:(ZJSplashAd*)splashAd;
+
+/**
+ *  开屏广告错误
+ */
+- (void)zj_splashAdError:(ZJSplashAd *)splashAd withError:(NSError *)error;
+
+@end
+
+</code></pre><h4 id="span-idjump213213-加载开屏广告span"><span id="jump2.1.3">2.1.3、加载开屏广告</span> </h4>
+<p><strong>Objective-C</strong></p>
+<pre data-role="codeBlock" data-info="" class="language-text"><code>self.splashAd = [[ZJSplashAd alloc] initWithPlacementId:@"c887417368"];
+self.splashAd.delegate = self;
+self.splashAd.fetchDelay = 5.0;
+[self.splashAd loadAd];
+</code></pre><p><strong>Swift</strong></p>
+<pre data-role="codeBlock" data-info="" class="language-text"><code>splashAd = ZJSplashAd.init(placementId: "zjad_G9040714184494018");
+splashAd.delegate = self;
+splashAd.fetchDelay = 5.0;
+splashAd.load(); 
+</code></pre><p>加载开屏广告具体示例详见Demo中的AppDelegate/ZjSplashViewController</p>
+<h3 id="span-idjump2222-接入激励视频zjrewardvideoadspan"><span id="jump2.2">2.2、接入激励视频(ZJRewardVideoAd)</span> </h3>
+<ul>
+<li>类型说明： 激励视频广告是一种全新的广告形式，用户可选择观看视频广告以换取有价物，例如虚拟货币、应用内物品和独家内容等等；这类广告的长度为 15-30 秒，不可跳过，且广告的结束画面会显示结束页面，引导用户进行后续动作。userId尽量传真实的userId。</li>
+</ul>
+<h4 id="span-idjump221221-zjrewardvideoad广告说明span"><span id="jump2.2.1">2.2.1、ZJRewardVideoAd广告说明</span> </h4>
+<pre data-role="codeBlock" data-info="" class="language-text"><code>@interface ZJRewardVideoAd : ZJAd
+
+@property(nonatomic,copy) NSString *userId; //userId尽量传真实的userId
+
+@property(nonatomic,weak) id&lt;ZJRewardVideoAdDelegate&gt; delegate;
+
+- (instancetype)initWithPlacementId:(NSString *)placementId userId:(NSString *)userId;
+
+/**
+*  发起拉取广告请求，只拉取不展示
+*  详解：广告素材及广告图片拉取成功后会回调splashAdDidLoad方法，当拉取失败时会回调splashAdFailToPresent方法
+*/
+- (void) loadAd;
+
+- (void) showAdInViewController:(UIViewController*)viewController;
+@end
+</code></pre><h4 id="span-idjump222222-zjrewardvideoaddelegate广告说明span"><span id="jump2.2.2">2.2.2、ZJRewardVideoAdDelegate广告说明</span> </h4>
+<pre data-role="codeBlock" data-info="" class="language-text"><code>@protocol ZJRewardVideoAdDelegate &lt;NSObject&gt;
+
+@optional
+/**
+广告数据加载成功回调
+ ⚠️请勿在该回调内调用 showAdInViewController:方法（需视频下载完成）
+@param rewardedVideoAd ZJRewardVideoAd 实例
+*/
+- (void)zj_rewardVideoAdDidLoad:(ZJRewardVideoAd *)rewardedVideoAd;
+
+/**
+ 视频数据下载成功回调，已经下载过的视频会直接回调，在这里调用展示广告的方法。
+ ✅ showAdInViewController: 方法请在该回调中执行 ， 广告展示需要在视频下载完成后才能展示，
+@param rewardedVideoAd ZJRewardVideoAd 实例
+*/
+- (void)zj_rewardVideoAdVideoDidLoad:(ZJRewardVideoAd *)rewardedVideoAd;
+
+/**
+ 视频广告展示
+ @param rewardedVideoAd ZJRewardVideoAd 实例
+ */
+- (void)zj_rewardVideoAdDidShow:(ZJRewardVideoAd *)rewardedVideoAd;
+
+/**
+ 视频播放页关闭
+ @param rewardedVideoAd ZJRewardVideoAd 实例
+ */
+- (void)zj_rewardVideoAdDidClose:(ZJRewardVideoAd *)rewardedVideoAd;
+
+/**
+ 视频广告信息点击
+ @param rewardedVideoAd ZJRewardVideoAd 实例
+ */
+- (void)zj_rewardVideoAdDidClicked:(ZJRewardVideoAd *)rewardedVideoAd;
+
+/**
+ 奖励触发
+ @param rewardedVideoAd ZJRewardVideoAd 实例
+ */
+- (void)zj_rewardVideoAdDidRewardEffective:(ZJRewardVideoAd *)rewardedVideoAd;
+
+/**
+ 视频广告视频播放完成
+ @param rewardedVideoAd ZJRewardVideoAd 实例
+ */
+- (void)zj_rewardVideoAdDidPlayFinish:(ZJRewardVideoAd *)rewardedVideoAd;
+
+/**
+ 视频广告各种错误信息回调
+ @param rewardedVideoAd ZJRewardVideoAd 实例
+ @param error 具体错误信息
+ */
+- (void)zj_rewardVideoAd:(ZJRewardVideoAd *)rewardedVideoAd didFailWithError:(NSError *)error;
+@end
+</code></pre><h4 id="span-idjump223223-加载激励视频span"><span id="jump2.2.3">2.2.3、加载激励视频</span> </h4>
+<p><strong>Objective-C</strong></p>
+<pre data-role="codeBlock" data-info="" class="language-text"><code>self.rewardVideoAd = [[ZJRewardVideoAd alloc] initWithPlacementId:@"KS90010001" userId:@"robin6666"];
+self.rewardVideoAd.delegate = self;
+[self.rewardVideoAd loadAd];
+</code></pre><p><strong>Swift</strong></p>
+<pre data-role="codeBlock" data-info="" class="language-text"><code>self.rewardVideoAd = ZJRewardVideoAd.init(placementId: adId as String, userId: "robin6666")
+self.rewardVideoAd.delegate = self;
+self.rewardVideoAd.load()
+</code></pre><p>加载广告具体示例详见Demo中的ZjRewardViewController。</p>
+<h3 id="span-idjump2323-接入插屏广告zjinterstitialadspan"><span id="jump2.3">2.3、接入插屏广告(ZJInterstitialAd)</span> </h3>
+<ul>
+<li>类型说明： 插屏广告是移动广告的一种常见形式，在应用开流程中弹出，当应用展示插页式广告时，用户可以选择点按广告，访问其目标网址，也可以将其关闭，返回应用。</li>
+</ul>
+<h4 id="span-idjump231231-zjinterstitialad说明span"><span id="jump2.3.1">2.3.1、ZJInterstitialAd说明</span> </h4>
+<pre data-role="codeBlock" data-info="" class="language-text"><code>@interface ZJInterstitialAd : ZJAd
+
+@property(nonatomic,weak) id&lt;ZJInterstitialAdDelegate&gt; delegate;
+
+-(void) loadAd;
+
+-(void)presentAdFromRootViewController:(UIViewController*)  viewController;
+
+@end
+</code></pre><h4 id="span-idjump232232-zjinterstitialaddelegate广告说明span"><span id="jump2.3.2">2.3.2、ZJInterstitialAdDelegate广告说明</span> </h4>
+<pre data-role="codeBlock" data-info="" class="language-text"><code>@protocol ZJInterstitialAdDelegate &lt;NSObject&gt;
+//广告数据加载成功回调
+- (void) zj_interstitialAdDidLoad:(ZJInterstitialAd*) ad;
+//广告数据加载失败回调
+- (void) zj_interstitialAdDidLoadFail:(ZJInterstitialAd*) ad error:(NSError * __nullable)error;
+//广告展示
+- (void) zj_interstitialAdDidPresentScreen:(ZJInterstitialAd*) ad;
+//广告点击
+- (void) zj_interstitialAdDidClick:(ZJInterstitialAd*) ad;
+//广告关闭
+- (void) zj_interstitialAdDidClose:(ZJInterstitialAd*) ad;
+//详情页关闭
+- (void) zj_interstitialAdDetailDidClose:(ZJInterstitialAd*) ad;
+//其他错误
+- (void) zj_interstitialAdDidFail:(ZJInterstitialAd*) ad error:(NSError * __nullable)error;
+
+@end
+</code></pre><h4 id="span-idjump233233-加载插屏广告span"><span id="jump2.3.3">2.3.3、加载插屏广告</span> </h4>
+<p><strong>Objective-C</strong></p>
+<pre data-role="codeBlock" data-info="" class="language-text"><code>self.interstitialAd = [[ZJInterstitialAd alloc] initWithPlacementId:@"zjad_G10506"];
+self.interstitialAd.delegate = self;
+[self.interstitialAd loadAd];
+</code></pre><p><strong>Swift</strong></p>
+<pre data-role="codeBlock" data-info="" class="language-text"><code>interstitialAd = ZJInterstitialAd.init(placementId: adId as String);
+interstitialAd.delegate = self;
+interstitialAd.load();
+</code></pre><p>加载广告具体示例详见Demo中的ZJInterstitialAdViewController。</p>
+<h3 id="span-idjump2424-接入全屏视频信息流zjfeedfullvideoviewspan"><span id="jump2.4">2.4、接入全屏视频信息流(ZJFeedFullVideoView)</span> </h3>
+<ul>
+<li>类型说明：本SDK为接入方提供竖版视频信息流广告，该广告适合在竖版全屏视频流中使用，接入方可以控制视频暂停或继续播放，默认视频播放不可干预，视频广告相关配置可以在平台设置。 支持的广告尺寸： 全屏竖版。</li>
+</ul>
+<h4 id="span-idjump241241-zjfeedfullvideoproviderzjfeedfullvideoview说明span"><span id="jump2.4.1">2.4.1、ZJFeedFullVideoProvider，ZJFeedFullVideoView说明</span> </h4>
+<pre data-role="codeBlock" data-info="" class="language-text"><code>@interface ZJFeedFullVideoProvider : ZJAd
+//请求广告尺寸
+@property(nonatomic,assign) CGSize adSize;
+
+@property(nonatomic,weak) id&lt;ZJFeedFullVideoProviderDelegate&gt; delegate;
+
+- (instancetype)initWithPlacementId:(NSString *)placementId;
+
+//count 返回广告最大数量
+-(void) loadAd:(NSInteger) count;
+
+@end
+</code></pre><h4 id="span-idjump242242-zjfeedfullvideoproviderdelegate广告说明span"><span id="jump2.4.2">2.4.2、ZJFeedFullVideoProviderDelegate广告说明</span> </h4>
+<pre data-role="codeBlock" data-info="" class="language-text"><code>@protocol ZJFeedFullVideoProviderDelegate &lt;NSObject&gt;
+
+/**
+ * 广告加载成功
+ */
+- (void)zj_feedFullVideoProviderLoadSuccess:(ZJFeedFullVideoProvider *)provider views:(NSArray&lt;__kindof ZJFeedFullVideoView *&gt; *)views;
+
+/**
+* 广告加载失败
+*/
+- (void)zj_feedFullVideoProviderLoadFail:(ZJFeedFullVideoProvider *)provider error:(NSError *_Nullable)error;
+
+/**
+ * 广告渲染成功, ZJFeedFullVideoView.size.height has been updated
+ */
+- (void)zj_feedFullVideoAdViewRenderSuccess:(ZJFeedFullVideoProvider *)provider view:(ZJFeedFullVideoView*) adView;
+
+/**
+ * 广告渲染失败
+ */
+- (void)zj_feedFullVideoAdViewRenderFail:(ZJFeedFullVideoProvider *)provider view:(ZJFeedFullVideoView*) adView error:(NSError *_Nullable)error;
+
+/**
+ * 广告曝光回调
+ */
+- (void)zj_feedFullVideoAdViewWillShow:(ZJFeedFullVideoProvider *)provider view:(ZJFeedFullVideoView*) adView;
+
+/**
+视频广告播放状态更改回调
+*/
+- (void)zj_feedFullVideoAdViewStateDidChanged:(ZJFeedFullVideoProvider *)provider view:(ZJFeedFullVideoView*) adView state:(ZJMediaPlayerStatus)playerState;
+/**
+视频广告播放完毕
+*/
+- (void)zj_feedFullVideoAdViewPlayerDidPlayFinish:(ZJFeedFullVideoProvider *)provider view:(ZJFeedFullVideoView*) adView;
+
+/**
+ * 广告点击回调
+ */
+- (void)zj_feedFullVideoAdViewDidClick:(ZJFeedFullVideoProvider *)provider view:(ZJFeedFullVideoView*) adView;
+
+/**
+* 广告详情页面即将展示回调
+*/
+- (void)zj_feedFullVideoAdViewDetailViewWillPresentScreen:(ZJFeedFullVideoProvider *)provider view:(ZJFeedFullVideoView*) adView;
+
+/**
+ *广告详情页关闭回调
+ */
+- (void)zj_feedFullVideoAdViewDetailViewClosed:(ZJFeedFullVideoProvider *)provider view:(ZJFeedFullVideoView*) adView;
+
+@end
+</code></pre><h4 id="span-idjump243243-加载全屏视频信息流span"><span id="jump2.4.3">2.4.3、加载全屏视频信息流</span> </h4>
+<p><strong>Objective-C</strong></p>
+<pre data-role="codeBlock" data-info="" class="language-text"><code>- (void)loadData {
+  if(!self.adProvider){
+    self.adProvider = [[ZJFeedFullVideoProvider alloc] initWithPlacementId:@"KS90010003"];
+    self.adProvider.delegate = self;
+    self.adProvider.adSize = self.view.bounds.size;
+  }
+  [self.adProvider loadAd:5];
+}
+
+/** 
+* 广告加载成功
+*/
+- (void)zj_feedFullVideoProviderLoadSuccess:(ZJFeedFullVideoProvider *)provider views:(NSArray&lt;__kindof ZJFeedFullVideoView *&gt; *)views{
+
+  if (views.count) {
+    NSMutableArray *dataSources = [NSMutableArray arrayWithCapacity:0];
+    [views enumerateObjectsUsingBlock:^(id _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+      ZJFeedFullVideoView *videoView = (ZJFeedFullVideoView *)obj;
+      videoView.rootViewController = self;
+      // important: 此处会进行WKWebview的渲染，建议一次最多预加载三个广告，如果超过3个会很大概率导致WKWebview渲染失败。
+      [videoView render];
+      [dataSources addObject:videoView];
+    }];
+    self.dataSource = [dataSources copy];
+  }
+  [self.tableView reloadData];
+}
+</code></pre><p><strong>Swift</strong></p>
+<pre data-role="codeBlock" data-info="" class="language-text"><code>self.adProvider = ZJFeedFullVideoProvider.init(placementId: self.placementId! as String, delegate: self);
+self.adProvider.adSize = self.view.bounds.size;
+self.adProvider.loadAd(8);
+
+/** 
+* 广告加载成功
+*/
+func zj_feedFullVideoProviderLoadSuccess(_ provider: ZJFeedFullVideoProvider, views: [ZJFeedFullVideoView]) {
+    var dataArray:Array&lt;Any&gt; = []
+    for dataObject in views {
+      dataArray.append(dataObject)
+      dataArray.append("demo")
+    }
+    self.dataSource = dataArray
+    self.tableView!.reloadData()
+  }
+</code></pre><p>加载广告具体示例详见Demo中的ZJFeedFullVideoShowViewController。</p>
+<h3 id="span-idjump2525-接入模板信息流zjnativeexpressfeedadmanagerspan"><span id="jump2.5">2.5、接入模板信息流(ZJNativeExpressFeedAdManager)</span> </h3>
+<h4 id="span-idjump251251-zjnativeexpressfeedadmanagerzjnativeexpressfeedad说明span"><span id="jump2.5.1">2.5.1、ZJNativeExpressFeedAdManager，ZJNativeExpressFeedAd说明</span> </h4>
+<pre data-role="codeBlock" data-info="" class="language-text"><code>@interface ZJNativeExpressFeedAdManager : ZJAd
+
+@property(nonatomic,weak) id&lt;ZJNativeExpressFeedAdManagerDelegate&gt; delegate;
+
+@property (nonatomic)CGSize adSize;
+
+@property (nonatomic, strong) NSArray&lt;ZJNativeExpressFeedAd *&gt; *data;
+
+-(instancetype)initWithPlacementId:(NSString *)placementId size:(CGSize)size;
+
+/**
+ * 加载广告，建议最大个数不超过5个
+ */
+-(void)loadAdDataWithCount:(NSInteger)count;
+
+@end
+
+
+
+//ZJNativeExpressFeedAd
+@interface ZJNativeExpressFeedAd : NSObject
+
+@property (nonatomic,strong,readonly) UIView *feedView;
+
+/**
+ * Whether render is ready
+ */
+@property (nonatomic, assign,readonly) BOOL isReady;
+
+@property(nonatomic,weak) id&lt;ZJNativeExpressFeedAdDelegate&gt; delegate;
+
+/*
+ *required.[必选]
+ * root view controller for handling ad actions.
+ * 详解：开发者需传入用来弹出目标页的ViewController，一般为当前ViewController
+ */
+@property (nonatomic, weak) UIViewController *rootViewController;
+
+/*
+ *required [必选]
+ *原生模板广告渲染
+ */
+- (void)render;
+
+@end
+
+</code></pre><h4 id="span-idjump252252-zjnativeexpressfeedadmanagerdelegate-zjnativeexpressfeedaddelegate说明span"><span id="jump2.5.2">2.5.2、ZJNativeExpressFeedAdManagerDelegate ZJNativeExpressFeedAdDelegate说明</span> </h4>
+<pre data-role="codeBlock" data-info="" class="language-text"><code>@protocol ZJNativeExpressFeedAdManagerDelegate &lt;NSObject&gt;
+@optional
+//数据加载成功
+- (void)ZJ_nativeExpressFeedAdManagerSuccessToLoad:(ZJNativeExpressFeedAdManager *)adsManager nativeAds:(NSArray&lt;ZJNativeExpressFeedAd *&gt; *_Nullable)feedAdDataArray;
+//数据加载失败
+- (void)ZJ_nativeExpressFeedAdManager:(ZJNativeExpressFeedAdManager *)adsManager didFailWithError:(NSError *_Nullable)error;
+
+@end
+
+@protocol ZJNativeExpressFeedAdDelegate &lt;NSObject&gt;
+@optional
+//ZJNativeExpressFeedAd
+/**
+ * 广告渲染成功
+ */
+- (void)ZJ_nativeExpressFeedAdRenderSuccess:(ZJNativeExpressFeedAd *)feedAd;
+/**
+ * 广告渲染失败
+ */
+- (void)ZJ_nativeExpressFeedAdRenderFail:(ZJNativeExpressFeedAd *)feedAd;
+
+/**
+ *广告即将展示
+ */
+- (void)ZJ_nativeExpressFeedAdViewWillShow:(ZJNativeExpressFeedAd *)feedAd;
+/**
+ *广告点击
+ */
+- (void)ZJ_nativeExpressFeedAdDidClick:(ZJNativeExpressFeedAd *)feedAd;
+/**
+ *不喜欢该广告
+ */
+- (void)ZJ_nativeExpressFeedAdDislike:(ZJNativeExpressFeedAd *)feedAd;
+/**
+ *展示落地页
+ */
+- (void)ZJ_nativeExpressFeedAdDidShowOtherController:(ZJNativeExpressFeedAd *)nativeAd;
+/**
+ *关闭落地页
+ */
+- (void)ZJ_nativeExpressFeedAdDidCloseOtherController:(ZJNativeExpressFeedAd *)nativeAd;
+@end
+
+</code></pre><h4 id="span-idjump253253-加载模板信息流广告span"><span id="jump2.5.3">2.5.3、加载模板信息流广告</span> </h4>
+<pre data-role="codeBlock" data-info="" class="language-text"><code>if (!_feedAd) {
+    _feedAd = [[ZJNativeExpressFeedAdManager alloc] initWithPlacementId:@"K4000000007" size:CGSizeMake(self.tableView.frame.size.width, 0)];
+  }
+_feedAd.delegate = self;
+[_feedAd loadAdDataWithCount:3];
+
+//数据加载成功
+-(void)ZJ_nativeExpressFeedAdManagerSuccessToLoad:(ZJNativeExpressFeedAdManager *)adsManager nativeAds:(NSArray&lt;ZJNativeExpressFeedAd *&gt; *)feedAdDataArray{
+  //不要保存太多广告，需要在合适的时机手动释放不用的，否则内存会过大
+  if (self.adArray.count &gt; 0) {
+    for (ZJNativeExpressFeedAd *feedAd in self.adArray) {
+      [self.dataArray removeObject:feedAd];
+    }
+  }
+  for (int i = 0; i&lt;feedAdDataArray.count; i++) {
+    ZJNativeExpressFeedAd *feedAd = feedAdDataArray[i];
+    feedAd.rootViewController = self;
+    feedAd.delegate = self;
+    [feedAd render];    
+    NSInteger index = i*3;
+    if (index &gt;= self.dataArray.count) {
+      [self.dataArray addObject:feedAd];
+    }else{
+      [self.dataArray insertObject:feedAd atIndex:index];
+    }
+  }
+  self.adArray = feedAdDataArray;
+//  [self.tableView reloadData];
+}
+
+/**
+ * 广告渲染成功
+ */
+- (void)ZJ_nativeExpressFeedAdRenderSuccess:(ZJNativeExpressFeedAd *)feedAd{
+    [self.tableView reloadData];
+}
+</code></pre><p>加载广告具体示例详见Demo中的ZJNativeExpressAdsViewController。</p>
+<h3 id="26-接入自渲染广告zjnativead">2.6、接入自渲染广告(ZJNativeAd) </h3>
+<h4 id="261-zjnativead说明">2.6.1、ZJNativeAd说明 </h4>
+<p>自渲染广告返回数据模型（ZJNativeAdObject），通过数据模型由开发者渲染视图 ，视图渲染需要基于ZJNativeAdView上进行扩展。</p>
+<pre data-role="codeBlock" data-info="" class="language-text"><code>/*
+*  详解：placementId - 广告位 ID
+*/
+- (instancetype)initWithPlacementId:(NSString *)placementId;
+
+//加载广告个数
+-(void)loadAdWithCount:(NSInteger)adCount
+
+/*自渲染广告加载的回调*/
+- (void)zj_nativeAdLoaded:(NSArray&lt;ZJNativeAdObject *&gt; * _Nullable)nativeAdObjects error:(NSError * _Nullable)error;
+</code></pre><h4 id="262-加载zjnativead广告-">2.6.2、加载ZJNativeAd广告 #### </h4>
+<pre data-role="codeBlock" data-info="" class="language-text"><code>//加载广告
+self.nativeAd = [[ZJNativeAd alloc] initWithPlacementId:self.adId];
+self.nativeAd.delegate = self;
+[self.nativeAd loadAdWithCount:8];
+
+///广告回调
+- (void)zj_nativeAdLoaded:(NSArray&lt;ZJNativeAdObject *&gt; * _Nullable)nativeAdObjects error:(NSError * _Nullable)error{
+    if (!error &amp;&amp;nativeAdObjects.count &gt; 0) {
+        self.dataArray = nativeAdObjects.mutableCopy;
+        [self.tableView reloadData];
+        
+    }else{
+        NSLog(@"error:%@",error);
+    }
+}
+</code></pre><p>通过ZJNativeAdView 注册数据，生成adView</p>
+<pre data-role="codeBlock" data-info="" class="language-text"><code>self.fillView.viewController = vc;
+self.fillView.delegate = delegate;
+self.adView = [self.fillView registerDataObject:dataObject];
+[self.contentView addSubview:self.adView];
+</code></pre><p>加载广告示例详见demo中的 ZJNativeAdViewController。</p>
+<h3 id="27-接入全屏视频广告zjfullscreenvideoadspan">2.7、接入全屏视频广告(ZJFullScreenVideoAd) </h3>
+<h4 id="271-zjfullscreenvideoad说明">2.7.1、ZJFullScreenVideoAd说明 </h4>
+<pre data-role="codeBlock" data-info="" class="language-text"><code>@interface ZJFullScreenVideoAd : ZJAd
+
+@property(nonatomic,weak) id&lt;ZJFullScreenVideoAdDelegate&gt; delegate;
+
+//加载广告
+-(void) loadAd;
+
+//展示全屏视频广告
+-(void)presentFullScreenVideoAdFromRootViewController:(UIViewController*)viewController;
+
+@end
+</code></pre><h4 id="272-zjfullscreenvideoaddelegate广告说明">2.7.2、ZJFullScreenVideoAdDelegate广告说明 </h4>
+<pre data-role="codeBlock" data-info="" class="language-text"><code>@protocol ZJFullScreenVideoAdDelegate &lt;NSObject&gt;
+//广告加载成功
+- (void) zj_fullScreenVideoAdDidLoad:(ZJFullScreenVideoAd*) ad;
+//广告加载失败
+- (void) zj_fullScreenVideoAdDidLoadFail:(ZJFullScreenVideoAd*) ad error:(NSError * __nullable)error;
+//广告展示
+- (void) zj_fullScreenVideoAdDidShow:(ZJFullScreenVideoAd*) ad;
+//广告点击
+- (void) zj_fullScreenVideoAdDidClick:(ZJFullScreenVideoAd*) ad;
+//广告关闭
+- (void) zj_fullScreenVideoAdDidClose:(ZJFullScreenVideoAd*) ad;
+//广告错误
+- (void) zj_fullScreenVideoAdDidFail:(ZJFullScreenVideoAd*) ad error:(NSError * __nullable)error;
+
+//广告播放状态回调
+- (void)zj_fullScreenVideoAd:(ZJFullScreenVideoAd*)ad  playerStatusChanged:(ZJMediaPlayerStatus)playerStatus;
+
+//广告详情页打开
+- (void)zj_fullScreenVideoAdDetailDidPresent:(ZJFullScreenVideoAd*)ad;
+//广告详情页关闭
+- (void) zj_fullScreenVideoAdDetailDidClose:(ZJFullScreenVideoAd*) ad;
+
+@end
+</code></pre><h4 id="273-加载全屏视频广告">2.7.3、加载全屏视频广告 </h4>
+<pre data-role="codeBlock" data-info="" class="language-text"><code>self.fullVideoAd = [[ZJFullScreenVideoAd alloc] initWithPlacementId:adId];
+self.fullVideoAd.delegate = self;
+[self.fullVideoAd loadAd];
+</code></pre><p>加载广告具体示例详见Demo中的ZJFullScreenVideoViewController。</p>
+<h3 id="28-接入视频内容zjcontentpage类似dyks短视频span">2.8、接入视频内容(ZJContentPage——类似dy,ks短视频) </h3>
+<h4 id="281-font-colorredzjcontentpage接入注意事项font">2.8.1、<font color="red">ZJContentPage接入注意事项</font> </h4>
+<p>由于快手pod库不支持内容包，视频内容模块需要本地导入<br>
+视频内容集成注意事项：<br>
+一：Podfile中，指定本地KSAdSDK.podspec的相对路径，如demo中路径为： pod 'KSAdSDK', :path =&gt; '../ZJSDK/ZJSDKModuleKS'<br>
+二：打包发布之前，去掉快手内容包的x86_64框架，具体的拆分合并命令参考以下</p>
+<pre data-role="codeBlock" data-info="" class="language-text"><code>cd [KSAdSDK.framework所在的目录]
+mkdir ./bak
+cp -r KSAdSDK.framework ./bak
+lipo KSAdSDK.framework/KSAdSDK -thin armv7 -output KSAdSDK_armv7
+lipo KSAdSDK.framework/KSAdSDK -thin arm64 -output KSAdSDK_arm64
+lipo -create KSAdSDK_armv7 KSAdSDK_arm64 -output KSAdSDK
+mv KSAdSDK KSAdSDK.framework/
+</code></pre><h4 id="282-zjcontentpage说明">2.8.2、ZJContentPage说明 </h4>
+<pre data-role="codeBlock" data-info="" class="language-text"><code>@property (nonatomic, readonly) UIViewController *viewController;
+///视频状态代理
+@property (nonatomic, weak) id &lt;ZJContentPageVideoStateDelegate&gt; videoStateDelegate;
+///页面状态代理
+@property (nonatomic, weak) id &lt;ZJContentPageStateDelegate&gt; stateDelegate;
+
+
+///内容标识
+@property (nonatomic, copy, readonly) NSString *contentInfoId;
+///内容类型
+@property (nonatomic, assign, readonly) ZJContentInfoType contentInfoType;
+
+///刷新
+- (void)tryToRefresh;
+</code></pre><h4 id="283-加载视频内容">2.8.3、加载视频内容 </h4>
+<pre data-role="codeBlock" data-info="" class="language-text"><code>self.contentPage = [[ZJContentPage alloc]initWithPlacementId:self.contentId];
+self.contentPage.videoStateDelegate = self;
+self.contentPage.stateDelegate = self;
+UIViewController *vc = self.contentPage.viewController;
+    
+CGFloat contentY = [UIApplication sharedApplication].statusBarFrame.size.height+self.navigationController.navigationBar.frame.size.height;
+vc.view.frame = CGRectMake(0, contentY, self.view.frame.size.width, self.view.frame.size.height-contentY);
+[self addChildViewController:vc];
+[self.view addSubview:vc.view];
+</code></pre><p>加载广告具体示例详见Demo中的 :<br>
+ZJContentPageStyle1ViewController<br>
+ZJContentPageStyle2ViewController<br>
+ZJContentPageTabBarController</p>
+<p>其他样式：<br>
+ZJFeedPageViewController  //瀑布流<br>
+ZJHorizontalFeedPageVC    //横版<br>
+ZJImageTextVC             //图文</p>
+<h3 id="span-idjump2929-接入新闻资讯广告zjnewsadviewspan"><span id="jump2.9">2.9、接入新闻资讯广告(ZJNewsAdView)</span> </h3>
+<h4 id="span-idjump291291-zjnewsadview说明span"><span id="jump2.9.1">2.9.1、ZJNewsAdView说明</span> </h4>
+<pre data-role="codeBlock" data-info="" class="language-text"><code>/**
+ *  @params
+ *  placementId - 广告位id
+ *  frame - 视图frame
+ */
+- (instancetype)initWithPlacementId:(NSString *)placementId frame:(CGRect)frame;
+
+/**
+ *  拉取并展示广告
+ */
+- (void)loadAdAndShow;
+
+/**
+ *  返回web的上一页
+ */
+- (void)goback;
+</code></pre><h4 id="span-idjump292292-zjnewsadviewdelegate说明span"><span id="jump2.9.2">2.9.2、ZJNewsAdViewDelegate说明</span> </h4>
+<pre data-role="codeBlock" data-info="" class="language-text"><code>/**
+ news广告加载成功
+ */
+- (void)zj_newsAdViewDidLoad:(ZJNewsAdView *)newsAdView;
+
+/**
+ news广告加载失败
+ */
+- (void)zj_newsAdView:(ZJNewsAdView *)newsAdView didLoadFailWithError:(NSError * _Nullable)error;
+
+/**
+ newsAdView曝光回调
+ */
+- (void)zj_newsAdViewDidShow:(ZJNewsAdView *)newsAdView;
+
+/**
+ 关闭news广告回调
+ */
+- (void)zj_newsAdViewRewardEffective:(ZJNewsAdView *)newsAdView;
+
+/**
+ 点击news广告回调
+ */
+- (void)zj_newsAdViewDidClick:(ZJNewsAdView *)newsAdView;
+
+/**
+ canGoBack状态监听。开放此回调主要为了应对一些可能的手势冲突的场景，一般情况按照demo写法就可，不要动它。
+ */
+- (void)zj_newsAd:(ZJNewsAdView *)newsAd canGoBackStateChange:(BOOL)canGoBack;
+
+</code></pre><h2 id="span-idjump3三-接入h5内容页span"><span id="jump3">三、接入H5内容页</span> </h2>
+<h3 id="span-idjump3131-接入h5内容span"><span id="jump3.1">3.1、接入H5内容</span> </h3>
+<p>SDK为接入方提供了定制H5内容页：游戏，测试,积分消耗...</p>
+<h4 id="span-idjump311311-zjh5page说明span"><span id="jump3.1.1">3.1.1、ZJH5Page说明</span> </h4>
+<p>ZJUser *user；<br>
+userID;//用户ID<br>
+userName;//用户名称<br>
+userAvatar;//用户头像URL<br>
+userIntegral;//用户积分<br>
+ext = "";//扩展参数<br>
+self.zjH5 = [ZJH5 new];</p>
+<pre data-role="codeBlock" data-info="" class="language-text"><code>@property(nonatomic,weak) id&lt;ZJH5PageDelegate&gt; delegate;
+
+@property (nonatomic, strong) ZJUser *user;
+
+- (instancetype)initWithPlacementId:(NSString *)placementId user:(ZJUser *)user delegate:(id &lt;ZJH5PageDelegate&gt;)delegate;
+
+- (void)loadH5Page;
+
+- (void)presentH5FromRootViewController:(UIViewController *)rootViewController animated:(BOOL)animated;
+</code></pre><h4 id="span-idjump312312-zjh5delegate说明span"><span id="jump3.1.2">3.1.2、ZJH5Delegate说明</span> </h4>
+<pre data-role="codeBlock" data-info="" class="language-text"><code>@protocol ZJH5Delegate &lt;NSObject&gt;
+
+@optional
+
+//H5Ad加载完成
+-(void) onZjH5PageLoaded:(ZJUser*) user error:(nullable NSError*) error;
+
+//H5Ad错误
+-(void) onZjH5PageError:(ZJUser*) user error:(NSError*) error;
+
+//H5Ad关闭
+-(void) onZjH5PageWillClose:(ZJUser*)user;
+
+//H5操作回调
+//积分不足
+-(void) onIntegralNotEnough:(ZJUser*) user needIntegral:(NSInteger) integral;
+
+//积分消耗
+-(void) onIntegralExpend:(ZJUser*) user expendIntegral:(NSInteger) integral;
+
+//积分奖励
+-(void) onIntegralReward:(ZJUser*) user rewardIntegral:(NSInteger) integral;
+
+//奖励发放,奖励积分
+-(void) onZjH5PageAdRewardProvide:(ZJUser*) user rewardIntegral:(NSInteger) integral;
+
+//用户页面的行为操作
+-(void) onZjH5PageUserBehavior:(ZJUser*) user behavior:(NSString*) behavior;
+
+//广告回调
+//广告激励视频加载成功
+-(void) onZjH5PageAdRewardLoaded:(ZJUser*) user trans_id:(NSString*) trans_id;
+
+//广告激励视频触发激励（观看视频大于一定时长或者视频播放完毕）
+-(void) onZjH5PageAdRewardValid:(ZJUser*) user trans_id:(NSString*) trans_id;
+
+//广告点击
+-(void) onZjH5PageAdRewardClick:(ZJUser*) user ;
+
+//广告加载错误
+-(void) onZjH5PageAdReward:(ZJUser*) user didFailWithError:(NSError*) error;
+
+@end
+</code></pre><h4 id="span-idjump313313-加载h5内容页span"><span id="jump3.1.3">3.1.3、加载H5内容页</span> </h4>
+<p><strong>Objective-C</strong></p>
+<pre data-role="codeBlock" data-info="" class="language-text"><code>ZJUser *user = [ZJUser new];
+user.userID = @"00012282";
+user.userName = @“用户名";
+user.userAvatar = @“用户头像";
+user.userIntegral = 10000;
+user.ext = @"超级无敌4";
+self.zjH5Page = [[ZJH5Page alloc] initWithPlacementId:adId user:user delegate:self];
+[self.zjH5Page loadH5Page];
+</code></pre><p>加载广告具体示例详见Demo中的ZJH5ViewController。</p>
+<h3 id="32-悬浮广告">3.2、悬浮广告 </h3>
+<h4 id="321-zjfloatingadview说明">3.2.1、ZJFloatingAdView说明 </h4>
+<pre data-role="codeBlock" data-info="" class="language-text"><code>- (instancetype)initWithPlacementId:(NSString *)placementId frame:(CGRect)frame;
+
+@property (nonatomic, weak) id &lt;ZJFloatingAdViewDelegate&gt; delegate;
+///placementId - 广告位 ID
+@property (nonatomic, copy) NSString *placementId;
+///广告是否能够移动 默认 YES
+@property (nonatomic, assign) BOOL canMove;
+///广告是否需要自动贴边展示 默认 YES
+@property (nonatomic, assign) BOOL needMoveToSide;
+///用来弹出目标页的ViewController，一般为当前ViewController 默认当前widow的viewController
+@property (nonatomic, weak) UIViewController *rootViewController;
+
+///加载广告
+- (void)loadAd;
+</code></pre><p>H5详情页可配置参数</p>
+<pre data-role="codeBlock" data-info="" class="language-text"><code>@interface ZJFloatingAdView (ZJH5PageCustom)
+/**导航栏返回按钮 图片设置*/
+@property (nonatomic, nullable, strong) UIImage *backImage;
+/**导航栏返回按钮 文字描述设置*/
+@property (nonatomic, nullable, copy) NSAttributedString *backText;
+
+/**导航栏关闭按钮 图片设置*/
+@property (nonatomic, nullable, strong) UIImage *closeImage;
+/**导航栏关闭按钮 文字描述设置*/
+@property (nonatomic, nullable, copy) NSAttributedString *closeText;
+
+/**隐藏导航栏的关闭按钮 */
+@property (nonatomic, assign) BOOL hiddenH5CloseButton;
+
+/**导航栏标题， 设置后不会读取网页的标题*/
+@property (nonatomic, nullable, copy) NSString *navigationbarTitle;
+@end
+</code></pre><h4 id="322-zjfloatingadview使用">3.2.2、ZJFloatingAdView使用 </h4>
+<pre data-role="codeBlock" data-info="" class="language-text"><code>self.floatingAd = [[ZJFloatingAdView alloc]initWithPlacementId:@"J2952950117" frame:CGRectZero];
+self.floatingAd.delegate = self;
+self.floatingAd.hiddenH5CloseButton = YES;
+[self.floatingAd loadAd];
+
+
+//加载成功回调
+-(void)zj_floatingAdViewDidLoad:(ZJFloatingAdView *)floatingAdView{
+    NSLog(@"%s",__FUNCTION__);
+    [self.view addSubview:floatingAdView];
+}
+
+</code></pre><h2 id="历史版本更新日志">历史版本更新日志 </h2>
+<table>
+<thead>
+<tr>
+<th>历史版本更新日志</th>
+<th>修订日期</th>
+<th>修订说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>v1.0.20</td>
+<td>2020-1-14</td>
+<td>增加新广告类型</td>
+</tr>
+<tr>
+<td>v1.0.21</td>
+<td>2020-1-26</td>
+<td>新增banner广告，广告数据获取优化</td>
+</tr>
+<tr>
+<td>v2.0.2</td>
+<td>2021-3-5</td>
+<td>模块拆分，广告优化</td>
+</tr>
+<tr>
+<td>v2.1.0</td>
+<td>2021-3-12</td>
+<td>广告获取机制优化，提升容错率</td>
+</tr>
+<tr>
+<td>v2.2.3</td>
+<td>2021-4-7</td>
+<td>添加自渲染广告，优化H5广告</td>
+</tr>
+<tr>
+<td>v2.2.12</td>
+<td>2021-6-8</td>
+<td>添加全屏视频广告类型，优化自渲染广告接入，完善广告回调信息</td>
+</tr>
+<tr>
+<td>v2.3.0</td>
+<td>2021-6-28</td>
+<td>添加广告平台</td>
+</tr>
+<tr>
+<td>v2.3.2</td>
+<td>2021-7-6</td>
+<td>开屏广告优化，优化广告填充</td>
+</tr>
+<tr>
+<td>v2.3.6</td>
+<td>2021-7-28</td>
+<td>激励视频校验优化</td>
+</tr>
+<tr>
+<td>v2.3.8</td>
+<td>2021-8-8</td>
+<td>优化网络请求，优化版本兼容</td>
+</tr>
+<tr>
+<td>v2.3.8.2</td>
+<td>2021-8-13</td>
+<td>开屏添加即将关闭回调，自渲染广告logoView</td>
+</tr>
+<tr>
+<td>v2.3.8.3</td>
+<td>2021-8-17</td>
+<td>激励视频校验2.0</td>
+</tr>
+<tr>
+<td>v2.3.9</td>
+<td>2021-8-27</td>
+<td>新增Sigmob广告</td>
+</tr>
+<tr>
+<td>v2.3.9.5</td>
+<td>2021-9-17</td>
+<td>兼容gif图和悬浮广告优化</td>
+</tr>
+<tr>
+<td>v2.3.11</td>
+<td>2021-10-25</td>
+<td>信息流填充优化，修复sdk已知问题</td>
+</tr>
+<tr>
+<td>v2.3.11.6</td>
+<td>2021-12-01</td>
+<td>修复bug，视频内容需单独引入</td>
+</tr>
+<tr>
+<td>v2.3.12.5</td>
+<td>2021-01-20</td>
+<td>添加插屏广告，全屏视频广告填充</td>
+</tr>
+<tr>
+<td>v2.3.13</td>
+<td>2021-02-09</td>
+<td>修复bug， 添加Google广告</td>
+</tr>
+<tr>
+<td>v2.4.0.1</td>
+<td>2022-04-18</td>
+<td>更新广告加载逻辑</td>
+</tr>
+<tr>
+<td>v2.4.1.3</td>
+<td>2022-06-24</td>
+<td>适配穿山甲更新，增加错误限制策略</td>
+</tr>
+<tr>
+<td>v2.5.0.1</td>
+<td>2022-08-29</td>
+<td>增加激励校验，bidding逻辑</td>
+</tr>
+<tr>
+<td>v2.5.1.0</td>
+<td>2022-10-12</td>
+<td>三方库冲突兼容</td>
+</tr>
+<tr>
+<td>v2.5.2.1</td>
+<td>2022-11-17</td>
+<td>重构部分广告的请求逻辑</td>
+</tr>
+<tr>
+<td>v2.5.2.4</td>
+<td>2022-12-22</td>
+<td>新增新闻资讯类型广告</td>
+</tr>
+<tr>
+<td>v2.5.2.5</td>
+<td>2023-01-18</td>
+<td>1，新增视频内容广告样式，<br>2，对原视频内容代理和回调接口有做调整：<font color="red" size="4"><br>  --原ZJContentPageDelegate改为ZJContentPageStateDelegate<br>  --回调方法中(ZJContentPage *)videoContent修改为(id&lt;ZJContentInfo&gt;)videoContent</font>    <br>3，XCode14下视频内容接入方式更新，详见<a href="#291-font-colorredzjcontentpage%E6%8E%A5%E5%85%A5%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9font">2.9.1、ZJContentPage接入注意事项</a></td>
+</tr>
+<tr>
+<td>v2.5.3.0</td>
+<td>2023-02-22</td>
+<td>1，新闻资讯优化、新增新闻资讯多标签列表样式，<br>2，修复已知问题</td>
+</tr>
+<tr>
+<td>v2.5.3.6</td>
+<td>2023-03-14</td>
+<td>1，新闻资讯接口文档更新 <br>2，H5Ad增加关闭h5回调 <br>3，修复已知问题</td>
+</tr>
+<tr>
+<td>v2.5.3.9</td>
+<td>2023-03-27</td>
+<td>1，已知问题修复</td>
+</tr>
+<tr>
+<td>v2.5.4.0</td>
+<td>2023-04-17</td>
+<td>1，新增聚合平台 <br>2，视频内容引入方式优化</td>
+</tr>
+<tr>
+<td>v2.5.4.2</td>
+<td>2023-04-27</td>
+<td>不去调用快手的.titleFontSize，避免审核被拒置</td>
+</tr>
+<tr>
+<td>v2.5.4.3</td>
+<td>2023-05-08</td>
+<td>增加ecpm获取权限配置</td>
+</tr>
+<tr>
+<td>v2.5.4.4</td>
+<td>2023-06-09</td>
+<td>1，各联盟重复初始化配置<br>2，广告增加缓存逻辑    <br>3，增加cdn刷新，广告生效更快</td>
+</tr>
+<tr>
+<td>v2.5.4.5</td>
+<td>2023-06-18</td>
+<td>1，修复100100问题<br>2，有配置本地兜底时，取消兜底层层级逻辑逻辑</td>
+</tr>
+<tr>
+<td>v2.5.4.8</td>
+<td>2023-06-20</td>
+<td>修复已知问题</td>
+</tr>
+<tr>
+<td>v2.5.4.9</td>
+<td>2023-06-21</td>
+<td>多线程优化<br>视频内容引入方式优化</td>
+</tr>
+<tr>
+<td>v2.5.4.11</td>
+<td>2023-07-04</td>
+<td>多线程优化</td>
+</tr>
+<tr>
+<td>v2.5.4.12</td>
+<td>2023-07-18</td>
+<td>增加事件上报，激励、插屏、全屏视频摇一摇，状态栏隐藏时候状态栏高度获取</td>
+</tr>
+<tr>
+<td>v2.5.4.13</td>
+<td>2023-07-19</td>
+<td>DSP音量问题</td>
+</tr>
+<tr>
+<td>v2.5.4.14</td>
+<td>2023-07-27</td>
+<td>修复已知问题</td>
+</tr>
+<tr>
+<td>v2.5.4.17</td>
+<td>2023-09-04</td>
+<td>线程问题优化</td>
+</tr>
+<tr>
+<td>v2.5.5.0</td>
+<td>2023-10-20</td>
+<td>1，百度信息流接入 <br>2，PangleSDK接入 <br>3，穿山甲sdk更新适配 <br>4，修复已知问题</td>
+</tr>
+<tr>
+<td>v2.5.5.2</td>
+<td>2023-11-08</td>
+<td>1，修复已知问题</td>
+</tr>
+<tr>
+<td>v2.5.5.3</td>
+<td>2023-11-09</td>
+<td>1，倍孜加入比价 <br>2，已知问题修复</td>
+</tr>
+<tr>
+<td>v2.5.5.4</td>
+<td>2023-11-27</td>
+<td>1，增加pangle模块 <br>2，穿山甲新sdk适配 <br>3，百度接口更新</td>
+</tr>
+<tr>
+<td>v2.5.5.5</td>
+<td>2024-01-03</td>
+<td>1，gdt依赖库更新适配 <br>2，穿山甲转用融合sdk，适配。不在依赖gromore <br> 3，已知问题修复</td>
+</tr>
+<tr>
+<td>v2.5.5.6</td>
+<td>2024-01-05</td>
+<td>针对可能的野指针问题做兼容</td>
+</tr>
+<tr>
+<td>v2.5.5.7</td>
+<td>2024-01-12</td>
+<td>已知问题修复</td>
+</tr>
+<tr>
+<td>v2.5.6.0</td>
+<td>2024-01-18</td>
+<td>已知问题修复</td>
+</tr>
+<tr>
+<td>v2.5.6.1</td>
+<td>2024-01-22</td>
+<td>快手SDK更新，动态兼容新旧版本</td>
+</tr>
+<tr>
+<td>v2.5.6.2</td>
+<td>2024-01-23</td>
+<td>减少分类使用</td>
+</tr>
+<tr>
+<td>v2.5.6.3</td>
+<td>2024-02-02</td>
+<td>已知问题修复</td>
+</tr>
+<tr>
+<td>v2.5.6.4</td>
+<td>2024-02-19</td>
+<td>适配百度信息流更新</td>
+</tr>
+<tr>
+<td>v2.5.6.5</td>
+<td>2024-02-28</td>
+<td>已知问题修复</td>
+</tr>
+<tr>
+<td>v2.5.7.0</td>
+<td>2024-03-16</td>
+<td>新增Tanx接入。需要新增依赖库：libsqlite3.0.tbd</td>
+</tr>
+<tr>
+<td>v2.5.7.1</td>
+<td>2024-03-21</td>
+<td>h5页面UI优化，调整状态栏，导航栏高度获取</td>
+</tr>
+<tr>
+<td>v2.5.7.2</td>
+<td>2024-04-18</td>
+<td>百度SDK更新，适配新的激励上报 <br>增加隐私协议PrivacyInfo</td>
+</tr>
+</tbody>
+</table>
+<div class="code-chunk" data-id="code-chunk-id-0" data-cmd="toc"><div class="input-div"><div class="code-chunk-btn-group"><div class="run-btn btn btn-xs btn-primary"><span>▶︎</span></div><div class="run-all-btn btn btn-xs btn-primary">all</div></div><div class="status">running...</div></div><div class="output-div"></div></div><ul>
+<li><a href="#span-idjump1%E7%89%88%E6%9C%AC%E6%9B%B4%E6%96%B0%E6%97%A5%E5%BF%97span">版本更新日志</a></li>
+<li><a href="#span-idjump1%E4%B8%80-ios-sdk%E6%8E%A5%E5%85%A5%E8%AF%B4%E6%98%8Espan">一、iOS SDK接入说明</a>
+<ul>
+<li><a href="#span-idjump1111-%E5%B7%A5%E7%A8%8B%E8%AE%BE%E7%BD%AE%E5%AF%BC%E5%85%A5frameworkspan">1.1、工程设置导入framework</a>
+<ul>
+<li><a href="#span-idjump111111-%E7%94%B3%E8%AF%B7%E5%BA%94%E7%94%A8%E7%9A%84appidspan">1.1.1、申请应用的AppID</a></li>
+<li><a href="#span-idjump112112-%E5%BC%95%E5%85%A5frameworkspan">1.1.2、引入framework</a></li>
+</ul>
+</li>
+<li><a href="#span-idjump1212-xcode%E7%BC%96%E8%AF%91%E9%80%89%E9%A1%B9%E8%AE%BE%E7%BD%AEspan">1.2、Xcode编译选项设置</a>
+<ul>
+<li><a href="#span-idjump1121121-%E6%B7%BB%E5%8A%A0%E6%9D%83%E9%99%90span">1.2.1、添加权限</a></li>
+<li><a href="#span-idjump122122-%E8%BF%90%E8%A1%8C%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AEspan">1.2.2、运行环境配置</a></li>
+<li><a href="#span-idjump123123-%E4%BD%8D%E7%BD%AE%E6%9D%83%E9%99%90span">1.2.3、位置权限</a></li>
+<li><a href="#span-idjump124124-scheme%E5%88%97%E8%A1%A8%E6%B7%BB%E5%8A%A0%E4%BB%A5%E4%B8%8B%E5%86%85%E5%AE%B9span">1.2.4、scheme列表添加以下内容</a></li>
+<li><a href="#span-idjump125125-swift%E6%8E%A5%E5%85%A5%E5%87%86%E5%A4%87span">1.2.5、Swift接入准备</a></li>
+<li><a href="#131-ios-145%E5%8F%8A%E4%BB%A5%E4%B8%8A%E7%89%88%E6%9C%ACatt%E6%9D%83%E9%99%90%E7%94%B3%E8%AF%B7">1.3.1、iOS 14.5及以上版本ATT权限申请</a></li>
+<li><a href="#132-skadnetwork-%E6%8E%A5%E5%85%A5">1.3.2、SKAdNetwork 接入</a></li>
+<li><a href="#span-idjump133133-%E5%A2%9E%E5%8A%A0schemespan">1.3.3、增加scheme</a></li>
+</ul>
+</li>
+<li><a href="#span-idjump1414-%E5%88%9D%E5%A7%8B%E5%8C%96sdkspan">1.4、初始化SDK</a></li>
+<li><a href="#span-idjump1515-%E6%89%93%E5%8C%85%E5%9B%9E%E6%B5%8Bspan">1.5、打包回测</a></li>
+</ul>
+</li>
+<li><a href="#span-idjump2%E4%BA%8C-%E5%8A%A0%E8%BD%BD%E5%B9%BF%E5%91%8Aspan">二、加载广告</a>
+<ul>
+<li><a href="#span-idjump2121-%E6%8E%A5%E5%85%A5%E5%BC%80%E5%B1%8F%E5%B9%BF%E5%91%8Azjsplashadspan">2.1、接入开屏广告(ZJSplashAd)</a>
+<ul>
+<li><a href="#span-idjump211211-zjsplashad%E5%B9%BF%E5%91%8A%E8%AF%B4%E6%98%8Espan">2.1.1、ZJSplashAd广告说明</a></li>
+<li><a href="#span-idjump212212-zjsplashaddelegatespan">2.1.2、ZJSplashAdDelegate</a></li>
+<li><a href="#span-idjump213213-%E5%8A%A0%E8%BD%BD%E5%BC%80%E5%B1%8F%E5%B9%BF%E5%91%8Aspan">2.1.3、加载开屏广告</a></li>
+</ul>
+</li>
+<li><a href="#span-idjump2222-%E6%8E%A5%E5%85%A5%E6%BF%80%E5%8A%B1%E8%A7%86%E9%A2%91zjrewardvideoadspan">2.2、接入激励视频(ZJRewardVideoAd)</a>
+<ul>
+<li><a href="#span-idjump221221-zjrewardvideoad%E5%B9%BF%E5%91%8A%E8%AF%B4%E6%98%8Espan">2.2.1、ZJRewardVideoAd广告说明</a></li>
+<li><a href="#span-idjump222222-zjrewardvideoaddelegate%E5%B9%BF%E5%91%8A%E8%AF%B4%E6%98%8Espan">2.2.2、ZJRewardVideoAdDelegate广告说明</a></li>
+<li><a href="#span-idjump223223-%E5%8A%A0%E8%BD%BD%E6%BF%80%E5%8A%B1%E8%A7%86%E9%A2%91span">2.2.3、加载激励视频</a></li>
+</ul>
+</li>
+<li><a href="#span-idjump2323-%E6%8E%A5%E5%85%A5%E6%8F%92%E5%B1%8F%E5%B9%BF%E5%91%8Azjinterstitialadspan">2.3、接入插屏广告(ZJInterstitialAd)</a>
+<ul>
+<li><a href="#span-idjump231231-zjinterstitialad%E8%AF%B4%E6%98%8Espan">2.3.1、ZJInterstitialAd说明</a></li>
+<li><a href="#span-idjump232232-zjinterstitialaddelegate%E5%B9%BF%E5%91%8A%E8%AF%B4%E6%98%8Espan">2.3.2、ZJInterstitialAdDelegate广告说明</a></li>
+<li><a href="#span-idjump233233-%E5%8A%A0%E8%BD%BD%E6%8F%92%E5%B1%8F%E5%B9%BF%E5%91%8Aspan">2.3.3、加载插屏广告</a></li>
+</ul>
+</li>
+<li><a href="#span-idjump2424-%E6%8E%A5%E5%85%A5%E5%85%A8%E5%B1%8F%E8%A7%86%E9%A2%91%E4%BF%A1%E6%81%AF%E6%B5%81zjfeedfullvideoviewspan">2.4、接入全屏视频信息流(ZJFeedFullVideoView)</a>
+<ul>
+<li><a href="#span-idjump241241-zjfeedfullvideoproviderzjfeedfullvideoview%E8%AF%B4%E6%98%8Espan">2.4.1、ZJFeedFullVideoProvider，ZJFeedFullVideoView说明</a></li>
+<li><a href="#span-idjump242242-zjfeedfullvideoproviderdelegate%E5%B9%BF%E5%91%8A%E8%AF%B4%E6%98%8Espan">2.4.2、ZJFeedFullVideoProviderDelegate广告说明</a></li>
+<li><a href="#span-idjump243243-%E5%8A%A0%E8%BD%BD%E5%85%A8%E5%B1%8F%E8%A7%86%E9%A2%91%E4%BF%A1%E6%81%AF%E6%B5%81span">2.4.3、加载全屏视频信息流</a></li>
+</ul>
+</li>
+<li><a href="#span-idjump2525-%E6%8E%A5%E5%85%A5%E6%A8%A1%E6%9D%BF%E4%BF%A1%E6%81%AF%E6%B5%81zjnativeexpressfeedadmanagerspan">2.5、接入模板信息流(ZJNativeExpressFeedAdManager)</a>
+<ul>
+<li><a href="#span-idjump251251-zjnativeexpressfeedadmanagerzjnativeexpressfeedad%E8%AF%B4%E6%98%8Espan">2.5.1、ZJNativeExpressFeedAdManager，ZJNativeExpressFeedAd说明</a></li>
+<li><a href="#span-idjump252252-zjnativeexpressfeedadmanagerdelegate-zjnativeexpressfeedaddelegate%E8%AF%B4%E6%98%8Espan">2.5.2、ZJNativeExpressFeedAdManagerDelegate ZJNativeExpressFeedAdDelegate说明</a></li>
+<li><a href="#span-idjump253253-%E5%8A%A0%E8%BD%BD%E6%A8%A1%E6%9D%BF%E4%BF%A1%E6%81%AF%E6%B5%81%E5%B9%BF%E5%91%8Aspan">2.5.3、加载模板信息流广告</a></li>
+</ul>
+</li>
+<li><a href="#26-%E6%8E%A5%E5%85%A5%E8%87%AA%E6%B8%B2%E6%9F%93%E5%B9%BF%E5%91%8Azjnativead">2.6、接入自渲染广告(ZJNativeAd)</a>
+<ul>
+<li><a href="#261-zjnativead%E8%AF%B4%E6%98%8E">2.6.1、ZJNativeAd说明</a></li>
+<li><a href="#262-%E5%8A%A0%E8%BD%BDzjnativead%E5%B9%BF%E5%91%8A-">2.6.2、加载ZJNativeAd广告 ####</a></li>
+</ul>
+</li>
+<li><a href="#27-%E6%8E%A5%E5%85%A5%E5%85%A8%E5%B1%8F%E8%A7%86%E9%A2%91%E5%B9%BF%E5%91%8Azjfullscreenvideoadspan">2.7、接入全屏视频广告(ZJFullScreenVideoAd)</a>
+<ul>
+<li><a href="#271-zjfullscreenvideoad%E8%AF%B4%E6%98%8E">2.7.1、ZJFullScreenVideoAd说明</a></li>
+<li><a href="#272-zjfullscreenvideoaddelegate%E5%B9%BF%E5%91%8A%E8%AF%B4%E6%98%8E">2.7.2、ZJFullScreenVideoAdDelegate广告说明</a></li>
+<li><a href="#273-%E5%8A%A0%E8%BD%BD%E5%85%A8%E5%B1%8F%E8%A7%86%E9%A2%91%E5%B9%BF%E5%91%8A">2.7.3、加载全屏视频广告</a></li>
+</ul>
+</li>
+<li><a href="#28-%E6%8E%A5%E5%85%A5%E8%A7%86%E9%A2%91%E5%86%85%E5%AE%B9zjcontentpage%E7%B1%BB%E4%BC%BCdyks%E7%9F%AD%E8%A7%86%E9%A2%91span">2.8、接入视频内容(ZJContentPage——类似dy,ks短视频)</a>
+<ul>
+<li><a href="#281-font-colorredzjcontentpage%E6%8E%A5%E5%85%A5%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9font">2.8.1、ZJContentPage接入注意事项</a></li>
+<li><a href="#282-zjcontentpage%E8%AF%B4%E6%98%8E">2.8.2、ZJContentPage说明</a></li>
+<li><a href="#283-%E5%8A%A0%E8%BD%BD%E8%A7%86%E9%A2%91%E5%86%85%E5%AE%B9">2.8.3、加载视频内容</a></li>
+</ul>
+</li>
+<li><a href="#span-idjump2929-%E6%8E%A5%E5%85%A5%E6%96%B0%E9%97%BB%E8%B5%84%E8%AE%AF%E5%B9%BF%E5%91%8Azjnewsadviewspan">2.9、接入新闻资讯广告(ZJNewsAdView)</a>
+<ul>
+<li><a href="#span-idjump291291-zjnewsadview%E8%AF%B4%E6%98%8Espan">2.9.1、ZJNewsAdView说明</a></li>
+<li><a href="#span-idjump292292-zjnewsadviewdelegate%E8%AF%B4%E6%98%8Espan">2.9.2、ZJNewsAdViewDelegate说明</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#span-idjump3%E4%B8%89-%E6%8E%A5%E5%85%A5h5%E5%86%85%E5%AE%B9%E9%A1%B5span">三、接入H5内容页</a>
+<ul>
+<li><a href="#span-idjump3131-%E6%8E%A5%E5%85%A5h5%E5%86%85%E5%AE%B9span">3.1、接入H5内容</a>
+<ul>
+<li><a href="#span-idjump311311-zjh5page%E8%AF%B4%E6%98%8Espan">3.1.1、ZJH5Page说明</a></li>
+<li><a href="#span-idjump312312-zjh5delegate%E8%AF%B4%E6%98%8Espan">3.1.2、ZJH5Delegate说明</a></li>
+<li><a href="#span-idjump313313-%E5%8A%A0%E8%BD%BDh5%E5%86%85%E5%AE%B9%E9%A1%B5span">3.1.3、加载H5内容页</a></li>
+</ul>
+</li>
+<li><a href="#32-%E6%82%AC%E6%B5%AE%E5%B9%BF%E5%91%8A">3.2、悬浮广告</a>
+<ul>
+<li><a href="#321-zjfloatingadview%E8%AF%B4%E6%98%8E">3.2.1、ZJFloatingAdView说明</a></li>
+<li><a href="#322-zjfloatingadview%E4%BD%BF%E7%94%A8">3.2.2、ZJFloatingAdView使用</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#%E5%8E%86%E5%8F%B2%E7%89%88%E6%9C%AC%E6%9B%B4%E6%96%B0%E6%97%A5%E5%BF%97">历史版本更新日志</a></li>
+</ul>
+
+      </div>
+      <div class="md-sidebar-toc">
+<div class="md-toc">
+<div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:18px">
+          <a href="#span-idjump1版本更新日志span" class="md-toc-link">
+            <p><span id="jump1">版本更新日志</span></p>
+
+          </a></div><details style="padding:0;;padding-left:0px;" open="">
+        <summary class="md-toc-link-wrapper">
+          <a href="#span-idjump1一-ios-sdk接入说明span" class="md-toc-link"><p><span id="jump1">一、iOS SDK接入说明</span></p>
+</a>
+          </summary>
+        <div>
+          <details style="padding:0;;padding-left:24px;" open="">
+        <summary class="md-toc-link-wrapper">
+          <a href="#span-idjump1111-工程设置导入frameworkspan" class="md-toc-link"><p><span id="jump1.1">1.1、工程设置导入framework</span></p>
+</a>
+          </summary>
+        <div>
+          <div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#span-idjump111111-申请应用的appidspan" class="md-toc-link">
+            <p><span id="jump1.1.1">1.1.1、申请应用的AppID</span></p>
+
+          </a></div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#span-idjump112112-引入frameworkspan" class="md-toc-link">
+            <p><span id="jump1.1.2">1.1.2、引入framework</span></p>
+
+          </a></div>
+        </div>
+      </details>
+    <details style="padding:0;;padding-left:24px;" open="">
+        <summary class="md-toc-link-wrapper">
+          <a href="#span-idjump1212-xcode编译选项设置span" class="md-toc-link"><p><span id="jump1.2">1.2、Xcode编译选项设置</span></p>
+</a>
+          </summary>
+        <div>
+          <div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#span-idjump1121121-添加权限span" class="md-toc-link">
+            <p><span id="jump1.1.2.1">1.2.1、添加权限</span></p>
+
+          </a></div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#span-idjump122122-运行环境配置span" class="md-toc-link">
+            <p><span id="jump1.2.2">1.2.2、运行环境配置</span></p>
+
+          </a></div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#span-idjump123123-位置权限span" class="md-toc-link">
+            <p><span id="jump1.2.3">1.2.3、位置权限</span></p>
+
+          </a></div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#span-idjump124124-scheme列表添加以下内容span" class="md-toc-link">
+            <p><span id="jump1.2.4">1.2.4、scheme列表添加以下内容</span></p>
+
+          </a></div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#span-idjump125125-swift接入准备span" class="md-toc-link">
+            <p><span id="jump1.2.5">1.2.5、Swift接入准备</span></p>
+
+          </a></div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#131-ios-145及以上版本att权限申请" class="md-toc-link">
+            <p>1.3.1、iOS 14.5及以上版本ATT权限申请</p>
+
+          </a></div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#132-skadnetwork-接入" class="md-toc-link">
+            <p>1.3.2、SKAdNetwork 接入</p>
+
+          </a></div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#span-idjump133133-增加schemespan" class="md-toc-link">
+            <p><span id="jump1.3.3">1.3.3、增加scheme</span></p>
+
+          </a></div>
+        </div>
+      </details>
+    <div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#span-idjump1414-初始化sdkspan" class="md-toc-link">
+            <p><span id="jump1.4">1.4、初始化SDK</span></p>
+
+          </a></div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#span-idjump1515-打包回测span" class="md-toc-link">
+            <p><span id="jump1.5">1.5、打包回测</span></p>
+
+          </a></div>
+        </div>
+      </details>
+    <details style="padding:0;;padding-left:0px;" open="">
+        <summary class="md-toc-link-wrapper">
+          <a href="#span-idjump2二-加载广告span" class="md-toc-link"><p><span id="jump2">二、加载广告</span></p>
+</a>
+          </summary>
+        <div>
+          <details style="padding:0;;padding-left:24px;" open="">
+        <summary class="md-toc-link-wrapper">
+          <a href="#span-idjump2121-接入开屏广告zjsplashadspan" class="md-toc-link"><p><span id="jump2.1">2.1、接入开屏广告(ZJSplashAd)</span></p>
+</a>
+          </summary>
+        <div>
+          <div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#span-idjump211211-zjsplashad广告说明span" class="md-toc-link">
+            <p><span id="jump2.1.1">2.1.1、ZJSplashAd广告说明</span></p>
+
+          </a></div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#span-idjump212212-zjsplashaddelegatespan" class="md-toc-link">
+            <p><span id="jump2.1.2">2.1.2、ZJSplashAdDelegate</span></p>
+
+          </a></div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#span-idjump213213-加载开屏广告span" class="md-toc-link">
+            <p><span id="jump2.1.3">2.1.3、加载开屏广告</span></p>
+
+          </a></div>
+        </div>
+      </details>
+    <details style="padding:0;;padding-left:24px;" open="">
+        <summary class="md-toc-link-wrapper">
+          <a href="#span-idjump2222-接入激励视频zjrewardvideoadspan" class="md-toc-link"><p><span id="jump2.2">2.2、接入激励视频(ZJRewardVideoAd)</span></p>
+</a>
+          </summary>
+        <div>
+          <div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#span-idjump221221-zjrewardvideoad广告说明span" class="md-toc-link">
+            <p><span id="jump2.2.1">2.2.1、ZJRewardVideoAd广告说明</span></p>
+
+          </a></div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#span-idjump222222-zjrewardvideoaddelegate广告说明span" class="md-toc-link">
+            <p><span id="jump2.2.2">2.2.2、ZJRewardVideoAdDelegate广告说明</span></p>
+
+          </a></div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#span-idjump223223-加载激励视频span" class="md-toc-link">
+            <p><span id="jump2.2.3">2.2.3、加载激励视频</span></p>
+
+          </a></div>
+        </div>
+      </details>
+    <details style="padding:0;;padding-left:24px;" open="">
+        <summary class="md-toc-link-wrapper">
+          <a href="#span-idjump2323-接入插屏广告zjinterstitialadspan" class="md-toc-link"><p><span id="jump2.3">2.3、接入插屏广告(ZJInterstitialAd)</span></p>
+</a>
+          </summary>
+        <div>
+          <div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#span-idjump231231-zjinterstitialad说明span" class="md-toc-link">
+            <p><span id="jump2.3.1">2.3.1、ZJInterstitialAd说明</span></p>
+
+          </a></div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#span-idjump232232-zjinterstitialaddelegate广告说明span" class="md-toc-link">
+            <p><span id="jump2.3.2">2.3.2、ZJInterstitialAdDelegate广告说明</span></p>
+
+          </a></div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#span-idjump233233-加载插屏广告span" class="md-toc-link">
+            <p><span id="jump2.3.3">2.3.3、加载插屏广告</span></p>
+
+          </a></div>
+        </div>
+      </details>
+    <details style="padding:0;;padding-left:24px;" open="">
+        <summary class="md-toc-link-wrapper">
+          <a href="#span-idjump2424-接入全屏视频信息流zjfeedfullvideoviewspan" class="md-toc-link"><p><span id="jump2.4">2.4、接入全屏视频信息流(ZJFeedFullVideoView)</span></p>
+</a>
+          </summary>
+        <div>
+          <div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#span-idjump241241-zjfeedfullvideoproviderzjfeedfullvideoview说明span" class="md-toc-link">
+            <p><span id="jump2.4.1">2.4.1、ZJFeedFullVideoProvider，ZJFeedFullVideoView说明</span></p>
+
+          </a></div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#span-idjump242242-zjfeedfullvideoproviderdelegate广告说明span" class="md-toc-link">
+            <p><span id="jump2.4.2">2.4.2、ZJFeedFullVideoProviderDelegate广告说明</span></p>
+
+          </a></div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#span-idjump243243-加载全屏视频信息流span" class="md-toc-link">
+            <p><span id="jump2.4.3">2.4.3、加载全屏视频信息流</span></p>
+
+          </a></div>
+        </div>
+      </details>
+    <details style="padding:0;;padding-left:24px;" open="">
+        <summary class="md-toc-link-wrapper">
+          <a href="#span-idjump2525-接入模板信息流zjnativeexpressfeedadmanagerspan" class="md-toc-link"><p><span id="jump2.5">2.5、接入模板信息流(ZJNativeExpressFeedAdManager)</span></p>
+</a>
+          </summary>
+        <div>
+          <div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#span-idjump251251-zjnativeexpressfeedadmanagerzjnativeexpressfeedad说明span" class="md-toc-link">
+            <p><span id="jump2.5.1">2.5.1、ZJNativeExpressFeedAdManager，ZJNativeExpressFeedAd说明</span></p>
+
+          </a></div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#span-idjump252252-zjnativeexpressfeedadmanagerdelegate-zjnativeexpressfeedaddelegate说明span" class="md-toc-link">
+            <p><span id="jump2.5.2">2.5.2、ZJNativeExpressFeedAdManagerDelegate ZJNativeExpressFeedAdDelegate说明</span></p>
+
+          </a></div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#span-idjump253253-加载模板信息流广告span" class="md-toc-link">
+            <p><span id="jump2.5.3">2.5.3、加载模板信息流广告</span></p>
+
+          </a></div>
+        </div>
+      </details>
+    <details style="padding:0;;padding-left:24px;" open="">
+        <summary class="md-toc-link-wrapper">
+          <a href="#26-接入自渲染广告zjnativead" class="md-toc-link"><p>2.6、接入自渲染广告(ZJNativeAd)</p>
+</a>
+          </summary>
+        <div>
+          <div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#261-zjnativead说明" class="md-toc-link">
+            <p>2.6.1、ZJNativeAd说明</p>
+
+          </a></div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#262-加载zjnativead广告-" class="md-toc-link">
+            <p>2.6.2、加载ZJNativeAd广告 ####</p>
+
+          </a></div>
+        </div>
+      </details>
+    <details style="padding:0;;padding-left:24px;" open="">
+        <summary class="md-toc-link-wrapper">
+          <a href="#27-接入全屏视频广告zjfullscreenvideoadspan" class="md-toc-link"><p>2.7、接入全屏视频广告(ZJFullScreenVideoAd)</p>
+</a>
+          </summary>
+        <div>
+          <div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#271-zjfullscreenvideoad说明" class="md-toc-link">
+            <p>2.7.1、ZJFullScreenVideoAd说明</p>
+
+          </a></div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#272-zjfullscreenvideoaddelegate广告说明" class="md-toc-link">
+            <p>2.7.2、ZJFullScreenVideoAdDelegate广告说明</p>
+
+          </a></div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#273-加载全屏视频广告" class="md-toc-link">
+            <p>2.7.3、加载全屏视频广告</p>
+
+          </a></div>
+        </div>
+      </details>
+    <details style="padding:0;;padding-left:24px;" open="">
+        <summary class="md-toc-link-wrapper">
+          <a href="#28-接入视频内容zjcontentpage类似dyks短视频span" class="md-toc-link"><p>2.8、接入视频内容(ZJContentPage——类似dy,ks短视频)</p>
+</a>
+          </summary>
+        <div>
+          <div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#281-font-colorredzjcontentpage接入注意事项font" class="md-toc-link">
+            <p>2.8.1、<font color="red">ZJContentPage接入注意事项</font></p>
+
+          </a></div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#282-zjcontentpage说明" class="md-toc-link">
+            <p>2.8.2、ZJContentPage说明</p>
+
+          </a></div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#283-加载视频内容" class="md-toc-link">
+            <p>2.8.3、加载视频内容</p>
+
+          </a></div>
+        </div>
+      </details>
+    <details style="padding:0;;padding-left:24px;" open="">
+        <summary class="md-toc-link-wrapper">
+          <a href="#span-idjump2929-接入新闻资讯广告zjnewsadviewspan" class="md-toc-link"><p><span id="jump2.9">2.9、接入新闻资讯广告(ZJNewsAdView)</span></p>
+</a>
+          </summary>
+        <div>
+          <div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#span-idjump291291-zjnewsadview说明span" class="md-toc-link">
+            <p><span id="jump2.9.1">2.9.1、ZJNewsAdView说明</span></p>
+
+          </a></div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#span-idjump292292-zjnewsadviewdelegate说明span" class="md-toc-link">
+            <p><span id="jump2.9.2">2.9.2、ZJNewsAdViewDelegate说明</span></p>
+
+          </a></div>
+        </div>
+      </details>
+    
+        </div>
+      </details>
+    <details style="padding:0;;padding-left:0px;" open="">
+        <summary class="md-toc-link-wrapper">
+          <a href="#span-idjump3三-接入h5内容页span" class="md-toc-link"><p><span id="jump3">三、接入H5内容页</span></p>
+</a>
+          </summary>
+        <div>
+          <details style="padding:0;;padding-left:24px;" open="">
+        <summary class="md-toc-link-wrapper">
+          <a href="#span-idjump3131-接入h5内容span" class="md-toc-link"><p><span id="jump3.1">3.1、接入H5内容</span></p>
+</a>
+          </summary>
+        <div>
+          <div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#span-idjump311311-zjh5page说明span" class="md-toc-link">
+            <p><span id="jump3.1.1">3.1.1、ZJH5Page说明</span></p>
+
+          </a></div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#span-idjump312312-zjh5delegate说明span" class="md-toc-link">
+            <p><span id="jump3.1.2">3.1.2、ZJH5Delegate说明</span></p>
+
+          </a></div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#span-idjump313313-加载h5内容页span" class="md-toc-link">
+            <p><span id="jump3.1.3">3.1.3、加载H5内容页</span></p>
+
+          </a></div>
+        </div>
+      </details>
+    <details style="padding:0;;padding-left:24px;" open="">
+        <summary class="md-toc-link-wrapper">
+          <a href="#32-悬浮广告" class="md-toc-link"><p>3.2、悬浮广告</p>
+</a>
+          </summary>
+        <div>
+          <div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#321-zjfloatingadview说明" class="md-toc-link">
+            <p>3.2.1、ZJFloatingAdView说明</p>
+
+          </a></div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#322-zjfloatingadview使用" class="md-toc-link">
+            <p>3.2.2、ZJFloatingAdView使用</p>
+
+          </a></div>
+        </div>
+      </details>
+    
+        </div>
+      </details>
+    <div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:18px">
+          <a href="#历史版本更新日志" class="md-toc-link">
+            <p>历史版本更新日志</p>
+
+          </a></div>
+</div>
+</div>
+      <a id="sidebar-toc-btn">≡</a>
+    
+    
+    
+    
+    
+    
+<script>
+document.body.setAttribute('html-show-sidebar-toc', true)
+var sidebarTOCBtn = document.getElementById('sidebar-toc-btn')
+sidebarTOCBtn.addEventListener('click', function(event) {
+  event.stopPropagation()
+  if (document.body.hasAttribute('html-show-sidebar-toc')) {
+    document.body.removeAttribute('html-show-sidebar-toc')
+  } else {
+    document.body.setAttribute('html-show-sidebar-toc', true)
+  }
+})
+</script>
+      
+  
+    </body></html>

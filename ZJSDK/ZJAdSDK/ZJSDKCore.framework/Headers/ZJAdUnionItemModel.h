@@ -46,6 +46,8 @@ typedef NS_ENUM(NSInteger,ZJAdShowPriority){
 
 @property (nonatomic, assign) BOOL is_pd_cache;
 
+@property (nonatomic, assign) BOOL is_verify_params;
+
 @property (nonatomic, assign) NSInteger reward_ver;
 
 @property (nonatomic, copy) NSArray <ZJAdUnitModel *>*tiers;
@@ -74,6 +76,10 @@ typedef NS_ENUM(NSInteger,ZJAdShowPriority){
 /// 时间戳
 @property (nonatomic, copy) NSString *msel;
 
+/// 同步校验参数
+@property (nonatomic, assign) BOOL is_verify_params;
+
+/// 请求激励版本
 @property (nonatomic, assign) NSInteger reward_ver;
 ///当日限制次数
 @property (nonatomic, assign) NSInteger limit_num;
