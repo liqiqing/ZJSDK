@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'ZJSDK'
-  s.version          = '2.5.7.2'
+  s.version          = '2.5.7.3'
   s.summary          = 'ZJSDK广告'
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -158,19 +158,19 @@ TODO: Add long description of the pod here.
     ss.dependency 'GDTMobSDK', '4.14.10'
     ss.dependency 'Ads-CN', '5.0.0.5'
  end
- s.subspec 'ZJSDKModuleTanX' do |ss|
-
-  ss.vendored_libraries = 'ZJSDK/ZJSDKModuleTanX/*.a'
-  ss.dependency 'ZJSDK/ZJAdSDK'
-  ss.source_files         = 'ZJSDK/ZJSDKModuleTanX/*.h'
-  ss.vendored_frameworks  = 'ZJSDK/ZJSDKModuleTanX/*.framework'
-  ss.resource             = 'ZJSDK/ZJSDKModuleTanX/*.bundle'
-  ss.preserve_paths       = 'ZJSDK/ZJSDKModuleTanX/*.framework'
-
-  # ss.dependency 'MintegralAdSDK/RewardVideoAd'
-  # ss.dependency 'MintegralAdSDK/BannerAd'
-  # ss.dependency 'MintegralAdSDK/SplashAd'
-  # ss.dependency 'MintegralAdSDK/InterstitialAd'
-  # ss.dependency 'MintegralAdSDK/NativeAdvancedAd'
-end
+  s.subspec 'ZJSDKModuleTanX' do |ss|
+ 
+   ss.vendored_libraries = 'ZJSDK/ZJSDKModuleTanX/*.a'
+   ss.dependency 'ZJSDK/ZJAdSDK'
+   ss.source_files         = 'ZJSDK/ZJSDKModuleTanX/*.h'
+   ss.vendored_frameworks  = 'ZJSDK/ZJSDKModuleTanX/*.framework'
+   ss.resource             = 'ZJSDK/ZJSDKModuleTanX/*.bundle'
+   ss.preserve_paths       = 'ZJSDK/ZJSDKModuleTanX/*.framework'
+ 
+   # ss.dependency 'MintegralAdSDK/RewardVideoAd'
+   # ss.dependency 'MintegralAdSDK/BannerAd'
+   # ss.dependency 'MintegralAdSDK/SplashAd'
+   # ss.dependency 'MintegralAdSDK/InterstitialAd'
+   # ss.dependency 'MintegralAdSDK/NativeAdvancedAd'
+ end
 end

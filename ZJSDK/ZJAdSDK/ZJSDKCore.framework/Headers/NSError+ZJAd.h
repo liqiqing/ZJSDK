@@ -31,6 +31,9 @@ typedef NS_ENUM(NSInteger,ZJErrorCodeAd){
     
     ZJErrorCodeAd_MissParameter = 100601,
     ZJErrorCodeAd_AdInvalid = 100602,
+    
+    ZJErrorCodeAd_app_tradeId_verify_fail = 100701,//媒体激励校验未通过
+
 };
 
 
@@ -38,7 +41,8 @@ typedef NS_ENUM(NSInteger,ZJErrorCodeAd){
 
 
 + (NSError *)zjAdError_errorWithCode:(ZJErrorCodeAd)code adItemConfig:(nullable ZJAdUnitModel *)adItemConfig userInfo:(nullable NSDictionary<NSString *, id> *)dict;
-
++ (NSError *)app_tradeId_verify_fail;
++ (NSError *)errorWithCode:(NSInteger)code message:(nullable NSString *)message;
 
 - (NSDictionary *)convertDictionary;
 
