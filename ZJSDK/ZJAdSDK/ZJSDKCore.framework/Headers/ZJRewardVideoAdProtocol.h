@@ -33,7 +33,7 @@ NS_ASSUME_NONNULL_BEGIN
  */
 - (void)showAdInViewController:(UIViewController *)viewController;
 
-///交易ID
+///交易ID 需开启服务端校验才能获取交易ID
 @property (nonatomic, copy, readonly) NSString *trade_id;
 ///验证dic
 @property (nonatomic, copy, readonly) NSDictionary *validationDictionary;

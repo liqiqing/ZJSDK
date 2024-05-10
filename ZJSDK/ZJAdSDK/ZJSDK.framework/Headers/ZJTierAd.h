@@ -33,6 +33,8 @@ NS_ASSUME_NONNULL_BEGIN
     NSInteger eCPM2;
 }
 
+@property (nonatomic, assign) BOOL hasLoadResult;
+
 //倒计时器
 //@property (nonatomic,strong)ZJAdCountdown *countdown;
 //数据管理
