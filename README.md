@@ -12,7 +12,9 @@ print_background: true
 ## <span id="jump1">版本更新日志</span>
 | 最新版本更新日志 | 修订日期  | 修订说明       |
 | ---------------- | --------- | -------------- |
-|v2.5.7.2|2024-04-18|百度SDK更新，适配新的激励上报 <br>增加隐私协议PrivacyInfo <br>新增scheme列表配置要求，参考[1.2.4](#span-idjump124124-scheme列表添加以下内容span)|
+
+
+|v2.5.7.6|2024-05-14|修复已知问题<br>快手最低支持版本提高至3.3.61|
 <!-- #### <span id="jump1.2.4">1.2.4、scheme列表添加以下内容</span> -->
 
 历史版本信息见 [历史版本更新日志](#历史版本更新日志)
@@ -1307,7 +1309,7 @@ self.floatingAd.hiddenH5CloseButton = YES;
 |v2.5.1.0|2022-10-12|三方库冲突兼容|
 |v2.5.2.1|2022-11-17|重构部分广告的请求逻辑|
 |v2.5.2.4|2022-12-22|新增新闻资讯类型广告|
-|v2.5.2.5|2023-01-18|1，新增视频内容广告样式，<br>2，对原视频内容代理和回调接口有做调整：<font color=red size=4><br>&emsp;&emsp;--原ZJContentPageDelegate改为ZJContentPageStateDelegate<br>&emsp;&emsp;--回调方法中(ZJContentPage *)videoContent修改为(id&lt;ZJContentInfo&gt;)videoContent</font>    <br>3，XCode14下视频内容接入方式更新，详见[2.9.1、ZJContentPage接入注意事项](#291-font-colorredzjcontentpage接入注意事项font)|
+|v2.5.2.5|2023-01-18|1，新增视频内容广告样式，<br>2，对原视频内容代理和回调接口有做调整：<font color=red size=4><br>&emsp;&emsp;--原ZJContentPageDelegate改为ZJContentPageStateDelegate<br>&emsp;&emsp;--回调方法中(ZJContentPage *)videoContent修改为(id&lt;ZJContentInfo&gt;)videoContent</font>    <br>3，XCode14下视频内容接入方式更新，详见[2.8.1、ZJContentPage接入注意事项](#281-font-colorredzjcontentpage接入注意事项font)|
 |v2.5.3.0|2023-02-22|1，新闻资讯优化、新增新闻资讯多标签列表样式，<br>2，修复已知问题|
 |v2.5.3.6|2023-03-14|1，新闻资讯接口文档更新 <br>2，H5Ad增加关闭h5回调 <br>3，修复已知问题|
 |v2.5.3.9|2023-03-27|1，已知问题修复|
@@ -1328,17 +1330,20 @@ self.floatingAd.hiddenH5CloseButton = YES;
 |v2.5.5.3|2023-11-09|1，倍孜加入比价 <br>2，已知问题修复|
 |v2.5.5.4|2023-11-27|1，增加pangle模块 <br>2，穿山甲新sdk适配 <br>3，百度接口更新 |
 |v2.5.5.5|2024-01-03|1，gdt依赖库更新适配 <br>2，穿山甲转用融合sdk，适配。不在依赖gromore <br> 3，已知问题修复 |
-|v2.5.5.6|2024-01-05| 针对可能的野指针问题做兼容 |
-|v2.5.5.7|2024-01-12| 已知问题修复 |
-|v2.5.6.0|2024-01-18| 已知问题修复 |
-|v2.5.6.1|2024-01-22|快手SDK更新，动态兼容新旧版本 |
+|v2.5.5.6|2024-01-05|已知问题修复|
+|v2.5.5.7|2024-01-12|已知问题修复|
+|v2.5.6.0|2024-01-18|已知问题修复|
+|v2.5.6.1|2024-01-22|快手SDK更新，动态兼容新旧版本|
 |v2.5.6.2|2024-01-23|减少分类使用|
 |v2.5.6.3|2024-02-02|已知问题修复|
 |v2.5.6.4|2024-02-19|适配百度信息流更新|
 |v2.5.6.5|2024-02-28|已知问题修复|
 |v2.5.7.0|2024-03-16|新增Tanx接入。需要新增依赖库：libsqlite3.0.tbd|
 |v2.5.7.1|2024-03-21|h5页面UI优化，调整状态栏，导航栏高度获取|
-|v2.5.7.2|2024-04-18|百度SDK更新，适配新的激励上报 <br>增加隐私协议PrivacyInfo|
+|v2.5.7.2|2024-04-18|百度SDK更新，适配新的激励上报 <br>增加隐私协议PrivacyInfo <br>新增scheme列表配置要求，参考[1.2.4](#span-idjump124124-scheme列表添加以下内容span)|
+|v2.5.7.3|2024-04-25|信息流bidding <br>修复已知问题|
+|v2.5.7.5|2024-05-10|快手内容包更新适配|
+|v2.5.7.6|2024-05-14|修复已知问题<br>快手最低支持版本提高至3.3.61|
 
 <!-- @import "[TOC]" {cmd="toc" depthFrom=1 depthTo=6 orderedList=false} -->
 
