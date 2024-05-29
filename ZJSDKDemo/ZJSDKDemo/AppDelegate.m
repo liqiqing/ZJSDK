@@ -25,6 +25,8 @@
 
 @property (nonatomic, strong) UIView *bottomView;
 
+@property (nonatomic) BOOL appHasLoaded;
+
 @end
 
 @implementation AppDelegate
@@ -65,26 +67,31 @@
 
 
 - (void)applicationDidBecomeActive:(UIApplication *)application{
-    // 请求idfa，此方法在iOS15上需要放到applicationDidBecomeActive内执行，可能会被其他询问覆盖
-    if (@available(iOS 14, *)) {
-        // iOS14及以上版本需要先请求权限
-        ATTrackingManagerAuthorizationStatus status = ATTrackingManager.trackingAuthorizationStatus;
-        if (status == ATTrackingManagerAuthorizationStatusNotDetermined) {
-            //用户未做选择或未弹窗
-            dispatch_semaphore_t sem = dispatch_semaphore_create(0);
-            [ATTrackingManager requestTrackingAuthorizationWithCompletionHandler:^(ATTrackingManagerAuthorizationStatus status) {
-                if (status == ATTrackingManagerAuthorizationStatusAuthorized) {
-                    //用户允许
-                    dispatch_async(dispatch_get_main_queue(), ^{
-                        [self showSplashAd];
-                    });
-                }
-                dispatch_semaphore_signal(sem);
-            }];
-            dispatch_semaphore_wait(sem, DISPATCH_TIME_FOREVER);
+    if (!_appHasLoaded) {
+        _appHasLoaded = YES;
+        // 请求idfa，此方法在iOS15上需要放到applicationDidBecomeActive内执行，可能会被其他询问覆盖
+        if (@available(iOS 14, *)) {
+            // iOS14及以上版本需要先请求权限
+            ATTrackingManagerAuthorizationStatus status = ATTrackingManager.trackingAuthorizationStatus;
+            if (status == ATTrackingManagerAuthorizationStatusNotDetermined) {
+                //用户未做选择或未弹窗
+                dispatch_semaphore_t sem = dispatch_semaphore_create(0);
+                [ATTrackingManager requestTrackingAuthorizationWithCompletionHandler:^(ATTrackingManagerAuthorizationStatus status) {
+    //                if (status == ATTrackingManagerAuthorizationStatusAuthorized) {
+                        //是否允许获取idfa只影响广告投放精准度
+                        dispatch_async(dispatch_get_main_queue(), ^{
+                            [self showSplashAd];
+                        });
+    //                }
+                    dispatch_semaphore_signal(sem);
+                }];
+                dispatch_semaphore_wait(sem, DISPATCH_TIME_FOREVER);
+            }else{
+                [self showSplashAd];
+                NSLog(@"ATT User not allowed");
+            }
         }else{
             [self showSplashAd];
-            NSLog(@"ATT User not allowed");
         }
     }
 }
