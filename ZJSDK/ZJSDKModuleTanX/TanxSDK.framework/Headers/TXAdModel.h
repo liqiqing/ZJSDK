@@ -10,14 +10,15 @@
 #import "TXAdJSONModel.h"
 
 typedef NS_ENUM(NSInteger ,TanXAdType) {
-    TanXAdTypeUnknown = -1,
+    TanXAdTypeUnknown = -1,       // 异常广告数据
     TanXAdTypeSplash = 1,         // 开屏广告
-    TanXAdTypeFeedImage,          // 信息流广告-图片
-    TanXAdTypeFeedVideo,          // 信息流广告-视频
-    TanXAdTypeRewardVideo,        // 激励广告-视频（当前app内展示）
-    TanXAdTypeTableScreen,        // 插屏广告
+    TanXAdTypeFeedImage,          // 信息流广告-图片，适合信息流场景
+    TanXAdTypeFeedVideo,          // 信息流广告-自渲染视频，适合信息流场景
+    TanXAdTypeRewardVideo,        // 激励广告-视频（当前app内展示），展示整个屏幕
+    TanXAdTypeTableScreen,        // 插屏广告，展示整个屏幕
     TanXAdTypeRewardBrowse,       // 激励广告-浏览（当前app内展示）
     TanXAdTypeRewardArousal,      // 激励广告-换端（唤端其他app展示，失败-当前app内展示）
+    TanXAdTypeFeedImmersiveVideo, // 信息流广告-自渲染视频，9:16沉浸式视频，适合类似抖音、快手视频场景
 };
 
 @class TXAdBidModel;

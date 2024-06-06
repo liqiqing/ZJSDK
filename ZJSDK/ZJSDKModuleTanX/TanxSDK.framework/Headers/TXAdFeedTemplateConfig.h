@@ -51,6 +51,10 @@ typedef NS_ENUM(NSUInteger, TXAdPlayConfig) {
 @property (nonatomic, assign) BOOL setMute; // 默认，静音
 @property (nonatomic, assign) BOOL replay;  // 默认 NO，单次播放
 
+/// 下面属性loadingView、playView必须一起设置，单独设置不生效
+@property (nonatomic, strong) UIView *loadingView; // 播放视频加载时展示，不传使用sdk默认图片
+@property (nonatomic, strong) UIView *playView;    // 播放器暂停时展示，不传使用sdk默认图片
+
 @end
 
 NS_ASSUME_NONNULL_END

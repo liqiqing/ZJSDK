@@ -24,7 +24,7 @@ NS_ASSUME_NONNULL_BEGIN
                 andAppKey:(NSString *)appKey;
 
 /**
- *  SDK初始化
+ *  SDK初始化 ----- 废弃，使用上面初始化方法即可，默认信息流广告支持实时曝光
  *
  *  @param appID                         媒体申请的APPID
  *  @param appKey                       媒体获取的appKey
@@ -33,7 +33,7 @@ NS_ASSUME_NONNULL_BEGIN
  */
 + (BOOL)setupSDKWithAppID:(NSString *)appID
                 andAppKey:(NSString *)appKey
-       withRealTimeSwitch:(BOOL)realTimeSwitch;
+       withRealTimeSwitch:(BOOL)realTimeSwitch NS_UNAVAILABLE;
 
 @end
 

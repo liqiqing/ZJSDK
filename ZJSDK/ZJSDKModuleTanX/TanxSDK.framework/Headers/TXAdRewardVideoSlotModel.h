@@ -29,10 +29,16 @@ typedef NS_ENUM(NSUInteger, TXAdRewardVideoAdDefaultAudioState) {
 @property (nonatomic, assign) BOOL autoVerification;
 
 /**
- *  是否自动调用查询发奖接口，默认NO
+ *  是否自动调用查询发奖接口，默认NO；唤端场景，会在切回app后，主动查询发奖接口
  *  （如设置YES，在广告show时调用，主要查询当前show时相关pid是否有历史奖励信息）
  */
 @property (nonatomic, assign) BOOL autoQueryPrizeInfo;
+
+/**
+ *  接入方手动查询发奖接口，默认YES；
+ *  （如设置YES，只有接入方手动调用查询发奖接口才会生效；上面autoQueryPrizeInfo的判断优先级低于 manualQueryPrizeInfo）
+ */
+@property (nonatomic, assign) BOOL manualQueryPrizeInfo;
 
 /// 媒体自定义loadAd超时时间，默认没有超时时间，单位秒
 @property (nonatomic, assign) NSTimeInterval loadAdTimeoutInterval;

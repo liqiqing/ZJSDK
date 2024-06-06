@@ -19,9 +19,6 @@ NS_ASSUME_NONNULL_BEGIN
 /// 当前是否禁止获取idfa(只读)
 @property (nonatomic, assign, readonly) BOOL forbiddenUseIDFA;
 
-///是否支持实时曝光
-@property (nonatomic, assign) BOOL realTimeSwitch;
-
 /// 媒体自定义用户质量,字段格式{"key":["value"]}
 @property (nonatomic, strong) NSDictionary<NSString *,NSArray *> * userTag;
 
@@ -59,6 +56,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 
 /*------------------注：下面方法、属性，已废弃------------------*/
+
+/// 已废弃，信息流广告默认支持实时曝光
+@property (nonatomic, assign) BOOL realTimeSwitch NS_UNAVAILABLE;
 
 /// 已废弃，请使用TXAdFeedTemplateConfig.mainTitleSize
 @property (nonatomic, assign) CGFloat titleSize  NS_UNAVAILABLE;

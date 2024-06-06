@@ -13,6 +13,16 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+///播放器的播放状态
+typedef NS_ENUM(NSInteger,TXAdFeedPlayerStatus){
+    TXAdFeedPlayerStatusUnknown = -1,     //  未知
+    TXAdFeedPlayerStatusPause    = 1,     //  暂停播放
+    TXAdFeedPlayerStatusPlaying,          //  播放中
+    TXAdFeedPlayerStatusBuffering,        //  缓冲中
+    TXAdFeedPlayerStatusEnd,              //  播放结束
+    TXAdFeedPlayerStatusError,            //  播放错误
+};
+
 @protocol TXAdFeedPlayerViewDelegate <NSObject>
 
 @optional
@@ -63,26 +73,17 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nonatomic, weak) id <TXAdFeedPlayerViewDelegate> delegate;
 
-/**
- * 初始化FeedPlayerView
- *
- * @param adModel 数据model
- * @return TXAdFeedPlayerView
- */
-- (instancetype)initWithFrame:(CGRect)frame adModel:(TXAdModel *)adModel NS_DESIGNATED_INITIALIZER;
-
-/**
- * 更新 playerView 播放配置
- *
- * @param config    配置model，playConfig：1、不自动播放 2、自动播放 3、Wifi下自动播放，默认
- *                         setMute，静音，默认YES
- */
- - (void)updatePlayerConfig:(TXAdFeedTemplateConfig *)config;
+- (TXAdFeedPlayerStatus)playerStatus;
 
 /**
  * 播放
  */
 - (void)play;
+
+/**
+ * 重新播放
+ */
+- (void)replay;
 
 /**
  * 暂停
