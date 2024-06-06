@@ -14,7 +14,7 @@ print_background: true
 | ---------------- | --------- | -------------- |
 
 
-|v2.5.7.10|2024-06-06|DSPSDK更新.<br>兼容部分联盟回调逻辑.<br>部分联盟不支持自定义window中展示，开屏接入方式更换，如之前按照demo中appdele的方式接入开屏，辛苦按照当前demo更换一下接入方式。|
+|v2.5.7.10|2024-06-06|DSPSDK更新.<br>兼容部分联盟回调逻辑.<br>部分联盟不支持自定义window中展示，开屏接入方式更换，如之前按照demo中appdelegate的方式接入开屏，辛苦按照当前demo更换一下接入方式。|
 <!-- #### <span id="jump1.2.4">1.2.4、scheme列表添加以下内容</span> -->
 
 历史版本信息见 [历史版本更新日志](#历史版本更新日志)
@@ -198,7 +198,8 @@ SDK 需要位置权限以更精准的匹配广告，需要在应用的 info.plis
   Privacy - Location Usage Description
 ```
 #### <span id="jump1.2.4">1.2.4、scheme列表添加以下内容</span>
-用于判断用户设备使用环境，提高安全性，增加收益
+用于判断用户设备使用环境，提高安全性，增加收益。
+默认状态开启检测断言，需要关闭请联系客服修改配置。
 ```
     <key>LSApplicationQueriesSchemes</key>
     <array>
@@ -1346,7 +1347,8 @@ self.floatingAd.hiddenH5CloseButton = YES;
 |v2.5.7.6|2024-05-14|修复已知问题<br>快手最低支持版本提高至3.3.61|
 |v2.5.7.8|2024-05-17|更新SIG618版本（便于手动集成媒体更新，pod直接通过pod更新即可<br>已知问题修复|
 |v2.5.7.9|2024-05-21|SIG新老接口更换|
-|v2.5.7.10|2024-06-06|DSPSDK更新.<br>兼容部分联盟回调逻辑.<br>部分联盟不支持自定义window中展示，开屏接入方式更换，如之前按照demo中appdele的方式接入开屏，辛苦按照当前demo更换一下接入方式。|
+|v2.5.7.10|2024-06-06|DSPSDK更新.<br>兼容部分联盟回调逻辑.<br>部分联盟不支持自定义window中展示，开屏接入方式更换，如之前按照demo中appdelegate的方式接入开屏，辛苦按照当前demo更换一下接入方式。|
+
 
 <!-- @import "[TOC]" {cmd="toc" depthFrom=1 depthTo=6 orderedList=false} -->
 
