@@ -12,8 +12,6 @@ print_background: true
 ## <span id="jump1">版本更新日志</span>
 | 最新版本更新日志 | 修订日期  | 修订说明       |
 | ---------------- | --------- | -------------- |
-
-
 |v2.5.7.10|2024-06-06|DSPSDK更新.<br>兼容部分联盟回调逻辑.<br>部分联盟不支持自定义window中展示，开屏接入方式更换，如之前按照demo中appdelegate的方式接入开屏，辛苦按照当前demo更换一下接入方式。|
 <!-- #### <span id="jump1.2.4">1.2.4、scheme列表添加以下内容</span> -->
 
@@ -167,7 +165,13 @@ pod 'KSAdSDK',:path => '../ZJSDK/ZJSDKModuleKS'#指定快手库为本地内容�
 
 ### <span id="jump1.2">1.2、Xcode编译选项设置</span>
 
-#### <span id="jump1.1.2.1">1.2.1、添加权限</span>
+#### <span id="jump1.2.2">1.2.1、运行环境支持</span>
+
+- 支持系统 iOS 11.X 及以上;
+- 支持架构： x86-64, armv7, arm64
+- SDK编译环境 Xcode 14.0 + （23年4月起，Xcode 14以下编译的包不再支持上架app store）
+
+#### <span id="jump1.1.2.1">1.2.2、添加HTTP权限</span>
 
 - 工程plist文件设置，点击右边的information Property List后边的 "+" 展开
 
@@ -181,13 +185,7 @@ pod 'KSAdSDK',:path => '../ZJSDK/ZJSDKModuleKS'#指定快手库为本地内容�
 </dict>
 ```
 
-#### <span id="jump1.2.2">1.2.2、运行环境配置</span>
-
-- 支持系统 iOS 11.X 及以上;
-- 支持架构： x86-64, armv7, arm64
-- SDK编译环境 Xcode 14.0 + （23年4月起，Xcode 14以下编译的包不再支持上架app store）
-
-#### <span id="jump1.2.3">1.2.3、位置权限</span>
+#### <span id="jump1.2.3">1.2.3、添加位置权限</span>
 
 SDK 需要位置权限以更精准的匹配广告，需要在应用的 info.plist 添加相应配置信息，避免 App Store 审核被拒：
 
@@ -214,6 +212,7 @@ SDK 需要位置权限以更精准的匹配广告，需要在应用的 info.plis
         <string>meituanwaimai</string>
         <string>imeituan</string>
         <string>snssdk1128</string>
+        <string>kwai</string>
         <string>cydia</string>
     </array>
 ```
@@ -227,7 +226,7 @@ SDK 需要位置权限以更精准的匹配广告，需要在应用的 info.plis
 
 2: 左侧目录中选中工程名，在 TARGETS->Build Settings-> Swift Compiler - Code Generation -> Objective-C Bridging Header 中输入桥接文件的路径
 
-###1.3、iOS14注意事项
+### 1.3、iOS14注意事项
 #### 1.3.1、iOS 14.5及以上版本ATT权限申请
 App Tracking Transparency(ATT) 框架向用户提出应用程序跟踪授权请求，并提供跟踪授权状态。自iOS14.5 开始，在应用程序调用 ATT 向用户提跟踪授权请求之前，IDFA 将不可用。如果应用未提出此请求，应用获取到的 IDFA 将为0，建议您在应用启动时调用，以便我们能够提供更精准的进行广告投放和收入优化。
 * 要获取 ATT 权限，请更新您的 Info.plist，添加 NSUserTrackingUsageDescription 字段和自定义文案描述。代码示例：
@@ -306,25 +305,6 @@ SKAdNetworkIdentifier : cstr6suwn9.skadnetwork
     </dict>
 </array>
 ```
-#### <span id="jump1.3.3">1.3.3、增加scheme</span>
-scheme列表添加以下内容
-用于判断设备使用环境，提升广告投放精准度
-```
-	<key>LSApplicationQueriesSchemes</key>
-	<array>
-		<string>alipayauth</string>
-		<string>alipays</string>
-		<string>wechat</string>
-		<string>weixin</string>
-		<string>taobao</string>
-		<string>tbopen</string>
-    <string>openapp.jdmobile</string>
-		<string>pinduoduo</string>
-    <string>meituanwaimai</string>
-		<string>imeituan</string>
-		<string>snssdk1128</string>
-	</array>
-```
 
 ### <span id="jump1.4">1.4、初始化SDK</span>
 
@@ -354,11 +334,12 @@ ZJAdSDK.registerAppId("zj_20201014iOSDEMO");
 ### <span id="jump1.5">1.5、打包回测</span>
 企业账号可直接打包。
 公司账号和个人账号打包回测请添加下面两个udid：
-
+```
 e36a75f610d3ea9e905c2cdff9720635b37f8c13
-
+```
+```
 00008101-001150922EF8001E
-
+```
 ## <span id="jump2">二、加载广告</span>
 
 ### <span id="jump2.1">2.1、接入开屏广告(ZJSplashAd)</span>
@@ -1360,14 +1341,14 @@ self.floatingAd.hiddenH5CloseButton = YES;
     - [1.1.1、申请应用的AppID](#span-idjump111111-申请应用的appidspan)
     - [1.1.2、引入framework](#span-idjump112112-引入frameworkspan)
   - [1.2、Xcode编译选项设置](#span-idjump1212-xcode编译选项设置span)
-    - [1.2.1、添加权限](#span-idjump1121121-添加权限span)
-    - [1.2.2、运行环境配置](#span-idjump122122-运行环境配置span)
-    - [1.2.3、位置权限](#span-idjump123123-位置权限span)
+    - [1.2.1、运行环境支持](#span-idjump122121-运行环境支持span)
+    - [1.2.2、添加HTTP权限](#span-idjump1121122-添加http权限span)
+    - [1.2.3、添加位置权限](#span-idjump123123-添加位置权限span)
     - [1.2.4、scheme列表添加以下内容](#span-idjump124124-scheme列表添加以下内容span)
     - [1.2.5、Swift接入准备](#span-idjump125125-swift接入准备span)
+  - [1.3、iOS14注意事项](#13-ios14注意事项)
     - [1.3.1、iOS 14.5及以上版本ATT权限申请](#131-ios-145及以上版本att权限申请)
     - [1.3.2、SKAdNetwork 接入](#132-skadnetwork-接入)
-    - [1.3.3、增加scheme](#span-idjump133133-增加schemespan)
   - [1.4、初始化SDK](#span-idjump1414-初始化sdkspan)
   - [1.5、打包回测](#span-idjump1515-打包回测span)
 - [二、加载广告](#span-idjump2二-加载广告span)
