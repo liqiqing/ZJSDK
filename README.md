@@ -12,7 +12,7 @@ print_background: true
 ## <span id="jump1">版本更新日志</span>
 | 最新版本更新日志 | 修订日期  | 修订说明       |
 | ---------------- | --------- | -------------- |
-|v2.5.7.10|2024-06-06|DSPSDK更新.<br>兼容部分联盟回调逻辑.<br>部分联盟不支持自定义window中展示，开屏接入方式更换，如之前按照demo中appdelegate的方式接入开屏，辛苦按照当前demo更换一下接入方式。|
+|v2.5.7.11|2024-06-13|新增快手短剧|
 <!-- #### <span id="jump1.2.4">1.2.4、scheme列表添加以下内容</span> -->
 
 历史版本信息见 [历史版本更新日志](#历史版本更新日志)
@@ -1001,13 +1001,14 @@ self.fullVideoAd.delegate = self;
 
 加载广告具体示例详见Demo中的ZJFullScreenVideoViewController。
 
-### 2.8、接入视频内容(ZJContentPage——类似dy,ks短视频)</span>
+### 2.8、视频内容和短剧(ZJContentPage、ZJTubePage)</span>
 
-#### 2.8.1、<font color=red>ZJContentPage接入注意事项</font>
-由于快手pod库不支持内容包，视频内容模块需要本地导入
-视频内容集成注意事项：
-一：Podfile中，指定本地KSAdSDK.podspec的相对路径，如demo中路径为： pod 'KSAdSDK', :path => '../ZJSDK/ZJSDKModuleKS' 
-二：打包发布之前，去掉快手内容包的x86_64框架，具体的拆分合并命令参考以下
+#### 2.8.1、<font color=red>ZJContentPage、ZJTubePage接入注意事项</font>
+由于内容包没有放在 CocoaPods 的公共仓库，需要⾃⾏将 podspec ⽂件放⼊⼯程⾥，然后在 Podfile ⾥指定路径，参考如下:
+```
+ pod 'KSAdSDK', :path => '../ZJSDK/ZJSDKModuleKS/KS' 
+ ```
+二：如不是通过pod导入，打包发布之前，需要去掉快手内容包的x86_64框架，具体的拆分合并命令参考以下
 ```
 cd [KSAdSDK.framework所在的目录]
 mkdir ./bak
@@ -1037,15 +1038,18 @@ mv KSAdSDK KSAdSDK.framework/
 ```
 #### 2.8.3、加载视频内容
 ```
-self.contentPage = [[ZJContentPage alloc]initWithPlacementId:self.contentId];
-self.contentPage.videoStateDelegate = self;
-self.contentPage.stateDelegate = self;
-UIViewController *vc = self.contentPage.viewController;
-    
-CGFloat contentY = [UIApplication sharedApplication].statusBarFrame.size.height+self.navigationController.navigationBar.frame.size.height;
-vc.view.frame = CGRectMake(0, contentY, self.view.frame.size.width, self.view.frame.size.height-contentY);
-[self addChildViewController:vc];
-[self.view addSubview:vc.view];
+    self.contentPage = [[ZJContentPage alloc]initWithPlacementId:self.contentId];
+    self.contentPage.videoStateDelegate = self;
+    self.contentPage.stateDelegate = self;
+    UIViewController *vc = self.contentPage.viewController;
+    if(vc){
+        CGFloat contentY = [UIApplication sharedApplication].statusBarFrame.size.height+self.navigationController.navigationBar.frame.size.height;
+        vc.view.frame = CGRectMake(0, contentY, self.view.frame.size.width, self.view.frame.size.height-contentY);
+        [self addChildViewController:vc];
+        [self.view addSubview:vc.view];
+    }else{
+        NSLog(@"未能创建对应广告位VC，建议从以下原因排查：\n 1，内容包需要手动导入快手模块（pod公共仓库中的SDK不支持内容包）\n 2，确保sdk已注册成功 \n 3，确保广告位正确可用");
+    }
 ```
 加载广告具体示例详见Demo中的 :
 ZJContentPageStyle1ViewController
@@ -1055,7 +1059,23 @@ ZJContentPageTabBarController
 其他样式：
 ZJFeedPageViewController  //瀑布流
 ZJHorizontalFeedPageVC    //横版
-ZJImageTextVC             //图文
+
+#### 2.8.3、加载短剧
+```
+    self.tubePage = [[ZJTubePage alloc]initWithPlacementId:self.contentId];
+    self.tubePage.videoStateDelegate = self;
+    self.tubePage.stateDelegate = self;
+    self.weakTubeVC = self.tubePage.viewController;
+    if(self.weakTubeVC){
+        [self addChildViewController:self.weakTubeVC];
+        [self.view addSubview:self.weakTubeVC.view];
+    }else{
+        NSLog(@"未能创建对应广告位VC，建议从以下原因排查：\n 1，内容包需要手动导入快手模块（pod公共仓库中的SDK不支持内容包）\n 2，确保sdk已注册成功 \n 3，确保广告位正确可用");
+    }
+```
+加载广告具体示例详见Demo中的 :
+ZJTubePageStyle1VC
+
 ### <span id="jump2.9">2.9、接入新闻资讯广告(ZJNewsAdView)</span>
 
 #### <span id="jump2.9.1">2.9.1、ZJNewsAdView说明</span>
@@ -1329,6 +1349,7 @@ self.floatingAd.hiddenH5CloseButton = YES;
 |v2.5.7.8|2024-05-17|更新SIG618版本（便于手动集成媒体更新，pod直接通过pod更新即可<br>已知问题修复|
 |v2.5.7.9|2024-05-21|SIG新老接口更换|
 |v2.5.7.10|2024-06-06|DSPSDK更新.<br>兼容部分联盟回调逻辑.<br>部分联盟不支持自定义window中展示，开屏接入方式更换，如之前按照demo中appdelegate的方式接入开屏，辛苦按照当前demo更换一下接入方式。|
+|v2.5.7.11|2024-06-13|新增快手短剧|
 
 
 <!-- @import "[TOC]" {cmd="toc" depthFrom=1 depthTo=6 orderedList=false} -->
@@ -1379,10 +1400,11 @@ self.floatingAd.hiddenH5CloseButton = YES;
     - [2.7.1、ZJFullScreenVideoAd说明](#271-zjfullscreenvideoad说明)
     - [2.7.2、ZJFullScreenVideoAdDelegate广告说明](#272-zjfullscreenvideoaddelegate广告说明)
     - [2.7.3、加载全屏视频广告](#273-加载全屏视频广告)
-  - [2.8、接入视频内容(ZJContentPage——类似dy,ks短视频)</span>](#28-接入视频内容zjcontentpage类似dyks短视频span)
-    - [2.8.1、ZJContentPage接入注意事项](#281-font-colorredzjcontentpage接入注意事项font)
+  - [2.8、视频内容和短剧(ZJContentPage、ZJTubePage)</span>](#28-视频内容和短剧zjcontentpage-zjtubepagespan)
+    - [2.8.1、ZJContentPage、ZJTubePage接入注意事项](#281-font-colorredzjcontentpage-zjtubepage接入注意事项font)
     - [2.8.2、ZJContentPage说明](#282-zjcontentpage说明)
     - [2.8.3、加载视频内容](#283-加载视频内容)
+    - [2.8.3、加载短剧](#283-加载短剧)
   - [2.9、接入新闻资讯广告(ZJNewsAdView)](#span-idjump2929-接入新闻资讯广告zjnewsadviewspan)
     - [2.9.1、ZJNewsAdView说明](#span-idjump291291-zjnewsadview说明span)
     - [2.9.2、ZJNewsAdViewDelegate说明](#span-idjump292292-zjnewsadviewdelegate说明span)
