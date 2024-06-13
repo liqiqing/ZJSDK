@@ -19,7 +19,7 @@
     [super viewDidLoad];
     [self.loadAdView appendAdID:@[AdId_Tube1]];
     
-    [self.loadAdView.loadButton setTitle:@"style1" forState:UIControlStateNormal];
+    [self.loadAdView.loadButton setTitle:@"展示短剧" forState:UIControlStateNormal];
     
     __weak typeof(self) weakSelf = self;
     [self.loadAdView.loadButton clickHandle:^(UIButton *button) {
@@ -28,12 +28,11 @@
         [weakSelf.navigationController pushViewController:contentPage1VC animated:YES];
     }];
 
-    [self.loadAdView.showButton setTitle:@"style2(长按返回)" forState:UIControlStateNormal];
+    [self.loadAdView.showButton setTitle:@"展示短剧" forState:UIControlStateNormal];
     [self.loadAdView.showButton clickHandle:^(UIButton *button) {
-        //demo 使用的ID K90010005
-        ZJTubePageStyle1VC *contentPage2VC = [[ZJTubePageStyle1VC alloc]init];
-        [weakSelf.navigationController pushViewController:contentPage2VC animated:YES];
-
+        ZJTubePageStyle1VC *contentPage1VC = [[ZJTubePageStyle1VC alloc]init];
+        contentPage1VC.contentId = weakSelf.loadAdView.adIDTextField.text;
+        [weakSelf.navigationController pushViewController:contentPage1VC animated:YES];
     }];
 }
 

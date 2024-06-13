@@ -12,9 +12,9 @@ target 'ZJSDKDemo' do
     end
   end
 ##mark 1，直接导入方式,一般打开此注释即可
-   pod 'ZJSDK', :path => '../'
+   pod 'ZJSDK'#, :path => '../'
 #如需接入内容包，需要制定本地，公共仓库的不支持内容包
-  pod 'KSAdSDK', :path => '../ZJSDK/ZJSDKModuleKS'
+#   pod 'KSAdSDK', :path => '../ZJSDK/ZJSDKModuleKS/KS'
    
 ##mark 2，分模块导入方式
   #pod 'ZJSDK/ZJSDKModuleDSP'#依赖库，引入任何模块都需要依赖此模块，默认引入
