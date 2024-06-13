@@ -1,42 +1,48 @@
 //
-//  ZJFeedPageViewController.m
+//  ZJTubePageStyle1VC.m
 //  ZJSDKDemo
 //
-//  Created by Rare on 2020/12/22.
-//  Copyright © 2020 zj. All rights reserved.
+//  Created by 麻明康 on 2024/6/11.
+//  Copyright © 2024 zj. All rights reserved.
 //
 
-#import "ZJFeedPageViewController.h"
-#import <ZJSDK/ZJFeedPage.h>
+#import "ZJTubePageStyle1VC.h"
+#import <ZJSDK/ZJTubePage.h>
 #import <ZJSDK/ZJContentPageStateDelegate.h>
-@interface ZJFeedPageViewController ()<ZJContentPageVideoStateDelegate,ZJContentPageStateDelegate>
 
-@property (nonatomic,strong)ZJFeedPage *contentPage;
+@interface ZJTubePageStyle1VC ()<ZJContentPageVideoStateDelegate,ZJContentPageStateDelegate>
+@property (nonatomic, strong) ZJTubePage *tubePage;
+@property (nonatomic, weak) UIViewController *weakTubeVC;
 @end
 
-@implementation ZJFeedPageViewController
+@implementation ZJTubePageStyle1VC
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor whiteColor];
-    
-    self.contentPage = [[ZJFeedPage alloc]initWithPlacementId:self.contentId];
-    self.contentPage.videoStateDelegate = self;
-    self.contentPage.stateDelegate = self;
-    UIViewController *vc = self.contentPage.viewController;
-    if(vc){
-        CGFloat contentY = [UIApplication sharedApplication].statusBarFrame.size.height+self.navigationController.navigationBar.frame.size.height;
-        vc.view.frame = CGRectMake(0, contentY, self.view.frame.size.width, self.view.frame.size.height-contentY);
-        [self addChildViewController:vc];
-        [self.view addSubview:vc.view];
+    self.title = @"短剧";
+    self.tubePage = [[ZJTubePage alloc]initWithPlacementId:self.contentId];
+    self.tubePage.videoStateDelegate = self;
+    self.tubePage.stateDelegate = self;
+    self.weakTubeVC = self.tubePage.viewController;
+    if(self.weakTubeVC){
+//        CGFloat contentY = [UIApplication sharedApplication].statusBarFrame.size.height+self.navigationController.navigationBar.frame.size.height;
+//        self.weakTubeVC.view.frame = CGRectMake(0, contentY, self.view.frame.size.width, self.view.frame.size.height-contentY);
+        [self addChildViewController:self.weakTubeVC];
+        [self.view addSubview:self.weakTubeVC.view];
     }else{
         NSLog(@"未能创建对应广告位VC，建议从以下原因排查：\n 1，内容包需要手动导入快手模块（pod公共仓库中的SDK不支持内容包）\n 2，确保sdk已注册成功 \n 3，确保广告位正确可用");
     }
-//    [vc.view mas_makeConstraints:^(MASConstraintMaker *make) {
-//        make.top.mas_equalTo(200);
-//        make.left.right.mas_equalTo(0);
-//        make.bottom.mas_equalTo(-80);
-//    }];
+}
+
+- (void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:animated];
+    [_tubePage.viewController viewWillAppear:animated];
+}
+
+- (void)viewDidAppear:(BOOL)animated{
+    [super viewDidAppear:animated];
+    [_tubePage.viewController viewDidAppear:animated];
 }
 
 #pragma mark ZJContentPageVideoStateDelegate
@@ -108,5 +114,4 @@
 - (void)zj_contentDidResume:(id<ZJContentInfo>)content{
     NSLog(@"======%s",__FUNCTION__);
 }
-
 @end

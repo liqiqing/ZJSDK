@@ -9,9 +9,6 @@
 #ifndef ZJADIDS_h
 #define ZJADIDS_h
 
-//BundleId
-#define ZJ_BundleId               @"com.zj.shop.towmall.hwxsx"
-
 ///AppID
 #define ZJ_Appid                @"zj_20201014iOSDEMO"
 
@@ -107,6 +104,8 @@
 
 #pragma mark =============== 视频内容广告位 ===============
 #define AdId_ContentPage1       @"K90010005"
+#pragma mark =============== 短剧广告位 ===============
+#define AdId_Tube1              @"J8492571135"
 
 #pragma mark =============== 新闻资讯广告位 ===============
 #define AdId_News1              @"J6316865941"
