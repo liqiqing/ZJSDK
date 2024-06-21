@@ -15,7 +15,7 @@ typedef NSString *ZJEventString NS_STRING_ENUM;
 FOUNDATION_EXPORT NSString * const ZJEvent_START;//开始调用
 FOUNDATION_EXPORT NSString * const ZJEvent_Load;//加载成功
 FOUNDATION_EXPORT NSString * const ZJEvent_Show;//展示成功
-FOUNDATION_EXPORT NSString * const ZJEvent_Finish;//完成
+FOUNDATION_EXPORT NSString * const ZJEvent_Finish;//触发激励
 FOUNDATION_EXPORT NSString * const ZJEvent_Click;//点击
 FOUNDATION_EXPORT NSString * const ZJEvent_Error;//错误
 FOUNDATION_EXPORT NSString * const ZJEvent_Other;//其他信息

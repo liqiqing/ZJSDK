@@ -96,6 +96,8 @@ typedef NS_ENUM(NSInteger,ZJAdShowPriority){
 @property (nonatomic, strong) NSString *error_strategy;
 /// 连续加载失败限制策略
 @property (nonatomic, strong) NSString *load_strategy;
+/// 连续不完成限制
+@property (nonatomic, strong) NSString *finish_strategy;
 
 @property (nonatomic, assign) ZJAdPlatformType platformType;
 
