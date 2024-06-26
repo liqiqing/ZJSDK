@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 #import <ZJSDKCore/ZJAdEventReport.h>
 #import <ZJSDKCore/ZJStrategyManager.h>
+#import <ZJSDKCore/ZJSDKManager.h>
 
 NS_ASSUME_NONNULL_BEGIN
 @class ZJNativeExpressFeedAd;
@@ -82,6 +83,24 @@ NS_ASSUME_NONNULL_BEGIN
 
 #pragma mark - 事件上报
 -(void)reportWithEvent:(ZJEventString)event supplementMsg:(nullable NSString *)supplementMsg;
+
+/**
+ * 返回广告的eCPM，广告加载成功后调用有效，单位：分
+ 
+ * @return 成功返回一个大于等于0的值，
+ *
+ * @Discussion 返回信息说明：
+ *
+ * -1表示无权限或后台出现异常，
+ *
+ * -2表示当前广告类型暂不支持实时竞价。
+ *
+ * -3表示实时竞价二价获取失败，请在收到广告加载成功之后的回调后获取
+ *
+ * -4表示pd价格获取失败，请在收到广告加载成功之后的回调后获取
+ *
+ */
+- (NSInteger)eCPM;
 @end
 
 NS_ASSUME_NONNULL_END

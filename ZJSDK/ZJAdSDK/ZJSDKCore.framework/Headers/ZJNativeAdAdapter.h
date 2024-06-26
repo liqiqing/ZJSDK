@@ -29,6 +29,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nonatomic,weak)id <ZJNativeAdAdapterDelegate> delegate;
 
+@property (nonatomic, strong) NSArray<ZJNativeAdObject *> *data;
 
 /**
  广告数据回调

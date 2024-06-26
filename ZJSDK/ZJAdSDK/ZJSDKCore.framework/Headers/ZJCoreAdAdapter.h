@@ -44,7 +44,7 @@ NS_ASSUME_NONNULL_BEGIN
  
  @return 成功返回一个大于等于0的值，-1表示无权限或后台出现异常，-2表示当前广告类型暂不支持实时竞价
  */
-- (NSInteger)eCPM;
+- (NSInteger)eCPM DEPRECATED_MSG_ATTRIBUTE("Use 'ZJNativeAdObject/ZJNativeExpressFeedAd -eCPM' instead.");;
 
 /**
  返回广告的eCPM等级
