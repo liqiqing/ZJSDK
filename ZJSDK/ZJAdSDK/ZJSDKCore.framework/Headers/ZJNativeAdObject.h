@@ -114,6 +114,11 @@ NS_ASSUME_NONNULL_BEGIN
  *
  */
 - (NSInteger)eCPM;
+
+
+/// 设置是否静音，默认为NO
+@property (nonatomic, assign, readwrite) BOOL mutedIfCan;
+
 @end
 
 NS_ASSUME_NONNULL_END
