@@ -44,7 +44,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, strong) UIView *videoAdView;
 
 /**
-  logoView，绑定数据对象后自动生成，可自定义布局
+  联盟广告logo，调用registerDataObject: clickableViews:绑定数据对象后自动生成，可自定义布局
  */
 @property (nonatomic, strong, readonly) UIView *logoView;
 
@@ -74,6 +74,8 @@ NS_ASSUME_NONNULL_BEGIN
  */
 - (void)unregisterDataObject;
 
+/// 设置是否静音，默认为NO
+@property (nonatomic, assign, readwrite) BOOL mutedIfCan;
 @end
 
 NS_ASSUME_NONNULL_END

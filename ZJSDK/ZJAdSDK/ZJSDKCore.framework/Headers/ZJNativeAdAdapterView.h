@@ -91,6 +91,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nonatomic, strong) UIView *superRenderView;
 
+/// 设置是否静音，默认为NO
+@property (nonatomic, assign, readwrite) BOOL mutedIfCan;
 @end
 
 NS_ASSUME_NONNULL_END
