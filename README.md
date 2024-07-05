@@ -12,7 +12,7 @@ print_background: true
 ## <span id="jump1">版本更新日志</span>
 | 最新版本更新日志 | 修订日期  | 修订说明       |
 | ---------------- | --------- | -------------- |
-|v2.5.8.4|2024-07-01|自渲染：<br> 1，静音状态可变，控制开关由object类更换到view类。<br> 2，不再默认添加联盟logo，改为由接入方主动添加。<br> 3，修复快手自渲染部分情况没有获取标题问题。<br>demo：<br> 1，增加静音控制按钮及其图标。<br> 2，增加logo添加示例（ZJFillNativeAdView）|
+|v2.5.8.5|2024-07-05|联盟SDK更新，接入文档调整，MTG调整为不默认引入|
 <!-- #### <span id="jump1.2.4">1.2.4、scheme列表添加以下内容</span> -->
 
 历史版本信息见 [历史版本更新日志](#历史版本更新日志)
@@ -41,16 +41,16 @@ pod 'ZJSDK/ZJSDKModuleDSP'#依赖库，引入任何模块都需要依赖此模�
 pod 'ZJSDK/ZJSDKModuleGDT'#优量汇广告
 pod 'ZJSDK/ZJSDKModuleCSJ'#穿山甲广告
 pod 'ZJSDK/ZJSDKModuleKS'#快手广告
-pod 'ZJSDK/ZJSDKModuleMTG'#MTG广告
 pod 'ZJSDK/ZJSDKModuleSIG'#Sigmob广告
 pod 'ZJSDK/ZJSDKModuleBD'#百度广告
 pod 'ZJSDK/ZJSDKModuleBeiZi'#倍孜广告
 pod 'ZJSDK/ZJSDKModuleTanX'#TanX广告
 ```
 ```
-#默认不引入的广告模块
+#海外模块(默认不引入)
 pod 'ZJSDK/ZJSDKModuleGoogle'#Google广告 
 pod 'ZJSDK/ZJSDKModulePangle'#穿山甲海外 
+pod 'ZJSDK/ZJSDKModuleMTG'#MTG广告
 
 #聚合广告模块（默认不引入）
 #注意：引入多个聚合广告可能会引起一些联盟重复初始化的问题。
@@ -145,14 +145,13 @@ pod 'KSAdSDK',:path => '../ZJSDK/ZJSDKModuleKS'#指定快手库为本地内容�
 
   SystemConfiguration.framework、CoreTelephony.framework、Security.framework是为了统计app信息使用
 
-<font color=#FF0000>**3.注意事项： **</font>
+**<font color=#FF0000>3.注意事项：</font>**
 
 * 快手广告：
-
-  * 手动导入快手广告需.前往项目的Build Phases，创建Copy Files，修改Destination为Frameworks，Name中添加KSAdSDK.framework。
-
-  * 为了方便模拟器调试，KSAdSDK 带有x86_64,i386架构，上架App store需要移除对应的这两个架构，请参考:（https://stackoverflow.com/questions/30547283/submit-to-app-store-issues-unsupported-architecture-x86）。
-
+  * 手动导入快手广告需.前往项目的：
+     Targets-当前项目-General-Frameworks,Libraries,and Embedded Content。
+     <font color=#FF0000>将KSAdSDK.xcframework - Do Not Embed 更改为 Embed & Sign
+    否则导入后启动将会闪退</font>
 * Google广告：
 
   * 需要在info.plist 添加GADApplicationIdentifier字段，value为AppId ,如果使用了Google广告sdk且未在info.plist中配置，会导致运行时错误，参考：https://developers.google.com/admob/ios/quick-start#cocoapods
@@ -162,7 +161,21 @@ pod 'KSAdSDK',:path => '../ZJSDK/ZJSDKModuleKS'#指定快手库为本地内容�
     <string>申请的Google广告的appid</string>
     ```
   * Google启用测试广告，参考：https://developers.google.com/admob/ios/test-ads#enable_test_devices
-
+* MTG 广告
+  * 手动添加SDK依赖配置
+  从Mintegral iOS SDK v7.5.4版本开始，内部用到了Swift语言。如果您在项目中没有使用Swift，您需要确保添加以下依赖项：
+  * 选择 Project > BuildSettings > Defines Module: 设置为 Yes
+  * 选择 Project > BuildSettings > Search path > Library Search Paths, 并添加如下代码:
+    ```
+    $(TOOLCHAIN_DIR)/usr/lib/swift/$(PLATFORM_NAME)
+    $(TOOLCHAIN_DIR)/usr/lib/swift-5.0/$(PLATFORM_NAME)
+    ```
+    之后在 Project > BuildSettings > Linking > Runpath search path, 然后添加如下代码:
+    ```
+    //该路径需要配置在list的第一个
+    /usr/lib/swift
+    ```
+    最后在 Project > BuildSettings > Build option > Always embed swift standard libraries: 设置为 Yes
 ### <span id="jump1.2">1.2、Xcode编译选项设置</span>
 
 #### <span id="jump1.2.2">1.2.1、运行环境支持</span>
@@ -1287,6 +1300,7 @@ self.floatingAd.hiddenH5CloseButton = YES;
 
 | 历史版本更新日志 | 修订日期  | 修订说明       |
 | ---------------- | --------- | -------------- |
+|v2.5.8.5|2024-07-05|联盟SDK更新，接入文档调整，MTG调整为不默认引入|
 |v2.5.8.4|2024-07-01|自渲染：<br> 1，静音状态可变，控制开关由object类更换到view类。<br> 2，不再默认添加联盟logo，改为由接入方主动添加。<br> 3，修复快手自渲染部分情况没有获取标题问题。<br>demo：<br> 1，增加静音控制按钮及其图标。<br> 2，增加logo添加示例（ZJFillNativeAdView）|
 |v2.5.8.3|2024-07-01|增加自渲染静音控制接口|
 |v2.5.8.2|2024-06-26|增加自渲染bidding能力|
@@ -1353,6 +1367,8 @@ self.floatingAd.hiddenH5CloseButton = YES;
 |v2.0.2|2021-3-5|模块拆分，广告优化|
 | v1.0.21          |2020-1-26  |新增banner广告，广告数据获取优化 |
 | v1.0.20          | 2020-1-14 | 增加新广告类型 |
+
+
 
 
 <!-- @import "[TOC]" {cmd="toc" depthFrom=1 depthTo=6 orderedList=false} -->
