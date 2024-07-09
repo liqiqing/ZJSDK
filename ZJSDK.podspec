@@ -124,8 +124,8 @@ TODO: Add long description of the pod here.
  s.subspec 'ZJSDKModuleBD' do |ss|
    ss.vendored_libraries = 'ZJSDK/ZJSDKModuleBD/*.a'
    ss.dependency 'ZJSDK/ZJAdSDK'
-   ss.dependency 'BaiduMobAdSDK', '~> 5.32'
-#  bidding要求 IOS V4.81及以上版本
+   ss.dependency 'BaiduMobAdSDK', '~> 5.36'
+#  5.36 接口变更
  end
  
   s.subspec 'ZJSDKModulePangle' do |ss|
