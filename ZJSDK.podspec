@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'ZJSDK'
-  s.version          = '2.5.8.6'
+  s.version          = '2.5.8.7'
   s.summary          = 'ZJSDK广告'
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -105,14 +105,6 @@ TODO: Add long description of the pod here.
     ss.dependency 'SigmobAd-iOS', '~> 4.7'
 #   sig更新日志要找运营看，或者自己注册一个账号看一下
   end
-#
-#  s.subspec 'IPDSDKModuleYM' do |ss|
-#    ss.vendored_libraries = 'IPDSDK/IPDSDKModuleYM/*.a'
-#    ss.dependency 'IPDSDK/IPDAdSDK'
-#    ss.vendored_frameworks = 'IPDSDK/IPDSDKModuleYM/*.framework'
-#    ss.preserve_paths = 'IPDSDK/IPDSDKModuleYM/*.framework'
-#    ss.resources = 'IPDSDK/IPDSDKModuleYM/AlicloudCloudCode.framework/AlicloudCloudCode.bundle'
-#  end
   
   s.subspec 'ZJSDKModuleGoogle' do |ss|
     ss.vendored_libraries = 'ZJSDK/ZJSDKModuleGoogle/*.a'
