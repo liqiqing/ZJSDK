@@ -18,7 +18,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [self.loadAdView appendAdID:@[AdId_NativeRender1,AdId_NativeRender2,AdId_NativeRender3,AdId_NativeRender4,AdId_NativeRender5]];
+    [self.loadAdView appendAdID:@[AdId_NativeRender1,AdId_NativeRender2,AdId_NativeRender3,AdId_NativeRender4,AdId_NativeRender5,AdId_NativeRender6]];
     
 }
 -(void) loadAd:(NSString*) adId{

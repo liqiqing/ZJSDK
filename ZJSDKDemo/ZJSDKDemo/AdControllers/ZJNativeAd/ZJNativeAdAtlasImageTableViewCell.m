@@ -16,7 +16,7 @@
     
     self.fillView.viewController = vc;
     self.fillView.delegate = delegate;
-    if (!self.fillView) {
+//    if (!self.fillView) {
         CGFloat imageWidth = (kScreenWidth-20)/3.0;
         CGFloat imageHeight = imageWidth *(@(dataObject.imageHeight).floatValue/@(dataObject.imageWidth).floatValue);
         for (int i = 0; i<dataObject.mediaUrlList.count; i++) {
@@ -40,7 +40,7 @@
         [self.contentView addSubview:self.fillView];
         
 //        self.fillView.logoView.hidden = YES;
-    }
+//    }
 }
 
 + (CGFloat)cellHeightWithUnifiedNativeAdDataObject:(ZJNativeAdObject *)dataObject

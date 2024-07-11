@@ -117,7 +117,7 @@
 #define AdId_NativeRender3      @"KS90010003"
 #define AdId_NativeRender4      @"J1550041411"
 #define AdId_NativeRender5      @"J4321322955"
-
+#define AdId_NativeRender6      @"J1286539321"
 #pragma mark =============== Floating广告位 ===============
 #define AdId_Floating1          @"J2952950117"
 

@@ -124,7 +124,13 @@
         self.videoAdView.hidden = YES;
     }
     
-    return [super registerDataObject:dataObject clickableViews:clickableViews];
+    [super registerDataObject:dataObject clickableViews:clickableViews];
+    
+    CGRect logoReact = self.logoView.frame;
+    logoReact.origin.x = 10;
+    logoReact.origin.y = self.frame.size.height-ZJNativeBottomHight-8;
+    self.logoView.frame = logoReact;
+    [self addSubview:self.logoView];
 }
 
 

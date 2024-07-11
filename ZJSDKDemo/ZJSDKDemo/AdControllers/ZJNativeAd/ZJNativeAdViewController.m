@@ -87,11 +87,7 @@
         _tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, kNavigationBarHeight+4, kScreenWidth, kScreenHeight-kNavigationBarHeight-4)];
         _tableView.backgroundColor = [[UIColor grayColor]colorWithAlphaComponent:0.6];
         _tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
-        if (@available(iOS 11.0, *)) {
-            _tableView.contentInsetAdjustmentBehavior = UIScrollViewContentInsetAdjustmentNever;
-        }else{
-            self.automaticallyAdjustsScrollViewInsets = NO;
-        }
+        _tableView.contentInsetAdjustmentBehavior = UIScrollViewContentInsetAdjustmentNever;
         _tableView.estimatedRowHeight = 0;
         _tableView.estimatedSectionFooterHeight = 0;
         _tableView.estimatedSectionHeaderHeight = 0;

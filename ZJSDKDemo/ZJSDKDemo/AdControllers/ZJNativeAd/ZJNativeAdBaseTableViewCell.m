@@ -25,7 +25,7 @@
 
 + (CGFloat)cellHeightWithUnifiedNativeAdDataObject:(ZJNativeAdObject *)dataObject{
     
-    return ZJNativeTopHeight;
+    return ZJNativeTopHeight+5+ZJNativeBottomHight;
 }
 
     
