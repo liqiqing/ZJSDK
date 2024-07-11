@@ -1056,20 +1056,20 @@
 		AB04E6132C1AF47D0050C68B /* ZJNativeAd */ = {
 			isa = PBXGroup;
 			children = (
-				AB04E6142C1AF47D0050C68B /* ZJNativeAdImageTableViewCell.m */,
-				AB04E6152C1AF47D0050C68B /* ZJNativeAdAtlasImageTableViewCell.h */,
-				AB04E6162C1AF47D0050C68B /* ZJNativeAdVideoTableViewCell.h */,
-				AB04E6172C1AF47D0050C68B /* ZJNativeAdViewController.m */,
 				AB04E6182C1AF47D0050C68B /* ZJFillNativeAdView.h */,
-				AB04E6192C1AF47D0050C68B /* ZJNativeAdSelectedViewController.h */,
-				AB04E61A2C1AF47D0050C68B /* ZJNativeAdBaseTableViewCell.h */,
-				AB04E61B2C1AF47D0050C68B /* ZJNativeAdAtlasImageTableViewCell.m */,
-				AB04E61C2C1AF47D0050C68B /* ZJNativeAdImageTableViewCell.h */,
-				AB04E61D2C1AF47D0050C68B /* ZJNativeAdVideoTableViewCell.m */,
 				AB04E61E2C1AF47D0050C68B /* ZJFillNativeAdView.m */,
-				AB04E61F2C1AF47D0050C68B /* ZJNativeAdViewController.h */,
+				AB04E6152C1AF47D0050C68B /* ZJNativeAdAtlasImageTableViewCell.h */,
+				AB04E61B2C1AF47D0050C68B /* ZJNativeAdAtlasImageTableViewCell.m */,
+				AB04E61A2C1AF47D0050C68B /* ZJNativeAdBaseTableViewCell.h */,
 				AB04E6202C1AF47D0050C68B /* ZJNativeAdBaseTableViewCell.m */,
+				AB04E61C2C1AF47D0050C68B /* ZJNativeAdImageTableViewCell.h */,
+				AB04E6142C1AF47D0050C68B /* ZJNativeAdImageTableViewCell.m */,
+				AB04E6192C1AF47D0050C68B /* ZJNativeAdSelectedViewController.h */,
 				AB04E6212C1AF47D0050C68B /* ZJNativeAdSelectedViewController.m */,
+				AB04E6162C1AF47D0050C68B /* ZJNativeAdVideoTableViewCell.h */,
+				AB04E61D2C1AF47D0050C68B /* ZJNativeAdVideoTableViewCell.m */,
+				AB04E61F2C1AF47D0050C68B /* ZJNativeAdViewController.h */,
+				AB04E6172C1AF47D0050C68B /* ZJNativeAdViewController.m */,
 			);
 			path = ZJNativeAd;
 			sourceTree = "<group>";

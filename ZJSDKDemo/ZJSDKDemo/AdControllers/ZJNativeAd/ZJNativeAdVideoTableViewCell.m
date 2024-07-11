@@ -19,6 +19,7 @@
     
     [self.fillView registerDataObject:dataObject clickableViews:@[self.fillView]];
     self.fillView.videoAdView.frame = CGRectMake(0, ZJNativeTopHeight, self.frame.size.width, 150);
+    [self.fillView resizeIfNeed];
     [self.contentView addSubview:self.fillView];
     [self.contentView addSubview:self.muteBtn];
 
