@@ -25,7 +25,7 @@ NS_ASSUME_NONNULL_BEGIN
 @end
 
 
-
+//ZJTierAd为刚开始重构时思路不清晰，命名有误，特此标注。应理解为ZJSingleAd，与ZJMultipleAd对应
 @interface ZJTierAd : ZJAd<ZJBiddingProtocol>{
     BOOL _needDelayLoadAd;
     BOOL _takeFastReturnAd;
