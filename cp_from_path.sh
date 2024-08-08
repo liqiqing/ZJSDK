@@ -27,9 +27,7 @@ then
     cp -r $SOURCE_DIR/ZJSDKModuleWM/ZJSDKModuleWM_Products/libZJSDKModuleWM.a                                ZJSDK/ZJSDKModuleWM
     cp -r $SOURCE_DIR/ZJSDKModuleTanX/ZJSDKModuleTanX_Products/libZJSDKModuleTanX.a                          ZJSDK/ZJSDKModuleTanX
     cp -r $SOURCE_DIR/ZJSDKModuleTanX/ZJSDKModuleTanX_Products/ZJSDKModuleTanX/ZJSDKModuleTanX.h             ZJSDK/ZJSDKModuleTanX
-    cp -r $SOURCE_DIR/ZJSDKModuleTanX/ZJSDKModuleTanX/libs/TanxSDK.framework                                 ZJSDK/ZJSDKModuleTanX
-    cp -r $SOURCE_DIR/ZJSDKModuleTanX/ZJSDKModuleTanX/libs/TNXASDK.framework                                 ZJSDK/ZJSDKModuleTanX
-    cp -r $SOURCE_DIR/ZJSDKModuleTanX/ZJSDKModuleTanX/libs/TanxID.bundle                                     ZJSDK/ZJSDKModuleTanX
+    cp -r -P $SOURCE_DIR/ZJSDKDemo/ZJSDKDemo/lib/SubModuleDependencys/TanX/*                                 ZJSDK/ZJSDKModuleTanX
 else
     echo "未检测到有效目标路径，请检查脚本所在目录下是否存在ZJSDK"
 fi

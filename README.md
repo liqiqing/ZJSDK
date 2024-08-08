@@ -1073,7 +1073,7 @@ ZJContentPageTabBarController
 ZJFeedPageViewController  //瀑布流
 ZJHorizontalFeedPageVC    //横版
 
-#### 2.8.3、加载短剧
+#### 2.8.4、加载短剧
 ```
     self.tubePage = [[ZJTubePage alloc]initWithPlacementId:self.contentId];
     self.tubePage.videoStateDelegate = self;
@@ -1427,7 +1427,7 @@ self.floatingAd.hiddenH5CloseButton = YES;
     - [2.8.1、ZJContentPage、ZJTubePage接入注意事项](#281-font-colorredzjcontentpage-zjtubepage接入注意事项font)
     - [2.8.2、ZJContentPage说明](#282-zjcontentpage说明)
     - [2.8.3、加载视频内容](#283-加载视频内容)
-    - [2.8.3、加载短剧](#283-加载短剧)
+    - [2.8.4、加载短剧](#283-加载短剧)
   - [2.9、接入新闻资讯广告(ZJNewsAdView)](#span-idjump2929-接入新闻资讯广告zjnewsadviewspan)
     - [2.9.1、ZJNewsAdView说明](#span-idjump291291-zjnewsadview说明span)
     - [2.9.2、ZJNewsAdViewDelegate说明](#span-idjump292292-zjnewsadviewdelegate说明span)
